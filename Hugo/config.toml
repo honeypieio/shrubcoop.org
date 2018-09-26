@@ -1,0 +1,36 @@
+baseURL = "https://shrubcoop.org/"
+languageCode = "en-gb"
+title = "Shrub Co-op"
+theme = "shrub"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "events"
+    name = "Events"
+    url = "/events/"
+    weight = 1
+
+  [[menu.main]]
+  	identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+
+  [[menu.main]]
+  	identifier = "get involved"
+    name = "Get Involved"
+    url = "/get-involved/"
+    weight = 3
+
+  [[menu.main]]
+  	identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+  [[menu.main]]
+  	identifier = "about us"
+    name = "About Us"
+    url = "/about-us/"
+    weight = 5
