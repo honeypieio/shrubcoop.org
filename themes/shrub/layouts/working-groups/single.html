@@ -1,0 +1,133 @@
+{{ define "main" }}
+
+<div class="row">
+
+  <div class="col-lg-4 order-lg-1">
+    <div class="working_group_header sloped">
+
+    	<div class="row pt-5">
+    		<div class="col-9 offset-1">
+		    	<div class="container">
+
+		    		<h1 class="shrub {{ .Params.identifier }}" style="font-size: 52px; padding-bottom: 0;">
+		    			{{ .Title }}
+		    		</h1>
+
+		    		<h3 class="text-white">
+		    			{{ .Params.tagline }}
+		    		</h3>
+
+		    	</div>
+    		</div>
+    	</div>
+      <div class="row pt-5">
+        <div class="col-6 offset-1">
+          <div class="container">
+            <p class="text-white">
+              {{ .Params.address }}
+            <br />
+              {{ .Params.times }}
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <img src="/images/working-groups/{{ .Params.identifier }}.png" class="working_group_icon_large mx-auto" />
+          <h3 class="shrub {{ .Params.identifier }} mx-auto">{{ .Title }}</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      
+      <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
+        
+      <h2 class="mt-2">Save the date!</h2>
+
+    </div>
+
+    <br />
+    <br />
+
+    <div class="row d-lg-none">
+
+      
+      <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
+        
+      <h2 class="mt-2">What we do</h2>
+
+    </div>
+
+    <br class="d-lg-none" />
+    <br class="d-lg-none" />
+
+    <div class="row d-lg-none">
+
+      
+      <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
+        
+      <h2 class="mt-2">Blog posts</h2>
+
+    </div>
+
+
+    <div class="row ml-4">
+
+      <h3>Upcoming Events</h3>
+
+
+      {{ range (where .Site.RegularPages "Type" "events") }}
+
+          <div class="pt-4">
+            <h1 class="aleo">{{ .Title }}</h1>
+            <p class="aleo">{{ .Description }}</p>
+            <p class="aleo">{{ .Params.time }} @ {{ .Params.location }} &emsp;|&emsp; Hosted by {{ .Params.author }}</p>
+            <a href="{{ .URL }}">More info</a>
+          </div>
+
+      {{ end }}
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="col-lg-4 order-lg-2">
+
+    <div class="circle {{ .Params.identifier }}-bg mx-auto" style="margin-top: -30px; margin-bottom: 30px;"></div>
+    <div class="container">
+      {{ .Content }}
+    </div>
+
+  </div>
+
+  <div class="col-lg-4 order-lg-3">
+    <br class="d-lg-none" />
+    <br class="d-lg-none" />
+    <div class="circle {{ .Params.identifier }}-bg mx-auto" style="margin-top: -30px; margin-bottom: 30px;"></div>
+    <div class="container">
+      <h1 class="aleo {{ .Params.identifier }} text-center">BLOG POSTS</h1>
+
+
+      {{ range first 5 (where .Site.RegularPages "Type" "blog") }}
+
+              <div class="pl-4 pt-4">
+                <h1 class="aleo">{{ .Title }}</h1>
+
+                <p class="aleo">By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }} </p>
+
+                <p class="aleo">{{ .Description }}</p>
+                <p class="aleo"><a href="{{ .URL }}">Continue reading!</a></p>
+              </div>
+
+      {{ end }}
+
+    </div>
+  </div>
+
+</div>
+
+{{ end }}

@@ -1,0 +1,162 @@
+{{ define "main" }}
+
+<div class="row">
+
+  <div class="col-md-4 order-md-2">
+    <div class="front-page-header sloped" style="padding-bottom: 50px;">
+
+      <div class="row pt-4 pl-5">
+        <div class="col-6 offset-1 pt-3">
+
+          <div class="row">
+            <div id="front-page-header" class="pt-4">
+
+                <center id="default-header">
+                  <h1 style="font-family: Shrub; font-size: 102px; line-height: 0.75;">
+                    SHRUB
+                  </h1>
+                  <p style="font-family: Aleo; font-size: 14px; line-height: 0.8;">
+                    Community-led co-operative in Edinburgh
+                  </p>
+                  <h3 style="font-family: Aleo; font-size: 36px; line-height: 0.8;">
+                    FOR A WORLD
+                  </h3>
+                  <h1 style="font-family: Aleo; font-size: 56px; line-height: 0.8;">
+                    WITHOUT
+                  </h1>
+                  <h3 style="font-family: Aleo; font-size: 42px; line-height: 0.8;">
+                    WASTE
+                  </h3>
+
+                  <br />
+
+                  <h3 id="carbonCounter" class="aleo"></h3>
+
+                </center>
+
+                {{ range (where .Data.Pages "Type" "working-groups") }}
+
+                <div id="{{ .Params.identifier }}_info" class="working-group-synopsis d-none">
+                  <div class="row pt-0">
+
+                      <div class="container">
+
+                        <h1 class="shrub {{ .Params.identifier }}" style="font-size: 42px; padding-bottom: 0;">
+                          {{ .Title }}
+                        </h1>
+
+                        <h4 class="text-white">
+                          {{ .Params.tagline }}
+                        </h4>
+
+                        <p class="text-white">
+                          {{ .Params.address }}
+                        <br />
+                          {{ .Params.times }}
+                        </p>
+
+                        <h4><a href="/working-groups/{{ .Params.identifier }}">Find out more!</a></h4>
+
+                      </div>
+
+                  </div>
+
+                </div>
+
+                {{ end }}
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-4">
+
+          <div class="container ml-4">
+
+              {{ range (where .Data.Pages "Type" "working-groups") }}
+
+              <center>
+                <a onclick="openInfo('{{ .Params.identifier }}')" class="working_group_link">
+                  <img src="/images/working-groups/{{ .Params.identifier }}.png" id="{{ .Params.identifier }}_icon" class="working_group_icon mx-auto" />
+                  <p class="shrub {{ .Params.identifier }} mx-auto">{{ .Name }}</p>
+                </a>
+              </center>
+
+              {{ end }}
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="/images/map.png" class="map" />
+    </div>
+
+  </div>
+
+
+
+  <div class="col-md-4 order-md-1">
+
+    <div class="latest-blog-header sloped">
+      <div class="container">
+        {{ range first 1 (where .Data.Pages "Type" "blog") }}
+          <div class="pl-4 pt-4">
+            <h1 class="aleo text-white">{{ .Title }}</h1>
+
+            <p class="aleo text-white">By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }} </p>
+
+            <p class="aleo text-white">{{ .Description }}</p>
+            <p class="aleo"><a href="{{ .URL }}">Continue reading!</a></p>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-3">
+    <div class="events-header sloped">
+      <div class="container">
+        {{ range first 1 (where .Data.Pages "Type" "events") }}
+          <div class="pl-4 pt-4">
+            <h1 class="aleo text-white">{{ .Title }}</h1>
+            <p class="aleo text-white">{{ .Description }}</p>
+            <p class="aleo text-white">{{ .Params.time }} @ {{ .Params.location }} &emsp;|&emsp; Hosted by {{ .Params.author }}</p>
+            <a href="{{ .URL }}">More info</a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br />
+
+<div class="row">
+  <h1 class="aleo wee-spoke-hub mx-auto">GET INVOLVED</h1>
+</div>
+
+<script>
+  function openInfo(workingGroup) {
+    $("#default-header").hide();
+    $(".working-group-synopsis").addClass("d-none");
+    $(".working_group_icon").css("opacity", "0.5");
+    $("#" + workingGroup + "_icon").css("opacity", "1");
+    $("#" + workingGroup + "_info").removeClass("d-none");
+  }
+
+$.ajax({
+    url: "https://murakami.org.uk/api/get/reports/this-year/carbon-saved",
+    type: 'GET',
+    success: function(res) {
+        $("#carbonCounter").text(res + " tonnes of carbon saved this year!");
+    }
+});
+</script>
+
+{{ end }}

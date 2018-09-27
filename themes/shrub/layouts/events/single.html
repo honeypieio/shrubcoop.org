@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+  <div class="col-lg-6 offset-lg-3">
+
+    <div class="container">
+
+      <div class="pt-4">
+
+            <h1 class="aleo">{{ .Title }}</h1>
+            <p class="aleo">{{ .Description }}</p>
+            <p class="aleo">{{ .Params.time }} @ {{ .Params.location }} &emsp;|&emsp; Hosted by {{ .Params.author }}</p>
+
+      </div>    	
+
+      <hr />
+
+      {{ .Content }}
+    </div>
+
+  </div>
+
+{{ end }}
