@@ -2,4 +2,7 @@
 	title = "Get Involved"
 +++
 
-# volunteer with us!!!!
+Volunteer with us!
+
+Sign up to our news letter!
+

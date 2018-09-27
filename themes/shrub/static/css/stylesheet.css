@@ -10,6 +10,16 @@
 	src: url('/fonts/Aleo-Regular.ttf') format('truetype');;
 }
 
+@media (max-width:768px) {
+	#navbarSupportedContent {
+		background-color: #333;
+	}
+}
+
+.plain {
+	color: black;
+}
+
 .aleo {
 	font-family: 'Aleo';
 }

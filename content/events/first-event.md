@@ -2,7 +2,7 @@
 title = "SHRUB Relaunch Party!"
 author = "Workshops"
 location = "22 Bread Street"
-time = "6pm"
+time = "26/09/18 6pm"
 description = "We'd love to welcome you to our new Swapshop to celebrate what we've achieved so far and look forward to the future!"
 categories = ["swapshop", "food-sharing"]
 +++

@@ -5,11 +5,11 @@
   <div class="col-md-4 order-md-2">
     <div class="front-page-header sloped" style="padding-bottom: 50px;">
 
-      <div class="row pt-4 pl-5">
+      <div class="row pt-4 pl-2">
         <div class="col-6 offset-1 pt-3">
 
           <div class="row">
-            <div id="front-page-header" class="pt-4">
+            <div id="front-page-header" class="pt-3">
 
                 <center id="default-header">
                   <h1 style="font-family: Shrub; font-size: 102px; line-height: 0.75;">
@@ -105,10 +105,10 @@
     <div class="latest-blog-header sloped">
       <div class="container">
         {{ range first 1 (where .Data.Pages "Type" "blog") }}
-          <div class="pl-4 pt-4">
+          <div class="pl-3 pt-4">
             <h1 class="aleo text-white">{{ .Title }}</h1>
 
-            <p class="aleo text-white">By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }} </p>
+            <p class="aleo text-white">By {{ .Params.author }} | {{ dateFormat "02/01/06" .Date }} </p>
 
             <p class="aleo text-white">{{ .Description }}</p>
             <p class="aleo"><a href="{{ .URL }}">Continue reading!</a></p>
@@ -125,7 +125,7 @@
           <div class="pl-4 pt-4">
             <h1 class="aleo text-white">{{ .Title }}</h1>
             <p class="aleo text-white">{{ .Description }}</p>
-            <p class="aleo text-white">{{ .Params.time }} @ {{ .Params.location }} &emsp;|&emsp; Hosted by {{ .Params.author }}</p>
+            <p class="aleo text-white">{{ .Params.time }} @ {{ .Params.location }} | Hosted by {{ .Params.author }}</p>
             <a href="{{ .URL }}">More info</a>
           </div>
         {{ end }}

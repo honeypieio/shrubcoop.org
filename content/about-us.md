@@ -2,4 +2,4 @@
 	title = "About Us"
 +++
 
-# About page...
+SHRUB is a thing

@@ -2,4 +2,4 @@
 	title = "Contact"
 +++
 
-# Contact details etc!
+Email us at shrub@shrubcoop.org
