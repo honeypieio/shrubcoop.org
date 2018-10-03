@@ -9,6 +9,14 @@
 
 # What is food sharing all about?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nibh, semper id sollicitudin at, consequat in tortor. Integer accumsan nunc dignissim, sodales odio ac, porta dui. Nullam eu nulla vitae lorem lacinia tempus molestie nec quam. Mauris commodo, enim vitae aliquet dignissim, dolor metus ullamcorper eros, vel mollis enim libero ut ante. Praesent rutrum nec velit et pulvinar. Nulla rutrum dui ut volutpat malesuada. Nam eget augue vestibulum, efficitur mi eu, mollis enim. Proin tempor libero arcu, non sagittis massa sodales vitae. Donec pellentesque, sem eget pulvinar vestibulum, odio metus aliquam lectus, in condimentum diam risus non magna. Pellentesque a sem massa. 
+Food Sharing Edinburgh was established in Edinburgh in late 2013, and is now rapidly expanding, based on a very similar concept operating in Germany. 
 
-Maecenas finibus diam sit amet pellentesque pharetra. Morbi vitae nulla a eros pulvinar volutpat sed auctor augue. Maecenas vitae finibus turpis. Praesent porta ultrices tellus quis sollicitudin. Proin rhoncus lorem quis leo dictum imperdiet. Quisque id ipsum ex. Nunc nisl ipsum, finibus at ullamcorper eu, aliquet eget orci.
+The Food Sharing project connects people so they can exchange their excess food instead of throwing it away and wasting it.
+
+Volunteers can collect food from businesses and redistribute it around the community to friends, family, neighbours, charities, poor, homeless and shelters. 
+
+Unlike food banks, there is no barrier or specific level of income that Food Sharing works for, it is an inclusive network for people from all social, economic and backgrounds. This project has grown out of its original goal of just saving food from going to waste into something much more.
+
+15 million tonnes of food is wasted annually in the UK, according to a government funded research report. Of this, 48% occurs at a house-hold level…so we are all working hard to lower this statistic.
+
+Our activity operates via a Facebook group and social media which can be found here. (insert Facebook link)

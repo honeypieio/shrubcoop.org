@@ -2,4 +2,4 @@
 	title = "About Us"
 +++
 
-SHRUB is a thing
+SHRUB is a *thing*!!!

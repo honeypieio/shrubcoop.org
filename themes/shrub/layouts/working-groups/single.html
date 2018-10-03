@@ -82,7 +82,7 @@
       </div>
 
 
-      {{ range (where .Site.RegularPages "Type" "events") }}
+      {{ range first 1 (where (index .Site.Taxonomies.categories .Params.identifier).Pages "Section" "events") }}
 
           <div class="pt-4">
             <h1 class="aleo">{{ .Title }}</h1>
@@ -123,7 +123,7 @@
       <h1 class="aleo {{ .Params.identifier }} text-center">BLOG POSTS</h1>
 
 
-      {{ range first 5 (where .Site.RegularPages "Type" "blog") }}
+      {{ range first 5 (where (index .Site.Taxonomies.categories .Params.identifier).Pages "Section" "blog") }}
 
               <div class="pl-4 pt-4">
                 <h1 class="aleo">{{ .Title }}</h1>

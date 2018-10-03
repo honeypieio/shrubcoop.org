@@ -9,17 +9,23 @@ times = "Open 1pm to 6pm, Wednesday to Saturday"
 
 +++
 
-# How does swapping work?
+Our Swapshop and Freeshop projects are run for the community to save waste and stop items being sent to landfill.
 
-Maecenas finibus diam sit amet pellentesque pharetra. Morbi vitae nulla a eros pulvinar volutpat sed auctor augue. Maecenas vitae finibus turpis. Praesent porta ultrices tellus quis sollicitudin. Proin rhoncus lorem quis leo dictum imperdiet. Quisque id ipsum ex. Nunc nisl ipsum, finibus at ullamcorper eu, aliquet eget orci.
+We estimate that it has saved over 75 tons of items from landfill over the past 10 years,with last year saving over 15 tons!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nibh, semper id sollicitudin at, consequat in tortor. Integer accumsan nunc dignissim, sodales odio ac, porta dui. Nullam eu nulla vitae lorem lacinia tempus molestie nec quam. Mauris commodo, enim vitae aliquet dignissim, dolor metus ullamcorper eros, vel mollis enim libero ut ante. Praesent rutrum nec velit et pulvinar. Nulla rutrum dui ut volutpat malesuada. Nam eget augue vestibulum, efficitur mi eu, mollis enim. Proin tempor libero arcu, non sagittis massa sodales vitae. Donec pellentesque, sem eget pulvinar vestibulum, odio metus aliquam lectus, in condimentum diam risus non magna. Pellentesque a sem massa. 
+The Swapshop allows people to Buy items for cash or Shrub-Tokens in store: volunteers will check cash values by looking up the cheapest online price and using this as a guide.
+
+Selling items to the Swapshop is fairly simple too: bring in an item and a lovely volunteer will value it in Shrub-tokens, you can then look around the shop and spend your tokens or part-cash/part tokens on the great items that others in the community have swapped in! 
+
+Non-members can do all their shopping on-the-day, but if you want to save your tokens for another day, or build them up over time, become a Shrub member! 
+
+Sign up for as little as £1 per month (£12 per year) and get stuff for up to 20% off the non-member price. Plus access to the Members’year-round Freeshop!
+
+If you have a few hours spare a week to become a Shrub volunteer and can help with his wonderful project, please drop us a email to: joe.thompson@shrubcoop.org or drop in to the shop!
 
 
-### Buy
+Volunteers get 3 tokens per hour of time given to spend in our store.
 
-Nullam convallis sagittis elit eu aliquam. Integer in fermentum metus. Etiam ornare metus porttitor, lacinia elit vel, varius justo. Proin placerat risus sit amet massa scelerisque accumsan. Mauris venenatis aliquet libero vel ullamcorper. Curabitur pharetra sollicitudin mi. Nunc blandit enim urna, et commodo risus ultrices ac. Nullam eu molestie risus. Phasellus semper magna vel arcu maximus, ut placerat ipsum imperdiet. Integer erat ex, faucibus eget erat sed, ultricies condimentum dui. Etiam sit amet dolor in diam pellentesque gravida. Morbi ac sem magna. Morbi vitae leo a metus commodo hendrerit at ac eros. Mauris mattis ex in erat vulputate, tempor cursus lectus efficitur. Cras sollicitudin eu odio eu vestibulum.
+In  addition, we collaborate with the University of Edinburgh and our partners Bright Green Initiative to provide end-of-term collections for students. 
 
-### Earn
-
-Nunc hendrerit sed felis faucibus luctus. Aliquam pharetra sapien imperdiet, congue diam non, lacinia augue. Nulla placerat hendrerit dapibus. Donec cursus scelerisque maximus. Nunc egestas orci metus, id imperdiet nisi lobortis vel. Etiam et odio id justo sodales consequat sit amet eu purus. Nullam pulvinar odio in purus convallis, ac luctus quam blandit. Vestibulum quis mi vitae dui sollicitudin varius. Pellentesque ut laoreet urna. Morbi ut ex in metus vulputate bibendum eu vel orci. Pellentesque condimentum nisl libero, a tincidunt magna pulvinar id. Sed leo augue, dapibus nec molestie nec, tincidunt id ex. Sed vestibulum lacinia mollis. Nunc ligula ipsum, venenatis in tellus nec, accumsan volutpat sem. In scelerisque ipsum purus, id dapibus risus egestas nec.
+We spend the last week of May & first week of June each year collecting up all the stuff that students would otherwise throw away, sort it, weigh it, and store it over the summer for reuse.

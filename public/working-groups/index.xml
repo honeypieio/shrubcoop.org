@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Working-groups on Shrub Co-op</title>
+    <link>https://shrubcoop.org/working-groups/</link>
+    <description>Recent content in Working-groups on Shrub Co-op</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://shrubcoop.org/working-groups/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Swapshop</title>
+      <link>https://shrubcoop.org/working-groups/swapshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shrubcoop.org/working-groups/swapshop/</guid>
+      <description>How does swapping work? Maecenas finibus diam sit amet pellentesque pharetra. Morbi vitae nulla a eros pulvinar volutpat sed auctor augue. Maecenas vitae finibus turpis. Praesent porta ultrices tellus quis sollicitudin. Proin rhoncus lorem quis leo dictum imperdiet. Quisque id ipsum ex. Nunc nisl ipsum, finibus at ullamcorper eu, aliquet eget orci.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nibh, semper id sollicitudin at, consequat in tortor.</description>
+    </item>
+    
+    <item>
+      <title>Food Sharing</title>
+      <link>https://shrubcoop.org/working-groups/food-sharing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shrubcoop.org/working-groups/food-sharing/</guid>
+      <description>What is food sharing all about? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nibh, semper id sollicitudin at, consequat in tortor. Integer accumsan nunc dignissim, sodales odio ac, porta dui. Nullam eu nulla vitae lorem lacinia tempus molestie nec quam. Mauris commodo, enim vitae aliquet dignissim, dolor metus ullamcorper eros, vel mollis enim libero ut ante. Praesent rutrum nec velit et pulvinar. Nulla rutrum dui ut volutpat malesuada.</description>
+    </item>
+    
+    <item>
+      <title>Wee Spoke Hub</title>
+      <link>https://shrubcoop.org/working-groups/wee-spoke-hub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shrubcoop.org/working-groups/wee-spoke-hub/</guid>
+      <description>What even is a bike? A bicycle, also called a cycle or bike, is a human-powered or motor-powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other. A bicycle rider is called a cyclist, or bicyclist.
+Bicycles were introduced in the late 19th century in Europe, and by the early 21st century, more than 1 billion have been produced worldwide. These numbers far exceed the number of cars, both in total and ranked by the number of individual models produced.</description>
+    </item>
+    
+    <item>
+      <title>Workshops</title>
+      <link>https://shrubcoop.org/working-groups/workshops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shrubcoop.org/working-groups/workshops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cineshrub</title>
+      <link>https://shrubcoop.org/working-groups/cineshrub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shrubcoop.org/working-groups/cineshrub/</guid>
+      <description>Cineshrub shows films sometimes about social justice</description>
+    </item>
+    
+  </channel>
+</rss>
