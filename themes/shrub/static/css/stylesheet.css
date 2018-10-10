@@ -16,8 +16,21 @@
 	}
 }
 
+.btn-dark {
+	background-color: #333;
+	border-radius: 20px;
+}
+
+.text-red {
+	color: #c92229 !important;
+}
+
 .plain {
 	color: black;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 .aleo {
@@ -205,3 +218,4 @@ nav {
 .cineshrub-bg {
 	background-color: #0074b8;	
 }
+

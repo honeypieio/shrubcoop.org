@@ -3,6 +3,8 @@ languageCode = "en-gb"
 title = "Shrub Co-op"
 theme = "shrub"
 
+pluralizelisttitles = "false"
+
 [taxonomies]
    tag = "tags"
    category = "categories"
