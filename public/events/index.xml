@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Shrub Co-op</title>
+    <link>https://shrubcoop.org/events/</link>
+    <description>Recent content in Events on Shrub Co-op</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://shrubcoop.org/events/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SHRUB Relaunch Party!</title>
+      <link>https://shrubcoop.org/events/first-event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shrubcoop.org/events/first-event/</guid>
+      <description>SHRUB has evolved - right now is a really exciting time in our history, we&amp;rsquo;ve just expanded to our new location on Bread Street, opened a new upcycling workshop, and reinvented the Wee Spoke Hub.
+We&amp;rsquo;ve organised an evening of speakers and live entertainment, as well as interactive stalls showcasing our different projects.
+There will be&amp;hellip; Upcycling activities, DIY bike maintenance advice from the The Wee Spoke Hub, Nibbles provided by Food Sharing Edinburgh, and refreshments available from the brand new SHRUB Café!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -82,7 +82,11 @@
       </div>
 
 
+<<<<<<< HEAD
       {{ range first 5 (where (index .Site.Taxonomies.categories .Params.identifier).Pages "Section" "events") }}
+=======
+      {{ range first 1 (where (index .Site.Taxonomies.categories .Params.identifier).Pages "Section" "events") }}
+>>>>>>> f079606db79340d037d99c6c4fa64e9e62ee0e34
 
           <div class="pt-4">
             <h1 class="aleo">{{ .Title }}</h1>
@@ -122,6 +126,10 @@
     <div class="container">
       <h1 class="aleo {{ .Params.identifier }} text-center">BLOG POSTS</h1>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f079606db79340d037d99c6c4fa64e9e62ee0e34
       {{ range first 5 (where (index .Site.Taxonomies.categories .Params.identifier).Pages "Section" "blog") }}
 
               <div class="pl-4 pt-4">
