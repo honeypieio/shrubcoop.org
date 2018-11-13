@@ -5,6 +5,7 @@
     tagline = "Learn how to fix your bike for free!"
 	address = "13 Guthrie Street, Edinburgh"
 	times = "Open 5pm to 9pm, Wednesday and Thursday"
+	alt = "“Wee Spoke Hub Button” – This is the link to our Wee Spoke Hub area of the site. Click here to read about the Shrub bike repair shop."
 +++
 
 # What even is a bike?

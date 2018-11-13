@@ -27,7 +27,7 @@
           <input type="text" class="form-control" id="lastName" placeholder="Last Name">
         </div>
         <div class="form-group">
-          <p>Shrub will use the information you provide on this form to email you monthly newsletter and other updates.</p>
+          <p>We will use the information you provide on this form to email you our monthly newsletter and other updates. Unsubscribe at any time!</p>
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="permissions">
@@ -62,7 +62,7 @@
   <div class="col-md-4 order-md-3">
     <div class="front-page-header sloped">
       <div class="container pl-3 pt-4">
-        <h1 class="text-white aleo pl-2">Volunteer with us!</h1>
+        <h1 class="text-white aleo pl-2">Sign up, be a volunteer!</h1>
         <div class="col-10">
           <h4 class="text-white aleo">Help shape Shrub's future, gain experience, join the community and meet new people!</h4>
         </div>
@@ -75,7 +75,7 @@
         <div class="pl-3 pt-4">
           <h1 class="aleo">{{ .Title }}</h1>
 
-          <p class="aleo">Posted {{ dateFormat "02/01/06" .Date }} | Expires {{ dateFormat "02/01/06" .Params.expires }} </p>
+          <p class="aleo">Posted: {{ dateFormat "02/01/06" .Date }} | Expires: {{ dateFormat "02/01/06" .ExpiryDate }} </p>
 
           <p class="aleo">{{ .Description }}</p>
           <p class="aleo"><a href="{{ .URL }}">Continue reading!</a></p>

@@ -5,6 +5,7 @@
     address = "22 Bread Street, Edinburgh"
     times = "12pm to 6pm, Wednesday to Saturday"
     weight = 2
+    alt = "Food Sharing Button – This is the link to our Food Sharing area of the site. Click here to read about our food sharing activities."
 +++
 
 # What is food sharing all about?

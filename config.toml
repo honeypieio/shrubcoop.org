@@ -16,28 +16,33 @@ pluralizelisttitles = "false"
     name = "Events"
     url = "/events/"
     weight = 1
+    pre = "This is the link to the Events section of the site. Click here to read about our latest events"
 
   [[menu.main]]
   	identifier = "blog"
     name = "Blog"
     url = "/blog/"
     weight = 2
+    pre = "This is the link to the Blog section of the site. Click here to read our latest blog posts"
 
   [[menu.main]]
   	identifier = "get-involved"
     name = "Get Involved"
     url = "/get-involved/"
     weight = 3
+    pre = "This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
 
   [[menu.main]]
   	identifier = "contact"
     name = "Contact"
     url = "/contact/"
     weight = 4
+    pre = "This is the Contact section of the site. Click here to find out how to send us an email."
 
   [[menu.main]]
   	identifier = "about-us"
     name = "About Us"
     url = "/about-us/"
     weight = 5
+    pre = "Click this link to find out about us and why we exist."
 

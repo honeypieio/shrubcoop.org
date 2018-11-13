@@ -55,7 +55,7 @@
                           {{ .Params.times }}
                         </p>
 
-                        <h4><a href="/working-groups/{{ .Params.identifier }}">Find out more!</a></h4>
+                        <h4><a href="/working-groups/{{ .Params.identifier }}" title="{{ .Params.alt }}">Find out more!</a></h4>
 
                       </div>
 
@@ -111,7 +111,7 @@
             <p class="aleo text-white">By {{ .Params.author }} | {{ dateFormat "02/01/06" .Date }} </p>
 
             <p class="aleo text-white">{{ .Description }}</p>
-            <p class="aleo"><a href="{{ .URL }}">Continue reading!</a></p>
+            <p class="aleo"><a href="{{ .URL }}" title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading.">Continue reading!</a></p>
           </div>
         {{ end }}
       </div>
@@ -126,7 +126,7 @@
             <h1 class="aleo text-white">{{ .Title }}</h1>
             <p class="aleo text-white">{{ .Description }}</p>
             <p class="aleo text-white">{{ .Params.time }} @ {{ .Params.location }} | Hosted by {{ .Params.author }}</p>
-            <a href="{{ .URL }}">More info</a>
+            <a href="{{ .URL }}" title="Latest event: {{ .Title }} – click this link to read more about this event.">More info</a>
           </div>
         {{ end }}
       </div>

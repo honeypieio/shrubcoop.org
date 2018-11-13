@@ -6,6 +6,7 @@ weight = 1
 tagline = "Swap, Buy & Earn goods to save carbon through creating a circular economy. Come and swap now!"
 address = "22 Bread Street, Edinburgh"
 times = "Open 1pm to 6pm, Wednesday to Saturday"
+alt = "SwapShop Button – This is the link to the swapshop area of the site. Click here to read about the Shrub Swapshop."
 
 +++
 

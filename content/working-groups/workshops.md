@@ -4,6 +4,7 @@
     tagline = "Learn how to make and do stuff!"
     address = "17 Guthrie Street, Edinburgh"
     weight = 4
+    alt = "Workshops Button – This is the link to the Workshops area of the site. Click here to read about our creative workshops."
 +++
 
 We host workshops to teach such skills as how to make:
