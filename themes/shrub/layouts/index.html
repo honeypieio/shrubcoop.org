@@ -151,10 +151,14 @@
   }
 
 $.ajax({
-    url: "https://murakami.org.uk/api/get/reports/this-year/carbon-saved",
+    url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved",
     type: 'GET',
     success: function(res) {
-        $("#carbonCounter").text(res + " tonnes of carbon saved this year!");
+      console.log(parseFloat(res) == NaN);
+      if(!parseFloat(res)){
+        res = 0.000.toFixed(3);
+      }
+      $("#carbonCounter").text(res + " tonnes of carbon saved this year!");
     }
 });
 </script>
