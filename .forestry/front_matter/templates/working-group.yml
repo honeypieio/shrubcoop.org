@@ -1,0 +1,45 @@
+---
+label: Working Group
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  description: Title of working group
+  config:
+    required: true
+- type: number
+  label: Order
+  name: weight
+  description: Order in which working groups appear
+  config:
+    required: true
+- type: text
+  name: tagline
+  label: Tagline
+  description: Sort summary
+  config:
+    required: true
+- type: text
+  name: address
+  label: Address
+  description: Address, if applicable
+- type: text
+  name: times
+  label: Opening Times
+  description: Opening times, if applicable
+  config:
+    required: true
+- type: text
+  name: alt
+  label: Alternative Text
+  config:
+    required: true
+  description: Describes working group button for screen readers
+- type: color
+  name: colour
+  config:
+    color_format: Hex
+  label: Colour
+  description: Working group accent colour
