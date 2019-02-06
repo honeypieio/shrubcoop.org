@@ -9,6 +9,8 @@ sections:
   label: Working groups
   create: all
   match: "**/*"
+  templates:
+  - working-group
 - type: directory
   path: content/events
   label: Events
