@@ -1,118 +1,131 @@
 {{ define "main" }}
 
 <div class="row">
-
   <div class="col-md-4 order-md-2">
     <div class="front-page-header sloped" style="padding-bottom: 50px;">
-
       <div class="row pt-4 pl-2">
         <div class="col-6 offset-md-1 col-md-6 mx-auto pt-3">
-
           <div class="row">
             <div id="front-page-header" class="pt-3">
+              <center id="default-header">
+                <h1
+                  style="font-family: Shrub; font-size: 102px; line-height: 0.75;"
+                >
+                  SHRUB
+                </h1>
+                <p
+                  style="font-family: Aleo; font-size: 14px; line-height: 0.8;"
+                >
+                  Community-led co-operative in Edinburgh
+                </p>
+                <h3
+                  style="font-family: Aleo; font-size: 36px; line-height: 0.8;"
+                >
+                  FOR A WORLD
+                </h3>
+                <h1
+                  style="font-family: Aleo; font-size: 56px; line-height: 0.8;"
+                >
+                  WITHOUT
+                </h1>
+                <h3
+                  style="font-family: Aleo; font-size: 42px; line-height: 0.8;"
+                >
+                  WASTE
+                </h3>
 
-                <center id="default-header">
-                  <h1 style="font-family: Shrub; font-size: 102px; line-height: 0.75;">
-                    SHRUB
-                  </h1>
-                  <p style="font-family: Aleo; font-size: 14px; line-height: 0.8;">
-                    Community-led co-operative in Edinburgh
-                  </p>
-                  <h3 style="font-family: Aleo; font-size: 36px; line-height: 0.8;">
-                    FOR A WORLD
-                  </h3>
-                  <h1 style="font-family: Aleo; font-size: 56px; line-height: 0.8;">
-                    WITHOUT
-                  </h1>
-                  <h3 style="font-family: Aleo; font-size: 42px; line-height: 0.8;">
-                    WASTE
-                  </h3>
+                <br />
 
-                  <br />
-
-                  <h3 id="carbonCounter" class="aleo"></h3>
-
-                </center>
-
-                {{ range (where .Data.Pages "Type" "working-groups") }}
-
-                <div id="{{ .Params.identifier }}_info" class="working-group-synopsis d-none">
-                  <div class="row pt-0">
-
-                      <div class="container">
-
-                        <h1 class="shrub {{ .Params.identifier }}" style="font-size: 42px; padding-bottom: 0;">
-                          {{ .Title }}
-                        </h1>
-
-                        <h4 class="text-white">
-                          {{ .Params.tagline }}
-                        </h4>
-
-                        <p class="text-white">
-                          {{ .Params.address }}
-                        <br />
-                          {{ .Params.times }}
-                        </p>
-
-                        <h4><a href="/working-groups/{{ .Params.identifier }}" title="{{ .Params.alt }}">Find out more!</a></h4>
-
-                      </div>
-
-                  </div>
-
-                </div>
-
-                {{ end }}
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-4 col-md-4 mx-auto pr-3">
-
-          <div class="container ml-4">
+                <h3 id="carbonCounter" class="aleo"></h3>
+              </center>
 
               {{ range (where .Data.Pages "Type" "working-groups") }}
 
-              <center>
-                <a onclick="openInfo('{{ .Params.identifier }}')" class="working_group_link">
-                  <img src="/images/working-groups/{{ .Params.identifier }}.png" id="{{ .Params.identifier }}_icon" class="working_group_icon mx-auto" />
-                  <p class="shrub {{ .Params.identifier }} mx-auto">{{ .Name }}</p>
-                </a>
-              </center>
+              <div
+                id="{{ .Params.identifier }}_info"
+                class="working-group-synopsis d-none"
+              >
+                <div class="row pt-0">
+                  <div class="container">
+                    <h1
+                      class="shrub {{ .Params.identifier }}"
+                      style="font-size: 42px; padding-bottom: 0;"
+                    >
+                      {{ .Title }}
+                    </h1>
+
+                    <h4 class="text-white">{{ .Params.tagline }}</h4>
+
+                    <p class="text-white">
+                      {{ .Params.address }} <br />
+                      {{ .Params.times }}
+                    </p>
+
+                    <h4>
+                      <a
+                        href="{{.Site.BaseURL}}working-groups/{{ .Params.identifier }}"
+                        title="{{ .Params.alt }}"
+                        >Find out more!</a
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
 
               {{ end }}
-
+            </div>
           </div>
-
         </div>
 
+        <div class="col-4 col-md-4 mx-auto pr-3">
+          <div class="container ml-4">
+            {{ range (where .Data.Pages "Type" "working-groups") }}
+
+            <center>
+              <a
+                onclick="openInfo('{{ .Params.identifier }}')"
+                class="working_group_link"
+              >
+                <img
+                  src="/images/working-groups/{{ .Params.identifier }}.png"
+                  id="{{ .Params.identifier }}_icon"
+                  class="working_group_icon mx-auto"
+                />
+                <p class="shrub {{ .Params.identifier }} mx-auto">
+                  {{ .Name }}
+                </p>
+              </a>
+            </center>
+
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <img src="/images/map.png" class="map" />
-    </div>
-
+    <div class="row"><img src="/images/map.png" class="map" /></div>
   </div>
 
-
-
   <div class="col-md-4 order-md-1">
-
     <div class="latest-blog-header sloped">
       <div class="container">
         {{ range first 1 (where .Data.Pages "Type" "blog") }}
-          <div class="pl-3 pt-4">
-            <h1 class="aleo text-white">{{ .Title }}</h1>
+        <div class="pl-3 pt-4">
+          <h1 class="aleo text-white">{{ .Title }}</h1>
 
-            <p class="aleo text-white">By {{ .Params.author }} | {{ dateFormat "02/01/06" .Date }} </p>
+          <p class="aleo text-white">
+            By {{ .Params.author }} | {{ dateFormat "02/01/06" .Date }}
+          </p>
 
-            <p class="aleo text-white">{{ .Description }}</p>
-            <p class="aleo"><a href="{{ .URL }}" title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading.">Continue reading!</a></p>
-          </div>
+          <p class="aleo text-white">{{ .Description }}</p>
+          <p class="aleo">
+            <a
+              href="{{.Site.BaseURL}}{{ .URL }}"
+              title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading."
+              >Continue reading!</a
+            >
+          </p>
+        </div>
         {{ end }}
       </div>
     </div>
@@ -122,24 +135,27 @@
     <div class="events-header sloped">
       <div class="container">
         {{ range first 1 (where .Data.Pages "Type" "events") }}
-          <div class="pl-4 pt-4">
-            <h1 class="aleo text-white">{{ .Title }}</h1>
-            <p class="aleo text-white">{{ .Description }}</p>
-            <p class="aleo text-white">{{ .Params.time }} @ {{ .Params.location }} | Hosted by {{ .Params.author }}</p>
-            <a href="{{ .URL }}" title="Latest event: {{ .Title }} - click this link to read more about this event.">More info</a>
-          </div>
+        <div class="pl-4 pt-4">
+          <h1 class="aleo text-white">{{ .Title }}</h1>
+          <p class="aleo text-white">{{ .Description }}</p>
+          <p class="aleo text-white">
+            {{ .Params.time }} @ {{ .Params.location }} | Hosted by {{ .Params.author }}
+          </p>
+          <a
+            href="{{.Site.BaseURL}}{{ .URL }}"
+            title="Latest event: {{ .Title }} - click this link to read more about this event."
+            >More info</a
+          >
+        </div>
         {{ end }}
       </div>
     </div>
   </div>
-
 </div>
 
 <br />
 
-<div class="row">
-  <h1 class="aleo wee-spoke-hub mx-auto">GET INVOLVED</h1>
-</div>
+<div class="row"><h1 class="aleo wee-spoke-hub mx-auto">GET INVOLVED</h1></div>
 
 <script>
   function openInfo(workingGroup) {
@@ -150,17 +166,17 @@
     $("#" + workingGroup + "_info").removeClass("d-none");
   }
 
-$.ajax({
+  $.ajax({
     url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved",
-    type: 'GET',
+    type: "GET",
     success: function(res) {
       console.log(parseFloat(res) == NaN);
-      if(!parseFloat(res)){
-        res = 0.000.toFixed(3);
+      if (!parseFloat(res)) {
+        res = (0.0).toFixed(3);
       }
       $("#carbonCounter").text(res + " tonnes of carbon saved this year!");
     }
-});
+  });
 </script>
 
 {{ end }}

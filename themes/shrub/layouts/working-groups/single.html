@@ -40,9 +40,9 @@
 
     <div class="row">
 
-      
+
       <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
-        
+
       <h2 class="mt-2"><a href="#events" class="plain">Save the date!</a></h2>
 
     </div>
@@ -52,9 +52,9 @@
 
     <div class="row d-lg-none">
 
-      
+
       <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
-        
+
       <h2 class="mt-2"><a href="#main" class="plain">What we do</a></h2>
 
     </div>
@@ -64,9 +64,9 @@
 
     <div class="row d-lg-none">
 
-      
+
       <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
-        
+
       <h2 class="mt-2"><a href="#blog" class="plain">Blog posts</a></h2>
 
     </div>
@@ -89,7 +89,7 @@
             <h1 class="aleo">{{ .Title }}</h1>
             <p class="aleo">{{ .Description }}</p>
             <p class="aleo">{{ .Params.time }} @ {{ .Params.location }} &emsp;|&emsp; Hosted by {{ .Params.author }}</p>
-            <a href="{{ .URL }}">More info</a>
+            <a href="{{.Site.BaseURL}}{{ .URL }}">More info</a>
           </div>
 
           <hr />
@@ -131,7 +131,7 @@
                 <p class="aleo">By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }} </p>
 
                 <p class="aleo">{{ .Description }}</p>
-                <p class="aleo"><a href="{{ .URL }}">Continue reading!</a></p>
+                <p class="aleo"><a href="{{.Site.BaseURL}}{{ .URL }}">Continue reading!</a></p>
               </div>
 
       {{ end }}
