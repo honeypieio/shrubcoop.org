@@ -34,3 +34,5 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
+pages:
+- content/events/potato-peeling.md
