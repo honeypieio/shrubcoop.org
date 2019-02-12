@@ -8,10 +8,11 @@ fields:
   label: Title
   config:
     required: true
-- type: field_group_list
+- type: text
   name: author
   label: Author
-  description: Who gone did write it
+  config:
+    required: true
 - type: text
   name: location
   label: Location
