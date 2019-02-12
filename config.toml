@@ -2,7 +2,6 @@ baseURL = "https://shrubcoop.org/"
 languageCode = "en-gb"
 title = "Shrub Co-op"
 theme = "shrub"
-publishDir = "docs"
 
 pluralizelisttitles = "false"
 
