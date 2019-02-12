@@ -1,0 +1,35 @@
+---
+label: Events
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: field_group_list
+  name: author
+  label: Author
+  description: Who gone did write it
+- type: text
+  name: location
+  label: Location
+  description: Where the event is taking place
+  config:
+    required: true
+- type: datetime
+  label: Date
+  name: time
+  description: When the event is taking place
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+  description: A short description of the event.
+  config:
+    required: true
+- type: tag_list
+  name: tags
+  label: Tags
