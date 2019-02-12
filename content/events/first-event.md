@@ -1,12 +1,12 @@
 +++
-title = "SHRUB Relaunch Party!"
 author = "Workshops"
+categories = ["Swapshop", "Food Sharing"]
+description = "We'd love to welcome you to our new Swapshop to celebrate what we've achieved so far and look forward to the future!"
 location = "22 Bread Street"
 time = "26/09/18 6pm"
-description = "We'd love to welcome you to our new Swapshop to celebrate what we've achieved so far and look forward to the future!"
-categories = ["swapshop", "food-sharing"]
-+++
+title = "SHRUB Relaunch Party!"
 
++++
 SHRUB has evolved - right now is a really exciting time in our history, we've just expanded to our new location on Bread Street, opened a new upcycling workshop, and reinvented the Wee Spoke Hub.
 
 We've organised an evening of speakers and live entertainment, as well as interactive stalls showcasing our different projects.
