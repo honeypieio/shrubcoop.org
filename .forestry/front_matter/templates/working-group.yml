@@ -30,7 +30,7 @@ fields:
   label: Opening Times
   description: Opening times, if applicable
   config:
-    required: true
+    required: false
 - type: text
   name: alt
   label: Alternative Text
@@ -43,3 +43,9 @@ fields:
     color_format: Hex
   label: Colour
   description: Working group accent colour
+- type: file
+  name: working_group_logo
+  label: Working Group Logo
+  description: Upload this working group's logo.
+  config:
+    maxSize: '5'
