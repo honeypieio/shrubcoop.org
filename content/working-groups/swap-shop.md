@@ -7,6 +7,6 @@ tagline = "Swap, Buy & Earn goods to save carbon through creating a circular eco
 times = "Open 1pm to 6pm, Wednesday to Saturday"
 title = "Swap Shop"
 weight = 1
-working_group_logo = "/v1549983099/shrubcoop.org/media/swapshop.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1549983099/shrubcoop.org/media/swapshop.png"
 
 +++
