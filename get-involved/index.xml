@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Get Involved on Shrub Co-op</title>
-    <link>https://shrubcoop.org/get-involved/</link>
+    <link>https://honeypieio.github.com/shrubcoop.org/get-involved/</link>
     <description>Recent content in Get Involved on Shrub Co-op</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="https://shrubcoop.org/get-involved/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://honeypieio.github.com/shrubcoop.org/get-involved/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
