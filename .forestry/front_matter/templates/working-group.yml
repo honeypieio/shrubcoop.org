@@ -49,3 +49,5 @@ fields:
   description: Upload this working group's logo.
   config:
     maxSize: '5'
+pages:
+- content/working-groups/swap-shop.md
