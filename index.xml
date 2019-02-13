@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Shrub Co-op</title>
-    <link>https://shrubcoop.org/</link>
+    <link>https://shrub.space/</link>
     <description>Recent content in Home on Shrub Co-op</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 12 Feb 2019 14:51:46 +0000</lastBuildDate>
     
-	<atom:link href="https://shrubcoop.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shrub.space/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Swap Shop</title>
-      <link>https://shrubcoop.org/working-groups/swap-shop/</link>
+      <link>https://shrub.space/working-groups/swap-shop/</link>
       <pubDate>Tue, 12 Feb 2019 14:51:46 +0000</pubDate>
       
-      <guid>https://shrubcoop.org/working-groups/swap-shop/</guid>
+      <guid>https://shrub.space/working-groups/swap-shop/</guid>
       <description>Test</description>
     </item>
     
     <item>
       <title>Food Sharing</title>
-      <link>https://shrubcoop.org/working-groups/food-sharing/</link>
+      <link>https://shrub.space/working-groups/food-sharing/</link>
       <pubDate>Tue, 12 Feb 2019 17:40:58 +0000</pubDate>
       
-      <guid>https://shrubcoop.org/working-groups/food-sharing/</guid>
+      <guid>https://shrub.space/working-groups/food-sharing/</guid>
       <description>Info about food sharing</description>
     </item>
     
     <item>
       <title>A new article</title>
-      <link>https://shrubcoop.org/blog/a-new-article/</link>
+      <link>https://shrub.space/blog/a-new-article/</link>
       <pubDate>Wed, 13 Feb 2019 09:09:00 +0000</pubDate>
       
-      <guid>https://shrubcoop.org/blog/a-new-article/</guid>
+      <guid>https://shrub.space/blog/a-new-article/</guid>
       <description>This is where the blog goes.</description>
     </item>
     
     <item>
       <title>Potato peeling</title>
-      <link>https://shrubcoop.org/events/potato-peeling/</link>
+      <link>https://shrub.space/events/potato-peeling/</link>
       <pubDate>Tue, 12 Feb 2019 16:18:48 +0000</pubDate>
       
-      <guid>https://shrubcoop.org/events/potato-peeling/</guid>
+      <guid>https://shrub.space/events/potato-peeling/</guid>
       <description>Peel potatoes, please</description>
     </item>
     
     <item>
       <title>New Beginnings</title>
-      <link>https://shrubcoop.org/blog/new-beginnings/</link>
+      <link>https://shrub.space/blog/new-beginnings/</link>
       <pubDate>Wed, 26 Sep 2018 15:34:58 +0100</pubDate>
       
-      <guid>https://shrubcoop.org/blog/new-beginnings/</guid>
+      <guid>https://shrub.space/blog/new-beginnings/</guid>
       <description>This is a post all about the new swapshop and the stuff we gone and did!</description>
     </item>
     
     <item>
       <title>Our New Swapshop!</title>
-      <link>https://shrubcoop.org/blog/first-post/</link>
+      <link>https://shrub.space/blog/first-post/</link>
       <pubDate>Wed, 26 Sep 2018 15:34:58 +0100</pubDate>
       
-      <guid>https://shrubcoop.org/blog/first-post/</guid>
+      <guid>https://shrub.space/blog/first-post/</guid>
       <description>This is a post all about the new swapshop and the stuff we gone and did!</description>
     </item>
     
     <item>
       <title>About Us</title>
-      <link>https://shrubcoop.org/about-us/</link>
+      <link>https://shrub.space/about-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shrubcoop.org/about-us/</guid>
+      <guid>https://shrub.space/about-us/</guid>
       <description>SHRUB is a thing!!!</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://shrubcoop.org/contact/</link>
+      <link>https://shrub.space/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shrubcoop.org/contact/</guid>
+      <guid>https://shrub.space/contact/</guid>
       <description>Email us at shrub@shrubcoop.org</description>
     </item>
     
     <item>
       <title>SHRUB Relaunch Party!</title>
-      <link>https://shrubcoop.org/events/first-event/</link>
+      <link>https://shrub.space/events/first-event/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shrubcoop.org/events/first-event/</guid>
+      <guid>https://shrub.space/events/first-event/</guid>
       <description>SHRUB has evolved - right now is a really exciting time in our history, we&amp;rsquo;ve just expanded to our new location on Bread Street, opened a new upcycling workshop, and reinvented the Wee Spoke Hub.
 We&amp;rsquo;ve organised an evening of speakers and live entertainment, as well as interactive stalls showcasing our different projects.
 There will be&amp;hellip; Upcycling activities, DIY bike maintenance advice from the The Wee Spoke Hub, Nibbles provided by Food Sharing Edinburgh, and refreshments available from the brand new SHRUB Café!</description>
