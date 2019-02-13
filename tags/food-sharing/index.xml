@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Food Sharing on Shrub Co-op</title>
+    <link>https://shrubcoop.org/tags/food-sharing/</link>
+    <description>Recent content in Food Sharing on Shrub Co-op</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 12 Feb 2019 16:18:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://shrubcoop.org/tags/food-sharing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Potato peeling</title>
+      <link>https://shrubcoop.org/events/potato-peeling/</link>
+      <pubDate>Tue, 12 Feb 2019 16:18:48 +0000</pubDate>
+      
+      <guid>https://shrubcoop.org/events/potato-peeling/</guid>
+      <description>Peel potatoes, please</description>
+    </item>
+    
+  </channel>
+</rss>

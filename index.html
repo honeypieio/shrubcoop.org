@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta name="generator" content="Hugo 0.53" /><link
+	<meta name="generator" content="Hugo 0.53" /><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://shrubcoop.orgfonts/shrub.ttf') format('truetype');;
+  }
+
+  @font-face {
+  	font-family: 'Aleo';
+  	src: url('https://shrubcoop.orgfonts/Aleo-Regular.ttf') format('truetype');;
+  }
+
+</style>
+
+<link
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
   crossorigin="anonymous"
 />
-<link rel="stylesheet" href="https://honeypieio.github.io/shrubcoop.org/css/stylesheet.css" />
+<link rel="stylesheet" href="https://shrubcoop.orgcss/stylesheet.css" />
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -34,19 +48,21 @@
 <title>Home | Shrub Co-operative</title>
 </head>
     <body><nav
-  id="bootstarp-menu"
+  id="bootstrap-menu"
   class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
 >
   <a
     class="navbar-brand ml-5"
     title="Shrub Co-op Logo - this is the Shrub Home Button. Click here to go back to the Shrub landing page."
-    href="https://honeypieio.github.io/shrubcoop.org/"
+    href="https://shrubcoop.org"
   >
-    <div>
-      <center><p class="heading mx-auto mb-1">SHRUB</p></center>
-      <center>
-        <p class="sub-heading mx-auto" style="line-height: 0;">CO-OP</p>
-      </center>
+    <div style="top: -15px;">
+      <h1 class="text-center shrub" style="line-height:0.85;">
+        SHRUB
+      </h1>
+      <h3 class="text-center shrub" style="line-height:0;" >
+        CO-OP
+      </h3>
     </div>
   </a>
 
@@ -60,12 +76,15 @@
     aria-label="Toggle navigation"
   >
     <span class="navbar-toggler-icon-custom"
-      >MENU <span class="navbar-carrot">&#9660;</span>
+      >MENU &#9660;
     </span>
   </button>
 
-  <div class="container">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding: 20px;
+    margin-top: 3px;
+    margin-left: -17px;
+    margin-right: -17px;">
       <ul class="navbar-nav mx-auto">
          
         <li
@@ -74,7 +93,7 @@
           <a
             class="nav-link text-white"
             title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
-            href="/shrubcoop.org/events/"
+            href="/events/"
             >Events</a
           >
         </li>
@@ -85,7 +104,7 @@
           <a
             class="nav-link text-white"
             title="Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
-            href="/shrubcoop.org/blog/"
+            href="/blog/"
             >Blog</a
           >
         </li>
@@ -96,7 +115,7 @@
           <a
             class="nav-link text-white"
             title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
-            href="/shrubcoop.org/get-involved/"
+            href="/get-involved/"
             >Get Involved</a
           >
         </li>
@@ -107,7 +126,7 @@
           <a
             class="nav-link text-white"
             title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
-            href="/shrubcoop.org/contact/"
+            href="/contact/"
             >Contact</a
           >
         </li>
@@ -118,144 +137,142 @@
           <a
             class="nav-link text-white"
             title="About Us - Click this link to find out about us and why we exist."
-            href="/shrubcoop.org/about-us/"
+            href="/about-us/"
             >About Us</a
           >
         </li>
         
       </ul>
     </div>
-  </div>
+
 </nav>
 <br />
         <br />
         <br />
 
 <div class="row">
-  <div class="col-md-4 order-md-2">
-    <div class="front-page-header sloped" style="padding-bottom: 50px;">
-      <div class="row pt-4 pl-2">
-        <div class="col-6 offset-md-1 col-md-6 mx-auto pt-3">
-          <div class="row">
-            <div id="front-page-header" class="pt-3">
-              <center id="default-header">
-                <h1
-                  style="font-family: Shrub; font-size: 102px; line-height: 0.75;"
-                >
-                  SHRUB
-                </h1>
-                <p
-                  style="font-family: Aleo; font-size: 14px; line-height: 0.8;"
-                >
-                  Community-led co-operative in Edinburgh
-                </p>
-                <h3
-                  style="font-family: Aleo; font-size: 36px; line-height: 0.8;"
-                >
-                  FOR A WORLD
-                </h3>
-                <h1
-                  style="font-family: Aleo; font-size: 56px; line-height: 0.8;"
-                >
-                  WITHOUT
-                </h1>
-                <h3
-                  style="font-family: Aleo; font-size: 42px; line-height: 0.8;"
-                >
-                  WASTE
-                </h3>
+  <div class="col-lg-4 order-lg-2">
+    <div class="front-page-header sloped" style="padding-bottom: 100px;">
+      <div class="row pt-4 pb-4 pl-4 pr-4">
+        <div class="col-md-7 col-12 mx-auto">
 
-                <br />
-
-                <h3 id="carbonCounter" class="aleo"></h3>
-              </center>
-
-              
-
-              <div
-                id="_info"
-                class="working-group-synopsis d-none"
+          <div id="front-page-header" class="mx-auto">
+            <center id="default-header">
+              <h1
+                style="font-family: Shrub; font-size: 102px; line-height: 0.75;"
               >
-                <div class="row pt-0">
-                  <div class="container">
-                    <h1
-                      class="shrub "
-                      style="font-size: 42px; padding-bottom: 0;"
+                SHRUB
+              </h1>
+              <p
+                style="font-family: Aleo; font-size: 14px; line-height: 0.8;"
+              >
+                Community-led co-operative in Edinburgh
+              </p>
+              <h3
+                style="font-family: Aleo; font-size: 36px; line-height: 0.8;"
+              >
+                FOR A WORLD
+              </h3>
+              <h1
+                style="font-family: Aleo; font-size: 56px; line-height: 0.8;"
+              >
+                WITHOUT
+              </h1>
+              <h3
+                style="font-family: Aleo; font-size: 42px; line-height: 0.8;"
+              >
+                WASTE
+              </h3>
+
+              <br />
+
+              <h3 id="carbonCounter" class="aleo"></h3>
+            </center>
+
+            
+
+            <div
+              id="swap-shop_info"
+              class="working-group-synopsis d-none"
+            >
+              <div class="row pt-0 pl-4 mb-4">
+                <div class="container">
+                  <h1
+                    class="shrub"
+                    style="font-size: 42px; padding-bottom: 0; color: #AB0C17;"
+                  >
+                    Swap Shop
+                  </h1>
+
+                  <h4 class="text-white">Swap, Buy &amp; Earn goods to save carbon through creating a circular economy. Come and swap now!</h4>
+
+                  <p class="text-white">
+                    22 Bread Street, Edinburgh <br />
+                    Open 1pm to 6pm, Wednesday to Saturday
+                  </p>
+
+                  <h4>
+                    <a
+                      href="https://shrubcoop.org/working-groups/swap-shop/"
+                      title="Swap Shop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
+                      >Find out more!</a
                     >
-                      Swap Shop
-                    </h1>
-
-                    <h4 class="text-white">Swap, Buy &amp; Earn goods to save carbon through creating a circular economy. Come and swap now!</h4>
-
-                    <p class="text-white">
-                      22 Bread Street, Edinburgh <br />
-                      Open 1pm to 6pm, Wednesday to Saturday
-                    </p>
-
-                    <h4>
-                      <a
-                        href="https://honeypieio.github.io/shrubcoop.org/working-groups/"
-                        title="Swap Shop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
-                        >Find out more!</a
-                      >
-                    </h4>
-                  </div>
+                  </h4>
                 </div>
               </div>
-
-              
-
-              <div
-                id="_info"
-                class="working-group-synopsis d-none"
-              >
-                <div class="row pt-0">
-                  <div class="container">
-                    <h1
-                      class="shrub "
-                      style="font-size: 42px; padding-bottom: 0;"
-                    >
-                      Food Sharing
-                    </h1>
-
-                    <h4 class="text-white">Sharing food init</h4>
-
-                    <p class="text-white">
-                      22 Bread Street, Edinburgh <br />
-                      12pm to 6pm, Wednesday to Saturday
-                    </p>
-
-                    <h4>
-                      <a
-                        href="https://honeypieio.github.io/shrubcoop.org/working-groups/"
-                        title="Food Sharing Button – This is the link to our Food Sharing area of the site. Click here to read about our food sharing activities."
-                        >Find out more!</a
-                      >
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              
             </div>
+
+            
+
+            <div
+              id="food-sharing_info"
+              class="working-group-synopsis d-none"
+            >
+              <div class="row pt-0 pl-4 mb-4">
+                <div class="container">
+                  <h1
+                    class="shrub"
+                    style="font-size: 42px; padding-bottom: 0; color: #137A0A;"
+                  >
+                    Food Sharing
+                  </h1>
+
+                  <h4 class="text-white">Sharing food init</h4>
+
+                  <p class="text-white">
+                    22 Bread Street, Edinburgh <br />
+                    12pm to 6pm, Wednesday to Saturday
+                  </p>
+
+                  <h4>
+                    <a
+                      href="https://shrubcoop.org/working-groups/food-sharing/"
+                      title="Food Sharing Button – This is the link to our Food Sharing area of the site. Click here to read about our food sharing activities."
+                      >Find out more!</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            
           </div>
         </div>
-
-        <div class="col-4 col-md-4 mx-auto pr-3">
-          <div class="container ml-4">
+        <div class="col-md-4 ml-0 mx-auto d-none d-md-block">
+          <div class="container ml-2 mx-auto">
             
 
             <center>
               <a
-                onclick="openInfo('')"
+                onclick="openInfo('swap-shop')"
                 class="working_group_link"
               >
                 <img
-                  src="/images/working-groups/.png"
-                  id="_icon"
+                  src="https://res.cloudinary.com/shrub-co-op/image/upload/v1549983099/shrubcoop.org/media/swapshop.png"
+                  id="swap-shop_icon"
                   class="working_group_icon mx-auto"
                 />
-                <p class="shrub  mx-auto">
+                <p class="shrub swap-shop mx-auto" style="color:#AB0C17;">
                   Swap Shop
                 </p>
               </a>
@@ -265,15 +282,15 @@
 
             <center>
               <a
-                onclick="openInfo('')"
+                onclick="openInfo('food-sharing')"
                 class="working_group_link"
               >
                 <img
-                  src="/images/working-groups/.png"
-                  id="_icon"
+                  src="https://res.cloudinary.com/shrub-co-op/image/upload/v1549993247/shrubcoop.org/media/food-sharing.png"
+                  id="food-sharing_icon"
                   class="working_group_icon mx-auto"
                 />
-                <p class="shrub  mx-auto">
+                <p class="shrub food-sharing mx-auto" style="color:#137A0A;">
                   Food Sharing
                 </p>
               </a>
@@ -284,11 +301,10 @@
         </div>
       </div>
     </div>
-
-    <div class="row"><img src="/images/map.png" class="map" /></div>
+    
   </div>
 
-  <div class="col-md-4 order-md-1">
+  <div class="col-lg-4 order-lg-1 d-none d-lg-block">
     <div class="latest-blog-header sloped">
       <div class="container">
         
@@ -302,7 +318,7 @@
           <p class="aleo text-white">This is the description of a blog.</p>
           <p class="aleo">
             <a
-              href="https://honeypieio.github.io/shrubcoop.org//shrubcoop.org/blog/a-new-article/"
+              href="https://shrubcoop.org/blog/a-new-article/"
               title="Blog post: A new article by Ross - click this link to continue reading."
               >Continue reading!</a
             >
@@ -313,7 +329,7 @@
     </div>
   </div>
 
-  <div class="col-md-4 order-md-3">
+  <div class="col-lg-4 order-lg-3 d-none d-lg-block">
     <div class="events-header sloped">
       <div class="container">
         
@@ -321,10 +337,10 @@
           <h1 class="aleo text-white">Potato peeling</h1>
           <p class="aleo text-white">Come and peel potatoes</p>
           <p class="aleo text-white">
-            2019-02-13T14:00:00&#43;00:00 @ 22 Bread Street | Hosted by Potato Man
+            13/02/19 14:00 @ 22 Bread Street | Hosted by Potato Man
           </p>
           <a
-            href="https://honeypieio.github.io/shrubcoop.org//shrubcoop.org/events/potato-peeling/"
+            href="https://shrubcoop.org/events/potato-peeling/"
             title="Latest event: Potato peeling - click this link to read more about this event."
             >More info</a
           >
@@ -337,7 +353,7 @@
 
 <br />
 
-<div class="row"><h1 class="aleo wee-spoke-hub mx-auto">GET INVOLVED</h1></div>
+<div class="row"><h1 class="aleo mx-auto" style="color: #fbbf11;">GET INVOLVED</h1></div>
 
 <script>
   function openInfo(workingGroup) {
@@ -352,7 +368,6 @@
     url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved",
     type: "GET",
     success: function(res) {
-      console.log(parseFloat(res) == NaN);
       if (!parseFloat(res)) {
         res = (0.0).toFixed(3);
       }
