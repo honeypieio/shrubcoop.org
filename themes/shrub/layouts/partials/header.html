@@ -1,5 +1,5 @@
 <nav
-  id="bootstarp-menu"
+  id="bootstrap-menu"
   class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
 >
   <a
@@ -7,11 +7,13 @@
     title="Shrub Co-op Logo - this is the Shrub Home Button. Click here to go back to the Shrub landing page."
     href="{{.Site.BaseURL}}"
   >
-    <div>
-      <center><p class="heading mx-auto mb-1">SHRUB</p></center>
-      <center>
-        <p class="sub-heading mx-auto" style="line-height: 0;">CO-OP</p>
-      </center>
+    <div style="top: -15px;">
+      <h1 class="text-center shrub" style="line-height:0.85;">
+        SHRUB
+      </h1>
+      <h3 class="text-center shrub" style="line-height:0;" >
+        CO-OP
+      </h3>
     </div>
   </a>
 
@@ -25,12 +27,15 @@
     aria-label="Toggle navigation"
   >
     <span class="navbar-toggler-icon-custom"
-      >MENU <span class="navbar-carrot">&#9660;</span>
+      >MENU &#9660;
     </span>
   </button>
 
-  <div class="container">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding: 20px;
+    margin-top: 3px;
+    margin-left: -17px;
+    margin-right: -17px;">
       <ul class="navbar-nav mx-auto">
         {{ $currentPage := . }} {{ range .Site.Menus.main }}
         <li
@@ -47,5 +52,5 @@
         {{ end }}
       </ul>
     </div>
-  </div>
+
 </nav>

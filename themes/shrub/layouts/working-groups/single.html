@@ -9,7 +9,7 @@
     		<div class="col-9 offset-1">
 		    	<div class="container">
 
-		    		<h1 class="shrub {{ .Params.identifier }}" style="font-size: 52px; padding-bottom: 0;">
+		    		<h1 class="shrub" style="font-size: 52px; padding-bottom: 0; color: {{.Params.colour}};">
 		    			{{ .Title }}
 		    		</h1>
 
@@ -30,9 +30,16 @@
             </p>
           </div>
         </div>
-        <div class="col-4">
-          <img src="/images/working-groups/{{ .Params.identifier }}.png" class="working_group_icon_large mx-auto" />
-          <h3 class="shrub {{ .Params.identifier }} mx-auto text-center">{{ .Title }}</h3>
+        <div class="col-5 ml-0">
+          <div class="container">
+            <img
+              src="{{ .Params.working_group_logo}}"
+              class="working_group_icon_large d-block mx-auto"
+            />
+            <h3 class="shrub {{urlize .Title }} text-center mx-auto" style="color:{{.Params.colour}};">
+              {{ .Name }}
+            </h3>
+          </div>
         </div>
       </div>
 
@@ -41,7 +48,7 @@
     <div class="row">
 
 
-      <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
+      <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
 
       <h2 class="mt-2"><a href="#events" class="plain">Save the date!</a></h2>
 
@@ -53,7 +60,7 @@
     <div class="row d-lg-none">
 
 
-      <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
+      <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
 
       <h2 class="mt-2"><a href="#main" class="plain">What we do</a></h2>
 
@@ -65,7 +72,7 @@
     <div class="row d-lg-none">
 
 
-      <div class="circle {{ .Params.identifier }}-bg" style="margin-left: -12px; margin-right: 15px"></div>
+      <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
 
       <h2 class="mt-2"><a href="#blog" class="plain">Blog posts</a></h2>
 
@@ -82,7 +89,7 @@
       </div>
 
 
-      {{ range first 5 (where (index .Site.Taxonomies.categories .Params.identifier).Pages "Section" "events") }}
+      {{ range first 5 (where (index .Site.Taxonomies.categories .Title).Pages "Section" "events") }}
 
 
           <div class="pt-4">
@@ -106,7 +113,7 @@
   <div class="col-lg-4 order-lg-2">
 
     <a name="main">
-      <div class="circle {{ .Params.identifier }}-bg mx-auto d-none d-lg-block" style="margin-top: -30px; margin-bottom: 30px;"></div>
+      <div class="circle mx-auto d-none d-lg-block" style="margin-top: -30px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
     </a>
     <div class="container">
       {{ .Content }}
@@ -118,21 +125,21 @@
     <br class="d-lg-none" />
     <br class="d-lg-none" />
     <a name="blog">
-      <div class="circle {{ .Params.identifier }}-bg mx-auto d-none d-lg-block" style="margin-top: -30px; margin-bottom: 30px;"></div>
+      <div class="circle mx-auto d-none d-lg-block" style="margin-top: -30px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
     </a>
     <div class="container">
-      <h1 class="aleo {{ .Params.identifier }} text-center">BLOG POSTS</h1>
+      <h1 class="aleo text-center" style="color: {{.Params.colour}};">BLOG POSTS</h1>
 
-      {{ range first 5 (where (index .Site.Taxonomies.categories .Params.identifier).Pages "Section" "blog") }}
+      {{ range first 5 (where (index .Site.Taxonomies.categories .Title).Pages "Section" "blog") }}
 
-              <div class="pl-4 pt-4">
-                <h1 class="aleo">{{ .Title }}</h1>
+          <div class="pl-4 pt-4">
+            <h1 class="aleo">{{ .Title }}</h1>
 
-                <p class="aleo">By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }} </p>
+            <p class="aleo">By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }} </p>
 
-                <p class="aleo">{{ .Description }}</p>
-                <p class="aleo"><a href="{{.Site.BaseURL}}{{ .URL }}">Continue reading!</a></p>
-              </div>
+            <p class="aleo">{{ .Description }}</p>
+            <p class="aleo"><a href="{{.Site.BaseURL}}{{ .URL }}">Continue reading!</a></p>
+          </div>
 
       {{ end }}
 
