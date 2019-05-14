@@ -246,4 +246,18 @@
   </div>
 </div>
 
+<script>
+
+  function getRoles(){
+    $.ajax({
+      url: "https://murakami.org.uk/api/get/volunteers/roles/get-public?key={{ .Site.Params.murakamiKey }}",
+      type: "GET",
+      success: function(response) {
+        console.log(response)
+      }
+    });
+  }
+
+</script>
+
 {{ end }}

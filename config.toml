@@ -3,6 +3,10 @@ languageCode = "en-gb"
 pluralizelisttitles = "false"
 theme = "shrub"
 title = "Shrub Co-op"
+
+[params]
+murakamiKey = "UUGLwdSBrFutmfmBnA8ccC4BC5DEVbVk"
+
 [[menu.main]]
 identifier = "about-us"
 name = "About Us"

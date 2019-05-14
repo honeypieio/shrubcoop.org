@@ -168,7 +168,7 @@
   }
 
   $.ajax({
-    url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved",
+    url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiKey }}",
     type: "GET",
     success: function(res) {
       if (!parseFloat(res)) {
