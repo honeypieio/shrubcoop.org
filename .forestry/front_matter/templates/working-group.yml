@@ -49,5 +49,5 @@ fields:
   config:
     maxSize: '5'
 pages:
-- content/working-groups/food-sharing.md
 - content/working-groups/swap-shop.md
+- content/working-groups/food-sharing.md
