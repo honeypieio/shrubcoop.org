@@ -1,6 +1,6 @@
 +++
 title = "Home"
 [menu.main]
-weight = 6
+weight = 1
 
 +++
