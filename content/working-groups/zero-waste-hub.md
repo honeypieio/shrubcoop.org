@@ -9,6 +9,8 @@ weight = 1
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565360321/shrubcoop.org/media/Zero_Waste_Hub_white_jiiist.png"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367405/shrubcoop.org/media/food_sharing_hub_7_jtbeh3.png)
+
 **Zero Waste Hub** is your one stop shop for sustainable living!
 
 You can swap your preloved things in our **Swapshop**, enjoy some rescued food from our **Food Sharing Hub**, or just hang out and grab a tea or coffee from our **cafe**.
