@@ -10,9 +10,13 @@ weight = 4
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358661/shrubcoop.org/media/Swap_Shop_white_xtq9kq.png"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365726/shrubcoop.org/media/food_sharing_hub_2_eoyib7.png)
+
 **Swap**, **donate** or **buy** affordable and high quality preloved clothing, books, shoes, bags, bric-a-brac and household items.
 
 Anyone is welcome to buy or donate items. **Become a member** and you can swap your items in exchange for tokens to use in-store.
+
+    &nbsp
 
 ### **How It Works**
 
