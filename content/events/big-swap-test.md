@@ -2,7 +2,7 @@
 author = "Rob"
 description = "Lets test what the description does"
 location = "Zero Waste Hub"
-tags = ["swapshop"]
+tags = []
 time = "2019-08-12T23:00:00+00:00"
 title = "Big Swap test"
 
