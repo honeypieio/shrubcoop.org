@@ -2,9 +2,11 @@
 title = "Contact"
 
 +++
-### Email us
+## **Email us**
 
 hello@shrubcoop.org
+
+## **Come visit us**
 
 ### Zero Waste Hub
 
