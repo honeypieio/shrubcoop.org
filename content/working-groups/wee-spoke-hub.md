@@ -29,13 +29,11 @@ We helped over **450** people to fix their own bikes in 2018 and the Wee Spoke H
 
 No! Anyone can come along for the Fix Your Own Bike workshops, however, as a member you get discounts on bicycle parts.
 
-##### **  
-Is the Wee Spoke Hub accessible?**
+##### **Is the Wee Spoke Hub accessible?**
 
 The Wee Spoke Hub workshop space is on the ground floor. The gender neutral toilet is located on the ground floor but is not accessible. If you have further questions regarding accessibility before a visit, please contact the Wee Spoke Hub on **0131 220 1884**.
 
-##### **  
-Is there nearby bicycle parking?**
+##### **Is there nearby bicycle parking?**
 
 There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street. We have indoor cycle rack for our workshop users.
 
