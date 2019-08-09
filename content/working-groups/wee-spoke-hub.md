@@ -9,6 +9,8 @@ weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358675/shrubcoop.org/media/Wee_Spoke_Hub_white_exi47h.png"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565364740/shrubcoop.org/media/Untitled_design_1_rclotw.png)
+
 The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechanic will help you learn the skills to take care of your bike. **Tools and expertise** is provided free of charge.
 
 Simply bring your bike along to one of our **Fix Your Own Bike** workshops on Tuesday and Thursday evenings, 5-8pm, and our team will check it over and guide you in any repairs it needs.
