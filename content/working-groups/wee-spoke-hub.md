@@ -2,7 +2,7 @@
 address = "13 Guthrie Street, EH1 1JG"
 alt = "Wee Spoke Hub Button – This is the link to the Wee Spoke Hub area of the site. Click here to read more about the Wee Spoke Hub."
 colour = "#EF7D00"
-tagline = "Community Bike Workshop - Fix Your Own Bike"
+tagline = "Community Bike Workshop"
 times = "Tuesdays and Thursdays, 5-8pm"
 title = "Wee Spoke Hub"
 weight = 2
