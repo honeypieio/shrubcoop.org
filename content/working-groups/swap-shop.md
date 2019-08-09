@@ -5,8 +5,8 @@ colour = "#AB0C17"
 date = "2019-02-12T14:51:46+00:00"
 tagline = "Swap, Buy, Donate!"
 times = "Open 12pm to 5pm, Wednesday to Saturday"
-title = "Swap Shop"
-weight = 1
+title = "Swapshop"
+weight = 4
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358661/shrubcoop.org/media/Swap_Shop_white_xtq9kq.png"
 
 +++
