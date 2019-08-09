@@ -6,6 +6,6 @@ tagline = "Community Bike Workshop - Fix Your Own Bike"
 times = "Tuesdays and Thursdays, 5-8pm"
 title = "Wee Spoke Hub"
 weight = 3
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358430/shrubcoop.org/media/Wee_Spoke_Hub_achwby.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358675/shrubcoop.org/media/Wee_Spoke_Hub_white_exi47h.png"
 
 +++
