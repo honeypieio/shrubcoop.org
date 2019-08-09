@@ -31,3 +31,37 @@ In 2016 it is estimated that **1,130,000 tonnes** of clothing was purchased in t
 UK households binned 300,000 tonnes of clothing in 2016. _(The Guardian, 2017)_
 
 “Extending the life of clothes offers the greatest overall potential across carbon, water, and waste targets. This can be achieved by designing clothes to be more durable, and by encouraging re-use through sales of second hand clothing”. _(Wrap, 2017)_
+
+## FAQs!
+
+**Is Zero Waste Hub accessible?**
+
+The Zero Waste Hub is on ground floor with a wheelchair accessible entrance, accessible and gender neutral toilet.
+
+There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street.
+
+If you have further questions regarding accessibility before a visit, please contact the Zero Waste Hub on **0131 281 0583**.
+
+**Is there nearby bicycle parking?**
+
+There is space to lock up your bike on the corner of Lothian Road and Bread Street by Cost Cutters
+
+**What bus routes are you on?**
+
+The Zero Waste Hub is located just off Lothian Road and Grassmarket and following bus routes will take you nearby;  
+  
+Lothian Road routes: 47, 24, 10, 11, 15, 16, 36, 1, 34, 124
+
+Grassmarket route: 2
+
+**Is there parking nearby?**
+
+There is limited on street parking on Bread Street, but two large car parks a 4 minute walk away;
+
+**Thistle Parking**
+
+Semple Street, Edinburgh, EH3 8BL
+
+**NCP Car Park Edinburgh Castle Terrace**
+
+Castle Terrace, Edinburgh, EH1 2EW
