@@ -2,7 +2,7 @@
 title = "Contact"
 
 +++
-### Email us:
+### Email us
 
 hello@shrubcoop.org
 
