@@ -7,7 +7,9 @@ tagline = "Swap, Buy & Earn goods to save carbon through creating a circular eco
 times = "Open 1pm to 6pm, Wednesday to Saturday"
 title = "Swap Shop"
 weight = 1
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1549983099/shrubcoop.org/media/swapshop.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358451/shrubcoop.org/media/Swap_Shop_1_mloluz.png"
 
 +++
-Test
+**Swap**, **donate** or **buy** affordable and high quality preloved clothing, books, shoes, bags, bric-a-brac and household items.
+
+Anyone is welcome to buy or donate items. **Become a member** and you can swap your items in exchange for tokens to use in-store.
