@@ -9,6 +9,8 @@ weight = 5
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565362131/shrubcoop.org/media/Shrub_Space_white_z8zeuj.png"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367105/shrubcoop.org/media/food_sharing_hub_6_rtvqvu.png)
+
 SHRUB hosts a variety of **events and workshops** throughout the year, both in our dedicated **SHRUB Space** workshop space, and in the Zero Waste Hub. Click the "Events" link at the top to see our upcoming events and workshops and get inspired!
 
 ### **FAQs**
