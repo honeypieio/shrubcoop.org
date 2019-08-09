@@ -9,7 +9,7 @@ weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358675/shrubcoop.org/media/Wee_Spoke_Hub_white_exi47h.png"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565364740/shrubcoop.org/media/Untitled_design_1_rclotw.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365008/shrubcoop.org/media/wee_spoke_hub_web_ahajzs.png)
 
 The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechanic will help you learn the skills to take care of your bike. **Tools and expertise** is provided free of charge.
 
