@@ -2,7 +2,6 @@
 address = "22 Bread Street, EH3 9AF"
 alt = "You can swap your preloved things in our Swapshop, enjoy some rescued food from our Food Sharing Hub, or just hang out and grab a tea or coffee from our cafe."
 colour = "#AB0C17"
-draft = true
 tagline = "One stop shop for sustainable living!"
 times = "Wednesday - Saturday, 12-5pm"
 title = "Zero Waste Hub"
