@@ -32,11 +32,11 @@ In central Edinburgh, **27.1 tonnes** of food goes to waste every week - that's 
 
 ### **FAQs**
 
-#### **Do I need to be a member to use the Food Sharing Hub?**
+#### Do I need to be a member to use the Food Sharing Hub?
 
 Yes
 
-#### **Is Zero Waste Hub accessible?**
+#### Is Zero Waste Hub accessible?
 
 The Zero Waste Hub is on ground floor with a wheelchair accessible entrance, accessible and gender neutral toilet.
 
@@ -44,19 +44,19 @@ There are disabled parking bays on both parallel streets, East Fountainbridge an
 
 If you have further questions regarding accessibility before a visit, please contact the Zero Waste Hub on **0131 281 0583**.
 
-#### **Is there nearby bicycle parking?**
+#### Is there nearby bicycle parking?
 
 There is space to lock up your bike on the corner of Lothian Road and Bread Street by Cost Cutters.
 
-#### **What bus routes are you on?**
+#### What bus routes are you on?
 
-The Zero Waste Hub is located just off Lothian Road and Grassmarket and following bus routes will take you nearby;  
-  
+The Zero Waste Hub is located just off Lothian Road and Grassmarket and following bus routes will take you nearby;
+
 Lothian Road routes: 47, 24, 10, 11, 15, 16, 36, 1, 34, 124
 
 Grassmarket route: 2
 
-#### **Is there parking nearby?**
+#### Is there parking nearby?
 
 There is limited on street parking on Bread Street, but two large car parks a 4 minute walk away;
 
