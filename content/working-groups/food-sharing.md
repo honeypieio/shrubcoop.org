@@ -7,7 +7,7 @@ tagline = "Sharing food init"
 times = "12pm to 6pm, Wednesday to Saturday"
 title = "Food Sharing"
 weight = 3
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1549993247/shrubcoop.org/media/food-sharing.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565361183/shrubcoop.org/media/Food_Sharing_Hub_white_nqusoi.png"
 
 +++
 Info about food sharing
