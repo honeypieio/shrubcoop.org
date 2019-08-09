@@ -2,7 +2,6 @@
 author = "Rob"
 date = "2019-08-08T23:00:00+00:00"
 description = "What does the description do"
-draft = true
 tags = []
 title = "We have a swapshop"
 
