@@ -25,6 +25,3 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
-pages:
-- content/blog/we-have-a-swapshop.md
-- content/blog/a-new-article.md
