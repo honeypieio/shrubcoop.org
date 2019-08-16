@@ -25,28 +25,8 @@
   </url>
   
   <url>
-    <loc>https://shrub.space/blog/we-have-a-swapshop/</loc>
+    <loc>https://shrub.space/news/we-have-a-swapshop/</loc>
     <lastmod>2019-08-08T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/blog/a-new-article/</loc>
-    <lastmod>2019-02-13T09:09:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/events/potato-peeling/</loc>
-    <lastmod>2019-02-12T16:18:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/blog/new-beginnings/</loc>
-    <lastmod>2018-09-26T15:34:58+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/blog/first-post/</loc>
-    <lastmod>2018-09-26T15:34:58+01:00</lastmod>
   </url>
   
   <url>
@@ -55,12 +35,6 @@
   
   <url>
     <loc>https://shrub.space/events/big-swap-test/</loc>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/blog/</loc>
-    <lastmod>2019-08-08T23:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -74,23 +48,7 @@
   
   <url>
     <loc>https://shrub.space/events/</loc>
-    <lastmod>2019-02-12T16:18:48+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/categories/food-sharing/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/tags/food-sharing/</loc>
-    <lastmod>2019-02-12T16:18:48+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/get-involved/</loc>
   </url>
   
   <url>
@@ -99,24 +57,8 @@
   </url>
   
   <url>
-    <loc>https://shrub.space/tags/new-premises/</loc>
-    <lastmod>2018-09-26T15:34:58+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/events/first-event/</loc>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/tags/swap-shop/</loc>
-    <lastmod>2019-02-13T09:09:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/categories/swapshop/</loc>
-    <lastmod>2018-09-26T15:34:58+01:00</lastmod>
+    <loc>https://shrub.space/news/</loc>
+    <lastmod>2019-08-08T23:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -128,7 +70,7 @@
   
   <url>
     <loc>https://shrub.space/tags/</loc>
-    <lastmod>2019-02-12T16:18:48+00:00</lastmod>
+    <lastmod>2019-08-08T23:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
