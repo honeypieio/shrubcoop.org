@@ -2,20 +2,20 @@
 
 <div class="col-lg-6 offset-lg-3">
   <div class="container">
-    <div class="pt-4"><h1 class="aleo text-center">Events</h1></div>
-
     <div class="pt-4">
+      <h1 class="dosis-bold text-center mb-4">Events</h1>
+
       {{ range (where .Data.Pages "Type" "events") }}
 
-      <h1 class="aleo">{{ .Title }}</h1>
-      <p class="aleo">{{ .Description }}</p>
-      <p class="aleo">
-        {{ .Params.time }} @ {{ .Params.location }} &emsp;|&emsp; Hosted by
-        {{.Params.author }}
-      </p>
-      <a href="{{.Site.BaseURL}}{{ .URL }}">More info</a>
+        <h1 class="dosis-semi-bold">{{ .Title }}</h1>
+        <p class="aleo">{{ .Description }}</p>
+        <p class="dosis-semi-bold">
+          {{ dateFormat "02/01/06 15:04" .Params.time }} at {{ .Params.location }} | Hosted by
+          {{.Params.author }}
+        </p>
+        <a href="{{.Site.BaseURL}}{{ .URL }}">See details</a>
 
-      <hr />
+        <hr />
 
       {{ end }}
     </div>

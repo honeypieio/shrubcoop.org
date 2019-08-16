@@ -1,5 +1,9 @@
 /* GLOBAL */
 
+html {
+	font-family: "Open Sans"
+}
+
 @media (max-width:768px) {
 	#navbarSupportedContent {
 		background-color: #333;
@@ -23,8 +27,13 @@
 	text-decoration: underline;
 }
 
-.aleo {
-	font-family: 'Aleo';
+
+.dosis-bold {
+	font-family: "Dosis Bold"
+}
+
+.dosis-semi-bold {
+	font-family: "Dosis Semi-Bold"
 }
 
 .shrub {
@@ -32,7 +41,7 @@
 }
 
 .working_group_icon {
-	width: 60px;
+	width: 80px;
 	height: auto;
 }
 
@@ -63,12 +72,12 @@ body {
 
 .heading {
 	font-size: 42px;
-	font-family: Shrub;
+	font-family: "Dosis Bold";
 }
 
 .sub-heading {
 	font-size: 24px;
-	font-family: Aleo;
+	font-family: "Dosis Semi-Bold";
 }
 
 /* NAVBAR */
@@ -83,9 +92,9 @@ nav {
 
 
 .nav-item {
-	text-transform: uppercase;
-	font-size: 1.0rem;
-	font-family: Aleo;
+	/*text-transform: uppercase;*/
+	font-size: 1.5rem;
+	font-family: "Dosis Semi-Bold";
 }
 
 .navbar-toggler {
@@ -105,7 +114,7 @@ nav {
 	.nav-item {
 		margin-right: 2.5vw;
 		margin-left: 2.5vw;
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 	}
 }
 

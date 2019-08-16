@@ -2,12 +2,17 @@
 
   @font-face {
   	font-family: 'Shrub';
-  	src: url('{{.Site.BaseURL}}fonts/shrub.ttf') format('truetype');;
+  	src: url('{{.Site.BaseURL}}fonts/shrub.ttf') format('truetype');
   }
 
   @font-face {
-  	font-family: 'Aleo';
-  	src: url('{{.Site.BaseURL}}fonts/Aleo-Regular.ttf') format('truetype');;
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('{{.Site.BaseURL}}fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('{{.Site.BaseURL}}fonts/Dosis-Bold.otf') format('opentype');
   }
 
 </style>
@@ -42,4 +47,4 @@
 />
 <meta charset="UTF-8" />
 
-<title>{{ .Title }} | Shrub Co-operative</title>
+<title>{{ .Page.Title }} | {{ .Site.Title }}</title>

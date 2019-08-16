@@ -2,7 +2,7 @@ baseURL = "https://shrub.space/"
 languageCode = "en-gb"
 pluralizelisttitles = "false"
 theme = "shrub"
-title = "Shrub Co-op"
+title = "SHRUB Coop"
 [[menu.main]]
 identifier = "get-involved"
 name = "Get Involved"
@@ -16,10 +16,10 @@ pre = "Click this link to find out about us and why we exist."
 url = "/about-us/"
 weight = 2
 [[menu.main]]
-identifier = "blog"
-name = "Blog"
+identifier = "news"
+name = "News"
 pre = "This is the link to the Blog section of the site. Click here to read our latest blog posts"
-url = "/blog/"
+url = "/news/"
 weight = 6
 [[menu.main]]
 identifier = "events"

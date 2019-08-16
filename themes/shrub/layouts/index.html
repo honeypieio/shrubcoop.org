@@ -8,39 +8,39 @@
 
           <div id="front-page-header" class="mx-auto">
             <center id="default-header">
-              <h1 class="mb-2 mt-3 text-center"
-                style="font-family: Shrub; font-size: 5em; line-height: 0.5;"
+              <h1 class="shrub mb-2 mt-3 text-center"
+                style="font-size: 5em; line-height: 0.5;"
               >
                 SHRUB
               </h1>
               <p
-              class="text-center"
-                style="font-family: Aleo; line-height: 1;"
+              class="text-center mt-3 dosis-semi-bold"
+                style="line-height: 1;"
               >
-                Community-led co-operative in Edinburgh
+                We’re a cooperative in Edinburgh working
               </p>
               <h3
-              class="text-center"
-                style="font-family: Aleo; font-size: 1.75em; line-height: 0.8;"
+              class="text-center dosis-semi-bold"
+                style="font-size: 1.75em; line-height: 0.8;"
               >
                 FOR A WORLD
               </h3>
               <h1
-              class="text-center"
-                style="font-family: Aleo; font-size: 2.5em; line-height: 0.8;"
+              class="text-center dosis-semi-bold"
+                style="font-size: 2.5em; line-height: 0.8;"
               >
                 WITHOUT
               </h1>
               <h3
-              class="text-center"
-                style="font-family: Aleo; font-size: 1.75em; line-height: 0.8;"
+              class="text-center dosis-semi-bold"
+                style="font-size: 1.75em; line-height: 0.8;"
               >
                 WASTE
               </h3>
 
               <br />
 
-              <h3 id="carbonCounter" class="aleo"></h3>
+              <h3 id="carbonCounter" class="dosis-semi-bold"></h3>
             </center>
 
             {{ range (where .Data.Pages "Type" "working-groups") }}
@@ -52,26 +52,21 @@
               <div class="row pt-0 pl-4 mb-4">
                 <div class="container">
                   <h1
-                    class="shrub"
-                    style="font-size: 42px; padding-bottom: 0; color: {{.Params.colour}};"
+                    class="dosis-bold"
+                    style="font-size: 38px; padding-bottom: 0; color: {{.Params.colour}};"
                   >
                     {{ .Title }}
                   </h1>
 
-                  <h4 class="text-white">{{ .Params.tagline }}</h4>
+                  <h4 class="text-white dosis-semi-bold">{{ .Params.tagline }}</h4>
 
+                  <p class="mt-4 text-white">
+                    Open {{ .Params.times }}
+                  </p>
                   <p class="text-white">
-                    {{ .Params.address }} <br />
-                    {{ .Params.times }}
+                    {{ .Params.address }}
                   </p>
 
-                  <h4>
-                    <a
-                      href="{{.Site.BaseURL}}{{.URL}}"
-                      title="{{ .Params.alt }}"
-                      >Find out more!</a
-                    >
-                  </h4>
                 </div>
               </div>
             </div>
@@ -83,21 +78,20 @@
           <div class="container ml-2 mx-auto">
             {{ range (where .Data.Pages "Type" "working-groups") }}
 
-            <center>
+            <div class="center-block mb-3">
               <a
-                onclick="openInfo('{{urlize .Title }}')"
                 class="working_group_link"
+                href="{{.Site.BaseURL}}{{.URL}}"
+                title="{{ .Params.alt }}"
               >
-                <img
+                <img alt="{{ .Name }} logo"
                   src="{{ .Params.working_group_logo}}"
-                  id="{{urlize .Title }}_icon"
+                  id="{{urlize .Title }}"
                   class="working_group_icon mx-auto"
                 />
-                <p class="shrub {{urlize .Title }} mx-auto mt-1" style="color:{{.Params.colour}}; line-height: 1;">
-                  {{ .Name }}
-                </p>
+
               </a>
-            </center>
+            </div>
 
             {{ end }}
           </div>
@@ -110,20 +104,21 @@
   <div class="col-lg-4 order-lg-1 d-none d-lg-block">
     <div class="latest-blog-header sloped">
       <div class="container">
-        {{ range first 1 (where .Data.Pages "Type" "blog") }}
+        {{ range first 1 (where .Data.Pages "Type" "news") }}
         <div class="pl-3 pt-4">
-          <h1 class="aleo text-white">{{ .Title }}</h1>
+          <h1 class="dosis-bold text-white">{{ .Title }}</h1>
 
-          <p class="aleo text-white">
+          <p class="dosis-semi-bold text-white">
             By {{ .Params.author }} | {{ dateFormat "02/01/06" .Date }}
           </p>
 
-          <p class="aleo text-white">{{ .Description }}</p>
-          <p class="aleo">
+          <p class="text-white">{{ .Description }}</p>
+          <p>
             <a
               href="{{.Site.BaseURL}}{{ .URL }}"
               title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading."
-              >Continue reading!</a
+              class="text-white underline"
+              >Read full post</a
             >
           </p>
         </div>
@@ -137,15 +132,19 @@
       <div class="container">
         {{ range first 1 (where .Data.Pages "Type" "events") }}
         <div class="pl-4 pt-4">
-          <h1 class="aleo text-white">{{ .Title }}</h1>
-          <p class="aleo text-white">{{ .Description }}</p>
-          <p class="aleo text-white">
+          <h1 class="dosis-bold text-white">{{ .Title }}</h1>
+
+          <p class="dosis-semi-bold text-white">
             {{ dateFormat "02/01/06 15:04" .Params.time }} @ {{ .Params.location }} | Hosted by {{ .Params.author }}
           </p>
+
+          <p class="text-white">{{ .Description }}</p>
+
           <a
             href="{{.Site.BaseURL}}{{ .URL }}"
             title="Latest event: {{ .Title }} - click this link to read more about this event."
-            >More info</a
+            class="text-white underline"
+            >See details</a
           >
         </div>
         {{ end }}
@@ -156,18 +155,25 @@
 
 <br />
 
-<div class="row"><h1 class="aleo mx-auto" style="color: #fbbf11;">GET INVOLVED</h1></div>
-
 <script>
-  function openInfo(workingGroup) {
+
+  $(".working_group_icon").mouseenter(function(){
     $("#default-header").hide();
     $(".working-group-synopsis").addClass("d-none");
     $(".working_group_icon").css("opacity", "0.5");
-    $("#" + workingGroup + "_icon").css("opacity", "1");
-    $("#" + workingGroup + "_info").removeClass("d-none");
-  }
+    $("#" + this.id).css("opacity", "1");
+    $("#" + this.id + "_info").removeClass("d-none");
+  })
 
-  $.ajax({
+  $(".working_group_icon").mouseleave(function(){
+    $("#default-header").show();
+    $("#" + this.id + "_info").addClass("d-none");
+    $("#" + this.id + "_info").removeClass("d-none");
+    $(".working-group-synopsis").addClass("d-none");
+    $(".working_group_icon").css("opacity", "1");
+  })
+
+  /*$.ajax({
     url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiKey }}",
     type: "GET",
     success: function(res) {
@@ -176,7 +182,9 @@
       }
       $("#carbonCounter").text(res + " tonnes of carbon saved this year!");
     }
-  });
+  });*/
+
+  $("#carbonCounter").text("1.234 tonnes of carbon saved this year!");
 </script>
 
 {{ end }}
