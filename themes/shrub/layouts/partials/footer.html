@@ -1,0 +1,119 @@
+<hr />
+
+<div class="row text-center mt-5 mb-2">
+  <div class="col-md-8 mx-auto">
+    <div class="row">
+      <div class="col-md-4 mx-auto my-3">
+        <img src="https://www.keepscotlandbeautiful.org/media/1558461/ccf-rgb.jpg" class="funder-image">
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <img src="https://www.shrubcoop.org/wp-content/uploads/2014/09/ERDF-logo-English-colour-JPG-1024x593-200x115.jpg" class="funder-image">
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <img src="https://www.keepscotlandbeautiful.org/media/1558463/gs-rgb.jpg" class="funder-image">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-6 mx-auto text-center">
+    <p>SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer class="page-footer font-small bg-dark blue pt-4 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="{{ .Site.BaseURL }}">Home</a>
+              </li>
+
+              {{ range .Site.Menus.main }}
+
+              <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+
+              {{ end }}
+
+              <li>
+                <a href="{{ .Site.BaseURL }}sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-md-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                Tel. 0123456789
+              </li>
+              <li>
+                13 Guthrie Street
+              </li>
+              <li>
+                EH1 1JG
+              </li>
+              <li>
+                Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3 mx-auto">
+
+
+            <h5>Follow Us</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                Facebook
+              </li>
+              <li>
+                Instagram
+              </li>
+              <li>
+                Twitter
+              </li>
+            </ul>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

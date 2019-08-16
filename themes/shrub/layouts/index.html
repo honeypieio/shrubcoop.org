@@ -1,20 +1,23 @@
 {{ define "main" }}
 
 <div class="row">
-  <div class="col-lg-4 order-lg-2">
+  <div class="col-xl-4 col-md-12 order-lg-2">
     <div class="front-page-header sloped" style="padding-bottom: 100px;">
       <div class="row pt-4 pb-4 pl-4 pr-4">
-        <div class="col-md-7 col-12 mx-auto">
+        <div class="col-xl-6 col-12 mx-auto">
 
-          <div id="front-page-header" class="mx-auto">
+          <div id="front-page-header" class="mx-auto mt-lg-5 mt-xl-5">
             <center id="default-header">
               <h1 class="shrub mb-2 mt-3 text-center"
                 style="font-size: 5em; line-height: 0.5;"
               >
                 SHRUB
               </h1>
+              <h2 class="dosis-semi-bold" style="font-size: 50px; line-height: 0.8;">
+                COOP
+              </h2>
               <p
-              class="text-center mt-3 dosis-semi-bold"
+              class="text-center mt-3 dosis-semi-bold text-white"
                 style="line-height: 1;"
               >
                 We’re a cooperative in Edinburgh working
@@ -61,7 +64,7 @@
                   <h4 class="text-white dosis-semi-bold">{{ .Params.tagline }}</h4>
 
                   <p class="mt-4 text-white">
-                    Open {{ .Params.times }}
+                    {{ .Params.times }}
                   </p>
                   <p class="text-white">
                     {{ .Params.address }}
@@ -74,34 +77,39 @@
             {{ end }}
           </div>
         </div>
-        <div class="col-md-4 ml-0 mx-auto d-none d-md-block">
-          <div class="container ml-2 mx-auto">
-            {{ range (where .Data.Pages "Type" "working-groups") }}
+        <div class="col-12 col-xl-4 ml-0 mx-auto d-md-block mt-4 mb-5 mt-xl-0 mb-xl-0">
+          <center>
+            <div class="container mx-auto">
+              {{ range (where .Data.Pages "Type" "working-groups") }}
 
-            <div class="center-block mb-3">
-              <a
-                class="working_group_link"
-                href="{{.Site.BaseURL}}{{.URL}}"
-                title="{{ .Params.alt }}"
-              >
-                <img alt="{{ .Name }} logo"
-                  src="{{ .Params.working_group_logo}}"
-                  id="{{urlize .Title }}"
-                  class="working_group_icon mx-auto"
-                />
 
-              </a>
+
+                <a
+                  class="working_group_link"
+                  href="{{.Site.BaseURL}}{{.URL}}"
+                  title="{{ .Params.alt }}"
+
+                >
+                  <div class="d-inline d-xl-block mx-auto p-xl-2 p-4 mb-xl-0 mb-4" id="{{urlize .Title }}">
+                    <img alt="{{ .Name }} logo"
+                      src="{{ .Params.working_group_logo}}"
+                      id="{{urlize .Title }}"
+                      class="working_group_icon mx-auto"
+                    />
+                  </div>
+                </a>
+
+
+              {{ end }}
             </div>
-
-            {{ end }}
-          </div>
+          </center>
         </div>
       </div>
     </div>
     <!--<div class="row"><img src="/images/map.png" class="map" /></div>-->
   </div>
 
-  <div class="col-lg-4 order-lg-1 d-none d-lg-block">
+  <div class="col-xl-4 order-lg-1 d-none d-xl-block">
     <div class="latest-blog-header sloped">
       <div class="container">
         {{ range first 1 (where .Data.Pages "Type" "news") }}
@@ -127,7 +135,7 @@
     </div>
   </div>
 
-  <div class="col-lg-4 order-lg-3 d-none d-lg-block">
+  <div class="col-xl-4 order-lg-3 d-none d-xl-block">
     <div class="events-header sloped">
       <div class="container">
         {{ range first 1 (where .Data.Pages "Type" "events") }}
@@ -135,7 +143,7 @@
           <h1 class="dosis-bold text-white">{{ .Title }}</h1>
 
           <p class="dosis-semi-bold text-white">
-            {{ dateFormat "02/01/06 15:04" .Params.time }} @ {{ .Params.location }} | Hosted by {{ .Params.author }}
+            {{ dateFormat "02/01/06 15:04" .Params.time }} at {{ .Params.location }} | Hosted by {{ .Params.author }}
           </p>
 
           <p class="text-white">{{ .Description }}</p>
@@ -161,7 +169,7 @@
     $("#default-header").hide();
     $(".working-group-synopsis").addClass("d-none");
     $(".working_group_icon").css("opacity", "0.5");
-    $("#" + this.id).css("opacity", "1");
+    $(this).css("opacity", "1");
     $("#" + this.id + "_info").removeClass("d-none");
   })
 
@@ -180,11 +188,11 @@
       if (!parseFloat(res)) {
         res = (0.0).toFixed(3);
       }
-      $("#carbonCounter").text(res + " tonnes of carbon saved this year!");
+      $("#carbonCounter").html("So far, we've saved <b>" + res + " tonnes</b> of carbon!");
     }
   });*/
 
-  $("#carbonCounter").text("1.234 tonnes of carbon saved this year!");
+  $("#carbonCounter").html("So far, we've saved <b>1.234 tonnes</b> of carbon!");
 </script>
 
 {{ end }}

@@ -1,10 +1,11 @@
 {{ define "main" }}
 
-<div class="row">
-	<div class="col-md-8 offset-md-2">
-	  <h1>Uh-oh!</h1>
-	  <h3>Couldn't find that page!</h3>		
-	</div>
+<div class="row mt-5">
+  <div class="col-md-8 offset-md-2">
+    <h1 class="dosis-bold">Uh-oh!</h1>
+    <h3 class="dosis-semi-bold">The page you requested could not be found</h3>
+    <p><a href="{{.Site.BaseURL}}">Go to homepage</a></p>
+  </div>
 </div>
 
 {{ end }}
