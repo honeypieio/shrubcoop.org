@@ -127,10 +127,9 @@
 
   </div>
 </nav>
+<div class="content mb-5" style="margin-top: 75px;">
 
-
-
-<div class="content mb-5" style="margin-top: 80px;">
+<link rel="stylesheet" href="https://shrub.space/css/load-animation.css" />
 
 <div class="row">
   <div class="col-xl-4 col-md-12 order-lg-2">
@@ -175,7 +174,12 @@
 
               <br />
 
-              <h3 id="carbonCounter" class="dosis-semi-bold"></h3>
+              <h3 id="carbonCounter" class="dosis-semi-bold">
+                So far, we've saved
+                <br />
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+
+              </h3>
             </center>
 
             
@@ -513,7 +517,7 @@
       if (!parseFloat(res)) {
         res = (0.0).toFixed(3);
       }
-      $("#carbonCounter").html("So far, we've saved <b>" + res + " tonnes</b> of carbon!");
+      $("#carbonCounter").html("So far, we've saved <br />" + res + " tonnes of carbon!");
     }
   });
 
