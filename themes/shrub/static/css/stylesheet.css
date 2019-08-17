@@ -2,17 +2,20 @@
 
 html {
   font-family: "Open Sans";
+  color: #333;
 }
 
 h1,
 h2 {
   font-family: "Dosis Bold";
+  color: inherit;
 }
 
 h3,
 h4,
 h5 {
   font-family: "Dosis Semi-Bold";
+  color: inherit;
 }
 
 img {
@@ -20,11 +23,15 @@ img {
 }
 
 p {
-  color: #333;
+  color: inherit;
+}
+
+.links-white {
+  color: white;
 }
 
 a {
-  color: #0074D9;
+  color: inherit;
 }
 
 .btn-dark {

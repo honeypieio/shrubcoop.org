@@ -1,0 +1,114 @@
+{{ define "main" }}
+
+<div class="row">
+  <div class="col-md-4 order-md-1">
+    <div class="front-page-header sloped">
+      <div class="container pl-4 pt-4">
+        <div class="row">
+          <h1 class="text-white aleo pl-3">Join our mailing list!</h1>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <h4 class="text-white aleo">
+              Stay up to date with our latest news and events
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-group mt-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email Adress"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            placeholder="First Name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Last Name"
+          />
+        </div>
+        <div class="form-group">
+          <p>
+            We will use the information you provide on this form to email you
+            our monthly newsletter and other updates. Unsubscribe at any time!
+          </p>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="permissions" />
+          <label class="form-check-label" for="permissions">I agree</label>
+        </div>
+        <div class="form-group">
+          <center>
+            <button type="submit" class="btn btn-dark btn-lg">
+              Subscribe now!
+            </button>
+          </center>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-2">
+    <div class="front-page-header sloped" style="padding-bottom: 50px;">
+      <div class="container pl-4 pt-4">
+        <div class="row col-10 col-offset-1">
+          <h1 class="text-white aleo pl-3">Become a member!</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="text-red">£12</h1>
+      <h4>Concession Membership (1 year)</h4>
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-3">
+    <div class="front-page-header sloped">
+      <div class="container pl-3 pt-4">
+        <h1 class="text-white aleo pl-2">Sign up, be a volunteer!</h1>
+        <div class="col-10">
+          <h4 class="text-white aleo">
+            We run on volunteer power and always need more helping hands
+          </h4>
+          <a class="mt-4 btn btn-light btn-primary" href="{{ .Site.BaseURL }}volunteer-roles">Find A Role</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="mb-4">Latest volunteer roles</h2>
+      <div id="volunteerRoles"></div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ .Site.BaseURL }}js/volunteer-roles.js"></script>
+
+
+<script>
+var BaseURL = "{{ .Site.BaseURL }}";
+var murakamiRolesKey = "{{ .Site.Params.murakamiRolesKey }}"
+var rolesLimit = 3;
+
+$(document).ready(function(){
+  getAllVolunteerRoles()
+})
+</script>
+
+{{ end }}

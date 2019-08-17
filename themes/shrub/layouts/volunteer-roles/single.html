@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="col-lg-6 offset-lg-3">
+
+  <div class="container">
+
+    <div class="pt-4">
+
+      <h1 class="dosis-bold mb-4" id="roleTitle"></h1>
+
+      <div id="volunteerRole"></div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="{{ .Site.BaseURL }}js/volunteer-roles.js"></script>
+
+<script>
+
+  var BaseURL = "{{ .Site.BaseURL }}";
+  var murakamiRolesKey = "{{ .Site.Params.murakamiRolesKey }}"
+
+  var urlParams = new URLSearchParams(window.location.search);
+  var roleId = urlParams.get('roleId');
+
+  var failUri = "{{ .Site.BaseURL }}volunteer-roles"
+
+  if(!roleId){
+    window.location = failUri;
+  } else {
+    getVolunteerRole(roleId)
+  }
+</script>
+
+{{ end }}

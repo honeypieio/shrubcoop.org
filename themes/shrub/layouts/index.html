@@ -112,25 +112,11 @@
   <div class="col-xl-4 order-lg-1 d-none d-xl-block">
     <div class="latest-blog-header sloped">
       <div class="container">
-        {{ range first 1 (where .Data.Pages "Type" "news") }}
-        <div class="pl-3 pt-4">
-          <h1 class="dosis-bold text-white">{{ .Title }}</h1>
-
-          <p class="dosis-semi-bold text-white">
-            By {{ .Params.author }} | {{ dateFormat "02/01/06" .Date }}
-          </p>
-
-          <p class="text-white">{{ .Description }}</p>
-          <p>
-            <a
-              href="{{.Site.BaseURL}}{{ .URL }}"
-              title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading."
-              class="text-white underline"
-              >Read full post</a
-            >
-          </p>
+        <div class="pl-3 pt-4 text-white links-white">
+          {{ range first 1 (where .Data.Pages "Type" "news") }}
+            {{- partial "news-preview.html" . -}}
+          {{ end }}
         </div>
-        {{ end }}
       </div>
     </div>
   </div>
@@ -138,24 +124,14 @@
   <div class="col-xl-4 order-lg-3 d-none d-xl-block">
     <div class="events-header sloped">
       <div class="container">
-        {{ range first 1 (where .Data.Pages "Type" "events") }}
-        <div class="pl-4 pt-4">
-          <h1 class="dosis-bold text-white">{{ .Title }}</h1>
+        <div class="pl-4 pt-4 text-white links-white">
+          {{ .Scratch.Set "eventsTextWhite" "true" }}
+          {{ range first 1 (where .Data.Pages "Type" "events") }}
 
-          <p class="dosis-semi-bold text-white">
-            {{ dateFormat "02/01/06 15:04" .Params.time }} at {{ .Params.location }} | Hosted by {{ .Params.author }}
-          </p>
+            {{ partial "events-preview.html" . }}
 
-          <p class="text-white">{{ .Description }}</p>
-
-          <a
-            href="{{.Site.BaseURL}}{{ .URL }}"
-            title="Latest event: {{ .Title }} - click this link to read more about this event."
-            class="text-white underline"
-            >See details</a
-          >
+          {{ end }}
         </div>
-        {{ end }}
       </div>
     </div>
   </div>
@@ -181,8 +157,8 @@
     $(".working_group_icon").css("opacity", "1");
   })
 
-  /*$.ajax({
-    url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiKey }}",
+  $.ajax({
+    url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiCarbonKey }}",
     type: "GET",
     success: function(res) {
       if (!parseFloat(res)) {
@@ -190,9 +166,8 @@
       }
       $("#carbonCounter").html("So far, we've saved <b>" + res + " tonnes</b> of carbon!");
     }
-  });*/
+  });
 
-  $("#carbonCounter").html("So far, we've saved <b>1.234 tonnes</b> of carbon!");
 </script>
 
 {{ end }}

@@ -7,13 +7,7 @@
 
       {{ range (where .Data.Pages "Type" "events") }}
 
-        <h1 class="dosis-semi-bold">{{ .Title }}</h1>
-        <p class="aleo">{{ .Description }}</p>
-        <p class="dosis-semi-bold">
-          {{ dateFormat "02/01/06 15:04" .Params.time }} at {{ .Params.location }} | Hosted by
-          {{.Params.author }}
-        </p>
-        <a href="{{.Site.BaseURL}}{{ .URL }}">See details</a>
+        {{ partial "events-preview.html" . }}
 
         <hr />
 

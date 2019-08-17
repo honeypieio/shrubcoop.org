@@ -3,6 +3,17 @@ languageCode = "en-gb"
 pluralizelisttitles = "false"
 theme = "shrub"
 title = "SHRUB Coop"
+
+[[menu.socials]]
+name = "Twitter"
+url = "https://twitter.com/shrubcoop"
+[[menu.socials]]
+name = "Instagram"
+url="https://www.instagram.com/shrubcoop/"
+[[menu.socials]]
+name = "Facebook"
+url="https://www.facebook.com/shrubcoop/"
+
 [[menu.main]]
 identifier = "get-involved"
 name = "Get Involved"
@@ -33,8 +44,13 @@ name = "Contact"
 pre = "This is the Contact section of the site. Click here to find out how to send us an email."
 url = "/contact/"
 weight = 3
+
 [params]
-murakamiKey = "UUGLwdSBrFutmfmBnA8ccC4BC5DEVbVk"
+murakamiCarbonKey = "UUGLwdSBrFutmfmBnA8ccC4BC"
+murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
+fundersFooterText = "SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above."
+shrubLegalName = "SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)"
+
 [taxonomies]
 category = "categories"
 tag = "tags"

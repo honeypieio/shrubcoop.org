@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<div class="col-lg-6 offset-lg-3">
+
+  <div class="container">
+
+    <div class="pt-4">
+
+      <h1 class="dosis-bold text-center mb-4">{{ .Title }}</h1>
+
+      <div id="volunteerRoles"></div>
+
+    </div>
+
+  </div>
+</div>
+
+  <script src="{{ .Site.BaseURL }}js/volunteer-roles.js"></script>
+
+
+  <script>
+  var BaseURL = "{{ .Site.BaseURL }}";
+  var murakamiRolesKey = "{{ .Site.Params.murakamiRolesKey }}"
+  var rolesLimit;
+
+  $(document).ready(function(){
+    getAllVolunteerRoles()
+  })
+  </script>
+
+{{ end }}

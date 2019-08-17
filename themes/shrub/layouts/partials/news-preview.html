@@ -1,0 +1,16 @@
+
+  <h1 class="dosis-bold">{{ .Title }}</h1>
+
+  <p class="dosis-semi-bold">
+    By {{ .Params.author }} | {{ dateFormat "02/01/06" .Date }}
+  </p>
+
+  <p>{{ .Description }}</p>
+  <p>
+    <a
+      href="{{.Site.BaseURL}}{{ .URL }}"
+      title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading."
+      class="underline"
+      >Read full post</a
+    >
+  </p>

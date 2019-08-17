@@ -1,15 +1,18 @@
 {{ define "main" }}
 
+{{ $groupId := (urlize .Title) }}
+
+
 <div class="row">
 
   <div class="col-lg-4 order-lg-1">
     <div class="working_group_header sloped">
 
-    	<div class="row pt-5">
+    	<div class="row pt-4">
     		<div class="col-9 offset-1">
 		    	<div class="container">
 
-		    		<h1 class="dosis-bold" style="font-size: 42px; padding-bottom: 0; color: {{.Params.colour}};">
+		    		<h1 class="dosis-bold mb-4" style="font-size: 42px; padding-bottom: 0; color: {{.Params.colour}};">
 		    			{{ .Title }}
 		    		</h1>
 
@@ -23,18 +26,19 @@
       <div class="row pt-4">
         <div class="col-6 offset-1">
           <div class="container">
+            <p class="text-white mb-1">
+              &#127970; {{ .Params.address }}
+            </p>
             <p class="text-white">
-              {{ .Params.address }}
-            <br />
-              {{ .Params.times }}
+              &#128336; {{ .Params.times }}
             </p>
           </div>
         </div>
-        <div class="col-5 ml-0">
+        <div class="col-4 ml-0">
           <div class="container">
             <img
               src="{{ .Params.working_group_logo}}"
-              class="working_group_icon_large d-block mx-auto"
+              class="working_group_icon d-block mx-auto"
             />
           </div>
         </div>
@@ -47,60 +51,37 @@
 
       <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
 
-      <h2 class="mt-2"><a href="#events" class="plain">Save the date!</a></h2>
+      <h2 class="mt-2 mb-2">Latest Events</h2>
 
     </div>
+    <div class="row ml-0">
+      <div class="container" id="latestEvents">
 
-    <br />
-    <br />
+        {{ $eventsCount := 0 }}
+        {{ $eventsLimit := 3 }}
 
-    <div class="row d-lg-none">
+        {{ range (where .Site.Pages "Type" "events") }}
 
+          {{ if le $eventsCount $eventsLimit }}
+            {{ if in .Params.Tags $groupId }}
 
-      <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
+              {{ $eventsCount := (add $eventsCount 1)}}
 
-      <h2 class="mt-2"><a href="#main" class="plain">What we do</a></h2>
+              {{- partial "events-preview.html" . -}}
 
-    </div>
+              {{ if (not (eq $eventsCount $eventsLimit)) }}
+                <hr />
+              {{ end }}
 
-    <br class="d-lg-none" />
-    <br class="d-lg-none" />
+            {{ end }}
 
-    <div class="row d-lg-none">
+          {{ end }}
 
-
-      <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
-
-      <h2 class="mt-2"><a href="#news" class="plain">Latest News</a></h2>
-
-    </div>
-
-      <br class="d-md-none" />
-
-      <br class="d-md-none" />
-
-    <div class="row ml-4">
-
-      <div class="d-md-none">
-        <h3><a name="events">Upcoming Events</h3>
+        {{ end }}
       </div>
-
-
-      {{ range first 5 (where (index .Site.Taxonomies.categories .Title).Pages "Section" "events") }}
-
-
-          <div class="pt-4">
-            <h1 class="aleo">{{ .Title }}</h1>
-            <p class="aleo">{{ .Description }}</p>
-            <p class="aleo">{{ .Params.time }} @ {{ .Params.location }} &emsp;|&emsp; Hosted by {{ .Params.author }}</p>
-            <a href="{{.Site.BaseURL}}{{ .URL }}">More info</a>
-          </div>
-
-          <hr />
-
-      {{ end }}
-
     </div>
+
+
 
 
   </div>
@@ -125,24 +106,50 @@
       <div class="circle mx-auto d-none d-lg-block" style="margin-top: -30px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
     </a>
     <div class="container">
-      <h1 class="dosis-bold text-center" style="color: {{.Params.colour}};">Latest News</h1>
+      <h2 class="text-center mb-3">Latest News</h2>
 
-      {{ range first 5 (where (index .Site.Taxonomies.categories .Title).Pages "Section" "blog") }}
+      <div id="latestNews">
 
-          <div class="pl-4 pt-4">
-            <h1 class="aleo">{{ .Title }}</h1>
+        {{ $newsCount := 0 }}
+        {{ $newsLimit := 3 }}
 
-            <p class="aleo">By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }} </p>
+        {{ range (where .Site.Pages "Type" "news") }}
 
-            <p class="aleo">{{ .Description }}</p>
-            <p class="aleo"><a href="{{.Site.BaseURL}}{{ .URL }}">Continue reading!</a></p>
-          </div>
+          {{ if le $newsCount $newsLimit }}
+            {{ if in .Params.Tags $groupId }}
 
-      {{ end }}
+              {{ $newsCount := (add $newsCount 1)}}
 
+              {{- partial "news-preview.html" . -}}
+
+              {{ if (not (eq $newsCount $newsLimit)) }}
+                <hr />
+              {{ end }}
+
+            {{ end }}
+
+          {{ end }}
+
+        {{ end }}
+      </div>
     </div>
   </div>
 
 </div>
+
+<script>
+
+var latestNews = $("#latestNews").html();
+var latestEvents = $("#latestEvents").html();
+
+if(latestNews.trim() == "") {
+  $("#latestNews").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No posts to show right now. Check back soon!</p>')
+}
+
+if(latestEvents.trim() == ""){
+
+  $("#latestEvents").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
+}
+</script>
 
 {{ end }}
