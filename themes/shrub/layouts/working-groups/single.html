@@ -26,12 +26,20 @@
       <div class="row pt-4">
         <div class="col-6 offset-1">
           <div class="container">
-            <p class="text-white mb-1">
-              &#127970; {{ .Params.address }}
-            </p>
-            <p class="text-white">
-              &#128336; {{ .Params.times }}
-            </p>
+
+            {{ if .Params.address }}
+
+              <p class="text-white mb-1">
+                &#127970; {{ .Params.address }}
+              </p>
+
+            {{ end }}
+
+            {{ if .Params.times }}
+              <p class="text-white">
+                &#128336; {{ .Params.times }}
+              </p>
+            {{ end }}
           </div>
         </div>
         <div class="col-4 ml-0">
@@ -46,42 +54,42 @@
 
     </div>
 
-    <div class="row">
+    <div id="latestEventsParent">
+      <div class="row d-none d-lg-flex d-xl-flex">
 
 
-      <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
+        <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
 
-      <h2 class="mt-2 mb-2">Latest Events</h2>
+        <h2 class="mt-2 mb-2">Latest Events</h2>
 
-    </div>
-    <div class="row ml-0">
-      <div class="container" id="latestEvents">
+      </div>
+      <div class="row ml-0 d-none d-lg-block d-xl-block">
+        <div class="container" id="latestEvents">
 
-        {{ $eventsCount := 0 }}
-        {{ $eventsLimit := 3 }}
+          {{ $eventsCount := 0 }}
+          {{ $eventsLimit := 3 }}
 
-        {{ range (where .Site.Pages "Type" "events") }}
+          {{ range (where .Site.Pages "Type" "events") }}
 
-          {{ if le $eventsCount $eventsLimit }}
-            {{ if in .Params.Tags $groupId }}
+            {{ if le $eventsCount $eventsLimit }}
+              {{ if in .Params.Tags $groupId }}
 
-              {{ $eventsCount := (add $eventsCount 1)}}
+                {{ $eventsCount := (add $eventsCount 1)}}
 
-              {{- partial "events-preview.html" . -}}
+                {{- partial "events-preview.html" . -}}
 
-              {{ if (not (eq $eventsCount $eventsLimit)) }}
-                <hr />
+                {{ if (not (eq $eventsCount $eventsLimit)) }}
+                  <hr />
+                {{ end }}
+
               {{ end }}
 
             {{ end }}
 
           {{ end }}
-
-        {{ end }}
+        </div>
       </div>
     </div>
-
-
 
 
   </div>
@@ -90,10 +98,9 @@
 
   <div class="col-lg-4 order-lg-2">
 
-    <a name="main">
-      <div class="circle mx-auto d-none d-lg-block" style="margin-top: -30px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
-    </a>
-    <div class="container">
+    <div class="circle d-none d-lg-block d-xl-block mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+
+    <div class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       {{ .Content }}
     </div>
 
@@ -103,7 +110,7 @@
     <br class="d-lg-none" />
     <br class="d-lg-none" />
     <a name="news">
-      <div class="circle mx-auto d-none d-lg-block" style="margin-top: -30px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+      <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
     </a>
     <div class="container">
       <h2 class="text-center mb-3">Latest News</h2>
@@ -133,6 +140,45 @@
         {{ end }}
       </div>
     </div>
+
+    <div id="latestEventsParentCopy">
+      <div class="row mt-5 d-block d-lg-none d-xl-none">
+
+
+        <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+
+
+      </div>
+      <div class="row d-block d-lg-none d-xl-none">
+        <h2 class="text-center mb-3">Latest Events</h2>
+        <div class="container" id="latestEventsCopy">
+
+          {{ $eventsCount := 0 }}
+          {{ $eventsLimit := 3 }}
+
+          {{ range (where .Site.Pages "Type" "events") }}
+
+            {{ if le $eventsCount $eventsLimit }}
+              {{ if in .Params.Tags $groupId }}
+
+                {{ $eventsCount := (add $eventsCount 1)}}
+
+                {{- partial "events-preview.html" . -}}
+
+                {{ if (not (eq $eventsCount $eventsLimit)) }}
+                  <hr />
+                {{ end }}
+
+              {{ end }}
+
+            {{ end }}
+
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+
   </div>
 
 </div>
@@ -149,7 +195,9 @@ if(latestNews.trim() == "") {
 if(latestEvents.trim() == ""){
 
   $("#latestEvents").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
+  $("#latestEventsCopy").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
 }
+
 </script>
 
 {{ end }}
