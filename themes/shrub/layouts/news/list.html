@@ -2,23 +2,14 @@
 
 <div class="col-lg-6 offset-lg-3">
   <div class="container">
-    <div class="pt-4"><h1 class="dosis-bold text-center">News</h1></div>
-
     <div class="pt-4">
+      <h1 class="dosis-bold text-center mb-4">News</h1>
+
       {{ range (where .Data.Pages "Type" "news") }}
 
-      <h1 class="dosis-semi-bold">{{ .Title }}</h1>
+        {{ partial "news-preview.html" . }}
 
-      <p>
-        By {{ .Params.author }} &emsp;|&emsp; {{ dateFormat "02/01/06" .Date }}
-      </p>
-
-      <p>{{ .Description }}</p>
-      <p>
-        <a href="{{.Site.BaseURL}}{{ .URL }}">Continue reading!</a>
-      </p>
-
-      <hr />
+        <hr />
 
       {{ end }}
     </div>
