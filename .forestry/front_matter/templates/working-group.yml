@@ -68,42 +68,6 @@ fields:
     min: 
     max: 
     step: 
-- name: collapsible_headings
-  type: field_group_list
-  fields:
-  - name: how_it_works
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: How It Works
-  - name: our_impact
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Our Impact
-  - name: faqs
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: FAQs
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Collapsible Headings
-  description: Collapsible headings that appear on a group's summary page.
 pages:
 - content/working-groups/food-sharing.md
 - content/working-groups/workshops-and-events.md
