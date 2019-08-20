@@ -27,8 +27,3 @@ We **empower** our community to live a **low carbon life**. Become a member and 
 
 
 * We live by co-operative values of self-help, self-responsibility, democracy, equality, equity, and solidarity.
-
-***
-
-SHRUB Cooperative, Scottish Charitable Incorporated Organisation  
-(Scottish Charity Number SC048825)
