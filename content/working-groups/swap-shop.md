@@ -8,6 +8,8 @@ times = "Open 12pm to 5pm, Wednesday to Saturday"
 title = "Swapshop"
 weight = 4
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358661/shrubcoop.org/media/Swap_Shop_white_xtq9kq.png"
+lon = "55.9456658"
+lat = "-3.2066068"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365726/shrubcoop.org/media/food_sharing_hub_2_eoyib7.png)

@@ -1,0 +1,45 @@
+/* sm */
+@media (min-width: 576px) {
+  .working-group-icon {
+    width: 5.5rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .working-group-icon {
+    width: 6rem;
+  }
+
+  .sloped {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    padding-bottom: 10px;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .working-group-icon {
+    width: 6rem;
+  }
+
+  .sloped {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    padding-bottom: 100px;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .working-group-icon {
+    width: 7rem;
+  }
+
+  .sloped {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    padding-bottom: 100px;
+  }
+}

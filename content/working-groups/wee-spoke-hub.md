@@ -7,6 +7,8 @@ times = "Tuesdays and Thursdays, 5-8pm"
 title = "Wee Spoke Hub"
 weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358675/shrubcoop.org/media/Wee_Spoke_Hub_white_exi47h.png"
+lon = "55.9481442"
+lat = "-3.1906552"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365008/shrubcoop.org/media/wee_spoke_hub_web_ahajzs.png)
