@@ -68,6 +68,14 @@ fields:
     min: 
     max: 
     step: 
+- name: summary_blocks
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Summary Blocks
+  description: Collapsible sections that appear on summary page
 pages:
 - content/working-groups/food-sharing.md
 - content/working-groups/workshops-and-events.md
