@@ -57,8 +57,9 @@
     {{ if .Params.address }}
       {{ if .Params.lon }}
         {{ if .Params.lat }}
-
-          <div id="project-map"></div>
+          <a href="https://www.openstreetmap.org/#map=19/{{ .Params.lon }}/{{ .Params.lat }}" target="_blank" title="Click to view {{ .Params.address }} on Open Street Maps.">
+            <div id="project-map"></div>
+          </a>
 
         {{ end }}
       {{ end }}

@@ -1,5 +1,5 @@
 +++
-address = "22 Bread Street, Edinburgh"
+address = "22 Bread Street, EH3 9AF"
 alt = "Swap Shop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
 colour = "#AB0C17"
 date = "2019-02-12T14:51:46+00:00"
@@ -8,8 +8,8 @@ times = "Open 12pm to 5pm, Wednesday to Saturday"
 title = "Swapshop"
 weight = 4
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358661/shrubcoop.org/media/Swap_Shop_white_xtq9kq.png"
-lon = "55.9456658"
-lat = "-3.2066068"
+lon = "55.945693"
+lat = "-3.204477"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365726/shrubcoop.org/media/food_sharing_hub_2_eoyib7.png)

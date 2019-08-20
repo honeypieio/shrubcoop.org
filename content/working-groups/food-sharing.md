@@ -1,5 +1,5 @@
 +++
-address = "22 Bread Street, Edinburgh"
+address = "22 Bread Street, EH3 9AF"
 alt = "Food Sharing Button – This is the link to our Food Sharing area of the site. Click here to read about our food sharing activities."
 colour = "#137A0A"
 date = "2019-02-12T17:40:58+00:00"
@@ -7,8 +7,8 @@ tagline = "Rescuing food across Edinburgh"
 times = "12pm to 5pm, Wednesday to Saturday"
 title = "Food Sharing"
 weight = 3
-lon = "55.9456658"
-lat = "-3.2066068"
+lon = "55.945693"
+lat = "-3.204477"
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565361183/shrubcoop.org/media/Food_Sharing_Hub_white_nqusoi.png"
 
 +++
