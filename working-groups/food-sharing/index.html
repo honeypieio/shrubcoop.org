@@ -167,7 +167,7 @@
             
 
               <p class="text-white mb-1">
-                &#127970; 22 Bread Street, Edinburgh
+                &#127970; 22 Bread Street, EH3 9AF
               </p>
 
             
@@ -194,8 +194,9 @@
     
       
         
-
-          <div id="project-map"></div>
+          <a href="https://www.openstreetmap.org/#map=19/55.945693/-3.204477" target="_blank" title="Click to view 22 Bread Street, EH3 9AF on Open Street Maps.">
+            <div id="project-map"></div>
+          </a>
 
         
       
@@ -369,7 +370,7 @@ if(latestEvents.trim() == ""){
 
   
     
-      var coords = ["55.9456658", "-3.2066068"]
+      var coords = ["55.945693", "-3.204477"]
       var map = L.map('project-map', {zoomControl:false}).setView(coords, 16);
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {

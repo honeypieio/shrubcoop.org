@@ -273,7 +273,7 @@
                   
 
                     <p class="text-white mb-1">
-                      &#127970; 22 Bread Street, Edinburgh
+                      &#127970; 22 Bread Street, EH3 9AF
                     </p>
 
                   
@@ -309,7 +309,7 @@
                   
 
                     <p class="text-white mb-1">
-                      &#127970; 22 Bread Street, Edinburgh
+                      &#127970; 22 Bread Street, EH3 9AF
                     </p>
 
                   
@@ -565,7 +565,7 @@
 
   var centerCoords = [55.9499497,-3.1969465]
 
-  var map = L.map('front-page-map', {zoomControl:false}).setView(centerCoords, 14);
+  var map = L.map('front-page-map', {zoomControl:false}).setView(centerCoords, 15);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -574,29 +574,76 @@
   	accessToken: 'pk.eyJ1Ijoicm9zc2h1ZHNvbiIsImEiOiJjanpnMGE0MGowaGZtM2VsaXNjdWh2dWZmIn0.cNr_4alsLclO3Exj20P9sA'
   }).addTo(map);
 
-  var markers = [
-    {"name":"22 Bread Street", coords: [55.9456658,-3.2066068], "bindTo": ["swapshop", "zero-waste-hub", "food-sharing"]},
-    {"name":"13 Guthrie Street", coords: [55.9481442,-3.1906552], "bindTo": ["wee-spoke-hub"]},
-    {"name":"17 Guthrie Street", coords: [55.948236,-3.1907144], "bindTo": ["workshops-and-events"]}
-  ]
+
+  var groupLocations = {};
+
+  
+    
+      
+        
+          if(!groupLocations["55.945693" + "-3.204477"]){
+            groupLocations["55.945693" + "-3.204477"] = { coords: ["55.945693", "-3.204477"], bindTo: ["zero-waste-hub"], address: "22 Bread Street, EH3 9AF"}
+          } else {
+            groupLocations["55.945693" + "-3.204477"].bindTo.push("zero-waste-hub")
+          }
+        
+      
+    
+  
+    
+      
+        
+          if(!groupLocations["55.948208" + "-3.188578"]){
+            groupLocations["55.948208" + "-3.188578"] = { coords: ["55.948208", "-3.188578"], bindTo: ["wee-spoke-hub"], address: "13 Guthrie Street, EH1 1JG"}
+          } else {
+            groupLocations["55.948208" + "-3.188578"].bindTo.push("wee-spoke-hub")
+          }
+        
+      
+    
+  
+    
+      
+        
+          if(!groupLocations["55.945693" + "-3.204477"]){
+            groupLocations["55.945693" + "-3.204477"] = { coords: ["55.945693", "-3.204477"], bindTo: ["food-sharing"], address: "22 Bread Street, EH3 9AF"}
+          } else {
+            groupLocations["55.945693" + "-3.204477"].bindTo.push("food-sharing")
+          }
+        
+      
+    
+  
+    
+      
+        
+          if(!groupLocations["55.945693" + "-3.204477"]){
+            groupLocations["55.945693" + "-3.204477"] = { coords: ["55.945693", "-3.204477"], bindTo: ["swapshop"], address: "22 Bread Street, EH3 9AF"}
+          } else {
+            groupLocations["55.945693" + "-3.204477"].bindTo.push("swapshop")
+          }
+        
+      
+    
+  
+    
+  
 
 
+  Object.keys(groupLocations).forEach(function(location, i){
+    var currentMarker = L.marker(groupLocations[location].coords).addTo(map);
+    currentMarker.bindPopup("<p class='font-weight-bold'>" + groupLocations[location].address + "</p>");
 
-  markers.forEach(function(marker, i){
-    markers[i].markerObj = L.marker(markers[i].coords).addTo(map);
-    markers[i].markerObj.bindPopup("<p class='font-weight-bold'>" + markers[i].name + "</p>");
-    var currentMarker = markers[i].markerObj;
-    markers[i].bindTo.forEach(function(group, j){
-      $('#' + markers[i].bindTo[j]).on('mouseenter', function(e) {
+    groupLocations[location].bindTo.forEach(function(group_id, j){
+      $('#' + groupLocations[location].bindTo[j]).on('mouseenter', function(e) {
         
         currentMarker.openPopup();
-        map.setView([(markers[i].coords[0] + 0.001), markers[i].coords[1]], 17); 
-
+        map.setView([(parseFloat(groupLocations[location].coords[0]) + parseFloat(0.001)), groupLocations[location].coords[1]], 17); 
         e.stopPropagation();
         e.preventDefault();
       });
 
-      $('#' + markers[i].bindTo[j]).on('mouseleave', function(e) {
+      $('#' + groupLocations[location].bindTo[j]).on('mouseleave', function(e) {
         
         map.closePopup();
         map.setView(centerCoords, 15);

@@ -194,8 +194,9 @@
     
       
         
-
-          <div id="project-map"></div>
+          <a href="https://www.openstreetmap.org/#map=19/55.948208/-3.188578" target="_blank" title="Click to view 13 Guthrie Street, EH1 1JG on Open Street Maps.">
+            <div id="project-map"></div>
+          </a>
 
         
       
@@ -355,7 +356,7 @@ if(latestEvents.trim() == ""){
 
   
     
-      var coords = ["55.9481442", "-3.1906552"]
+      var coords = ["55.948208", "-3.188578"]
       var map = L.map('project-map', {zoomControl:false}).setView(coords, 16);
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
