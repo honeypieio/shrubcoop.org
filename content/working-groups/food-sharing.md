@@ -7,6 +7,8 @@ tagline = "Rescuing food across Edinburgh"
 times = "12pm to 5pm, Wednesday to Saturday"
 title = "Food Sharing"
 weight = 3
+lon = "55.9456658"
+lat = "-3.2066068"
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565361183/shrubcoop.org/media/Food_Sharing_Hub_white_nqusoi.png"
 
 +++

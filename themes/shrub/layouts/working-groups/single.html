@@ -5,7 +5,7 @@
 
 <div class="row">
 
-  <div class="col-lg-4 order-lg-1">
+  <div class="col-xl-4 order-lg-1">
     <div class="working_group_header sloped">
 
     	<div class="row pt-4">
@@ -46,7 +46,7 @@
           <div class="container">
             <img
               src="{{ .Params.working_group_logo}}"
-              class="working_group_icon d-block mx-auto"
+              class="working-group-icon d-block mx-auto"
             />
           </div>
         </div>
@@ -54,51 +54,27 @@
 
     </div>
 
-    <div id="latestEventsParent">
-      <div class="row d-none d-lg-flex d-xl-flex">
+    {{ if .Params.address }}
+      {{ if .Params.lon }}
+        {{ if .Params.lat }}
 
+          <div id="project-map"></div>
 
-        <div class="circle" style="margin-left: -12px; margin-right: 15px; background-color: {{.Params.colour}};"></div>
-
-        <h2 class="mt-2 mb-2">Latest Events</h2>
-
-      </div>
-      <div class="row ml-0 d-none d-lg-block d-xl-block">
-        <div class="container" id="latestEvents">
-
-          {{ $eventsCount := 0 }}
-          {{ $eventsLimit := 3 }}
-
-          {{ range (where .Site.Pages "Type" "events") }}
-
-            {{ if le $eventsCount $eventsLimit }}
-              {{ if in .Params.Tags $groupId }}
-
-                {{ $eventsCount := (add $eventsCount 1)}}
-
-                {{- partial "events-preview.html" . -}}
-
-                {{ if (not (eq $eventsCount $eventsLimit)) }}
-                  <hr />
-                {{ end }}
-
-              {{ end }}
-
-            {{ end }}
-
-          {{ end }}
-        </div>
-      </div>
-    </div>
-
+        {{ end }}
+      {{ end }}
+    {{ end }}
 
   </div>
 
 
 
-  <div class="col-lg-4 order-lg-2">
+  <div class="col-xl-4 order-lg-2">
 
     <div class="circle d-none d-lg-block d-xl-block mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+
+    <div class="circle d-block d-lg-none d-xl-none mx-auto" style="margin-top: 40px; margin-bottom: 20px; background-color: {{.Params.colour}};"></div>
+
+    <h2 class="text-center mb-3">What We Do</h2>
 
     <div class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       {{ .Content }}
@@ -106,7 +82,7 @@
 
   </div>
 
-  <div class="col-lg-4 order-lg-3">
+  <div class="col-xl-4 order-lg-3">
     <br class="d-lg-none" />
     <br class="d-lg-none" />
     <a name="news">
@@ -142,16 +118,16 @@
     </div>
 
     <div id="latestEventsParentCopy">
-      <div class="row mt-5 d-block d-lg-none d-xl-none">
+      <div class="row mt-5">
 
 
         <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
 
 
       </div>
-      <div class="row d-block d-lg-none d-xl-none">
+      <div class="row d-block">
         <h2 class="text-center mb-3">Latest Events</h2>
-        <div class="container" id="latestEventsCopy">
+        <div class="container" id="latestEvents">
 
           {{ $eventsCount := 0 }}
           {{ $eventsLimit := 3 }}
@@ -195,9 +171,25 @@ if(latestNews.trim() == "") {
 if(latestEvents.trim() == ""){
 
   $("#latestEvents").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
-  $("#latestEventsCopy").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
-}
 
+}
+{{ if .Params.address }}
+  {{ if .Params.lon }}
+    {{ if .Params.lat }}
+      var coords = [{{ .Params.Lon }}, {{ .Params.Lat }}]
+      var map = L.map('project-map', {zoomControl:false}).setView(coords, 16);
+
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.outdoors',
+        accessToken: '{{ .Site.Params.mapboxKey }}'
+      }).addTo(map);
+
+      var marker = L.marker(coords).addTo(map);
+    {{ end }}
+  {{ end }}
+{{ end }}
 </script>
 
 {{ end }}
