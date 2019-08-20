@@ -8,10 +8,6 @@ times = "12pm to 5pm, Wednesday to Saturday"
 title = "Food Sharing"
 weight = 3
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565361183/shrubcoop.org/media/Food_Sharing_Hub_white_nqusoi.png"
-[[collapsible_headings]]
-faqs = "#### Do I need to be a member to use the Food Sharing Hub?\n\nYes\n\n#### Is Zero Waste Hub accessible?\n\nThe Zero Waste Hub is on ground floor with a wheelchair accessible entrance, accessible and gender neutral toilet.\n\nThere are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street.\n\nIf you have further questions regarding accessibility before a visit, please contact the Zero Waste Hub on **0131 281 0583**.\n\n#### Is there nearby bicycle parking?\n\nThere is space to lock up your bike on the corner of Lothian Road and Bread Street by Cost Cutters.\n\n#### What bus routes are you on?\n\nThe Zero Waste Hub is located just off Lothian Road and Grassmarket and following bus routes will take you nearby;\n\nLothian Road routes: 47, 24, 10, 11, 15, 16, 36, 1, 34, 124\n\nGrassmarket route: 2\n\n#### Is there parking nearby?\n\nThere is limited on street parking on Bread Street, but two large car parks a 4 minute walk away;\n\n**Thistle Parking**\n\nSemple Street, Edinburgh, EH3 8BL\n\n**NCP Car Park Edinburgh Castle Terrace**\n\nCastle Terrace, Edinburgh, EH1 2EW"
-how_it_works = "\n### "
-our_impact = ""
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565364027/shrubcoop.org/media/food_sharing_hub_page_itwn4i.png)
