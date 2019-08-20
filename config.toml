@@ -49,6 +49,7 @@ weight = 3
 murakamiCarbonKey = "UUGLwdSBrFutmfmBnA8ccC4BC"
 murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
 murakamiMembershipSignUpKey = "wza96Xne2EUrmCucaM9qhaMMr"
+mapboxKey= "pk.eyJ1Ijoicm9zc2h1ZHNvbiIsImEiOiJjanpnMGE0MGowaGZtM2VsaXNjdWh2dWZmIn0.cNr_4alsLclO3Exj20P9sA"
 fundersFooterText = "SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above."
 shrubLegalName = "SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)"
 webmasterEmail = "example@mail.com"
