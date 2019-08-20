@@ -48,6 +48,34 @@ fields:
   description: Upload this working group's logo.
   config:
     maxSize: '5'
+- name: lat
+  type: number
+  label: Latitude
+  description: Latitude of group's location
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: lon
+  type: number
+  label: Longitude
+  description: Longitude of group's location
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: summary_blocks
+  type: blocks
+  label: Summary Blocks
+  template_types: []
+  config:
+    min: 
+    max: 
+  description: Collapsible sections that appear on summary page
 pages:
 - content/working-groups/food-sharing.md
 - content/working-groups/workshops-and-events.md
