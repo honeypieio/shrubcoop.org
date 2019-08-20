@@ -68,6 +68,48 @@ fields:
     min: 
     max: 
     step: 
+- name: collapsible_headings
+  type: field_group
+  config: {}
+  fields:
+  - name: opening_hours
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Opening Hours
+  - name: faqs
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: FAQs
+  - name: our_impact
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Our Impact
+  - name: how_it_works
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: How It Works
+  label: Collapsible Headings
+  description: Collapsible sections that appear on summary page
 pages:
 - content/working-groups/food-sharing.md
 - content/working-groups/workshops-and-events.md
