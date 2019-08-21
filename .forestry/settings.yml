@@ -34,7 +34,7 @@ public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
 use_front_matter_path: true
 file_template: ":filename:"
-instant_preview: 
+instant_preview: true
 build:
   preview_env:
   - HUGO_ENV=staging
