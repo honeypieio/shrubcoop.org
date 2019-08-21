@@ -133,10 +133,10 @@
         <div class="row col-10 col-offset-1">
           <a class="internal-anchor" name="member-signup"></a>
           <h1 class="text-white  pl-3">{{ .Params.membership_sign_up_title }}</h1>
-          {{ if .Params.volunteer_sign_up_title }}
+          {{ if .Params.volunteer_sign_up_tagline }}
             <div class="col-10">
               <h4 class="text-white">
-                {{ .Params.volunteer_sign_up_title | markdownify}}
+                {{ .Params.volunteer_sign_up_tagline}}
               </h4>
 
             </div>
@@ -147,7 +147,7 @@
 
     <div class="container mb-5">
 
-      {{ .Params.membership_sign_up_body }}
+      {{ .Params.membership_sign_up_body | markdownify }}
 
       <button class="btn btn-shrub btn-block" data-toggle="modal" data-target="#membershipSignUpModal">{{ .Params.membership_sign_up_button }}</button>
     </div>
