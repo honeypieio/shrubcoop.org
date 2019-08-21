@@ -8,7 +8,7 @@ membership_sign_up_button = "Sign Up Now"
 membership_sign_up_list_tagline = ""
 membership_sign_up_title = "Become a member!"
 volunteer_roles_page_button_text = "Search All Roles"
-volunteer_sign_up_list_tagline = ""
+volunteer_sign_up_list_tagline = "We run on volunteer power and always need more helping hands"
 volunteer_sign_up_title = "Volunteer with us!"
 
 +++
