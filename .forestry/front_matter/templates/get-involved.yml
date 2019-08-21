@@ -1,4 +1,76 @@
 ---
 label: Get Involved
 hide_body: true
-fields: []
+fields:
+- name: mailing_list_title
+  type: text
+  config:
+    required: false
+  label: Mailing List Title
+  description: Title that appears at the top of the mailing list column
+- name: mailing_list_tagline
+  type: text
+  config:
+    required: false
+  label: Mailing List Tagline
+  description: Tagline that appears below the title of the mailing list column
+- name: mailing_list_gdpr_disclaimer
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Mailing List GDPR disclaimer
+  description: Disclaimer that appears in the "terms and conditions" box on the mailing
+    list
+- name: mailing_list_button
+  type: text
+  config:
+    required: false
+  label: Mailing List Button
+- name: membership_sign_up_title
+  type: text
+  config:
+    required: false
+  label: Membership Sign Up Title
+  description: Title that appears at the top of the membership sign up column
+- name: membership_sign_up_list_tagline
+  type: text
+  config:
+    required: false
+  label: Membership Sign Up List Tagline
+  description: Tagline that appears below the title of the membership sign up column
+- name: membership_sign_up_body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Membership Sign Up Body
+  description: Body of the membership sign up column
+- name: membership_sign_up_button
+  type: text
+  config:
+    required: false
+  label: Membership Sign Up Button
+- name: volunteer_sign_up_title
+  type: text
+  config:
+    required: false
+  label: Volunteer Sign Up Title
+  description: Title that appears at the top of the volunteer sign up column
+- name: volunteer_sign_up_list_tagline
+  type: text
+  config:
+    required: false
+  label: Volunteer Sign Up List Tagline
+  description: Tagline that appears below the title of the volunteer sign up column
+- name: volunteer_roles_page_button_text
+  type: text
+  config:
+    required: false
+  label: Volunteer Roles Button
