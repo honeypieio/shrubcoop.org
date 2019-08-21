@@ -30,6 +30,26 @@
   </url>
   
   <url>
+    <loc>https://shrub.space/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://shrub.space/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://shrub.space/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://shrub.space/"
+                />
+  </url>
+  
+  <url>
     <loc>https://shrub.space/volunteer-roles/view/</loc>
   </url>
   
@@ -39,11 +59,6 @@
   
   <url>
     <loc>https://shrub.space/events/big-swap-test/</loc>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -75,14 +90,7 @@
   </url>
   
   <url>
-    <loc>https://shrub.space/tags/swapshop/</loc>
-    <lastmod>2019-08-08T23:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/tags/</loc>
-    <lastmod>2019-08-08T23:00:00+00:00</lastmod>
+    <loc>https://shrub.space/volunteer-roles/</loc>
     <priority>0</priority>
   </url>
   
@@ -93,12 +101,6 @@
   <url>
     <loc>https://shrub.space/working-groups/</loc>
     <lastmod>2019-02-12T17:40:58+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shrub.space/tags/zero-waste-hub/</loc>
-    <lastmod>2019-08-08T23:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
