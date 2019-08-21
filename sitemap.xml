@@ -30,10 +30,6 @@
   </url>
   
   <url>
-    <loc>https://shrub.space/get-involved/get-involved/</loc>
-  </url>
-  
-  <url>
     <loc>https://shrub.space/volunteer-roles/view/</loc>
   </url>
   
@@ -57,6 +53,10 @@
   <url>
     <loc>https://shrub.space/events/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shrub.space/get-involved/get-involved/</loc>
   </url>
   
   <url>
