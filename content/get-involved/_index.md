@@ -7,7 +7,6 @@ membership_sign_up_body = "<h1>From only <span class=\"text-red\">£1</span> a m
 membership_sign_up_button = "Sign Up Now"
 membership_sign_up_list_tagline = ""
 membership_sign_up_title = "Become a member!"
-title = "Get Involved"
 volunteer_roles_page_button_text = "Search All Roles"
 volunteer_sign_up_tagline = "Please consider volunteering with us!"
 volunteer_sign_up_title = "Volunteer with us!"
