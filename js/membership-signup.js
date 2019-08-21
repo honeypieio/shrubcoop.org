@@ -236,3 +236,15 @@ function validateMembershipForm() {
 
   return errors;
 }
+
+function getSignUpInfo(callback){
+  $.ajax({
+    url:
+      "http://192.168.1.128:3000/api/get/members/sign-up-info?key=" +
+      membershipSignUpKey,
+    type: "GET",
+    success: function(murakamiResponse) {
+      callback(murakamiResponse.signUpInfo);
+    }
+  });
+}

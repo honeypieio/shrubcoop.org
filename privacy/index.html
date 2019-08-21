@@ -41,7 +41,7 @@
 />
 <meta charset="UTF-8" />
 
-<title> | SHRUB Coop</title>
+<title>Privacy Notice | SHRUB Coop</title>
 </head>
     <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
   <a class="navbar-brand ml-lg-5 ml-xl-5" href="https://shrub.space/">
@@ -137,43 +137,29 @@
 </nav>
 <div class="content mb-0 mb-lg-5 mb-xl-5" style="margin-top: 75px;">
 
-<div class="col-lg-6 offset-lg-3">
+  <div class="col-lg-6 offset-lg-3">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="pt-4">
+      <div class="pt-4">
 
-      <h1 class="dosis-bold mb-5 text-shrub" id="roleTitle"></h1>
+        <h1 class="dosis-bold text-center mb-4">Privacy Notice</h1>
 
-      <div id="volunteerRole"></div>
+        <div id="privacyNotice">aaaaaaaaaaa</div>
 
-      <h3 class="mt-2">How To Apply</h3>
+      </div>
 
-      <p><p>This page contains the information on how to apply for a role.</p>
-</p>
-
-    </div>
-
-  </div>
+	</div>
 </div>
 
-<script src="https://shrub.space/js/volunteer-roles.js"></script>
-
+<script src="https://shrub.space/js/membership-signup.js"></script>
 <script>
+  var membershipSignUpKey = "wza96Xne2EUrmCucaM9qhaMMr"
 
-  var BaseURL = "https:\/\/shrub.space\/";
-  var murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
-
-  var urlParams = new URLSearchParams(window.location.search);
-  var roleId = urlParams.get('roleId');
-
-  var failUri = "https:\/\/shrub.space\/volunteer-roles"
-
-  if(!roleId){
-    window.location = failUri;
-  } else {
-    getVolunteerRole(roleId)
-  }
+  getSignUpInfo(function(signUpInfo){
+    console.log(signUpInfo);
+    $("#privacyNotice").html(signUpInfo.privacyNotice.markup);
+  })
 </script>
 
 
