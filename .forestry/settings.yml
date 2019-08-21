@@ -4,6 +4,10 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: content/volunteer-roles/view.md
+  label: Volunteer Roles - How To Apply
+  match: "**/*"
 - type: directory
   path: content/working-groups
   label: Working groups
@@ -19,16 +23,6 @@ sections:
 - type: directory
   path: content/blog
   label: Blog
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/volunteer-roles
-  label: Volunteer roles
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/get-involved
-  label: Get involved
   create: all
   match: "**/*"
 - type: directory
