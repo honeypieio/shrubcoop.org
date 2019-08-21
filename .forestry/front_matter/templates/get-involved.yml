@@ -80,11 +80,11 @@ fields:
   config:
     required: true
   label: Volunteer Sign Up Button
-- name: layout
+- name: type
   type: text
   config:
     required: false
-  label: Layout
+  label: Type
   hidden: true
   default: get-involved
 pages:
