@@ -75,10 +75,10 @@ fields:
     required: false
   label: Volunteer Sign Up Tagline
   description: Tagline that appears below the title of the volunteer sign up column
-- name: volunteer_roles_page_button_text
+- name: volunteer_sign_up_button
   type: text
   config:
     required: true
-  label: Volunteer Roles Button
+  label: Volunteer Sign Up Button
 pages:
 - content/get-involved/get-involved.md
