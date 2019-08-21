@@ -75,4 +75,5 @@ fields:
     required: false
   label: Volunteer Roles Button
 pages:
+- content/get-involved/get-involved.md
 - content/get-involved/get-involved/_index.md
