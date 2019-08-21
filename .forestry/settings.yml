@@ -7,7 +7,6 @@ sections:
 - type: document
   path: config.toml
   label: Site Config
-  match: "**/*"
 - type: document
   path: content/volunteer-roles/view.md
   label: Volunteer Roles - How To Apply
