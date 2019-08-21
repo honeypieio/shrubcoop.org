@@ -2,10 +2,16 @@
 label: Get Involved
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title of page
 - name: mailing_list_title
   type: text
   config:
-    required: false
+    required: true
   label: Mailing List Title
   description: Title that appears at the top of the mailing list column
 - name: mailing_list_tagline
@@ -18,7 +24,7 @@ fields:
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: true
     schema:
       format: markdown
@@ -28,12 +34,12 @@ fields:
 - name: mailing_list_button
   type: text
   config:
-    required: false
+    required: true
   label: Mailing List Button
 - name: membership_sign_up_title
   type: text
   config:
-    required: false
+    required: true
   label: Membership Sign Up Title
   description: Title that appears at the top of the membership sign up column
 - name: membership_sign_up_list_tagline
@@ -46,7 +52,7 @@ fields:
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: true
     schema:
       format: markdown
@@ -55,12 +61,12 @@ fields:
 - name: membership_sign_up_button
   type: text
   config:
-    required: false
+    required: true
   label: Membership Sign Up Button
 - name: volunteer_sign_up_title
   type: text
   config:
-    required: false
+    required: true
   label: Volunteer Sign Up Title
   description: Title that appears at the top of the volunteer sign up column
 - name: volunteer_sign_up_tagline
@@ -72,7 +78,7 @@ fields:
 - name: volunteer_roles_page_button_text
   type: text
   config:
-    required: false
+    required: true
   label: Volunteer Roles Button
 pages:
 - content/get-involved/get-involved.md
