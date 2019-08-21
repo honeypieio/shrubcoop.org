@@ -81,4 +81,4 @@ fields:
     required: true
   label: Volunteer Sign Up Button
 pages:
-- content/get-involved/get-involved.md
+- content/get-involved/index.md
