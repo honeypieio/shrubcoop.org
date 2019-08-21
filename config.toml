@@ -51,5 +51,5 @@ murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
 shrubLegalName = "SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)"
 webmasterEmail = "webmaster@shrubcoop.org"
 [taxonomies]
-category = "categories"
-tag = "tags"
+category = ["swapshop", "zero-waste-hub", "food-sharing", "wee-spoke-hub", "workshops-and-events"]
+tag = ["swapshop", "zero-waste-hub", "food-sharing", "wee-spoke-hub", "workshops-and-events"]
