@@ -80,5 +80,3 @@ fields:
   config:
     required: true
   label: Volunteer Sign Up Button
-pages:
-- content/get-involved/index.md
