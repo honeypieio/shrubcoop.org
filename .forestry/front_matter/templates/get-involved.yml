@@ -80,5 +80,12 @@ fields:
   config:
     required: true
   label: Volunteer Sign Up Button
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: get-involved
 pages:
 - content/get-involved.md
