@@ -21,10 +21,6 @@ fields:
   config:
     required: true
 - type: text
-  name: address
-  label: Address
-  description: Address, if applicable
-- type: text
   name: times
   label: Opening Times
   description: Opening times, if applicable
@@ -68,6 +64,22 @@ fields:
     min: 
     max: 
     step: 
+- name: address
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - 22 Bread Street, EH3 9AF
+    - 13 Guthrie Street, EH1 1JG
+    - 17 Guthrie Street, EH1 1JG
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Address
+  description: Project's address
 pages:
 - content/working-groups/zero-waste-hub.md
 - content/working-groups/wee-spoke-hub.md
