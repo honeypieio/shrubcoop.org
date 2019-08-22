@@ -8,13 +8,6 @@
         <div class="row">
           <h1 class="text-white  pl-3">Get Involved</h1>
         </div>
-        <div class="row">
-          <div class="col-10">
-            <h4 class="text-white">
-              Be part of a good thing :-)
-            </h4>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -24,7 +17,7 @@
         <div class="circle bg-dark" style="margin-left: -25px; margin-right: 15px;"></div>
 
         <a href="#mailing-list">
-          <h2 class="mt-2 mb-2">Join our mailing list!</h2>
+          <h2 class="mt-2 mb-2">{{ .Params.mailing_list_title }}</h2>
         </a>
 
       </div>
@@ -34,7 +27,7 @@
         <div class="circle bg-dark" style="margin-left: -25px; margin-right: 15px;"></div>
 
         <a href="#member-signup">
-          <h2 class="mt-2 mb-2">Become a member!</h2>
+          <h2 class="mt-2 mb-2">{{ .Params.membership_sign_up_title }}</h2>
         </a>
 
       </div>
@@ -45,7 +38,7 @@
         <div class="circle bg-dark" style="margin-left: -25px; margin-right: 15px;"></div>
 
         <a href="#volunteer-roles">
-          <h2 class="mt-2 mb-2">Become a volunteer!</h2>
+          <h2 class="mt-2 mb-2">{{ .Params.volunteer_sign_up_title }}</h2>
         </a>
 
       </div>
@@ -132,11 +125,11 @@
       <div class="container pl-4 pt-4">
         <div class="row col-10 col-offset-1">
           <a class="internal-anchor" name="member-signup"></a>
-          <h1 class="text-white  pl-3">{{ .Params.membership_sign_up_title }}</h1>
-          {{ if .Params.volunteer_sign_up_tagline }}
+          <h1 class="text-white pl-3">{{ .Params.membership_sign_up_title }}</h1>
+          {{ if .Params.membership_sign_up_tagline }}
             <div class="col-10">
               <h4 class="text-white">
-                {{ .Params.volunteer_sign_up_tagline}}
+                {{ .Params.membership_sign_up_tagline}}
               </h4>
 
             </div>

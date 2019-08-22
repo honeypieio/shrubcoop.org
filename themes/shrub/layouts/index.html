@@ -135,12 +135,9 @@
 
     <div class="events-header pt-4 pb-4">
       <div class="container">
-        <div class="pl-4 pt-2 text-white links-white">
-          {{ .Scratch.Set "eventsTextWhite" "true" }}
+        <div class="pl-4 pt-2 text-white link-white">
           {{ range first 1 (where .Data.Pages "Type" "events") }}
-
             {{ partial "events-preview.html" . }}
-
           {{ end }}
         </div>
       </div>
@@ -148,7 +145,7 @@
 
     <div class="latest-blog-header sloped pb-5" style="margin-top: -2px;">
       <div class="container">
-        <div class="pl-3 pb-xl-4 pb-lg-4 pt-4 text-white links-white">
+        <div class="pl-3 pb-xl-4 pb-lg-4 pt-4 text-white link-white">
           {{ range first 1 (where .Data.Pages "Type" "news") }}
             {{- partial "news-preview.html" . -}}
           {{ end }}

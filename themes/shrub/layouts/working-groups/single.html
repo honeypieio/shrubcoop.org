@@ -77,7 +77,7 @@
 
     <h2 class="text-center mb-3">What We Do</h2>
 
-    <div class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
+    <div id="group-synopsis" class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       {{ .Content }}
 
     </div>
@@ -171,10 +171,33 @@ if(latestNews.trim() == "") {
 }
 
 if(latestEvents.trim() == ""){
-
   $("#latestEvents").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
-
 }
+
+var synopsisHeadings = {};
+$("#group-synopsis h3").each(function(){
+  var triggerId = this.id;
+  var body = document.createElement("div")
+  body.id = this.id + "_body";
+  body.className = "collapse"
+
+  var toggler = document.createElement("a");
+  toggler.dataset.toggle = "collapse";
+  toggler.href = "#" + body.id;
+  toggler.className = "ml-2"
+  toggler.style.color = "{{ .Params.colour }}"
+  toggler.innerHTML = "&#x25BC;"
+  this.appendChild(toggler)
+  $(this).nextUntil("#group-synopsis h3").each(function(){
+    var child = document.createElement(this.tagName)
+    child.innerHTML = this.innerHTML;
+    body.appendChild(child)
+    $(this).remove()
+  });
+  $(body).insertAfter(this);
+
+});
+
 {{ if .Params.address }}
   {{ if .Params.lon }}
     {{ if .Params.lat }}
