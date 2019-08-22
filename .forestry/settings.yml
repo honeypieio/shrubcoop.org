@@ -4,6 +4,12 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: config.toml
+  label: Site Config
+- type: document
+  path: content/volunteer-roles/view.md
+  label: Volunteer Roles - How To Apply
 - type: directory
   path: content/working-groups
   label: Working groups
@@ -22,16 +28,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/volunteer-roles
-  label: Volunteer roles
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/get-involved
-  label: Get involved
-  create: all
-  match: "**/*"
-- type: directory
   path: content
   label: Pages
   create: all
@@ -41,7 +37,7 @@ public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
 use_front_matter_path: true
 file_template: ":filename:"
-instant_preview: 
+instant_preview: false
 build:
   preview_env:
   - HUGO_ENV=staging
