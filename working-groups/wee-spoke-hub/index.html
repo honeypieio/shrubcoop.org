@@ -214,7 +214,7 @@
 
     <h2 class="text-center mb-3">What We Do</h2>
 
-    <div class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
+    <div id="group-synopsis" class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       
 
 <p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1565365008/shrubcoop.org/media/wee_spoke_hub_web_ahajzs.png" alt="" /></p>
@@ -349,10 +349,33 @@ if(latestNews.trim() == "") {
 }
 
 if(latestEvents.trim() == ""){
-
   $("#latestEvents").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
-
 }
+
+var synopsisHeadings = {};
+$("#group-synopsis h3").each(function(){
+  var triggerId = this.id;
+  var body = document.createElement("div")
+  body.id = this.id + "_body";
+  body.className = "collapse"
+
+  var toggler = document.createElement("a");
+  toggler.dataset.toggle = "collapse";
+  toggler.href = "#" + body.id;
+  toggler.className = "ml-2"
+  toggler.style.color = "#EF7D00"
+  toggler.innerHTML = "&#x25BC;"
+  this.appendChild(toggler)
+  $(this).nextUntil("#group-synopsis h3").each(function(){
+    var child = document.createElement(this.tagName)
+    child.innerHTML = this.innerHTML;
+    body.appendChild(child)
+    $(this).remove()
+  });
+  $(body).insertAfter(this);
+
+});
+
 
   
     
@@ -373,8 +396,7 @@ if(latestEvents.trim() == ""){
 </script>
 
 
-				</div>
-<div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
+				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
   <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
     <div class="row">
       <div class="col-md-4 mx-auto my-3">
@@ -407,7 +429,7 @@ if(latestEvents.trim() == ""){
 
 
 
-<footer class="page-footer font-small bg-dark blue pt-5 text-white">
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
 
 
   <div class="container-fluid text-center text-md-left">

@@ -22,6 +22,10 @@ img {
   width: 100%;
 }
 
+.link-plain {
+  color: #333;
+}
+
 #front-page-map {
   width: 100%;
   height: 450px;
@@ -40,7 +44,7 @@ p {
   color: inherit;
 }
 
-.links-white {
+.link-white {
   color: white;
 }
 
@@ -48,8 +52,25 @@ p {
   color: #0074D9;
 }
 
-a {
-  color: inherit;
+.events-header a {
+  color: white;
+}
+
+.events-header a {
+  color: white;
+}
+
+.latest-blog-header a {
+  color: white;
+}
+
+
+html a {
+  color: #0074D9;
+}
+
+#footer a {
+  color: white;
 }
 
 .text-shrub {
