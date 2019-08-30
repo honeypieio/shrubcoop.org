@@ -2,13 +2,13 @@
 address = "13 Guthrie Street, EH1 1JG"
 alt = "Wee Spoke Hub Button – This is the link to the Wee Spoke Hub area of the site. Click here to read more about the Wee Spoke Hub."
 colour = "#EF7D00"
+lat = -3.188578
+lon = 55.948208
 tagline = "Community Bike Workshop"
 times = "Tuesdays and Thursdays, 5-8pm"
 title = "Wee Spoke Hub"
 weight = 2
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565358675/shrubcoop.org/media/Wee_Spoke_Hub_white_exi47h.png"
-lon = "55.948208"
-lat = "-3.188578"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1567156973/shrubcoop.org/media/Weespoke_hub_logo_white_background_evcdfw.png"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365008/shrubcoop.org/media/wee_spoke_hub_web_ahajzs.png)
