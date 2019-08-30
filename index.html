@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="generator" content="Hugo 0.53" /><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://shrub.space/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://shrub.space/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://shrub.space/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://shrub.space/css/base-style.css" />
+<link rel="stylesheet" href="https://shrub.space/css/responsive.css" />
+<link rel="stylesheet" href="https://shrub.space/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+<title>Home | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5" href="https://shrub.space/">
+
+    <h1 class="text-center shrub" style="line-height:0.85;">
+      SHRUB
+    </h1>
+    <h3 class="text-center dosis-semi-bold" style="line-height:0;" >
+      COOP
+    </h3>
+
+  </a>
+
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+
+       
+      <li
+        class="nav-item mx-auto mx-xl-5 "
+      >
+        <a
+          class="nav-link text-white"
+          title="About Us - Click this link to find out about us and why we exist."
+          href="/about-us/"
+          >About Us</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto mx-xl-5 "
+      >
+        <a
+          class="nav-link text-white"
+          title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+          href="/contact/"
+          >Contact</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto mx-xl-5 "
+      >
+        <a
+          class="nav-link text-white"
+          title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+          href="/get-involved/"
+          >Get Involved</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto mx-xl-5 "
+      >
+        <a
+          class="nav-link text-white"
+          title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+          href="/events/"
+          >Events</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto mx-xl-5 "
+      >
+        <a
+          class="nav-link text-white"
+          title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+          href="/news/"
+          >News</a
+        >
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0 mb-lg-5 mb-xl-5" style="margin-top: 75px;">
+
+<div class="row">
+  <div class="col-xl-8">
+    <div class="front-page-header pt-xl-4 pt-lg-4 pb-0 sloped">
+      <div class="row pt-4 pb-4 pl-4 pr-4">
+        <div class="col-xl-5 col-12 mx-auto">
+
+          <div id="front-page-header" class="mx-auto">
+            <center id="default-header">
+              <h1 class="shrub mb-2 mt-3 text-center"
+                style="font-size: 6em; line-height: 0.5;"
+              >
+                SHRUB
+              </h1>
+              <h2 class="dosis-semi-bold" style="font-size: 60px; line-height: 0.8;">
+                COOP
+              </h2>
+              <p
+              class="text-center mt-3 dosis-semi-bold text-white"
+                style="line-height: 1;"
+              >
+                We’re a cooperative in Edinburgh working
+              </p>
+              <h3
+              class="text-center dosis-semi-bold"
+                style="font-size: 2em; line-height: 0.8;"
+              >
+                FOR A WORLD
+              </h3>
+              <h1
+              class="text-center dosis-semi-bold"
+                style="font-size: 3em; line-height: 0.8;"
+              >
+                WITHOUT
+              </h1>
+              <h3
+              class="text-center dosis-semi-bold"
+                style="font-size: 2em; line-height: 0.8;"
+              >
+                WASTE
+              </h3>
+            </center>
+
+            
+
+            <div
+              id="zero-waste-hub_info"
+              class="working-group-synopsis d-none"
+            >
+              <div class="row pt-0 pl-4 mb-4">
+                <div class="container">
+                  <h1
+                    class="dosis-bold"
+                    style="font-size: 38px; padding-bottom: 0; color: #AB0C17;"
+                  >
+                    Zero Waste Hub
+                  </h1>
+
+                  <h4 class="text-white dosis-semi-bold">One stop shop for sustainable living!</h4>
+
+
+                  
+
+                    <p class="text-white mb-1">
+                      &#127970; 22 Bread Street, EH3 9AF
+                    </p>
+
+                  
+
+                  
+                    <p class="text-white">
+                      &#128336; Wednesday - Saturday, 12-5pm
+                    </p>
+                  
+
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div
+              id="wee-spoke-hub_info"
+              class="working-group-synopsis d-none"
+            >
+              <div class="row pt-0 pl-4 mb-4">
+                <div class="container">
+                  <h1
+                    class="dosis-bold"
+                    style="font-size: 38px; padding-bottom: 0; color: #EF7D00;"
+                  >
+                    Wee Spoke Hub
+                  </h1>
+
+                  <h4 class="text-white dosis-semi-bold">Community Bike Workshop</h4>
+
+
+                  
+
+                    <p class="text-white mb-1">
+                      &#127970; 13 Guthrie Street, EH1 1JG
+                    </p>
+
+                  
+
+                  
+                    <p class="text-white">
+                      &#128336; Tuesdays and Thursdays, 5-8pm
+                    </p>
+                  
+
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div
+              id="food-sharing_info"
+              class="working-group-synopsis d-none"
+            >
+              <div class="row pt-0 pl-4 mb-4">
+                <div class="container">
+                  <h1
+                    class="dosis-bold"
+                    style="font-size: 38px; padding-bottom: 0; color: #137A0A;"
+                  >
+                    Food Sharing
+                  </h1>
+
+                  <h4 class="text-white dosis-semi-bold">Rescuing food across Edinburgh</h4>
+
+
+                  
+
+                    <p class="text-white mb-1">
+                      &#127970; 22 Bread Street, EH3 9AF
+                    </p>
+
+                  
+
+                  
+                    <p class="text-white">
+                      &#128336; 12pm to 5pm, Wednesday to Saturday
+                    </p>
+                  
+
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div
+              id="swapshop_info"
+              class="working-group-synopsis d-none"
+            >
+              <div class="row pt-0 pl-4 mb-4">
+                <div class="container">
+                  <h1
+                    class="dosis-bold"
+                    style="font-size: 38px; padding-bottom: 0; color: #AB0C17;"
+                  >
+                    Swapshop
+                  </h1>
+
+                  <h4 class="text-white dosis-semi-bold">Swap, Buy, Donate!</h4>
+
+
+                  
+
+                    <p class="text-white mb-1">
+                      &#127970; 22 Bread Street, EH3 9AF
+                    </p>
+
+                  
+
+                  
+                    <p class="text-white">
+                      &#128336; Open 12pm to 5pm, Wednesday to Saturday
+                    </p>
+                  
+
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div
+              id="workshops-and-events_info"
+              class="working-group-synopsis d-none"
+            >
+              <div class="row pt-0 pl-4 mb-4">
+                <div class="container">
+                  <h1
+                    class="dosis-bold"
+                    style="font-size: 38px; padding-bottom: 0; color: #941A87;"
+                  >
+                    Workshops and Events
+                  </h1>
+
+                  <h4 class="text-white dosis-semi-bold">Be inspired by our many activities!</h4>
+
+
+                  
+
+                  
+
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        <div class="col-xl-7 col-12 ml-0 mx-auto d-md-block mt-4 mb-5 pb-xl-5 pb-lg-5 mt-xl-0 mb-xl-0">
+
+            <div class="container mb-4">
+
+              <h2 id="carbonCounter" class="dosis-semi-bold text-center text-white">
+                So far, we've saved
+                <br />
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+
+              </h2>
+
+            </div>
+
+
+
+
+
+                <div class="d-flex flex-wrap justify-content-center mb-4 mb-xl-0">
+
+                  
+
+                      <a
+                        class="working_group_link p-1"
+                        href="https://shrub.space//working-groups/zero-waste-hub/"
+                        title="Zero Waste Hub Button – This is the link to our Zero Waste Hub area of the site. Click here to read about our Zero Waste Hub activities."
+
+                      >
+                        <div class="d-inline p-4 mb-4" id="zero-waste-hub">
+                          <img alt="Zero Waste Hub logo"
+                            src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567157208/shrubcoop.org/media/Zero_Waste_Hub_l0af8x.png"
+                            id="zero-waste-hub"
+                            class="working-group-icon mx-auto"
+                          />
+                        </div>
+                      </a>
+
+
+
+                  
+
+                      <a
+                        class="working_group_link p-1"
+                        href="https://shrub.space//working-groups/wee-spoke-hub/"
+                        title="Wee Spoke Hub Button – This is the link to the Wee Spoke Hub area of the site. Click here to read more about the Wee Spoke Hub."
+
+                      >
+                        <div class="d-inline p-4 mb-4" id="wee-spoke-hub">
+                          <img alt="Wee Spoke Hub logo"
+                            src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567156973/shrubcoop.org/media/Weespoke_hub_logo_white_background_evcdfw.png"
+                            id="wee-spoke-hub"
+                            class="working-group-icon mx-auto"
+                          />
+                        </div>
+                      </a>
+
+
+
+                  
+
+                      <a
+                        class="working_group_link p-1"
+                        href="https://shrub.space//working-groups/food-sharing/"
+                        title="Food Sharing Button – This is the link to our Food Sharing area of the site. Click here to read about our food sharing activities."
+
+                      >
+                        <div class="d-inline p-4 mb-4" id="food-sharing">
+                          <img alt="Food Sharing logo"
+                            src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567156899/shrubcoop.org/media/Foodsharing_logo_white_background_l6rgae.png"
+                            id="food-sharing"
+                            class="working-group-icon mx-auto"
+                          />
+                        </div>
+                      </a>
+
+
+
+                  
+
+                      <a
+                        class="working_group_link p-1"
+                        href="https://shrub.space//working-groups/swap-shop/"
+                        title="Swap Shop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
+
+                      >
+                        <div class="d-inline p-4 mb-4" id="swapshop">
+                          <img alt="Swapshop logo"
+                            src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567156933/shrubcoop.org/media/Swapshop_logo_white_background_jikrqk.png"
+                            id="swapshop"
+                            class="working-group-icon mx-auto"
+                          />
+                        </div>
+                      </a>
+
+
+
+                  
+
+                      <a
+                        class="working_group_link p-1"
+                        href="https://shrub.space//working-groups/workshops-and-events/"
+                        title="Workshops and Events Button – This is the link to our Workshops and Events area of the site. Click here to read about our Workshop and Event activities."
+
+                      >
+                        <div class="d-inline p-4 mb-4" id="workshops-and-events">
+                          <img alt="Workshops and Events logo"
+                            src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567157262/shrubcoop.org/media/shrub_space_qnqyzi.png"
+                            id="workshops-and-events"
+                            class="working-group-icon mx-auto"
+                          />
+                        </div>
+                      </a>
+
+
+
+                  
+
+                </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div id="front-page-map"></div>
+  </div>
+
+  <div class="col-xl-4">
+
+    <div class="events-header pt-4 pb-4">
+      <div class="container">
+        <div class="pl-4 pt-2 text-white link-white">
+          
+            <h1 class="dosis-bold">Big Swap test</h1>
+
+<p class="dosis-semi-bold">
+  Monday, August 12, 2019 at Zero Waste Hub
+</p>
+
+<p>Lets test what the description does</p>
+
+<a href="https://shrub.space//events/big-swap-test/" title="Latest event: Big Swap test - click this link to read more about this event." class="underline">
+  See details
+</a>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="latest-blog-header sloped pb-5" style="margin-top: -2px;">
+      <div class="container">
+        <div class="pl-3 pb-xl-4 pb-lg-4 pt-4 text-white link-white">
+          
+  <h1 class="dosis-bold">We have a swapshop</h1>
+
+  <p class="dosis-semi-bold">
+    By Rob | 08/08/19
+  </p>
+
+  <p>What does the description do</p>
+  <p>
+    <a
+      href="https://shrub.space//news/we-have-a-swapshop/"
+      title="Blog post: We have a swapshop by Rob - click this link to continue reading."
+      class="underline"
+      >Read full post</a
+    >
+  </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br />
+
+<script>
+
+  $(".working-group-icon").mouseenter(function(){
+    $("#default-header").hide();
+    $(".working-group-synopsis").addClass("d-none");
+    $(".working-group-icon").css("opacity", "0.5");
+    $(this).css("opacity", "1");
+    $("#" + this.id + "_info").removeClass("d-none");
+  })
+
+  $(".working-group-icon").mouseleave(function(){
+    $("#default-header").show();
+    $("#" + this.id + "_info").addClass("d-none");
+    $("#" + this.id + "_info").removeClass("d-none");
+    $(".working-group-synopsis").addClass("d-none");
+    $(".working-group-icon").css("opacity", "1");
+  })
+
+  $.ajax({
+    url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key=UUGLwdSBrFutmfmBnA8ccC4BC",
+    type: "GET",
+    success: function(res) {
+      if (!parseFloat(res)) {
+        res = (0.0).toFixed(3);
+      }
+      $("#carbonCounter").html("So far, we've saved <br />" + res + " tonnes of carbon!");
+    }
+  });
+
+  var centerCoords = [55.9499497,-3.1969465]
+
+  var map = L.map('front-page-map', {zoomControl:false}).setView(centerCoords, 14);
+
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+  	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  	maxZoom: 18,
+  	id: 'mapbox.outdoors',
+  	accessToken: 'pk.eyJ1Ijoicm9zc2h1ZHNvbiIsImEiOiJjanpnMGE0MGowaGZtM2VsaXNjdWh2dWZmIn0.cNr_4alsLclO3Exj20P9sA'
+  }).addTo(map);
+
+
+  var groupLocations = {};
+
+  
+    
+      
+        
+          if(!groupLocations["55.945693" + "-3.204477"]){
+            groupLocations["55.945693" + "-3.204477"] = { coords: ["55.945693", "-3.204477"], bindTo: ["zero-waste-hub"], address: "22 Bread Street, EH3 9AF"}
+          } else {
+            groupLocations["55.945693" + "-3.204477"].bindTo.push("zero-waste-hub")
+          }
+        
+      
+    
+  
+    
+      
+        
+          if(!groupLocations["55.948208" + "-3.188578"]){
+            groupLocations["55.948208" + "-3.188578"] = { coords: ["55.948208", "-3.188578"], bindTo: ["wee-spoke-hub"], address: "13 Guthrie Street, EH1 1JG"}
+          } else {
+            groupLocations["55.948208" + "-3.188578"].bindTo.push("wee-spoke-hub")
+          }
+        
+      
+    
+  
+    
+      
+        
+          if(!groupLocations["55.945693" + "-3.204477"]){
+            groupLocations["55.945693" + "-3.204477"] = { coords: ["55.945693", "-3.204477"], bindTo: ["food-sharing"], address: "22 Bread Street, EH3 9AF"}
+          } else {
+            groupLocations["55.945693" + "-3.204477"].bindTo.push("food-sharing")
+          }
+        
+      
+    
+  
+    
+      
+        
+          if(!groupLocations["55.945693" + "-3.204477"]){
+            groupLocations["55.945693" + "-3.204477"] = { coords: ["55.945693", "-3.204477"], bindTo: ["swapshop"], address: "22 Bread Street, EH3 9AF"}
+          } else {
+            groupLocations["55.945693" + "-3.204477"].bindTo.push("swapshop")
+          }
+        
+      
+    
+  
+    
+  
+
+
+  Object.keys(groupLocations).forEach(function(location, i){
+    var currentMarker = L.marker(groupLocations[location].coords).addTo(map);
+    currentMarker.bindPopup("<p class='font-weight-bold'>" + groupLocations[location].address + "</p>");
+
+    groupLocations[location].bindTo.forEach(function(group_id, j){
+      $('#' + groupLocations[location].bindTo[j]).on('mouseenter', function(e) {
+        
+        currentMarker.openPopup();
+        map.setView([(parseFloat(groupLocations[location].coords[0]) + parseFloat(0.001)), groupLocations[location].coords[1]], 17); 
+        e.stopPropagation();
+        e.preventDefault();
+      });
+
+      $('#' + groupLocations[location].bindTo[j]).on('mouseleave', function(e) {
+        
+        map.closePopup();
+        map.setView(centerCoords, 14);
+      });
+    })
+  })
+
+</script>
+
+
+				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
+    <div class="row">
+      <div class="col-md-4 mx-auto my-3">
+        <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" target="_blank">
+          <img src="https://shrub.space/images/funders/ccf.jpg" class="funder-image">
+        </a>
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <a href="https://ec.europa.eu/regional_policy/en/funding/" target="_blank">
+          <img src="https://shrub.space/images/funders/erdf.jpg" class="funder-image">
+        </a>
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <a href="http://www.greenerscotland.org" target="_blank">
+          <img src="https://shrub.space/images/funders/greener-scotland.jpg" class="funder-image">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                Tel. 0123456789
+              </li>
+              <li>
+                13 Guthrie Street
+              </li>
+              <li>
+                EH1 1JG
+              </li>
+              <li>
+                Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://shrub.space/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/contact/">Contact</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://shrub.space/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://shrub.space/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
