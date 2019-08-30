@@ -18,8 +18,6 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15671
 
 Anyone is welcome to buy or donate items. **Become a member** and you can swap your items in exchange for tokens to use in-store.
 
-    &nbsp
-
 ### **How It Works**
 
 Our vision is for a world without waste. Choosing second hand helps to save carbon emissions and supports a sustainable lifestyle.
