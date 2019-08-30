@@ -2,13 +2,13 @@
 address = "22 Bread Street, EH3 9AF"
 alt = "Zero Waste Hub Button – This is the link to our Zero Waste Hub area of the site. Click here to read about our Zero Waste Hub activities."
 colour = "#AB0C17"
+lat = -3.204477
+lon = 55.945693
 tagline = "One stop shop for sustainable living!"
 times = "Wednesday - Saturday, 12-5pm"
 title = "Zero Waste Hub"
 weight = 1
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1565360321/shrubcoop.org/media/Zero_Waste_Hub_white_jiiist.png"
-lon = "55.945693"
-lat = "-3.204477"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1567157208/shrubcoop.org/media/Zero_Waste_Hub_l0af8x.png"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367405/shrubcoop.org/media/food_sharing_hub_7_jtbeh3.png)
