@@ -98,7 +98,7 @@
 
 
 
-                <div class="d-flex flex-wrap justify-content-center mb-4 mb-xl-0">
+                <div class="d-flex flex-wrap justify-content-center mb-5 mt-5 mt-xl-0 mb-xl-0">
 
                   {{ range (where .Data.Pages "Type" "working-groups") }}
 
@@ -194,7 +194,7 @@
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   	maxZoom: 18,
-  	id: 'mapbox.outdoors',
+  	id: '{{ .Site.Params.mapStyle }}',
   	accessToken: '{{ .Site.Params.mapboxKey }}'
   }).addTo(map);
 
