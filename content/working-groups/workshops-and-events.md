@@ -2,8 +2,6 @@
 address = ""
 alt = "Workshops and Events Button – This is the link to our Workshops and Events area of the site. Click here to read about our Workshop and Event activities."
 colour = "#941A87"
-lat = nil
-lon = nil
 tagline = "Be inspired by our many activities!"
 times = ""
 title = "Workshops and Events"
