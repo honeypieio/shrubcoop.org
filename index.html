@@ -45,16 +45,12 @@
 <title>Home | SHRUB Coop</title>
 </head>
     <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
-  <a class="navbar-brand ml-lg-5 ml-xl-5" href="https://shrub.space/">
-
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://shrub.space/">
     <p class="align-middle mb-0">
-      <span class="shrub align-top mb-0" style="font-size: 2.5rem;">SHRUB</span>
-      <span class="dosis-semi-bold align-top mb-0" style="font-size: 2.25rem;">COOP</span>
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
     </p>
-
-
   </a>
-
 
   <button
     class="navbar-toggler"
@@ -170,17 +166,18 @@
   </div>
 
   <div class="col-xl-4 order-1 order-xl-2">
-    <div class="front-page-header pt-xl-4 pt-lg-4 pb-0 sloped">
+    <div class="front-page-header pt-4 pb-0 sloped">
       <div class="row">
 
-        <div class="col-12 ml-0 mx-auto" style="margin-bottom: 17.5%;">
+        <div class="col-12 ml-0 mb-4 mb-xl-5 pb-0 pb-xl-5 mx-auto" style="margin-bottom: 17.5%;">
 
 
 
             <div id="front-page-header" class="mx-auto mb-3">
 
               <div class="container text-center mb-2">
-                <p></p>
+                <h4>We're a cooperative in Edinburgh for a</h4>
+                <h2 style="line-height: 1;">WORLD WITHOUT WASTE</h2>
               </div>
 
               
@@ -204,7 +201,7 @@
                     title="Zero Waste Hub Button – This is the link to our Zero Waste Hub area of the site. Click here to read about our Zero Waste Hub activities."
 
                   >
-                    <div class="d-inline p-2 mb-4" id="zero-waste-hub">
+                    <div class="d-inline p-2 mb-4">
                       <img alt="Zero Waste Hub logo"
                         src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567157208/shrubcoop.org/media/Zero_Waste_Hub_l0af8x.png"
                         id="zero-waste-hub"
@@ -223,7 +220,7 @@
                     title="Wee Spoke Hub Button – This is the link to the Wee Spoke Hub area of the site. Click here to read more about the Wee Spoke Hub."
 
                   >
-                    <div class="d-inline p-2 mb-4" id="wee-spoke-hub">
+                    <div class="d-inline p-2 mb-4">
                       <img alt="Wee Spoke Hub logo"
                         src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567156973/shrubcoop.org/media/Weespoke_hub_logo_white_background_evcdfw.png"
                         id="wee-spoke-hub"
@@ -242,7 +239,7 @@
                     title="Food Sharing Button – This is the link to our Food Sharing area of the site. Click here to read about our food sharing activities."
 
                   >
-                    <div class="d-inline p-2 mb-4" id="food-sharing">
+                    <div class="d-inline p-2 mb-4">
                       <img alt="Food Sharing logo"
                         src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567156899/shrubcoop.org/media/Foodsharing_logo_white_background_l6rgae.png"
                         id="food-sharing"
@@ -261,10 +258,10 @@
                     title="Swap Shop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
 
                   >
-                    <div class="d-inline p-2 mb-4" id="swapshop">
-                      <img alt="Swapshop logo"
+                    <div class="d-inline p-2 mb-4">
+                      <img alt="Swap Shop logo"
                         src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567156933/shrubcoop.org/media/Swapshop_logo_white_background_jikrqk.png"
-                        id="swapshop"
+                        id="swap-shop"
                         class="working-group-icon mx-auto"
                       />
                     </div>
@@ -280,7 +277,7 @@
                     title="Workshops and Events Button – This is the link to our Workshops and Events area of the site. Click here to read about our Workshop and Event activities."
 
                   >
-                    <div class="d-inline p-2 mb-4" id="shrub-space">
+                    <div class="d-inline p-2 mb-4">
                       <img alt="SHRUB Space logo"
                         src="https://res.cloudinary.com/shrub-co-op/image/upload/v1567157262/shrubcoop.org/media/shrub_space_qnqyzi.png"
                         id="shrub-space"
@@ -352,15 +349,6 @@
 
 <script>
 
-  $(".working-group-icon").mouseenter(function(){
-    $(".working-group-icon").css("opacity", "0.5");
-    $(this).css("opacity", "1");
-  })
-
-  $(".working-group-icon").mouseleave(function(){
-    $(".working-group-icon").css("opacity", "1");
-  })
-
   
 
     $.ajax({
@@ -377,6 +365,7 @@
   
 
   var centerCoords = [55.9499497,-3.1969465]
+  centerCoords[0] += parseFloat(0.002) 
 
   var map = L.map('front-page-map', {zoomControl:false}).setView(centerCoords, 14);
 
@@ -387,6 +376,7 @@
   	accessToken: 'pk.eyJ1Ijoicm9zc2h1ZHNvbiIsImEiOiJjanpnMGE0MGowaGZtM2VsaXNjdWh2dWZmIn0.cNr_4alsLclO3Exj20P9sA'
   }).addTo(map);
 
+  var currentMapSelection;
 
   var groupLocations = [];
 
@@ -418,7 +408,7 @@
     
       
         
-          groupLocations.push({ coords: ["55.945693", "-3.204477"], bindTo: ["swapshop"], title: "Swapshop", colour: "#AB0C17", tagline: "Swap, Buy, Donate!", address: "22 Bread Street, EH3 9AF", openingTimes: "Open 12pm to 5pm, Wednesday to Saturday"})
+          groupLocations.push({ coords: ["55.945693", "-3.204477"], bindTo: ["swap-shop"], title: "Swap Shop", colour: "#AB0C17", tagline: "Swap, Buy, Donate!", address: "22 Bread Street, EH3 9AF", openingTimes: "Open 12pm to 5pm, Wednesday to Saturday"})
         
       
     
@@ -435,45 +425,71 @@
 
   groupLocations.forEach(function(location, i){
     var currentMarker = L.marker(groupLocations[i].coords).addTo(map);
-    var popUpBody = "<p class='font-weight-bold'>" + groupLocations[i].address + "</p>";
-    popUpBody = "<h1 class=\"dosis-bold\" style=\"font-size: 38px; padding-bottom: 0; color: " + groupLocations[i].colour + ";\">" +
-      groupLocations[i].title +
-      "</h1>";
+    popUpBody = "<p class=\"dosis-bold h5 mt-0 mb-0 pb-0\" style=\"color: " + groupLocations[i].colour + ";\">" +
+                  groupLocations[i].title +
+                "</p>";
 
 
 
-    popUpBody += "<h4 class=\"dosis-semi-bold\">" + groupLocations[i].tagline + "</h4>";
+    popUpBody += "<p class=\"dosis-semi-bold mt-1 mb-1 pb-0\">" + groupLocations[i].tagline + "</p>";
 
     if(groupLocations[i].address){
-        popUpBody += "<p class=\"mb-0\">&#127970; " +
+        popUpBody += "<p class=\"mt-0 mb-0\">&#127970; " +
           groupLocations[i].address +
         "</p>"
     }
 
     if(groupLocations[i].openingTimes){
-      popUpBody += "<p>&#128336; " +
+      popUpBody += "<p class=\"mt-0 mb-0\">&#128336; " +
         groupLocations[i].openingTimes
       "</p>"
     }
 
+    popUpBody += "<p class=\"mt-1\">Click the icon again to find out more!</p>"
+
     currentMarker.bindPopup(popUpBody);
 
     groupLocations[i].bindTo.forEach(function(group_id, j){
-      $('#' + groupLocations[i].bindTo[j]).on('mouseenter', function(e) {
-        
-        currentMarker.openPopup();
-        map.setView([(parseFloat(groupLocations[i].coords[0]) + parseFloat(0.00125)), groupLocations[i].coords[1]], 17); 
-        e.stopPropagation();
-        e.preventDefault();
+
+      $('#' + groupLocations[i].bindTo[j]).click(function(e) {
+
+        if(currentMapSelection == groupLocations[i].bindTo[j]){
+          window.location.href = "https:\/\/shrub.space\//working-groups/" + group_id
+        } else {
+          groupLocations[i].bindTo[j]
+
+          
+          e.stopPropagation();
+          e.preventDefault();
+          currentMarker.openPopup();
+          map.setView([(parseFloat(groupLocations[i].coords[0]) + parseFloat(0.002)), groupLocations[i].coords[1]], 16); 
+
+          $(".working-group-icon").css("opacity", "0.5");
+          $('#' + groupLocations[i].bindTo[j]).css("opacity", "1");
+
+          currentMapSelection = groupLocations[i].bindTo[j]
+
+        }
       });
 
-      $('#' + groupLocations[i].bindTo[j]).on('mouseleave', function(e) {
-        
-        map.closePopup();
-        map.setView(centerCoords, 14);
-      });
     })
+
+
   })
+
+  $(document).click(function(e) {
+    if(currentMapSelection !== undefined){
+      
+      e.stopPropagation();
+      e.preventDefault();
+      map.closePopup();
+      map.setView(centerCoords, 14);
+      $(".working-group-icon").css("opacity", "1");
+      currentMapSelection = null;
+    }
+
+  })
+
 
 </script>
 
