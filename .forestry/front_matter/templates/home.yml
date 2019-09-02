@@ -8,6 +8,10 @@ fields:
 - type: textarea
   name: central_column_text
   label: central_column_text
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: text
   name: hide_carbon_counter
   label: hide_carbon_counter
