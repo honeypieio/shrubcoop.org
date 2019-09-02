@@ -1,5 +1,5 @@
 +++
-central_column_text = "<p>Our vision is a world without waste</p>"
+central_column_text = "<h4>We're a cooperative in Edinburgh working towards a world without waste!</h4>"
 hide_carbon_counter = "false"
 title = "Home"
 
