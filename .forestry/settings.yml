@@ -9,12 +9,11 @@ sections:
   label: News
   create: all
   match: "**/*"
-- type: document
-  path: config.toml
-  label: Site Config
-- type: document
-  path: content/volunteer-roles/view.md
-  label: Volunteer Roles - How To Apply
+- type: directory
+  path: content/events
+  label: Events
+  create: all
+  match: "**/*"
 - type: directory
   path: content/working-groups
   label: Working groups
@@ -23,20 +22,16 @@ sections:
   templates:
   - working-group
 - type: directory
-  path: content/events
-  label: Events
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/blog
-  label: Blog
-  create: all
-  match: "**/*"
-- type: directory
   path: content
   label: Pages
   create: all
   match: "*"
+- type: document
+  path: content/volunteer-roles/view.md
+  label: Volunteer Roles - How To Apply
+- type: document
+  path: config.toml
+  label: Site Config
 upload_dir: shrubcoop.org/media
 public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
