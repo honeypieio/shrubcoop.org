@@ -88,5 +88,4 @@ fields:
   hidden: true
   default: get-involved
 pages:
-- content/news/a-blog-post.md
 - content/get-involved.md
