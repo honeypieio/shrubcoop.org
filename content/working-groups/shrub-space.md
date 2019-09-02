@@ -1,13 +1,14 @@
 +++
-address = ""
+address = "17 Guthrie Street, EH1 1JG"
 alt = "Workshops and Events Button – This is the link to our Workshops and Events area of the site. Click here to read about our Workshop and Event activities."
 colour = "#941A87"
 tagline = "Be inspired by our many activities!"
 times = ""
-title = "Workshops and Events"
+title = "SHRUB Space"
 weight = 5
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1567157262/shrubcoop.org/media/shrub_space_qnqyzi.png"
-
+lat = -3.1884412
+lon = 55.9482262
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367105/shrubcoop.org/media/food_sharing_hub_6_rtvqvu.png)
 

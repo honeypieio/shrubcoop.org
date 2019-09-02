@@ -1,127 +1,70 @@
 {{ define "main" }}
 
 <div class="row">
-  <div class="col-xl-8">
-    <div class="front-page-header pt-xl-4 pt-lg-4 pb-0 sloped">
-      <div class="row pt-4 pb-4 pl-4 pr-4">
-        <div class="col-xl-5 col-12 mx-auto">
 
-          <div id="front-page-header" class="mx-auto">
-            <center id="default-header">
-              <h1 class="shrub mb-2 mt-3 text-center"
-                style="font-size: 6em; line-height: 0.5;"
-              >
-                SHRUB
-              </h1>
-              <h2 class="dosis-semi-bold" style="font-size: 60px; line-height: 0.8;">
-                COOP
-              </h2>
-              <p
-              class="text-center mt-3 dosis-semi-bold text-white"
-                style="line-height: 1;"
-              >
-                We’re a cooperative in Edinburgh working
-              </p>
-              <h3
-              class="text-center dosis-semi-bold"
-                style="font-size: 2em; line-height: 0.8;"
-              >
-                FOR A WORLD
-              </h3>
-              <h1
-              class="text-center dosis-semi-bold"
-                style="font-size: 3em; line-height: 0.8;"
-              >
-                WITHOUT
-              </h1>
-              <h3
-              class="text-center dosis-semi-bold"
-                style="font-size: 2em; line-height: 0.8;"
-              >
-                WASTE
-              </h3>
-            </center>
-
-            {{ range (where .Data.Pages "Type" "working-groups") }}
-
-            <div
-              id="{{urlize .Title }}_info"
-              class="working-group-synopsis d-none"
-            >
-              <div class="row pt-0 pl-4 mb-4">
-                <div class="container">
-                  <h1
-                    class="dosis-bold"
-                    style="font-size: 38px; padding-bottom: 0; color: {{.Params.colour}};"
-                  >
-                    {{ .Title }}
-                  </h1>
-
-                  <h4 class="text-white dosis-semi-bold">{{ .Params.tagline }}</h4>
-
-
-                  {{ if .Params.address }}
-
-                    <p class="text-white mb-1">
-                      &#127970; {{ .Params.address }}
-                    </p>
-
-                  {{ end }}
-
-                  {{ if .Params.times }}
-                    <p class="text-white">
-                      &#128336; {{ .Params.times }}
-                    </p>
-                  {{ end }}
-
-                </div>
-              </div>
-            </div>
-
-            {{ end }}
+  <div class="col-xl-4 order-2 order-xl-1">
+    <div class="latest-blog-header sloped pt-1 pb-4" style="padding-bottom: 20% !important;">
+      <div class="container pl-4 pt-3">
+        <h3 class="mb-1 mt-2 text-white">Latest News</h3>
+        {{ range first 3 (where .Data.Pages "Type" "news") }}
+          <div class="pb-xl-4 pb-lg-4 pb-2 text-white link-white">
+            {{ partial "news-preview.html" . }}
           </div>
-        </div>
-        <div class="col-xl-7 col-12 ml-0 mx-auto d-md-block mt-4 mb-5 pb-xl-5 pb-lg-5 mt-xl-0 mb-xl-0">
+        {{ end }}
 
-            <div class="container mb-4">
+      </div>
+    </div>
+  </div>
 
-              <h2 id="carbonCounter" class="dosis-semi-bold text-center text-white">
-                So far, we've saved
-                <br />
-                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  <div class="col-xl-4 order-1 order-xl-2">
+    <div class="front-page-header pt-xl-4 pt-lg-4 pb-0 sloped">
+      <div class="row">
 
-              </h2>
+        <div class="col-12 ml-0 mx-auto" style="margin-bottom: 17.5%;">
+
+
+
+            <div id="front-page-header" class="mx-auto mb-3">
+
+              <div class="container text-center mb-2">
+                {{ .Params.central_column_text }}
+              </div>
+
+              {{ if (eq .Params.hide_carbon_counter "false") }}
+                <span id="carbonCounter" class="h4 d-block dosis-semi-bold text-center text-white mb-3">
+                  So far, we've saved
+                  <br />
+                  <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                </span>
+              {{ end }}
+
 
             </div>
 
+            <div class="d-flex flex-wrap justify-content-center mb-5 mt-5 mt-xl-0 mb-xl-0">
+
+              {{ range (where .Data.Pages "Type" "working-groups") }}
+
+                  <a
+                    class="working_group_link p-1"
+                    href="{{.Site.BaseURL}}{{.URL}}"
+                    title="{{ .Params.alt }}"
+
+                  >
+                    <div class="d-inline p-2 mb-4" id="{{urlize .Title }}">
+                      <img alt="{{ .Name }} logo"
+                        src="{{ .Params.working_group_logo}}"
+                        id="{{urlize .Title }}"
+                        class="working-group-icon mx-auto"
+                      />
+                    </div>
+                  </a>
 
 
 
+              {{ end }}
 
-                <div class="d-flex flex-wrap justify-content-center mb-5 mt-5 mt-xl-0 mb-xl-0">
-
-                  {{ range (where .Data.Pages "Type" "working-groups") }}
-
-                      <a
-                        class="working_group_link p-1"
-                        href="{{.Site.BaseURL}}{{.URL}}"
-                        title="{{ .Params.alt }}"
-
-                      >
-                        <div class="d-inline p-4 mb-4" id="{{urlize .Title }}">
-                          <img alt="{{ .Name }} logo"
-                            src="{{ .Params.working_group_logo}}"
-                            id="{{urlize .Title }}"
-                            class="working-group-icon mx-auto"
-                          />
-                        </div>
-                      </a>
-
-
-
-                  {{ end }}
-
-                </div>
+            </div>
 
 
 
@@ -131,27 +74,21 @@
     <div id="front-page-map"></div>
   </div>
 
-  <div class="col-xl-4">
+  <div class="col-xl-4 order-3 order-xl-3">
 
-    <div class="events-header pt-4 pb-4">
-      <div class="container">
-        <div class="pl-4 pt-2 text-white link-white">
-          {{ range first 1 (where .Data.Pages "Type" "events") }}
+    <div class="events-header sloped pt-1 pb-4" style="padding-bottom: 20% !important;">
+      <div class="container pl-4 pt-3">
+        <h3 class="mb-1 mt-2 text-white">What's On</h3>
+        {{ range first 3 (where .Data.Pages "Type" "events") }}
+          <div class="pb-xl-4 pb-lg-4 pb-2 text-white link-white">
             {{ partial "events-preview.html" . }}
-          {{ end }}
-        </div>
+          </div>
+        {{ end }}
+
       </div>
     </div>
 
-    <div class="latest-blog-header sloped pb-5" style="margin-top: -2px;">
-      <div class="container">
-        <div class="pl-3 pb-xl-4 pb-lg-4 pt-4 text-white link-white">
-          {{ range first 1 (where .Data.Pages "Type" "news") }}
-            {{- partial "news-preview.html" . -}}
-          {{ end }}
-        </div>
-      </div>
-    </div>
+
   </div>
 
 </div>
@@ -161,31 +98,28 @@
 <script>
 
   $(".working-group-icon").mouseenter(function(){
-    $("#default-header").hide();
-    $(".working-group-synopsis").addClass("d-none");
     $(".working-group-icon").css("opacity", "0.5");
     $(this).css("opacity", "1");
-    $("#" + this.id + "_info").removeClass("d-none");
   })
 
   $(".working-group-icon").mouseleave(function(){
-    $("#default-header").show();
-    $("#" + this.id + "_info").addClass("d-none");
-    $("#" + this.id + "_info").removeClass("d-none");
-    $(".working-group-synopsis").addClass("d-none");
     $(".working-group-icon").css("opacity", "1");
   })
 
-  $.ajax({
-    url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiCarbonKey }}",
-    type: "GET",
-    success: function(res) {
-      if (!parseFloat(res)) {
-        res = (0.0).toFixed(3);
+  {{ if (eq .Params.hide_carbon_counter "false") }}
+
+    $.ajax({
+      url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiCarbonKey }}",
+      type: "GET",
+      success: function(res) {
+        if (!parseFloat(res)) {
+          res = (0.0).toFixed(3);
+        }
+        $("#carbonCounter").html("So far, we've saved <br />" + res + " tonnes of carbon!");
       }
-      $("#carbonCounter").html("So far, we've saved <br />" + res + " tonnes of carbon!");
-    }
-  });
+    });
+
+  {{ end }}
 
   var centerCoords = [55.9499497,-3.1969465]
 
@@ -199,37 +133,54 @@
   }).addTo(map);
 
 
-  var groupLocations = {};
+  var groupLocations = [];
 
   {{ range (where .Data.Pages "Type" "working-groups") }}
     {{ if .Params.address }}
       {{ if .Params.lon }}
         {{ if .Params.lat }}
-          if(!groupLocations["{{ .Params.lon }}" + "{{ .Params.lat }}"]){
-            groupLocations["{{ .Params.lon }}" + "{{ .Params.lat }}"] = { coords: ["{{ .Params.lon }}", "{{ .Params.lat }}"], bindTo: ["{{ urlize .Title }}"], address: "{{ .Params.address }}"}
-          } else {
-            groupLocations["{{ .Params.lon }}" + "{{ .Params.lat }}"].bindTo.push("{{ urlize .Title }}")
-          }
+          groupLocations.push({ coords: ["{{ .Params.lon }}", "{{ .Params.lat }}"], bindTo: ["{{ urlize .Title }}"], title: "{{ .Title }}", colour: "{{ .Params.colour }}", tagline: "{{ .Params.tagline }}", address: "{{ .Params.address }}", openingTimes: "{{ .Params.times }}"})
         {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
 
 
-  Object.keys(groupLocations).forEach(function(location, i){
-    var currentMarker = L.marker(groupLocations[location].coords).addTo(map);
-    currentMarker.bindPopup("<p class='font-weight-bold'>" + groupLocations[location].address + "</p>");
+  groupLocations.forEach(function(location, i){
+    var currentMarker = L.marker(groupLocations[i].coords).addTo(map);
+    var popUpBody = "<p class='font-weight-bold'>" + groupLocations[i].address + "</p>";
+    popUpBody = "<h1 class=\"dosis-bold\" style=\"font-size: 38px; padding-bottom: 0; color: " + groupLocations[i].colour + ";\">" +
+      groupLocations[i].title +
+      "</h1>";
 
-    groupLocations[location].bindTo.forEach(function(group_id, j){
-      $('#' + groupLocations[location].bindTo[j]).on('mouseenter', function(e) {
+
+
+    popUpBody += "<h4 class=\"dosis-semi-bold\">" + groupLocations[i].tagline + "</h4>";
+
+    if(groupLocations[i].address){
+        popUpBody += "<p class=\"mb-0\">&#127970; " +
+          groupLocations[i].address +
+        "</p>"
+    }
+
+    if(groupLocations[i].openingTimes){
+      popUpBody += "<p>&#128336; " +
+        groupLocations[i].openingTimes
+      "</p>"
+    }
+
+    currentMarker.bindPopup(popUpBody);
+
+    groupLocations[i].bindTo.forEach(function(group_id, j){
+      $('#' + groupLocations[i].bindTo[j]).on('mouseenter', function(e) {
         // Pan to location when hovering on group
         currentMarker.openPopup();
-        map.setView([(parseFloat(groupLocations[location].coords[0]) + parseFloat(0.001)), groupLocations[location].coords[1]], 17); // Offset slightly to account for slope overlay.
+        map.setView([(parseFloat(groupLocations[i].coords[0]) + parseFloat(0.00125)), groupLocations[i].coords[1]], 17); // Offset slightly to account for slope overlay.
         e.stopPropagation();
         e.preventDefault();
       });
 
-      $('#' + groupLocations[location].bindTo[j]).on('mouseleave', function(e) {
+      $('#' + groupLocations[i].bindTo[j]).on('mouseleave', function(e) {
         // Pan to center when no longer hovering.
         map.closePopup();
         map.setView(centerCoords, 14);
