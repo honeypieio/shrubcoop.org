@@ -17,17 +17,18 @@
   </div>
 
   <div class="col-xl-4 order-1 order-xl-2">
-    <div class="front-page-header pt-xl-4 pt-lg-4 pb-0 sloped">
+    <div class="front-page-header pt-4 pb-0 sloped">
       <div class="row">
 
-        <div class="col-12 ml-0 mx-auto" style="margin-bottom: 17.5%;">
+        <div class="col-12 ml-0 mb-4 mb-xl-5 pb-0 pb-xl-5 mx-auto" style="margin-bottom: 17.5%;">
 
 
 
             <div id="front-page-header" class="mx-auto mb-3">
 
               <div class="container text-center mb-2">
-                {{ .Params.central_column_text | safeHTML }}
+                <h4>We're a cooperative in Edinburgh for a</h4>
+                <h2 style="line-height: 1;">WORLD WITHOUT WASTE</h2>
               </div>
 
               {{ if (eq .Params.hide_carbon_counter "false") }}
@@ -51,7 +52,7 @@
                     title="{{ .Params.alt }}"
 
                   >
-                    <div class="d-inline p-2 mb-4" id="{{urlize .Title }}">
+                    <div class="d-inline p-2 mb-4">
                       <img alt="{{ .Name }} logo"
                         src="{{ .Params.working_group_logo}}"
                         id="{{urlize .Title }}"
@@ -97,15 +98,6 @@
 
 <script>
 
-  $(".working-group-icon").mouseenter(function(){
-    $(".working-group-icon").css("opacity", "0.5");
-    $(this).css("opacity", "1");
-  })
-
-  $(".working-group-icon").mouseleave(function(){
-    $(".working-group-icon").css("opacity", "1");
-  })
-
   {{ if (eq .Params.hide_carbon_counter "false") }}
 
     $.ajax({
@@ -122,6 +114,7 @@
   {{ end }}
 
   var centerCoords = [55.9499497,-3.1969465]
+  centerCoords[0] += parseFloat(0.002) // Offset.
 
   var map = L.map('front-page-map', {zoomControl:false}).setView(centerCoords, 14);
 
@@ -132,6 +125,7 @@
   	accessToken: '{{ .Site.Params.mapboxKey }}'
   }).addTo(map);
 
+  var currentMapSelection;
 
   var groupLocations = [];
 
@@ -148,45 +142,71 @@
 
   groupLocations.forEach(function(location, i){
     var currentMarker = L.marker(groupLocations[i].coords).addTo(map);
-    var popUpBody = "<p class='font-weight-bold'>" + groupLocations[i].address + "</p>";
-    popUpBody = "<h1 class=\"dosis-bold\" style=\"font-size: 38px; padding-bottom: 0; color: " + groupLocations[i].colour + ";\">" +
-      groupLocations[i].title +
-      "</h1>";
+    popUpBody = "<p class=\"dosis-bold h5 mt-0 mb-0 pb-0\" style=\"color: " + groupLocations[i].colour + ";\">" +
+                  groupLocations[i].title +
+                "</p>";
 
 
 
-    popUpBody += "<h4 class=\"dosis-semi-bold\">" + groupLocations[i].tagline + "</h4>";
+    popUpBody += "<p class=\"dosis-semi-bold mt-1 mb-1 pb-0\">" + groupLocations[i].tagline + "</p>";
 
     if(groupLocations[i].address){
-        popUpBody += "<p class=\"mb-0\">&#127970; " +
+        popUpBody += "<p class=\"mt-0 mb-0\">&#127970; " +
           groupLocations[i].address +
         "</p>"
     }
 
     if(groupLocations[i].openingTimes){
-      popUpBody += "<p>&#128336; " +
+      popUpBody += "<p class=\"mt-0 mb-0\">&#128336; " +
         groupLocations[i].openingTimes
       "</p>"
     }
 
+    popUpBody += "<p class=\"mt-1\">Click the icon again to find out more!</p>"
+
     currentMarker.bindPopup(popUpBody);
 
     groupLocations[i].bindTo.forEach(function(group_id, j){
-      $('#' + groupLocations[i].bindTo[j]).on('mouseenter', function(e) {
-        // Pan to location when hovering on group
-        currentMarker.openPopup();
-        map.setView([(parseFloat(groupLocations[i].coords[0]) + parseFloat(0.00125)), groupLocations[i].coords[1]], 17); // Offset slightly to account for slope overlay.
-        e.stopPropagation();
-        e.preventDefault();
+
+      $('#' + groupLocations[i].bindTo[j]).click(function(e) {
+
+        if(currentMapSelection == groupLocations[i].bindTo[j]){
+          window.location.href = "{{ .Site.BaseURL }}/working-groups/" + group_id
+        } else {
+          groupLocations[i].bindTo[j]
+
+          // Pan to location when hovering on group
+          e.stopPropagation();
+          e.preventDefault();
+          currentMarker.openPopup();
+          map.setView([(parseFloat(groupLocations[i].coords[0]) + parseFloat(0.002)), groupLocations[i].coords[1]], 16); // Offset slightly to account for slope overlay.
+
+          $(".working-group-icon").css("opacity", "0.5");
+          $('#' + groupLocations[i].bindTo[j]).css("opacity", "1");
+
+          currentMapSelection = groupLocations[i].bindTo[j]
+
+        }
       });
 
-      $('#' + groupLocations[i].bindTo[j]).on('mouseleave', function(e) {
-        // Pan to center when no longer hovering.
-        map.closePopup();
-        map.setView(centerCoords, 14);
-      });
     })
+
+
   })
+
+  $(document).click(function(e) {
+    if(currentMapSelection !== undefined){
+      // Pan to center when no longer hovering.
+      e.stopPropagation();
+      e.preventDefault();
+      map.closePopup();
+      map.setView(centerCoords, 14);
+      $(".working-group-icon").css("opacity", "1");
+      currentMapSelection = null;
+    }
+
+  })
+
 
 </script>
 

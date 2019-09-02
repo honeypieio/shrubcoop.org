@@ -28,7 +28,7 @@ img {
 
 #front-page-map {
   width: 100%;
-  height: 500px;
+  height: 390px;
   margin-top: -200px;
   z-index: -500;
 }
@@ -222,7 +222,6 @@ nav {
 
 .working_group_header {
   width: 100%;
-  /* height: 60vh; */
   background-color: #383838;
   z-index: 1;
 }

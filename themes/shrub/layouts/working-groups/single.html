@@ -6,26 +6,25 @@
 <div class="row">
 
   <div class="col-xl-4 order-lg-1">
-    <div class="working_group_header sloped">
+    <div class="working_group_header sloped" style="padding-bottom:50px !important;">
 
-    	<div class="row pt-4">
-    		<div class="col-9 offset-1">
+    	<div class="row pt-5 pb-3">
+
+        <div class="col-3 ml-xl-4 mr-3 mr-xl-0">
+          <div class="container my-auto">
+            <img
+              src="{{ .Params.working_group_logo}}"
+              class="working-group-icon d-block mx-auto"
+            />
+          </div>
+        </div>
+
+    		<div class="col-8">
 		    	<div class="container">
 
-		    		<h1 class="dosis-bold mb-4" style="font-size: 42px; padding-bottom: 0; color: {{.Params.colour}};">
-		    			{{ .Title }}
-		    		</h1>
-
-		    		<h3 class="dosis-semi-bold text-white">
+		    		<h3 class="dosis-semi-bold" style="color: {{ .Params.colour }};">
 		    			{{ .Params.tagline }}
 		    		</h3>
-
-		    	</div>
-    		</div>
-    	</div>
-      <div class="row pt-4">
-        <div class="col-6 offset-1">
-          <div class="container">
 
             {{ if .Params.address }}
 
@@ -40,17 +39,12 @@
                 &#128336; {{ .Params.times }}
               </p>
             {{ end }}
-          </div>
-        </div>
-        <div class="col-4 ml-0">
-          <div class="container">
-            <img
-              src="{{ .Params.working_group_logo}}"
-              class="working-group-icon d-block mx-auto"
-            />
-          </div>
-        </div>
-      </div>
+
+
+		    	</div>
+    		</div>
+
+    	</div>
 
     </div>
 
