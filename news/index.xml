@@ -6,10 +6,20 @@
     <description>Recent content in News on SHRUB Coop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 08 Aug 2019 23:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 23:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shrub.space/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A blog post!</title>
+      <link>https://shrub.space/news/a-blog-post/</link>
+      <pubDate>Sun, 01 Sep 2019 23:00:00 +0000</pubDate>
+      
+      <guid>https://shrub.space/news/a-blog-post/</guid>
+      <description>Lorem ipsum dolor sit amet, vide dicit verterem an est, has ut habeo posidonium, te consetetur adversarium vix. Mutat apeirian eu est. Ad debet ponderum eos. Possim evertitur vel an, no deleniti officiis splendide has. Definitionem conclusionemque vis ne, tractatos tincidunt voluptatum ei usu.
+Et his summo primis erroribus, everti molestiae est id. In vivendum cotidieque has, cu congue mandamus mel. Mea accusam deserunt explicari at, nam id omnes disputando, in nec ponderum recusabo.</description>
+    </item>
     
     <item>
       <title>We have a swapshop</title>
