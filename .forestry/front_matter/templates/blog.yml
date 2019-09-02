@@ -1,5 +1,5 @@
 ---
-label: Blog
+label: News
 hide_body: false
 fields:
 - type: text
