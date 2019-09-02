@@ -15,3 +15,5 @@ fields:
 - type: text
   name: hide_carbon_counter
   label: hide_carbon_counter
+pages:
+- content/_index.md
