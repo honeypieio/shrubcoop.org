@@ -41,17 +41,16 @@
 />
 <meta charset="UTF-8" />
 
-<title>Workshops and Events | SHRUB Coop</title>
+<title>SHRUB Space | SHRUB Coop</title>
 </head>
     <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
   <a class="navbar-brand ml-lg-5 ml-xl-5" href="https://shrub.space/">
 
-    <h1 class="text-center shrub" style="line-height:0.85;">
-      SHRUB
-    </h1>
-    <h3 class="text-center dosis-semi-bold" style="line-height:0;" >
-      COOP
-    </h3>
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.5rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 2.25rem;">COOP</span>
+    </p>
+
 
   </a>
 
@@ -150,7 +149,7 @@
 		    	<div class="container">
 
 		    		<h1 class="dosis-bold mb-4" style="font-size: 42px; padding-bottom: 0; color: #941A87;">
-		    			Workshops and Events
+		    			SHRUB Space
 		    		</h1>
 
 		    		<h3 class="dosis-semi-bold text-white">
@@ -163,6 +162,12 @@
       <div class="row pt-4">
         <div class="col-6 offset-1">
           <div class="container">
+
+            
+
+              <p class="text-white mb-1">
+                &#127970; 17 Guthrie Street, EH1 1JG
+              </p>
 
             
 
@@ -181,6 +186,15 @@
 
     </div>
 
+    
+      
+        
+          <a href="https://www.openstreetmap.org/#map=19/55.9482262/-3.1884412" target="_blank" title="Click to view 17 Guthrie Street, EH1 1JG on Open Street Maps.">
+            <div id="project-map"></div>
+          </a>
+
+        
+      
     
 
   </div>
@@ -283,6 +297,13 @@
             
 
           
+
+            
+              
+
+            
+
+          
         </div>
       </div>
     </div>
@@ -329,6 +350,22 @@ $("#group-synopsis h3").each(function(){
 
 });
 
+
+  
+    
+      var coords = [ 55.9482262 ,  -3.1884412 ]
+      var map = L.map('project-map', {zoomControl:false}).setView(coords, 16);
+
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.streets',
+        accessToken: 'pk.eyJ1Ijoicm9zc2h1ZHNvbiIsImEiOiJjanpnMGE0MGowaGZtM2VsaXNjdWh2dWZmIn0.cNr_4alsLclO3Exj20P9sA'
+      }).addTo(map);
+
+      var marker = L.marker(coords).addTo(map);
+    
+  
 
 </script>
 
