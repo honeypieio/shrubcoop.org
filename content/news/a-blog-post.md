@@ -1,7 +1,7 @@
 +++
 author = "Ross"
 date = "2019-09-01T23:00:00+00:00"
-description = "A brief synopsis of the article goes here"
+description = "A brief synopsis of the article goes here, it's getting long test test truncate"
 tags = ["food-sharing"]
 title = "A blog post!"
 

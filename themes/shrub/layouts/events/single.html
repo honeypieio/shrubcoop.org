@@ -1,18 +1,16 @@
 {{ define "main" }}
 
-  <div class="col-lg-6 offset-lg-3">
-
+  <div class="col-xl-6 mx-auto">
     <div class="container">
 
-      <div class="pt-4">
+      <div class="pt-5">
+        <h1 class="dosis-bold mb-0">{{ .Title }}</h1>
 
-        <h1 class="dosis-semi-bold">{{ .Title }}</h1>
-        <p class="">{{ .Description }}</p>
         <p class="dosis-semi-bold">
-          {{ dateFormat "02/01/06 15:04" .Params.time }} at {{ .Params.location }} | Hosted by
-          {{.Params.author }}
+          {{ dateFormat "Monday, January 2, 2006" .Params.time }} at {{ .Params.location }}
         </p>
 
+        <p>{{ .Description }}</p>
 
       </div>
 
@@ -20,7 +18,6 @@
 
       {{ .Content }}
     </div>
-
   </div>
 
 {{ end }}

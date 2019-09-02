@@ -99,7 +99,7 @@
 
               {{ $newsCount := (add $newsCount 1)}}
 
-              {{- partial "news-preview.html" . -}}
+              {{- partial "news/preview.html" . -}}
 
               {{ if (not (eq $newsCount $newsLimit)) }}
                 <hr />
@@ -135,7 +135,7 @@
 
                 {{ $eventsCount := (add $eventsCount 1)}}
 
-                {{- partial "events-preview.html" . -}}
+                {{- partial "events/preview.html" . -}}
 
                 {{ if (not (eq $eventsCount $eventsLimit)) }}
                   <hr />

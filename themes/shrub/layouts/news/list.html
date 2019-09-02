@@ -1,19 +1,20 @@
 {{ define "main" }}
 
-<div class="col-lg-6 offset-lg-3">
-  <div class="container">
-    <div class="pt-4">
-      <h1 class="dosis-bold text-center mb-4">News</h1>
 
-      {{ range (where .Data.Pages "Type" "news") }}
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+      <div class="pt-4">
+        <h1 class="dosis-bold text-center mb-4">News</h1>
 
-        {{ partial "news-preview.html" . }}
+        {{ range (where .Data.Pages "Type" "news") }}
 
-        <hr />
+          {{ partial "news/preview.html" . }}
 
-      {{ end }}
+          <hr />
+
+        {{ end }}
+      </div>
     </div>
   </div>
-</div>
 
 {{ end }}
