@@ -2,7 +2,6 @@
 author = "Ross"
 date = "2019-09-01T23:00:00+00:00"
 description = "A brief synopsis of the article goes here"
-draft = true
 mailing_list_button = ""
 mailing_list_gdpr_disclaimer = ""
 mailing_list_tagline = ""
