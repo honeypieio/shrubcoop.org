@@ -37,7 +37,6 @@ sections:
 - type: document
   path: content/volunteer-roles/_index.md
   label: List Of Roles
-  match: "**/*"
 upload_dir: shrubcoop.org/media
 public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
