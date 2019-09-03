@@ -15,3 +15,5 @@ fields:
       format: markdown
   label: Preamble
   description: Text displayed at top of Volunteer Roles list page
+pages:
+- content/volunteer-roles/_index.md
