@@ -162,7 +162,9 @@
     </div>
 
     <div class="container mb-5">
-      <div id="volunteerRoles"></div>
+      <div id="volunteerRoles" class="text-center mb-4">
+        <div class="lds-ellipsis dark"><div></div><div></div><div></div><div></div></div>
+      </div>
       <a class="btn btn-block btn-shrub mb-4" href="{{ .Site.BaseURL }}volunteer-roles/">{{ .Params.volunteer_sign_up_button }}</a>
     </div>
   </div>
@@ -426,7 +428,7 @@ var BaseURL = "{{ .Site.BaseURL }}";
 var murakamiRolesKey = "{{ .Site.Params.murakamiRolesKey }}"
 var membershipSignUpKey = "{{ .Site.Params.murakamiMembershipSignUpKey }}"
 var rolesLimit = 3;
-
+var truncateRoleDescriptions = true;
 
 $(document).ready(function(){
   getAllVolunteerRoles()

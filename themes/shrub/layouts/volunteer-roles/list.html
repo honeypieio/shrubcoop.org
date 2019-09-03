@@ -18,7 +18,13 @@
 
       </div>
 
-      <div id="volunteerRoles"></div>
+      <div class="mb-4">
+        {{ .Params.preamble | markdownify }}
+      </div>
+
+      <div id="volunteerRoles" class="text-center mb-4">
+        <div class="lds-ellipsis dark"><div></div><div></div><div></div><div></div></div>
+      </div>
 
     </div>
 
@@ -32,6 +38,7 @@
   var BaseURL = "{{ .Site.BaseURL }}";
   var murakamiRolesKey = "{{ .Site.Params.murakamiRolesKey }}"
   var rolesLimit;
+  var truncateRoleDescriptions = false;
 
   $(document).ready(function(){
     getAllVolunteerRoles()
