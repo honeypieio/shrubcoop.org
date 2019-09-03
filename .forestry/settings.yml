@@ -16,7 +16,7 @@ sections:
   match: "**/*"
 - type: directory
   path: content/working-groups
-  label: Working groups
+  label: Working Groups
   create: all
   match: "**/*"
   templates:
@@ -27,11 +27,17 @@ sections:
   create: all
   match: "*"
 - type: document
-  path: content/volunteer-roles/view.md
-  label: Volunteer Roles - How To Apply
-- type: document
   path: config.toml
   label: Site Config
+- type: heading
+  label: Volunteer Roles
+- type: document
+  path: content/volunteer-roles/view.md
+  label: How To Apply
+- type: document
+  path: content/volunteer-roles/_index.md
+  label: List Of Roles
+  match: "**/*"
 upload_dir: shrubcoop.org/media
 public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
