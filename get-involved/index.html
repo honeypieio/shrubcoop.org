@@ -307,7 +307,9 @@
     </div>
 
     <div class="container mb-5">
-      <div id="volunteerRoles"></div>
+      <div id="volunteerRoles" class="text-center mb-4">
+        <div class="lds-ellipsis dark"><div></div><div></div><div></div><div></div></div>
+      </div>
       <a class="btn btn-block btn-shrub mb-4" href="https://shrub.space/volunteer-roles/">View All Roles</a>
     </div>
   </div>
@@ -571,7 +573,7 @@ var BaseURL = "https:\/\/shrub.space\/";
 var murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
 var membershipSignUpKey = "wza96Xne2EUrmCucaM9qhaMMr"
 var rolesLimit = 3;
-
+var truncateRoleDescriptions = true;
 
 $(document).ready(function(){
   getAllVolunteerRoles()

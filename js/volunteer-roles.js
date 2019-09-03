@@ -25,6 +25,8 @@ function getAllVolunteerRoles() {
 
 // Generates "list" markup.
 function writeVolunteerRolesList(roles) {
+  document.getElementById("volunteerRoles").innerHTML = "";
+  document.getElementById("volunteerRoles").classList.remove("text-center");
   rolesLimit = rolesLimit || roles.length;
   if (roles.length < rolesLimit) {
     rolesLimit = roles.length;
@@ -45,15 +47,20 @@ function writeVolunteerRolesList(roles) {
     var roleTagline = document.createElement("p");
     roleTagline.className += "mb-1";
 
-    if (workingGroups[roles[i].group_id]) {
-      roleTagline.innerText = workingGroups[roles[i].group_id].name;
-    } else {
-      roleTagline.innerText = "SHRUB-wide";
-    }
-
-    roleTagline.innerText += " / " + roles[i].details.commitment_length;
+    roleTagline.innerText += roles[i].details.commitment_length;
     roleTagline.innerText +=
       " / " + roles[i].details.hours_per_week + " Hours Per Week";
+
+    var roleDescription = document.createElement("p");
+    if (
+      roles[i].details.short_description.length <= 50 ||
+      !truncateRoleDescriptions
+    ) {
+      roleDescription.innerText = roles[i].details.short_description;
+    } else {
+      roleDescription.innerText =
+        roles[i].details.short_description.substring(0, 50).trim() + "...";
+    }
 
     var roleLink = document.createElement("a");
     roleLink.href = BaseURL + "volunteer-roles/view?roleId=" + roles[i].role_id;
@@ -63,6 +70,7 @@ function writeVolunteerRolesList(roles) {
     roleDiv.appendChild(roleTitle);
     roleDiv.appendChild(roleCreated);
     roleDiv.appendChild(roleTagline);
+    roleDiv.appendChild(roleDescription);
     roleDiv.appendChild(roleLink);
 
     document.getElementById("volunteerRoles").appendChild(roleDiv);
@@ -92,28 +100,26 @@ function writeFullVolunteerRole(role) {
   var roleDiv = document.createElement("div");
   roleDiv.className = "mb-3 pb-3";
 
-  if(workingGroups[role.group_id]){
+  if (workingGroups[role.group_id]) {
     role.details.working_group = workingGroups[role.group_id].name;
   } else {
-    role.details.working_group = "SHRUB-wide"
+    role.details.working_group = "SHRUB-wide";
   }
-
-
 
   Object.keys(role.details).forEach(function(key) {
     if (key == "title") {
-      window.document.title = role.details.title + window.document.title;
+      window.document.title = role.details.title + " " + window.document.title;
       document.getElementById("roleTitle").innerText = role.details.title;
     } else {
       var row = document.createElement("div");
       row.className = "row mt-3";
-      row.style.borderBottom = "1px #EFEFEF solid"
+      row.style.borderBottom = "1px #EFEFEF solid";
 
       var nameColumn = document.createElement("div");
       nameColumn.className = "col-md-4";
 
       var name = document.createElement("p");
-      name.className = "font-weight-bold"
+      name.className = "font-weight-bold";
       name.innerText = key.toProperCase();
 
       nameColumn.appendChild(name);
@@ -123,14 +129,11 @@ function writeFullVolunteerRole(role) {
 
       var detail = document.createElement("p");
 
-      if(!Array.isArray(role.details[key])){
+      if (!Array.isArray(role.details[key])) {
         detail.innerHTML = role.details[key];
       } else {
         detail.innerHTML = role.details[key].join(", ");
       }
-
-
-
 
       detailColumn.appendChild(detail);
 

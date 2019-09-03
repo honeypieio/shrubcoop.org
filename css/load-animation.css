@@ -4,13 +4,22 @@
   width: 64px;
   height: 24px;
 }
+
+.lds-ellipsis.light div {
+  background: #fff;
+}
+
+.lds-ellipsis.dark div {
+  background: #333;
+}
+
+
 .lds-ellipsis div {
   position: absolute;
   top: 20px;
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #fff;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .lds-ellipsis div:nth-child(1) {
