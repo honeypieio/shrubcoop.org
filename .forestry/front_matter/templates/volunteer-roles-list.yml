@@ -5,6 +5,13 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: preamble
-  label: preamble
+- name: preamble
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Preamble
+  description: Text displayed at top of Volunteer Roles list page
