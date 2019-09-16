@@ -2,7 +2,7 @@
 title = "About Us"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674634/shrubcoop.org/media/cafe_job_web_1_m3sy3a.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674723/shrubcoop.org/media/vision_web_fyoad1.png)
 
 We’re a **cooperative** in Edinburgh working for a world without waste!
 
