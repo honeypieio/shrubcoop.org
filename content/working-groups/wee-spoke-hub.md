@@ -11,7 +11,6 @@ weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365008/shrubcoop.org/media/wee_spoke_hub_web_ahajzs.png)
 
 The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechanic will help you learn the skills to take care of your bike. **Tools and expertise** is provided free of charge.
 
@@ -56,3 +55,5 @@ The closest car park is a 7 minute walk away;
 **NCP Car Park**
 
 2 Viewcraig Gardens, Edinburgh, EH8 9UN
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365008/shrubcoop.org/media/wee_spoke_hub_web_ahajzs.png)
