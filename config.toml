@@ -20,7 +20,7 @@ identifier = "get-involved"
 name = "Get Involved"
 pre = "This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
 url = "/get-involved/"
-weight = "4"
+weight = "3"
 [[menu.main]]
 identifier = "about-us"
 name = "About Us"
