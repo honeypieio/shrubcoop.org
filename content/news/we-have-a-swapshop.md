@@ -6,8 +6,6 @@ tags = []
 title = "3 things we learned from our quarterly membership survey! (July 2019)"
 
 +++
-We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey. This time we only get 10 responses (we can do better than that next time!) but they were priceless.
-
 #### **1. There are clear positive behavioral changes from being a member**.
 
 40% of you reported you throw away less food.
