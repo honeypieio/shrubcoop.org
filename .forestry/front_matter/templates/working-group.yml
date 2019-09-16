@@ -81,7 +81,7 @@ fields:
   label: Address
   description: Project's address
 pages:
-- content/working-groups/food-sharing.md
 - content/working-groups/wee-spoke-hub.md
+- content/working-groups/food-sharing.md
 - content/working-groups/swap-shop.md
 - content/working-groups/zero-waste-hub.md
