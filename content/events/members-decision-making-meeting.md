@@ -2,7 +2,7 @@
 author = "SHRUB Coop"
 description = "As a member you're welcome to take part in how our organisation is run!"
 location = "Zero Waste Hub, 22 Bread Street, Edinburgh"
-tags = ["zero-waste-hub"]
+tags = []
 time = "2019-10-03T17:00:00+00:00"
 title = "Members' Decision Making Meeting"
 
