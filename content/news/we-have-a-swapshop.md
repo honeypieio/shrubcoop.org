@@ -6,7 +6,11 @@ tags = []
 title = "3 things we learned from our quarterly membership survey! (July 2019)"
 
 +++
-#### **1. There are clear positive behavioral changes from being a member**.
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568673034/shrubcoop.org/media/feedback_web_bbttgo.png)
+
+We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey. This time we only get 10 responses (we can do better than that next time!) but they were priceless.
+
+#### 1. There are clear positive behavioral changes from being a member.
 
 40% of you reported you throw away less food.
 
@@ -29,5 +33,3 @@ A few people signaled the need for improved distance engagement. We will be look
 #### We always value your feedback!
 
 Thank you to everyone who took part in the survey this time around, we’ll run the survey again in the autumn, but in the meantime, if you have any ideas or feedback, you can always send them to [hello@shrubcoop.org](mailto:hello@shrubcoop.org) or pop a postcard in our feedback post boxes in the shops.
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568671697/shrubcoop.org/media/IMG_20190726_154929-1024x768_dst3ls.jpg)
