@@ -9,7 +9,7 @@ tagline = "Swap, Buy, Donate!"
 times = "Open 12pm to 5pm, Wednesday to Saturday"
 title = "Swap Shop"
 weight = 4
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1567156933/shrubcoop.org/media/Swapshop_logo_white_background_jikrqk.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667047/shrubcoop.org/media/Swapshop_WEB_ONLY_mjcnio.png"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365726/shrubcoop.org/media/food_sharing_hub_2_eoyib7.png)
