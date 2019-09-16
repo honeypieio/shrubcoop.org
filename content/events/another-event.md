@@ -7,7 +7,9 @@ time = "2019-09-28T10:00:00+00:00"
 title = "Zero Waste Festival"
 
 +++
-We'll be hosting a collection of upcycling workshops, stalls of zero waste activities, and live entertainment. 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568672489/shrubcoop.org/media/69430733_1538250072976113_4451262830938685440_n_vy4pxx.jpg)
+
+We'll be hosting a collection of upcycling workshops, stalls of zero waste activities, and live entertainment.
 
 We'll also be holding a clothes swap! So bring along your pre-loved items and take home something else!
 
@@ -60,5 +62,3 @@ Browse our stalls and take part in some upcycling workshops
 **7pm - midnight:**
 
 Afterparty at Henry's Cellar Bar with Electric Alpaca
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568672489/shrubcoop.org/media/69430733_1538250072976113_4451262830938685440_n_vy4pxx.jpg)
