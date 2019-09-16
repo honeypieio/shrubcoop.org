@@ -11,7 +11,7 @@ title = "Members' Decision Making Meeting"
 
 As a member you're welcome to take part in how our organisation is run! Every 4 weeks we meet with ordinaty members, volunteers, staff and representatives from all our working groups for updates on whats going on across the coop.
 
-**Everybody is welcome and you don't need to be an expert** in any of the proposals up for discussion and you don't need to have attended a meeting before. Simply come along, listen to the ideas and let us know what you think of them to help us make the best choices we can.
+**Everybody is welcome and you don't need to be an expert** in any of the proposals up for discussion and you don't need to have attended a meeting before. Simply come along, listen to the ideas and let us know what you think of them to help us make the best choices we can
 
 _The meeting goes approximately as follows:_
 
