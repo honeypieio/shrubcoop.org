@@ -15,18 +15,20 @@ As a member you're welcome to take part in how our organisation is run! Every 4 
 
 _The meeting goes approximately as follows:_
 
-_6pm to 7pm:_  
+###### _6pm to 7pm:_
+
 Discussions and proposals brought forward by members
 
-_7pm to 7.10pm:_  
+###### _7pm to 7.10pm:_
+
 Break
 
-_7.10pm to 8pm:_  
-Updates from working groups and any other business (AOB)  
-  
+###### _7.10pm to 8pm:_
+
+Updates from working groups and any other business (AOB)
+
 Any agenda items should be sent to [agenda@shrubcoop.org]() one week before the meeting date at the latest, so the agenda can be written. If you would like to bring in a discussion topic or a proposal, but don't know how, please contact us at [hello@shrubcoop.org](hello@shrubcoop.org) and we will provide you with templates and instructions.
 
 This is a great opportunity to have a say in decisions that affect the whole coop, and also a place to learn what is going on across the community. It helps the community identify gaps and work towards our shared goal of community empowerment for a world without waste.
 
-  
 Read the full agenda attached [here](https://docs.google.com/document/d/1zrp56V499D4oe-fUG8jnkEaHt-0Kzt5wRdLCNwMRD5Q/edit?usp=sharing) (this document will be updated with the most recent agenda a week before the meeting - until then you can read here the most recent minutes)
