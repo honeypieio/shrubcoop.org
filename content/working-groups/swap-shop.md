@@ -1,13 +1,13 @@
 +++
 address = "22 Bread Street, EH3 9AF"
-alt = "Swap Shop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
+alt = "Swapshop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
 colour = "#AB0C17"
 date = "2019-02-12T14:51:46+00:00"
 lat = -3.204477
 lon = 55.945693
 tagline = "Swap, Buy, Donate!"
 times = "Open 12pm to 5pm, Wednesday to Saturday"
-title = "Swap Shop"
+title = "Swapshop"
 weight = 4
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667047/shrubcoop.org/media/Swapshop_WEB_ONLY_mjcnio.png"
 
