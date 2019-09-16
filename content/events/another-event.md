@@ -60,3 +60,5 @@ Browse our stalls and take part in some upcycling workshops
 **7pm - midnight:**
 
 Afterparty at Henry's Cellar Bar with Electric Alpaca
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568672489/shrubcoop.org/media/69430733_1538250072976113_4451262830938685440_n_vy4pxx.jpg)
