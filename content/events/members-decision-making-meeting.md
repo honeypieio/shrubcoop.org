@@ -7,7 +7,7 @@ time = "2019-10-03T17:00:00+00:00"
 title = "Members' Decision Making Meeting"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674271/shrubcoop.org/media/Copy_of_Decision_Making_Meeting_11th_July_ytzrvl.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674342/shrubcoop.org/media/Members_Decision_Making_Meeting_e20g8w.png)
 
 As a member you're welcome to take part in how our organisation is run! Every 4 weeks we meet with ordinaty members, volunteers, staff and representatives from all our working groups for updates on whats going on across the coop.
 
