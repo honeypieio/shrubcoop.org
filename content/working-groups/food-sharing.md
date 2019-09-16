@@ -12,7 +12,6 @@ weight = 3
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568666918/shrubcoop.org/media/Food_Sharing_Hub_WEB_ONLY_ywqahq.png"
 
 +++
-
 The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to save surplus food from supermarkets from an unnecessary fate in the bin.
 
 Simply come along to the Food Sharing Hub and sign up as a member of **SHRUB Coop** for as little as **£1 a month.** As a member you can fill one basket of food per day and **pay as you feel**.
