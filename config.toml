@@ -4,17 +4,17 @@ pluralizelisttitles = "false"
 theme = "shrub"
 title = "SHRUB Coop"
 [[menu.main]]
-identifier = ""
+identifier = "home"
 name = "Home"
 pre = ""
 url = "shrub.space"
-weight = ""
+weight = "1"
 [[menu.main]]
 identifier = "get-involved"
 name = "Get Involved"
 pre = "This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
 url = "/get-involved/"
-weight = 4
+weight = "4"
 [[menu.main]]
 identifier = "about-us"
 name = "About Us"
