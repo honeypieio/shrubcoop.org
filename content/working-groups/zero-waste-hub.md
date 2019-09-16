@@ -17,13 +17,13 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 
 You can swap your preloved things in our **Swapshop**, enjoy some rescued food from our **Food Sharing Hub**, or just hang out and grab a tea or coffee from our **cafe**.
 
-### **Opening Hours**
+#### **Opening Hours**
 
 Wednesday, Thursday, Friday and Saturday
 
 12pm - 5pm
 
-### **Swapshop**
+### **About the Swapshop**
 
 In the Swapshop you can **swap**, **donate** or **buy** affordable and high quality **preloved** clothing, books, shoes, bric-a-brac and household items.
 
@@ -37,7 +37,7 @@ Unlike your ordinary charity shop, when you donate your preloved items we give y
 
 When you drop off your items, our friendly volunteers will value them and add tokens to your account within 7 days.
 
-### **Food Sharing Hub**
+### **About the Food Sharing Hub**
 
 The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to save surplus food from supermarkets from an unnecessary fate in the bin.
 
@@ -49,7 +49,7 @@ The Food Sharing Hub is working with Tesco, Co-op and Waitrose to collect food f
 
 Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the city.
 
-### **Cafe**
+### **About the Cafe**
 
 Description of the cafe here
 
