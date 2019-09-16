@@ -4,7 +4,7 @@ alt = "Zero Waste Hub Button – This is the link to our Zero Waste Hub area of 
 colour = "#AB0C17"
 lat = -3.204477
 lon = 55.945693
-tagline = "One stop shop for sustainable living!"
+tagline = "The one stop shop for sustainable living!"
 times = "Wednesday - Saturday, 12-5pm"
 title = "Zero Waste Hub"
 weight = 1
@@ -77,13 +77,9 @@ There is space to lock up your bike on the corner of Lothian Road and Bread Stre
 
 The Zero Waste Hub is located just off Lothian Road and Grassmarket and following bus routes will take you nearby;
 
-_Lothian Road routes:_
+**Lothian Road routes:** 47, 24, 10, 11, 15, 16, 36, 1, 34, 124
 
-47, 24, 10, 11, 15, 16, 36, 1, 34, 124
-
-_Grassmarket route:_
-
-2
+**Grassmarket route:** 2
 
 #### Is there parking nearby?
 
