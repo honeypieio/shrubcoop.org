@@ -8,7 +8,7 @@ tagline = "Community Bike Workshop"
 times = "Tuesdays and Thursdays, 5-8pm"
 title = "Wee Spoke Hub"
 weight = 2
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1567156973/shrubcoop.org/media/Weespoke_hub_logo_white_background_evcdfw.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365008/shrubcoop.org/media/wee_spoke_hub_web_ahajzs.png)
