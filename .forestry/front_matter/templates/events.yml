@@ -34,4 +34,5 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/sustainable-fashion-meetup-group.md
 - content/events/big-swap-test.md
