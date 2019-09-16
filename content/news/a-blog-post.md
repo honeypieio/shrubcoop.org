@@ -6,9 +6,9 @@ tags = []
 title = "Job Opportunity: Café Coordinator"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568667544/shrubcoop.org/media/We_re_hiring_fvmkjs.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568672982/shrubcoop.org/media/cafe_job_web_n4r0ax.png)
 
-**Salary £22,800 p.a. Full time 35 hours / week.**   
+**Salary £22,800 p.a. Full time 35 hours / week.**  
 _Fixed term contract to 31 March 2020 – extension subject to successful funding bids_  
 **Application Deadline:** midnight Sunday 29th September
 
