@@ -2,7 +2,7 @@
 author = "SHRUB Coop"
 description = "Welcome to a family friendly, weekend celebration of all things zero waste!"
 location = "Zero Waste Hub, 22 Bread street, Edinburgh"
-tags = ["Zero Waste Hub"]
+tags = ["zero-waste-hub"]
 time = "2019-09-28T10:00:00+00:00"
 title = "Zero Waste Festival"
 
