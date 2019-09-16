@@ -63,10 +63,6 @@
   </url>
   
   <url>
-    <loc>https://shrub.space/events/big-swap-test/</loc>
-  </url>
-  
-  <url>
     <loc>https://shrub.space/contact/</loc>
   </url>
   
@@ -82,6 +78,10 @@
   <url>
     <loc>https://shrub.space/</loc>
     <lastmod>2019-02-12T17:40:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shrub.space/events/big-swap-test/</loc>
   </url>
   
   <url>
