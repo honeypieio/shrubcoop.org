@@ -11,21 +11,24 @@
     
     
     <item>
-      <title>Another event!</title>
-      <link>https://shrub.space/events/another-event/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shrub.space/events/another-event/</guid>
-      <description>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</description>
-    </item>
-    
-    <item>
       <title>Big Swap test</title>
       <link>https://shrub.space/events/big-swap-test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://shrub.space/events/big-swap-test/</guid>
       <description>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</description>
+    </item>
+    
+    <item>
+      <title>Zero Waste Festival</title>
+      <link>https://shrub.space/events/another-event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shrub.space/events/another-event/</guid>
+      <description>We&amp;rsquo;ll be hosting a collection of upcycling workshops, stalls of zero waste activities, and live entertainment.
+We&amp;rsquo;ll also be holding a clothes swap! So bring along your pre-loved items and take home something else!
+On Saturday evening (6pm), join us for a selection of family friendly short environmental films provided by Take One Action Film Festivals
+On Sunday evening (7pm till late), join us for an afterparty at Henry&amp;rsquo;s Cellar Bar with Electric Alpaca</description>
     </item>
     
   </channel>

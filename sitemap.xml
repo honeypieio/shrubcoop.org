@@ -63,10 +63,6 @@
   </url>
   
   <url>
-    <loc>https://shrub.space/events/another-event/</loc>
-  </url>
-  
-  <url>
     <loc>https://shrub.space/events/big-swap-test/</loc>
   </url>
   
@@ -111,6 +107,10 @@
     <loc>https://shrub.space/working-groups/</loc>
     <lastmod>2019-02-12T17:40:58+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shrub.space/events/another-event/</loc>
   </url>
   
 </urlset>
