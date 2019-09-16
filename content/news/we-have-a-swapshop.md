@@ -1,25 +1,33 @@
 +++
-author = "Rob"
-date = "2019-08-08T23:00:00+00:00"
-description = "What does the description do"
-tags = ["swapshop", "zero-waste-hub"]
-title = "We have a swapshop"
+author = "SHRUB Coop"
+date = "2019-07-26T13:00:00+00:00"
+description = "We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey."
+tags = []
+title = "3 things we learned from our quarterly membership survey! (July 2019)"
 
 +++
-## What is Lorem Ipsum?
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568671697/shrubcoop.org/media/IMG_20190726_154929-1024x768_dst3ls.jpg)We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey. This time we only get 10 responses (we can do better than that next time!) but they were priceless.
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+#### **1. There are clear positive behavioral changes from being a member**.
 
-## Why do we use it?
+40% of you reported you throw away less food.
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+30% said you buy less food – another 30% said you buy less clothes.
 
-## Where does it come from?
+60% said you have tried to mend clothes instead of throwing them away. 
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+#### 2. Our fellow SHRUBbers feel sufficiently engaged (out of those of you who responded – we realise there is going to a bias).
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+90% of the respondents felt a part of the SHRUB community and reported that SHRUB has a positive impact on their well-being and happiness.
 
-## Where can I get some?
+70% felt more engaged in tackling climate change through your participation at SHRUB.
 
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+#### 3. … But only 50% felt empowered to take part in SHRUB decision making.
+
+On the last point we got some insightful feedback. A few people brought up the need for better internal communication activities, such as communicating and celebrating our achievements, being clear on our goals and structure. The latter point is especially relevant for any new members we work with.
+
+A few people signaled the need for improved distance engagement. We will be looking into providing options for participating over phone or video calls, and for better sharing of ideas before or after meetings over email, comments or special programmes designed for distance working. We will also look into different forms of decision-making processes for major decisions, where all the members can participate, even those who might not be able to attend meetings.
+
+#### We always value your feedback!
+
+Thank you to everyone who took part in the survey this time around, we’ll run the survey again in the autumn, but in the meantime, if you have any ideas or feedback, you can always send them to [hello@shrubcoop.org](mailto:hello@shrubcoop.org) or pop a postcard in our feedback post boxes in the shops.
