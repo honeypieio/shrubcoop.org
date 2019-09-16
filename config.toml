@@ -38,7 +38,7 @@ identifier = "contact"
 name = "Contact"
 pre = "This is the Contact section of the site. Click here to find out how to send us an email."
 url = "/contact/"
-weight = 3
+weight = "6"
 [[menu.socials]]
 name = "Twitter"
 url = "https://twitter.com/shrubcoop"
