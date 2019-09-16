@@ -9,7 +9,7 @@ tagline = "Rescuing food across Edinburgh"
 times = "12pm to 5pm, Wednesday to Saturday"
 title = "Food Sharing"
 weight = 3
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1567156899/shrubcoop.org/media/Foodsharing_logo_white_background_l6rgae.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568666918/shrubcoop.org/media/Food_Sharing_Hub_WEB_ONLY_ywqahq.png"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565364027/shrubcoop.org/media/food_sharing_hub_page_itwn4i.png)
