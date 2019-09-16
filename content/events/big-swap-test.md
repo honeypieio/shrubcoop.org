@@ -7,7 +7,7 @@ time = "2019-09-19T16:30:00+00:00"
 title = "New & Old Members Warm Welcome!"
 
 +++
-Are you interested in volunteering for SHRUB, become a paying member or simply want to find out more about what SHRUB is all about? There is a lot to us so whether you are brand new or have been around a while come along and get informed. 
+There is a lot to us so whether you are brand new or have been around a while come along and get informed. 
 
 Come join other like-minded people, learn a bit about what we do and how we work and discover what volunteer experiences might be available. 
 
