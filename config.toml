@@ -14,7 +14,7 @@ identifier = "news"
 name = "News"
 pre = "This is the link to the Blog section of the site. Click here to read our latest blog posts"
 url = "/news/"
-weight = 6
+weight = "4"
 [[menu.main]]
 identifier = "get-involved"
 name = "Get Involved"
