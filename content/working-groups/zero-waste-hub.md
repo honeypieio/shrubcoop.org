@@ -11,8 +11,6 @@ weight = 1
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667127/shrubcoop.org/media/Zero_Waste_Hub_WEB_ONLY_l1jech.png"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367405/shrubcoop.org/media/food_sharing_hub_7_jtbeh3.png)
-
 **Zero Waste Hub** is your one stop shop for sustainable living!
 
 You can swap your preloved things in our **Swapshop**, enjoy some rescued food from our **Food Sharing Hub**, or just hang out and grab a tea or coffee from our **cafe**.
@@ -79,13 +77,17 @@ There is space to lock up your bike on the corner of Lothian Road and Bread Stre
 
 The Zero Waste Hub is located just off Lothian Road and Grassmarket and following bus routes will take you nearby;
 
-Lothian Road routes: 47, 24, 10, 11, 15, 16, 36, 1, 34, 124
+_Lothian Road routes:_
 
-Grassmarket route: 2
+47, 24, 10, 11, 15, 16, 36, 1, 34, 124
+
+_Grassmarket route:_
+
+2
 
 #### Is there parking nearby?
 
-There is limited on street parking on Bread Street, but two large car parks a 4 minute walk away;
+There is limited on street parking on Bread Street, but two large car parks a 4 minute walk away:
 
 **Thistle Parking**
 
