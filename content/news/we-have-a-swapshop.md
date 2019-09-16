@@ -1,7 +1,7 @@
 +++
 author = "SHRUB Coop"
 date = "2019-07-26T13:00:00+00:00"
-description = "We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey."
+description = "We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey. This time we only get 10 responses (we can do better than that next time!) but they were priceless."
 tags = []
 title = "3 things we learned from our quarterly membership survey! (July 2019)"
 
