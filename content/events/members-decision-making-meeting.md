@@ -15,15 +15,15 @@ As a member you're welcome to take part in how our organisation is run! Every 4 
 
 _The meeting goes approximately as follows:_
 
-###### _6pm to 7pm:_
+##### _6pm to 7pm:_
 
 Discussions and proposals brought forward by members
 
-###### _7pm to 7.10pm:_
+##### _7pm to 7.10pm:_
 
 Break
 
-###### _7.10pm to 8pm:_
+##### _7.10pm to 8pm:_
 
 Updates from working groups and any other business (AOB)
 
