@@ -6,7 +6,7 @@ tags = []
 title = "3 things we learned from our quarterly membership survey! (July 2019)"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568671697/shrubcoop.org/media/IMG_20190726_154929-1024x768_dst3ls.jpg)We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey. This time we only get 10 responses (we can do better than that next time!) but they were priceless.
+We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey. This time we only get 10 responses (we can do better than that next time!) but they were priceless.
 
 #### **1. There are clear positive behavioral changes from being a member**.
 
@@ -14,7 +14,7 @@ title = "3 things we learned from our quarterly membership survey! (July 2019)"
 
 30% said you buy less food – another 30% said you buy less clothes.
 
-60% said you have tried to mend clothes instead of throwing them away. 
+60% said you have tried to mend clothes instead of throwing them away.
 
 #### 2. Our fellow SHRUBbers feel sufficiently engaged (out of those of you who responded – we realise there is going to a bias).
 
@@ -31,3 +31,5 @@ A few people signaled the need for improved distance engagement. We will be look
 #### We always value your feedback!
 
 Thank you to everyone who took part in the survey this time around, we’ll run the survey again in the autumn, but in the meantime, if you have any ideas or feedback, you can always send them to [hello@shrubcoop.org](mailto:hello@shrubcoop.org) or pop a postcard in our feedback post boxes in the shops.
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568671697/shrubcoop.org/media/IMG_20190726_154929-1024x768_dst3ls.jpg)
