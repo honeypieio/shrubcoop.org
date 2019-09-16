@@ -8,7 +8,7 @@ tagline = "One stop shop for sustainable living!"
 times = "Wednesday - Saturday, 12-5pm"
 title = "Zero Waste Hub"
 weight = 1
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1567157208/shrubcoop.org/media/Zero_Waste_Hub_l0af8x.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667127/shrubcoop.org/media/Zero_Waste_Hub_WEB_ONLY_l1jech.png"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367405/shrubcoop.org/media/food_sharing_hub_7_jtbeh3.png)
