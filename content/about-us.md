@@ -2,7 +2,7 @@
 title = "About Us"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565366745/shrubcoop.org/media/food_sharing_hub_5_ozajev.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674634/shrubcoop.org/media/cafe_job_web_1_m3sy3a.png)
 
 We’re a **cooperative** in Edinburgh working for a world without waste!
 
@@ -11,19 +11,11 @@ We **empower** our community to live a **low carbon life**. Become a member and 
 ##### **Our Purpose**
 
 1. To provide a welcoming space for rethinking our relationship to waste, reducing consumption and developing effective use of resources
-
-
-1. To support community empowerment in Edinburgh, learning and sharing skills to make a practical difference to the world we share
-
-
-1. To deliver innovative waste prevention, creative reuse and repair practices in a living laboratory of Circular Economy
+2. To support community empowerment in Edinburgh, learning and sharing skills to make a practical difference to the world we share
+3. To deliver innovative waste prevention, creative reuse and repair practices in a living laboratory of Circular Economy
 
 ##### **Our Values**
 
 * We value inclusivity and work with others to provide a welcoming community for all
-
-
 * We act with integrity and strive to be sustainable in everything we do
-
-
 * We live by co-operative values of self-help, self-responsibility, democracy, equality, equity, and solidarity.
