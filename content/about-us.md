@@ -19,3 +19,5 @@ We **empower** our community to live a **low carbon life**. Become a member and 
 * We value inclusivity and work with others to provide a welcoming community for all
 * We act with integrity and strive to be sustainable in everything we do
 * We live by co-operative values of self-help, self-responsibility, democracy, equality, equity, and solidarity.
+
+      <p1 class="text-center mb-4">We’re a cooperative in Edinburgh working for a world without waste!</p1>
