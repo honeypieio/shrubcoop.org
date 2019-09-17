@@ -1,7 +1,7 @@
 +++
 author = "Swapshop"
 description = "The fashion industry is now the second most polluting industry in the world after oil."
-location = "Zero Waste Hub, 22 Bread Street, Edinburgh"
+location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
 time = "2019-09-25T17:00:00+00:00"
 title = " Sustainable Fashion Meetup Group"
