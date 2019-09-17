@@ -25,4 +25,4 @@ We host events at our dedicated SHRUB Space workshop at 17 Guthrie Street, EH1 1
 
 #### Can I host my own event at SHRUB's venues?
 
-Yes! Our spaces are open for booking - contact [hello@shrubcoop.org](hello@shrubcoop.org) for details.
+Yes! Our spaces are open for booking - contact [hello@shrubcoop.org](mailto:hello@shrubcoop.org) for details.
