@@ -4,7 +4,7 @@ title = "Contact"
 +++
 ### **Email us**
 
-hello@shrubcoop.org
+[hello@shrubcoop.org](mailto:hello@shrubcoop.org)
 
 ### **Come visit us**
 
