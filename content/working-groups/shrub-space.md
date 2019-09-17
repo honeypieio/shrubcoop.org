@@ -13,6 +13,8 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 +++
 SHRUB hosts a variety of **events and workshops** throughout the year, both in our dedicated **SHRUB Space** workshop space, and in the Zero Waste Hub. Click the "Events" link at the top to see our upcoming events and workshops and get inspired!
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568760703/shrubcoop.org/media/shrub_space_website_btes2l.png)
+
 ### **FAQs**
 
 #### Do I need to be a member to join?
