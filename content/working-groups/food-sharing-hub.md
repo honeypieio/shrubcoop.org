@@ -16,11 +16,13 @@ The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to s
 
 Simply come along to the Food Sharing Hub and sign up as a member of **SHRUB Coop** for as little as **£1 a month.** As a member you can fill one basket of food per day and **pay as you feel**.
 
-### How it works
+#### How it works
 
 The Food Sharing Hub is working with Tesco, Co-op and Waitrose to collect food from 6 local supermarkets. Volunteers collect perishable foods such as fruit, vegetables, and baked goods that are still fresh and good to eat, but have passed their best before dates and would otherwise be thrown out that day.
 
 Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the city.
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568760049/shrubcoop.org/media/food_sharing_hub_website_sackb0.png)
 
 ### Our Impact
 
