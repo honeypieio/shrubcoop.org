@@ -28,4 +28,5 @@ title = "Contact"
 #### SHRUB Space | Zero Waste Edinburgh Office
 
 17 Guthrie Street, EH1 1JG  
-Call us: 0131 261 8216
+0131 261 8216  
+[info.zwe@shrubcoop.org](mailto:info.zwe@shrubcoop.org)
