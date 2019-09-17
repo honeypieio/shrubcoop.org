@@ -4,8 +4,8 @@ title = "Contact"
 +++
 #### Enquiries
 
-[hello@shrubcoop.org](mailto:hello@shrubcoop.org)  
-0131 220 1884
+0131 220 1884  
+[hello@shrubcoop.org](mailto:hello@shrubcoop.org)
 
 ***
 
