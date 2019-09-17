@@ -6,7 +6,7 @@
     <div class="pt-4">
       <h2 class="text-center mb-4">Events</h2>
 
-      {{ range (where .Data.Pages "Type" "events") }}
+      {{ range ((where .Data.Pages "Type" "events") sort .Data.pages "time" "desc") }}
 
         {{ partial "events/preview.html" . }}
 
