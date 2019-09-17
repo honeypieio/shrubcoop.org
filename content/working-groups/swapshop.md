@@ -24,6 +24,8 @@ Unlike your ordinary charity shop, when you donate your preloved items we give y
 
 When you drop off your items, our friendly volunteers will value them and add tokens to your account within 7 days.
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759841/shrubcoop.org/media/swapshop_website_nnquzi.png)
+
 ### **Our Impact**
 
 The **Swapshop** has saved **124 tonnes** of CO2 emissions so far.
