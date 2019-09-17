@@ -11,7 +11,6 @@ weight = 5
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568666959/shrubcoop.org/media/SHRUB_Space_WEB_ONLY_uowh5h.png"
 
 +++
-
 SHRUB hosts a variety of **events and workshops** throughout the year, both in our dedicated **SHRUB Space** workshop space, and in the Zero Waste Hub. Click the "Events" link at the top to see our upcoming events and workshops and get inspired!
 
 ### **FAQs**
@@ -26,6 +25,4 @@ We host events at our dedicated SHRUB Space workshop at 17 Guthrie Street, EH1 1
 
 #### Can I host my own event at SHRUB's venues?
 
-Yes! Our spaces are open for booking - contact hello@shrubcoop.org for details.
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367105/shrubcoop.org/media/food_sharing_hub_6_rtvqvu.png)
+Yes! Our spaces are open for booking - contact [hello@shrubcoop.org](hello@shrubcoop.org) for details.
