@@ -18,6 +18,10 @@ fields:
   description: Where the event is taking place
   config:
     required: true
+    options:
+    - Zero Waste Hub, 22 Bread Street, EH3 9AF
+    - Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
+    - SHRUB Space, 17 Guthrie Street, EH1 1JG
 - type: datetime
   label: Date
   name: time
