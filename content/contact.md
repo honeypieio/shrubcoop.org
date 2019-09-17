@@ -2,21 +2,22 @@
 title = "Contact"
 
 +++
-### **Email us**
+## Email us
 
-[hello@shrubcoop.org](mailto:hello@shrubcoop.org)
+[hello@shrubcoop.org](mailto:hello@shrubcoop.org)  
+0131 220 1884
 
-### **Come visit us**
+#### Zero Waste Hub | Swapshop | Food Sharing Hub | Cafe
 
-#### Zero Waste Hub
-
+12pm to 5pm, Wednesday to Saturday  
 22 Bread Street, EH3 9AF  
-Call us: 0131 281 0583
+0131 281 0583
 
 #### Wee Spoke Hub
 
+5pm to 8pm, Tuesdays and Wednesdays  
 13 Guthrie Street, EH1 1JG  
-Call us: 0131 220 1884
+0131 220 1884
 
 #### SHRUB Space / Zero Waste Edinburgh Office
 
