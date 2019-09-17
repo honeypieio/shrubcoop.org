@@ -34,14 +34,14 @@ The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechani
 
 **APPLICATION PROCESS**
 
-To apply please email **by midnight Sunday 6 October** to jobs@shrubcoop.org, attaching a single Word document comprising a maximum two A4 pages response with evidence of your knowledge, skills and experience which make you eligible for the job. 
+To apply please email **by midnight Sunday 6 October** to jobs@shrubcoop.org, attaching a single Word document comprising a maximum two A4 pages response with evidence of your knowledge, skills and experience which make you eligible for the job.
 
-You may insert a maximum one page Covering Letter in front, and a maximum two page CV pasted at the end of the same Word document as an appendix. 
+You may insert a maximum one page Covering Letter in front, and a maximum two page CV pasted at the end of the same Word document as an appendix.
 
 The panel will shortlist on the basis of essential criteria with secondary weight given to desirable criteria.
 
 Please give as the document filename: **SURNAME – WSH Mechanic** with the same as subject line of the email to help us keep track of applicants.
 
-For further details see the [Job Description](http://www.shrubcoop.org/wp-content/uploads/2019/09/WSH-Mechanic-JD.pdf).
+For further details see the [Mechanic Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1568755503/shrubcoop.org/media/WSH-Mechanic-JD_kedtqw.pdf "Mechanic Job Description")
 
 **Interviews will be held during the week beginning 14th October in Edinburgh – likely to be 16th or 17th October.**
