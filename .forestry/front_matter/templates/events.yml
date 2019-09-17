@@ -12,10 +12,11 @@ fields:
   label: Author
   config:
     required: true
-- type: text
+- type: select
   name: location
   label: Location
   description: Where the event is taking place
+  default: []
   config:
     required: true
     options:
