@@ -1,10 +1,11 @@
 +++
 author = "Wee Spoke Hub"
 description = "Our friendly mechanics will help you get back in the saddle!"
+draft = true
 location = "Wee Spoke Hub, 13 Guthrie Street, EH1 1JG"
 tags = ["wee-spoke-hub"]
-time = "2019-09-19T16:00:00+00:00"
-title = "Fix your own bike sessions"
+time = "2019-09-24T16:00:00+00:00"
+title = "Fix your own bike workshop"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568757089/shrubcoop.org/media/Wee_Spoke_Hub_FB_event_banner_yydsig.png)
