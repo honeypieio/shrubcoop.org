@@ -39,6 +39,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/fix-your-own-bike-sessions.md
 - content/events/another-event.md
 - content/events/big-swap-test.md
 - content/events/members-decision-making-meeting.md
