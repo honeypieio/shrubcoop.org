@@ -4,7 +4,7 @@ title = "About Us"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674723/shrubcoop.org/media/vision_web_fyoad1.png)
 
-    <p class="text-center mb-4">We’re a <b>cooperative</b> in Edinburgh working for a world without waste! We <b>empower</b> our community to live a <b>low carbon life</b>. Become a member and learn to <b>fix a bike</b>, swap your <b>preloved things</b>, enjoy some <b>rescued food</b> and be inspired by new ideas.</p>
+We’re a **cooperative** in Edinburgh working for a world without waste! 
 
 We **empower** our community to live a **low carbon life**. Become a member and learn to **fix a bike**, swap your **preloved things**, enjoy some **rescued food** and **be inspired** by new ideas.
 
