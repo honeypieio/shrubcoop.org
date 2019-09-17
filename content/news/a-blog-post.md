@@ -1,5 +1,5 @@
 +++
-author = "Rob"
+author = "SHRUB Coop"
 date = "2019-09-13T15:00:00+00:00"
 description = "An exciting opportunity has arisen to join the staff team at SHRUB Coop! "
 tags = ["zero-waste-hub"]
