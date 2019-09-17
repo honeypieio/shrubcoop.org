@@ -69,5 +69,3 @@ Semple Street, Edinburgh, EH3 8BL
 **NCP Car Park Edinburgh Castle Terrace**
 
 Castle Terrace, Edinburgh, EH1 2EW
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565365726/shrubcoop.org/media/food_sharing_hub_2_eoyib7.png)
