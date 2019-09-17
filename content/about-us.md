@@ -9,13 +9,13 @@ title = "About Us"
 
 We **empower** our community to live a **low carbon life**. Become a member and learn to **fix a bike**, swap your **preloved things**, enjoy some **rescued food** and **be inspired** by new ideas.
 
-##### **Our Purpose**
+    <h4 class="text-center mb-4">Our Purpose</h4>
 
 1. To provide a welcoming space for rethinking our relationship to waste, reducing consumption and developing effective use of resources
 2. To support community empowerment in Edinburgh, learning and sharing skills to make a practical difference to the world we share
 3. To deliver innovative waste prevention, creative reuse and repair practices in a living laboratory of Circular Economy
 
-##### **Our Values**
+    <h4 class="text-center mb-4">Our Values</h4>
 
 * We value inclusivity and work with others to provide a welcoming community for all
 * We act with integrity and strive to be sustainable in everything we do
