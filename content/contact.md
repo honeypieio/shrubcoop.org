@@ -2,7 +2,7 @@
 title = "Contact"
 
 +++
-#### Enquiries
+#### Enquiries & Space booking
 
 0131 220 1884  
 [hello@shrubcoop.org](mailto:hello@shrubcoop.org)
