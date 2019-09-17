@@ -47,7 +47,7 @@ You may insert a maximum one page Covering Letter in front with a maximum two pa
 
 Please give as the document filename: **SURNAME – Cafe Coordinator** with the same as subject line of the email to help us keep track of applicants.
 
-For further details see the [Job Description](http://www.shrubcoop.org/wp-content/uploads/2019/09/Caf%C3%A9-Coordinator-Job-Description-.pdf)
+For further details see the [Job Description](Caf%C3%A9_Coordinator_Job_Description_odm8nl.pdf)
 
 **Interviews will be held in the week beginning 7th October in Edinburgh – likely to be Tuesday 8 October.**
 
