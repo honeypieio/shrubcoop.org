@@ -2,7 +2,7 @@
 author = "Events and Workshops"
 date = "2019-02-02T12:00:00+00:00"
 description = "The Bicycle Matters Events programme is here!"
-tags = []
+tags = ["shrub-space"]
 title = "Welcome to Bicycle Matters"
 
 +++
