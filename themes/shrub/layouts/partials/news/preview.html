@@ -7,7 +7,7 @@
 <p>{{ replace (.Description | truncate 60) " …" "…" }}</p>
 <p>
   <a
-    href="{{.Site.BaseURL}}{{ .URL }}"
+    href="{{ .Permalink }}"
     title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading."
     class="underline"
     >Read full post</a

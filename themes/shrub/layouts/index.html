@@ -8,7 +8,7 @@
         <h3 class="mb-3 mt-2 text-white text-center">
           Latest News
         </h3>
-        {{ range first 3 (where .Data.Pages "Type" "news") }}
+        {{ range sort (first 3 (where .Data.Pages "Type" "news")) "Date" "desc" }}
           <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
             {{ partial "news/preview.html" . }}
           </div>
@@ -84,7 +84,7 @@
         <h3 class="mb-3 mt-2 text-white text-center">
           What's On
         </h3>
-        {{ range first 3 (where .Data.Pages "Type" "events") }}
+        {{ range sort (first 3 (where .Data.Pages "Type" "events")) ".Params.time" "desc" }}
           <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
             {{ partial "events/preview.html" . }}
           </div>

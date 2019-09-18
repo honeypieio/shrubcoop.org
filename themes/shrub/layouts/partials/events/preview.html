@@ -7,7 +7,7 @@
 <p>{{ replace (.Description | truncate 60) " …" "…" }}</p>
 <p>
   <a
-    href="{{.Site.BaseURL}}{{ .URL }}"
+    href="{{ .Permalink }}"
     title="Event: {{ .Title }} - click this link to find out more about this event."
     class="underline"
     >See details</a

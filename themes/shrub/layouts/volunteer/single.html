@@ -29,7 +29,7 @@
   var urlParams = new URLSearchParams(window.location.search);
   var roleId = urlParams.get('roleId');
 
-  var failUri = "{{ .Site.BaseURL }}volunteer-roles"
+  var failUri = "{{ .Site.BaseURL }}volunteer"
 
   if(!roleId){
     window.location = failUri;

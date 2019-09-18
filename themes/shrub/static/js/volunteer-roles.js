@@ -63,7 +63,7 @@ function writeVolunteerRolesList(roles) {
     }
 
     var roleLink = document.createElement("a");
-    roleLink.href = BaseURL + "volunteer-roles/view?roleId=" + roles[i].role_id;
+    roleLink.href = BaseURL + "volunteer/view?roleId=" + roles[i].role_id;
     roleLink.innerText = "Full details";
     roleLink.className += "link-blue";
 

@@ -1,17 +1,15 @@
 {{ define "main" }}
 
-
   <div class="col-xl-6 mx-auto">
     <div class="container">
       <div class="pt-4">
         <h2 class="text-center mb-4">News</h2>
+        {{ range sort (where .Site.Pages "Type" "news") "Date" "desc" }}
+          {{ if (ne .Params.hidden "true") }}
+            {{ partial "news/preview.html" . }}
 
-        {{ range (where .Data.Pages "Type" "news") }}
-
-          {{ partial "news/preview.html" . }}
-
-          <hr />
-
+            <hr />
+          {{ end }}
         {{ end }}
       </div>
     </div>

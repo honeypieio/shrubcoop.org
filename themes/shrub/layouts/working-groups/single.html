@@ -10,10 +10,10 @@
 
     	<div class="row pt-5 pb-3">
 
-        <div class="col-3 ml-xl-4 mr-3 mr-xl-0">
+        <div class="col-3 ml-xl-4 mr-3 mr-xl-1">
           <div class="container my-auto">
             <img
-              src="{{ .Params.working_group_logo}}"
+              src="{{ .Params.working_group_logo }}"
               class="working-group-icon d-block mx-auto"
             />
           </div>
@@ -59,15 +59,52 @@
       {{ end }}
     {{ end }}
 
+    <div class="container">
+      <div id="latestEventsParentCopy" class="d-none d-xl-block px-3">
+        <div class="row mt-5">
+
+
+          <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+
+
+        </div>
+        <div class="row d-block">
+          <h2 class="text-center mb-3">Latest Events</h2>
+          <div class="container" id="latestEvents">
+
+            {{ $eventsCount := 0 }}
+            {{ $eventsLimit := 3 }}
+
+            {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "desc" }}
+
+              {{ if le $eventsCount $eventsLimit }}
+                {{ if in .Params.Tags $groupId }}
+
+                  {{ $eventsCount := (add $eventsCount 1)}}
+
+                  {{- partial "events/preview.html" . -}}
+
+                  {{ if (not (eq $eventsCount $eventsLimit)) }}
+                    <hr />
+                  {{ end }}
+
+                {{ end }}
+
+              {{ end }}
+
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
 
   <div class="col-xl-4 order-lg-2">
 
-    <div class="circle d-none d-lg-block d-xl-block mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
-
-    <div class="circle d-block d-lg-none d-xl-none mx-auto" style="margin-top: 40px; margin-bottom: 20px; background-color: {{.Params.colour}};"></div>
+    <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
 
     <h2 class="text-center mb-3">What We Do</h2>
 
@@ -92,7 +129,7 @@
         {{ $newsCount := 0 }}
         {{ $newsLimit := 3 }}
 
-        {{ range (where .Site.Pages "Type" "news") }}
+        {{ range sort (where .Site.Pages "Type" "news") "Date" "desc" }}
 
           {{ if le $newsCount $newsLimit }}
             {{ if in .Params.Tags $groupId }}
@@ -113,7 +150,7 @@
       </div>
     </div>
 
-    <div id="latestEventsParentCopy">
+    <div id="latestEventsParentCopy" class="d-xl-none">
       <div class="row mt-5">
 
 
@@ -128,7 +165,7 @@
           {{ $eventsCount := 0 }}
           {{ $eventsLimit := 3 }}
 
-          {{ range (where .Site.Pages "Type" "events") }}
+          {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "desc" }}
 
             {{ if le $eventsCount $eventsLimit }}
               {{ if in .Params.Tags $groupId }}
@@ -196,7 +233,7 @@ $("#group-synopsis h3").each(function(){
   {{ if .Params.lon }}
     {{ if .Params.lat }}
       var coords = [{{ .Params.Lon }}, {{ .Params.Lat }}]
-      var map = L.map('project-map', {zoomControl:false}).setView(coords, 16);
+      var map = L.map('project-map', {zoomControl:false}).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
