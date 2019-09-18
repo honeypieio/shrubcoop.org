@@ -28,9 +28,10 @@ img {
 
 #front-page-map {
   width: 100%;
-  height: 390px;
-  margin-top: -200px;
-  z-index: -500;
+  height: 350px;
+  margin-top: -82px;
+  z-index: 0;
+  padding-bottom: 75px;
 }
 
 #project-map {
