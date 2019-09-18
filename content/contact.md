@@ -25,7 +25,7 @@ title = "Contact"
 
 ***
 
-#### SHRUB Space | Zero Waste Edinburgh Office
+#### SHRUB Space & Zero Waste Edinburgh Office
 
 17 Guthrie Street, EH1 1JG  
 0131 261 8216  
