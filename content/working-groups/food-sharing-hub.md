@@ -72,6 +72,6 @@ Semple Street, Edinburgh, EH3 8BL
 
 Castle Terrace, Edinburgh, EH1 2E
 
-#### 
+***
 
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565364027/shrubcoop.org/media/food_sharing_hub_page_itwn4i.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568760049/shrubcoop.org/media/food_sharing_hub_website_sackb0.png)
