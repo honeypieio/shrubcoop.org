@@ -4,6 +4,7 @@ date = "2019-03-26T12:00:00+00:00"
 description = "“Out with the old and in with the new” is the mantra that crops up at this time of year, but this optimistic phrase is deceptively damaging to our world. "
 tags = ["swapshop"]
 title = "Making sustainable fashion choices in Edinburgh"
+type = "news"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568810570/shrubcoop.org/media/sustainable_fashion_web_b6ynfl.png)

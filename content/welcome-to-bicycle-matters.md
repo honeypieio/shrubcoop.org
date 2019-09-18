@@ -4,7 +4,7 @@ date = "2019-02-02T12:00:00+00:00"
 description = "The Bicycle Matters Events programme is here!"
 tags = ["shrub-space"]
 title = "Welcome to Bicycle Matters"
-
+type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568812259/shrubcoop.org/media/bike_matters_web_mzpiqf.png)
 

@@ -4,6 +4,7 @@ date = "2019-03-05T12:00:00+00:00"
 description = "Did you know that almost a third of all food produced globally is thrown away?"
 tags = ["food-sharing-hub"]
 title = "How you can help to reduce food waste in Edinburgh"
+type = "news"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568811264/shrubcoop.org/media/food_sharing_web_iuefrq.png)

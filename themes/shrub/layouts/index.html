@@ -3,11 +3,11 @@
 <div class="row">
 
   <div class="col-xl-4 order-2 order-xl-1">
-    <div class="latest-blog-header sloped pt-1 pb-4" style="padding-bottom: 20% !important;">
+    <div class="latest-blog-header sloped pt-1 px-4 pb-4" style="padding-bottom: 20% !important;">
       <div class="container pl-4 pb-4  pt-3">
-        <h2 class="mb-2 mt-2 text-white text-center">
+        <h3 class="mb-3 mt-2 text-white text-center">
           Latest News
-        </h2>
+        </h3>
         {{ range first 3 (where .Data.Pages "Type" "news") }}
           <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
             {{ partial "news/preview.html" . }}
@@ -79,11 +79,11 @@
 
   <div class="col-xl-4 order-3 order-xl-3">
 
-    <div class="events-header sloped pt-1 pb-4" style="padding-bottom: 20% !important;">
+    <div class="events-header sloped pt-1 px-4 pb-4" style="padding-bottom: 20% !important;">
       <div class="container pl-4 pb-4 pt-3">
-        <h2 class="mb-2 mt-2 text-white text-center">
+        <h3 class="mb-3 mt-2 text-white text-center">
           What's On
-        </h2>
+        </h3>
         {{ range first 3 (where .Data.Pages "Type" "events") }}
           <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
             {{ partial "events/preview.html" . }}
@@ -118,9 +118,9 @@
   {{ end }}
 
   var centerCoords = [55.9499497,-3.1969465]
-  centerCoords[0] += parseFloat(0.002) // Offset.
 
-  var map = L.map('front-page-map', {zoomControl:false}).setView(centerCoords, 14);
+
+  var map = L.map('front-page-map', {zoomControl:false, scrollWheelZoom: false}).setView(centerCoords, 14);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -137,7 +137,7 @@
     {{ if .Params.address }}
       {{ if .Params.lon }}
         {{ if .Params.lat }}
-          groupLocations.push({ coords: ["{{ .Params.lon }}", "{{ .Params.lat }}"], bindTo: ["{{ urlize .Title }}"], title: "{{ .Title }}", colour: "{{ .Params.colour }}", tagline: "{{ .Params.tagline }}", address: "{{ .Params.address }}", openingTimes: "{{ .Params.times }}"})
+          groupLocations.push({ coords: ["{{ .Params.lon }}", "{{ .Params.lat }}"], bindTo: ["{{ urlize .Title }}"], title: "{{ .Title }}", webAddress: "{{ .Site.BaseURL }}working-groups/{{ urlize .Title }}", colour: "{{ .Params.colour }}", tagline: "{{ .Params.tagline }}", address: "{{ .Params.address }}", openingTimes: "{{ .Params.times }}"})
         {{ end }}
       {{ end }}
     {{ end }}
@@ -166,7 +166,7 @@
       "</p>"
     }
 
-    popUpBody += "<p class=\"mt-1\">Click the icon again to find out more!</p>"
+    popUpBody += "<p class=\"mt-1\"><a class='groupLink' href='" + groupLocations[i].webAddress + "'>Click to find out more!</a></p>"
 
     currentMarker.bindPopup(popUpBody);
 
@@ -175,15 +175,17 @@
       $('#' + groupLocations[i].bindTo[j]).click(function(e) {
 
         if(currentMapSelection == groupLocations[i].bindTo[j]){
+          e.stopPropagation();
+          e.preventDefault();
           window.location.href = "{{ .Site.BaseURL }}/working-groups/" + group_id
         } else {
           groupLocations[i].bindTo[j]
 
-          // Pan to location when hovering on group
+          // Pan to location when group icon clicked.
           e.stopPropagation();
           e.preventDefault();
           currentMarker.openPopup();
-          map.setView([(parseFloat(groupLocations[i].coords[0]) + parseFloat(0.002)), groupLocations[i].coords[1]], 16); // Offset slightly to account for slope overlay.
+          map.setView([(parseFloat(groupLocations[i].coords[0]) + parseFloat(0.0015)), groupLocations[i].coords[1]], 16); // Offset slightly to account for slope overlay.
 
           $(".working-group-icon").css("opacity", "0.5");
           $('#' + groupLocations[i].bindTo[j]).css("opacity", "1");
@@ -199,8 +201,11 @@
   })
 
   $(document).click(function(e) {
-    if(currentMapSelection !== undefined){
-      // Pan to center when no longer hovering.
+    console.log(e.target.className);
+    if(e.target.className.includes("groupLink")){
+      console.log("Group link!");
+    } else if(currentMapSelection !== undefined){
+      // Pan to center when icon isn't clicked.
       e.stopPropagation();
       e.preventDefault();
       map.closePopup();

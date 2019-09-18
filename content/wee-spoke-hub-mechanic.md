@@ -4,6 +4,7 @@ date = "2019-09-17T13:00:00+00:00"
 description = "An exciting opportunity has to join the team at the Wee Spoke Hub!"
 tags = ["wee-spoke-hub"]
 title = "Job Opportunity: Wee Spoke Hub Mechanic"
+type = "news"
 
 +++
 **![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568751170/shrubcoop.org/media/mechanic_web_pl0zka.png)Salary £22,800 p.a pro rata (£7,165), part time 11 hours / week**  

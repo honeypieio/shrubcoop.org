@@ -1,11 +1,15 @@
-<h2 class="dosis-semi-bold mb-0">{{ .Title }}</h2>
+<h3 class="mb-1">{{ .Title }}</h3>
 
 <p class="dosis-semi-bold">
   {{ dateFormat "Monday, January 2, 2006" .Params.time }} at {{ .Params.location }}
 </p>
 
-<p>{{ .Description | truncate 60 }}</p>
-
-<a href="{{.Site.BaseURL}}{{ .URL }}" title="Latest event: {{ .Title }} - click this link to read more about this event." class="underline">
-  See details
-</a>
+<p>{{ replace (.Description | truncate 60) " …" "…" }}</p>
+<p>
+  <a
+    href="{{.Site.BaseURL}}{{ .URL }}"
+    title="Event: {{ .Title }} - click this link to find out more about this event."
+    class="underline"
+    >See details</a
+  >
+</p>

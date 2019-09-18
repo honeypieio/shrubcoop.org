@@ -1,16 +1,15 @@
+<h3 class="mb-1">{{ .Title }}</h3>
 
-  <h2 class="mb-0">{{ .Title }}</h2>
+<p class="dosis-semi-bold">
+  By {{ .Params.author }}, posted {{ dateFormat "02/01/06" .Date }}
+</p>
 
-  <p class="dosis-semi-bold">
-    By {{ .Params.author }}, posted {{ dateFormat "02/01/06" .Date }}
-  </p>
-
-  <p>{{ .Description | truncate 60 }}</p>
-  <p>
-    <a
-      href="{{.Site.BaseURL}}{{ .URL }}"
-      title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading."
-      class="underline"
-      >Read full post</a
-    >
-  </p>
+<p>{{ replace (.Description | truncate 60) " …" "…" }}</p>
+<p>
+  <a
+    href="{{.Site.BaseURL}}{{ .URL }}"
+    title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading."
+    class="underline"
+    >Read full post</a
+  >
+</p>

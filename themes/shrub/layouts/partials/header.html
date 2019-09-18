@@ -26,7 +26,7 @@
 
       {{ $currentPage := . }} {{ range .Site.Menus.main }}
       <li
-        class="nav-item mx-auto mx-xl-5 {{ if eq $currentPage.Title .Name }}underline{{ end }}"
+        class="nav-item mx-auto mx-lg-4 mx-xl-5 {{ if eq $currentPage.Title .Name }}underline{{ end }}"
       >
         <a
           class="nav-link text-white"

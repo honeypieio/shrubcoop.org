@@ -4,7 +4,7 @@ date = "2019-09-13T15:00:00+00:00"
 description = "An exciting opportunity has arisen to join the staff team at SHRUB Coop! "
 tags = ["zero-waste-hub"]
 title = "Job Opportunity: Café Coordinator"
-
+type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568672982/shrubcoop.org/media/cafe_job_web_n4r0ax.png)
 
