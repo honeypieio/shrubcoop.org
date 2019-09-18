@@ -26,6 +26,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/news/welcome-to-bicycle-matters.md
 - content/news/how-you-can-help-to-reduce-food-waste-in-edinburgh.md
 - content/news/making-sustainable-fashion-choices-in-edinburgh.md
 - content/news/cafe-coordinator.md
