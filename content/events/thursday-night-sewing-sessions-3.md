@@ -7,7 +7,7 @@ time = "2019-10-10T16:00:00+00:00"
 title = "Thursday night sewing sessions"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568814758/shrubcoop.org/media/sewing_sessions_FB_event_banner_g39d9i.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568821838/shrubcoop.org/media/sewing_sessions_FB_event_banner_1_oy6liq.png)
 
 Are you itching to start any sewing projects? Have you got a well loved item of clothing you want to mend? Come along to our sewing drop-in sessions!
 
