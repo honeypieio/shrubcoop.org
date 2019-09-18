@@ -41,7 +41,7 @@
 />
 <meta charset="UTF-8" />
 
-<title>Job Opportunity: Wee Spoke Hub Mechanic | SHRUB Coop</title>
+<title> | SHRUB Coop</title>
 </head>
     <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
   <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://shrub.space/">
@@ -104,7 +104,7 @@
       </li>
       
       <li
-        class="nav-item mx-auto underline"
+        class="nav-item mx-auto "
       >
         <a
           class="nav-link text-white"
@@ -143,65 +143,44 @@
 </nav>
 <div class="content mb-0 mb-lg-5 mb-xl-5" style="margin-top: 75px;">
 
-  <div class="col-xl-6 mx-auto">
-    <div class="container">
+<div class="col-lg-6 offset-lg-3">
 
-      <div class="pt-5">
-        <h2 class="mb-0">Job Opportunity: Wee Spoke Hub Mechanic</h2>
+  <div class="container">
 
-        <p class="dosis-semi-bold">
-          By SHRUB Coop, posted 17/09/19
-        </p>
+    <div class="pt-4">
 
-        <p>An exciting opportunity has to join the team at the Wee Spoke Hub!</p>
-      </div>
+      <h1 class="dosis-bold mb-5 text-shrub" id="roleTitle"></h1>
 
-      <hr />
+      <div id="volunteerRole"></div>
 
-      <p><strong><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1568751170/shrubcoop.org/media/mechanic_web_pl0zka.png" alt="" />Salary £22,800 p.a pro rata (£7,165), part time 11 hours / week</strong><br />
-<em>Tuesdays, Wednesdays and Thursdays 5-8.30pm</em><br />
-<em>Fixed term contract to 31 March 2020 – extension subject to successful funding bids</em><br />
-<strong>Application Deadline:</strong> <strong>end of day 6th October</strong></p>
+      <h3 class="mt-2">How To Apply</h3>
 
-<p>An exciting opportunity has arisen to join the staff team at SHRUB Coop! We’re looking for a bike mechanic to help us run our weekly fix-your-own-bike sessions and help our community to learn how to take care of their bikes, as well as empowering our Wee Spoke Hub volunteers to take ownership of the project.</p>
-
-<p><strong>Job Purpose</strong></p>
-
-<p>To ensure the smooth operation of the Wee Spoke Hub’s weekly bike repair workshops. The role holder will facilitate the workshops, providing top-level mechanical bike knowledge and assistance to participants, practical support to volunteers and ensuring that accurate records are kept.</p>
-
-<p><strong>Successful applicants must have experience and skills in the following areas:</strong></p>
-
-<ul>
-<li>Experience in bicycle maintenance / repair with high level of practical knowledge – at least Velotech Gold level qualification required.</li>
-<li>Ability to engage and teach essential bike maintenance and cycling skills</li>
-<li>A high level of empathy and respect for people with no cycling or bike knowledge, and people coming from a range of backgrounds and experiences.</li>
-<li>Experience managing teams of volunteers and knowledge of how to delegate and empower them</li>
-<li>Strong communication and team-work skills for a fast-paced working environment</li>
-<li>Able to work on own initiative and organise own time and workload</li>
-<li>Full proficiency with Google Accounts and familiar with Microsoft Office e.g. Excel</li>
-<li>Ability to use inclusive, non-stigmatising and respectful ways of communication and a creative approach to engaging others and solving problems</li>
-</ul>
-
-<p><strong>About the Wee Spoke Hub</strong></p>
-
-<p>The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechanic will empower members of our community with the skills and tools to take care of your bike. We also have a range of refurbished bikes and used parts for sale. We run 2 fix-your-own-bike workshops each week on Tuesday and Thursday evenings, 5-8pm, and a volunteer session on Wednesday evenings, 5-8pm, where volunteers help fix bikes for sale, all at 13 Guthrie Street.</p>
-
-<p><strong>APPLICATION PROCESS</strong></p>
-
-<p>To apply please email <strong>by midnight Sunday 6 October</strong> to jobs@shrubcoop.org, attaching a single Word document comprising a maximum two A4 pages response with evidence of your knowledge, skills and experience which make you eligible for the job.</p>
-
-<p>You may insert a maximum one page Covering Letter in front, and a maximum two page CV pasted at the end of the same Word document as an appendix.</p>
-
-<p>The panel will shortlist on the basis of essential criteria with secondary weight given to desirable criteria.</p>
-
-<p>Please give as the document filename: <strong>SURNAME – WSH Mechanic</strong> with the same as subject line of the email to help us keep track of applicants.</p>
-
-<p>For further details see the <a href="https://res.cloudinary.com/shrub-co-op/image/upload/v1568755503/shrubcoop.org/media/WSH-Mechanic-JD_kedtqw.pdf" title="Mechanic Job Description">Mechanic Job Description</a></p>
-
-<p><strong>Interviews will be held during the week beginning 14th October in Edinburgh – likely to be 16th or 17th October.</strong></p>
+      <p><p>Please send an e-mail to <strong>communications@shrubcoop.org</strong> with a short explanation of why you are interested in this role and any relevant experience you may have. After receiving your application, we will ask you to come in for an informal chat about the role.</p>
+</p>
 
     </div>
+
   </div>
+</div>
+
+<script src="https://shrub.space/js/volunteer-roles.js"></script>
+
+<script>
+
+  var BaseURL = "https:\/\/shrub.space\/";
+  var murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
+
+  var urlParams = new URLSearchParams(window.location.search);
+  var roleId = urlParams.get('roleId');
+
+  var failUri = "https:\/\/shrub.space\/volunteer"
+
+  if(!roleId){
+    window.location = failUri;
+  } else {
+    getVolunteerRole(roleId)
+  }
+</script>
 
 
 				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
