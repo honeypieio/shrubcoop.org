@@ -6,7 +6,9 @@ tags = ["food-sharing-hub"]
 title = "How you can help to reduce food waste in Edinburgh"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568811264/shrubcoop.org/media/food_sharing_web_iuefrq.png)Did you know that almost a third of all food produced globally is thrown away? In Edinburgh alone, more than 27 tonnes of edible food are thrown out every week – that’s equivalent to 54,000 meals.
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568811264/shrubcoop.org/media/food_sharing_web_iuefrq.png)
+
+Did you know that almost a third of all food produced globally is thrown away? In Edinburgh alone, more than 27 tonnes of edible food are thrown out every week – that’s equivalent to 54,000 meals.
 
 Some of this wasted food is thrown out by households and individuals: you can find advice on reducing your own food waste footprint from [Love Food, Hate Waste](https://www.lovefoodhatewaste.com/what-to-do) among others.
 
