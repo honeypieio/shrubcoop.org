@@ -49,7 +49,41 @@ Food Sharing Edinburgh also coordinates a network of food collections from small
 
 ### **About the Cafe**
 
-Come join us at our volunteer-run cafe space at the Zero Waste Hub, have a soup and a drink, and be inspired by the atmosphere!
+Take a visit to our volunteer-run cafe at the Zero Waste Hub, have a soup and a drink, and be inspired by the atmosphere!
+
+#### Menu
+
+##### Drinks
+
+Espresso **£2**
+
+Americano **£2.20**
+
+Cappucino **£2.50**
+
+Latte **£2.50**
+
+Flat White **£2.30**
+
+Mocha **£2.70**
+
+Hot Chocolate **£2.70**
+
+Tea **£2** (pot £3)
+
+Cold Drinks from **£2**
+
+##### Food
+
+Soup with bread **£3** (large bowl £4)  
+_from Union of Genius, see specials board for todays selection_
+
+Cake and traybakes **£2.5**
+
+Toast with butter **75p**
+
+Sandwiches **Pay as you feel**  
+_Subject to availability as these are donated by local cafes_
 
 ### **FAQs**
 
