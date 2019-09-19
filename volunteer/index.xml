@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Volunteer Roles on SHRUB Coop</title>
-    <link>https://shrub.space/volunteer/</link>
+    <link>https://shrubcoop.org/volunteer/</link>
     <description>Recent content in Volunteer Roles on SHRUB Coop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="https://shrub.space/volunteer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shrubcoop.org/volunteer/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
