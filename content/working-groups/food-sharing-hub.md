@@ -38,7 +38,7 @@ In central Edinburgh, **27.1 tonnes** of food goes to waste every week - that's 
 
 #### Do I need to be a member to use the Food Sharing Hub?
 
-Yes
+No
 
 #### Is Zero Waste Hub accessible?
 
