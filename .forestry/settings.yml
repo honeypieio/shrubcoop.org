@@ -30,7 +30,7 @@ sections:
   label: Pages
   create: all
   match: "*"
-  exclude: about-us
+  exclude: '["about-us.md"]'
   templates:
   - blog
 - type: document
