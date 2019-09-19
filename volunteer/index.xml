@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Volunteer on SHRUB Coop</title>
+    <title>Volunteer Roles on SHRUB Coop</title>
     <link>https://shrub.space/volunteer/</link>
-    <description>Recent content in Volunteer on SHRUB Coop</description>
+    <description>Recent content in Volunteer Roles on SHRUB Coop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
 	<atom:link href="https://shrub.space/volunteer/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://shrub.space/volunteer/view/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shrub.space/volunteer/view/</guid>
-      <description>Please send an e-mail to volunteering@shrubcoop.org with a short explanation of why you are interested in this role and any relevant experience you may have. Please put the name of the volunteer roles in the subject of your email.
-After receiving your application, we will ask you to come in for an informal chat about the role.</description>
-    </item>
     
   </channel>
 </rss>
