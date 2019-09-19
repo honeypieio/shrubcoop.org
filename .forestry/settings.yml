@@ -29,8 +29,7 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "*"
-  exclude: "(about-us|contact|get-involved).md"
+  match: "*!(about-us|contact|get-involved).md"
   templates:
   - blog
 - type: document
