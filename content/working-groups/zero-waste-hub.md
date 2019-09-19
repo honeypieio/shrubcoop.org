@@ -17,7 +17,7 @@ You can swap your preloved things in our **Swapshop**, enjoy some rescued food f
 
 #### **Opening Hours**
 
-Wednesday, Thursday, Friday and Saturday
+Wednesday to Saturday
 
 12pm - 5pm
 
