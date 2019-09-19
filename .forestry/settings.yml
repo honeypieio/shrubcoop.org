@@ -18,7 +18,7 @@ sections:
   label: News
   create: all
   match: "*"
-  exclude: "{home.md,about-us.md,contact.md,get-involved.md}"
+  exclude: "{_index.md,about-us.md,contact.md,get-involved.md}"
   templates:
   - blog
 - type: directory
