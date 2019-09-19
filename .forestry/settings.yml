@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/home.md
   label: Home
-  match: "**/*"
 - type: document
   path: content/about-us.md
   label: About Us
