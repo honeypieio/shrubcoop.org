@@ -5,19 +5,31 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: content/contact.md
-  label: Contact
-- type: document
-  path: content/get-involved.md
-  label: Get Involved
+  path: content/home.md
+  label: Home
+  match: "**/*"
 - type: document
   path: content/about-us.md
   label: About Us
+- type: document
+  path: content/get-involved.md
+  label: Get Involved
+- type: directory
+  path: content
+  label: News
+  create: all
+  match: "*"
+  exclude: "{home.md,about-us.md,contact.md,get-involved.md}"
+  templates:
+  - blog
 - type: directory
   path: content/events
   label: Events
   create: all
   match: "**/*"
+- type: document
+  path: content/contact.md
+  label: Contact
 - type: directory
   path: content/working-groups
   label: Working Groups
@@ -25,14 +37,6 @@ sections:
   match: "**/*"
   templates:
   - working-group
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-  exclude: "{about-us.md,contact.md,get-involved.md}"
-  templates:
-  - blog
 - type: document
   path: config.toml
   label: Site Config
