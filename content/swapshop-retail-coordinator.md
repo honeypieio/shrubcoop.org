@@ -10,9 +10,8 @@ title = "Swapshop retail coordinator"
 
 **Salary £22,800 p.a. pro rata Part time 8 hours / week (£5,211)  
 **_Fixed term contract to 31 March 2020 - extension subject to successful funding bids  
-Saturdays 11-6pm and two monthly meetings during weekdays_
-
-**Application Deadline: midnight Tuesday 1st October**
+Saturdays 11-6pm and two monthly meetings during weekdays  
+_**Application Deadline: midnight Tuesday 1st October**
 
 **Job Purpose**
 
@@ -32,8 +31,8 @@ The Swapshop Retail Coordinator works closely alongside the Zero Waste Hub Coord
 
 **About the Swapshop**
 
-At the Swapshop you can swap your unwanted things for something else that's been preloved. You can find it at the Zero Waste Hub on 22 Bread Street.  
-  
+At the Swapshop you can swap your unwanted things for something else that's been preloved. You can find it at the Zero Waste Hub on 22 Bread Street.
+
 **About the Zero Waste Hub**
 
 A one stop shop for sustainable living! You can swap your preloved things in our Swapshop, enjoy some rescued food from our Food Sharing Hub, or just hang out and grab a tea or coffee from our Zero Waste Cafe.
