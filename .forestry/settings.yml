@@ -29,7 +29,7 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "!(about-us).md"
+  match: "*.md"
   templates:
   - blog
 - type: document
