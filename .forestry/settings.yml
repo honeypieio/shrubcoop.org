@@ -29,7 +29,8 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "*.md"
+  match: "*"
+  exclude: about-us
   templates:
   - blog
 - type: document
