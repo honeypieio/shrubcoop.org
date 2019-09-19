@@ -36,17 +36,17 @@ sections:
   match: "**/*"
   templates:
   - working-group
-- type: heading
-  label: Volunteer Roles
-- type: document
-  path: content/volunteer/view.md
-  label: How To Apply
-- type: document
-  path: content/volunteer/_index.md
-  label: List Of Roles
 - type: document
   path: config.toml
   label: Site Config
+- type: heading
+  label: Volunteer Roles
+- type: document
+  path: content/volunteer/_index.md
+  label: Volunteer Roles List Text
+- type: document
+  path: content/volunteer/view.md
+  label: How To Apply Text
 upload_dir: shrubcoop.org/media
 public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
