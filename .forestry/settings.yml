@@ -7,15 +7,12 @@ sections:
 - type: document
   path: content/contact.md
   label: Contact
-  match: "**/*"
 - type: document
   path: content/get-involved.md
   label: Get Involved
-  match: "**/*"
 - type: document
   path: content/about-us.md
   label: About Us
-  match: "**/*"
 - type: directory
   path: content/events
   label: Events
