@@ -1,6 +1,6 @@
 +++
 title = "Contact"
-
+type = "contact"
 +++
 #### Enquiries & space booking
 
