@@ -8,9 +8,9 @@
   <div class="col-xl-4 order-lg-1">
     <div class="working_group_header sloped" style="padding-bottom:50px !important;">
 
-    	<div class="row pt-5 pb-3">
+    	<div class="row pt-5 pb-4">
 
-        <div class="col-3 ml-xl-4 mr-3 mr-xl-1">
+        <div class="col-3 mx-auto">
           <div class="container my-auto">
             <img
               src="{{ .Params.working_group_logo }}"
@@ -19,7 +19,7 @@
           </div>
         </div>
 
-    		<div class="col-8">
+    		<div class="col-8 mx-auto">
 		    	<div class="container">
 
 		    		<h3 class="dosis-semi-bold" style="color: {{ .Params.colour }};">
@@ -60,41 +60,8 @@
     {{ end }}
 
     <div class="container">
-      <div id="latestEventsParentCopy" class="d-none d-xl-block px-3">
-        <div class="row mt-5">
+      <div id="latestEventsCopy" class="d-none d-xl-block px-3">
 
-
-          <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
-
-
-        </div>
-        <div class="row d-block">
-          <h2 class="text-center mb-3">Latest Events</h2>
-          <div class="container" id="latestEvents">
-
-            {{ $eventsCount := 0 }}
-            {{ $eventsLimit := 3 }}
-
-            {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "desc" }}
-
-              {{ if le $eventsCount $eventsLimit }}
-                {{ if in .Params.Tags $groupId }}
-
-                  {{ $eventsCount := (add $eventsCount 1)}}
-
-                  {{- partial "events/preview.html" . -}}
-
-                  {{ if (not (eq $eventsCount $eventsLimit)) }}
-                    <hr />
-                  {{ end }}
-
-                {{ end }}
-
-              {{ end }}
-
-            {{ end }}
-          </div>
-        </div>
       </div>
     </div>
 
@@ -103,14 +70,12 @@
 
 
   <div class="col-xl-4 order-lg-2">
-
-    <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+    <div class="circle mx-auto mb-3" style="margin-top: -20px; background-color: {{.Params.colour}};"></div>
 
     <h2 class="text-center mb-3">What We Do</h2>
 
     <div id="group-synopsis" class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       {{ .Content }}
-
     </div>
 
   </div>
@@ -119,7 +84,7 @@
     <br class="d-lg-none" />
     <br class="d-lg-none" />
     <a name="news">
-      <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+      <div class="circle mx-auto mb-3" style="margin-top: -20px; background-color: {{.Params.colour}};"></div>
     </a>
     <div class="container">
       <h2 class="text-center mb-3">Latest News</h2>
@@ -150,38 +115,41 @@
       </div>
     </div>
 
-    <div id="latestEventsParentCopy" class="d-xl-none">
-      <div class="row mt-5">
+    <div id="latestEvents" class="d-xl-none px-3">
+      <div class="row mt-5 mt-xl-0">
 
 
-        <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: {{.Params.colour}};"></div>
+        <div class="circle mx-auto mb-3" style="margin-top: -25px; background-color: {{.Params.colour}};"></div>
 
 
       </div>
       <div class="row d-block">
-        <h2 class="text-center mb-3">Latest Events</h2>
-        <div class="container" id="latestEvents">
+        <h2 class="text-center mb-3">Upcoming Events</h2>
+        <div class="container">
 
-          {{ $eventsCount := 0 }}
-          {{ $eventsLimit := 3 }}
 
-          {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "desc" }}
+          {{ $scratch := newScratch }}
+          {{ $scratch.Set "eventsCount" 1 }}
+          {{ $scratch.Set "eventsLimit" 3 }}
 
-            {{ if le $eventsCount $eventsLimit }}
-              {{ if in .Params.Tags $groupId }}
+          {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "asc" }}
+            {{ if in .Params.Tags $groupId }}
+              {{ if .Params.time }}
+                {{ if ge (time .Params.time).Unix now.Unix }}
+                  {{ if le ($scratch.Get "eventsCount") ($scratch.Get "eventsLimit") }}
 
-                {{ $eventsCount := (add $eventsCount 1)}}
+                    {{ $scratch.Set "eventsCount" (add ($scratch.Get "eventsCount") 1)}}
 
-                {{- partial "events/preview.html" . -}}
+                    {{- partial "events/preview.html" . -}}
 
-                {{ if (not (eq $eventsCount $eventsLimit)) }}
-                  <hr />
+                    {{ if (not (eq ($scratch.Get "eventsCount") ($scratch.Get "eventsLimit"))) }}
+                      <hr />
+                    {{ end }}
+
+                  {{ end }}
                 {{ end }}
-
               {{ end }}
-
             {{ end }}
-
           {{ end }}
         </div>
       </div>
@@ -204,6 +172,8 @@ if(latestNews.trim() == "") {
 if(latestEvents.trim() == ""){
   $("#latestEvents").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
 }
+
+$("#latestEventsCopy").html($("#latestEvents").html())
 
 var synopsisHeadings = {};
 $("#group-synopsis h3").each(function(){
@@ -233,7 +203,13 @@ $("#group-synopsis h3").each(function(){
   {{ if .Params.lon }}
     {{ if .Params.lat }}
       var coords = [{{ .Params.Lon }}, {{ .Params.Lat }}]
-      var map = L.map('project-map', {zoomControl:false}).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
+      var map = L.map('project-map',
+        {
+          zoomControl:false,
+          scrollWheelZoom: false,
+          dragging: false,
+          touchZoom: false
+        }).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',

@@ -4,13 +4,14 @@
     <div class="container">
 
       <div class="pt-5">
-        <h2 class="mb-0">{{ .Title }}</h2>
+        <h2 class="mb-2">{{ .Title }}</h2>
 
-        <p class="dosis-semi-bold">
-          {{ dateFormat "Monday, January 2, 2006" .Params.time }} at {{ .Params.location }}
+        <p class="dosis-semi-bold mb-0">
+          &#128336; {{ dateFormat "Monday, January 2, 2006" .Params.time }}
         </p>
-
-        <p>{{ .Description }}</p>
+        <p class="dosis-semi-bold">
+          &#127970; {{ .Params.location }}
+        </p>
 
       </div>
 

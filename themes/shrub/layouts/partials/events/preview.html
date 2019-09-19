@@ -1,10 +1,14 @@
 <h3 class="mb-1">{{ .Title }}</h3>
 
+<p class="mb-2">{{ replace (.Description | truncate 60) " …" "…" }}</p>
+
+<p class="dosis-semi-bold mb-0">
+  &#128336; {{ dateFormat "Monday, January 2, 2006" .Params.time }}
+</p>
 <p class="dosis-semi-bold">
-  {{ dateFormat "Monday, January 2, 2006" .Params.time }} at {{ .Params.location }}
+  &#127970; {{ .Params.location }}
 </p>
 
-<p>{{ replace (.Description | truncate 60) " …" "…" }}</p>
 <p>
   <a
     href="{{ .Permalink }}"

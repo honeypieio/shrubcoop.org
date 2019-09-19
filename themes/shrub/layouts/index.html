@@ -3,7 +3,7 @@
 <div class="row">
 
   <div class="col-xl-4 order-2 order-xl-1">
-    <div class="latest-blog-header sloped pt-1 px-4 pb-4" style="padding-bottom: 20% !important;">
+    <div class="latest-blog-header sloped pt-1 px-2 pb-4" style="padding-bottom: 20% !important;">
       <div class="container pl-4 pb-4  pt-3">
         <h3 class="mb-3 mt-2 text-white text-center">
           Latest News
@@ -79,15 +79,27 @@
 
   <div class="col-xl-4 order-3 order-xl-3">
 
-    <div class="events-header sloped pt-1 px-4 pb-4" style="padding-bottom: 20% !important;">
+    <div class="events-header sloped pt-1 px-2 pb-4" style="padding-bottom: 20% !important;">
       <div class="container pl-4 pb-4 pt-3">
         <h3 class="mb-3 mt-2 text-white text-center">
           What's On
         </h3>
-        {{ range sort (first 3 (where .Data.Pages "Type" "events")) ".Params.time" "desc" }}
-          <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
-            {{ partial "events/preview.html" . }}
-          </div>
+        {{ $scratch := newScratch }}
+        {{ $scratch.Set "eventsCount" 1 }}
+        {{ $scratch.Set "eventsLimit" 3 }}
+
+        {{ range sort (where .Data.Pages "Type" "events") ".Params.time" "asc" }}
+          {{ if ge (time .Params.time).Unix now.Unix }}
+            {{ if le ($scratch.Get "eventsCount") ($scratch.Get "eventsLimit") }}
+
+              {{ $scratch.Set "eventsCount" (add ($scratch.Get "eventsCount") 1)}}
+
+              <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
+                {{- partial "events/preview.html" . -}}
+              </div>
+
+            {{ end }}
+          {{ end }}
         {{ end }}
 
       </div>
@@ -120,7 +132,12 @@
   var centerCoords = [55.9499497,-3.1969465]
 
 
-  var map = L.map('front-page-map', {zoomControl:false, scrollWheelZoom: false}).setView(centerCoords, 14);
+  var map = L.map('front-page-map',
+                  { zoomControl:false,
+                    scrollWheelZoom: false,
+                    dragging: false,
+                    touchZoom: false
+                  }).setView(centerCoords, 14);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -201,10 +218,10 @@
   })
 
   $(document).click(function(e) {
-    console.log(e.target.className);
-    if(e.target.className.includes("groupLink")){
-      console.log("Group link!");
-    } else if(currentMapSelection !== undefined){
+    if(e.target.href){
+      window.location.href = e.target.href
+    }
+    if(currentMapSelection !== undefined){
       // Pan to center when icon isn't clicked.
       e.stopPropagation();
       e.preventDefault();
