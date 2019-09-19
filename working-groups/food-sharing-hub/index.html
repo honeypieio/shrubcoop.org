@@ -151,9 +151,9 @@
   <div class="col-xl-4 order-lg-1">
     <div class="working_group_header sloped" style="padding-bottom:50px !important;">
 
-    	<div class="row pt-5 pb-3">
+    	<div class="row pt-5 pb-4">
 
-        <div class="col-3 ml-xl-4 mr-3 mr-xl-1">
+        <div class="col-3 mx-auto">
           <div class="container my-auto">
             <img
               src="https://res.cloudinary.com/shrub-co-op/image/upload/v1568666918/shrubcoop.org/media/Food_Sharing_Hub_WEB_ONLY_ywqahq.png"
@@ -162,7 +162,7 @@
           </div>
         </div>
 
-    		<div class="col-8">
+    		<div class="col-8 mx-auto">
 		    	<div class="container">
 
 		    		<h3 class="dosis-semi-bold" style="color: #137A0A;">
@@ -203,122 +203,8 @@
     
 
     <div class="container">
-      <div id="latestEventsParentCopy" class="d-none d-xl-block px-3">
-        <div class="row mt-5">
+      <div id="latestEventsCopy" class="d-none d-xl-block px-3">
 
-
-          <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: #137A0A;"></div>
-
-
-        </div>
-        <div class="row d-block">
-          <h2 class="text-center mb-3">Latest Events</h2>
-          <div class="container" id="latestEvents">
-
-            
-            
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-
-              
-                
-
-              
-
-            
-          </div>
-        </div>
       </div>
     </div>
 
@@ -327,8 +213,7 @@
 
 
   <div class="col-xl-4 order-lg-2">
-
-    <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: #137A0A;"></div>
+    <div class="circle mx-auto mb-3" style="margin-top: -20px; background-color: #137A0A;"></div>
 
     <h2 class="text-center mb-3">What We Do</h2>
 
@@ -395,7 +280,6 @@
 
 <p>Castle Terrace, Edinburgh, EH1 2E</p>
 
-
     </div>
 
   </div>
@@ -404,7 +288,7 @@
     <br class="d-lg-none" />
     <br class="d-lg-none" />
     <a name="news">
-      <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: #137A0A;"></div>
+      <div class="circle mx-auto mb-3" style="margin-top: -20px; background-color: #137A0A;"></div>
     </a>
     <div class="container">
       <h2 class="text-center mb-3">Latest News</h2>
@@ -488,119 +372,51 @@
       </div>
     </div>
 
-    <div id="latestEventsParentCopy" class="d-xl-none">
-      <div class="row mt-5">
+    <div id="latestEvents" class="d-xl-none px-3">
+      <div class="row mt-5 mt-xl-0">
 
 
-        <div class="circle mx-auto" style="margin-top: -20px; margin-bottom: 30px; background-color: #137A0A;"></div>
+        <div class="circle mx-auto mb-3" style="margin-top: -25px; background-color: #137A0A;"></div>
 
 
       </div>
       <div class="row d-block">
-        <h2 class="text-center mb-3">Latest Events</h2>
-        <div class="container" id="latestEvents">
+        <h2 class="text-center mb-3">Upcoming Events</h2>
+        <div class="container">
+
 
           
           
-
           
 
-            
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
-            
-
           
-
             
-              
-
+          
             
-
           
         </div>
       </div>
@@ -623,6 +439,8 @@ if(latestNews.trim() == "") {
 if(latestEvents.trim() == ""){
   $("#latestEvents").html('<p class="mt-4 mb-4 text-center text-muted mx-auto">No events to show right now. Check back soon!</p>')
 }
+
+$("#latestEventsCopy").html($("#latestEvents").html())
 
 var synopsisHeadings = {};
 $("#group-synopsis h3").each(function(){
@@ -652,7 +470,13 @@ $("#group-synopsis h3").each(function(){
   
     
       var coords = [ 55.945693 ,  -3.204477 ]
-      var map = L.map('project-map', {zoomControl:false}).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
+      var map = L.map('project-map',
+        {
+          zoomControl:false,
+          scrollWheelZoom: false,
+          dragging: false,
+          touchZoom: false
+        }).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',

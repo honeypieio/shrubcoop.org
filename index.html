@@ -147,7 +147,7 @@
 <div class="row">
 
   <div class="col-xl-4 order-2 order-xl-1">
-    <div class="latest-blog-header sloped pt-1 px-4 pb-4" style="padding-bottom: 20% !important;">
+    <div class="latest-blog-header sloped pt-1 px-2 pb-4" style="padding-bottom: 20% !important;">
       <div class="container pl-4 pb-4  pt-3">
         <h3 class="mb-3 mt-2 text-white text-center">
           Latest News
@@ -352,68 +352,142 @@
 
   <div class="col-xl-4 order-3 order-xl-3">
 
-    <div class="events-header sloped pt-1 px-4 pb-4" style="padding-bottom: 20% !important;">
+    <div class="events-header sloped pt-1 px-2 pb-4" style="padding-bottom: 20% !important;">
       <div class="container pl-4 pb-4 pt-3">
         <h3 class="mb-3 mt-2 text-white text-center">
           What's On
         </h3>
         
-          <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
-            <h3 class="mb-1">Fix your own bike workshop</h3>
+        
+        
 
+        
+          
+            
+
+              
+
+              <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white"><h3 class="mb-1">Thursday night sewing sessions</h3>
+
+<p class="mb-2">An open workshop where you can learn to make and mend or get…</p>
+
+<p class="dosis-semi-bold mb-0">
+  &#128336; Thursday, September 19, 2019
+</p>
 <p class="dosis-semi-bold">
-  Thursday, September 26, 2019 at Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
+  &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
 </p>
 
-<p>Our friendly mechanics will help you get back in the saddle!</p>
 <p>
   <a
-    href="https://shrub.space/events/fix-your-own-bike-workshop-1/"
+    href="https://shrub.space/events/thursday-night-sewing-sessions/"
+    title="Event: Thursday night sewing sessions - click this link to find out more about this event."
+    class="underline"
+    >See details</a
+  >
+</p>
+</div>
+
+            
+          
+        
+          
+            
+
+              
+
+              <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white"><h3 class="mb-1">Fix your own bike workshop</h3>
+
+<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
+
+<p class="dosis-semi-bold mb-0">
+  &#128336; Thursday, September 19, 2019
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
+</p>
+
+<p>
+  <a
+    href="https://shrub.space/events/fix-your-own-bike-workshop/"
     title="Event: Fix your own bike workshop - click this link to find out more about this event."
     class="underline"
     >See details</a
   >
 </p>
+</div>
 
-          </div>
+            
+          
         
-          <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
-            <h3 class="mb-1"> Sustainable Fashion Meetup Group</h3>
+          
+            
 
+              
+
+              <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white"><h3 class="mb-1">New &amp; Old Members Warm Welcome!</h3>
+
+<p class="mb-2">Are you interested in volunteering for SHRUB, become a…</p>
+
+<p class="dosis-semi-bold mb-0">
+  &#128336; Thursday, September 19, 2019
+</p>
 <p class="dosis-semi-bold">
-  Wednesday, September 25, 2019 at Zero Waste Hub, 22 Bread Street, EH3 9AF
+  &#127970; Zero Waste Hub, 22 Bread Street, EH3 9AF
 </p>
 
-<p>The fashion industry is now the second most polluting…</p>
 <p>
   <a
-    href="https://shrub.space/events/sustainable-fashion-meetup-group/"
-    title="Event:  Sustainable Fashion Meetup Group - click this link to find out more about this event."
+    href="https://shrub.space/events/big-swap-test/"
+    title="Event: New &amp; Old Members Warm Welcome! - click this link to find out more about this event."
     class="underline"
     >See details</a
   >
 </p>
+</div>
 
-          </div>
+            
+          
         
-          <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
-            <h3 class="mb-1">Fix your own bike workshop</h3>
-
-<p class="dosis-semi-bold">
-  Tuesday, September 24, 2019 at Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
-</p>
-
-<p>Our friendly mechanics will help you get back in the saddle!</p>
-<p>
-  <a
-    href="https://shrub.space/events/fix-your-own-bike-sessions-1/"
-    title="Event: Fix your own bike workshop - click this link to find out more about this event."
-    class="underline"
-    >See details</a
-  >
-</p>
-
-          </div>
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
         
 
       </div>
@@ -446,7 +520,12 @@
   var centerCoords = [55.9499497,-3.1969465]
 
 
-  var map = L.map('front-page-map', {zoomControl:false, scrollWheelZoom: false}).setView(centerCoords, 14);
+  var map = L.map('front-page-map',
+                  { zoomControl:false,
+                    scrollWheelZoom: false,
+                    dragging: false,
+                    touchZoom: false
+                  }).setView(centerCoords, 14);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -559,10 +638,10 @@
   })
 
   $(document).click(function(e) {
-    console.log(e.target.className);
-    if(e.target.className.includes("groupLink")){
-      console.log("Group link!");
-    } else if(currentMapSelection !== undefined){
+    if(e.target.href){
+      window.location.href = e.target.href
+    }
+    if(currentMapSelection !== undefined){
       
       e.stopPropagation();
       e.preventDefault();
