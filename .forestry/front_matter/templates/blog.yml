@@ -32,5 +32,3 @@ fields:
   label: Type
   hidden: true
   default: news
-pages:
-- content/swapshop-retail-coordinator.md
