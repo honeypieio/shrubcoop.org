@@ -1,6 +1,6 @@
 +++
 
 title = "Volunteer Roles"
-preamble = "Some information on volunteering with us etc. etc."
+preamble = "We run on volunteer power and always need more helping hands. Check out our available roles below for more information and how to apply"
 
 +++
