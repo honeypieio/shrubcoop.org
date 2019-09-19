@@ -4,10 +4,17 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: content/news
-  label: News
-  create: all
+- type: document
+  path: content/contact.md
+  label: Contact
+  match: "**/*"
+- type: document
+  path: content/get-involved.md
+  label: Get Involved
+  match: "**/*"
+- type: document
+  path: content/about-us.md
+  label: About Us
   match: "**/*"
 - type: directory
   path: content/events
@@ -26,6 +33,9 @@ sections:
   label: Pages
   create: all
   match: "*"
+  exclude: "**(about-us,contact,get-involved)"
+  templates:
+  - blog
 - type: document
   path: config.toml
   label: Site Config
