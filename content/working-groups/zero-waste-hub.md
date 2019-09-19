@@ -47,17 +47,9 @@ The Food Sharing Hub is working with Tesco, Co-op and Waitrose to collect food f
 
 Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the city.
 
-### **Cafe Menu**
+### **About the Cafe**
 
-Description of the cafe here
-
-#### Drinks
-
-Menu here
-
-#### Food
-
-Menu here
+Come join us at our volunteer-run cafe space at the Zero Waste Hub, have a soup and a drink, and be inspired by the atmosphere!
 
 ### **FAQs**
 
