@@ -8,10 +8,10 @@ title = "Swapshop retail coordinator"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568907909/shrubcoop.org/media/retail_web_k9tsw0.png)
 
-**Salary £22,800 p.a. pro rata Part time 8 hours / week (£5,211)  
-**_Fixed term contract to 31 March 2020 - extension subject to successful funding bids  
-Saturdays 11-6pm and two monthly meetings during weekdays  
-_**Application Deadline: midnight Tuesday 1st October**
+**Salary £22,800 p.a. pro rata Part time 8 hours / week (£5,211)**  
+_Fixed term contract to 31 March 2020 - extension subject to successful funding bids  
+Saturdays 11-6pm and two monthly meetings during weekdays_  
+**Application Deadline: midnight Tuesday 1st October**
 
 **Job Purpose**
 
@@ -45,6 +45,6 @@ You may insert a maximum one page Covering Letter in front with a maximum two pa
 
 Please give as the document filename: **SURNAME - Swapshop Retail Coordinator** with the same as subject line of the email to help us keep track of applicants.
 
-For further details see the [Retail_Coordinator_Job_Description](Caf%C3%A9_Coordinator_Job_Description_odm8nl.pdf "Retail Coordinator Job Description")
+For further details see the [Swapshop_Retail_Coordinator_Job_Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1568911089/shrubcoop.org/media/Swapshop_Retail_Coordinator_Job_Description_q1msmq.pdf "Swapshop_Retail_Coordinator_Job_Description_q1msmq.pdf")
 
 **Interviews will be held in the week beginning 14th October in Edinburgh - likely to be Thursday 17th or Friday 18th October. We will be looking for the successful applicant to start as soon as possible afterwards.**
