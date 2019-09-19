@@ -29,8 +29,8 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "[*,!about-us.*,!contact.*,get-involved.*]"
-  exclude: '["about-us", "contact", "get-involved"]'
+  match: "*"
+  exclude: '["about-us.md", "contact.md", "get-involved.md"]'
   templates:
   - blog
 - type: document
