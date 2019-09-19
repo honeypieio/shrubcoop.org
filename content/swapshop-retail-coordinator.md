@@ -4,7 +4,7 @@ date = "2019-09-19T16:00:00+00:00"
 description = "We're hiring for a part time retail coordinator for our Swapshop!"
 tags = ["swapshop"]
 title = "Swapshop retail coordinator"
-
+type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568907909/shrubcoop.org/media/retail_web_k9tsw0.png)
 
