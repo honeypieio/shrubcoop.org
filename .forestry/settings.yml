@@ -4,6 +4,8 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Pages
 - type: document
   path: content/home.md
   label: Home
@@ -13,6 +15,11 @@ sections:
 - type: document
   path: content/get-involved.md
   label: Get Involved
+- type: document
+  path: content/contact.md
+  label: Contact
+- type: heading
+  label: Content
 - type: directory
   path: content
   label: News
@@ -26,9 +33,6 @@ sections:
   label: Events
   create: all
   match: "**/*"
-- type: document
-  path: content/contact.md
-  label: Contact
 - type: directory
   path: content/working-groups
   label: Working Groups
@@ -36,9 +40,6 @@ sections:
   match: "**/*"
   templates:
   - working-group
-- type: document
-  path: config.toml
-  label: Site Config
 - type: heading
   label: Volunteer Roles
 - type: document
@@ -47,6 +48,11 @@ sections:
 - type: document
   path: content/volunteer/view.md
   label: How To Apply Text
+- type: heading
+  label: Settings
+- type: document
+  path: config.toml
+  label: Site Config
 upload_dir: shrubcoop.org/media
 public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
