@@ -19,4 +19,4 @@ Come along to the **Fix Your Own Bike** workshops on **Tuesdays & Thursdays, 5pm
 
 Simply bring your bike along to one of our **Fix Your Own Bike** workshops and our team will check it over and guide you in any repairs it needs.
 
-All you have to pay for is the parts you use. As a member of SHRUB Coop you get **discounts** on parts.
+**Tools and expertise** are provided and participants are welcome to donate what they can. As a member of SHRUB Coop you get **discounts** on parts.
