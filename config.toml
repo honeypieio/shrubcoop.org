@@ -1,4 +1,4 @@
-baseURL = "https://shrubcoop.org/"
+baseURL = "https://www.shrubcoop.org/"
 languageCode = "en-gb"
 pluralizelisttitles = "false"
 theme = "shrub"
