@@ -1,5 +1,4 @@
 +++
 title = "News"
-type = "news"
-hidden = "true"
+description = "Stay up to date with our latest news"
 +++

@@ -3,8 +3,8 @@
 
 <div class="col-xl-6 mx-auto">
   <div class="container">
-    <div class="pt-4 events-list">
-      <h2 class="text-center mb-4">Upcoming Events</h2>
+    <div class="pt-5 events-list">
+      <h2 class="text-center mb-4">{{ .Title }}</h2>
 
       {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "asc" }}
         {{ if .Params.time }}

@@ -1,6 +1,7 @@
 +++
 title = "Contact"
 type = "contact"
+description = "How to get in touch"
 +++
 #### Enquiries & space booking
 

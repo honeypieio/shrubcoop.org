@@ -3,6 +3,7 @@ languageCode = "en-gb"
 pluralizelisttitles = "false"
 theme = "shrub"
 title = "SHRUB Coop"
+
 [[menu.main]]
 identifier = "home"
 name = "Home"

@@ -12,5 +12,5 @@ type = "get-involved"
 volunteer_sign_up_button = "View All Roles"
 volunteer_sign_up_tagline = "We run on volunteer power and always need more helping hands!"
 volunteer_sign_up_title = "Volunteer with us!"
-
+description = "Find out how you can join us"
 +++

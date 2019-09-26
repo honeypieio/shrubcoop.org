@@ -1,6 +1,6 @@
 +++
 title = "About Us"
-
+description = "Find out about purpose and values"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674723/shrubcoop.org/media/vision_web_fyoad1.png)
 
