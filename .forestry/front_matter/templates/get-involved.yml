@@ -8,6 +8,12 @@ fields:
     required: true
   label: Title
   description: Title of page
+- name: description
+  type: text
+  config:
+    required: true
+  label: Description
+  description: Appears on search results.
 - name: mailing_list_title
   type: text
   config:
