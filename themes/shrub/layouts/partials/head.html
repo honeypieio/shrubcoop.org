@@ -41,6 +41,12 @@
   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
 />
 <meta charset="UTF-8" />
-<meta name="description" content="{{ .Description }}">
+{{ if .Description }}
+  <meta name="description" content="{{ .Description }}">
+{{ else }}
+  {{ if .Params.tagline }}
+    <meta name="description" content="{{ .Params.tagline }}">
+  {{ end }}
+{{ end }}
 
 <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
