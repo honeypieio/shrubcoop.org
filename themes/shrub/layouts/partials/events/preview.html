@@ -1,19 +1,12 @@
-<h3 class="mb-1">{{ .Title }}</h3>
+<a href="{{ .Permalink }}" title="Event: {{ .Title }} - click this link to find out more about this event.">
+  <h3 class="mb-2">{{ .Title }}</h3>
+</a>
 
 <p class="mb-2">{{ htmlUnescape (replace (.Description | truncate 80) " …" "…") }}</p>
 
-<p class="dosis-semi-bold mb-0">
+<p class="dosis-semi-bold mb-1">
   &#128336; {{ dateFormat "Monday, January 2, 2006" .Params.time }}
 </p>
 <p class="dosis-semi-bold">
   &#127970; {{ .Params.location }}
-</p>
-
-<p>
-  <a
-    href="{{ .Permalink }}"
-    title="Event: {{ .Title }} - click this link to find out more about this event."
-    class="underline"
-    >See details</a
-  >
 </p>

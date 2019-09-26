@@ -3,16 +3,38 @@
 
 <div class="col-xl-6 mx-auto">
   <div class="container">
-    <div class="pt-4">
-      <h2 class="text-center mb-4">Events</h2>
+    <div class="pt-4 events-list">
+      <h2 class="text-center mb-4">Upcoming Events</h2>
 
-      {{ range (where .Data.Pages "Type" "events") }}
+      {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "asc" }}
+        {{ if .Params.time }}
+          {{ if ge (time .Params.time).Unix now.Unix }}
+            <div class="py-3">
+              {{ partial "events/preview.html" . }}
+            </div>
+            <hr />
 
-        {{ partial "events/preview.html" . }}
-
-        <hr />
-
+          {{ end }}
+        {{ end }}
       {{ end }}
+
+
+      <div class="circle mx-auto mt-5 mb-2" style="background-color: #941a87;"></div>
+
+      <h3 class="mt-3 mb-4 text-center">Previous Events</h3>
+
+      {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "asc" }}
+        {{ if .Params.time }}
+          {{ if lt (time .Params.time).Unix now.Unix }}
+            <div class="py-3">
+              {{ partial "events/preview.html" . }}
+            </div>
+            <hr />
+
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
     </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $groupId := (urlize .Title) }}
-
+{{ $scratch := newScratch }}
 
 <div class="row">
 
@@ -91,27 +91,32 @@
 
       <div id="latestNews">
 
-        {{ $newsCount := 0 }}
-        {{ $newsLimit := 3 }}
+        {{ $scratch.Set "newsCount" 1 }}
+        {{ $scratch.Set "newsLimit" 3 }}
 
         {{ range sort (where .Site.Pages "Type" "news") "Date" "desc" }}
+          {{ if in .Params.Tags $groupId }}
 
-          {{ if le $newsCount $newsLimit }}
-            {{ if in .Params.Tags $groupId }}
+            {{ if le ($scratch.Get "newsCount") ($scratch.Get "newsLimit") }}
 
-              {{ $newsCount := (add $newsCount 1)}}
+              {{ $scratch.Set "newsCount" (add ($scratch.Get "newsCount") 1)}}
 
               {{- partial "news/preview.html" . -}}
 
-              {{ if (not (eq $newsCount $newsLimit)) }}
+              {{ if (not (eq ($scratch.Get "newsCount") ($scratch.Get "newsLimit"))) }}
                 <hr />
               {{ end }}
 
             {{ end }}
 
           {{ end }}
-
         {{ end }}
+
+        {{ if (eq ($scratch.Get "newsCount") 1) }}
+          <p class="text-muted text-center">No news to show yet - check back soon!</p>
+        {{ end }}
+
+
       </div>
     </div>
 
@@ -127,8 +132,6 @@
         <h2 class="text-center mb-3">Upcoming Events</h2>
         <div class="container">
 
-
-          {{ $scratch := newScratch }}
           {{ $scratch.Set "eventsCount" 1 }}
           {{ $scratch.Set "eventsLimit" 3 }}
 
@@ -151,6 +154,11 @@
               {{ end }}
             {{ end }}
           {{ end }}
+
+          {{ if (eq ($scratch.Get "eventsCount") 1) }}
+            <p class="text-muted text-center">No upcoming events right now - check back soon!</p>
+          {{ end }}
+
         </div>
       </div>
     </div>
