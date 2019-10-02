@@ -19,6 +19,10 @@ We also have a range of refurbished bikes and used parts for sale.
 
 All you have to pay for is the parts you use. As a member of SHRUB Coop you get **discounts** on parts.
 
+### test
+
+#### subheading
+
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png)
 
 ### **Our impact**
