@@ -1,7 +1,8 @@
 +++
+description = "How to get in touch"
 title = "Contact"
 type = "contact"
-description = "How to get in touch"
+
 +++
 #### Enquiries & space booking
 
@@ -30,4 +31,4 @@ description = "How to get in touch"
 
 17 Guthrie Street, EH1 1JG  
 0131 261 8216  
-[info.zwe@shrubcoop.org](mailto:info.zwe@shrubcoop.org)
+[info.zwe@shrubcoop.org](mailto:info.zwe@shrubcoop.org) 
