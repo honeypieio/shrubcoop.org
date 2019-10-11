@@ -39,6 +39,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/sustainable-fashion-meetup-group-1.md
 - content/events/fix-your-own-bike-workshop-5.md
 - content/events/fix-your-own-bike-workshop-4.md
 - content/events/members-decision-making-meeting-1.md
