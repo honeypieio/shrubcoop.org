@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Are you interested in volunteering for SHRUB, become a paying member or simply want to find out more about what SHRUB is all about?"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub"]
-time = "2019-09-19T16:30:00+00:00"
+time = "2019-11-06T17:30:00+00:00"
 title = "New & Old Members Warm Welcome!"
 
 +++
