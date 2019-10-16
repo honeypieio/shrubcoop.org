@@ -2,7 +2,7 @@
 author = "Siri"
 description = "Help us design the future of our Swapshop, events and collections!  "
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
-tags = ["swapshop", "zero-waste-hub"]
+tags = ["zero-waste-hub", "swapshop"]
 time = "2019-10-24T16:30:00+00:00"
 title = "Community Co-Design Evening"
 
