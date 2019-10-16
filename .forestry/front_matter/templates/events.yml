@@ -39,6 +39,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/sewing-and-clothing-repair-session.md
 - content/events/sustainable-cooking-workshop.md
 - content/events/members-decision-making-meeting-1.md
 - content/events/community-co-design-evening.md
