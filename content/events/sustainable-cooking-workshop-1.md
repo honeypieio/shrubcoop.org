@@ -3,7 +3,7 @@ author = "Food Sharing Hub"
 description = "Learn to cook four new recipes from leftovers!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["food-sharing-hub", "zero-waste-hub"]
-time = "2019-11-14T18:00:00+00:00"
+time = "2019-11-25T18:00:00+00:00"
 title = "Sustainable Cooking Workshop"
 
 +++
