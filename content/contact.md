@@ -4,10 +4,17 @@ title = "Contact"
 type = "contact"
 
 +++
-#### Enquiries & space booking
+#### General Enquiries
 
 0131 220 1884  
 [hello@shrubcoop.org](mailto:hello@shrubcoop.org)
+
+***
+
+#### To book our venues
+
+Our Zero Waste Hub and SHRUB Space Workshop are available for private hire  
+[bookings@shrubcoop.org](mailto:bookings@shrubcoop.org)
 
 ***
 
@@ -27,8 +34,15 @@ type = "contact"
 
 ***
 
-#### SHRUB Space & Zero Waste Edinburgh Office
+#### SHRUB Space workshop
 
 17 Guthrie Street, EH1 1JG  
-0131 261 8216  
-[info.zwe@shrubcoop.org](mailto:info.zwe@shrubcoop.org) 
+0131 261 8216
+
+***
+
+#### Research Enquiries and Visits
+
+We love to share what we do and how we work to inspire others to replicate our projects around the world. Answering research questions can require a lot of staff time. If you're a student with an essay deadline, please bear in mind that it could take us up to two weeks to get back to you.
+
+We're very open to hosting research delegations and providing behind the scenes tours for other organisations. Simply get in touch at [hello@shrubcoop.org](mailto:hello@shrubcoop.org), and please try to contact us at least one month in advance of when you would like to visit.
