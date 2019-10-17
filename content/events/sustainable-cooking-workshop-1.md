@@ -1,14 +1,13 @@
 +++
 author = "Food Sharing Hub"
 description = "Learn to cook four new recipes from leftovers!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
-tags = ["food-sharing-hub"]
+tags = ["food-sharing-hub", "zero-waste-hub"]
 time = "2019-11-14T18:00:00+00:00"
 title = "Sustainable Cooking Workshop"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571248341/shrubcoop.org/media/Sustainable_cooking_workshops_idn6kh.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571337773/shrubcoop.org/media/72489851_3699294733429453_685059532958728192_n_gajdsp.jpg)
 
 Learn to cook four new recipes from leftovers!
 
@@ -25,16 +24,6 @@ Workshops will be held in our fabulous Zero Waste Hub in central Edinburgh and w
 All recipes are vegan and can be tailored to suit dietary requirements.
 
 #### Recipes:
-
-Vegan Scotch broth
-
-Vegan Vegan skirlie
-
-Vegan Scotch pancakes
-
-Fruit compote
-
-**Join us again on Monday 25th November to learn how to make:**
 
 Lentil soup,
 
