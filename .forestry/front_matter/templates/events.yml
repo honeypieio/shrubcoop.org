@@ -39,6 +39,8 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/thursday-night-sewing-sessions-7.md
+- content/events/thursday-night-sewing-sessions-6.md
 - content/events/thursday-night-sewing-sessions-5.md
 - content/events/sustainable-cooking-workshop-1.md
 - content/events/sewing-and-clothing-repair-session.md
