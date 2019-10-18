@@ -24,6 +24,8 @@ Unlike your ordinary charity shop, when you donate your preloved items we give y
 
 When you drop off your items, our friendly volunteers will value them and add tokens to your account within 7 days.
 
+While we like to try and enable people to swap and donate as many different things as possible, there are a few items that we, unfortunately, can't take. Here's a [full list](https://res.cloudinary.com/shrub-co-op/image/upload/v1571395647/shrubcoop.org/media/SwapshopDonations_edd2f9.pdf "Swapshop donations") of items we can't accept and suggestions of alternative places to take them.
+
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759841/shrubcoop.org/media/swapshop_website_nnquzi.png)
 
 ### **Our Impact**
