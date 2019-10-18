@@ -11,13 +11,6 @@ type = "contact"
 
 ***
 
-#### To book our venues
-
-Our Zero Waste Hub and SHRUB Space Workshop are available for private hire  
-[bookings@shrubcoop.org](mailto:bookings@shrubcoop.org)
-
-***
-
 #### Zero Waste Hub
 
 12pm to 5pm, Wednesday to Saturday  
@@ -41,7 +34,18 @@ Our Zero Waste Hub and SHRUB Space Workshop are available for private hire
 
 ***
 
-#### Research Enquiries and Visits
+#### To book our venues
+
+Our Zero Waste Hub and SHRUB Space Workshop are available for private hire. We're currently asking for a £1 per person, per hour donation to cover our costs. A new pricing structure will be introduced soon. 
+
+Simply email us at [bookings@shrubcoop.org](mailto:bookings@shrubcoop.org) with an explanation of your event, desired date and times, and a member of the team will get back to you.
+
+_Zero Waste Hub - capacity 60 people  
+SHRUB Space Workshop - capacity 20 people_
+
+***
+
+#### Research enquiries and visits
 
 We love to share what we do and how we work to inspire others to replicate our projects around the world. Answering research questions can require a lot of staff time. If you're a student with an essay deadline, please bear in mind that it could take us up to two weeks to get back to you.
 
