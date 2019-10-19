@@ -33,7 +33,13 @@ Vegan Scotch pancakes
 
 Fruit compote
 
-**Join us again on Monday 25th November to learn how to make:**
+#### **Tickets:**
+
+**£7** (SHRUB Coop members: **£5**)
+
+[Book here!](https://www.eventbrite.co.uk/e/sustainable-cooking-workshop-tickets-77168632457)
+
+**Join us again on** [**Monday 25th November**](https://www.shrubcoop.org/events/sustainable-cooking-workshop-1/) **to learn how to make:**
 
 Lentil soup,
 
@@ -42,10 +48,6 @@ Croutons,
 Scotch pancakes,
 
 Fruit compote (using different fruit)
-
-#### **Tickets:**
-
-**£7** (SHRUB Coop members: **£5**)
 
 #### Accessibility information
 
