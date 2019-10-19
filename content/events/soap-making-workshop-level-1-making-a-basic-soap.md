@@ -23,6 +23,8 @@ Our Home Crafting Workshops, facilitated by a skilled volunteer, will teach you 
 
 [Book here!](https://www.eventbrite.co.uk/e/soap-making-workshop-level-1-making-a-basic-soap-tickets-77282573257 "https://www.eventbrite.co.uk/e/soap-making-workshop-level-1-making-a-basic-soap-tickets-77282573257")
 
+Join us again on Monday 20th November for our [Soap making workshop: Level 2 getting creative with your soap!]()
+
 ### Accessibility information:
 
 The Zero Waste Hub is on ground floor with a wheelchair accessible entrance, accessible and gender neutral toilet. There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street. If you have further questions regarding accessibility, please contact the Zero Waste Hub on 0131 281 0583.
