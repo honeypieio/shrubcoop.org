@@ -37,7 +37,7 @@ Fruit compote (using different fruit)
 
 **£7** (SHRUB Coop members: **£5**)
 
-[Book here!]()
+[Book here!](https://www.eventbrite.co.uk/e/sustainable-cooking-workshop-tickets-77281475975 "https://www.eventbrite.co.uk/e/sustainable-cooking-workshop-tickets-77281475975")
 
 #### Accessibility information
 
