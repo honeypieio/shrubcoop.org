@@ -39,11 +39,11 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/sustainable-cooking-workshop-1.md
 - content/events/thursday-night-sewing-sessions-8.md
 - content/events/thursday-night-sewing-sessions-7.md
 - content/events/thursday-night-sewing-sessions-6.md
 - content/events/thursday-night-sewing-sessions-5.md
-- content/events/sustainable-cooking-workshop-1.md
 - content/events/sewing-and-clothing-repair-session.md
 - content/events/sustainable-cooking-workshop.md
 - content/events/community-co-design-evening.md

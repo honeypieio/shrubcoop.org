@@ -37,6 +37,8 @@ Fruit compote (using different fruit)
 
 **£7** (SHRUB Coop members: **£5**)
 
+[Book here!]()
+
 #### Accessibility information
 
 The Zero Waste Hub is on ground floor with a wheelchair accessible entrance, accessible and gender neutral toilet. There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street. If you have further questions regarding accessibility, please contact the Zero Waste Hub on 0131 281 0583.
