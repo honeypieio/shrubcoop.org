@@ -2,7 +2,7 @@
 author = "Zero Waste Hub"
 description = "Learn to get creative with your soap!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
-tags = ["zero-waste-hub"]
+tags = ["zero-waste-hub", "food-sharing-hub"]
 time = "2019-11-20T18:00:00+00:00"
 title = "Soap making workshop: level 2 getting creative with your soap!"
 
