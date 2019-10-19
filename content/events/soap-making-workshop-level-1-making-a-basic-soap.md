@@ -23,7 +23,7 @@ Our Home Crafting Workshops, facilitated by a skilled volunteer, will teach you 
 
 [Book here!](https://www.eventbrite.co.uk/e/soap-making-workshop-level-1-making-a-basic-soap-tickets-77282573257 "https://www.eventbrite.co.uk/e/soap-making-workshop-level-1-making-a-basic-soap-tickets-77282573257")
 
-Join us again on Monday 20th November for our [Soap making workshop: Level 2 getting creative with your soap!]()
+Join us again on Monday 20th November for our [Soap making workshop: level 2 getting creative with your soap](https://www.shrubcoop.org/events/soap-making-workshop-level-2-getting-creative-with-your-soap/ "https://www.shrubcoop.org/events/soap-making-workshop-level-2-getting-creative-with-your-soap/")
 
 ### Accessibility information:
 
