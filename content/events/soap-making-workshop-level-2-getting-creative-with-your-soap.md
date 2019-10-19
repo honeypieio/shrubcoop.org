@@ -9,7 +9,7 @@ title = "Soap making workshop: level 2 getting creative with your soap!"
 +++
 **![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571525055/shrubcoop.org/media/72676434_3703518886340371_6019844656202776576_n_sixocl.jpg)Wednesday 20th November:** Soap making workshop: level 2 getting creative with your soap!
 
-**_IMPORTANT: Please note that in order to attend this workshop, you must have either attended the _**[_'Soap making level 1'_](https://www.shrubcoop.org/events/soap-making-workshop-level-1-making-a-basic-soap/) _workshop or have a good basic knowledge of the process of soap making._
+**_IMPORTANT:_** _Please note that in order to attend this workshop, you must have either attended the_ [_Soap making workshop: level 1 making a basic soap_](https://www.shrubcoop.org/events/soap-making-workshop-level-1-making-a-basic-soap/ "https://www.shrubcoop.org/events/soap-making-workshop-level-1-making-a-basic-soap/") _workshop or have a good basic knowledge of the process of soap making._
 
 In this follow on workshop from 'Soap making level 1', you'll learn more advanced techniques in how to make a luxurious, nutritious soap using different types of fats and essential oils. Our skilled facilitator will guide you through the process in small groups and will be on hand to answer any questions you have. At the end you'll get to take away your very own luxury soap bar!
 
