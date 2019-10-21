@@ -39,9 +39,9 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/bike-maintenance-course.md
 - content/events/fix-your-own-bike-workshop-7.md
 - content/events/fix-your-own-bike-workshop-6.md
-- content/events/bike-maintenance-course.md
 - content/events/soap-making-workshop-level-1-making-a-basic-soap.md
 - content/events/soap-making-workshop-level-2-getting-creative-with-your-soap.md
 - content/events/sustainable-cooking-workshop-1.md
