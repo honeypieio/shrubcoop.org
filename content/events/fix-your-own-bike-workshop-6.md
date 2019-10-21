@@ -1,10 +1,9 @@
 +++
 author = "Wee Spoke Hub"
 description = "Our friendly mechanics will help you get back in the saddle!"
-draft = true
 location = "Wee Spoke Hub, 13 Guthrie Street, EH1 1JG"
 tags = ["wee-spoke-hub"]
-time = "2019-10-17T16:00:00+00:00"
+time = "2019-10-22T16:00:00+00:00"
 title = "Fix your own bike workshop"
 
 +++
