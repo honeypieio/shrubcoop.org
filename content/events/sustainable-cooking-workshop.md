@@ -7,7 +7,7 @@ time = "2019-11-14T18:00:00+00:00"
 title = "Sustainable Cooking Workshop"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571248341/shrubcoop.org/media/Sustainable_cooking_workshops_idn6kh.png)Learn to cook four new recipes from leftovers!
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571745561/shrubcoop.org/media/Copy_of_Sustainable_cooking_workshops_14th_nov_odpyhm.png)Learn to cook four new recipes from leftovers!
 
 Our Sustainable Cooking Workshops will teach you how to cook Scottish themed, nutritious and delicious zero waste recipes focusing on using local, seasonal produce and leftovers.
 

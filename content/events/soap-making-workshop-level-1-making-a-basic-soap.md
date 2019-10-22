@@ -7,7 +7,7 @@ time = "2019-11-13T18:00:00+00:00"
 title = "Soap making workshop: level 1 making a basic soap"
 
 +++
-**![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571525070/shrubcoop.org/media/72730147_3703503529675240_1284170641406164992_o_vqz601.jpg)Wednesday 13th November:** Soap making workshop: level 1 making a basic soap
+**![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571745562/shrubcoop.org/media/soap_making_1_iyfrsw.png)Wednesday 13th November:** Soap making workshop: level 1 making a basic soap
 
 In this hands-on workshop, you'll learn the basics of how to make your own soap. Our skilled facilitator will guide you through the process in small groups and will be on hand to answer any questions you have. At the end you'll get to take away your very own basic soap bar!
 
