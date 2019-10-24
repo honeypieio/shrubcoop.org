@@ -32,3 +32,5 @@ fields:
   label: Type
   hidden: true
   default: news
+pages:
+- content/become-a-trustee-of-shrub-coop.md
