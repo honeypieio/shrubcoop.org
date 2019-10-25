@@ -75,7 +75,7 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 We'd like to invite anyone interested in becoming a trustee to attend an open information session on **Monday 11th November, 6pm at the Zero Waste Hub**.
 
-To apply, simply save a copy of this [form](https://docs.google.com/document/d/1X6QNMGDIsc2OhvNtgzLNUybsuJ8-1ml9pCOShBrm-S0/edit?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application”.
+To apply, simply save a copy of this [form](https://docs.google.com/document/d/1b6qqDdh5xN7KMKtgPJH0EBCxyb1l_Vqa3zxNiMnNgFY/edit?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application”.
 
 Applications will be considered at our member's AGM on **Sunday 24th of November**, which you are also welcome to attend.
 
