@@ -7,8 +7,6 @@ title = "Become a trustee of SHRUB Coop!"
 type = "news"
 
 +++
-## Become a trustee of SHRUB Coop!
-
 Our Annual General Meeting is coming up and its time to select another group of trustees to guide the coop through 2020!
 
 We invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees. We are particularly looking for people with experience in the fields of **Community Development, Finance, HR and Fundraising** but Trustees have a wide-ranging remit and there are opportunities for involved across the work that SHRUB undertakes.
