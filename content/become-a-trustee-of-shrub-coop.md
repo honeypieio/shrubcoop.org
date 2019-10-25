@@ -35,9 +35,9 @@ Trustees’ key responsibilities fall into the following areas:
 
 #### What skills do I need?
 
-Trustees have a wide-ranging remit with some people leading on particular aspects, some playing a more general role. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people and women.
+Trustees have a wide-ranging remit with some people leading on particular aspects, some playing a more general role. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people, and women.
 
-Trustees are responsible for overseeing development of the strategic framework within which day- to-day tasks are carried out by staffers and volunteers, and they help guide our long-term planning.
+Trustees are responsible for overseeing development of the strategic framework within which day-to-day tasks are carried out by staffers and volunteers, and they help guide our long-term planning.
 
 **What is the time commitment?**
 
