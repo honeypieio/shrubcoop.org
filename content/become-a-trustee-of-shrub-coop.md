@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Coop"
-date = "2019-10-25T14:00:00+00:00"
+date = 2019-10-25T14:00:00Z
 description = "We're recruiting for next year's trustees. Application deadline 27th November"
 tags = ["zero-waste-hub", "food-sharing-hub", "wee-spoke-hub", "shrub-space", "swapshop"]
 title = "Become a trustee of SHRUB Coop!"
@@ -75,9 +75,9 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 We'd like to invite anyone interested in becoming a trustee to attend an open information session on **Monday 11th November, 6pm at the Zero Waste Hub**.
 
-To apply, simply save a copy of this [form](https://docs.google.com/document/d/1b6qqDdh5xN7KMKtgPJH0EBCxyb1l_Vqa3zxNiMnNgFY/edit?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application”.
+To apply, simply save a copy of this [form](https://docs.google.com/document/d/1b6qqDdh5xN7KMKtgPJH0EBCxyb1l_Vqa3zxNiMnNgFY/edit?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **Sunday 24th of November**.
 
-Applications will be considered at our member's AGM on **Sunday 24th of November**, which you are also welcome to attend.
+Applications will be considered at our AGM, which you re very welcome to attend!
 
 For more information, please have a read of our [information pack](https://res.cloudinary.com/shrub-co-op/image/upload/v1571932521/shrubcoop.org/media/Trustee_invitation_-_October_2019_vx2vr2.pdf "Trustee_invitation_-_October_2019_vx2vr2.pdf").
 
