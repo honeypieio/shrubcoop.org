@@ -1,6 +1,7 @@
 +++
-title = "About Us"
 description = "Find out about purpose and values"
+title = "About Us"
+
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674723/shrubcoop.org/media/vision_web_fyoad1.png)
 
@@ -24,3 +25,11 @@ We value inclusivity and work with others to provide a welcoming community for a
 
 * We act with integrity and strive to be sustainable in everything we do
 * We live by co-operative values of self-help, self-responsibility, democracy, equality, equity, and solidarity
+
+#### Our Policies
+
+***
+
+[Our Constitution](https://res.cloudinary.com/shrub-co-op/image/upload/v1573736442/shrubcoop.org/media/SHRUB_SCIO_constitution_2018_11_08_ytaw0k.pdf "SHRUB_SCIO_constitution_2018_11_08_ytaw0k.pdf")
+
+[Our Safer Spaces Policy](https://res.cloudinary.com/shrub-co-op/image/upload/v1573736447/shrubcoop.org/media/SHRUB_Safer_Spaces_Policy_3.0_k1sjgv.pdf "Our Safer Spaces Policy")
