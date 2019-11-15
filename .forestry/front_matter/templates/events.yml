@@ -39,6 +39,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/soap-making-workshop-level-1-making-a-basic-soap-1.md
 - content/events/sustainable-cooking-workshop-2.md
 - content/events/annual-general-meeting-2019.md
 - content/events/sustainable-fashion-meetup-group-2.md
