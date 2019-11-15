@@ -1,30 +1,27 @@
 +++
 author = "Zero Waste Hub"
 description = "Learn to make your own basic soap at home!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub", "food-sharing-hub"]
-time = 2019-11-13T18:00:00Z
-title = "Soap making workshop: level 1 making a basic soap"
+time = 2019-12-11T18:00:00Z
+title = "Zero Waste Beauty Products workshop"
 
 +++
-**![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571745562/shrubcoop.org/media/soap_making_1_iyfrsw.png)Wednesday 13th November:** Soap making workshop: level 1 making a basic soap
-
-In this hands-on workshop, you'll learn the basics of how to make your own soap. Our skilled facilitator will guide you through the process in small groups and will be on hand to answer any questions you have. At the end you'll get to take away your very own basic soap bar!
-
-Please bring along your own mold of choice (such as a silicone mold from a home crafts store such as Ali's Cave or a clean plastic container such as an old butter tub or soft cheese tub). The mold should be max. 8-10cm in diameter. Don't worry if you can't find a mold of your own - we will have some spare ones at the workshop. Please also note that you will need to keep the soap (in its mold) flat when you transport it home, so you need a suitable bag to carry it (or be able to just carry it by hand).
-
-Workshops will be held in our fabulous Zero Waste Hub in central Edinburgh and will have a maximum of 12 participants.
-
-Our Home Crafting Workshops, facilitated by a skilled volunteer, will teach you how to make products such as soap, kefir and cheese from scratch and with a zero waste focus. The workshops will be fully interactive, encouraging you to get involved with the process and have lots of fun! You'll come away with your own creation and a new skill!
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1573840300/shrubcoop.org/media/Copy_of_soap_making_1_1_qqslsu.png)Make your own zero waste beauty products!  
+  
+In this hands-on workshop, you'll learn how to make face masks, body scrubs and solid moisturisers, perfect for festive gifts or for pampering yourself!  
+  
+Our skilled facilitator Francesca will guide you through the process in small groups and will be on hand to answer any questions you have. At the end you'll get to take away your very own face mask, body scrub and solid moisturiser!  
+  
+Workshops will be held in our fabulous Zero Waste Hub in central Edinburgh and will have a maximum of 12 participants.   
+  
+Our Home Crafting Workshops, facilitated by Francesca Piccoletti, will teach you how to make products such as soap, beauty products and cheese from scratch and with a zero waste focus. The workshops will be fully interactive, encouraging you to get involved with the process and have lots of fun! You'll come away with your own creation and a new skill!
 
 ### Tickets:
 
-**£7** (SHRUB Coop members **£5**)
+**£14** (SHRUB Coop members **£12**)
 
-[Book here!](https://www.eventbrite.co.uk/e/soap-making-workshop-level-1-making-a-basic-soap-tickets-77282573257 "https://www.eventbrite.co.uk/e/soap-making-workshop-level-1-making-a-basic-soap-tickets-77282573257")
-
-Join us again on Monday 20th November for our [Soap making workshop: level 2 getting creative with your soap](https://www.shrubcoop.org/events/soap-making-workshop-level-2-getting-creative-with-your-soap/ "https://www.shrubcoop.org/events/soap-making-workshop-level-2-getting-creative-with-your-soap/")
+[Book here!](https://www.eventbrite.co.uk/e/zero-waste-beauty-products-workshop-tickets-82227118525?fbclid=IwAR173kQs6nTlxTeimR1fCKQgECHhmTp3ygAXm30V1xCSZXDwPGLWEOw0pgw "https://www.eventbrite.co.uk/e/soap-making-workshop-level-1-making-a-basic-soap-tickets-77282573257")
 
 ### Accessibility information:
 
