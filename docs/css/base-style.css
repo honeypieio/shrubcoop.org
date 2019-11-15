@@ -1,0 +1,262 @@
+/* GLOBAL */
+
+html {
+  font-family: "Open Sans";
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: "Dosis Semi-Bold";
+  color: inherit;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Dosis Semi-Bold";
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.link-plain {
+  color: #333;
+}
+
+#front-page-map {
+  width: 100%;
+  height: 350px;
+  margin-top: -90px;
+  z-index: 0;
+  padding-bottom: 75px;
+}
+
+#project-map {
+  width: 100%;
+  height: 300px;
+  margin-top: -50px;
+  z-index: 0;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+p {
+  color: inherit;
+}
+
+.link-white {
+  color: white;
+}
+
+.news-list a, .events-list a {
+  color: #333;
+}
+
+.link-blue {
+  color: #0074D9;
+}
+
+.events-header a {
+  color: white;
+}
+
+.events-header a {
+  color: white;
+}
+
+.latest-blog-header a {
+  color: white;
+}
+
+
+html a {
+  color: #0074D9;
+}
+
+#footer a {
+  color: white;
+}
+
+.text-shrub {
+  color: #AB0C17;
+}
+
+.btn-shrub {
+  background-color: #AB0C17;
+  color: white;
+}
+
+.btn-shrub:hover {
+  background-color: #AB0C17;
+  color: white;
+}
+
+.btn-dark {
+  background-color: #333;
+  border-radius: 20px;
+}
+
+.text-red {
+  color: #c92229 !important;
+}
+
+.plain {
+  color: #333;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.dosis-bold {
+  font-family: "Dosis Bold";
+}
+
+.dosis-semi-bold {
+  font-family: "Dosis Semi-Bold";
+}
+
+.shrub {
+  font-family: "Shrub";
+}
+
+.working-group-icon {
+  height: auto;
+  width: 5.5rem;
+}
+
+.working-group-icon:hover {
+  transition: 0.3s;
+}
+
+.working-group-icon_large {
+  width: 125px;
+  height: auto;
+}
+
+.working_group_link:hover {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  position: relative;
+  z-index: -1;
+}
+
+.heading {
+  font-size: 42px;
+  font-family: "Dosis Bold";
+}
+
+.sub-heading {
+  font-size: 24px;
+  font-family: "Dosis Semi-Bold";
+}
+
+/* NAVBAR */
+
+.nav-item {
+  font-size: 1.5rem;
+  font-family: "Dosis Semi-Bold";
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-carrot {
+  font-size: 14px;
+}
+
+#front-page-header {
+  color: white;
+}
+
+.funder-image {
+  width: 65%;
+  height: auto;
+}
+
+nav {
+  z-index: 99;
+  border-bottom: 1px solid #333;
+}
+
+.bg-dark {
+  background-color: #383838!important;
+}
+
+.internal-anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}
+
+.sloped {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  padding-bottom: 75px;
+}
+
+#front-page-map {
+  -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+}
+
+/* FRONT PAGE */
+
+.latest-blog-header {
+  width: 100%;
+  /* height: 60vh; */
+  background-color: #ef7d00;
+}
+
+.navbar-collapse {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.front-page-header {
+  width: 100%;
+  /* height: 60vh; */
+  background-color: #383838;
+  z-index: 5;
+}
+
+.working_group_header {
+  width: 100%;
+  background-color: #383838;
+  z-index: 1;
+}
+
+.events-header {
+  width: 100%;
+  background-color: #941a87;
+  margin-top: -100px;
+}
+
+.get-involved {
+  color: #ef7d00;
+}
+
+/*.scrollable {
+  overflow-y: auto !important;
+}*/
+
+.map {
+  width: 100%;
+  height: 100%;
+  margin-top: -170px;
+  padding: 15px;
+}

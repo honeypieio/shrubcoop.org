@@ -3,6 +3,7 @@ languageCode = "en-gb"
 pluralizelisttitles = "false"
 theme = "shrub"
 title = "SHRUB Coop"
+publishDir = "docs"
 
 [[menu.main]]
 identifier = "home"

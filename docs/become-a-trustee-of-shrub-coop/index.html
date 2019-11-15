@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="We&#39;re recruiting for next year&#39;s trustees. Application deadline 24th November">
+
+
+<title>Become a trustee of SHRUB Coop! | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </p>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+
+       
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="Home - "
+          href="/"
+          >Home</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="About Us - Click this link to find out about us and why we exist."
+          href="/about-us/"
+          >About Us</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+          href="/get-involved/"
+          >Get Involved</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto underline"
+      >
+        <a
+          class="nav-link text-white"
+          title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+          href="/news/"
+          >News</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+          href="/events/"
+          >Events</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+          href="/contact/"
+          >Contact</a
+        >
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0 mb-lg-5 mb-xl-5" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+
+      <div class="pt-5">
+        <h2 class="mb-0">Become a trustee of SHRUB Coop!</h2>
+
+        <p class="dosis-semi-bold">
+          By SHRUB Coop, posted 25/10/19
+        </p>
+
+        <p>We&#39;re recruiting for next year&#39;s trustees. Application deadline 24th November</p>
+      </div>
+
+      <hr />
+
+      
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1572008860/shrubcoop.org/media/web_image_template_tm3vs6.png" alt="" /></p>
+
+<p>Our Annual General Meeting is coming up and its time to select another group of trustees to guide the coop through 2020!</p>
+
+<p>We invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees. We are particularly looking for people with experience in the fields of <strong>Community Development, Finance, HR and Fundraising</strong> but Trustees have a wide-ranging remit and there are opportunities for involved across the work that SHRUB undertakes.</p>
+
+<h4 id="why-become-a-trustee">Why become a Trustee?</h4>
+
+<p>SHRUB is a cooperative with premises in central Edinburgh. Our Members contribute to decision- making processes. Trustees have special legal responsibilities and, in some circumstances may have to make sensitive or critical decisions on behalf of the Coop.</p>
+
+<p>Trustees learn about how our Social Enterprise runs and gain skills in leadership, problem-solving and innovation, strategic judgement and effective communication, to name a few.</p>
+
+<p>Serving as a Trustee is an opportunity to learn about the governance of a not-for-profit organisation in a supportive environment, learning from more experienced Trustees and staff and the fresh perspective of newer Members alike.</p>
+
+<h4 id="key-responsibilities">Key Responsibilities</h4>
+
+<p>Trustees’ key responsibilities fall into the following areas:</p>
+
+<ul>
+<li>Vision mission and aims</li>
+<li>Strategy and objectives</li>
+<li>Culture and values</li>
+<li>Accountable leadership</li>
+<li>Control environment</li>
+<li>Governance processes</li>
+<li>Succession planning</li>
+</ul>
+
+<h4 id="what-skills-do-i-need">What skills do I need?</h4>
+
+<p>Trustees have a wide-ranging remit with some people leading on particular aspects, some playing a more general role. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people, and women.</p>
+
+<p>Trustees are responsible for overseeing development of the strategic framework within which day-to-day tasks are carried out by staffers and volunteers, and they help guide our long-term planning.</p>
+
+<p><strong>What is the time commitment?</strong></p>
+
+<p>As a voluntary Trustee, you will make some clear time commitments: to attend regular Trustee meetings (2 hours each month, currently on a Monday evening), and participate in our “Staff Buddy” system to support staff and ensure good communication between staff and Trustees (typically you will buddy one staff member and meet with them every 1 - 2 months).</p>
+
+<p>Trustees will preferably participate in the work of a Working Group - attending meetings where possible and contributing to the direction and content of work.</p>
+
+<p>As a cooperative, our community of members are invited to participate in decision-making meetings. At least one Trustee attends these meetings (5-8pm Thursday once a month). There is opportunity outside of these times to contribute to new projects and discussions.</p>
+
+<p>Time off can be arranged among Trustees, ensuring that there is a balance between Trustees’ wellbeing and SHRUB Coop functioning. If you cannot make a meeting you let people know.</p>
+
+<p><strong>Who can apply?</strong></p>
+
+<p>Anyone who supports the Vision and Mission of SHRUB Coop is invited to apply. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people, other members of the LGBT+ community, and women.</p>
+
+<p><strong>Background:</strong></p>
+
+<p>We’re a cooperative in Edinburgh working for a world without waste!</p>
+
+<p>We empower our community to live a low carbon life. Become a member and learn to fix a bike, swap your preloved things, enjoy some rescued food and be inspired by new ideas.</p>
+
+<p>SHRUB Coop is an exciting community-led project that works to make big carbon savings by increasing awareness on sustainability issues and solutions.</p>
+
+<p>The Coop is organised non-hierarchically and strives to provide an inclusive and empowering experience for all volunteers, staff and members in our community. You can read our <a href="https://www.shrubcoop.org/wp-content/uploads/2018/02/SHRUB-Safer-Spaces-Policy-2.0.pdf">Safer Spaces policy here</a>.</p>
+
+<p>SHRUB Coop is registered as a Scottish Charitable Incorporated Organisation (SCIO) - working for a world without waste. Our purpose is the advancement of:</p>
+
+<ol>
+<li>Environmental protection and improvement by contributing to a Zero Waste Edinburgh</li>
+<li>Education by providing training and skill-sharing in all functions of the enterprise</li>
+<li>Citizenship and community development through active participation.</li>
+</ol>
+
+<p>Our Constitution provides for Trustees to formally oversee the activities of SHRUB Cooperative and ensure we act in accordance with our purposes and the wishes of members of the Cooperative.</p>
+
+<p><strong>How Do I Apply?</strong></p>
+
+<p>We&rsquo;d like to invite anyone interested in becoming a trustee to attend an open information session on <strong>Monday 11th November, 6pm at the Zero Waste Hub</strong>.</p>
+
+<p>To apply, simply save a copy of this <a href="https://docs.google.com/document/d/1b6qqDdh5xN7KMKtgPJH0EBCxyb1l_Vqa3zxNiMnNgFY/edit?usp=sharing">form</a>, fill it out and send it, <strong>with a copy of your CV</strong>, to <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>, with the subject: “Trustee application” by <strong>Sunday 24th of November</strong>.</p>
+
+<p>Applications will be considered at our AGM, which you re very welcome to attend!</p>
+
+<p>For more information, please have a read of our <a href="https://res.cloudinary.com/shrub-co-op/image/upload/v1571932521/shrubcoop.org/media/Trustee_invitation_-_October_2019_vx2vr2.pdf" title="Trustee_invitation_-_October_2019_vx2vr2.pdf">information pack</a>.</p>
+
+<p>Any questions please email us at <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>.</p>
+
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
+    <div class="row">
+      <div class="col-md-4 mx-auto my-3">
+        <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" target="_blank">
+          <img src="https://www.shrubcoop.org/images/funders/ccf.jpg" class="funder-image">
+        </a>
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <a href="https://ec.europa.eu/regional_policy/en/funding/" target="_blank">
+          <img src="https://www.shrubcoop.org/images/funders/erdf.jpg" class="funder-image">
+        </a>
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <a href="http://www.greenerscotland.org" target="_blank">
+          <img src="https://www.shrubcoop.org/images/funders/greener-scotland.jpg" class="funder-image">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+                Tel. 0131 220 1884
+              </li>
+              <li>
+                13 Guthrie Street
+              </li>
+              <li>
+                EH1 1JG
+              </li>
+              <li>
+                Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+              
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/contact/">Contact</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

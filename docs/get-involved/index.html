@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Find out how you can join us">
+
+
+<title>Get Involved | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </p>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+
+       
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="Home - "
+          href="/"
+          >Home</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="About Us - Click this link to find out about us and why we exist."
+          href="/about-us/"
+          >About Us</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto underline"
+      >
+        <a
+          class="nav-link text-white"
+          title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+          href="/get-involved/"
+          >Get Involved</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+          href="/news/"
+          >News</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+          href="/events/"
+          >Events</a
+        >
+      </li>
+      
+      <li
+        class="nav-item mx-auto "
+      >
+        <a
+          class="nav-link text-white"
+          title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+          href="/contact/"
+          >Contact</a
+        >
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0 mb-lg-5 mb-xl-5" style="margin-top: 75px;">
+
+<div class="row">
+  <div class="col-md-4 order-md-1">
+
+      <div class="front-page-header sloped mb-4">
+        <div class="container pl-4 pt-4">
+          <div class="row">
+            <a class="internal-anchor" name="mailing-list"></a>
+            <h1 class="text-white pl-3">Join our mailing list!</h1>
+
+          </div>
+          
+            <div class="row">
+
+              <div class="col-10">
+                <h4 class="text-white">
+                  Stay up to date with our latest news and events
+                </h4>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+
+    <div class="container">
+
+      
+      <div id="mc_embed_signup">
+        <form action="https://shrubcoop.us4.list-manage.com/subscribe/post?u=a28a538c55f3604b70c8e2cf3&amp;id=c529cb77fc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+
+            <div class="form-group mc-field-group">
+            	<input type="email" value="" name="EMAIL" class="form-control required email" placeholder="Email Address" id="mce-EMAIL">
+            </div>
+            <div class="form-group mc-field-group">
+            	<input type="text" value="" name="FNAME" class="form-control required" placeholder="First Name" id="mce-FNAME">
+            </div>
+            <div class="form-group mc-field-group">
+            	<input type="text" value="" name="LNAME" class="form-control required" placeholder="Last Name" id="mce-LNAME">
+            </div>
+            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                <div class="content__gdpr">
+
+                    <fieldset class="mc_fieldset gdprRequired mc-field-group mb-2" name="interestgroup_field">
+                      <label class="checkbox required subfield" for="gdpr_2061"><input type="checkbox" id="gdpr_2061" name="gdpr[2061]" value="Y" class="av-checkbox "><span> I have read and agree to the <a data-toggle="collapse" href="#newsletter-gdpr" class="link-blue">terms and conditions</a></span> </label>
+                    </fieldset>
+                    <div id="newsletter-gdpr" class="collapse card card-body mb-4 mt-2">
+                      <p>We will use the information you provide on this form to email you our monthly newsletter and other updates. Please check the box below to confirm that you agree to this.</p>
+
+<p>You can change your mind at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at hello@shrubcoop.org.</p>
+
+<p>We will treat your information with respect. For more information about our privacy practices please see our <a href="https://shrub.space/privacy">privacy notice</a>. By clicking below, you agree that we may process your information in accordance with these terms.</p>
+
+<p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/">Learn more about Mailchimp’s privacy practices here.</a></p>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a28a538c55f3604b70c8e2cf3_c529cb77fc" tabindex="-1" value="">
+            </div>
+
+            <input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-shrub btn-block m-0">
+          </div>
+
+        </form>
+
+        <div id="mce-responses" class="clear mt-4">
+          <div class="alert alert-danger" id="mce-error-response" role="alert" style="display: none;"></div>
+          <div class="alert alert-success" id="mce-success-response" role="alert" style="display: none;"></div>
+        </div>
+
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+      
+
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-2">
+    <div class="front-page-header sloped" style="padding-bottom: 50px;">
+      <div class="container pl-4 pt-4">
+        <div class="row col-10 col-offset-1">
+          <a class="internal-anchor" name="member-signup"></a>
+          <h1 class="text-white pl-3">Become a member!</h1>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+
+      <p>Online membership sign ups are coming soon! In the meantime, just pop in to the Zero Waste Hub and speak to one of our lovely volunteers to become a member.</p>
+
+<hr />
+
+<p><strong>As a member of SHRUB Coop you get to:</strong></p>
+
+<ul>
+<li>Swap preloved items in the Swapshop &amp; get free stuff from the members section</li>
+<li>Discounts at our events and workshops</li>
+<li>Discounts on bicycle parts at the Wee Spoke Hub</li>
+<li>Invitations to our members parties and Annual General Meeting</li>
+<li>Take part in the cooperative’s decisions</li>
+</ul>
+
+<p><strong>To keep membership accessible for all, what you pay for membership is based on your income:</strong></p>
+
+<ul>
+<li>Income below £16k: £12 per year</li>
+<li>Income between £16k - £27k: £18 per year</li>
+<li>Income between £27k - £43k: £24 per year</li>
+<li>Income above £43k: £30 per year</li>
+</ul>
+
+<p><em>Full year memberships come with 5 complimentary Swapshop tokens in your account.<br />
+Half year memberships are available at 2/3rd of the annual price.</em></p>
+
+
+      
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-3">
+    <div class="front-page-header sloped">
+      <div class="container pl-3 pt-4">
+        <a class="internal-anchor" name="volunteer-roles"></a>
+        <h1 class="text-white  pl-2">Volunteer with us!</h1>
+          
+            <div class="col-10">
+              <h4 class="text-white">
+                We run on volunteer power and always need more helping hands!
+              </h4>
+            </div>
+          
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div id="volunteerRoles" class="text-center mb-4">
+        <div class="lds-ellipsis dark"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <a class="btn btn-block btn-shrub mb-4" href="https://www.shrubcoop.org/volunteer/">View All Roles</a>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://www.shrubcoop.org/js/volunteer-roles.js"></script>
+
+
+
+<script>
+var BaseURL = "https:\/\/www.shrubcoop.org\/";
+var murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
+
+var rolesLimit = 3;
+var truncateRoleDescriptions = true;
+
+$(document).ready(function(){
+  getAllVolunteerRoles()
+
+  
+
+
+})
+
+</script>
+
+
+				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
+    <div class="row">
+      <div class="col-md-4 mx-auto my-3">
+        <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" target="_blank">
+          <img src="https://www.shrubcoop.org/images/funders/ccf.jpg" class="funder-image">
+        </a>
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <a href="https://ec.europa.eu/regional_policy/en/funding/" target="_blank">
+          <img src="https://www.shrubcoop.org/images/funders/erdf.jpg" class="funder-image">
+        </a>
+      </div>
+
+      <div class="col-md-4 mx-auto my-3">
+        <a href="http://www.greenerscotland.org" target="_blank">
+          <img src="https://www.shrubcoop.org/images/funders/greener-scotland.jpg" class="funder-image">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+                Tel. 0131 220 1884
+              </li>
+              <li>
+                13 Guthrie Street
+              </li>
+              <li>
+                EH1 1JG
+              </li>
+              <li>
+                Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+              
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/contact/">Contact</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
