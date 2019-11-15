@@ -39,6 +39,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/thursday-night-sewing-sessions-10.md
 - content/events/thursday-night-sewing-sessions-9.md
 - content/events/bike-maintenance-course.md
 - content/events/fix-your-own-bike-workshop-11.md
