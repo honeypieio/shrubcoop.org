@@ -1,14 +1,13 @@
 +++
 author = "Food Sharing Hub"
 description = "Learn to cook four new recipes from leftovers!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["food-sharing-hub", "zero-waste-hub"]
-time = 2019-11-14T18:00:00Z
+time = 2019-12-05T18:00:00Z
 title = "Sustainable Cooking Workshop"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1571745561/shrubcoop.org/media/Copy_of_Sustainable_cooking_workshops_14th_nov_odpyhm.png)Learn to cook four new recipes from leftovers!
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1573840135/shrubcoop.org/media/Copy_of_Sustainable_cooking_workshops_14th_nov_axyctd.png)Learn to cook four new recipes from leftovers!
 
 Our Sustainable Cooking Workshops will teach you how to cook Scottish themed, nutritious and delicious zero waste recipes focusing on using local, seasonal produce and leftovers.
 
@@ -32,21 +31,11 @@ Vegan Scotch pancakes
 
 Fruit compote
 
-#### **Tickets:**
+#### Tickets:
 
 **£7** (SHRUB Coop members: **£5**)
 
-[Book here!](https://www.eventbrite.co.uk/e/sustainable-cooking-workshop-tickets-77168632457)
-
-**Join us again on** [**Monday 25th November**](https://www.shrubcoop.org/events/sustainable-cooking-workshop-1/) **to learn how to make:**
-
-Lentil soup,
-
-Croutons,
-
-Scotch pancakes,
-
-Fruit compote (using different fruit)
+[Book here!](https://www.eventbrite.co.uk/e/sustainable-cooking-workshop-tickets-82230584893?fbclid=IwAR2Jjmi0wR5AyjVlDiVsl7UKvc4avcl0VCLV9OjfQUGbwhN4YDvJZ4HcN-8)
 
 #### Accessibility information
 
