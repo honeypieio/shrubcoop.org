@@ -1,9 +1,10 @@
 +++
 author = "Wee Spoke Hub"
 description = "A three-part bike maintenance course to get you comfortable taking care of your bike!"
+draft = true
 location = "Wee Spoke Hub, 13 Guthrie Street, EH1 1JG"
 tags = ["wee-spoke-hub"]
-time = "2019-11-16T10:00:00+00:00"
+time = 2019-11-16T10:00:00Z
 title = "Bike Maintenance Course"
 
 +++
