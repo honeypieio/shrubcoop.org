@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Coop"
-description = "This year we're showcasing ways to enjoy the festivities in a more environmentally friendly way. Join us for a day of upcycling and festivity. "
+description = "Join us for a day of upcycling and festivity. "
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = [" Food Sharing Hub", " Swapshop", " Zero Waste Hub"]
 time = 2019-12-07T11:00:00Z
