@@ -1,55 +1,57 @@
 baseURL = "https://www.shrubcoop.org/"
 languageCode = "en-gb"
 pluralizelisttitles = "false"
+publishDir = "docs"
 theme = "shrub"
 title = "SHRUB Coop"
-publishDir = "docs"
-
-[[menu.main]]
-identifier = "home"
-name = "Home"
-pre = ""
-url = "/"
-weight = "1"
-[[menu.main]]
-identifier = "news"
-name = "News"
-pre = "This is the link to the Blog section of the site. Click here to read our latest blog posts"
-url = "/news/"
-weight = "4"
 [[menu.main]]
 identifier = "get-involved"
 name = "Get Involved"
 pre = "This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
 url = "/get-involved/"
-weight = "3"
+weight = 3
+[[menu.main]]
+identifier = "home"
+name = "Home"
+pre = ""
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+pre = "This is the Contact section of the site. Click here to find out how to send us an email."
+url = "/contact/"
+weight = 6
+[[menu.main]]
+identifier = "events"
+name = "Events"
+pre = "This is the link to the Events section of the site. Click here to read about our latest events"
+url = "/events/"
+weight = 5
+[[menu.main]]
+identifier = "news"
+name = "News"
+pre = "This is the link to the Blog section of the site. Click here to read our latest blog posts"
+url = "/news/"
+weight = 4
 [[menu.main]]
 identifier = "about-us"
 name = "About Us"
 pre = "Click this link to find out about us and why we exist."
 url = "/about-us/"
 weight = 2
-[[menu.main]]
-identifier = "events"
-name = "Events"
-pre = "This is the link to the Events section of the site. Click here to read about our latest events"
-url = "/events/"
-weight = "5"
-[[menu.main]]
-identifier = "contact"
-name = "Contact"
-pre = "This is the Contact section of the site. Click here to find out how to send us an email."
-url = "/contact/"
-weight = "6"
-[[menu.socials]]
-name = "Twitter"
-url = "https://twitter.com/shrubcoop"
-[[menu.socials]]
-name = "Instagram"
-url = "https://www.instagram.com/shrubcoop/"
 [[menu.socials]]
 name = "Facebook"
 url = "https://www.facebook.com/shrubcoop/"
+weight = 1
+[[menu.socials]]
+name = "Instagram"
+url = "https://www.instagram.com/shrubcoop/"
+weight = 2
+[[menu.socials]]
+name = "Twitter"
+url = "https://twitter.com/shrubcoop"
+weight = 3
 [params]
 fundersFooterText = "SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above."
 mapStyle = "mapbox.streets"
