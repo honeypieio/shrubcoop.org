@@ -36,9 +36,9 @@ type = "contact"
 
 #### To book our venues
 
-Our Zero Waste Hub and SHRUB Space Workshop are available for private hire. We're currently asking for a £1 per person, per hour donation to cover our costs. A new pricing structure will be introduced soon. 
+Our Zero Waste Hub and SHRUB Space Workshop are available for private hire. We're currently asking for a £1 per person, per hour donation to cover our costs. A new pricing structure will be introduced soon.
 
-Simply email us at [bookings@shrubcoop.org](mailto:bookings@shrubcoop.org) with an explanation of your event, desired date and times, and a member of the team will get back to you.
+Simply email us at [venuehire@shrubcoop.org](mailto:venuehire@shrubcoop.org) with an explanation of your event, desired date and times, and a member of the team will get back to you.
 
 _Zero Waste Hub - capacity 60 people  
 SHRUB Space Workshop - capacity 20 people_
