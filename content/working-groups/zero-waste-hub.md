@@ -13,17 +13,15 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 +++
 The **Zero Waste Hub** is your one stop shop for sustainable living!
 
-You can swap your preloved things in our **Swapshop**, enjoy some rescued food from our **Food Sharing Hub**, or just hang out and grab a tea or coffee from our **cafe**.
+You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan cafe**.
 
-#### **Opening Hours**
+#### Opening Hours
 
 Wednesday, Thursday, Friday and Saturday
 
 12pm - 5pm
 
-#### **Vegetarian and Vegan Cafe**
-
-#### Menu
+#### Cafe Menu
 
 ##### Drinks
 
@@ -57,31 +55,7 @@ Toast with butter **75p**
 Sandwiches **Pay as you feel**  
 _Subject to availability as these are donated by local cafes_
 
-### **About the Swapshop**
-
-In the Swapshop you can **swap**, **donate** or **buy** affordable and high quality **preloved** clothing, books, shoes, bric-a-brac and household items.
-
-Anyone is welcome to buy or donate items. **Become a SHRUB Coop member** and you can swap your items in exchange for tokens to use in-store.
-
-#### How It Works
-
-Our vision is for a world without waste. Choosing second hand helps to save carbon emissions and supports a sustainable lifestyle.
-
-Unlike your ordinary charity shop, when you donate your preloved items we give you back 25% of their value as tokens. You can spend these at any time in the Swapshop. 1 token is worth £1.
-
-When you drop off your items, our friendly volunteers will value them and add tokens to your account within 7 days.
-
-### **About the Food Sharing Hub**
-
-The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to save surplus food from supermarkets from an unnecessary fate in the bin.
-
-As a member you can fill one basket of food per day and **pay as you feel**.
-
-#### How it works
-
-The Food Sharing Hub is working with Tesco, Co-op and Waitrose to collect food from 6 local supermarkets. Volunteers collect perishable foods such as fruit, vegetables, and baked goods that are still fresh and good to eat, but have passed their best before dates and would otherwise be thrown out that day.
-
-Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the city.
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565366745/shrubcoop.org/media/food_sharing_hub_5_ozajev.png)
 
 ### **FAQs**
 
@@ -116,5 +90,3 @@ Semple Street, Edinburgh, EH3 8BL
 **NCP Car Park Edinburgh Castle Terrace**
 
 Castle Terrace, Edinburgh, EH1 2EW
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565366745/shrubcoop.org/media/food_sharing_hub_5_ozajev.png)
