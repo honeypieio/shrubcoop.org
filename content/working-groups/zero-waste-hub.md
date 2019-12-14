@@ -15,7 +15,7 @@ The **Zero Waste Hub** is your one stop shop for sustainable living!
 
 You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan cafe**.
 
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565366745/shrubcoop.org/media/food_sharing_hub_5_ozajev.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576366686/shrubcoop.org/media/zero_waste_hub_website_pctxow.png)
 
 #### Opening Hours
 
@@ -23,7 +23,7 @@ Wednesday, Thursday, Friday and Saturday
 
 12pm - 5pm
 
-#### Cafe Menu
+### Cafe Menu
 
 ##### Drinks
 
@@ -48,7 +48,7 @@ Cold Drinks from **£2**
 ##### Food
 
 Soup with bread **£3** (large bowl £4)  
-_from Union of Genius, see specials board for todays selection_
+_from Union of Genius, see specials board for today's selection_
 
 Cake and traybakes **£2.5**
 
@@ -57,7 +57,46 @@ Toast with butter **75p**
 Sandwiches **Pay as you feel**  
 _Subject to availability as these are donated by local cafes_
 
-### **Frequently Asked Questions**
+### Plastic Free Products
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576367835/shrubcoop.org/media/zw_products_website_1_szkrgc.png)
+
+##### Home and Kitchen
+
+Bio D washing up liquid **£4.62** per litre  
+Bio D laundry: **£1.89** per litre  
+_Ethically sourced, vegan, hypoallergenic, and free from pollutants that destroy marine ecosystems. Fill up a reusable bottle and pay by weight_
+
+Loofco washing up brush **£3.25  
+**Loofco cleaning pad **£2.9  
+**Loofco washing up pad **£2.75  
+**_No need to reinvent the wheel to be sustainable! Using traditional methods, loofah fibers and coconut coir are grown and crafted in Egypt and Sri Lanka to create these versatile scrubs and brushes for all of your cleaning needs_
+
+##### Health & Cosmetics
+
+Humblebrush toothbrush **£4.20  
+**_Made from sustainably-grown and biodegradable bamboo. When it's run its course, throw the bristles away with the plastic recycling_
+
+Friendly Soaps **£2.62**  
+_Handmade in Yorkshire, and the packaging is both recycled and recyclable (Travel soap/Shampoo bar/Face soap)_
+
+Greencity Soap **£1.70**  
+_All natural glycerin soap made with Organic essential oils_
+
+Bloom and Nora reusable sanitary pads  
+Mini **£4.99**  
+Midi **£5.99**  
+Maxi **£7.99**  
+Mighty **£8.99**  
+Trial kit **£32.95  
+**_Reusable sanitary pads not only save our planet from tonnes of single-use plastic, they are also in the long-term cheaper, more absorbent and much comfier than disposables_
+
+##### Pets
+
+Adios Plastic Corn Starch Dog Poo Bags **£5.99  
+**_Dog lovers can now enjoy a plastic-free lifestyle with these completely plant-based, unscented dog poop bags! Made from cornstarch, these bags biodegrade in compost within 3-6 months. Do not use for compost intended for edible plants_
+
+### Frequently Asked Questions
 
 #### Is Zero Waste Hub accessible?
 
