@@ -29,7 +29,7 @@ The Wee Spoke Hub has saved approximately **22.4 tonnes of CO2** emissions throu
 
 We helped over **450** people to fix their own bikes in 2018 and the Wee Spoke Hub is currently supporting the community to cycle over **5000** miles each week.
 
-### **FAQs**
+### Frequently Asked Questions
 
 #### Do I need to be a member to use it?
 

@@ -38,7 +38,7 @@ UK households binned 300,000 tonnes of clothing in 2016. _(The Guardian, 2017)_
 
 > “Extending the life of clothes offers the greatest overall potential across carbon, water, and waste targets. This can be achieved by designing clothes to be more durable, and by encouraging re-use through sales of second hand clothing” _- Wrap, 2017_
 
-### **FAQs**
+### Frequently Asked Questions
 
 #### Is Zero Waste Hub accessible?
 
