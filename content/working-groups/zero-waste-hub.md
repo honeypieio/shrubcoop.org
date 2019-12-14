@@ -57,7 +57,7 @@ _Subject to availability as these are donated by local cafes_
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565366745/shrubcoop.org/media/food_sharing_hub_5_ozajev.png)
 
-### **FAQs**
+### **Frequently Asked Questions**
 
 #### Is Zero Waste Hub accessible?
 
