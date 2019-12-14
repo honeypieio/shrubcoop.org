@@ -15,6 +15,8 @@ The **Zero Waste Hub** is your one stop shop for sustainable living!
 
 You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan cafe**.
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565366745/shrubcoop.org/media/food_sharing_hub_5_ozajev.png)
+
 #### Opening Hours
 
 Wednesday, Thursday, Friday and Saturday
@@ -54,8 +56,6 @@ Toast with butter **75p**
 
 Sandwiches **Pay as you feel**  
 _Subject to availability as these are donated by local cafes_
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565366745/shrubcoop.org/media/food_sharing_hub_5_ozajev.png)
 
 ### **Frequently Asked Questions**
 
