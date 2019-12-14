@@ -34,7 +34,7 @@ Each year, **one-third** of all food produced for human consumption worldwide go
 
 In central Edinburgh, **27.1 tonnes** of food goes to waste every week - that's the equivalent of roughly **54,000 meals** unnecessarily thrown in the bin. _(Zero Waste Edinburgh, 2017)_
 
-### FAQs
+### Frequently Asked Questions
 
 #### Do I need to be a member to use the Food Sharing Hub?
 
