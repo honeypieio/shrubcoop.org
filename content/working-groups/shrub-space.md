@@ -15,7 +15,7 @@ SHRUB hosts a variety of **events and workshops** throughout the year, both in o
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568760703/shrubcoop.org/media/shrub_space_website_btes2l.png)
 
-### **FAQs**
+### Frequently Asked Questions
 
 #### Do I need to be a member to join?
 
