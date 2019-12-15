@@ -16,6 +16,8 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 
 Anyone is welcome to buy or donate items. **Become a member** and you can swap your items in exchange for tokens to use in-store.
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759841/shrubcoop.org/media/swapshop_website_nnquzi.png)
+
 #### **How It Works**
 
 Our vision is for a world without waste. Choosing second hand helps to save carbon emissions and supports a sustainable lifestyle.
@@ -25,8 +27,6 @@ Unlike your ordinary charity shop, when you donate your preloved items we give y
 When you drop off your items, our friendly volunteers will value them and add tokens to your account within 7 days.
 
 While we like to try and enable people to swap and donate as many different things as possible, unfortunately, there are a few items that we can't take. Here's a [full list](https://res.cloudinary.com/shrub-co-op/image/upload/v1571395647/shrubcoop.org/media/SwapshopDonations_edd2f9.pdf "Swapshop donations") of what we can't accept and suggestions of alternative places to take them.
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759841/shrubcoop.org/media/swapshop_website_nnquzi.png)
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576369229/shrubcoop.org/media/revolve_website_gx3uvf.png)
 
