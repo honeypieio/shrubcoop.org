@@ -17,12 +17,6 @@ You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.or
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576366686/shrubcoop.org/media/zero_waste_hub_website_pctxow.png)
 
-#### Opening Hours
-
-Wednesday, Thursday, Friday and Saturday
-
-12pm - 5pm
-
 ### Cafe Menu
 
 ##### Drinks
