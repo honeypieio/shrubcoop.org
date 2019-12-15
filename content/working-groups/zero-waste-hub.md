@@ -67,14 +67,14 @@ Bio D washing up liquid **£4.62** per litre
 Bio D laundry: **£1.89** per litre  
 _Ethically sourced, vegan, hypoallergenic, and free from pollutants that destroy marine ecosystems. Fill up a reusable bottle and pay by weight_
 
-Loofco washing up brush £3.25  
-Loofco cleaning pad £2.9  
-Loofco washing up pad £2.75  
+Loofco washing up brush **£3.25**  
+Loofco cleaning pad **£2.90**  
+Loofco washing up pad **£2.75**  
 _No need to reinvent the wheel to be sustainable! Using traditional methods, loofah fibers and coconut coir are grown and crafted in Egypt and Sri Lanka to create these versatile scrubs and brushes for all of your cleaning needs_
 
 ##### Health & Cosmetics
 
-Humblebrush toothbrush £4.20  
+Humblebrush toothbrush **£4.20**  
 _Made from sustainably-grown and biodegradable bamboo. When it's run its course, throw the bristles away with the plastic recycling_
 
 Friendly Soaps **£2.62**  
@@ -93,7 +93,7 @@ _Reusable sanitary pads not only save our planet from tonnes of single-use plast
 
 ##### Pets
 
-Adios Plastic Corn Starch Dog Poo Bags £5.99  
+Adios Plastic Corn Starch Dog Poo Bags **£5.99**  
 _Dog lovers can now enjoy a plastic-free lifestyle with these completely plant-based, unscented dog poop bags! Made from cornstarch, these bags biodegrade in compost within 3-6 months. Do not use for compost intended for edible plants_
 
 ### Frequently Asked Questions
