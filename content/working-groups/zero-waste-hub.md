@@ -63,38 +63,61 @@ _Subject to availability as these are donated by local cafes_
 
 ##### Home and Kitchen
 
-Bio D washing up liquid **£4.62** per litre  
-Bio D laundry: **£1.89** per litre  
+###### Bio D
+
 _Ethically sourced, vegan, hypoallergenic, and free from pollutants that destroy marine ecosystems. Fill up a reusable bottle and pay by weight_
 
-Loofco washing up brush **£3.25**  
-Loofco cleaning pad **£2.90**  
-Loofco washing up pad **£2.75**  
+Washing up liquid **£4.62** per litre  
+Laundry liquid **£1.89** per litre
+
+###### Loofco
+
 _No need to reinvent the wheel to be sustainable! Using traditional methods, loofah fibers and coconut coir are grown and crafted in Egypt and Sri Lanka to create these versatile scrubs and brushes for all of your cleaning needs_
+
+Washing up brush **£3.25**  
+Cleaning pad **£2.90**  
+Washing up pad **£2.75**
 
 ##### Health & Cosmetics
 
-Humblebrush toothbrush **£4.20**  
+###### Humblebrush
+
 _Made from sustainably-grown and biodegradable bamboo. When it's run its course, throw the bristles away with the plastic recycling_
 
-Friendly Soaps **£2.62**  
-_Handmade in Yorkshire, and the packaging is both recycled and recyclable (Travel soap/Shampoo bar/Face soap)_
+Adult toothbrush **£4.20  
+**Child toothbrush **£4.20**
 
-Greencity Soap **£1.70**  
+###### Friendly Soaps
+
+_Handmade in Yorkshire, and the packaging is both recycled and recyclable_
+
+_Travel soap_ **£2.62**_  
+Shampoo bar_ **£2.62**_  
+Face soap_ **£2.62**
+
+###### Greencity
+
 _All natural glycerin soap made with Organic essential oils_
 
-Bloom and Nora reusable sanitary pads  
+Hand soap **£1.70**
+
+###### Bloom and Nora reusable sanitary pads
+
+_Reusable sanitary pads not only save our planet from tonnes of single-use plastic, they are also in the long-term cheaper, more absorbent and much comfier than disposables_
+
 Mini **£4.99**  
 Midi **£5.99**  
 Maxi **£7.99**  
 Mighty **£8.99**  
-Trial kit £32.95  
-_Reusable sanitary pads not only save our planet from tonnes of single-use plastic, they are also in the long-term cheaper, more absorbent and much comfier than disposables_
+Trial kit **£32.95**
 
 ##### Pets
 
-Adios Plastic Corn Starch Dog Poo Bags **£5.99**  
+###### Adios Plastic Corn Starch Dog Poo Bags 
+
 _Dog lovers can now enjoy a plastic-free lifestyle with these completely plant-based, unscented dog poop bags! Made from cornstarch, these bags biodegrade in compost within 3-6 months. Do not use for compost intended for edible plants_
+
+**£5.99**
 
 ### Frequently Asked Questions
 
