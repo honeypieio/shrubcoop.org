@@ -84,16 +84,16 @@ Washing up pad **£2.75**
 
 _Made from sustainably-grown and biodegradable bamboo. When it's run its course, throw the bristles away with the plastic recycling_
 
-Adult toothbrush **£4.20  
-**Child toothbrush **£4.20**
+Adult toothbrush **£4.20**  
+Child toothbrush **£4.20**
 
 ###### Friendly Soaps
 
 _Handmade in Yorkshire, and the packaging is both recycled and recyclable_
 
-_Travel soap_ **£2.62**_  
-Shampoo bar_ **£2.62**_  
-Face soap_ **£2.62**
+_Travel soap_ **£2.62**  
+Shampoo bar **£2.62**  
+Face soap **£2.62**
 
 ###### Greencity
 
@@ -113,11 +113,11 @@ Trial kit **£32.95**
 
 ##### Pets
 
-###### Adios Plastic Corn Starch Dog Poo Bags 
+###### Adios Plastic Corn Starch Dog Poo Bags
 
 _Dog lovers can now enjoy a plastic-free lifestyle with these completely plant-based, unscented dog poop bags! Made from cornstarch, these bags biodegrade in compost within 3-6 months. Do not use for compost intended for edible plants_
 
-**£5.99**
+60 bags **£5.99**
 
 ### Frequently Asked Questions
 
