@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Pages
 - type: document
-  path: content/home.md
+  path: content/index.md
   label: Home
 - type: document
   path: content/about-us.md
