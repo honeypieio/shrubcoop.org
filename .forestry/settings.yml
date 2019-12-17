@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Pages
   create: all
-  match: '["contact.md", "get-involved.md", "about-us.md", "_index.md"]'
+  match: content/["contact.md", "get-involved.md", "about-us.md", "_index.md"]
 - type: heading
   label: Pages
 - type: document
