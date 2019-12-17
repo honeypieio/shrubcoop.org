@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Coop"
-date = 2019-12-17T00:00:00Z
+date = "2019-12-17T00:00:00+00:00"
 description = "coming soon"
 tags = ["zero-waste-hub"]
 title = "Zero Waste Edinbrgh Map"
