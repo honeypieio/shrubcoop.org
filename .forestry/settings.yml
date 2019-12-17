@@ -8,21 +8,9 @@ sections:
   path: content
   label: Pages
   create: all
-  match: '["contact.md", "get-involved.md", "about-us.md", "_index.md"]'
-- type: heading
-  label: Pages
-- type: document
-  path: content/_index.md
-  label: Home
-- type: document
-  path: content/about-us.md
-  label: About Us
-- type: document
-  path: content/get-involved.md
-  label: Get Involved
-- type: document
-  path: content/contact.md
-  label: Contact
+  match: "{_index.md,about-us.md,contact.md,get-involved.md}"
+  templates:
+  - page
 - type: heading
   label: Content
 - type: directory
