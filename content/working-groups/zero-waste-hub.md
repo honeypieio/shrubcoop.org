@@ -41,15 +41,21 @@ Cold Drinks from **£2**
 
 ##### Food
 
+Vegan Sandwiches **£3.50**  
+_see specials board for today’s selection_
+
 Soup with bread **£3** (large bowl £4)  
 _from Union of Genius, see specials board for today's selection_
 
-Cake and traybakes **£2.5**
+Overnight Oats **£2**
 
 Toast with butter **75p**
 
-Sandwiches **Pay as you feel**  
-_Subject to availability as these are donated by local cafes_
+Cake and traybakes from **£2.5**  
+_From The Sly Fox, check out today’s specials_
+
+Meal Deal **£5**  
+_Any drink and sandwich_
 
 ### Plastic Free Products
 
