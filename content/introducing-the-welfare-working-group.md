@@ -1,13 +1,14 @@
 +++
 author = "Welfare Working Group"
 date = 2020-01-07T00:00:00Z
-description = "Find out about SHRUB's Welfare Working Group - who we are and what we do."
+description = "Meet SHRUB's Welfare Working Group - who we are, what we do and how to get in touch with us"
 draft = true
 tags = []
 title = "Introducing the Welfare Working Group!"
 type = "news"
 
 +++
+
 It’s been a while but the Welfare Working Group is finally up and running again. Our team is small but our vision is vast! We’ve been working to pick up on the work of welfare working groups past to build and grow into a once-again fully functional, self-sustaining working group. We’ll now, hopefully, be able to work with all other groups and individuals at SHRUB to promote the health and wellbeing of all members, staff, and volunteers.
 
 Our mission statement is:
