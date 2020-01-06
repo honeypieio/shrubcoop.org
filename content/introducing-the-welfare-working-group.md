@@ -1,10 +1,10 @@
 +++
 author = "Welfare Working Group"
 date = 2020-01-07T00:00:00Z
-description = "Meet SHRUB's Welfare Working Group - who we are, what we do and how to get in touch with us"
+description = "Meet SHRUB's Welfare Working Group - who we are, what we do and how to get in touch with us."
 draft = true
 tags = []
-title = "Introducing the Welfare Working Group!"
+title = "Introducing the Welfare Working Group"
 type = "news"
 
 +++
