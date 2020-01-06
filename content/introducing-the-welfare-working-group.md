@@ -23,7 +23,7 @@ So far this team includes some familiar faces and a new volunteer, all equally e
 
 **Siri:**
 
-![A photo of Siri](https://lh5.googleusercontent.com/5PZlMc3ToVS7hm27AdRSAAKlVSgVjL7TbkHILYvD6aM_Kz7rp0MFckqsn604i60diRi5Qc6KV08Y2v60SqO_xOxixMa8T72JrwsVytsvm5p4PDGlDa8lFzDkOMwBrWdlAsf-DGvi "Siri" =315x296)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1578330678/shrubcoop.org/media/welfare_pic_wlmvhc.jpg)
 
 I work full-time at SHRUB as the CCF Project Coordinator, which means I'm involved in a lot of the work behind the scenes, from funding to HR, monitoring and welfare work. I am passionate about making sure that all of us working to make the world a better place don't burn ourselves out in the process, and about making sure there's a space for everyone in the SHRUB community.
 
