@@ -10,3 +10,4 @@ fields:
   label: description
 pages:
 - content/test-page.md
+- content/welfare.md
