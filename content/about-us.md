@@ -30,7 +30,7 @@ We value inclusivity and work with others to provide a welcoming community for a
 
 ***
 
-[Our Constitution](https://res.cloudinary.com/shrub-co-op/image/upload/v1573736442/shrubcoop.org/media/SHRUB_SCIO_constitution_2018_11_08_ytaw0k.pdf "SHRUB_SCIO_constitution_2018_11_08_ytaw0k.pdf")
+[Our Constitution](https://res.cloudinary.com/shrub-co-op/image/upload/v1578412034/shrubcoop.org/media/Revised_SHRUB_Cooperative_SCIO_constitution_-_December_2019_tvcgsc.pdf "Revised_SHRUB_Cooperative_SCIO_constitution_-_December_2019_tvcgsc.pdf")
 
 [Our Safer Spaces Policy](https://res.cloudinary.com/shrub-co-op/image/upload/v1573736447/shrubcoop.org/media/SHRUB_Safer_Spaces_Policy_3.0_k1sjgv.pdf "Our Safer Spaces Policy")
 
