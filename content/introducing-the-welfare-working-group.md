@@ -8,7 +8,6 @@ title = "Introducing the Welfare Working Group"
 type = "news"
 
 +++
-
 It’s been a while but the Welfare Working Group is finally up and running again. Our team is small but our vision is vast! We’ve been working to pick up on the work of welfare working groups past to build and grow into a once-again fully functional, self-sustaining working group. We’ll now, hopefully, be able to work with all other groups and individuals at SHRUB to promote the health and wellbeing of all members, staff, and volunteers.
 
 Our mission statement is:
@@ -31,7 +30,7 @@ Contact: [siri.pantzar@shrubcoop.org](mailto:siri.pantzar@shrubcoop.org)
 
 **Billie:**
 
-![A photo of Billie](https://lh3.googleusercontent.com/3tu7OznhHsekzmSrapXWtQh5Jiy0IPCk48eI_SEEjBocs2B9f7sjrRnSo36nCNk_98MM0pxfbQ74OcaZmc4zY65cNW1wuq1M-1tFHwEGk1SpuLUufZ3EMfqfTpbfmaA9zc8dQzMd "Billie" =268x268)
+![A photo of Billie](https://res.cloudinary.com/shrub-co-op/image/upload/v1578391551/shrubcoop.org/media/Billie_ctdq6k.jpg "Billie")
 
 I work for SHRUB as the Circular Economy Programme Coordinator. In this role I get to work with a lot of very passionate volunteers. An important part of my role is making sure that people’s passion and enthusiasm is harnessed and given space to grow in a safe space that is for everyone. That way we can continue to be a powerful force for the planet.
 
@@ -45,4 +44,4 @@ I’ve recently joined SHRUB welfare volunteer team, after being involved with w
 
 Contact: [eleanor@shrubcoop.org](mailto:eleanor@shrubcoop.org)
 
-Once again, we’d love to hear from anyone who is interested in joining! Please contact any of the people above, email [welfare@shrubcoop.org](mailto:welfare@shrubcoop.org) or any one of us if you’re interested.
+Once again, we’d love to hear from anyone who is interested in joining! Please contact any of the people above or email [welfare@shrubcoop.org](mailto:welfare@shrubcoop.org) if you’re interested.
