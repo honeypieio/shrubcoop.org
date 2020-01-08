@@ -6,7 +6,7 @@ title = "Welfare"
 +++
 # Welfare Resources
 
-Support resources for welfare and wellbeing for SHRUB members and volunteers, alphabetically by area of support.
+Support resources on welfare and wellbeing for SHRUB members and volunteers, alphabetically by area of support.
 
 ## Accommodation
 
