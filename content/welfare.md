@@ -4,7 +4,11 @@ draft = true
 title = "Welfare"
 
 +++
-# Accommodation
+# Welfare Resources
+
+Support resources for welfare and wellbeing for SHRUB members and volunteers, alphabetically by area of support.
+
+## Accommodation
 
 ### **Barony Housing Association**
 
