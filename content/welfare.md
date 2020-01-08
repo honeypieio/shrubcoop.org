@@ -10,7 +10,7 @@ Support resources for welfare and wellbeing for SHRUB members and volunteers, al
 
 ## Accommodation
 
-### **Barony Housing Association**
+#### **Barony Housing Association**
 
 Provides practical and wellbeing support to individuals both within their own tenancy and in group living accommodation. Two of the group living projects are currently staffed seven days a week including sleeping night cover. The other support is provided Monday to Friday 9am to 5pm with an emergency on-call service out with these hours.
 
@@ -26,7 +26,7 @@ All their services are registered with the Care Commission and where necessary m
 
 ## Bereavement
 
-### **The Acorns Bereavement Support Service (ABSS)**
+#### **The Acorns Bereavement Support Service (ABSS)**
 
 Provides bereavement support programmes for bereaved people in Edinburgh and the Lothians.
 
@@ -44,9 +44,9 @@ The programmes are designed to reassure those going through their journey of los
 
 ## Care
 
-### **Care for Carers**
+#### **Care for Carers**
 
-This service offers:
+#### This service offers:
 
 * learning for carers, including relaxation and stress management courses
 * support groups and group meetings
