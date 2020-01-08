@@ -131,19 +131,19 @@ Support services include:
 
 There is an information and advice drop-in service at Crew 2000’s space on Cockburn street. This is open for people to drop-in for information and advice about drugs and drug use.
 
-Tel: 0131 220 3404
+**Tel**: 0131 220 3404
 
-Email: [admin@crew2000.org.uk](mailto:admin@crew2000.org.uk)
+**Email**: [admin@crew2000.org.uk](mailto:admin@crew2000.org.uk)
 
-Website: [www.crew.scot](http://www.crew.scot)
+**Website**: [www.crew.scot](http://www.crew.scot)
 
-Address: 32-32A Cockburn Street
+**Address**: 32-32A Cockburn Street
 
 Edinburgh
 
 EH1 1PB
 
-Drop-in Hours:
+**Drop-in Hours**:
 
 Monday - Wednesday 1.00 pm - 5.00 pm,
 
@@ -161,29 +161,29 @@ Advocard provide advocacy services through trained volunteer and contracted advo
 
 They operate a flexible referral process and encourage self referral as well as accepting referrals form others. People who wish to use the service can call in to the office for an appointment or telephone.
 
-Tel: 0131 554 5307
+**Tel**: 0131 554 5307
 
-Email: [advocacy@advocard.org.uk](mailto:advocacy@advocard.org.uk)
+**Email**: [advocacy@advocard.org.uk](mailto:advocacy@advocard.org.uk)
 
-Website: [www.advocard.org.uk](http://www.advocard.org.uk)
+**Website**: [www.advocard.org.uk](http://www.advocard.org.uk)
 
 ### **Anxiety UK**
 
 Anxiety UK was established to promote the relief and rehabilitation of persons suffering from agoraphobia and associated anxiety disorders, phobias and conditions, in particular, but not exclusively, by raising awareness in such topics.
 
-Tel: 03444 775 774
+**Tel**: 03444 775 774
 
-Website: [www.anxietyuk.org.uk](http://www.anxietyuk.org.uk)
+**Website**: [www.anxietyuk.org.uk](http://www.anxietyuk.org.uk)
 
 ### **Artlink**
 
 Aims to increase opportunities to take part in the arts, for those who experience disadvantage, disability, or Mental Health issues in the East of Scotland. Artlink establishes partnerships with artists, venues and organisations to help encourage positive change.
 
-Telephone: 0131 229 3555
+**Telephone**: 0131 229 3555
 
-Email: [info@artlinkedinburgh.co.uk](mailto:info@artlinkedinburgh.co.uk)
+**Email**: [info@artlinkedinburgh.co.uk](mailto:info@artlinkedinburgh.co.uk)
 
-Website: [www.artlinkedinburgh.co.uk](http://www.artlinkedinburgh.co.uk)
+**Website**: [www.artlinkedinburgh.co.uk](http://www.artlinkedinburgh.co.uk)
 
 ### **BEAT Eating Disorders**
 
@@ -191,17 +191,17 @@ Beat exists to end the pain and suffering caused by eating disorders. They are a
 
 The helpline services provide support and information 365 days a year. They also have online support groups, one-to-one web chat, and a directory of services on their website.
 
-Tel (Helpline, over 18): 0808 801 0677
+**Tel (Helpline, over 18)**: 0808 801 0677
 
-Tel (YouthLine, under 18): 0808 801 0711
+**Tel (YouthLine, under 18)**: 0808 801 0711
 
-Tel (StudentLine): 0808 801 0811
+**Tel (StudentLine)**: 0808 801 0811
 
-Tel (General enquiries): 0300 123 3355
+**Tel (General enquiries)**: 0300 123 3355
 
-Email: [info@beateatingdisorders.org.uk](mailto:info@beateatingdisorders.org.uk)
+**Email**: [info@beateatingdisorders.org.uk](mailto:info@beateatingdisorders.org.uk)
 
-Website: [www.beateatingdisorders.org.uk](http://www.beateatingdisorders.org.uk)
+**Website**: [www.beateatingdisorders.org.uk](http://www.beateatingdisorders.org.uk)
 
 ### **Bipolar Scotland**
 
@@ -211,11 +211,11 @@ The groups are open to friends, family and carers of people with a bipolar diagn
 
 Last Monday of each month 7.00 pm – 9.00 pm in the Private Meeting Room of Starbucks, 120 Princes St, Edinburgh EH2 4AD
 
-Tel: 0141 560 2050
+**Tel**: 0141 560 2050
 
-Email: [hello@lothianbipolargroup.org.uk](mailto:hello@lothianbipolargroup.org.uk)
+**Email**: [hello@lothianbipolargroup.org.uk](mailto:hello@lothianbipolargroup.org.uk)
 
-Website: [www.bipolarscotland.org.uk](http://www.bipolarscotland.org.uk)
+**Website**: [www.bipolarscotland.org.uk](http://www.bipolarscotland.org.uk)
 
 ### **CALM Helpline**
 
@@ -223,9 +223,9 @@ The CALM Zone run a helpline for men in the UK who are down or have hit a wall f
 
 Lines are open 5pm–midnight, 365 days a year
 
-Tel: 0800 58 58 58
+**Tel**: 0800 58 58 58
 
-Website: [https://www.thecalmzone.net/](https://www.thecalmzone.net/ "https://www.thecalmzone.net/")
+**Website**: [https://www.thecalmzone.net/](https://www.thecalmzone.net/ "https://www.thecalmzone.net/")
 
 ### **Cared**
 
@@ -241,9 +241,9 @@ The resource aims to improve parents & carers:
 
 • provide practical hints & tips
 
-Email: [caredscotland@nhslothian.scot.nhs.uk](mailto:caredscotland@nhslothian.scot.nhs.uk)
+**Email**: [caredscotland@nhslothian.scot.nhs.uk](mailto:caredscotland@nhslothian.scot.nhs.uk)
 
-Website: [www.caredscotland.co.uk](http://www.caredscotland.co.uk)
+**Website**: [www.caredscotland.co.uk](http://www.caredscotland.co.uk)
 
 ## Sexual Violence
 
@@ -257,8 +257,8 @@ It is open to everyone to get fitter, make new friends and enjoy life to the max
 
 It is on every Tuesday at 6.00 pm – 7.30 pm at the West Stand, Hibernian FC, Easter Road Stadium.
 
-Tel: 0131 656 7062
+**Tel**: 0131 656 7062
 
-Email: [kmcewan@hiberniancommunityfoundation.org.uk](mailto:kmcewan@hiberniancommunityfoundation.org.uk)
+**Email**: [kmcewan@hiberniancommunityfoundation.org.uk](mailto:kmcewan@hiberniancommunityfoundation.org.uk)
 
-Website:
+**Website**:
