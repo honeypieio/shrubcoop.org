@@ -46,7 +46,7 @@ The programmes are designed to reassure those going through their journey of los
 
 #### **Care for Carers**
 
-#### This service offers:
+This service offers:
 
 * learning for carers, including relaxation and stress management courses
 * support groups and group meetings
