@@ -3,7 +3,7 @@ author = "Swapshop"
 description = "Have you got a well loved item of clothing you want to mend or adjust? Come along to a special sewing session in the Zero Waste Hub!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
-time = 2019-11-29T15:00:00Z
+time = 2020-01-29T15:00:00Z
 title = "Sewing and Clothing Repair Session"
 
 +++
