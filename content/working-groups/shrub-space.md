@@ -25,6 +25,14 @@ No - anyone can join! For events with a ticket fee, we offer our members a disco
 
 We host events at our dedicated SHRUB Space workshop at 17 Guthrie Street, EH1 1JG, as well as at the Zero Waste Hub at 22 Bread Street. Occasionally we also join other organisations and host events at their venues. Make sure to check each event for the location.
 
+#### Is the workshop accessible?
+
+The workshop space is on the ground floor and there is step free access throughout the building. The toilet is step free, but small and not wheelchair accessible.
+
+All our toilets are gender neutral.
+
+If you have further questions regarding accessibility before a visit, please contact us on **0131 261 8216**.
+
 #### Can I host my own event at SHRUB's venues?
 
 Yes! Our spaces are open for booking - contact [hello@shrubcoop.org](mailto:hello@shrubcoop.org) for details.
