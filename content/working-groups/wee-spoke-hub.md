@@ -37,7 +37,7 @@ No! Anyone can come along for the Fix Your Own Bike workshops, however, as a mem
 
 #### Is the Wee Spoke Hub accessible?
 
-The **Wee Spoke Hub** workshop space is on the ground floor. There is a step to the toilets and are therefore not wheelchair accessible.  
+The Wee Spoke Hub workshop space is on the ground floor. There is a step to the toilets and are therefore not wheelchair accessible.  
 All our toilets are gender neutral.
 
 If you have further questions regarding accessibility before a visit, please contact the Wee Spoke Hub on **0131 220 1884**.

@@ -123,7 +123,7 @@ _Dog lovers can now enjoy a plastic-free lifestyle with these completely plant-b
 
 #### Is Zero Waste Hub accessible?
 
-The **Zero Waste Hub** is on ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.
+The Zero Waste Hub is on ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.
 
 There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street.
 
