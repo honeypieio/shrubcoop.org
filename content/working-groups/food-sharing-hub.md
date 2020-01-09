@@ -42,11 +42,13 @@ No
 
 #### Is Zero Waste Hub accessible?
 
-The Zero Waste Hub is on ground floor with a wheelchair accessible entrance, accessible and gender neutral toilet.
+The **Zero Waste Hub** is on ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.
 
 There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street.
 
-If you have further questions regarding accessibility before a visit, please contact the Zero Waste Hub on **0131 281 0583**.
+All our toilets are gender neutral.
+
+If you have further questions regarding accessibility, please contact the Zero Waste Hub on **0131 281 0583**.
 
 #### Is there nearby bicycle parking?
 
