@@ -19,3 +19,19 @@ We have sewing machines, tools, and some supplies to use, but if you need specif
 
 No experience necessary!  
 FREE entry, donations always welcome
+
+#### Accessibility information
+
+The workshop space is on the ground floor and there is step free access throughout the building. The toilet is step free, but small and not wheelchair accessible.
+
+All our toilets are gender neutral.
+
+If you have further questions regarding accessibility before a visit, please contact us on 0131 261 8216.
+
+#### How to get there
+
+There is outdoor bicycle parking on Chambers Street, near the National Museum and on Cowgate, at the bottom of Guthrie street.
+
+**George IV Bridge routes:** 67, 42, 41, 23, 27  
+**Chamber Street routes**: 35, 45  
+**South Bridge routes:** 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14
