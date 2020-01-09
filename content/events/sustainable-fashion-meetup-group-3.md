@@ -25,7 +25,7 @@ See you then!
 
 _If you are particularly interested in 'hands-on' workshops and clothing repair, we also run weekly Sewing and upcycling workshops on Thursdays at 17, Guthrie St, 5-7pm. Please check before hand_
 
-**Accessibility information:**
+#### **Accessibility information**
 
 The Zero Waste Hub is on ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.
 
@@ -33,9 +33,9 @@ There are disabled parking bays on both parallel streets, East Fountainbridge an
 
 All our toilets are gender neutral.
 
-If you have further questions regarding accessibility, please contact the Zero Waste Hub on 0131 281 0583.
+If you have further questions regarding accessibility, please contact the Zero Waste Hub on **0131 281 0583**.
 
-**How to get there:**
+#### **How to get there**
 
 There is space to lock up your bike on the corner of Lothian Road and Bread Street, by Cost Cutters.
 
