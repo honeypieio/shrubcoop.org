@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "As a member you're welcome to take part in how our organisation is run!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
-tags = []
-time = 2019-11-07T18:00:00Z
+tags = ["zero-waste-hub", "swapshop", "food-sharing-hub", "wee-spoke-hub", "shrub-space"]
+time = 2020-01-16T18:00:00Z
 title = "Members' Decision Making Meeting"
 
 +++
@@ -27,3 +26,21 @@ Read the full agenda attached [here](https://docs.google.com/document/d/1zrp56V4
 Any agenda items should be sent to [agenda@shrubcoop.org]() one week before the meeting date at the latest, so the agenda can be written. If you would like to bring in a discussion topic or a proposal, but don't know how, please contact us at [hello@shrubcoop.org](hello@shrubcoop.org) and we will provide you with templates and instructions.
 
 This is a great opportunity to have a say in decisions that affect the whole coop, and also a place to learn what is going on across the community. It helps the community identify gaps and work towards our shared goal of community empowerment for a world without waste.
+
+#### **Accessibility information**
+
+The Zero Waste Hub is on ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.
+
+There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street.
+
+All our toilets are gender neutral.
+
+If you have further questions regarding accessibility, please contact the Zero Waste Hub on **0131 281 0583**.
+
+#### **How to get there**
+
+There is space to lock up your bike on the corner of Lothian Road and Bread Street, by Cost Cutters.
+
+Lothian Road routes: 47, 24, 10, 11, 15, 16, 36, 1, 34, 124
+
+Grassmarket route: 2
