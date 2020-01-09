@@ -33,6 +33,26 @@ All our toilets are gender neutral.
 
 If you have further questions regarding accessibility before a visit, please contact us on **0131 261 8216**.
 
+#### Is there nearby bicycle parking?
+
+There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street. 
+
+#### What bus routes are you on?
+
+The workshop is located between the National Museum of Scotland and Cowgate and following bus routes will take you nearby;
+
+George IV Bridge routes: 67, 42, 41, 23, 27  
+Chamber Street routes: 35, 45  
+South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14
+
+#### Is there parking nearby?
+
+The closest car park is a 7 minute walk away;
+
+**NCP Car Park**
+
+2 Viewcraig Gardens, Edinburgh, EH8 9UN
+
 #### Can I host my own event at SHRUB's venues?
 
-Yes! Our spaces are open for booking - contact [hello@shrubcoop.org](mailto:hello@shrubcoop.org) for details.
+Yes! Our spaces are open for booking - contact [venuhire@shrubcoop.org](mailto:venuhire@shrubcoop.org) for details.
