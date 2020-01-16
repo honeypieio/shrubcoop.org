@@ -17,6 +17,10 @@ You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.or
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576366686/shrubcoop.org/media/zero_waste_hub_website_pctxow.png)
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576369229/shrubcoop.org/media/revolve_website_gx3uvf.png)
+
+We're [Revolve ](https://www.zerowastescotland.org.uk/revolve)certified - Scotland’s re-use quality standard. That means we're committed to providing only the highest quality second-hand products and excellent customer service.
+
 ### Cafe Menu
 
 ##### Drinks
