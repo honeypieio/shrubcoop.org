@@ -1,6 +1,6 @@
 +++
 author = "Wee Spoke Hub"
-description = "Our friendly mechanics will help you get back in the saddle!"
+description = "This Thursday's workshop is cancelled due to mechanic unavailability."
 location = "Wee Spoke Hub, 13 Guthrie Street, EH1 1JG"
 tags = ["wee-spoke-hub"]
 time = 2020-01-23T17:00:00Z
