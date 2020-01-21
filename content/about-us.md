@@ -28,7 +28,7 @@ We value inclusivity and work with others to provide a welcoming community for a
 
   ***
 
-#### Our activities and spaces:
+#### Our activities and spaces
 
 SHRUB Coop currently has 3 spaces across Edinburgh, with several key areas of activity.
 
