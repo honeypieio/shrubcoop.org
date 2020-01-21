@@ -28,6 +28,18 @@ We value inclusivity and work with others to provide a welcoming community for a
 
   ***
 
+#### Our activities and spaces:
+
+SHRUB Coop currently has 3 spaces across Edinburgh, with several key areas of activity.
+
+* At the **Zero Waste Hub** on 22 Bread Street, we have a **Swapshop**, where you can shop for second-hand items, including swapping your old items for tokens to be used in the shop; a **Food Sharing Hub**, where you can buy rescued food on a pay-as-you-feel basis; and a **Cafe** where you can relax and get inspired by the community.
+* At the **Wee Spoke Hub** on 13 Guthrie Street, we have our bike workshop, where you can join us for **fix-your-own-bike sessions** on Tuesday and Thursday nights, 5-8pm, or on our volunteer nights on Wednesday evenings, same time. You can also buy bike parts and bikes that our volunteers have fixed up. At the same location you’ll also find one of our offices where our finance and project coordination teams work.
+* At **SHRUB Space** on 17 Guthrie Street, you can join us for **Sewing Drop-in sessions** on Thursday evenings 5-7pm, as well as other events and meetings. You’ll also find our second office, where our Zero Waste Edinburgh team works.
+* In May and June, you can find us in the university halls and across the city, collecting items that students have left behind as a part of our annual **end-of-term collections**. We give them away at our annual **Freeshop** in September and at other Freeshops throughout the year. Beyond the collections, we also run a variety of other **events and workshops**, including the Zero Waste Festival, upcycling and repair workshops, sustainable fashion meet-ups and much more.
+* Finally, our **Food Sharing network** collects food year-round from small and medium businesses such as bakeries and distributes it to anyone who might want to eat it, including charities, the volunteers themselves, and bread boxes in businesses throughout the city.
+
+  ***
+
 #### Story of SHRUB
 
 **SHRUB Cooperative** (formerly the Swap and Reuse Hub Cooperative (Edinburgh) Ltd) was registered as the **UK’s first student-­led community co­operative**. It was established as a not for profit company limited by guarantee in March 2013. As of November 2018, we are registered as a Scottish Charitable Incorporated Organisation (SCIO), meaning we have charitable status.
@@ -37,22 +49,6 @@ A large proportion of our members are students, mostly from the University of Ed
 As a co­operative, the SHRUB operates an **open membership policy** (anybody above the age of 16 can apply for membership). You can join either by being a paying member or by volunteering.
 
 SHRUB is organised **non-hierarchically** and governed through **consensus decision making.** Members are free to join in decision making and to stand for a position as a Trustee. Trustees are elected at the AGM and are legally liable for the Co­op.
-
-***
-
-#### Our activities and spaces:
-
-SHRUB Coop currently has 3 spaces across Edinburgh, with several key areas of activity.
-
-At the **Zero Waste Hub** on 22 Bread Street, we have a **Swapshop**, where you can shop for second-hand items, including swapping your old items for tokens to be used in the shop; a **Food Sharing Hub**, where you can buy rescued food on a pay-as-you-feel basis; and a **Cafe** where you can relax and get inspired by the community.
-
-At the **Wee Spoke Hub** on 13 Guthrie Street, we have our bike workshop, where you can join us for **fix-your-own-bike sessions** on Tuesday and Thursday nights, 5-8pm, or on our volunteer nights on Wednesday evenings, same time. You can also buy bike parts and bikes that our volunteers have fixed up. At the same location you’ll also find one of our offices where our finance and project coordination teams work.
-
-At **SHRUB Space** on 17 Guthrie Street, you can join us for **Sewing Drop-in sessions** on Thursday evenings 5-7pm, as well as other events and meetings. You’ll also find our second office, where our Zero Waste Edinburgh team works.
-
-In May and June, you can find us in the university halls and across the city, collecting items that students have left behind as a part of our annual **end-of-term collections**. We give them away at our annual **Freeshop** in September and at other Freeshops throughout the year. Beyond the collections, we also run a variety of other **events and workshops**, including the Zero Waste Festival, upcycling and repair workshops, sustainable fashion meet-ups and much more.
-
-Finally, our **Food Sharing network** collects food year-round from small and medium businesses such as bakeries and distributes it to anyone who might want to eat it, including charities, the volunteers themselves, and bread boxes in businesses throughout the city.
 
 ***
 
