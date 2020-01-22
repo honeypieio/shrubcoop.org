@@ -13,7 +13,13 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 +++
 The **Zero Waste Hub** is your one stop shop for sustainable living!
 
-You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan cafe**.
+You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan café**.
+
+Our café serves a range of wholesome vegan sandwiches, soups, and cakes. Heartwarming coffee with no extra charge for non-dairy milks!
+
+#### Say No To Disposable Cups!
+
+Why not slow down and enjoy your lunch in our community space? If you need to take away your food and hot drinks, please bring your own reusable cups and containers.
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576366686/shrubcoop.org/media/zero_waste_hub_website_pctxow.png)
 
@@ -21,7 +27,7 @@ You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.or
 
 We're [Revolve ](https://www.zerowastescotland.org.uk/revolve)certified - Scotland’s re-use quality standard. That means we're committed to providing only the highest quality second-hand products and excellent customer service.
 
-### Cafe Menu
+### Café Menu
 
 ##### Drinks
 
