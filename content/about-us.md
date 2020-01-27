@@ -62,6 +62,32 @@ We follow the cooperative principles below, and organise our work through workin
 
 ***
 
+#### Our Working Groups
+
+**Swapshop:** We look after the Swapshop which includes: organising donations, pricing items and greeting customers! Also includes our Sustainable Fashion activities and events.
+
+**Workshops & Events:** We organise events and upcycling workshops to educate the community about sustainable living.
+
+**Food Sharing:** We re-distribute excess food from businesses to the community through our Food Sharing Hub and Food Sharing Network, and run sustainable cooking and home crafting classes.
+
+**Wee Spoke Hub:** We organise DIY workshops for you to learn how to fix your own bike with help from trained mechanics.
+
+**Cafe:** We look after the Zero Waste Hub Cafe, helping provide a welcoming space for all the community.
+
+**Communications:** We promote the coop’s activities and keep members informed about what’s happening.
+
+**Finance & Admin:** We oversee general administration, maintaining financial records and forecasting. The group includes Monitoring and Evaluation, Bookkeeping, Management Accounts, Social Enterprise and Funding subgroups.
+
+**Welfare:** We ensure the wellbeing of members, if you are experiencing any problems within the community, you can get in touch with us at welfare@shrubcoop.org
+
+**Governance & Policy:** We take care of the Coop’s decision making processes and other working practices and policies.
+
+**Human Resources:** We ensure the wellbeing of our staff and offer them feedback and support.
+
+**Trustees:** We are the legal guardians of the Coop, responsible for oversight of risk & compliance, human resources, monitoring & evaluation, funding, and member engagement.
+
+***
+
 #### Our Policies
 
 [Our Constitution](https://res.cloudinary.com/shrub-co-op/image/upload/v1578412034/shrubcoop.org/media/Revised_SHRUB_Cooperative_SCIO_constitution_-_December_2019_tvcgsc.pdf "Revised_SHRUB_Cooperative_SCIO_constitution_-_December_2019_tvcgsc.pdf")
