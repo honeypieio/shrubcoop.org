@@ -10,7 +10,7 @@ times = "12pm to 5pm, Wednesday to Saturday"
 title = "Swapshop"
 weight = 4
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667047/shrubcoop.org/media/Swapshop_WEB_ONLY_mjcnio.png"
-
+showOnFrontPage = false
 +++
 **Swap**, **donate** or **buy** affordable and high quality preloved clothing, books, shoes, bags, bric-a-brac and household items.
 

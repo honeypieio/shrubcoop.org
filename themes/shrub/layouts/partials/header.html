@@ -23,19 +23,60 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto mx-auto">
 
+      {{ $WorkingGroups := (where .Site.Pages "Type" "working-groups") }}
 
       {{ $currentPage := . }} {{ range .Site.Menus.main }}
-      <li
-        class="nav-item mx-auto {{ if or (eq $currentPage.Title .Name) (eq (urlize $currentPage.Type) (urlize .Name)) }}underline{{ end }}"
-      >
-        <a
-          class="nav-link text-white"
-          title="{{ .Name }} - {{ .Pre }}"
-          href="{{ .URL }}"
-          >{{ .Name }}{{ if $currentPage.HasMenuCurrent "main" . }}
-          <span class="sr-only">(current)</span>{{ end }}</a
-        >
-      </li>
+
+        {{ if eq .URL "/about-us/" }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white nav-item mx-auto {{ if or (eq $currentPage.Title .Name) (eq (urlize $currentPage.Type) (urlize .Name)) }}underline{{ end }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item text-dark"
+                title="{{ .Name }} - {{ .Pre }}"
+                href="{{ .URL }}"
+                >{{ .Name }}{{ if $currentPage.HasMenuCurrent "main" . }}
+                <span class="sr-only">(current)</span>{{ end }}</a
+              >
+              {{ if .HasChildren }}
+                {{ range .Children}}
+                  <a
+                    class="nav-link dropdown-item text-dark"
+                    title="{{ .Name }} - {{ .Pre }}"
+                    href="{{ .URL }}"
+                    >{{ .Name }}{{ if $currentPage.HasMenuCurrent "main" . }}
+                    <span class="sr-only">(current)</span>{{ end }}</a
+                  >
+                {{ end }}
+                <div class="dropdown-divider"></div>
+              {{ end }}
+              {{ range $WorkingGroups }}
+                {{ if ne .URL "/working-groups/" }}
+                  <a
+                    class="nav-link dropdown-item text-dark"
+                    title="{{ .Name }}"
+                    href="{{ .URL }}"
+                    >{{ .Name }}</a>
+                  {{ end }}
+              {{ end }}
+            </div>
+          </li>
+        {{ else }}
+          <li
+            class="nav-item mx-auto {{ if or (eq $currentPage.Title .Name) (eq (urlize $currentPage.Type) (urlize .Name)) }}underline{{ end }}"
+          >
+            <a
+              class="nav-link text-white"
+              title="{{ .Name }} - {{ .Pre }}"
+              href="{{ .URL }}"
+              >{{ .Name }}{{ if $currentPage.HasMenuCurrent "main" . }}
+              <span class="sr-only">(current)</span>{{ end }}</a
+            >
+          </li>
+        {{ end }}
+
       {{ end }}
 
     </ul>

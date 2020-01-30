@@ -9,7 +9,7 @@ times = "5pm to 8pm, Tuesdays and Thursdays"
 title = "Wee Spoke Hub"
 weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
-
+showOnFrontPage = true
 +++
 The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechanic will help you learn the skills to take care of your bike.
 

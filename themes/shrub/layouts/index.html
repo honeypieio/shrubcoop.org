@@ -46,6 +46,7 @@
 
               {{ range (where .Data.Pages "Type" "working-groups") }}
 
+                {{ if eq .Params.showOnFrontPage true}}
                   <a
                     class="working_group_link p-1"
                     href="{{.Site.BaseURL}}{{.URL}}"
@@ -60,6 +61,7 @@
                       />
                     </div>
                   </a>
+                {{ end }}
 
 
 
@@ -149,10 +151,12 @@
   var groupLocations = [];
 
   {{ range (where .Data.Pages "Type" "working-groups") }}
-    {{ if .Params.address }}
-      {{ if .Params.lon }}
-        {{ if .Params.lat }}
-          groupLocations.push({ coords: ["{{ .Params.lon }}", "{{ .Params.lat }}"], bindTo: ["{{ urlize .Title }}"], title: "{{ .Title }}", webAddress: "{{ .Site.BaseURL }}working-groups/{{ urlize .Title }}", colour: "{{ .Params.colour }}", tagline: "{{ .Params.tagline }}", address: "{{ .Params.address }}", openingTimes: "{{ .Params.times }}"})
+    {{ if eq .Params.showOnFrontPage true}}
+      {{ if .Params.address }}
+        {{ if .Params.lon }}
+          {{ if .Params.lat }}
+            groupLocations.push({ coords: ["{{ .Params.lon }}", "{{ .Params.lat }}"], bindTo: ["{{ urlize .Title }}"], title: "{{ .Title }}", webAddress: "{{ .Site.BaseURL }}working-groups/{{ urlize .Title }}", colour: "{{ .Params.colour }}", tagline: "{{ .Params.tagline }}", address: "{{ .Params.address }}", openingTimes: "{{ .Params.times }}"})
+          {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}

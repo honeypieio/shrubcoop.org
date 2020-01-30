@@ -9,7 +9,7 @@ times = ""
 title = "SHRUB Space"
 weight = 5
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568666959/shrubcoop.org/media/SHRUB_Space_WEB_ONLY_uowh5h.png"
-
+showOnFrontPage = true
 +++
 SHRUB hosts a variety of **events and workshops** throughout the year, both in our dedicated **SHRUB Space** workshop space, and in the Zero Waste Hub. Click the "Events" link at the top to see our upcoming events and workshops and get inspired!
 
@@ -35,7 +35,7 @@ If you have further questions regarding accessibility before a visit, please con
 
 #### Is there nearby bicycle parking?
 
-There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street. 
+There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street.
 
 #### What bus routes are you on?
 
