@@ -188,7 +188,7 @@ body {
 }
 
 nav {
-  z-index: 99;
+  /*z-index: 99;*/
   border-bottom: 1px solid #333;
 }
 
@@ -224,8 +224,14 @@ nav {
 
 .navbar-collapse {
   max-height: 280px;
-  overflow-y: auto;
 }
+
+@media (max-width: 1200px) {
+  .navbar-collapse {
+    overflow-y: auto;
+  }
+}
+
 
 .front-page-header {
   width: 100%;
@@ -259,4 +265,9 @@ nav {
   height: 100%;
   margin-top: -170px;
   padding: 15px;
+}
+
+#zeroWasteMap {
+  width: 80vw;
+  height: 100vh;
 }
