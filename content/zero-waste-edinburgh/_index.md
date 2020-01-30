@@ -4,4 +4,3 @@ title = "Zero Waste Edinburgh"
 type = "zero-waste-map"
 
 +++
-test
