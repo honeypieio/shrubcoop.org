@@ -29,12 +29,12 @@
 
         {{ if eq .URL "/about-us/" }}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white nav-item mx-auto {{ if or (eq $currentPage.Title .Name) (eq (urlize $currentPage.Type) (urlize .Name)) }}underline{{ end }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto {{ if or (eq $currentPage.Title .Name) (eq (urlize $currentPage.Type) (urlize .Name)) }}underline{{ end }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ .Name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a
-                class="nav-link dropdown-item text-dark"
+                class="nav-link dropdown-item px-4 text-center text-dark"
                 title="{{ .Name }} - {{ .Pre }}"
                 href="{{ .URL }}"
                 >{{ .Name }}{{ if $currentPage.HasMenuCurrent "main" . }}
@@ -43,7 +43,7 @@
               {{ if .HasChildren }}
                 {{ range .Children}}
                   <a
-                    class="nav-link dropdown-item text-dark"
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
                     title="{{ .Name }} - {{ .Pre }}"
                     href="{{ .URL }}"
                     >{{ .Name }}{{ if $currentPage.HasMenuCurrent "main" . }}
@@ -55,7 +55,7 @@
               {{ range $WorkingGroups }}
                 {{ if ne .URL "/working-groups/" }}
                   <a
-                    class="nav-link dropdown-item text-dark"
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
                     title="{{ .Name }}"
                     href="{{ .URL }}"
                     >{{ .Name }}</a>
