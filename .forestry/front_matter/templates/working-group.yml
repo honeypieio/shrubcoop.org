@@ -80,6 +80,10 @@ fields:
       path: 
   label: Address
   description: Project's address
+- name: showOnFrontPage
+  type: boolean
+  label: Show On Front Page
+  description: Show the working group's icon on the front page (or not)
 pages:
 - content/working-groups/wee-spoke-hub.md
 - content/working-groups/zero-waste-hub.md
