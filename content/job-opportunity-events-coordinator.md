@@ -7,7 +7,7 @@ title = "Job Opportunity: Events Coordinator"
 type = "news"
 
 +++
-**Salary £25,000 p.a pro rata (£20,000), part time 28 hours / week**  
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1580488502/shrubcoop.org/media/events_web_1_jsbhy0.png)**Salary £25,000 p.a pro rata (£20,000), part time 28 hours / week**  
 _Fixed term contract to 31 March 2022 – extension subject to successful funding bids  
 Pending confirmation of funding_  
 **Application Deadline:** **midnight 23rd February 2020**
