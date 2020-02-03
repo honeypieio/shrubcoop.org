@@ -41,12 +41,16 @@ SHRUB Coop is organised non-hierarchically and strives to provide an inclusive a
 
 **APPLICATION PROCESS**
 
-To apply please email by **midnight on 23rd February 2020** to jobs@shrubcoop.org attaching a single Word document comprising a maximum two A4 pages response with evidence of your knowledge, skills and experience which make you eligible for the job.
+To apply please email by **midnight on 23rd February 2020** to jobs@shrubcoop.org . Your application should take the form of a single word document containing:
 
-You may insert a maximum one page Covering Letter in front with a maximum two page CV pasted at the end of the same Word document as an appendix. The panel will shortlist on the basis of essential criteria with secondary weight given to desirable criteria.
+* a covering letter (maximum one page length)
+* a statement detailing evidence of your knowledge, skills and experience which make you eligible for the job (maximum two pages)
+* a CV (maximum two pages)
+
+Applications will be shortlisted on the basis of essential criteria with secondary weight given to desirable criteria. 
 
 Please give as the document filename: **SURNAME - Events Coordinator** with the same as subject line of the email to help us keep track of applicants.
 
-For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1580407726/shrubcoop.org/media/Events_Coordinator_Job_Description_1_sn3fwa.pdf "Events_Coordinator_Job_Description_1_sn3fwa.pdf").
+For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1580752100/shrubcoop.org/media/Events_Coordinator_Job_Description_llk8wm.pdf "Events_Coordinator_Job_Description_llk8wm.pdf").
 
 **Interviews will be held on 10th March. We will be looking for the successful applicant to start on or as soon as possible after 1st April 2020.**
