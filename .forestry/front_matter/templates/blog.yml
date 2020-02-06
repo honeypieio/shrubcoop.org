@@ -33,8 +33,8 @@ fields:
   hidden: true
   default: news
 pages:
-- content/become-a-trustee-of-shrub-coop-1.md
 - content/become-a-trustee-of-shrub-coop.md
 - content/events/clothes-swap.md
 - content/introducing-the-welfare-working-group.md
 - content/our-journey-to-a-zero-waste-café-begins.md
+- content/treasurer_trustee_2020.md
