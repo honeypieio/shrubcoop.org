@@ -23,7 +23,7 @@ Serving as a Trustee is an opportunity to learn about the governance of a not-fo
 
 #### Key Responsibilities
 
-Trustees’ key **responsibilities** fall into the following areas: 
+Trustees’ key **responsibilities** fall into the following areas:
 
 * Vision mission and aims
 * Strategy and objectives
