@@ -33,6 +33,7 @@ fields:
   hidden: true
   default: news
 pages:
+- content/become-a-trustee-of-shrub-coop-1.md
 - content/become-a-trustee-of-shrub-coop.md
 - content/events/clothes-swap.md
 - content/introducing-the-welfare-working-group.md
