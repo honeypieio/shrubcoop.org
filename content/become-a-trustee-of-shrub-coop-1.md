@@ -81,7 +81,7 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 For more details on the role, please read the [Treasurer information pack](https://res.cloudinary.com/shrub-co-op/image/upload/v1580998761/shrubcoop.org/media/SHRUB_Treasurer_information_2020_frpjqb.pdf "SHRUB_Treasurer_information_2020_frpjqb.pdf").
 
-Interested? Great! Please download and complete the [application form](https://dochttps://docs.google.com/document/d/1HNHrLjy9JTEUhi0Zwu8xTbHZ3OIG5y6DzYaDm1IQ2Fk/edit?usp=sharings.google.com/document/d/1w82EOHleoAIWaWl_duuhBfVh8Up7cVXYNDq3uXr0gao/edit) for you to give our members an idea about why you’d like to be a Trustee - and the skills and experience you’d bring to the mix.
+Interested? Great! Please download and complete the [application form](https://docs.google.com/document/d/1HNHrLjy9JTEUhi0Zwu8xTbHZ3OIG5y6DzYaDm1IQ2Fk/edit?usp=sharing) for you to give our members an idea about why you’d like to be a Trustee - and the skills and experience you’d bring to the mix.
 
 Please email your application, along with a copy of your CV, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org) with subject “**Trustee application YOUR NAME**”**.**
 
