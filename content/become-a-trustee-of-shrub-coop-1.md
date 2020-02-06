@@ -1,30 +1,29 @@
 +++
 author = "SHRUB Coop"
-date = 2019-10-25T14:00:00Z
-description = "We're recruiting for next year's trustees. Application deadline 24th November"
-draft = true
+date = 2020-02-06T23:00:00Z
+description = "Could you be our new treasurer? Apply here!"
 tags = ["zero-waste-hub", "food-sharing-hub", "wee-spoke-hub", "shrub-space", "swapshop"]
-title = "Become a trustee of SHRUB Coop!"
+title = "Trustee opportunity: We're looking for a treasurer!"
 type = "news"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1572008860/shrubcoop.org/media/web_image_template_tm3vs6.png)
 
-Our Annual General Meeting is coming up and its time to select another group of trustees to guide the coop through 2020!
+SHRUB Cooperative has registered as a Scottish Charitable Incorporated Organisation (SCIO). Our Constitution provides for the Board of Trustees to oversee the activities of SHRUB Cooperative and ensure we act in accordance with our purposes and the wishes of members of the Cooperative.
 
-We invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees. We are particularly looking for people with experience in the fields of **Community Development, Finance, HR and Fundraising** but Trustees have a wide-ranging remit and there are opportunities for involved across the work that SHRUB undertakes.
+We invite applications from individuals interested in contributing to the Coop’s development to join the board of trustees as a treasurer. At this time we are particularly looking for professionals in the fields of Accountancy and Financial Management. **We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people and women.**
+
+SHRUB is a cooperative of Members who contribute to decision-making processes. Trustees have special legal responsibilities and, in some circumstances may have to make sensitive or critical decisions on behalf of the Coop.
 
 #### Why become a Trustee?
 
-SHRUB is a cooperative with premises in central Edinburgh. Our Members contribute to decision- making processes. Trustees have special legal responsibilities and, in some circumstances may have to make sensitive or critical decisions on behalf of the Coop.
-
-Trustees learn about how our Social Enterprise runs and gain skills in leadership, problem-solving and innovation, strategic judgement and effective communication, to name a few.
+Trustees learn about how our social enterprise runs and gain skills in leadership, problem-solving and innovation, strategic judgement and effective communication, to name a few.
 
 Serving as a Trustee is an opportunity to learn about the governance of a not-for-profit organisation in a supportive environment, learning from more experienced Trustees and staff and the fresh perspective of newer Members alike.
 
 #### Key Responsibilities
 
-Trustees’ key responsibilities fall into the following areas:
+Trustees’ key **responsibilities** fall into the following areas: 
 
 * Vision mission and aims
 * Strategy and objectives
@@ -34,25 +33,31 @@ Trustees’ key responsibilities fall into the following areas:
 * Governance processes
 * Succession planning
 
+Please have a read of the [Treasurer information pack](https://res.cloudinary.com/shrub-co-op/image/upload/v1580985682/shrubcoop.org/media/SHRUB_Treasurer_information_2020_fnjrvy.pdf "SHRUB_Treasurer_information_2020_fnjrvy.pdf") for more details.
+
 #### What skills do I need?
 
-Trustees have a wide-ranging remit with some people leading on particular aspects, some playing a more general role. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people, and women.
+Trustees have a wide-ranging remit with some people leading on particular aspects, some playing a more general role. **We are looking to recruit trustees with specialist skills in Accountancy or Financial Management but Trustees have a wide-ranging remit and there will be opportunities to be involved across the breadth of work that SHRUB undertakes.**
 
-Trustees are responsible for overseeing development of the strategic framework within which day-to-day tasks are carried out by staffers and volunteers, and they help guide our long-term planning.
+To flourish as a Trustee, you must be committed, passionate, flexible!
 
 **What is the time commitment?**
 
-As a voluntary Trustee, you will make some clear time commitments: to attend regular Trustee meetings (2 hours each month, currently on a Monday evening), and participate in our “Staff Buddy” system to support staff and ensure good communication between staff and Trustees (typically you will buddy one staff member and meet with them every 1 - 2 months).
+As a voluntary Trustee, you will make some clear time commitments: to attend regular Trustee meetings (**2 hours, monthly on a monday evening**), and participate in our “Buddy and Steward” system to support staff and ensure good communication between staff and Trustees (**typically you will buddy one staff member and meet with them every 1-2 months**). Trustees will also have oversight of the work of their relevant Working Group (Finance) - attending meetings where possible and contributing to the direction and content of work.
 
-Trustees will preferably participate in the work of a Working Group - attending meetings where possible and contributing to the direction and content of work.
+As a cooperative, our community of members are invited to participate in Decision-making meetings once a month. At least one member of the Trustee board will be required to attend these meetings each month (**5-8pm one thursday a month on a rotating basis**)
 
-As a cooperative, our community of members are invited to participate in decision-making meetings. At least one Trustee attends these meetings (5-8pm Thursday once a month). There is opportunity outside of these times to contribute to new projects and discussions.
+There may also be opportunity outside of these times to contribute to new projects and discussions.
 
-Time off can be arranged among Trustees, ensuring that there is a balance between Trustees’ wellbeing and SHRUB Coop functioning. If you cannot make a meeting you let people know.
+Time off can be arranged among Trustees, ensuring that there is a balance between Trustees’ wellbeing and SHRUB Coop functioning. There is an expectation that if you cannot make a meeting you let people know.
+
+There is a Welfare Working Group to support mental, physical and emotional wellbeing of staff, volunteers and members if you need support in regulating your engagement.
 
 **Who can apply?**
 
-Anyone who supports the Vision and Mission of SHRUB Coop is invited to apply. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people, other members of the LGBT+ community, and women.
+Anyone with Accountancy or Financial Management experience who supports the Vision and Mission of SHRUB Coop is invited to apply.
+
+**We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people, other members of the LGBT+ community, and women.**
 
 **Background:**
 
@@ -74,12 +79,10 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 **How Do I Apply?**
 
-We'd like to invite anyone interested in becoming a trustee to attend an open information session on **Monday 11th November, 6pm at the Zero Waste Hub**.
+For more details on the role, please read the [Treasurer information pack](https://res.cloudinary.com/shrub-co-op/image/upload/v1580985682/shrubcoop.org/media/SHRUB_Treasurer_information_2020_fnjrvy.pdf "SHRUB_Treasurer_information_2020_fnjrvy.pdf").
 
-To apply, simply save a copy of this [form](https://docs.google.com/document/d/1b6qqDdh5xN7KMKtgPJH0EBCxyb1l_Vqa3zxNiMnNgFY/edit?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **Sunday 24th of November**.
+Interested? Great! Please download and complete the [application form](https://docs.google.com/document/d/1w82EOHleoAIWaWl_duuhBfVh8Up7cVXYNDq3uXr0gao/edit) for you to give our members an idea about why you’d like to be a Trustee - and the skills and experience you’d bring to the mix.
 
-Applications will be considered at our AGM, which you re very welcome to attend!
+Please email your application, along with a copy of your CV, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org) with subject “**Trustee application YOUR NAME**”**.**
 
-For more information, please have a read of our [information pack](https://res.cloudinary.com/shrub-co-op/image/upload/v1571932521/shrubcoop.org/media/Trustee_invitation_-_October_2019_vx2vr2.pdf "Trustee_invitation_-_October_2019_vx2vr2.pdf").
-
-Any questions please email us at [hello@shrubcoop.org](mailto:hello@shrubcoop.org).
+Paper versions of the application form are available on request.
