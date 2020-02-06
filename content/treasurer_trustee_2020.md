@@ -2,6 +2,7 @@
 author = "SHRUB Coop"
 date = 2020-02-06T23:00:00Z
 description = "Could you be our new treasurer? Apply here!"
+draft = true
 tags = ["zero-waste-hub", "food-sharing-hub", "wee-spoke-hub", "shrub-space", "swapshop"]
 title = "Trustee opportunity: We're looking for a treasurer!"
 type = "news"
