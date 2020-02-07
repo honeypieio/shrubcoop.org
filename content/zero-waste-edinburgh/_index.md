@@ -4,7 +4,7 @@ title = "Zero Waste Edinburgh Map"
 type = "zero-waste-map"
 
 +++
-#### About
+#### About this map
 
 We've built this map to make living sustainably in Edinburgh a little bit easier. Are you out of washing up liquid and looking for your nearest refill shop? Or interested in getting hands-on and joining a community reuse project? By browsing the categories on this map, you'll be able to browse all sorts of useful suggestions and opportunities across the city in handy one place.
 
