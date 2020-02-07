@@ -1,6 +1,6 @@
 +++
-description = "A guide to zero waste projects in and around Edinburgh"
-title = "Zero Waste Edinburgh"
+description = "An interactive map of zero waste shops and community reuse projects in Edinburgh!"
+title = "Zero Waste Edinburgh Map"
 type = "zero-waste-map"
 
 +++
