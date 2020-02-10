@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "As a member you're welcome to take part in how our organisation is run!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub", "swapshop", "food-sharing-hub", "wee-spoke-hub", "shrub-space"]
-time = 2020-02-05T18:00:00Z
+time = 2020-03-05T18:00:00Z
 title = "Members' Decision Making Meeting"
 
 +++
