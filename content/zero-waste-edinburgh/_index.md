@@ -4,7 +4,7 @@ title = "Zero Waste Edinburgh Map"
 type = "zero-waste-map"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1581439876/shrubcoop.org/media/ZWE_map_wnyxz8.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1581440075/shrubcoop.org/media/web_ZWE_map_v5udww.png)
 
 #### About the map
 
