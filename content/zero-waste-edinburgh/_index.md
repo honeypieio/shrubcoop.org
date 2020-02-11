@@ -12,4 +12,4 @@ We've built this map to make living sustainably in Edinburgh a little bit easier
 
 #### Help us improve the map!
 
-If you have suggestions for businesses or community projects to appear on the map, please get in touch at [info.zwe@shrubcoop.org](mailto:info.zwe@shrubcoop.org). We want this resource to encourage businesses to take positives steps towards sustainability however SHRUB Coop reserves the right to exclude listings that don't meet our ethical standard.
+If you have suggestions for businesses or community projects to appear on the map, please get in touch at [info.zwe@shrubcoop.org](mailto:info.zwe@shrubcoop.org). We want this resource to encourage businesses to take positives steps towards sustainability however SHRUB Coop reserves the right to exclude listings that don't meet our ethical standards.
