@@ -4,11 +4,11 @@ title = "Zero Waste Edinburgh Map"
 type = "zero-waste-map"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1581440791/shrubcoop.org/media/web_ZWE_map_1_l2wswg.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1581440075/shrubcoop.org/media/web_ZWE_map_v5udww.png)
 
 #### About the map
 
-We've built this map to make living sustainably in Edinburgh a little bit easier. Are you out of washing up liquid and looking for your nearest refill shop? Or interested in getting hands-on and joining a community reuse project? By browsing the categories on this map, you'll be able to browse all sorts of useful suggestions and opportunities across the city in handy one place.
+We've built this map to make living sustainably in Edinburgh a little bit easier. Are you out of washing up liquid and looking for your nearest refill shop? Or are you seeking to kit out your wardrobe with second hand fashion? By browsing the categories on this map, you'll be able to browse all sorts of useful suggestions and opportunities across the city in handy one place.
 
 **Top tip:** Expand the map legend by clicking on the button in the top left-hand corner of the map. This will help you filter categories to find exactly what you're looking for.
 
