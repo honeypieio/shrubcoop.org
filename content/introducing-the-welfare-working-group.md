@@ -45,4 +45,10 @@ I’ve recently joined SHRUB welfare volunteer team, after being involved with w
 
 Contact: [eleanor@shrubcoop.org](mailto:eleanor@shrubcoop.org)
 
+**Corran:**
+
+Corran is our newest member - photo and bio to come shortly!
+
+Contact: corran@shrubcoop.org
+
 Once again, we’d love to hear from anyone who is interested in joining! Please contact any of the people above or email [welfare@shrubcoop.org](mailto:welfare@shrubcoop.org) if you’re interested.
