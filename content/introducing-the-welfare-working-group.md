@@ -1,6 +1,6 @@
 +++
 author = "Welfare Working Group"
-date = 2020-01-07T10:00:00Z
+date = 2020-02-27T10:00:00Z
 description = "Meet SHRUB's Welfare Working Group - who we are, what we do and how to get in touch with us."
 tags = []
 title = "Introducing the Welfare Working Group"
@@ -47,7 +47,9 @@ Contact: [eleanor@shrubcoop.org](mailto:eleanor@shrubcoop.org)
 
 **Corran:**
 
-Corran is our newest member - photo and bio to come shortly!
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1582812474/shrubcoop.org/media/IMG_20180907_163232_vl8wrc.jpg)
+
+I joined the SHRUB welfare team after being inspired by the amazing community that SHRUB creates! I believe in everything SHRUB does, and I believe that it's now more important than ever. However, I know that when you're passionate about a project, it's very easy to forget your own welfare and become burnt out, and so by being part of the welfare working group, I hope to help everyone to look after themselves as well as the planet.
 
 Contact: corran@shrubcoop.org
 
