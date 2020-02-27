@@ -9,8 +9,8 @@ type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1582133910/shrubcoop.org/media/Copy_of_Were-hiring_gkplu6.png)
 
-**Salary: £25,000pa pro rata (£15,000) + Pension Contribution, part-time 21 hours / week (Friday-Sunday 11-6pm)  
-**_Fixed Term Contract to 31st March 2022 - extension subject to successful funding bids  
+\**Salary: £25,000pa pro rata (£15,000) + Pension Contribution, part-time 21 hours / week (Friday-Sunday 11-6pm)  
+\**_Fixed Term Contract to 31st March 2022 - extension subject to successful funding bids  
 Pending confirmation of funding_
 
 **Application closing date: midnight on Sunday 15th March 2020**
@@ -19,7 +19,7 @@ Pending confirmation of funding_
 
 The Swapshop Coordinator is responsible for the day to day retail management and development of the Swapshop in our vibrant Zero Waste Hub from Friday to Sunday. In collaboration with the full-time Swapshop Coordinator, this role oversees the running of the shop and supports the Swapshop volunteers to ensure the Swapshop is a thriving enterprise working towards SHRUB’s zero waste ethos and charitable objectives. This is primarily a retail-focused role whilst coordinating volunteers on a daily basis.
 
-SHRUB is a non-hierarchical member-led Cooperative with a large and enthusiastic community of volunteers who are essential to the delivery of our aims. As a part of the SHRUB team, your day to day work will also involve the necessary decision-making, problem-solving and volunteer management which enables SHRUB as a whole to thrive.
+SHRUB is a non-hierarchical member-led Cooperative with a large and enthusiastic community of volunteers who are essential to the delivery of our aims. As a part of the SHRUB team, your day to day work will also involve the necessary decision-making, problem-solving and volunteer management which enables SHRUB as a whole to thrive. This position is funded through the Scottish Government’s Climate Challenge Fund.
 
 **Successful applicants must have experience and skills in the following areas:**
 
@@ -57,6 +57,8 @@ The panel will shortlist on the basis of essential criteria with secondary weigh
 
 Please give as the document filename: **SURNAME - Swapshop Coordinator part-time** with the same as subject line of the email to help us keep track of applicants.
 
-For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1582133959/shrubcoop.org/media/Swapshop_Coordinator_Job_Description_-_Part-Time_0.6FTE_lws8je.pdf "Swapshop_Coordinator_Job_Description_-_Part-Time_0.6FTE_lws8je.pdf") .
+For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1582819828/shrubcoop.org/media/Swapshop_Coordinator_Job_Description_-_Part-Time_0.6FTE_1_woz8yg.pdf "Swapshop_Coordinator_Job_Description_-_Part-Time_0.6FTE_1_woz8yg.pdf").
 
 **Interviews will be held on the 25th March in Edinburgh. We will be looking for the successful applicant to start on or as soon as possible after 1st April 2020.**
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1582819540/shrubcoop.org/media/ccf-gs-logo-strip-a5-cmyk-300dpi_zrvqsu.jpg)
