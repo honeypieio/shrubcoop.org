@@ -50,7 +50,7 @@ Applications will be shortlisted on the basis of essential criteria with seconda
 
 Please give as the document filename: **SURNAME - Events Coordinator** with the same as subject line of the email to help us keep track of applicants.
 
-For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1580752100/shrubcoop.org/media/Events_Coordinator_Job_Description_llk8wm.pdf "Events_Coordinator_Job_Description_llk8wm.pdf").
+For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1582819744/shrubcoop.org/media/Events_Coordinator_Job_Description_1_hkc4om.pdf "Events_Coordinator_Job_Description_1_hkc4om.pdf") .
 
 **Interviews will be held on 10th March. We will be looking for the successful applicant to start on or as soon as possible after 1st April 2020.**
 
