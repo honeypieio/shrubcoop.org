@@ -8,15 +8,14 @@ type = "news"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1580488502/shrubcoop.org/media/events_web_1_jsbhy0.png)**Salary £25,000 p.a pro rata (£20,000), part time 28 hours / week**  
-_Fixed term contract to 31 March 2022 – extension subject to successful funding bids  
-Pending confirmation of funding_  
+_Fixed term contract to 31 March 2022 – extension subject to successful funding bids_  
 **Application Deadline:** **midnight 23rd February 2020**
 
 **Job purpose:**
 
 The Events Coordinator oversees SHRUB’s events and workshops activity, with the aim of developing circular economy and a world without waste within the community. This includes coordinating SHRUB’s End of Term Collections and Freeshops, inducting and supporting SHRUB’s regular and one-off events volunteers, helping SHRUB members and volunteers to run events which are in line with SHRUB’s mission and carbon targets, and overseeing the development of SHRUB’s external spacebooking system.
 
-SHRUB is a non-hierarchical member-led Cooperative with a large and enthusiastic community of volunteers who are essential to the delivery of our aims. As a part of the SHRUB team, your day to day work will also involve the necessary strategic planning, decision-making, problem-solving and volunteer management which enables SHRUB as a whole to thrive.
+SHRUB is a non-hierarchical member-led Cooperative with a large and enthusiastic community of volunteers who are essential to the delivery of our aims. As a part of the SHRUB team, your day to day work will also involve the necessary strategic planning, decision-making, problem-solving and volunteer management which enables SHRUB as a whole to thrive. This position is funded through the Scottish Government’s Climate Challenge Fund.
 
 **Successful applicants must have experience and skills in the following areas:**
 
@@ -47,10 +46,12 @@ To apply please email by **midnight on 23rd February 2020** to jobs@shrubcoop.or
 * a statement detailing evidence of your knowledge, skills and experience which make you eligible for the job (maximum two pages)
 * a CV (maximum two pages)
 
-Applications will be shortlisted on the basis of essential criteria with secondary weight given to desirable criteria. 
+Applications will be shortlisted on the basis of essential criteria with secondary weight given to desirable criteria.
 
 Please give as the document filename: **SURNAME - Events Coordinator** with the same as subject line of the email to help us keep track of applicants.
 
 For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1580752100/shrubcoop.org/media/Events_Coordinator_Job_Description_llk8wm.pdf "Events_Coordinator_Job_Description_llk8wm.pdf").
 
 **Interviews will be held on 10th March. We will be looking for the successful applicant to start on or as soon as possible after 1st April 2020.**
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1582819540/shrubcoop.org/media/ccf-gs-logo-strip-a5-cmyk-300dpi_zrvqsu.jpg)
