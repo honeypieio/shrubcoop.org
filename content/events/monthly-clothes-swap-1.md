@@ -1,16 +1,15 @@
 +++
 author = "Swapshop"
 description = "We're hosting our 5th clothes swap!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
-time = 2020-02-16T14:00:00Z
-title = "Monthly Clothes Swap!"
+time = 2020-03-15T14:00:00Z
+title = "Monthly Clothes Swap! #passitonweek"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1581079757/shrubcoop.org/media/83081489_4027801067245483_2368316018658377728_o_rj9x3i.jpg)
 
-We're hosting our 5th clothes swap! It's an opportunity for you to bring along as many unwanted/ unworn items of clothing and leave with some 'new' things to keep you going until the next one!
+On the last day of [#passitonweek](https://www.facebook.com/hashtag/passitonweek), we're hosting our next monthly clothes swap! It's an opportunity for you to bring along as many unwanted/ unworn items of clothing and leave with some 'new' things to keep you going until the next one!
 
 #### WHAT?
 
@@ -18,7 +17,7 @@ Clothes swap, bring good quality clothes to hang up
 
 #### HOW?
 
-Please arrive between 2pm-2.30pm. During this time you will be able to hang up the clothes you have brought.   
+Please arrive between 2pm-2.30pm. During this time you will be able to hang up the clothes you have brought.  
 Once everything is hung up we will invite everyone to pick a couple of items to try on. Once everyone has tried on what they have chosen we will do another round of picking, and so on until everyone is satisfied (or until stock lasts!)
 
 #### WHEN?
