@@ -3,7 +3,7 @@ author = "Zero Waste Edinburgh"
 description = "In this hands-on workshop, you'll learn how to make your own household cleaning products from scratch - perfect for Spring cleaning!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub"]
-time = 2020-03-18T00:00:00Z
+time = 2020-03-18T18:00:00Z
 title = "Zero Waste Cleaning Products workshop"
 
 +++
