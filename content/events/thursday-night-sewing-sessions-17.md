@@ -1,14 +1,13 @@
 +++
 author = "Events and Workshops"
 description = "An open workshop where you can learn to make and mend or get advice on sewing projects!"
-draft = true
 location = "SHRUB Space, 17 Guthrie Street, EH1 1JG"
 tags = ["shrub-space"]
-time = 2020-01-16T17:00:00Z
-title = "Thursday night sewing sessions"
+time = 2020-03-10T17:00:00Z
+title = "Evening sewing sessions"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568821838/shrubcoop.org/media/sewing_sessions_FB_event_banner_1_oy6liq.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1583848609/shrubcoop.org/media/87832362_1714533455347773_5794007111046266880_o_gkejst.jpg)
 
 Are you itching to start any sewing projects? Have you got a well loved item of clothing you want to mend? Come along to our sewing drop-in sessions!
 
