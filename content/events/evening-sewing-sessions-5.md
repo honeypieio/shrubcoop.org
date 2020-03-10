@@ -1,10 +1,9 @@
 +++
 author = "Events and Workshops"
 description = "An open workshop where you can learn to make and mend or get advice on sewing projects!"
-draft = true
 location = "SHRUB Space, 17 Guthrie Street, EH1 1JG"
 tags = ["shrub-space"]
-time = 2020-03-19T17:00:00Z
+time = 2020-03-26T17:00:00Z
 title = "Evening sewing sessions"
 
 +++
