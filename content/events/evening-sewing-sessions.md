@@ -4,7 +4,7 @@ description = "An open workshop where you can learn to make and mend or get advi
 location = "SHRUB Space, 17 Guthrie Street, EH1 1JG"
 tags = ["shrub-space"]
 time = 2020-03-12T17:00:00Z
-title = "Evening sewing sessions"
+title = "CANCELLED - Evening sewing sessions"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1583848609/shrubcoop.org/media/87832362_1714533455347773_5794007111046266880_o_gkejst.jpg)
