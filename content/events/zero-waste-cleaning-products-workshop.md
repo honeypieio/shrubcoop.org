@@ -4,7 +4,7 @@ description = "In this hands-on workshop, you'll learn how to make your own hous
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub"]
 time = 2020-03-18T18:00:00Z
-title = "Zero Waste Cleaning Products workshop"
+title = "CANCELLED - Zero Waste Cleaning Products workshop"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1583848346/shrubcoop.org/media/87799462_4144692038889718_3481385943359815680_o_ygi8du.jpg)
