@@ -4,7 +4,7 @@ description = "Our friendly mechanics will help you get back in the saddle!"
 location = "Wee Spoke Hub, 13 Guthrie Street, EH1 1JG"
 tags = ["wee-spoke-hub"]
 time = 2020-03-17T17:00:00Z
-title = "Fix your own bike workshop"
+title = "CANCELLED - Fix your own bike workshop"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568757089/shrubcoop.org/media/Wee_Spoke_Hub_FB_event_banner_yydsig.png)
