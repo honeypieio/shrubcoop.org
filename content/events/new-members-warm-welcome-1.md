@@ -4,7 +4,7 @@ description = "Are you interested in volunteering for SHRUB, become a paying mem
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub", "swapshop", "food-sharing-hub", "wee-spoke-hub", "shrub-space"]
 time = 2020-03-25T17:30:00Z
-title = "New Members Warm Welcome!"
+title = "CANCELLED - New Members Warm Welcome!"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1578576097/shrubcoop.org/media/82210021_3978985725460351_2542586610206113792_o_i4yyha.jpg)

@@ -4,7 +4,7 @@ description = "The fashion industry is now the second most polluting industry in
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
 time = 2020-03-25T19:00:00Z
-title = " Sustainable Fashion Meetup Group"
+title = " CANCELLED - Sustainable Fashion Meetup Group"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568673237/shrubcoop.org/media/69999088_3582411288451132_3821812949685633024_n_uxpgnp.jpg)

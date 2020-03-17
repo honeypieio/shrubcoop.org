@@ -4,7 +4,7 @@ description = "Need a space to process the climate crisis with others?"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub", "swapshop"]
 time = 2020-03-20T15:00:00Z
-title = "Climate Cafe"
+title = "CANCELLED - Climate Cafe"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1581080181/shrubcoop.org/media/83763714_4056863921005864_7802500042480156672_o_zqclsj.jpg)Need a space to process the climate crisis with others? Want to find your place in this discussion? Come along to our Climate Cafe to discuss issues and solutions!
