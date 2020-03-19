@@ -93,7 +93,7 @@
 
       {{ .Params.membership_sign_up_body | markdownify }}
 
-      <!--<button class="btn btn-shrub btn-block" data-toggle="modal" data-target="#membershipSignUpModal">{{ .Params.membership_sign_up_button }}</button>-->
+      <button class="btn btn-shrub btn-block" data-toggle="modal" data-target="#membershipSignUpModal">{{ .Params.membership_sign_up_button }}</button>
     </div>
   </div>
 
@@ -121,7 +121,7 @@
   </div>
 </div>
 
-<!--
+
 <div class="modal fade" id="membershipSignUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content">
@@ -373,20 +373,20 @@
 -->
 
 <script src="{{ .Site.BaseURL }}js/volunteer-roles.js"></script>
-<!--<script src="{{ .Site.BaseURL }}js/validation-methods.js"></script>-->
-<!--<script src="{{ .Site.BaseURL }}js/membership-signup.js"></script>-->
+<script src="{{ .Site.BaseURL }}js/validation-methods.js"></script>
+<script src="{{ .Site.BaseURL }}js/membership-signup.js"></script>
 
 <script>
 var BaseURL = "{{ .Site.BaseURL }}";
 var murakamiRolesKey = "{{ .Site.Params.murakamiRolesKey }}"
-//var membershipSignUpKey = "{{ .Site.Params.murakamiMembershipSignUpKey }}"
+var membershipSignUpKey = "{{ .Site.Params.murakamiMembershipSignUpKey }}"
 var rolesLimit = 3;
 var truncateRoleDescriptions = true;
 
 $(document).ready(function(){
   getAllVolunteerRoles()
 
-  /*var date = new Date();
+  var date = new Date();
   $('#dob').prop('max', (date.getFullYear()-16)+"-"+
                         ('0' + (date.getMonth()+ +1)).slice(-2)+"-"+
                         ('0' + date.getDate()).slice(-2));
@@ -414,7 +414,7 @@ $(document).ready(function(){
     $("#saferSpacesPolicyBody").html(signUpInfo.saferSpacesPolicy.markup);
     $("#membershipBenefitsBody").html(signUpInfo.membershipBenefits.markup);
     $("#privacyNoticeBody").html(signUpInfo.privacyNotice.markup);
-  });*/
+  });
 
 })
 
