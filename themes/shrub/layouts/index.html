@@ -117,7 +117,7 @@
   {{ if (eq .Params.hide_carbon_counter "false") }}
 
     $.ajax({
-      url: "https://murakami.org.uk/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiCarbonKey }}",
+      url: "https://murakami.shrubcoop.org/api/get/reports/all-time/carbon-saved?key={{ .Site.Params.murakamiCarbonKey }}",
       type: "GET",
       success: function(res) {
         if (!parseFloat(res)) {

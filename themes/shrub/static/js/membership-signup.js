@@ -43,7 +43,7 @@ function completeSignUp() {
     // Create member, log transaction on Murakami
     $.ajax({
       url:
-        "https://murakami.org.uk/api/post/members/remote-add?key=" +
+        "https://murakami.shrubcoop.org/api/post/members/remote-add?key=" +
         membershipSignUpKey,
       type: "POST",
       data: newMember,
@@ -75,7 +75,7 @@ function completeSignUp() {
               if (checkoutRes.status == "PAID") {
                 $.ajax({
                   url:
-                    "https://murakami.org.uk/api/post/members/remote-add/verify-payment?key=" +
+                    "https://murakami.shrubcoop.org/api/post/members/remote-add/verify-payment?key=" +
                     membershipSignUpKey,
                   type: "POST",
                   data: {
@@ -240,7 +240,7 @@ function validateMembershipForm() {
 function getSignUpInfo(callback){
   $.ajax({
     url:
-      "https://murakami.org.uk/api/get/members/sign-up-info?key=" +
+      "https://murakami.shrubcoop.org/api/get/members/sign-up-info?key=" +
       membershipSignUpKey,
     type: "GET",
     success: function(murakamiResponse) {

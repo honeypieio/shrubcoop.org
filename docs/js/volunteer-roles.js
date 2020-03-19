@@ -5,7 +5,7 @@ function getAllVolunteerRoles() {
   // Make request to murakami.
   $.ajax({
     url:
-      "https://murakami.org.uk/api/get/volunteers/roles/get-public?key=" +
+      "https://murakami.shrubcoop.org/api/get/volunteers/roles/get-public?key=" +
       murakamiRolesKey,
     type: "GET",
     success: function(res) {
@@ -80,7 +80,7 @@ function writeVolunteerRolesList(roles) {
 function getVolunteerRole(roleId) {
   $.ajax({
     url:
-      "https://murakami.org.uk/api/get/volunteers/roles/get-public/" +
+      "https://murakami.shrubcoop.org/api/get/volunteers/roles/get-public/" +
       roleId +
       "?key=" +
       murakamiRolesKey,
