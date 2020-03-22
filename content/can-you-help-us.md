@@ -11,11 +11,16 @@ type = "news"
 #### Since 2013 we have...
 
 * Saved over **1,700 tonnes of carbon** from being added to the atmosphere. That's the equivalent of **11,000 flights** from Edinburgh to London
+
 * Supported **hundreds of volunteers** to gain new skills and confidence
+
 * Educated **thousands of people in Edinburgh** to repair and reuse things instead of needlessly throwing them away
+
 * Created a **special community** and friendships that will last a lifetime
 
 #### ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584844977/shrubcoop.org/media/funding_newsletter_1_zcfqcs.png)
+
+***
 
 #### As a charity, we rely on grants and fundraising to keep going.
 
