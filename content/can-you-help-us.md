@@ -1,15 +1,13 @@
 +++
 author = "SHRUB Coop"
 date = 2020-03-21T18:00:00Z
-description = "Since 2013 we have saved over 1,700 tonnes of carbon from being added to the atmosphere."
+description = "COVID-19 has forces us to temporarily close our activities and it's having a big impact on our income."
 draft = true
 tags = []
-title = "Can you help us?"
+title = "Can you help us continue to create a world without waste?"
 type = "news"
 
 +++
-## can you help us?
-
 #### Since 2013 we have...
 
 * Saved over **1,700 tonnes of carbon** from being added to the atmosphere. That's the equivalent of **11,000 flights** from Edinburgh to London
