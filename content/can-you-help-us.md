@@ -18,6 +18,8 @@ type = "news"
 
 * Created a **special community** and friendships that will last a lifetime
 
+  ***
+
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584846944/shrubcoop.org/media/funding_newsletter_1a_bivgmo.png)
 
 ***
@@ -32,9 +34,13 @@ The COVID-19 pandemic has also forced us to temporarily close the Zero Waste Hub
 
 We understand that this is a hard time for everyone and a lot of people are concerned about their own financial situation. It's important that you take care of yourself and your family first.
 
+***
+
 ##### If you are in a position to help us, could you make a donation to SHRUB Coop?
 
 [Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
+
+***
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584847046/shrubcoop.org/media/funding_newsletter_1b_sigegk.png)
 
@@ -62,6 +68,8 @@ Our budget for this year was set before the crisis hit, and our staff and truste
   
 As our project funding has not yet been confirmed, **fundraising is now more important than ever** to keep our activities going when we reopen.
 
+***
+
 > ##### We understand that right now, a lot of people are concerned about their own financial situation.  
 >   
 > It's important that you take care of yourself and your family first.  
@@ -73,6 +81,8 @@ As our project funding has not yet been confirmed, **fundraising is now more imp
 ***
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584847085/shrubcoop.org/media/funding_newsletter_2a_bubqc7.png)
+
+***
 
 #### Together, we are creating a world without waste.
 
@@ -86,6 +96,8 @@ Over the years, our community has worked tirelessly to reduce waste on all front
 All that hard work adds up. We've saved over **1,700 tonnes of carbon.  
   
 It's the same as planting a forest the size of 4.74 football pitches.**
+
+***
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584847105/shrubcoop.org/media/funding_newsletter_2b_t80q2y.png)
 
@@ -107,6 +119,8 @@ I gained professional skills that I might not have learnt at university. I was a
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584845238/shrubcoop.org/media/unnamed_2_wz0rm0.jpg)
 
+***
+
 ##### Francesca's story...
 
 _"The SHRUB has been like a home far away from home for me. I’m a traveller, and I travel with my backpack of skills and experiences. When I moved to Edinburgh, I was looking for a place where I could share my passion about self-sustainability with other people, and the SHRUB gave me the perfect opportunity to do so.  
@@ -114,6 +128,8 @@ _"The SHRUB has been like a home far away from home for me. I’m a traveller, a
 I felt welcomed and trusted from the start, everyone helped me realize my ideas about workshops and after the first one, soap making, I was incredibly happy to see everyone smiling and going home with their own soap, freshly made, like they just discover a beautiful treasure. It was incredible how much positivity was enclosed in something so simple and small like a bar of soap."_
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584845256/shrubcoop.org/media/unnamed_3_sipq0x.jpg)
+
+***
 
 ##### We have hundreds of stories like Lucy's and Francesca's.  
   
