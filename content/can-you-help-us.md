@@ -113,11 +113,11 @@ I felt welcomed and trusted from the start, everyone helped me realize my ideas 
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584845256/shrubcoop.org/media/unnamed_3_sipq0x.jpg)
 
-> ##### We have hundreds of stories like Lucy's and Francesca's.  
->   
-> Can you make a donation to support many more volunteers to gain new skills and confidence?
->
-> [Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
+##### We have hundreds of stories like Lucy's and Francesca's.  
+  
+Can you make a donation to support many more volunteers to gain new skills and confidence?
+
+[Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
 
 ***
 
