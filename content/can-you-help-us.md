@@ -52,6 +52,8 @@ So far, all of our activities have been funded between two grant funds, the Clim
   
 **However there is still a long way to go.** By donating, you can help us to cover some of our core costs and keep our activities going while we wait for the outcome of our funding applications.
 
+***
+
 #### How does COVID-19 change things?
 
 To do our part to help flatten the curve of the COVID-19 pandemic, we've temporarily closed all public activities until further notice. **This is having a big impact on our income.**  
@@ -67,6 +69,8 @@ As our project funding has not yet been confirmed, **fundraising is now more imp
 > If you are in a position to help us, could you make a donation to SHRUB Coop?
 >
 > [Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
+
+***
 
 #### Together, we are creating a world without waste.
 
@@ -86,6 +90,8 @@ It's the same as planting a forest the size of 4.74 football pitches.**
 > ##### Will you make a donation today to help our community continue to create a world without waste?
 >
 > [Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
+
+***
 
 #### Stories from our community
 
@@ -113,6 +119,6 @@ I felt welcomed and trusted from the start, everyone helped me realize my ideas 
 >
 > [Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
 
-##### 
+***
 
 ##### Thank you and stay safe x
