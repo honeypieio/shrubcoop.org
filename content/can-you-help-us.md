@@ -18,7 +18,7 @@ type = "news"
 
 * Created a **special community** and friendships that will last a lifetime
 
-#### ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584844977/shrubcoop.org/media/funding_newsletter_1_zcfqcs.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584846944/shrubcoop.org/media/funding_newsletter_1a_bivgmo.png)
 
 ***
 
@@ -32,17 +32,17 @@ The COVID-19 pandemic has also forced us to temporarily close the Zero Waste Hub
 
 We understand that this is a hard time for everyone and a lot of people are concerned about their own financial situation. It's important that you take care of yourself and your family first.
 
-> ##### If you are in a position to help us, could you make a donation to SHRUB Coop?
->
-> [Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
+##### If you are in a position to help us, could you make a donation to SHRUB Coop?
+
+[Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584847046/shrubcoop.org/media/funding_newsletter_1b_sigegk.png)
 
 ***
 
 #### How much do our activities cost each year?
 
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584845022/shrubcoop.org/media/project_pie_chart_nbnsbg.png)
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584845052/shrubcoop.org/media/project_costs_gzwnhg.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584846403/shrubcoop.org/media/project_costs_combined_petqmj.png)
 
 So far, all of our activities have been funded between two grant funds, the Climate Challenge Fund and the Zero Waste Towns Fund.  
   
@@ -72,6 +72,8 @@ As our project funding has not yet been confirmed, **fundraising is now more imp
 
 ***
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584847085/shrubcoop.org/media/funding_newsletter_2a_bubqc7.png)
+
 #### Together, we are creating a world without waste.
 
 Over the years, our community has worked tirelessly to reduce waste on all fronts.
@@ -85,7 +87,7 @@ All that hard work adds up. We've saved over **1,700 tonnes of carbon.
   
 It's the same as planting a forest the size of 4.74 football pitches.**
 
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584845168/shrubcoop.org/media/funding_newsletter_2_nh56fw.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584847105/shrubcoop.org/media/funding_newsletter_2b_t80q2y.png)
 
 > ##### Will you make a donation today to help our community continue to create a world without waste?
 >
