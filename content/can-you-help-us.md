@@ -36,6 +36,8 @@ We understand that this is a hard time for everyone and a lot of people are conc
 >
 > [Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
 
+***
+
 #### How much do our activities cost each year?
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1584845022/shrubcoop.org/media/project_pie_chart_nbnsbg.png)
