@@ -1,7 +1,7 @@
 +++
 author = "SHRUB Coop"
 date = 2020-03-21T18:00:00Z
-description = "COVID-19 has forces us to temporarily close our activities and it's having a big impact on our income."
+description = "COVID-19 is having a big impact on our income."
 tags = []
 title = "Can you help us continue to create a world without waste?"
 type = "news"
