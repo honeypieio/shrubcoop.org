@@ -45,3 +45,5 @@ And finally, the biggest topic of conversation this lockdown…toilet paper! Thi
 We hope this list gives you a starting point to help you buy less, waste less and reduce your environmental footprint, during lockdown and beyond. If you have any other recommendations for eco-friendly swaps that have made lockdown life easier, let us know in the comments.
 
 Take care and stay safe!
+
+Photo credit: Shrub Coop, Marco Verch (Flickr), Wallpaper Flare. 
