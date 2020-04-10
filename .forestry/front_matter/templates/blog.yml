@@ -33,7 +33,9 @@ fields:
   hidden: true
   default: news
 pages:
+- content/6-eco-friendly-swaps-to-make-lockdown-life-easier.md
 - content/become-a-trustee-of-shrub-coop.md
+- content/can-you-help-us.md
 - content/coronavirus-update-all-activities-temporarily-suspended.md
 - content/events/clothes-swap.md
 - content/introducing-the-welfare-working-group.md
