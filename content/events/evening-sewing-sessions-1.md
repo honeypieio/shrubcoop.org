@@ -1,38 +1,47 @@
 +++
 author = "Events and Workshops"
 description = "An open workshop where you can learn to make and mend or get advice on sewing projects!"
-draft = true
 location = "SHRUB Space, 17 Guthrie Street, EH1 1JG"
 tags = ["shrub-space"]
-time = 2020-03-10T17:00:00Z
-title = "Evening sewing sessions"
+time = 2020-04-14T16:00:00Z
+title = "Online sewing sessions"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1583848609/shrubcoop.org/media/87832362_1714533455347773_5794007111046266880_o_gkejst.jpg)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1586530567/shrubcoop.org/media/sewing_sessions_FB_event_banner_1_khbicr.png)
 
-Are you itching to start any sewing projects? Have you got a well loved item of clothing you want to mend? Come along to our sewing drop-in sessions!
+During the COVID-19 crisis, we're bringing back our popular sewing sessions as online hangouts!  
+  
+Have you started sewing projects while you're stuck at home?  
+  
+Are you using this time to mend a well-loved item of clothing?  
+  
+Hop into our online hangout!
 
-We're opening the doors to our workshop space each week for people of all sewing abilities to meet and get advice.
+#### Who can join?
 
-So whether you've got an upcycling project in mind, need to repair or alter something, or want to just join us for a cup of tea, drop by!
+Anyone!
 
-We have sewing machines, tools, and some supplies to use, but if you need specific materials, please bring those along.
+No experience necessary. Everyone is welcome, this is for people of all sewing abilities to meet and get advice.  
+  
+So whether you’ve got an upcycling project in mind, need to repair or alter something, or want to just join us for a cup of tea, sign in and say hello!
 
-No experience necessary!  
-FREE entry, donations always welcome
+#### How to join
 
-#### Accessibility information
+[Join us on ZOOM](https://zoom.us/j/9731735824) on Tuesdays & Thursdays, 5pm to 7pm  
+**Password:** MaryMM
 
-The workshop space is on the ground floor and there is step free access throughout the building. The toilet is step free, but small and not wheelchair accessible.
+This event is **FREE** (donations are always welcome)
 
-All our toilets are gender neutral.
+#### After the sewing sessions
 
-If you have further questions regarding accessibility before a visit, please contact us on 0131 261 8216.
+Don't forget to join our ['Make and Mend with SHRUB'](https://www.facebook.com/groups/236741857323915) Facebook group to share your creations.
 
-#### How to get there
+#### How COVID-19 is affecting SHRUB Coop
 
-There is outdoor bicycle parking on Chambers Street, near the National Museum and on Cowgate, at the bottom of Guthrie street.
-
-**George IV Bridge routes:** 67, 42, 41, 23, 27  
-**Chamber Street routes**: 35, 45  
-**South Bridge routes:** 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14
+To do our part to help flatten the curve of the COVID-19 pandemic, we've temporarily closed all public activities until further notice. This is having a big impact on our income.  
+  
+We understand that right now, a lot of people are concerned about their own financial situation. It's important that you take care of yourself and your family first.  
+  
+If you enjoy the session tonight, learn something or feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation.  
+  
+[Click here to donate!](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SC4STHHVLD56U&source=url)
