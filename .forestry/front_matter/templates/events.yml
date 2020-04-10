@@ -23,6 +23,8 @@ fields:
     - Zero Waste Hub, 22 Bread Street, EH3 9AF
     - Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
     - SHRUB Space, 17 Guthrie Street, EH1 1JG
+    - Other (read the description for details)
+    - Online (read the description for the link)
 - type: datetime
   label: Date
   name: time
