@@ -1,6 +1,6 @@
 +++
 author = "Izi Robe "
-date = 2020-04-15T23:00:00Z
+date = 2020-04-16T16:00:00Z
 description = "Buy less, waste less and reduce your environmental footprint, during lockdown and beyond."
 tags = ["zero-waste-hub"]
 title = "6 eco-friendly swaps to make lockdown life easier "
