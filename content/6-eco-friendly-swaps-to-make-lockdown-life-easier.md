@@ -1,6 +1,6 @@
 +++
 author = "Izi Robe "
-date = 2020-04-09T23:00:00Z
+date = 2020-04-15T23:00:00Z
 description = "Buy less, waste less and reduce your environmental footprint, during lockdown and beyond."
 draft = true
 tags = ["zero-waste-hub"]
