@@ -66,4 +66,4 @@ What I am trying to say here is that there is always a better use for something 
 
 The Swapshop is always happy to take donations of good quality clothing and bric-a-brac. There are sewing sessions every Tuesday and Thursday evening 5pm - 7pm with people to help in any way you need.
 
-    Unfortunately all SHRUB activities are cancelled at the moment but we will let you know when they are back up and running.
+> > Unfortunately all SHRUB activities are cancelled at the moment but we will let you know when they are back up and running.
