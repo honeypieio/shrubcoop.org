@@ -8,9 +8,7 @@ title = "What is a Wardrobe Audit?"
 type = "news"
 
 +++
-# Where to start
-
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587174770/shrubcoop.org/media/photo-by_-shanna-camilleri-on-unsplash_com_n6sqxx.jpg)
+# Where to start![Pile of paterned clothes neatly folded on a white stool](https://res.cloudinary.com/shrub-co-op/image/upload/v1587176094/shrubcoop.org/media/photo-by_-victoria-strukovskaya-unsplash_com_wdp339.jpg "Discarded pile of clothes")
 
 The first step sounds easy but might take a while. Go through EVERYTHING in your wardrobe. Everything you wear everyday, everything you wear only for special occasions, and everything in between.
 
