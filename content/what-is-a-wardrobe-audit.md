@@ -8,11 +8,9 @@ title = "What is a Wardrobe Audit?"
 type = "news"
 
 +++
-[photo-1484502249930-e1da807099a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80](https://images.unsplash.com/photo-1484502249930-e1da807099a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80 "photo-1484502249930-e1da807099a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80")
-
-> Photo by Shanna Camilleri, unsplash.com
-
 # Where to start
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587174770/shrubcoop.org/media/photo-by_-shanna-camilleri-on-unsplash_com_n6sqxx.jpg)
 
 The first step sounds easy but might take a while. Go through EVERYTHING in your wardrobe. Everything you wear everyday, everything you wear only for special occasions, and everything in between.
 
@@ -68,4 +66,4 @@ What I am trying to say here is that there is always a better use for something 
 
 The Swapshop is always happy to take donations of good quality clothing and bric-a-brac. There are sewing sessions every Tuesday and Thursday evening 5pm - 7pm with people to help in any way you need.
 
-Unfortunately all SHRUB activities are cancelled at the moment but we will let you know when they are back up and running.
+    Unfortunately all SHRUB activities are cancelled at the moment but we will let you know when they are back up and running.
