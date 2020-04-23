@@ -13,6 +13,8 @@ Over the past 2 years, we've been tackling climate change on a community level b
 
 Many individuals now know SHRUB as the vibrant and immersive community to talk about and find new innovative ideas to tackle the ecological crisis together.
 
+You can read the full report here: [SHRUB_Cooperative_CCF_Final_Report_2018-2020](https://res.cloudinary.com/shrub-co-op/image/upload/v1587648684/shrubcoop.org/media/SHRUB_Cooperative_CCF_Final_Report_2018-2020_fcnrkf.pdf "SHRUB_Cooperative_CCF_Final_Report_2018-2020_fcnrkf.pdf")
+
 #### We are proud to say in the past two years SHRUB has:
 
 * Doubled the staff and projects in our organisation.
