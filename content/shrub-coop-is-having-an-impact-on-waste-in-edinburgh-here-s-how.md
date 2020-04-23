@@ -2,12 +2,13 @@
 author = "SHRUB Coop"
 date = 2020-04-22T23:00:00Z
 description = "We've just finished crunching the numbers and filed the report for our Climate Challenge Fund project between April 2018 and March 2020."
-draft = true
 tags = []
 title = "SHRUB Coop is having an impact on waste in Edinburgh, here's how..."
 type = "news"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587648599/shrubcoop.org/media/funding_newsletter_2b_1_qmwuz4.png)
+
 Over the past 2 years, we've been tackling climate change on a community level by reducing waste and consumption practices in Edinburgh. SHRUB has come a long way in this time and we hope to go much further with renewed funding for a further 2 years to run our Swapshop, events and workshops, and the annual End of Term Collections from student halls.
 
 Many individuals now know SHRUB as the vibrant and immersive community to talk about and find new innovative ideas to tackle the ecological crisis together.
