@@ -9,9 +9,9 @@ type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587648599/shrubcoop.org/media/funding_newsletter_2b_1_qmwuz4.png)
 
-Over the past 2 years, we've been tackling climate change on a community level by reducing waste and consumption practices in Edinburgh. SHRUB has come a long way in this time and we hope to go much further with renewed funding for a further 2 years to run our Swapshop, events and workshops, and the annual End of Term Collections from student halls.
+Over the past 2 years, we've been tackling climate change on a community level by reducing waste and consumption practices in Edinburgh. SHRUB has come a long way in this time and we hope to go much further with [renewed funding for a further 2 years](https://www.shrubcoop.org/funding-update/) to run our Swapshop, events and workshops, and the annual End of Term Collections from student halls.
 
-Many individuals now know SHRUB as the vibrant and immersive community to talk about and find new innovative ideas to tackle the ecological crisis together.
+Many people across the city now know SHRUB as the vibrant and immersive community to talk about and find new innovative ideas to tackle the ecological crisis together. Thank you to everyone who has been involved in the 2018 to 2020 CCF project, and we look forward to another 2 years of working towards a world without waste!
 
 You can read the full report here: [SHRUB_Cooperative_CCF_Final_Report_2018-2020](https://res.cloudinary.com/shrub-co-op/image/upload/v1587648684/shrubcoop.org/media/SHRUB_Cooperative_CCF_Final_Report_2018-2020_fcnrkf.pdf "SHRUB_Cooperative_CCF_Final_Report_2018-2020_fcnrkf.pdf")
 
