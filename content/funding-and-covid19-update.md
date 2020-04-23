@@ -1,9 +1,9 @@
 +++
 author = "SHRUB Coop"
 date = 2020-03-26T00:00:00Z
-description = "We wanted to share with you a couple of important updates on where we are..."
+description = "We wanted to share with you some important news on where we are..."
 tags = []
-title = "Funding And COVID19 Update"
+title = "Funding update"
 type = "news"
 
 +++
