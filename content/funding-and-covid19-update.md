@@ -44,6 +44,6 @@ It's important that you take care of yourself and your family first.
 
 #### If you are in a position to help us, could you make a donation to SHRUB Coop?
 
-[Yes, I can make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E5ZKXP5TEKE76&source=url)
+[Yes, I can make a donation](https://donorbox.org/shrub-coop)
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587646417/shrubcoop.org/media/35302d9a-94d9-419a-88ea-4cbdfff756cc_s30l2a.png)
