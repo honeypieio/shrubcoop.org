@@ -1,0 +1,16 @@
+---
+label: Case Study
+hide_body: true
+fields:
+- type: text
+  name: first_name
+  label: first_name
+- type: textarea
+  name: testimonial
+  label: testimonial
+- type: textarea
+  name: block_quote
+  label: block_quote
+- type: file
+  name: image
+  label: image
