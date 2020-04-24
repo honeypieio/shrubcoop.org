@@ -1,4 +1,18 @@
 ---
 label: Home Page
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Page title.
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+- name: hide_carbon_counter
+  type: boolean
+  label: Hide Carbon Counter
