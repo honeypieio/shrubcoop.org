@@ -33,6 +33,11 @@ sections:
   match: "**/*"
   templates:
   - working-group
+- type: directory
+  path: content/case-studies
+  label: Case Studies
+  create: all
+  match: "**/*"
 - type: heading
   label: Volunteer Roles
 - type: document
