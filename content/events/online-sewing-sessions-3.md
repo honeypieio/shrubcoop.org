@@ -36,12 +36,8 @@ This event is **FREE** (donations are always welcome)
 
 Don't forget to join our ['Make and Mend with SHRUB'](https://www.facebook.com/groups/236741857323915) Facebook group to share your creations.
 
-#### How COVID-19 is affecting SHRUB Coop
+#### Can you support SHRUB Coop with a donation?
 
-To do our part to help flatten the curve of the COVID-19 pandemic, we've temporarily closed all public activities until further notice. This is having a big impact on our income.
+To do our part to help flatten the curve of the COVID-19 pandemic, we’ve temporarily closed all public activities until further notice. This is having a big impact on our income.
 
-We understand that right now, a lot of people are concerned about their own financial situation. It's important that you take care of yourself and your family first.
-
-If you enjoy the session tonight, learn something or feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation.
-
-[Click here to donate!](https://www.shrubcoop.org/donate/)
+If you are in a position to help us, could you [make a donation to SHRUB Coop](https://www.shrubcoop.org/donate/)?
