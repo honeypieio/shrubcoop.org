@@ -61,7 +61,6 @@ public_path: https://res.cloudinary.com/shrub-co-op/image/upload
 front_matter_path: https://res.cloudinary.com/shrub-co-op/image/upload
 use_front_matter_path: true
 file_template: ":filename:"
-instant_preview: false
 build:
   preview_env:
   - HUGO_ENV=staging
@@ -71,5 +70,4 @@ build:
   mount_path: "/opt/buildhome/repo"
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
     -d public
-  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
 version: '0.53'
