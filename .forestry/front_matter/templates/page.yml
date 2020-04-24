@@ -10,5 +10,7 @@ fields:
   label: description
 pages:
 - content/about-us.md
+- content/contact.md
 - content/test-page.md
 - content/welfare.md
+- content/zero-waste-edinburgh/_index.md
