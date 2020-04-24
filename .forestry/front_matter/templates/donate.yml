@@ -11,24 +11,37 @@ fields:
 - type: text
   name: type
   label: type
+  hidden: true
+  default: donate
 - type: text
   name: impact_title
-  label: impact_title
+  label: Our Impact Header Title
+  description: Title of the left-hand column
 - type: text
   name: impact_tagline
-  label: impact_tagline
+  label: Our Impact Header Tagline
+  description: Tagline that appears on the left-hand column
 - type: textarea
   name: impact_body
-  label: impact_body
+  label: Out Impact Content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: Copy that appears in the left-hand column.
 - type: text
   name: case_studies_title
-  label: case_studies_title
+  label: Case Studies Header Title
+  description: Title of the central column
 - type: text
   name: case_studies_tagline
-  label: case_studies_tagline
+  label: Case Studies Header Tagline
+  description: Tagline that appears in the central column
 - type: text
   name: donation_title
-  label: donation_title
+  label: Donation Header Title
+  description: Title that appears on the right-hand column<br>
 - type: text
   name: donation_tagline
-  label: donation_tagline
+  label: Donation Header Tagline
+  description: Tagline that appears on the right-hand column
