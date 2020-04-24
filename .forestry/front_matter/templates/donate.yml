@@ -45,3 +45,5 @@ fields:
   name: donation_tagline
   label: Donation Header Tagline
   description: Tagline that appears on the right-hand column
+pages:
+- content/donate.md
