@@ -1,14 +1,15 @@
 +++
 author = "Zero Waste Hub"
 description = "Need a space to process the climate crisis with others?"
-draft = true
 location = "Online (read the description for the link)"
 tags = ["zero-waste-hub", "swapshop"]
 time = 2020-04-24T14:00:00Z
 title = "CANCELLED - Climate Cafe"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1581080181/shrubcoop.org/media/83763714_4056863921005864_7802500042480156672_o_zqclsj.jpg)SHRUB Coop is taking its zero waste ethos online!  
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587734008/shrubcoop.org/media/93638496_4320260361332884_6503783837196091392_o_fx4r9i.jpg)
+
+SHRUB Coop is taking its zero waste ethos online!  
   
 Join us for our next Climate Cafe online call on Friday 3-4pm.  
   
