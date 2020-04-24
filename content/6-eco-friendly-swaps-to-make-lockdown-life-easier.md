@@ -46,3 +46,9 @@ We hope this list gives you a starting point to help you buy less, waste less an
 Take care and stay safe!
 
 Photo credit: SHRUB Coop, Marco Verch (Flickr), Wallpaper Flare.
+
+##### Can you support SHRUB Coop with a donation?
+
+To do our part to help flatten the curve of the COVID-19 pandemic, we’ve temporarily closed all public activities until further notice. This is having a big impact on our income.
+
+If you are in a position to help us, could you [make a donation to SHRUB Coop](https://www.shrubcoop.org/donate/)?
