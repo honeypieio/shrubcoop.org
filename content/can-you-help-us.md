@@ -34,7 +34,7 @@ We understand that this is a hard time for everyone and a lot of people are conc
 
 ##### If you are in a position to help us, could you make a donation to SHRUB Coop?
 
-[Yes, I can make a donation](https://donorbox.org/shrub-coop)
+[Yes, I can make a donation](https://www.shrubcoop.org/donate/)
 
 ***
 
@@ -72,7 +72,7 @@ As our project funding has not yet been confirmed, **fundraising is now more imp
 >
 > If you are in a position to help us, could you make a donation to SHRUB Coop?
 >
-> [Yes, I can make a donation](https://donorbox.org/shrub-coop)
+> [Yes, I can make a donation](https://www.shrubcoop.org/donate/)
 
 ***
 
@@ -99,7 +99,7 @@ It's the same as planting a forest the size of 4.74 football pitches.**
 
 > ##### Will you make a donation today to help our community continue to create a world without waste?
 >
-> [Yes, I can make a donation](https://donorbox.org/shrub-coop)
+> [Yes, I can make a donation](https://www.shrubcoop.org/donate/)
 
 ***
 
@@ -131,7 +131,7 @@ I felt welcomed and trusted from the start, everyone helped me realize my ideas 
 
 Can you make a donation to support many more volunteers to gain new skills and confidence?
 
-[Yes, I can make a donation](https://donorbox.org/shrub-coop)
+[Yes, I can make a donation](https://www.shrubcoop.org/donate/)
 
 ***
 
