@@ -93,3 +93,5 @@ fields:
   label: Type
   hidden: true
   default: get-involved
+pages:
+- content/get-involved.md
