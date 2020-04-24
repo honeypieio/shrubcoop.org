@@ -4,13 +4,23 @@ hide_body: true
 fields:
 - type: text
   name: first_name
-  label: first_name
+  label: First Name
+  description: The member/volunteer's first name.
 - type: textarea
   name: testimonial
-  label: testimonial
+  label: Testimonial
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: textarea
   name: block_quote
-  label: block_quote
+  label: Block Quote
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: file
   name: image
-  label: image
+  label: Image
+  description: "<strong>Please make sure that the image has a 16:9 aspect ratio!</strong>"
