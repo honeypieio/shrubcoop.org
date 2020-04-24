@@ -38,6 +38,8 @@ sections:
   label: Case Studies
   create: all
   match: "**/*"
+  templates:
+  - case-study
 - type: heading
   label: Volunteer Roles
 - type: document
