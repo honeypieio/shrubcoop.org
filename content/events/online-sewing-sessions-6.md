@@ -1,7 +1,6 @@
 +++
 author = "Events and Workshops"
 description = "An open workshop where you can learn to make and mend or get advice on sewing projects!"
-draft = true
 location = "Online (read the description for the link)"
 tags = ["shrub-space"]
 time = 2020-05-07T16:00:00Z
@@ -45,4 +44,4 @@ We understand that right now, a lot of people are concerned about their own fina
 
 If you enjoy the session tonight, learn something or feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation.
 
-[Click here to donate!](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SC4STHHVLD56U&source=url)
+[Click here to donate!](https://www.shrubcoop.org/donate/)
