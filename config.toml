@@ -11,7 +11,6 @@ pre = "Click this link to find out about zero waste projects in and around Edinb
 url = "/zero-waste-edinburgh/"
 weight = 1
 [[menu.main]]
-name = "Donate now!"
 url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SC4STHHVLD56U&source=url"
 name = "Donate"
 url = "/donate"
