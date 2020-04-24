@@ -1,0 +1,669 @@
+<div id="membership-select" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="card-body text-center mx-4">
+        <h3 class="mb-3">Become A Member</h3>
+
+        <p>What type of membership would you like?</p>
+
+        <div class="row mb-3 justify-content-center">
+          <div class="col-6 col-xl-4">
+            <button
+              type="button"
+              class="btn btn-primary w-100 membership-period active"
+              id="full-year"
+            >
+              Full Year
+            </button>
+          </div>
+          <div class="col-6 col-xl-4">
+            <button
+              type="button"
+              class="btn btn-primary w-100 membership-period"
+              id="half-year"
+            >
+              6 Months
+            </button>
+          </div>
+        </div>
+
+        <p>To keep membership accessible for all, you pay what you can afford.</p>
+
+        <p class="mb-4">How much would you like to pay for your membership?</p>
+
+        <div class="justify-content-center">
+          <div class="row mb-3">
+            <div class="col-4">
+              <button
+                class="btn btn-primary w-100 membership-amount"
+                id="membership-amount-1"
+                data-amount="12"
+              >
+                £12
+              </button>
+            </div>
+            <div class="col-8">
+              <span class="w-100">"I'm a student, unemployed, or retired"</span>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-4">
+              <button
+                class="btn btn-primary w-100 membership-amount"
+                id="membership-amount-2"
+                data-amount="18"
+              >
+                £18
+              </button>
+            </div>
+            <div class="col-8">
+              <span class="w-100">"I earn between £16k and £27k per year"</span>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-4">
+              <button
+                class="btn btn-primary w-100 membership-amount"
+                id="membership-amount-3"
+                data-amount="24"
+              >
+                £24
+              </button>
+            </div>
+            <div class="col-8">
+              <span class="w-100">"I earn between £27k and £43k per year"</span>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-4">
+              <button
+                class="btn btn-primary w-100 membership-amount"
+                id="membership-amount-4"
+                data-amount="30"
+              >
+                £30
+              </button>
+            </div>
+            <div class="col-8">
+              <span class="w-100">"I earn above £43k per year"</span>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-4">
+              <div class="input-group" id="membership-amount-custom-wrapper">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="currency">£</span>
+                </div>
+                <input
+                  id="membership-amount-custom"
+                  type="number"
+                  class="form-control"
+                  placeholder="0.00"
+                  min="12"
+                  step="0.01"
+                  aria-label="Custom amount"
+                  aria-describedby="currency"
+                />
+              </div>
+            </div>
+            <div class="col-8 text-left">
+              <p class="w-100 ml-3 mb-0">Other Amount*</p>
+              <p class="w-100 ml-3" style="line-height: 1;">
+                <small>*the miniumum membership price is <span id="minimum-membership-price">£12</span> per year</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="row d-none amount-confirmation-wrapper">
+            <div class="col-8 mx-auto">
+              <p class="text-center">
+                <small>Total amount to be paid: <b>£<span class="amount-confirmation"></span></b></small>
+              </p>
+            </div>
+          </div>
+
+          <div id="membership-select-errors"></div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="changePage('#membership-select', '#personal-details')">Next &#x2794;</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="personal-details" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="card-body mx-4 my-2">
+
+        <h3 class="mb-3">Personal Details</h3>
+
+        <div class="d-flex mb-2">
+          <input
+            type="text"
+            class="form-control w-100 memberSignUpFormElement"
+            placeholder="First Name"
+            id="first_name"
+            required
+          />
+          <span class="flex-shrink-1 ml-2 text-danger">*</span>
+        </div>
+        <div class="d-flex mb-2">
+          <input
+            type="text"
+            class="form-control w-100 memberSignUpFormElement"
+            placeholder="Last Name"
+            id="last_name"
+            required
+          />
+          <span class="flex-shrink-1 ml-2 text-danger">*</span>
+        </div>
+
+
+
+          <div class="d-flex mb-2">
+            <input
+              type="email"
+              class="form-control w-100 memberSignUpFormElement"
+              placeholder="Email"
+              id="email"
+              required
+            />
+            <span class="flex-shrink-1 ml-2 text-danger">*</span>
+          </div>
+          <div class="d-flex mb-2">
+            <textarea
+              type="text"
+              class="form-control w-100 memberSignUpFormElement"
+              placeholder="Address"
+              id="address"
+              required
+            ></textarea>
+            <span class="flex-shrink-1 ml-2 text-danger">*</span>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              type="text"
+              class="form-control mb-2 w-100 memberSignUpFormElement"
+              placeholder="Phone Number"
+              id="phone_no"
+            />
+            <span class="flex-shrink-1 ml-2 text-danger">*</span>
+          </div>
+
+          <p class="mb-1"><b>Date of Birth</b> (must be 16 or over)</p>
+          <div class="d-flex" style="padding: 0;">
+            <input
+              type="date"
+              class="form-control w-50 memberSignUpFormElement"
+              placeholder="Date of Birth"
+              id="dob"
+              required
+            />
+            <span class="flex-shrink-1 text-danger mx-2">*</span>
+          </div>
+
+
+          <p class="pt-4">
+            We may need to contact you by email occasionally to inform you about
+            the status of your membership and to let you know important news
+            about the cooperative, including details of the annual general meeting.
+          </p>
+          <div class="form-check form-check-inline mt-1">
+            <input
+              class="form-check-input memberSignUpFormElement"
+              type="checkbox"
+              id="contact_consent_check"
+              required
+            />
+            <label class="form-check-label align-top">
+              I consent <span class="text-danger">*</span>
+              <small>(this does not sign you up to the monthly newsletter)</small>
+            </label>
+          </div>
+
+
+          <p class="pt-3">
+            Would you like to join our monthly newsletter to keep up to date with events and opportunities?
+          </p>
+
+          <div class="form-check form-check-inline mt-1">
+            <input
+              class="form-check-input memberSignUpFormElement"
+              type="checkbox"
+              id="newsletter_consent_check"
+              required
+            />
+            <label class="form-check-label">
+              Yes please!
+            </label>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="changePage('#personal-details', '#membership-select')">&#x21e4; Previous</button>
+        <button type="button" class="btn btn-primary" onclick="changePage('#personal-details', '#payment-details')">Next &#x21e5;</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="payment-details" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="card-body mx-4">
+
+          <h3 class="mb-3">Payment Details</h3>
+
+          <div class="form-group">
+            <div class="input-group">
+              <select
+                class="memberSignUpFormElement form-control"
+                id="card_type"
+                required
+              >
+                <option selected disabled>Select card issuer...</option>
+                <option>Visa</option>
+                <option>MasterCard</option>
+                <option>Maestro</option>
+                <option>AmericanExpress</option>
+                <option>Discover</option>
+                <option>VisaElectron</option>
+              </select>
+              <span class="flex-shrink-1 text-danger mx-2">*</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">&#128179;</span>
+              </div>
+              <input
+                type="text"
+                class="memberSignUpFormElement form-control"
+                id="card_number"
+                placeholder="Card Number"
+                required
+              />
+              <span class="flex-shrink-1 text-danger mx-2">*</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">&#128100;</span>
+              </div>
+              <input
+                type="text"
+                class="memberSignUpFormElement form-control"
+                id="cardholder_name"
+                placeholder="Cardholder Name"
+                required
+              />
+              <span class="flex-shrink-1 text-danger mx-2">*</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="form-group">
+                <div class="form-inline">
+                  <select
+                    class="memberSignUpFormElement form-control"
+                    style="width: 40%;"
+                    id="expiry_month"
+                    required
+                  >
+                    <option selected disabled>Month</option>
+                  </select>
+
+                  <span style="width:5%; text-align: center"> / </span>
+
+                  <select
+                    class="memberSignUpFormElement form-control"
+                    style="width: 40%;"
+                    id="expiry_year"
+                    required
+                  >
+                    <option selected disabled>Year</option>
+                  </select>
+
+                  <span class="text-danger text-center" style="width: 5%;">*</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="form-group">
+                <div class="input-group">
+                  <input
+                    class="memberSignUpFormElement form-control"
+                    placeholder="CVV"
+                    required=""
+                    type="text"
+                    maxlength="3"
+                    id="cvv"
+                    required
+                  />
+                  <span class="flex-shrink-1 text-danger mx-2">*</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="changePage('#payment-details', '#personal-details')">&#x21e4; Previous</button>
+        <button type="button" class="btn btn-primary" onclick="changePage('#payment-details', '#membership-terms')">Next &#x21e5;</button>  </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="membership-terms" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="card-body mx-4">
+
+          <h3 class="mb-3">Membership Terms</h3>
+
+
+          <button
+            type="button"
+            class="btn btn-primary btn-block mb-2"
+            data-toggle="collapse"
+            data-target="#saferSpacesPolicy"
+          >
+            Read the safer spaces policy
+          </button>
+
+          <div class="collapse mb-2" id="saferSpacesPolicy">
+            <div class="card card-body" id="saferSpacesPolicyBody"></div>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary btn-block mb-2"
+            data-toggle="collapse"
+            data-target="#privacyNotice"
+          >
+            Read the privacy notice
+          </button>
+
+          <div class="collapse mb-2" id="privacyNotice">
+            <div class="card card-body" id="privacyNoticeBody"></div>
+          </div>
+
+          <div class="form-check form-check-inline mt-3">
+            <input
+              class="form-check-input memberSignUpFormElement"
+              type="checkbox"
+              id="safer_spaces_check"
+              required
+            />
+            <label class="form-check-label">
+              I agree to comply with the safer spaces policy
+              <span class="text-danger">*</span>
+            </label>
+          </div>
+
+          <div class="form-check form-check-inline mt-2 mb-4">
+            <input
+              class="form-check-input memberSignUpFormElement"
+              type="checkbox"
+              id="privacy_notice_check"
+              name="privacy_notice_check"
+              required
+            />
+            <label class="form-check-label">
+              I agree to the terms of the privacy notice
+              <span class="text-danger">*</span>
+            </label>
+          </div>
+
+          <div class="row d-none amount-confirmation-wrapper">
+            <div class="col-8 mx-auto">
+              <p class="text-center">
+                <small>Total amount to be paid: <b>£<span class="amount-confirmation"></span></b></small>
+              </p>
+            </div>
+          </div>
+
+          <button class="btn btn-shrub btn-block" id="completeSignUpButton">
+            Complete Sign Up
+          </button>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="changePage('#membership-terms', '#payment-details')">&#x21e4; Previous</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row mt-4 mb-3">
+  <div class="col-md-12 mx-auto">
+    <div
+      id="memberSignUpErrorAlert"
+      class="alert alert-danger d-none"
+      role="alert"
+    >
+      <h4 class="alert-heading">Uh-oh!</h4>
+      <div id="memberSignUpErrorContent"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 mx-auto">
+    <div
+      id="memberSignUpSuccessAlert"
+      class="alert alert-success d-none"
+      role="alert"
+    >
+      <h4 class="alert-heading">Success!</h4>
+      <div id="memberSignUpSuccessContent"></div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ .Site.BaseURL }}js/validation-methods.js"></script>
+<script src="{{ .Site.BaseURL }}js/membership-signup.js"></script>
+
+<script>
+  var BaseURL = "{{ .Site.BaseURL }}";
+  var membershipSignUpKey = "{{ .Site.Params.murakamiMembershipSignUpKey }}";
+
+  $(document).ready(function() {
+    membershipPeriodSelect("full-year");
+    var date = new Date();
+    $("#dob").prop(
+      "max",
+      date.getFullYear() -
+        16 +
+        "-" +
+        ("0" + (date.getMonth() + +1)).slice(-2) +
+        "-" +
+        ("0" + date.getDate()).slice(-2)
+    );
+    $("#completeSignUpButton").on("click", function() {
+      completeSignUp();
+    });
+
+    // Populate card expiration fields.
+
+    var expiry_month_select = document.getElementById("expiry_month");
+    var expiry_year_select = document.getElementById("expiry_year");
+
+    for (i = 0; i < validMonths.length; i++) {
+      var month = document.createElement("option");
+      month.innerHTML = validMonths[i];
+      expiry_month_select.appendChild(month);
+
+      var year = document.createElement("option");
+      year.innerHTML = validYears[i];
+      expiry_year_select.appendChild(year);
+    }
+
+    getSignUpInfo(function(signUpInfo) {
+      $("#ourVisionBody").html(signUpInfo.ourVision.markup);
+      $("#saferSpacesPolicyBody").html(signUpInfo.saferSpacesPolicy.markup);
+      $("#membershipBenefitsBody").html(signUpInfo.membershipBenefits.markup);
+      $("#privacyNoticeBody").html(signUpInfo.privacyNotice.markup);
+    });
+  });
+
+  var prices = [];
+
+  function updatePrices(period) {
+    if(period == "half-year"){
+      prices = [8.00, 12.00, 16.00, 20.00];
+    } else {
+      prices = [12.00, 18.00, 24.00, 30.00];
+    }
+    for(i = 0; i < prices.length; i++){
+      var id = "#membership-amount-" + (i + 1)
+      $(id).attr("data-amount", prices[i]);
+      $(id).text("£" + prices[i]);
+    }
+  }
+
+  $(".membership-period").on("click", function() {
+    membershipPeriodSelect(this.id);
+  });
+
+  function membershipPeriodSelect(period) {
+    $(".membership-period").removeClass("active");
+    $(".amount-confirmation-wrapper").addClass("d-none");
+    $("#membership-amount-custom").val(null);
+
+    if (period == "half-year") {
+      $("#half-year").addClass("active");
+      newMember.period = "half-year";
+    } else {
+      $("#full-year").addClass("active");
+      newMember.period = "full-year";
+    }
+
+    updateMembershipPrices(newMember.period);
+  }
+
+  function updateMembershipPrices(period) {
+    deselectAllMembershipAmounts();
+    newMember.amount = null;
+    updatePrices(period);
+
+    $("#minimum-membership-price").text("£" + prices[0].toFixed(2));
+    $("#membership-amount-custom").attr("min", prices[0]);
+
+    if($("#membership-amount-custom").val() > 0 && $("#membership-amount-custom").val() < prices[0]){
+      $("#membership-amount-custom").val(prices[0]);
+    }
+  }
+
+  $(".membership-amount").on("click", function() {
+    $("#membership-amount-custom").val("");
+    membershipAmountSelect("#" + this.id, this.getAttribute("data-amount"));
+  });
+
+  $("#membership-amount-custom").on("input", function() {
+    membershipAmountSelect("#" + this.id, this.value);
+  });
+
+  function membershipAmountSelect(inputElementId, amount) {
+
+    try {
+      amount = Number(amount);
+      if(amount == "NaN"){
+        throw new Error();
+      }
+      if(amount < prices[0]) {
+        throw new Error();
+      }
+    } catch(error) {
+      amount = prices[0];
+    }
+
+    deselectAllMembershipAmounts();
+
+    $(".amount-confirmation-wrapper").removeClass("d-none");
+
+
+    if(prices.includes(amount)) {
+      $("#membership-amount-" + (prices.indexOf(amount) + 1)).addClass("active");
+    } else {
+      $("#membership-amount-custom-wrapper").addClass("active");
+    }
+
+    newMember.amount = amount.toFixed(2);
+    $(".amount-confirmation").text(newMember.amount);
+
+
+
+  }
+
+  function deselectAllMembershipAmounts() {
+    $(".membership-amount").removeClass("active");
+    $("#membership-amount-custom-wrapper").removeClass("active");
+  }
+
+  function changePage(from, to)
+  {
+    errors = {};
+
+    if(from == "#membership-select"){
+      errors = validateMembershipSelect();
+    }
+
+    if(Object.keys(errors).length === 0){
+      $(from + "-errors").html("");
+      $(from).on('hidden.bs.modal', function (e) {
+          $(to).modal('show');
+          $(from).off();
+      });
+      $(from).modal('hide');
+    } else {
+      $(from + "-errors").html(createErrorMarkup(errors));
+    }
+  }
+
+  function createErrorMarkup(errors){
+    var errorsParent = document.createElement("div");
+    errorsParent.classList = "text-left alert alert-danger px-4 py-3";
+
+    var errorsAlertTitle = document.createElement("h4");
+    errorsAlertTitle.classList = "alert-heading";
+    errorsAlertTitle.textContent = "Uh-oh!"
+
+    var errorsPreamble = document.createElement("p");
+    errorsPreamble.textContent = "Please fix the following errors to continue:";
+    var errorsList = document.createElement("ul");
+
+    for(i=0;i < Object.keys(errors).length; i++){
+      var error = errors[Object.keys(errors)[i]];
+      console.log(errors);
+      var errorMessage = document.createElement("li");
+      errorMessage.textContent = error.message;
+      errorsList.appendChild(errorMessage);
+    }
+
+    errorsParent.appendChild(errorsAlertTitle);
+    errorsParent.appendChild(errorsPreamble);
+    errorsParent.appendChild(errorsList);
+
+    return errorsParent.outerHTML;
+  }
+
+
+</script>

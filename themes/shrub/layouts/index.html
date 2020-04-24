@@ -102,6 +102,10 @@
           {{ end }}
         {{ end }}
 
+        {{ if eq ($scratch.Get "eventsCount") 1 }}
+          <h5 class="px-4 mb-0 pb-0 text-white text-center dosis-semi-bold">No upcoming events at the moment - check back soon!</h5>
+        {{ end }}
+
       </div>
     </div>
 

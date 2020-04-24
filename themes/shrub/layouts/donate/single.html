@@ -1,0 +1,125 @@
+{{ define "main" }}
+
+<style>
+  .sloped {
+    padding-bottom: 60px !important;
+  }
+</style>
+
+<div class="row">
+
+  <div class="col-md-4 order-md-3">
+
+    <div class="front-page-header sloped mb-4">
+      <div class="container pl-4 pt-4">
+        <div class="row">
+          <h1 class="text-white pl-3">{{ .Params.donation_title }}</h1>
+
+        </div>
+        {{ if .Params.donation_tagline }}
+          <div class="row">
+
+            <div class="col-10">
+              <h4 class="text-white">
+                {{ .Params.donation_tagline }}
+              </h4>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-12 mx-auto">
+        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/shrub-coop?default_interval=o&amount=30" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-10 mx-auto">
+        <p class="text-center">Would you rather <a href="/get-involved#become-a-member">become a member</a> and join our community of swappers and reusers?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-1">
+
+    <div class="front-page-header sloped mb-4">
+      <div class="container pl-4 pt-4">
+        <div class="row">
+          <h1 class="text-white pl-3">{{ .Params.impact_title }}</h1>
+        </div>
+        {{ if .Params.impact_tagline }}
+          <div class="row">
+
+            <div class="col-10">
+              <h4 class="text-white">
+                {{ .Params.impact_tagline }}
+              </h4>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="container">
+      {{ .Params.impact_body | markdownify }}
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-2">
+
+    <div class="front-page-header sloped mb-4">
+      <div class="container pl-4 pt-4">
+        <div class="row">
+          <h1 class="text-white pl-3">{{ .Params.case_studies_title }}</h1>
+        </div>
+        {{ if .Params.case_studies_tagline }}
+          <div class="row">
+
+            <div class="col-10">
+              <h4 class="text-white">
+                {{ .Params.case_studies_tagline }}
+              </h4>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="container" id="case-studies-wrapper"></div>
+  </div>
+
+
+</div>
+
+<script>
+var caseStudies = [];
+{{ range where $.Site.RegularPages "Section" "case-studies" }}
+  caseStudies.push('{{- partial "case-study.html" . -}}');
+{{ end }}
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+caseStudies = shuffle(caseStudies);
+if(caseStudies.length > 2) {
+  caseStudies.length = 2;
+}
+for(i = 0; i < caseStudies.length; i++){
+  $("#case-studies-wrapper").append(caseStudies[i]);
+  if(i != (caseStudies.length - 1)){
+    $("#case-studies-wrapper").append("<hr />");
+  }
+}
+
+
+</script>
+
+
+
+{{ end }}
