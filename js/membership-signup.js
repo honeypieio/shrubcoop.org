@@ -1,4 +1,6 @@
 var newMember = {
+  period: "",
+  amount: "",
   first_name: "",
   last_name: "",
   dob: "",

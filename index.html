@@ -35,6 +35,15 @@
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -232,9 +241,9 @@
           >
             <a
               class="nav-link text-white"
-              title="Donate now! - "
-              href="https://donorbox.org/shrub-coop"
-              >Donate now!</a
+              title="Donate - "
+              href="/donate"
+              >Donate</a
             >
           </li>
         
@@ -600,6 +609,10 @@
           
         
 
+        
+          <h5 class="px-4 mb-0 pb-0 text-white text-center dosis-semi-bold">No upcoming events at the moment - check back soon!</h5>
+        
+
       </div>
     </div>
 
@@ -906,7 +919,7 @@
               
 
               <li>
-                <a href="https://donorbox.org/shrub-coop">Donate now!</a>
+                <a href="/donate">Donate</a>
               </li>
 
               

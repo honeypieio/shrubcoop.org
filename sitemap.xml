@@ -140,6 +140,22 @@
   </url>
   
   <url>
+    <loc>https://www.shrubcoop.org/case-studies/deepak/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.shrubcoop.org/case-studies/francesca/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.shrubcoop.org/case-studies/lucy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.shrubcoop.org/case-studies/mary/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.shrubcoop.org/volunteer/view/</loc>
   </url>
   
@@ -176,6 +192,10 @@
   </url>
   
   <url>
+    <loc>https://www.shrubcoop.org/become-a-member/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.shrubcoop.org/events/climate-cafe-1/</loc>
   </url>
   
@@ -204,6 +224,11 @@
   </url>
   
   <url>
+    <loc>https://www.shrubcoop.org/case-studies/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shrubcoop.org/events/climate-cafe/</loc>
   </url>
   
@@ -213,6 +238,10 @@
   
   <url>
     <loc>https://www.shrubcoop.org/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.shrubcoop.org/donate/</loc>
   </url>
   
   <url>

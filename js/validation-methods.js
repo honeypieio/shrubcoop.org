@@ -70,12 +70,9 @@ var currentYear = parseInt(
     .substr(2, 2)
 );
 
-var currentMonth = parseInt(
-  new Date()
-    .getMonth()
-) + 1;
+var currentMonth = parseInt(new Date().getMonth()) + 1;
 
-if(currentMonth < 10){
+if (currentMonth < 10) {
   currentMonth = "0" + currentMonth;
 }
 
@@ -206,4 +203,18 @@ function validateCVVNumber(cvv) {
   } else {
     return false;
   }
+}
+
+function validateMembershipSelect() {
+  var errors = {};
+
+  if (!["full-year", "half-year"].includes(newMember.period)) {
+    errors["period"] = { message: "Select a valid membership period" };
+  }
+
+  if (newMember.amount < prices[0]) {
+    errors["amount"] = { message: "Enter a valid membership price" };
+  }
+
+  return errors;
 }

@@ -150,11 +150,3 @@ function writeErrorMessage(id) {
   document.getElementById(id).innerHTML =
     "<p class='text-muted text-center mx-auto'>No roles to show right now. Check back soon!</p>";
 }
-
-String.prototype.toProperCase = function() {
-  return this.split("_")
-    .join(" ")
-    .replace(/\w\S*/g, function(txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
-};
