@@ -4,7 +4,7 @@ description = "Need a space to process the climate crisis with others?"
 location = "Online (read the description for the link)"
 tags = ["zero-waste-hub", "swapshop"]
 time = 2020-04-24T14:00:00Z
-title = "CANCELLED - Climate Cafe"
+title = "Online Climate Cafe"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587734008/shrubcoop.org/media/93638496_4320260361332884_6503783837196091392_o_fx4r9i.jpg)
