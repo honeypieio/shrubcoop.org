@@ -312,3 +312,9 @@ blockquote span{
   font-weight: bold;
   margin-top:0.5em;
 }
+
+.donorbox-widget {
+  max-width: 425px !important;
+  margin: auto;
+  display: block;
+}
