@@ -1,16 +1,19 @@
 +++
-author = "author"
-date = 2020-04-20T07:00:00Z
+author = "Swapshop"
+date = 2020-04-30T17:30:00Z
 description = "Do you feel like you have too many clothes? Most people do and yet we still often feel like we don’t have anything we want to wear. A wardrobe audit is designed to help you see what clothes you have and what you wear the most. This will help you to see if you really do need to buy more of the same things, or if you really are going to wear something that normally you never do."
-draft = true
-tags = ["Sustainable Fashion", " Style"]
+tags = ["zero-waste-hub", "swapshop"]
 title = "What is a Wardrobe Audit?"
 type = "news"
 
 +++
 # ![Pile of paterned clothes neatly folded on a white stool](https://res.cloudinary.com/shrub-co-op/image/upload/v1587176094/shrubcoop.org/media/photo-by_-victoria-strukovskaya-unsplash_com_wdp339.jpg "Discarded pile of clothes")
 
-#### Where to start?
+We often hear about how the [fashion industry is the second most polluting industry in the world](https://news.un.org/en/story/2019/03/1035161), but how can you go about making your own fashion choices more sustainable?
+
+A wardrobe audit will help you to recycle clothes you don't want anymore, free up space for those that you actually need, and rediscover those you’d forgotten about at the back of a draw. Thankfully, Jo from the [Swapshop](https://www.shrubcoop.org/working-groups/swapshop/) is here to guide you through how to do your own, step by step.
+
+#### So, where to start?
 
 The first step sounds easy but might take a while. Go through EVERYTHING in your wardrobe. Everything you wear everyday, everything you wear only for special occasions, and everything in between.
 
@@ -64,9 +67,11 @@ What I am trying to say here is that there is always a better use for something 
 
 #### Can SHRUB Help?
 
-The Swapshop is always happy to take donations of good quality clothing and bric-a-brac. There are sewing sessions every Tuesday and Thursday evening 5pm - 7pm with people to help in any way you need.
+The [Swapshop](https://www.shrubcoop.org/working-groups/swapshop/) is always happy to take donations of good quality clothing and bric-a-brac. There are sewing sessions every Tuesday and Thursday evening 5pm - 7pm with people to help in any way you need.
 
-_Unfortunately all SHRUB activities are cancelled at the moment but we will let you know when they are back up and running._
+_Unfortunately, all of SHRUB's activities are temporarily suspended at the moment but we will let you know as soon as they are back up and running._
+
+***
 
 ##### Can you support SHRUB Coop with a donation?
 
