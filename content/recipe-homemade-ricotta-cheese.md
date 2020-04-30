@@ -8,7 +8,7 @@ title = "Workshop Recipe: Make your own ricotta cheese! "
 type = "news"
 
 +++
-This recipe goes with our upcoming online workshop on Tuesday 5th May 2020. In the workshop you'll learn how to make ricotta using easy to find ingredients at home. This recipe is a great starting point for those of you that have never made cheese at home before, and offers great results even after the first attempt! 
+This recipe goes with our upcoming online workshop on Tuesday 5th May 2020. In the workshop you'll learn how to make ricotta using easy to find ingredients at home. This recipe is a great starting point for those of you that have never made cheese at home before, and offers great results even after the first attempt!
 
 ##### **Ingredients:**
 
@@ -65,8 +65,8 @@ Ricotta cheese can be used in lots of different recipes, like cakes, and paired 
 
 ##### **How to join the workshop:**
 
-If you would like to follow this recipe along with our skilled facilitator, Francesca, then you will need to register to the Zoom session here: [https://us02web.zoom.us/meeting/register/tZAudOyqrzIsGtXiKZmunmKKfKvtP9WU3-4-](https://us02web.zoom.us/meeting/register/tZAudOyqrzIsGtXiKZmunmKKfKvtP9WU3-4- "https://us02web.zoom.us/meeting/register/tZAudOyqrzIsGtXiKZmunmKKfKvtP9WU3-4-") It's free to take part! 
+If you would like to follow this recipe along with our skilled facilitator, Francesca, then you will need to register to the Zoom session [here](https://us02web.zoom.us/meeting/register/tZAudOyqrzIsGtXiKZmunmKKfKvtP9WU3-4-). It's free to take part!
 
 However you choose to make your cheese, let us know how you get on by commenting below or tagging us on Instagram at @shrubcoop
 
-Happy cheese making! 
+Happy cheese making!
