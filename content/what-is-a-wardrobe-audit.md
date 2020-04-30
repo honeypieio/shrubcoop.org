@@ -1,7 +1,7 @@
 +++
 author = "Swapshop"
 date = 2020-04-30T17:30:00Z
-description = "Do you feel like you have too many clothes? Most people do and yet we still often feel like we don’t have anything we want to wear. A wardrobe audit is designed to help you see what clothes you have and what you wear the most. This will help you to see if you really do need to buy more of the same things, or if you really are going to wear something that normally you never do."
+description = "Do you feel like you have too many clothes? Most people do and yet we still often feel like we don’t have anything we want to wear. A wardrobe audit is designed to help you see what clothes you have and what you wear the most."
 tags = ["zero-waste-hub", "swapshop"]
 title = "What is a Wardrobe Audit?"
 type = "news"
