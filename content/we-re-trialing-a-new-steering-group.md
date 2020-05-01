@@ -2,6 +2,7 @@
 author = "SHRUB Coop"
 date = 2020-05-01T10:45:00Z
 description = "We have an important update to share about the future strategic direction of SHRUB Coop, and we're looking for members to take part in shaping our future."
+draft = true
 tags = []
 title = "We're trialing a new steering group"
 type = "news"
