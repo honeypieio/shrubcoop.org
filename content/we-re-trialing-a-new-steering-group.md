@@ -61,7 +61,7 @@ You will need to attend an induction to be brought up to speed with the necessar
 
 Firstly, you need to be an active member__*__, either paid or as a volunteer.
 
-Email us at [**hello@shrubcoop.org**](mailto:hello@shrubcoop.org)t o register your interest and let us know if you are a paid member or a volunteer member. If you're a volunteer member, please let us know which working groups you're part of (this is so that we can ensure there is representation across the coop).
+Email us at [**hello@shrubcoop.org **](mailto:hello@shrubcoop.org)to register your interest and let us know if you are a paid member or a volunteer member. If you're a volunteer member, please let us know which working groups you're part of (this is so that we can ensure there is representation across the coop).
 
 We'll invite everyone interested to an introductory session via Zoom on __Wednesday 6th May at 12:00pm to 1:30pm.**__
 
@@ -71,5 +71,4 @@ If there are too many members interested in joining the steering group, we'll de
 
 __*___If you're interested in joining the steering group, but your membership has expired recently and you've been unable to renew it due to our temporary closure, don't worry. Get in touch and we will try to find a solution for you._
 
-  
 ___**___ _If you are interested but unavailable to attend the introductory session, please let us know. Future meetings will be scheduled at a time that best suits everyone in the group, so don't let this put you off._
