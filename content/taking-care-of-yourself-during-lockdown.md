@@ -1,8 +1,7 @@
 +++
 author = "Welfare Team"
 date = 2020-05-13T13:00:00Z
-description = "With lockdown and social distancing here to stay for some time, the welfare team at SHRUB Coop have some tips to share to help take care of yourself."
-draft = true
+description = "With social distancing set to continue for some time, the welfare team at SHRUB Coop have some tips to share to help take care of yourself."
 tags = []
 title = "Taking care of yourself during lockdown"
 type = "news"
@@ -15,6 +14,11 @@ For many of us, lockdown is a completely alien experience, unlike anything we’
 #### Give Yourself A Break
 
 The single most meaningful thing you can do for yourself during lockdown is go easy on yourself. Don’t beat yourself up – about anything. However you’re feeling, whatever you can or can’t do at the moment, it’s a much more radical and compassionate thing to accept it than to fight it. For me, I went into lockdown with a list as long as my arm of things I wanted to achieve. Now, more than a month in, there are some days when I count simply getting dressed as an achievement, to be celebrated as much as all the other lofty goals I had set myself. And I feel that that is one of the kindest things I could have done for myself. If you do have the energy and mental space to be productive - whatever that means to you - then crack on! But if all you can do is survive, that’s just as significant.
+
+If you're looking for something to occupy the time, but without the pressure to feel productive or achieve something, how about getting out some coloured pencils and giving mindful colouring a try? There are loads of books available online, and our graphic design volunteer, Hannah, has made some sketches available for you to download and print at home.  
+[SHRUB_colouring_page_1.pdf](https://res.cloudinary.com/shrub-co-op/image/upload/v1589299618/shrubcoop.org/media/SHRUB_colouring_page_1_oidiyb.pdf "SHRUB_colouring_page_1_oidiyb.pdf")
+
+[SHRUB_colouring_page_2.pdf](https://res.cloudinary.com/shrub-co-op/image/upload/v1589299608/shrubcoop.org/media/SHRUB_colouring_page_2_lqkiql.pdf "SHRUB_colouring_page_2_lqkiql.pdf")
 
 #### Have a Routine
 
@@ -41,11 +45,5 @@ This is something I haven’t seen talked about much online, but it’s somethin
 However, you could also find yourself on the other end of the spectrum. I was like this. I found that not keeping myself informed made me feel worse, catastrophising everything and feeling helpless. To combat this, I started consuming the news regularly – but paying attention to what sources I was getting it from. I try to avoid the updates-every-minute news, and opt for less sensationalised, more fact-based news. My own personal recommendation is [TLDR News](https://www.youtube.com/channel/UCSMqateX8OA2s1wsOR2EgJA), an independent outlet whose aim is to make complex topics more simple. Much like what I said earlier about exercise, however, the most important thing is to find something that works for you.
 
 Finding something that helps your mental health, rather than hurts it, is crucial in times like these. We hope that this has given you some ideas to help you look after yourself during lockdown. If you have any other wellbeing tips during self-isolation, please let us know!
-
-**Colouring pages**
-
-[SHRUB_colouring_page_1.pdf](https://res.cloudinary.com/shrub-co-op/image/upload/v1589299618/shrubcoop.org/media/SHRUB_colouring_page_1_oidiyb.pdf "SHRUB_colouring_page_1_oidiyb.pdf")
-
-[SHRUB_colouring_page_2.pdf](https://res.cloudinary.com/shrub-co-op/image/upload/v1589299608/shrubcoop.org/media/SHRUB_colouring_page_2_lqkiql.pdf "SHRUB_colouring_page_2_lqkiql.pdf")
 
 Be kind to yourself, take care, and stay safe!
