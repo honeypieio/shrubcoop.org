@@ -1,5 +1,5 @@
 +++
-author = "Welfare Team"
+author = "Corran"
 date = 2020-05-13T13:00:00Z
 description = "With social distancing set to continue for some time, the welfare team at SHRUB Coop have some tips to share to help take care of yourself."
 tags = []
