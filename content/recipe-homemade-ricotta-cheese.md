@@ -12,7 +12,7 @@ Note: This recipe was published for our cook along workshop on the 5th of May 20
 
 **Watch the video!**
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/ANj5snFnIbE](https://www.youtube.com/embed/ANj5snFnIbE "https://www.youtube.com/embed/ANj5snFnIbE")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ANj5snFnIbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This recipe is a great starting point for those of you that have never made cheese at home before, and offers great results even after the first attempt!
 
