@@ -7,9 +7,12 @@ title = "Workshop Recipe: Make your own ricotta cheese! "
 type = "news"
 
 +++
-  
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1588526826/shrubcoop.org/media/94274951_4351291771563076_1292443401253289984_o_f4v80r.jpg)_  
-Note: This recipe goes with our upcoming online workshop on Tuesday 5th May 2020. In the workshop you'll learn how to make ricotta using easy to find ingredients at home. See below for details on how to join._
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1588526826/shrubcoop.org/media/94274951_4351291771563076_1292443401253289984_o_f4v80r.jpg)  
+Note: This recipe was published for our cook along workshop on the 5th of May 2020 during the COVID19 lockdown.
+
+**Watch the video!**
+
+<iframe width="560" height="315" src="[https://www.youtube.com/embed/ANj5snFnIbE](https://www.youtube.com/embed/ANj5snFnIbE "https://www.youtube.com/embed/ANj5snFnIbE")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This recipe is a great starting point for those of you that have never made cheese at home before, and offers great results even after the first attempt!
 
