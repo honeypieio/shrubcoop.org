@@ -35,19 +35,15 @@ SHRUB is a member-led Cooperative with a large and enthusiastic community of vol
 
 Please indicate how they would use your time to secure the financial support for the Coop. Please submit a two-page Proposal that outlines:
 
-● your previous experience / your technical capacity for undertaking this task,
-
-● the approach you plan to take and overall time scale / implementation plan, and
-
-● indicate how you will maintain high standards during the task.
+* your previous experience / your technical capacity for undertaking this task,
+* the approach you plan to take and overall time scale / implementation plan, and
+* indicate how you will maintain high standards during the task.
 
 This document will include:
 
-● all your contact details
-
-● an indication if you would be open to collaborating with others to deliver the task
-
-● full contact details for two References for whom you have done similar work / who can attest to your suitability in undertaking this work.
+* all your contact details
+* an indication if you would be open to collaborating with others to deliver the task
+* full contact details for two References for whom you have done similar work / who can attest to your suitability in undertaking this work.
 
 **You are invited to paste into the same document – after these two pages – a personal or organisational CV no longer than two pages. Please send – saved with last name/company as title of the file – to jobs@shrubcoop.org by 12 noon Monday 22 June.**
 
