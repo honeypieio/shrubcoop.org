@@ -2,8 +2,9 @@
 author = "SHRUB Cooperative"
 date = 2020-06-01T11:00:00Z
 description = "SHRUB Cooperative – formerly known as the Swap & Reuse Hub – seeks Project Fundraising Assistance to upskill our fundraising team to enable our charity to contribute to a Just Recovery from the Covid-19 Pandemic and contribute to the World Without Waste / Circular Economy we seek.   Proposals are invited for the following task.  Submissions by 12noon Mon 22 June."
+draft = true
 tags = []
-title = "Request for Proposals: Consultancy Task: “Project Fundraising Assistance”"
+title = "Request for Proposals: Consultancy Task “Project Fundraising Assistance”"
 type = "news"
 
 +++
@@ -31,7 +32,7 @@ We’re a Cooperative in Edinburgh working for a world without waste. We empower
 
 SHRUB is a member-led Cooperative with a large and enthusiastic community of volunteers who are essential to the delivery of our aims. As a part of the SHRUB team, fundraising work contributes to the strategic planning, decision-making, problem-solving and volunteer management which enables SHRUB as a whole to thrive.
 
-###### **Form of proposal**
+**Form of proposal**
 
 Please indicate how they would use your time to secure the financial support for the Coop. Please submit a two-page Proposal that outlines:
 
