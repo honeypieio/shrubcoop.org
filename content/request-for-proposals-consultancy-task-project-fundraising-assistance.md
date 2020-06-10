@@ -1,7 +1,7 @@
 +++
 author = "SHRUB Cooperative"
 date = 2020-06-01T11:00:00Z
-description = "SHRUB Cooperative – formerly known as the Swap & Reuse Hub – seeks Project Fundraising Assistance to upskill our fundraising team to enable our charity to contribute to a Just Recovery from the Covid-19 Pandemic and contribute to the World Without Waste / Circular Economy we seek.   Proposals are invited for the following task.  Submissions by 12noon Mon 22 June."
+description = "An exciting opportunity to join the SHRUB team as a Project Fundraising Assistance"
 tags = []
 title = "Request for Proposals: Consultancy Task “Project Fundraising Assistance”"
 type = "news"
