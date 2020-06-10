@@ -8,7 +8,7 @@ title = "Request for Proposals: Consultancy Task: “Project Fundraising Assista
 type = "news"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1591806026/shrubcoop.org/media/Were-hiring_kwwbad.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1591808930/shrubcoop.org/media/Were-hiring_1_y2mkam.png)
 
 _Request for Proposals: Consultancy Task: “Project Fundraising Assistance” £2,800_
 
@@ -24,7 +24,7 @@ We are currently looking for an experienced Freelance Fundraiser to join our SHR
 
 3\. contributions towards other core costs.
 
-This role entails scoping the opportunities and the needs of each of the three elements, identifying prospective funders and drafting the main elements of agreed funding bids. 
+This role entails scoping the opportunities and the needs of each of the three elements, identifying prospective funders and drafting the main elements of agreed funding bids.
 
 The appointed fundraiser/organisation will draw on the support of and engage with the Fundraising task group in a way that enables them to subsequently continue this activity as a mixed staff/volunteer group.
 
