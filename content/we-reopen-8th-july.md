@@ -3,7 +3,7 @@ author = "SHRUB Cooperative"
 date = 2020-06-25T23:00:00Z
 description = "Shrub Coop is excited to confirm we will reopen our Zero Waste Hub on 8th July!"
 tags = []
-title = "We reopen 8th July!!"
+title = "Zero Waste Hub reopen 8th July!!"
 type = "news"
 
 +++
