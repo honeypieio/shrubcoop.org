@@ -3,7 +3,7 @@ author = "Events and Workshops"
 description = "An open workshop where you can learn to make and mend or get advice on sewing projects!"
 location = "Online (read the description for the link)"
 tags = ["shrub-space"]
-time = 2020-05-14T16:00:00Z
+time = 2020-07-23T16:00:00Z
 title = "Online sewing sessions"
 
 +++
