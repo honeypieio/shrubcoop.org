@@ -1,6 +1,6 @@
 +++
 author = "Swapshop"
-description = "we will be joined by Remode Collective to explore ways to re-purpose textiles and build new skills whilst celebrating multicultural diversity."
+description = "We will explore ways to re-purpose textiles and build new skills whilst celebrating multicultural diversity."
 location = "Online (read the description for the link)"
 tags = ["swapshop", "zero-waste-hub"]
 time = 2020-07-22T16:30:00Z
