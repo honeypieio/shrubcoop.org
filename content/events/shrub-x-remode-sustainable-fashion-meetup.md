@@ -23,7 +23,7 @@ Don't worry if you are new to online meetings. You are welcome to have your came
 
 Everyone welcome. Please bring along your enthusiasm, and any interesting facts or ideas you might have.
 
-This event is FREE (donations always welcome)
+This event is FREE (donations always welcome).
 
 #### Can you support SHRUB Coop with a donation?
 
