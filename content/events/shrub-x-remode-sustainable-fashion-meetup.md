@@ -4,7 +4,7 @@ description = "we will be joined by Remode Collective to explore ways to re-purp
 location = "Online (read the description for the link)"
 tags = ["swapshop", "zero-waste-hub"]
 time = 2020-07-22T16:30:00Z
-title = "SHRUB x Remode Sustainable Fashion Meetup"
+title = "SHRUB Sustainable Fashion Meetup"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587734231/shrubcoop.org/media/91252721_4262430403782547_8177393555765985280_n_n0rbny.jpg)
