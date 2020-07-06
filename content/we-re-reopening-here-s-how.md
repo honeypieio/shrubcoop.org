@@ -1,6 +1,6 @@
 +++
 author = "Shrub Coop"
-date = 2020-07-05T23:00:00Z
+date = 2020-07-06T16:00:00Z
 description = "Everything you need to know about our new ways of working!"
 draft = true
 tags = ["#zero-waste-hub"]
