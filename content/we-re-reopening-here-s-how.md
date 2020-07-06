@@ -2,6 +2,7 @@
 author = "Shrub Coop"
 date = 2020-07-06T16:00:00Z
 description = "Everything you need to know about our new ways of working!"
+draft = true
 tags = ["#zero-waste-hub"]
 title = "We're reopening! Here's how..."
 type = "news"
