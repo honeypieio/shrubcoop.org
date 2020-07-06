@@ -8,9 +8,7 @@ title = "We're reopening! Here's how..."
 type = "news"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1594048956/shrubcoop.org/media/Shrub_Coop_sgr05n.jpg)
-
-We’re very excited to be reopening the Zero Waste Hub on 22 Bread Street on Wednesday 8th July. We are also extending our opening hours, so you can now visit us from 11am to 6pm on Wednesday to Saturday. We can’t wait to see you all and play our part in Building Back Better, but first here are a few things that we have changed in light of Covid-19…
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565367381/shrubcoop.org/media/unnamed_1_qog3mq.png)We’re very excited to be reopening the Zero Waste Hub at 22 Bread Street on Wednesday 8th July. We are also extending our opening hours, so you can now visit us from 11am to 6pm on Wednesday to Saturday. We can’t wait to see you all and play our part in Building Back Better, but first here are a few things that we have changed in light of Covid-19…
 
 **_Things to know before you visit the Zero Waste Hub…_**
 
