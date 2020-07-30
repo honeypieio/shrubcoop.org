@@ -7,7 +7,7 @@ time = 2020-08-26T16:30:00Z
 title = "SHRUB Sustainable Fashion Working Group Meeting"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1587734231/shrubcoop.org/media/91252721_4262430403782547_8177393555765985280_n_n0rbny.jpg)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1596124674/shrubcoop.org/media/Sustainable_fashion_meet_up_avxgmn.png)
 
 SHRUB Coop is taking its zero waste ethos online!
 
@@ -15,7 +15,7 @@ Join us for our next Sustainable Fashion Zoom call 5:30-7pm. Here is the [Zoom l
 
 The fashion industry is now the second most polluting industry in the world after oil.
 
-This group explores the environmental impacts of our fashion habits and looks at personal and large solutions in Edinburgh.  So far we have discussed challenges and solutions to the current fast-fashion industry and planned some exciting projects ahead. 
+This group explores the environmental impacts of our fashion habits and looks at personal and large solutions in Edinburgh.  So far we have discussed challenges and solutions to the current fast-fashion industry and planned some exciting projects ahead.
 
 Don't worry if you are new to online meetings. You are welcome to have your camera on or off and we will go through hand signals before hand to make sure everyone feels comfortable in the space and the meeting runs smoothly.
 
