@@ -3,7 +3,7 @@ author = "SHRUB Cooperative"
 description = "SHRUB is having a book sale! "
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste", "book-sale", "event", "edinburgh"]
-time = 2020-08-11T10:00:00Z
+time = 2020-08-07T10:00:00Z
 title = "Book Sale"
 
 +++
