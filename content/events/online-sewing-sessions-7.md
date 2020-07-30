@@ -7,7 +7,7 @@ time = 2020-08-25T16:00:00Z
 title = "Online sewing sessions"
 
 +++
-[view?utm_content=DADl1ah1auw&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu](https://www.canva.com/design/DADl1ah1auw/nTeVyNCVbRY7RxykYjpDCA/view?utm_content=DADl1ah1auw&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu "view?utm_content=DADl1ah1auw&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu")
+![https://res.cloudinary.com/shrub-co-op/image/upload/v1596124302/shrubcoop.org/media/sewing_sessions_FB_event_banner_hwvuca.png](https://res.cloudinary.com/shrub-co-op/image/upload/v1596124302/shrubcoop.org/media/sewing_sessions_FB_event_banner_hwvuca.png)
 
 During the COVID-19 crisis, we're bringing back our popular sewing sessions as online hangouts!
 
