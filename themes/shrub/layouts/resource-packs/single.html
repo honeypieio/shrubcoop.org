@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<div class="row">
+  <div class="col-xl-6 mx-auto">
+    <div class="container px-5">
+
+      <div class="pt-4">
+		<h2 class="mb-0">{{ .Title }}</h2>
+		<p class="dosis-semi-bold mb-2">
+			&#128336; Last Updated: {{ dateFormat "02/01/06" .Date }}
+		</p>
+      </div>
+
+      <hr />
+
+      {{ .Content }}
+
+
+	<object data="{{ .Params.pdf_document }}" type="application/pdf" id="pdf-document" class="mt-2" style=" width: 100%;">
+		<embed src="{{ .Params.pdf_document }}" type="application/pdf">
+		    <p>Your browser does not support embedded PDFs. Please download the guide to view it: <a href="{{ .Params.pdf_document }}">Download PDF</a>.</p>
+	    </embed>
+	</object>
+
+	<p><a href="{{ .Params.pdf_document }}" target="_blank">Open guide in new tab</a></p>
+
+    </div>
+  </div>
+</div>
+
+	<script>
+
+		var pdfContainer = document.getElementById("pdf-document");
+
+		function sizePDF() {
+			var width = pdfContainer.clientWidth;
+			pdfContainer.style.width = width + "px";
+			pdfContainer.style.height = (width * Math.sqrt(2)) + "px";
+		}
+
+		pdfContainer.onload = function() {
+			sizePDF();
+			console.log("PDF loaded");
+		}
+	</script>
+
+{{ end }}

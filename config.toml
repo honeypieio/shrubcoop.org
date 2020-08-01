@@ -40,10 +40,18 @@ url = "/"
 weight = 2
 [[menu.main]]
 identifier = "contact"
+parent = "about-us"
 name = "Contact"
 pre = "This is the Contact section of the site. Click here to find out how to send us an email."
 url = "/contact/"
 weight = 7
+[[menu.main]]
+identifier = "resource-packs"
+parent = "about-us"
+name = "Resource Packs"
+pre = "Click here to read our guides on zero waste activities."
+url = "/resource-packs/"
+weight = 9
 [[menu.main]]
 identifier = "events"
 name = "Events"

@@ -1,0 +1,9 @@
+<a href="{{ .Permalink }}" title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading.">
+  <h3 class="mb-2">{{ .Title }}</h3>
+</a>
+
+<p class="mb-2">{{ htmlUnescape (replace (.Description | truncate 300) " …" "…") }}</p>
+
+<p class="dosis-semi-bold">
+	&#128336; Last Updated: {{ dateFormat "02/01/06" .Date }}
+</p>
