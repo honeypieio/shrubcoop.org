@@ -18,11 +18,14 @@
 
 	<object data="{{ .Params.pdf_document }}" type="application/pdf" id="pdf-document" class="mt-2" style=" width: 100%;">
 		<embed src="{{ .Params.pdf_document }}" type="application/pdf">
-		    <p>Your browser does not support embedded PDFs. Please download the guide to view it: <a href="{{ .Params.pdf_document }}">Download PDF</a>.</p>
-	    </embed>
+		    <p>Your browser does not support embedded PDFs. Please download the guide to view it: <a href="{{ .Params.pdf_document }}" title="Download guide as PDF document">Download</a>.</p>
+		<script>
+			document.getElementById("pdf-new-tab-line").style.display = "none";
+		</script>
+		</embed>
 	</object>
 
-	<p><a href="{{ .Params.pdf_document }}" target="_blank">Open guide in new tab</a></p>
+	<p id="pdf-new-tab-line"><a href="{{ .Params.pdf_document }}" target="_blank">Open guide in new tab</a></p>
 
     </div>
   </div>
