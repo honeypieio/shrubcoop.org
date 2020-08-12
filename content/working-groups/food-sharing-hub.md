@@ -5,12 +5,13 @@ colour = "#137A0A"
 date = "2019-02-12T17:40:58+00:00"
 lat = -3.204477
 lon = 55.945693
+showOnFrontPage = false
 tagline = "scotland's first rescued food shop!"
-times = "12pm to 5pm, Wednesday to Saturday"
+times = "11am to 6pm, Tuesdays to Saturdays"
 title = "Food Sharing Hub"
 weight = 3
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568666918/shrubcoop.org/media/Food_Sharing_Hub_WEB_ONLY_ywqahq.png"
-showOnFrontPage = false
+
 +++
 The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to save surplus food from supermarkets from an unnecessary fate in the bin.
 
