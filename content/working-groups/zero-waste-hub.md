@@ -4,12 +4,13 @@ alt = "Zero Waste Hub Button – This is the link to our Zero Waste Hub area of 
 colour = "#AB0C17"
 lat = -3.204477
 lon = 55.945693
+showOnFrontPage = true
 tagline = "a one stop shop for sustainable living!"
-times = "12pm to 5pm, Wednesdays to Saturdays"
+times = "11am to 6pm, Tuesdays to Saturdays"
 title = "Zero Waste Hub"
 weight = 1
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667127/shrubcoop.org/media/Zero_Waste_Hub_WEB_ONLY_l1jech.png"
-showOnFrontPage = true
+
 +++
 The **Zero Waste Hub** is your one stop shop for sustainable living!
 
