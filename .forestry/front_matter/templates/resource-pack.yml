@@ -4,19 +4,27 @@ hide_body: false
 fields:
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: textarea
   name: description
-  label: description
+  label: Description
+  description: Text that appears above resource pack.
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: list
   name: tags
   label: tags
+  hidden: true
 - type: file
   name: pdf_document
-  label: pdf_document
+  label: PDF Document
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: type
   label: type
+  default: resource-packs
+  hidden: true
