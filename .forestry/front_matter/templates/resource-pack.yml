@@ -1,0 +1,22 @@
+---
+label: Resource Pack
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: description
+  label: description
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: pdf_document
+  label: pdf_document
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
