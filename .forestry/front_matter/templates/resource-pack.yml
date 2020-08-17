@@ -28,3 +28,5 @@ fields:
   label: type
   default: resource-packs
   hidden: true
+pages:
+- content/resource-packs/test-resource-pack.md
