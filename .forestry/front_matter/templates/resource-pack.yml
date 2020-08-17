@@ -16,13 +16,13 @@ fields:
     schema:
       format: markdown
   description: Short preview text (displayed on the "listing" page)
+- type: file
+  name: pdf_document
+  label: PDF Document
 - type: list
   name: tags
   label: tags
   hidden: true
-- type: file
-  name: pdf_document
-  label: PDF Document
 - type: text
   name: type
   label: type
