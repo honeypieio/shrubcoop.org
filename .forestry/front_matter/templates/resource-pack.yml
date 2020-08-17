@@ -2,17 +2,20 @@
 label: Resource Pack
 hide_body: false
 fields:
+- type: text
+  name: title
+  label: Title
 - type: datetime
   name: date
   label: Date
 - type: textarea
   name: description
-  label: Description
-  description: Text that appears above resource pack.
+  label: Short Description
   config:
     wysiwyg: true
     schema:
       format: markdown
+  description: Short preview text (displayed on the "listing" page)
 - type: list
   name: tags
   label: tags
@@ -20,9 +23,6 @@ fields:
 - type: file
   name: pdf_document
   label: PDF Document
-- type: text
-  name: title
-  label: Title
 - type: text
   name: type
   label: type
