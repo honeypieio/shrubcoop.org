@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Cooperative"
-date = 2020-08-30T13:00:00Z
+date = 2020-08-27T13:00:00Z
 description = "SHRUB Coop members: hear what we're up to / help shape our future!"
 tags = ["edinburgh", "sustainability", "environmental", "community"]
 title = "Members' General Meeting this Sunday!"
