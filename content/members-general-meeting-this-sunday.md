@@ -7,6 +7,8 @@ title = "Members' General Meeting this Sunday!"
 type = "news"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1572008860/shrubcoop.org/media/web_image_template_tm3vs6.png)
+
 ### We invite SHRUB members and supporters to a General Meeting at 2pm - 5pm on Sunday 30 August.
 
 We hope to take stock of where we are as we renew ourselves and start planning ahead into the autumn.
