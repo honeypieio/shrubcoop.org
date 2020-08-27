@@ -4,7 +4,7 @@ description = "SHRUB Coop members: hear what we're up to / help shape our future
 location = "Online (read the description for the link)"
 tags = ["edinburgh", "community", "sustainability", "environmental"]
 time = 2020-08-30T13:00:00Z
-title = "Members' General Meeting this Sunday!"
+title = "Members' General Meeting"
 
 +++
 ### We invite SHRUB members and supporters to a General Meeting at 2pm - 5pm on Sunday 30 August.
