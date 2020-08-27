@@ -7,6 +7,8 @@ time = 2020-08-30T13:00:00Z
 title = "Members' General Meeting"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1572008860/shrubcoop.org/media/web_image_template_tm3vs6.png)
+
 ### We invite SHRUB members and supporters to a General Meeting at 2pm - 5pm on Sunday 30 August.
 
 We hope to take stock of where we are as we renew ourselves and start planning ahead into the autumn.
@@ -17,7 +19,7 @@ Have you a view on how we could work more effectively?
 
 Online link will be sent to all who register. Please register [here](https://www.eventbrite.co.uk/e/shrub-cooperative-members-general-meeting-where-next-2-5pm-sun-30-aug-tickets-117466819419 "eventbrite") and [share](https://www.facebook.com/events/312212776788529 "Facebook event page").
 
-### Timetable:
+#### Timetable:
 
 2\.00pm "Doors Open" - our meeting etiquette / harvest log
 
