@@ -1,7 +1,6 @@
 +++
 author = "Events and Workshops"
 description = "An open workshop where you can learn to make and mend or get advice on sewing projects!"
-draft = true
 location = "Online (read the description for the link)"
 tags = ["sewing", "zero-waste", "edinburgh"]
 time = 2020-10-01T16:00:00Z
