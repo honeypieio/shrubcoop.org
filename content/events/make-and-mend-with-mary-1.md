@@ -4,7 +4,7 @@ description = "An open workshop where you can learn to make and mend or get advi
 draft = true
 location = "Online (read the description for the link)"
 tags = ["sewing", "zero-waste", "edinburgh"]
-time = 2020-09-01T16:00:00Z
+time = 2020-09-08T16:00:00Z
 title = "Make and Mend with Mary"
 
 +++
