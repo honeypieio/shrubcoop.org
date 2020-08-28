@@ -7,7 +7,7 @@ time = 2020-09-03T16:00:00Z
 title = "Make and Mend with Tamsyn"
 
 +++
-![https://res.cloudinary.com/shrub-co-op/image/upload/v1596124302/shrubcoop.org/media/sewing](https://res.cloudinary.com/shrub-co-op/image/upload/v1596124302/shrubcoop.org/media/sewing_sessions_FB_event_banner_hwvuca.png)
+![https://res.cloudinary.com/shrub-co-op/image/upload/v1587733631/shrubcoop.org/media/sewing_sessions_FB_event_banner_2_t0gofg.png](https://res.cloudinary.com/shrub-co-op/image/upload/v1587733631/shrubcoop.org/media/sewing_sessions_FB_event_banner_2_t0gofg.png)
 
 Have you started sewing projects while you're stuck at home?
 
@@ -15,7 +15,7 @@ Are you using this time to mend a well-loved item of clothing?
 
 Hop into our online hangout!
 
-Regular Tuesday ‘Make and Mend with Shrub’ Session run by Mary Morton. Every week we have a special topic, but drop-ins and all sort of sewing projects and questions are welcome. Until further notice these sessions run online
+Regular Thursday ‘Make and Mend with Shrub’ Session run by Tamsyn Ball. Every week we have a special topic, but drop-ins and all sort of sewing projects and questions are welcome. Until further notice these sessions run online
 
 #### Who can join?
 
