@@ -13,17 +13,17 @@ SHRUB Coop is taking its zero waste ethos online!
 
 **Fortnightly on Tuesday, 2-3.30pm**
 
-The Zoom link can be found [here](https://us02web.zoom.us/j/89742345306?pwd=dVRVQkJFRHdQMjI4TndWMGo5Y3huQT09 "zoom link")
+The link to join the session can be found [here](https://us02web.zoom.us/j/89742345306?pwd=dVRVQkJFRHdQMjI4TndWMGo5Y3huQT09 "zoom link")
 
-Don't worry if you are new to online meetings. You are welcome to have your camera on or off and we will go through hand signals before hand to make sure everyone feels comfortable in the space and the meeting runs smoothly. 
+Don't worry if you are new to online meetings. You are welcome to have your camera on or off and we will go through hand signals before hand to make sure everyone feels comfortable in the space and the meeting runs smoothly.
 
 Need a space to process the climate crisis with others? Want to find your place in this discussion? Come along to our Climate Cafe to discuss issues and solutions!
 
 This will be a place to discuss your role and emotions around climate change as well as having topics and prompt questions to initiate further conversation and action.
 
-Climate Cafes are founded on the idea that action on climate change will increase as more and more people, from a range of backgrounds, start to talk about Climate Change and discuss their questions, concerns, and hopes. 
+Climate Cafes are founded on the idea that action on climate change will increase as more and more people, from a range of backgrounds, start to talk about Climate Change and discuss their questions, concerns, and hopes.
 
-The purpose of this group is to share experiences, resources, worries, hopes, and ideas, and to see what emerges when people with shared interests come together to drink some tea or coffee. 
+The purpose of this group is to share experiences, resources, worries, hopes, and ideas, and to see what emerges when people with shared interests come together to drink some tea or coffee.
 
 This is an informal discussion group and will not be a lecture or an informational meeting. It is not about guilt trips or judgment.
 
