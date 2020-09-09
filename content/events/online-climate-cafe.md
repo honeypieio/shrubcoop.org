@@ -1,20 +1,19 @@
 +++
 author = "Events and Workshops"
 description = "Need a space to process the climate crisis with others?"
-draft = true
 location = "Online (read the description for the link)"
-tags = ["zero-waste-hub", "swapshop"]
-time = 2020-09-01T13:00:00Z
+tags = ["climate change"]
+time = 2020-09-15T12:00:00Z
 title = "Online Climate Cafe"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1598650598/shrubcoop.org/media/118559154_330125414844637_2546250350318794003_o_cwozox.jpg)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1599683477/shrubcoop.org/media/climate_cafe_fuxd2m.jpg)
 
 SHRUB Coop is taking its zero waste ethos online!
 
-**Fortnightly on Tuesday, 2-3.30pm**
+**Fortnightly on Tuesday, 1-2.30pm**
 
-The link to join the session can be found [here](https://us02web.zoom.us/j/89742345306?pwd=dVRVQkJFRHdQMjI4TndWMGo5Y3huQT09 "zoom link")
+The link to join the session can be found [here](https://us02web.zoom.us/j/89111288899 "zoom link")
 
 Don't worry if you are new to online meetings. You are welcome to have your camera on or off and we will go through hand signals before hand to make sure everyone feels comfortable in the space and the meeting runs smoothly.
 
