@@ -1,18 +1,19 @@
 +++
 author = "Swapshop"
 description = "We will explore ways to re-purpose textiles and build new skills whilst celebrating multicultural diversity."
-draft = true
 location = "Online (read the description for the link)"
 tags = ["swapshop", "zero-waste-hub", "edinburgh", "sustainable-fashion"]
-time = 2020-08-26T16:30:00Z
+time = 2020-09-30T17:15:00Z
 title = "September Sustainable Fashion Meetup"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1596124674/shrubcoop.org/media/Sustainable_fashion_meet_up_avxgmn.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1599684697/shrubcoop.org/media/118938091_4956661494359431_2059604287732610774_o_zaqr8i.jpg)
 
-SHRUB Coop is taking its zero waste ethos online!
+We are continuing with our online Sustainable Fashion Meetings! Our meetings are on the last Wednesday of every month.
 
-Join us for our next Sustainable Fashion Zoom call 5:30-7pm. Here is the [Zoom link](https://us02web.zoom.us/j/9731735824 "zoom link")
+**Next meeting**: 6.15-7.45pm on Wednesday, 30 September
+
+Join us for our next Sustainable Fashion online chat on Google Meet [here](meet.google.com/dqd-gtod-udd  "Google Meet link").
 
 The fashion industry is now the second most polluting industry in the world after oil.
 
