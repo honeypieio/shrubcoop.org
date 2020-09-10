@@ -9,13 +9,7 @@ title = "Free Mondays"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1599777323/shrubcoop.org/media/Free_Mondays_szm40s.jpg)
 
-We want you to have things for free!
-
-We want to save things from a fate in the landfill!
-
-Aaaaaand.....
-
-We want to see your lovely faces (albeit under a mask)!
+We want you to have things for free! We want to save things from a fate in the landfill! Aaaaaand..... We want to see your lovely faces (albeit under a mask)!
 
 So we are putting on a new SHRUB event. Free Mondays!
 
@@ -23,15 +17,13 @@ So we are putting on a new SHRUB event. Free Mondays!
 
 **Where**: Zero Waste Hub, 22 Bread Street EH3 9AF
 
-Everyone is welcome to come and see what stock we have have and simply help themselves.
-
-We will have a variety of clothes, brick-a-brac, books and food.
+Everyone is welcome to come and see what stock we have have and simply help themselves. We will have a variety of clothes, brick-a-brac, books and food.
 
 Can't wait to see you there.
 
-_We will be taking all of the COVID related safety precautions. **Please come with a mask** and we will take care of the rest._
+We will be taking all of the COVID related safety precautions. **Please come with a mask** and we will take care of the rest.
 
-#### How to get there
+##### How to get there
 
 There is space to lock up your bike on the corner of Lothian Road and Bread Street, by Cost Cutters.
 
