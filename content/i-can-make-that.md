@@ -2,7 +2,6 @@
 author = "Amy Webster"
 date = 2020-09-21T23:00:00Z
 description = "An introduction to eco-friendly DIY by our Comms Volunteer Amy Webster"
-draft = true
 tags = []
 title = "\"I can make that!\""
 type = "news"
