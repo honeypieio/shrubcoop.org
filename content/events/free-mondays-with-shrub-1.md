@@ -1,10 +1,9 @@
 +++
 author = "Events and Workshops"
 description = "Come and see what stock we have have and simply help yourself!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "freeshop", "zero-waste", "edinburgh"]
-time = 2020-09-28T13:00:00Z
+time = 2020-10-05T13:00:00Z
 title = "Free Mondays with SHRUB"
 
 +++
@@ -12,7 +11,7 @@ title = "Free Mondays with SHRUB"
 
 We want you to have things for free! We want to save things from a fate in the landfill! Aaaaaand..... We want to see your lovely faces (albeit under a mask)!
 
-**When**: Monday, 28 September, 2-4pm
+**When**: Monday, 5 October, 2-4pm
 
 **Where**: Zero Waste Hub, 22 Bread Street EH3 9AF
 
@@ -20,7 +19,7 @@ Everyone is welcome to come and see what stock we have have and simply help them
 
 Can't wait to see you there.
 
-We will be taking all of the COVID related safety precautions. **Please come with a mask, following the floor markings** and we will take care of the rest.
+We will be taking all of the COVID related safety precautions. **Please come with a mask, follow the floor markings** and we will take care of the rest.
 
 ##### How to get there
 

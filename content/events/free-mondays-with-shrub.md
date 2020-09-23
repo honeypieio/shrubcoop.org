@@ -19,7 +19,7 @@ Everyone is welcome to come and see what stock we have have and simply help them
 
 Can't wait to see you there.
 
-We will be taking all of the COVID related safety precautions. **Please come with a mask, following the floor markings** and we will take care of the rest.
+We will be taking all of the COVID related safety precautions. **Please come with a mask, follow the floor markings** and we will take care of the rest.
 
 ##### How to get there
 
