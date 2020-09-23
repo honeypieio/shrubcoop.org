@@ -78,3 +78,5 @@ Semple Street, Edinburgh, EH3 8BL
 **NCP Car Park Edinburgh Castle Terrace**
 
 Castle Terrace, Edinburgh, EH1 2EW
+
+### [Donations we can’t Accept](https://docs.google.com/document/d/1GzFSxLQ6AMZjXtjP80zMhRyYXHmu6W1jp21ptMTEdH8/edit "Donations we can't accept")
