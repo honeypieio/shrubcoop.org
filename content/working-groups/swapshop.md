@@ -27,7 +27,7 @@ Unlike your ordinary charity shop, when you donate your preloved items we give y
 
 When you drop off your items, our friendly volunteers will value them and add tokens to your account within 7 days.
 
-While we like to try and enable people to swap and donate as many different things as possible, unfortunately, there are a few items that we can't take. Here's a [full list](https://res.cloudinary.com/shrub-co-op/image/upload/v1571395647/shrubcoop.org/media/SwapshopDonations_edd2f9.pdf "Swapshop donations") of what we can't accept and suggestions of alternative places to take them.
+While we like to try and enable people to swap and donate as many different things as possible, unfortunately, there are a few items that we can't take. Here's a [full list]() of what we can't accept and suggestions of alternative places to take them.
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576369229/shrubcoop.org/media/revolve_website_gx3uvf.png)
 
@@ -78,5 +78,3 @@ Semple Street, Edinburgh, EH3 8BL
 **NCP Car Park Edinburgh Castle Terrace**
 
 Castle Terrace, Edinburgh, EH1 2EW
-
-### [Donations we can’t Accept](https://docs.google.com/document/d/1GzFSxLQ6AMZjXtjP80zMhRyYXHmu6W1jp21ptMTEdH8/edit "Donations we can't accept")
