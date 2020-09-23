@@ -81,4 +81,4 @@ Castle Terrace, Edinburgh, EH1 2EW
 
 ### Donations we can't accept
 
-[Donations_we_can_t_accept_Aug_2020_onenk7.pdf](https://res.cloudinary.com/shrub-co-op/image/upload/v1600857913/shrubcoop.org/media/Donations_we_can_t_accept_Aug_2020_onenk7.pdf "Donations_we_can_t_accept_Aug_2020_onenk7.pdf")
+Click [here](https://res.cloudinary.com/shrub-co-op/image/upload/v1600856425/shrubcoop.org/media/Donations_we_can_t_accept_Aug_2020_fcjyvz.pdf) to see the link
