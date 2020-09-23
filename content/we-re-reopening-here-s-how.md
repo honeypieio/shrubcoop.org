@@ -32,7 +32,7 @@ For the time being, we will only be accepting donations from Shrub Coop members.
 
 If you are donating to us...
 
-* [Check we can receive all of your items (e.g. no electronics, pillows etc.)](https://res.cloudinary.com/shrub-co-op/image/upload/v1571395647/shrubcoop.org/media/SwapshopDonations_edd2f9.pdf)
+* [Check if we can receive all of your items](https://res.cloudinary.com/shrub-co-op/image/upload/v1600856425/shrubcoop.org/media/Donations_we_can_t_accept_Aug_2020_fcjyvz.pdf) (e.g. no electronics, pillows etc.)
 * Please self sort your bags into good and less good quality clothing, and tie them shut to avoid them being mixed up with someone else's.
 * Use the hand sanitiser, then write your name on paper with date and secure paper to bag.
 * Put your donation into the donation bin and let a volunteer know.
