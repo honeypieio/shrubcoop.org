@@ -6,14 +6,14 @@ type = "contact"
 +++
 #### General Enquiries
 
-0131 220 1884  
+0131 281 0583  
 [hello@shrubcoop.org](mailto:hello@shrubcoop.org)
 
 ***
 
 #### Zero Waste Hub
 
-12pm to 5pm, Wednesday to Saturday  
+11am to 6pm, Tuesday to Saturday  
 22 Bread Street, EH3 9AF  
 0131 281 0583
 
@@ -21,7 +21,7 @@ type = "contact"
 
 #### Wee Spoke Hub
 
-5pm to 8pm, Tuesdays and Wednesdays  
+Not currently operating  
 13 Guthrie Street, EH1 1JG  
 0131 220 1884
 
@@ -36,9 +36,11 @@ type = "contact"
 
 #### To book our venues
 
-Our Zero Waste Hub and SHRUB Space Workshop are available for private hire. We're currently asking for a £1 per person, per hour donation to cover our costs. A new pricing structure will be introduced soon.
+Our Zero Waste Hub and SHRUB Space Workshop are available for private hire. We're currently asking for a £1 per person, per hour donation to cover our costs. A new pricing structure will be introduced soon. 
 
 Simply email us at [venuehire@shrubcoop.org](mailto:venuehire@shrubcoop.org) with an explanation of your event, desired date and times, and a member of the team will get back to you.
+
+_Please note that due to Covid-19 restrictions, our spaces are currently not available for hire_
 
 _Zero Waste Hub - capacity 60 people  
 SHRUB Space Workshop - capacity 20 people_
