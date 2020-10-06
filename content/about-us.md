@@ -95,3 +95,5 @@ We follow the cooperative principles below, and organise our work through workin
 [Our Safer Spaces Policy](https://res.cloudinary.com/shrub-co-op/image/upload/v1573736447/shrubcoop.org/media/SHRUB_Safer_Spaces_Policy_3.0_k1sjgv.pdf "Our Safer Spaces Policy")
 
 [Privacy Notice](https://res.cloudinary.com/shrub-co-op/image/upload/v1575476568/shrubcoop.org/media/SHRUB_Privacy_Notice_2019_vgmtc3.pdf "SHRUB_Privacy_Notice_2019_vgmtc3.pdf")
+
+[SHRUB_Coop_Annual_Report_and_Accounts_18.11.20_-_31.03.20](https://res.cloudinary.com/shrub-co-op/image/upload/v1601983174/shrubcoop.org/media/SHRUB_Coop_Annual_Report_and_Accounts_18.11.20_-_31.03.20_cpbntw.pdf "SHRUB_Coop_Annual_Report_and_Accounts_18.11.20_-_31.03.20")
