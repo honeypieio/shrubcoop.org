@@ -40,15 +40,15 @@ url = "/"
 weight = 2
 [[menu.main]]
 identifier = "contact"
-parent = "about-us"
 name = "Contact"
+parent = "about-us"
 pre = "This is the Contact section of the site. Click here to find out how to send us an email."
 url = "/contact/"
 weight = 7
 [[menu.main]]
 identifier = "resource-packs"
-parent = "about-us"
 name = "Resource Packs"
+parent = "about-us"
 pre = "Click here to read our guides on zero waste activities."
 url = "/resource-packs/"
 weight = 9
@@ -79,33 +79,24 @@ murakamiMembershipSignUpKey = "wza96Xne2EUrmCucaM9qhaMMr"
 murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
 shrubLegalName = "SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)"
 webmasterEmail = "webmaster@shrubcoop.org"
-
+[params.footer.contact]
+city = "Edinburgh"
+email = "hello@shrubcoop.org"
+phoneNumber = "0131 281 0583"
+postcode = "EH1 1JG"
+streetAddress = "13 Guthrie Street"
 [[params.funders]]
-name = "Climate Change Fund"
 image = "ccf.jpg"
 link = "https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund"
-
+name = "Climate Change Fund"
 [[params.funders]]
-name = "European Regional Development Fund"
 image = "erdf.jpg"
 link = "https://ec.europa.eu/regional_policy/en/funding/"
-
+name = "European Regional Development Fund"
 [[params.funders]]
-name = "Greener Scotland"
 image = "greener-scotland.jpg"
 link = "https://www.greenerscotland.org"
-
-
-[params.footer]
-
-[params.footer.contact]
-
-email = "hello@shrubcoop.org"
-phoneNumber = "0131 220 1884"
-streetAddress = "13 Guthrie Street"
-postcode = "EH1 1JG"
-city = "Edinburgh"
-
+name = "Greener Scotland"
 [taxonomies]
 category = ["swapshop", "zero-waste-hub", "food-sharing", "wee-spoke-hub", "workshops-and-events"]
 tag = ["swapshop", "zero-waste-hub", "food-sharing", "wee-spoke-hub", "workshops-and-events"]
