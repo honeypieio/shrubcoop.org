@@ -79,6 +79,33 @@ murakamiMembershipSignUpKey = "wza96Xne2EUrmCucaM9qhaMMr"
 murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
 shrubLegalName = "SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)"
 webmasterEmail = "webmaster@shrubcoop.org"
+
+[[params.funders]]
+name = "Climate Change Fund"
+image = "ccf.jpg"
+link = "https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund"
+
+[[params.funders]]
+name = "European Regional Development Fund"
+image = "erdf.jpg"
+link = "https://ec.europa.eu/regional_policy/en/funding/"
+
+[[params.funders]]
+name = "Greener Scotland"
+image = "greener-scotland.jpg"
+link = "https://www.greenerscotland.org"
+
+
+[params.footer]
+
+[params.footer.contact]
+
+email = "hello@shrubcoop.org"
+phoneNumber = "0131 220 1884"
+streetAddress = "13 Guthrie Street"
+postcode = "EH1 1JG"
+city = "Edinburgh"
+
 [taxonomies]
 category = ["swapshop", "zero-waste-hub", "food-sharing", "wee-spoke-hub", "workshops-and-events"]
 tag = ["swapshop", "zero-waste-hub", "food-sharing", "wee-spoke-hub", "workshops-and-events"]

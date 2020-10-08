@@ -1,22 +1,14 @@
 <div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
-  <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
     <div class="row">
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" target="_blank">
-          <img src="{{ .Site.BaseURL }}images/funders/ccf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://ec.europa.eu/regional_policy/en/funding/" target="_blank">
-          <img src="{{ .Site.BaseURL }}images/funders/erdf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="http://www.greenerscotland.org" target="_blank">
-          <img src="{{ .Site.BaseURL }}images/funders/greener-scotland.jpg" class="funder-image">
-        </a>
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	{{ range .Site.Params.funders }}
+	      <div class="my-3">
+		  <a href="{{ .link }}" title="{{ .name }}" target="_blank">
+		  	<img src="{{ .Site.BaseURL }}images/funders/{{.image}}" class="funder-image">
+		  </a>
+	      </div>
+	{{ end }}
       </div>
     </div>
   </div>
@@ -48,19 +40,19 @@
 
             <ul class="list-unstyled">
               <li>
-                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+                <a href="mailto:{{ .Site.Params.footer.contact.email}}">{{ .Site.Params.footer.contact.email}}</a>
               </li>
               <li>
-                Tel. 0131 220 1884
+		Tel. {{ .Site.Params.footer.contact.phoneNumber}}
               </li>
               <li>
-                13 Guthrie Street
+		{{ .Site.Params.footer.contact.streetAddress }}
               </li>
               <li>
-                EH1 1JG
+		{{ .Site.Params.footer.contact.postcode }}
               </li>
               <li>
-                Edinburgh
+		{{ .Site.Params.footer.contact.city }}
               </li>
             </ul>
 
@@ -95,7 +87,7 @@
             <h5>Site Links</h5>
 
             <ul class="list-unstyled">
-              
+
               {{ range .Site.Menus.main }}
 
               <li>
