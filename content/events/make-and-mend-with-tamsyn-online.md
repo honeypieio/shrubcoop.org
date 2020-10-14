@@ -2,7 +2,7 @@
 author = "Events and Workshops"
 description = "An online workshop where you can learn to make and mend or get advice on sewing projects!"
 location = "Online (read the description for the link)"
-tags = []
+tags = ["shrub-space", "sewing"]
 time = 2020-10-15T16:00:00Z
 title = "Make and Mend with Tamsyn (Online)"
 
