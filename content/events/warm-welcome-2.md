@@ -11,7 +11,7 @@ title = "Warm Welcome!"
 
 Are you interested in volunteering for SHRUB, become a paying member or simply want to find out more about what SHRUB is all about?
 
-**When**: 5-6pm on Wednesday, 16 September
+**When**: 5-6pm on Wednesday, 28 October
 
 Join us online! [Here](https://us02web.zoom.us/j/9731735824 "zoom link") is the Zoom link
 
