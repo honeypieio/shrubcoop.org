@@ -6,21 +6,19 @@ lat = -3.188578
 lon = 55.948208
 showOnFrontPage = true
 tagline = "learn to take care of your bike!"
-times = "Temporarily closed"
+times = "By appointment only through the Cycle Repair Scheme"
 title = "Wee Spoke Hub"
 weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
 
 +++
-The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechanic will help you learn the skills to take care of your bike.
+The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.
 
-**Tools and expertise** are provided and participants are welcome to donate what they can.
+We also have a range of refurbished bikes and second hand parts for sale. As a member of SHRUB Coop you get **discounts** on parts.
 
-Simply bring your bike along to one of our **Fix Your Own Bike** workshops on Tuesday and Thursday evenings, 5-8pm, and our team will check it over and guide you in any repairs it needs.
+We are starting to reopen our doors to the public following some new incoming funding and Covid-19 safety adjustments. In September 2020 we were awarded a grant of £2,000 from Cycling UK to offer a **FREE Cycle Repair Scheme** - aiming to help people “get on their bike” again. Check out this guide to give you more information about the scheme.
 
-We also have a range of refurbished bikes and used parts for sale.
-
-As a member of SHRUB Coop you get **discounts** on parts.
+We have also recently been awarded funding from Paths for All to restart our much-loved **Fix Your Own Bike** workshops and offer some exciting new cycle-focused activities - keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png)
 
@@ -32,9 +30,13 @@ We helped over **450** people to fix their own bikes in 2018 and the Wee Spoke H
 
 ### Frequently Asked Questions
 
-#### Do I need to be a member to use it?
+#### What Covid-19 safety precautions are we taking?
 
-No! Anyone can come along for the Fix Your Own Bike workshops, however, as a member you get discounts on bicycle parts.
+Before reopening, we are implementing comprehensive Covid-19 safety assessments and adjustments in the Wee Spoke Hub, including introducing hand sanitizer stations, social distancing measures, a one way system and limiting the number of people in the space at once. Everyone entering the Wee Spoke Hub will be asked to wear a face covering unless exempt, and our mechanic and volunteers will all be wearing face coverings.
+
+#### Do I need to be a SHRUB member to access the Wee Spoke Hub and Cycle Repair Scheme?
+
+No, anyone will be able to access our workshops and activities once we start them up again. In order to book onto the Cycle Repair Scheme, please follow the steps in the guide above.
 
 #### Is the Wee Spoke Hub accessible?
 
@@ -45,7 +47,7 @@ If you have further questions regarding accessibility before a visit, please con
 
 #### Is there nearby bicycle parking?
 
-There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street. We have indoor cycle rack for our workshop users.
+There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street. We have indoor cycle racks for our workshop users.
 
 #### What bus routes are you on?
 
