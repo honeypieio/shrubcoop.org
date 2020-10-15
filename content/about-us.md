@@ -68,7 +68,7 @@ We follow the cooperative principles below, and organise our work through workin
 
 **Workshops & Events:** We organise events and upcycling workshops to educate the community about sustainable living.
 
-**Food Sharing:** We re-distribute excess food from businesses to the community through our Food Sharing Hub and Food Sharing Network, and run sustainable cooking and home crafting classes.
+**Food Sharing:** We re-distribute excess food from businesses to the community through our Food Sharing Hub.
 
 **Wee Spoke Hub:** We organise DIY workshops for you to learn how to fix your own bike with help from trained mechanics.
 
