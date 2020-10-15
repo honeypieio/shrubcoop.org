@@ -16,7 +16,7 @@ The Wee Spoke Hub is a welcoming workshop space where tools and expertise are pr
 
 We also have a range of refurbished bikes and second hand parts for sale. As a member of SHRUB Coop you get **discounts** on parts.
 
-We are starting to reopen our doors to the public following some new incoming funding and Covid-19 safety adjustments. In September 2020 we were awarded a grant of £2,000 from Cycling UK to offer a **FREE Cycle Repair Scheme** - aiming to help people “get on their bike” again. Check out this guide to give you more information about the scheme.
+We are starting to reopen our doors to the public following some new incoming funding and Covid-19 safety adjustments. In September 2020 we were awarded a grant of £2,000 from Cycling UK to offer a **FREE Cycle Repair Scheme** - aiming to help people “get on their bike” again. Check out [this guide](https://res.cloudinary.com/shrub-co-op/image/upload/v1602775388/shrubcoop.org/media/Cycle_Repair_Scheme_at_Wee_Spoke_Hub_dnl4v3.pdf) to give you more information about the scheme.
 
 We have also recently been awarded funding from Paths for All to restart our much-loved **Fix Your Own Bike** workshops and offer some exciting new cycle-focused activities - keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!
 
