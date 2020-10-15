@@ -7,7 +7,9 @@ title = "The Wee Spoke Hub is starting the journey to reopening!"
 type = "news"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png)Thanks to a grant of £2,000 from Cycling UK we’ll be offering a **FREE Cycle Repair Scheme** - aiming to help people “get on their bike” again. How does it work?
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png)
+
+Thanks to a grant of £2,000 from Cycling UK we’ll be offering a **FREE Cycle Repair Scheme** - aiming to help people “get on their bike” again. How does it work?
 
 1\. Dig that trusty old clunker out from the cupboard or shed
 
