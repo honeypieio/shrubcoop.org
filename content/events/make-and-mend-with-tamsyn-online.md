@@ -3,11 +3,11 @@ author = "Events and Workshops"
 description = "An online workshop where you can learn to make and mend or get advice on sewing projects!"
 location = "Online (read the description for the link)"
 tags = ["shrub-space", "sewing"]
-time = 2020-10-15T16:00:00Z
+time = 2020-10-15T16:30:00Z
 title = "Make and Mend with Tamsyn (Online)"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1586530567/shrubcoop.org/media/sewing_sessions_FB_event_banner_1_khbicr.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1602773928/shrubcoop.org/media/Thu_sewing_sessions_vv1xug.jpg)
 
 Regular Thursday ‘Make and Mend with SHRUB’ Session run by Tamsyn Ball.  
 Every week we have a special topic, but drop ins and all sorts of sewing projects and questions are welcome.
@@ -22,11 +22,9 @@ So whether you’ve got an upcycling project in mind, need to repair or alter so
 
 #### How to join
 
-Until further notice these sessions run online, on [Zoom](https://us02web.zoom.us/j/9731735824 ) 
+Until further notice these sessions run online, on [Zoom](https://us02web.zoom.us/j/9731735824 )
 
 ID 9731735824.
-
-Join before 17:40 to have guaranteed access.
 
 This event is **FREE** (donations are always welcome)
 
