@@ -87,7 +87,7 @@ postcode = "EH3 9AF"
 streetAddress = "22 Bread Street"
 [[params.funders]]
 image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1603189974/shrubcoop.org/media/Cycling_UK_c6jsv6.png"
-link = ""
+link = "https://www.cyclinguk.org/ScotCycleRepair"
 name = "Cycling UK"
 [[params.funders]]
 image = "https://shrubcoop.org/images/funders/ccf.jpg"
