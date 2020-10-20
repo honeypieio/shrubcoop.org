@@ -86,6 +86,10 @@ phoneNumber = "0131 281 0583"
 postcode = "EH1 1JG"
 streetAddress = "13 Guthrie Street"
 [[params.funders]]
+image = "Cycling_UK_c6jsv6.png"
+link = ""
+name = "Cycling UK"
+[[params.funders]]
 image = "ccf.jpg"
 link = "https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund"
 name = "Climate Change Fund"
