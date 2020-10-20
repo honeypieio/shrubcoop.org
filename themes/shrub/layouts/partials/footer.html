@@ -5,7 +5,7 @@
 	{{ range .Site.Params.funders }}
 	      <div class="my-3">
 		  <a href="{{ .link }}" title="{{ .name }}" target="_blank">
-		  	<img src="{{ .Site.BaseURL }}images/funders/{{.image}}" class="funder-image">
+		  	<img src="{{.image}}" class="funder-image">
 		  </a>
 	      </div>
 	{{ end }}

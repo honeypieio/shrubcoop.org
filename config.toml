@@ -90,15 +90,15 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1603189974/shrubco
 link = ""
 name = "Cycling UK"
 [[params.funders]]
-image = "ccf.jpg"
+image = "https://shrubcoop.org/images/funders/ccf.jpg"
 link = "https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund"
 name = "Climate Change Fund"
 [[params.funders]]
-image = "erdf.jpg"
+image = "https://shrubcoop.org/images/funders/erdf.jpg"
 link = "https://ec.europa.eu/regional_policy/en/funding/"
 name = "European Regional Development Fund"
 [[params.funders]]
-image = "greener-scotland.jpg"
+image = "https://shrubcoop.org/images/funders/greener-scotland.jpg"
 link = "https://www.greenerscotland.org"
 name = "Greener Scotland"
 [taxonomies]
