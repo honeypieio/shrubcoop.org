@@ -86,7 +86,7 @@ phoneNumber = "0131 281 0583"
 postcode = "EH1 1JG"
 streetAddress = "13 Guthrie Street"
 [[params.funders]]
-image = "Cycling_UK_c6jsv6.png"
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1603189974/shrubcoop.org/media/Cycling_UK_c6jsv6.png"
 link = ""
 name = "Cycling UK"
 [[params.funders]]
