@@ -75,7 +75,7 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit "SHRUB Trustee Application Form"), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **9am, Friday 20th November**.
 
-Applications will be considered at our AGM, which you are very welcome to attend!
+Applications will be considered at our AGM on Monday, 23rd November, which you are very welcome to attend!
 
 For more information, please have a read of our [information pack.](https://res.cloudinary.com/shrub-co-op/image/upload/v1604617579/shrubcoop.org/media/Trustee_invitation_-_SHRUB_Coop_-_2020_brhcr4.pdf "Trustee Invitation -2020")
 
