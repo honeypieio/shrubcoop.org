@@ -2,7 +2,6 @@
 author = "SHRUB Coop"
 date = 2020-11-05T15:00:00Z
 description = "We're recruiting for next year's trustees. Application deadline 9am, 20th November"
-draft = true
 tags = ["zero-waste-hub", "food-sharing-hub", "wee-spoke-hub", "shrub-space", "swapshop"]
 title = "Become a trustee of SHRUB Coop!"
 type = "news"
