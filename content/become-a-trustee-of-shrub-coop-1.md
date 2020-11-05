@@ -1,7 +1,7 @@
 +++
 author = "SHRUB Coop"
 date = 2020-11-05T15:00:00Z
-description = "We're recruiting for next year's trustees. Application deadline 24th November"
+description = "We're recruiting for next year's trustees. Application deadline 9am, 20th November"
 draft = true
 tags = ["zero-waste-hub", "food-sharing-hub", "wee-spoke-hub", "shrub-space", "swapshop"]
 title = "Become a trustee of SHRUB Coop!"
@@ -74,10 +74,10 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 **How Do I Apply?**
 
-To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit "SHRUB Trustee Application Form"), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **9am, Friday, 20th November**.
+To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit "SHRUB Trustee Application Form"), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **9am, Friday 20th November**.
 
 Applications will be considered at our AGM, which you are very welcome to attend!
 
-For more information, please have a read of our [information pack](https://res.cloudinary.com/shrub-co-op/image/upload/v1571932521/shrubcoop.org/media/Trustee_invitation_-_October_2019_vx2vr2.pdf "Trustee_invitation_-_October_2019_vx2vr2.pdf").
+For more information, please have a read of our [information pack.](https://res.cloudinary.com/shrub-co-op/image/upload/v1604617579/shrubcoop.org/media/Trustee_invitation_-_SHRUB_Coop_-_2020_brhcr4.pdf "Trustee Invitation -2020")
 
 Any questions please email us at [hello@shrubcoop.org](mailto:hello@shrubcoop.org).
