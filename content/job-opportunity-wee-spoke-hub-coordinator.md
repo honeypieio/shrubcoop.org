@@ -7,8 +7,6 @@ title = "Job Opportunity: Wee Spoke Hub Coordinator"
 type = "news"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1567156973/shrubcoop.org/media/Weespoke_hub_logo_white_background_evcdfw.png)
-
 **Salary £25,000 p.a, full time 35 hours / week**  
 _Fixed term contract to 31 October 2021 – extension subject to successful funding bids_  
 **Application Deadline:** **9am 24th November**
