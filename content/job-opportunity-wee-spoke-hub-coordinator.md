@@ -17,7 +17,7 @@ An exciting opportunity has arisen to join the staff team at SHRUB Coop! We’re
 
 To develop and coordinate the Wee Spoke Hub bike project’s operations, activities, partnerships, volunteer processes, and monitoring and evaluation; to build an engaged and active hub which works to facilitate access to active travel in Central Edinburgh.
 
-These posts are considered Regulated Work with Vulnerable Children and/or Protected Adults, under the Protection of Vulnerable Groups (Scotland) Act 2007. Preferred candidates will be required to join the PVG Scheme or undergo a PVG Scheme update check prior to a formal offer of employment being made.
+The post is considered Regulated Work with Vulnerable Children and/or Protected Adults, under the Protection of Vulnerable Groups (Scotland) Act 2007. Preferred candidates will be required to join the PVG Scheme or undergo a PVG Scheme update check prior to a formal offer of employment being made.
 
 **Successful applicants must have experience and skills in the following areas:**
 
