@@ -45,6 +45,6 @@ You may insert a maximum one page Covering Letter in front with a maximum two pa
 
 Please give as the document filename: **SURNAME - Wee Spoke Hub Coordinator** with the same subject line of the email to help us keep track of applicants.
 
-For further details see the [Job Description](https://res.cloudinary.com/shrub-co-op/image/upload/v1604575764/shrubcoop.org/media/Wee_Spoke_Hub_Coordinator-SHRUB_job_description_-_Nov_2020.docx_pxwaty.pdf).
+For further details see the [Job Description](https://drive.google.com/file/d/1bqbzjygzQRn-XMKliG4VLuRK4U7ZaVn6/view?usp=sharing).
 
 **Interviews will be held on 02/12/20 online via Zoom. We will be looking for the successful applicant to start on or as soon as possible after 05/01/2021.**
