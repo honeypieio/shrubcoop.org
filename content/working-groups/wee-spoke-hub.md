@@ -18,7 +18,7 @@ We also have a range of refurbished bikes and second hand parts for sale. As a m
 
 We are starting to reopen our doors to the public following some new incoming funding and Covid-19 safety adjustments. In September 2020 we were awarded a grant of £2,000 from Cycling UK to offer a **FREE Cycle Repair Scheme** - aiming to help people “get on their bike” again. Check out [this guide](https://res.cloudinary.com/shrub-co-op/image/upload/v1602775388/shrubcoop.org/media/Cycle_Repair_Scheme_at_Wee_Spoke_Hub_dnl4v3.pdf) to give you more information about the scheme.
 
-We have also recently been awarded funding from Paths for All to restart our much-loved **Fix Your Own Bike** workshops and offer some exciting new cycle-focused activities - keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!
+The Wee Spoke Hub is also part funded by Smarter Choices Smarter Places, which is Paths for All’s programme to increase active and sustainable travel throughout Scotland. The programme is grant-funded by Transport Scotland. This funding is enabling us to restart our much-loved **Fix Your Own Bike** workshops and offer some exciting new cycle-focused activities - keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png)
 
