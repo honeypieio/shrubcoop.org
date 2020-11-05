@@ -2,12 +2,13 @@
 author = "SHRUB Coop"
 date = 2020-11-05T11:00:00Z
 description = "An exciting opportunity has arisen to join our team as Wee Spoke Hub Coordinator!"
-draft = true
 tags = ["wee-spoke-hub", "active-travel", "bikes", "sustainable-transport"]
 title = "Job Opportunity: Wee Spoke Hub Coordinator"
 type = "news"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1567156973/shrubcoop.org/media/Weespoke_hub_logo_white_background_evcdfw.png)
+
 **Salary £25,000 p.a, full time 35 hours / week**  
 _Fixed term contract to 31 October 2021 – extension subject to successful funding bids_  
 **Application Deadline:** **9am 24th November**
