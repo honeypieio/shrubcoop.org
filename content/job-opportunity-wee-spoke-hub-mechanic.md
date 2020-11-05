@@ -18,6 +18,8 @@ An exciting opportunity has arisen to join the staff team at SHRUB Coop! We’re
 
 To ensure the smooth operation of the Wee Spoke Hub’s weekly bike repair workshops. The role holder will facilitate the workshops, providing top-level mechanical bike knowledge and assistance to participants, practical support to volunteers and ensuring that accurate records are kept.
 
+These posts are considered Regulated Work with Vulnerable Children and/or Protected Adults, under the Protection of Vulnerable Groups (Scotland) Act 2007. Preferred candidates will be required to join the PVG Scheme or undergo a PVG Scheme update check prior to a formal offer of employment being made.
+
 **Successful applicants must have experience and skills in the following areas:**
 
 * Experience in bicycle maintenance / repair with high level of practical knowledge – at least Velotech Gold level qualification required.
