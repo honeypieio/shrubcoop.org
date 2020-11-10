@@ -7,7 +7,7 @@ title = "Sharing Skills for Everyday Cycling"
 type = "news"
 
 +++
-**![](https://lh5.googleusercontent.com/nSL1_-9IrR0ar0jSnAB0iIb5Ky_TYKLqVHCGlO26jR1_4d1cqhIHX7i7JXRJhCVIjMhnBb2HgNnXTS4HK6jAZCOzjYqs7vWA7xOyTpKYrk-ugALij52Tx7Uo-FUf5Cwh-1AdaWs3 =602x339)**
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1605029458/shrubcoop.org/media/everyday_cycling_skillshare_zaluv2.png)
 
 It's great to see so many people embracing cycling as a way of getting around recently. Cycling has a bit of a reputation in the UK for being the reserve of sports enthusiasts, wearing the distinctive lycra outfits that we see on TV in sports events. However, in other parts of the world cycling is much more part of the day-to-day fabric of life - just another transport option that can be much cheaper and more convenient than public transport or a private car.
 
@@ -25,7 +25,7 @@ Sometimes it can be hard to know where to find information and resources about c
 
 Keep an eye on the [SHRUB Facebook events page](https://www.facebook.com/shrubcoop/events/?ref=page_internal) to find a Facebook event and Zoom link for each date.
 
-If you’re a regular cyclist and want to share your knowledge and enthusiasm, then why not get involved as a volunteer? Get in touch with us to find out how: volunteering@shrubcoop.org. 
+If you’re a regular cyclist and want to share your knowledge and enthusiasm, then why not get involved as a volunteer? Get in touch with us to find out how: volunteering@shrubcoop.org.
 
 **Free bike repairs**
 
