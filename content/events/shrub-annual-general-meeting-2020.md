@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Coop"
-description = "Join us on November 23rd for our AGM!"
+description = "Join us on 23rd November for our AGM!"
 location = "Online (read the description for the link)"
 tags = ["wee-spoke-hub", "zero-waste-hub", "swapshop", "food-sharing-hub", "shrub-space"]
 time = 2020-11-23T18:00:00Z
@@ -9,7 +9,9 @@ title = "SHRUB Annual General Meeting 2020"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1605218214/shrubcoop.org/media/P1400088a_oyo8sl.jpg)
 
-This year's AGM is here!
+This year's AGM is here! 
+
+Join us on **23rd November, 6-8pm.**
 
 Don't be scared, this is just a chance for us all to hear about what we have been up to and think about what we want to be doing in the future. It's also time to say goodbye to our current trustees and elect new trustees for the next year ahead
 
