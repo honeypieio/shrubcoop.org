@@ -11,13 +11,13 @@ title = "SHRUB Annual General Meeting 2020"
 
 This year's AGM is here! 
 
-Join us on **23rd November, 6-8pm.**
-
 Don't be scared, this is just a chance for us all to hear about what we have been up to and think about what we want to be doing in the future. It's also time to say goodbye to our current trustees and elect new trustees for the next year ahead
 
 We will have space for everyone to share their opinions, thoughts and ideas. Put your thinking caps on before the day and bring any ideas or questions you might have.
 
 We’ll follow this up with a social activity, the details of which will be confirmed soon!
+
+**When**: 23rd November, 6-8pm.
 
 **Where**: Online. Join us on Zoom [here](https://us02web.zoom.us/j/84289235949?pwd=Tm45MGd4WVJiYkRFRHp6MkNSSFZLdz09) (Meeting ID: 842 8923 5949 Passcode: 720180)
 
