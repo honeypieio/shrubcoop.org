@@ -22,25 +22,25 @@ We’ll follow this up with a social activity, the details of which will be conf
 **Where**: Online. Join us on Zoom [here](https://us02web.zoom.us/j/84289235949?pwd=Tm45MGd4WVJiYkRFRHp6MkNSSFZLdz09) (Meeting ID: 842 8923 5949 Passcode: 720180)
 
 **  
-Draft Agenda:**
+**Draft Agenda:
 
-6\.00pm **_Welcome_**
+6\.00pm Welcome
 
-6\.15pm **_Our Impact this year_** - What are the biggest achievements of SHRUB this year? (breakout rooms)
+6\.15pm Our Impact: SHRUB's biggest achievements 2019-20
 
 6\.40pm Break
 
-6\.45pm **_Electing our Trustees_**
+6\.45pm Electing our Trustees
 
-7\.05pm **_Financial Report_**
+7\.05pm Financial Report: How we spent our money
 
 7\.15pm Break
 
-7\.20pm **_Ideas Generation_** - What ideas do you have for the next year at SHRUB? (breakout rooms)
+7\.20pm Ideas Generation - Your dreams for next year at SHRUB
 
 7\.45pm Join together to share ideas and finish
 
-8\.00pm **_After-Party / Social_** (please let us know if you have any suggestions)
+8\.00pm After-Party / Social (say if you have any suggestions)
 
 **Becoming a Trustee**:  
 If you would like to stand for election as a Trustee, please see the application process on our [website](https://www.shrubcoop.org/become-a-trustee-of-shrub.../...). We are looking for people of all skill sets and backgrounds so don't be shy to apply!
