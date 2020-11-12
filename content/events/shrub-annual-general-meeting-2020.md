@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "Join us on November 23rd for our AGM!"
 location = "Online (read the description for the link)"
 tags = ["wee-spoke-hub", "zero-waste-hub", "swapshop", "food-sharing-hub", "shrub-space"]
-time = 2019-11-28T18:00:00Z
+time = 2020-11-23T18:00:00Z
 title = "SHRUB Annual General Meeting 2020"
 
 +++
