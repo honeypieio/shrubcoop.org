@@ -42,10 +42,10 @@ We’ll follow this up with a social activity, the details of which will be conf
 8\.00pm **_After-Party / Social_** (Please let us know if you have any suggestions)
 
 **Becoming a Trustee**:  
-If you would like to stand for election as a Trustee, please see the application process on our [website](https://www.shrubcoop.org/become-a-trustee-of-shrub.../...). We are looking for people of all skill sets and backgrounds so don't be shy to apply!
+If you would like to stand for election as a Trustee, please see the application process [here](https://www.shrubcoop.org/become-a-trustee-of-shrub-coop-1/). We are looking for people of all skill sets and backgrounds so don't be shy to apply!
 
 **Annual Report:  
-**If you would like to read our annual report in advance (we have achieved so much!), you can see it [here](https://res.cloudinary.com/.../SHRUB_Coop_Annual_Report...).
+**If you would like to read our annual report in advance (we have achieved so much!), you can see it [here](https://res.cloudinary.com/shrub-co-op/image/upload/v1601983174/shrubcoop.org/media/SHRUB_Coop_Annual_Report_and_Accounts_18.11.20_-_31.03.20_cpbntw.pdf).
 
 **Accessibility**:  
 This will be an online event using Zoom meetings. 
