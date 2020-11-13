@@ -7,7 +7,7 @@ title = "Job Opportunity: Wee Spoke Hub Mechanic"
 type = "news"
 
 +++
-**Salary £25,000 p.a pro rata (£6,840), part time 8 hours / week**  
+**Salary £25,000 p.a pro rata (£6,061), part time 8 hours / week**  
 _Tuesdays and Thursdays 5-8pm plus two hours prep time_  
 _Fixed term contract to 31 October 2021 – extension subject to successful funding bids_  
 **Application Deadline:** **9am 30th November 2020**
