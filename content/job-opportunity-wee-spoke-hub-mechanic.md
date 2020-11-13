@@ -45,6 +45,6 @@ The panel will shortlist on the basis of essential criteria with secondary weigh
 
 Please give as the document filename: **SURNAME – Wee Spoke Hub Mechanic** with the same as subject line of the email to help us keep track of applicants.
 
-For further details see the [Mechanic Job Description](https://drive.google.com/file/d/1QRLmTfi_yUYMSYMFMXOJYx1GUuTvYSIq/view?usp=sharing)
+For further details see the [Mechanic Job Description](https://drive.google.com/file/d/18vvKVDnKNjaKJXmKPUXDqkOfWQfpewlE/view?usp=sharing)
 
 **Interviews will be held on 08/12/20 online via Zoom. We will be looking for the successful applicant to start on or as soon as possible after 05/01/2021.**
