@@ -9,7 +9,7 @@ title = "SHRUB Annual General Meeting 2020"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1605218214/shrubcoop.org/media/P1400088a_oyo8sl.jpg)
 
-This year's AGM is here! 
+This year's AGM is here!
 
 Don't be scared, this is just a chance for us all to hear about what we have been up to and think about what we want to be doing in the future. It's also time to say goodbye to our current trustees and elect new trustees for the next year ahead
 
@@ -20,6 +20,8 @@ We’ll follow this up with a social activity, the details of which will be conf
 **When**: 23rd November, 6-8pm.
 
 **Where**: Online. Join us on Zoom [here](https://us02web.zoom.us/j/84289235949?pwd=Tm45MGd4WVJiYkRFRHp6MkNSSFZLdz09) (Meeting ID: 842 8923 5949 Passcode: 720180)
+
+**Registration**: It's free to attend, but please sign up via Eventbrite [here](https://shrub23nov.eventbrite.co.uk) so we can keep track of numbers
 
 **Draft Agenda:**
 
@@ -49,7 +51,7 @@ If you would like to stand for election as a Trustee, please see the application
 If you would like to read our annual report in advance (we have achieved so much!), you can see it [here](https://res.cloudinary.com/shrub-co-op/image/upload/v1601983174/shrubcoop.org/media/SHRUB_Coop_Annual_Report_and_Accounts_18.11.20_-_31.03.20_cpbntw.pdf).
 
 **Accessibility**:  
-This will be an online event using Zoom meetings. 
+This will be an online event using Zoom meetings.
 
 If you have any questions about the accessibility of the meeting, please get in touch via hello@shrubcoop.org
 
