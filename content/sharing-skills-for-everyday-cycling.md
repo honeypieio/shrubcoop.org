@@ -19,11 +19,11 @@ Sometimes it can be hard to know where to find information and resources about c
 
 **Join us online for our new “Everyday Cycling Skill-share” at 5:30-6:30pm on Mondays on the following dates:**
 
-* 30th November – Cycling in the winter: don’t let the weather get you down!
+* 30th November – Cycling in the winter: don’t let the weather get you down! [Here's the link](https://www.facebook.com/events/4916482358369432/) to the Facebook event with the Zoom link to join
 * 14th December – Bike maintenance: things to watch out for in the winter
 * 18th January 2021 - Edinburgh’s cycle secrets: how to find bike paths and routes near you
 
-Keep an eye on the [SHRUB Facebook events page](https://www.facebook.com/shrubcoop/events/?ref=page_internal) to find a Facebook event and Zoom link for each date.
+Keep an eye on the [SHRUB Facebook events page](https://www.facebook.com/shrubcoop/events/?ref=page_internal) for details of the 14th December and 18th January sessions!
 
 If you’re a regular cyclist and want to share your knowledge and enthusiasm, then why not get involved as a volunteer? Get in touch with us to find out how: volunteering@shrubcoop.org.
 
