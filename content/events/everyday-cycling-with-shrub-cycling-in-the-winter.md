@@ -8,3 +8,6 @@ time = 2020-11-30T17:30:00Z
 title = "Everyday Cycling with SHRUB: Cycling in the winter"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1605722318/shrubcoop.org/media/winter_cycling_pic_wmgwtf.jpg)
+
+Cycling in the winter: don’t let the weather get you down!
