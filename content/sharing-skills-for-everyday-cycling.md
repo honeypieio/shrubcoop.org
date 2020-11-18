@@ -25,7 +25,7 @@ Sometimes it can be hard to know where to find information and resources about c
 
 Keep an eye on the [SHRUB Facebook events page](https://www.facebook.com/shrubcoop/events/?ref=page_internal) for details of the 14th December and 18th January sessions!
 
-If you’re a regular cyclist and want to share your knowledge and enthusiasm, then why not get involved as a volunteer? Get in touch with us to find out how: volunteering@shrubcoop.org.
+If you’re a regular cyclist and want to share your knowledge and enthusiasm, then why not get involved as a volunteer? Get in touch with us to find out how: volunteering@shrubcoop.org. You can also join the dedicated [Everyday Cycling Facebook group](https://www.facebook.com/groups/3381216181973515) to be part of our community!
 
 **Free bike repairs**
 
