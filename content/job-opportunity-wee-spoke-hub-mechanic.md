@@ -12,6 +12,8 @@ _Tuesdays and Thursdays 5-8pm plus two hours prep time_
 _Fixed term contract to 31 October 2021 – extension subject to successful funding bids_  
 **Application Deadline:** **9am 30th November 2020**
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1606141657/shrubcoop.org/media/Copy_of_Were-hiring_1_l6v4wu.png)
+
 An exciting opportunity has arisen to join the staff team at SHRUB Coop! We’re looking for a bike mechanic to help us run our weekly fix-your-own-bike sessions and help our community to learn how to take care of their bikes, as well as empowering our Wee Spoke Hub volunteers to take ownership of the project.
 
 **Job Purpose**
