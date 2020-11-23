@@ -11,6 +11,8 @@ type = "news"
 _Fixed term contract to 31 October 2021 – extension subject to successful funding bids_  
 **Application Deadline:** **9am 24th November**
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1606141471/shrubcoop.org/media/Copy_of_Were-hiring_qjnxss.png)
+
 An exciting opportunity has arisen to join the staff team at SHRUB Coop! We’re looking for a Wee Spoke Hub Coordinator to develop and coordinate the Wee Spoke Hub project activities to assist and inspire our local community to get on their bikes, as well as empowering our Wee Spoke Hub volunteers to take ownership of the project.
 
 **Job Purpose**
