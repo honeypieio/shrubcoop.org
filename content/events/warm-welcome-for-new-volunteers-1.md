@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Coop"
-description = "An online workshop where you can learn to make and mend or get advice on sewing projects!"
+description = "Are you interested in volunteering for SHRUB, become a paying member or simply want to find out more about what SHRUB is all about?"
 draft = true
 location = "Online (read the description for the link)"
 tags = []
