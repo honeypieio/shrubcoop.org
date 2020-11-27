@@ -2,6 +2,7 @@
 author = "SHRUB Coop"
 date = 2020-11-05T11:00:00Z
 description = "An exciting opportunity has arisen to join our team as Wee Spoke Hub Coordinator!"
+draft = true
 tags = ["wee-spoke-hub", "active-travel", "bikes", "sustainable-transport"]
 title = "Job Opportunity: Wee Spoke Hub Coordinator"
 type = "news"
