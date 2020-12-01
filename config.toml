@@ -86,6 +86,10 @@ phoneNumber = "0131 281 0583"
 postcode = "EH3 9AF"
 streetAddress = "22 Bread Street"
 [[params.funders]]
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1606822272/shrubcoop.org/media/gannochy_trust_logo_ioxp0k.png"
+link = "https://www.gannochytrust.org.uk/"
+name = "The Gannochy Trust"
+[[params.funders]]
 image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1606821185/shrubcoop.org/media/BoS_Foundation_logo_waujvw.jpg"
 link = "https://www.bankofscotlandfoundation.org/funding-programmes/reach"
 name = "Bank of Scotland Foundation"
