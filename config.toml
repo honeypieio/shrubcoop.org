@@ -90,7 +90,7 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1606825522/shrubco
 link = "https://www.gannochytrust.org.uk/"
 name = "The Gannochy Trust"
 [[params.funders]]
-image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1606821185/shrubcoop.org/media/BoS_Foundation_logo_waujvw.jpg"
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543100/shrubcoop.org/media/BoS_Foundation_logo_waujvw_gbburn.jpg"
 link = "https://www.bankofscotlandfoundation.org/funding-programmes/reach"
 name = "Bank of Scotland Foundation"
 [[params.funders]]
