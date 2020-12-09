@@ -106,7 +106,7 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubco
 link = "https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund"
 name = "Climate Change Fund"
 [[params.funders]]
-image = "https://shrubcoop.org/images/funders/erdf.jpg"
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg"
 link = "https://ec.europa.eu/regional_policy/en/funding/"
 name = "European Regional Development Fund"
 [[params.funders]]
