@@ -98,7 +98,7 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubco
 link = "https://www.pathsforall.org.uk/smarter-choices-smarter-places-1"
 name = "Smarter Choices Smarter Places"
 [[params.funders]]
-image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1603189974/shrubcoop.org/media/Cycling_UK_c6jsv6.png"
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg"
 link = "https://www.cyclinguk.org/ScotCycleRepair"
 name = "Cycling UK"
 [[params.funders]]
