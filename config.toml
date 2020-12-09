@@ -110,7 +110,7 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubco
 link = "https://ec.europa.eu/regional_policy/en/funding/"
 name = "European Regional Development Fund"
 [[params.funders]]
-image = "https://shrubcoop.org/images/funders/greener-scotland.jpg"
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg"
 link = "https://www.greenerscotland.org"
 name = "Greener Scotland"
 [taxonomies]
