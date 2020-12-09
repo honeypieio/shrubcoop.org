@@ -102,7 +102,7 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubco
 link = "https://www.cyclinguk.org/ScotCycleRepair"
 name = "Cycling UK"
 [[params.funders]]
-image = "https://shrubcoop.org/images/funders/ccf.jpg"
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg"
 link = "https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund"
 name = "Climate Change Fund"
 [[params.funders]]
