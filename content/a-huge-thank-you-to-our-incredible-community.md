@@ -2,7 +2,6 @@
 author = "SHRUB"
 date = 2020-12-17T00:00:00Z
 description = "At the end of a rollercoaster of a year, we would like to say a heartfelt thank you to everyone who has supported us in 2020 "
-draft = true
 tags = ["shrub-coop", "community", "zero-waste", "climate-action", "2020", "thank-you"]
 title = "A huge THANK YOU to our incredible community!"
 type = "news"
