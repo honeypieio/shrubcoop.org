@@ -7,9 +7,9 @@ time = 2021-01-13T17:00:00Z
 title = "Warm Welcome for new volunteers"
 
 +++
-![https://res.cloudinary.com/shrub-co-op/image/upload/v1599684301/shrubcoop.org/media/warm_welcome_1_tsvqee.jpg](https://res.cloudinary.com/shrub-co-op/image/upload/v1599684301/shrubcoop.org/media/warm_welcome_1_tsvqee.jpg)
+![https://res.cloudinary.com/shrub-co-op/image/upload/v1599684301/shrubcoop.org/media/warm](https://res.cloudinary.com/shrub-co-op/image/upload/v1599684301/shrubcoop.org/media/warm_welcome_1_tsvqee.jpg)
 
-Are you interested in volunteering for SHRUB Coop, become a paying member or simply want to find out more about what SHRUB is all about?
+Are you interested in volunteering for SHRUB Coop, becoming a paying member or simply want to find out more about what SHRUB is all about?
 
 **When**: 5-6pm on Wednesday, 13 January 2021
 
