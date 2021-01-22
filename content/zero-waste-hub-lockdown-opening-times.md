@@ -1,5 +1,5 @@
 +++
-author = "Mary O'Driscoll"
+author = "SHRUB Coop"
 date = 2021-01-22T00:00:00Z
 description = "Food Sharing Opening Times"
 tags = []
