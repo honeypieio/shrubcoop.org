@@ -10,6 +10,8 @@ type = "news"
 +++
 We are excited to announce that we have been awarded a grant of £7,703.00 from the Scottish Government’s Community Climate Asset Fund.
 
+**What does this cover?**
+
 An electric cargo bike, fridge and freezer to help the Food Sharing Edinburgh Network to reduce local carbon emissions by reducing emissions for collections and deliveries and diverting more surplus food from landfill.
 
 **What is the CCAF?**
@@ -18,7 +20,7 @@ The Community Climate Asset Fund is a Scottish Government fund, administered by 
 
 Further details from www.keepscotlandbeautiful.org/ccaf
 
-**The COVID-19 pandemic also continues to have a significant impact on our income.** 
+**The COVID-19 pandemic also continues to have a significant impact on our income.**
 
 The revenue of the Zero Waste Hub is vital for us to pay for our core costs, including rent and our back-office staff who provide essential support for our projects.
 
