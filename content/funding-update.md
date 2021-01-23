@@ -18,4 +18,14 @@ The CCAF is a Scottish Government fund, administered by Keep Scotland Beautiful,
 
 Further details from www.keepscotlandbeautiful.org/ccaf
 
+**Your support is still very much in need.** By donating, you can help us to cover some of our core costs and keep our activities going while we wait for the outcome of more funding applications.
+
+We understand that right now, a lot of people are concerned about their own financial situation.
+
+It’s important that you take care of yourself and your family first.
+
+#### If you are in a position to help us, could you make a donation to SHRUB Coop?
+
+[Yes, I can make a donation](https://www.shrubcoop.org/donate/)
+
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1611404570/shrubcoop.org/media/a4-ccaf-footer-logo_ccqvnp.jpg)
