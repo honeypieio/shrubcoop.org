@@ -18,6 +18,8 @@ The CCAF is a Scottish Government fund, administered by Keep Scotland Beautiful,
 
 Further details from www.keepscotlandbeautiful.org/ccaf
 
+**The COVID-19 pandemic also continues to have a significant impact on our income.** The revenue of the Zero Waste Hub is vital for us to pay for our core costs, including rent and our back-office staff who provide essential support for our projects.
+
 **Your support is still very much in need.** By donating, you can help us to cover some of our core costs and keep our activities going while we wait for the outcome of more funding applications.
 
 We understand that right now, a lot of people are concerned about their own financial situation.
