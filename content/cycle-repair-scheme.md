@@ -54,47 +54,31 @@ Please note that the £30 service is simply the labour costs and does not includ
 
 ## **_Brakes_**
 
-| --- | --- |
-| Fitting brakes | £15 |
-| Replacing cable | £10 |
-| Replacing pads | £10 |
-| Servicing - both brakes | £15 |
+| --- | --- | | Fitting brakes | £15 | | Replacing cable | £10 | | Replacing pads | £10 | | Servicing - both brakes | £15 |
 
 ## **_Gears_**
 
-| --- | --- |
-Replace cable & adjust | £15 |
-| Replace cable & adjust (internal) | £20 |
-| Replace derailleur & adjustAdjusting gearsService - both derailleursReplace cassette / freewheel | £15£9£15£10 |
+| --- | --- | Replace cable & adjust | £15 | | Replace cable & adjust (internal) | £20 | | Replace derailleur & adjustAdjusting gearsService - both derailleursReplace cassette / freewheel | £15£9£15£10 |
 
 ## **_Wheel_**
 
-| --- | --- |
-| Wheel true | £10 |
-| Replace spoke - front wheelReplace spoke - rear wheelWheel replacement | £15£17£12 |
+| --- | --- | | Wheel true | £10 | | Replace spoke - front wheelReplace spoke - rear wheelWheel replacement | £15£17£12 |
 
 ## **_Tyre_**
 
-| --- | --- |
-| Fixing puncture | £10 |
-| New tyre fitting | £5 |
+| --- | --- | | Fixing puncture | £10 | | New tyre fitting | £5 |
 
 ## **_![](https://lh6.googleusercontent.com/iH6LApH9pZRK5J8AruAQcc4ZBDfZMrg-MQl3LLXacuEO0TNcMhM-6bdVVEVuMVeSpf45tYUC1wmUZUW9bLHLP1gribonrkI62ZMNwUfZkbZPZvgnjCGYAVqBwVtrIw7rg3KVhAUS =162x181)Hub_**
 
-| --- | --- |
-| Cone adjustment | £5 |
-| Full service + regrease | £20 |
-| Replacing bearings + full service | £25 |
+| --- | --- | | Cone adjustment | £5 | | Full service + regrease | £20 | | Replacing bearings + full service | £25 |
 
 ## **_Miscellaneous_**
 
-| --- | --- |
-| Chain fitting | £8 |
-| Cassette/freewheel fittingReplacing a bottom bracket | £10£22 |
+| --- | --- | | Chain fitting | £8 | | Cassette/freewheel fittingReplacing a bottom bracket | £10£22 |
 
 # **General Costs of Parts**
 
-We use the parts that we have in stock and which we know work and will make your bike safe to use.   
+We use the parts that we have in stock and which we know work and will make your bike safe to use.  
 We are happy to show you what these are when you come to drop off your bike.
 
 * Axle (solid / hollow) - £4
@@ -116,5 +100,4 @@ We are happy to show you what these are when you come to drop off your bike.
 * Spokes - £1
 * Tyre - £12
 
-  
 **We are gathering together the band of Wee Spoke Hub enthusiasts who have been the bedrock of volunteer support for the Wee Spoke Hub. Email** [**weespokehub@shrubcoop.org**](mailto:weespokehub@shrubcoop.org) **if interested.**
