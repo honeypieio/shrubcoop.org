@@ -52,9 +52,61 @@ Please note that the £30 service is simply the labour costs and does not includ
 
 # **Service - labour prices**
 
-## **_Brakes_**
+## Brakes
 
-| --- | --- | | Fitting brakes | £15 | | Replacing cable | £10 | | Replacing pads | £10 | | Servicing - both brakes | £15 |
+· Fitting brakes £15
+
+· Replacing cable £10
+
+· Replacing pads £10
+
+· Servicing - both brakes £15
+
+· Gears
+
+· Replace cable & adjust £15
+
+· Replace cable & adjust (internal) £20
+
+· Replace derailleur & adjust £1
+
+· Adjusting gears £9
+
+· Service - both derailleurs £15
+
+· Replace cassette / freewheel £10
+
+· Wheel
+
+· Wheel true £10
+
+· Replace spoke - front wheel £15
+
+· Replace spoke - rear wheel £17
+
+· Wheel replacement £12
+
+· Tyre
+
+· Fixing puncture £10
+
+· New tyre fitting £5
+
+· Hub
+
+· Cone adjustment £5
+
+· Full service + regrease £20
+
+· Replacing bearings + full service £25
+
+· Miscellaneous
+
+· Chain fitting £8
+
+· Cassette/freewheel fitting £10
+
+· Replacing a bottom bracket £22
 
 ## **_Gears_**
 
