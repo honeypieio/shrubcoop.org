@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resource-packs on SHRUB Coop</title>
+    <link>https://www.shrubcoop.org/resource-packs/</link>
+    <description>Recent content in Resource-packs on SHRUB Coop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 01 Aug 2020 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.shrubcoop.org/resource-packs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Run a Clothes Swap</title>
+      <link>https://www.shrubcoop.org/resource-packs/clothes-swap/</link>
+      <pubDate>Sat, 01 Aug 2020 12:00:00 +0000</pubDate>
+      
+      <guid>https://www.shrubcoop.org/resource-packs/clothes-swap/</guid>
+      <description>This guide is designed to give you all of the information you need to set up your own Clothes Swap.
+If you would like to come along to one of our events so that we can show you how we run things, please get in touch. If you would like someone to come and help run a clothes swap with you in your venue, this can be organised for a fee that will reflect the staff hours required.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="With social distancing set to continue for some time, the welfare team at SHRUB Coop have some tips to share to help take care of yourself.">
+
+
+<title>Taking care of yourself during lockdown | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </p>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Hub"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto underline"
+          >
+            <a
+              class="nav-link text-white"
+              title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >News</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0 mb-lg-5 mb-xl-5" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+
+      <div class="pt-5">
+        <h2 class="mb-0">Taking care of yourself during lockdown</h2>
+
+        <p class="dosis-semi-bold">
+          By Corran, posted 13/05/20
+        </p>
+
+        <p>With social distancing set to continue for some time, the welfare team at SHRUB Coop have some tips to share to help take care of yourself.</p>
+      </div>
+
+      <hr />
+
+      
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1589300362/shrubcoop.org/media/blog_post_header_image_template_n9z1bl.png" alt="" /></p>
+
+<p>For many of us, lockdown is a completely alien experience, unlike anything we’ve ever experienced before. It’s a difficult time - not being able to see our loved ones, many of us not being able to go to work, or no longer having a job at all. I for one know how easy it can be in these circumstances to let your wellbeing slide. However, that makes it all the more important to look after our mental health, as well as physical. The <a href="https://www.shrubcoop.org/introducing-the-welfare-working-group/">welfare team here at the SHRUB Coop</a> has put together a few tips to help you make lockdown a little kinder on our wellbeing.</p>
+
+<h4 id="give-yourself-a-break">Give Yourself A Break</h4>
+
+<p>The single most meaningful thing you can do for yourself during lockdown is go easy on yourself. Don’t beat yourself up – about anything. However you’re feeling, whatever you can or can’t do at the moment, it’s a much more radical and compassionate thing to accept it than to fight it. For me, I went into lockdown with a list as long as my arm of things I wanted to achieve. Now, more than a month in, there are some days when I count simply getting dressed as an achievement, to be celebrated as much as all the other lofty goals I had set myself. And I feel that that is one of the kindest things I could have done for myself. If you do have the energy and mental space to be productive - whatever that means to you - then crack on! But if all you can do is survive, that’s just as significant.</p>
+
+<p>If you&rsquo;re looking for something to occupy the time, but without the pressure to feel productive or achieve something, how about getting out some coloured pencils and giving mindful colouring a try? There are loads of books available online, and our graphic design volunteer, Hannah, has made some sketches available for you to download and print at home.<br />
+<a href="https://res.cloudinary.com/shrub-co-op/image/upload/v1589299618/shrubcoop.org/media/SHRUB_colouring_page_1_oidiyb.pdf" title="SHRUB_colouring_page_1_oidiyb.pdf">SHRUB_colouring_page_1.pdf</a></p>
+
+<p><a href="https://res.cloudinary.com/shrub-co-op/image/upload/v1589299608/shrubcoop.org/media/SHRUB_colouring_page_2_lqkiql.pdf" title="SHRUB_colouring_page_2_lqkiql.pdf">SHRUB_colouring_page_2.pdf</a></p>
+
+<h4 id="have-a-routine">Have a Routine</h4>
+
+<p>The current COVID-19 crisis has kicked up a lot of instability. It’s almost impossible to tell where we’ll be in just two weeks’ time, and that uncertainty can have <a href="https://afsp.org/story/taking-care-of-your-mental-health-in-the-face-of-uncertainty">a significant effect on anyone’s mental health</a>. However, there are some things you can do to make it easier, and one of the biggest ones is giving yourself a routine. It doesn’t have to be complicated; something as simple as waking up and going to bed at similar times, or trying to keep up regular meals, can have a massive effect. It just gives you that little bit of direction that will help you feel more like yourself. And if some days you throw your routine out the window, that’s also ok! I’m always a big fan of making things up as you go along, I just know it can be comforting to have something familiar to fall back on.</p>
+
+<h4 id="move-your-body">Move Your Body</h4>
+
+<p>In a society where exercise is all too often only seen as a means to an end, it can be easy to forget that moving your body can be an important part of self-care. It can be both <a href="https://www.helpguide.org/articles/healthy-living/the-mental-health-benefits-of-exercise.htm">relaxing and energising</a>, and I for one enjoy spending time out of my head and in my body – things which are more important than ever during such stressful times as these. However, it’s just as essential to make sure that you’re actually enjoying yourself. Now is not the time to be forcing yourself to do something because you feel you “have to”. If running and intense strength-building exercises aren’t your thing, there’s plenty of other things to try. From yoga and Pilates, to all types of dance, or even simply going for a walk, there’s something out there for every ability level, no matter how much space or time you have –find something that feels good to you!</p>
+
+<h4 id="be-mindful-about-the-news-you-consume">Be Mindful About The News You Consume</h4>
+
+<p>This is something I haven’t seen talked about much online, but it’s something I’ve personally found incredibly helpful in calming my mind. How you go about this is very individual, as it all depends on what affects you. Obviously, staying informed is always important, especially in times like these, but if being plugged into a 24-hour news cycle comes at the expense of your mental health, then you may want to consider changing your habits. The extreme end would be to completely stop reading the news, perhaps asking a friend to keep you up to date with the essentials so you’re not completely out of the loop. If completely switching off from the news isn’t for you, why not try reducing how often you are exposed to it? If you get a lot of your news through social media, making it something you can’t escape from, try temporarily unfollowing news outlets or blocking some key words from your feed. You’ll then have to go search out the news, which you’ll be less likely to do when you don’t have the mental space for it. And if you’re finding the news is making everything seem dire, here are some amazing community initiatives to help you feel positive;</p>
+
+<p><a href="https://www.facebook.com/groups/229180471560632/">Edinburgh Mask Makers</a></p>
+
+<p><a href="https://www.facebook.com/groups/1500699350098765">For The Love of Scrubs</a></p>
+
+<p><a href="https://www.crowdfunder.co.uk/edinburgh-emergency-medical-supplies">Edinburgh Shield Force</a></p>
+
+<p><a href="https://www.facebook.com/NourishingChangeEdinburgh/">Nourishing Change</a></p>
+
+<p><a href="https://leith-community-crops-in-pots.org">Leith Crops In Pots</a></p>
+
+<p>However, you could also find yourself on the other end of the spectrum. I was like this. I found that not keeping myself informed made me feel worse, catastrophising everything and feeling helpless. To combat this, I started consuming the news regularly – but paying attention to what sources I was getting it from. I try to avoid the updates-every-minute news, and opt for less sensationalised, more fact-based news. My own personal recommendation is <a href="https://www.youtube.com/channel/UCSMqateX8OA2s1wsOR2EgJA">TLDR News</a>, an independent outlet whose aim is to make complex topics more simple. Much like what I said earlier about exercise, however, the most important thing is to find something that works for you.</p>
+
+<p>Finding something that helps your mental health, rather than hurts it, is crucial in times like these. We hope that this has given you some ideas to help you look after yourself during lockdown. If you have any other wellbeing tips during self-isolation, please let us know!</p>
+
+<p>Be kind to yourself, take care, and stay safe!</p>
+
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

@@ -34,6 +34,15 @@
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -112,6 +121,20 @@
                     title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
                     href="/zero-waste-edinburgh/"
                     >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
                   >
                 
                 <div class="dropdown-divider"></div>
@@ -216,24 +239,9 @@
           >
             <a
               class="nav-link text-white"
-              title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
-              href="/contact/"
-              >Contact</a
-            >
-          </li>
-        
-
-      
-
-        
-          <li
-            class="nav-item mx-auto "
-          >
-            <a
-              class="nav-link text-white"
-              title="Donate now! - "
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E5ZKXP5TEKE76&amp;source=url"
-              >Donate now!</a
+              title="Donate - "
+              href="/donate"
+              >Donate</a
             >
           </li>
         
@@ -250,6 +258,402 @@
     <div class="container">
       <div class="pt-5 news-list">
         <h2 class="text-center mb-4">News</h2>
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/zero-waste-hub-lockdown-opening-times/" title="Blog post: Zero Waste Hub Lockdown Opening Times by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Zero Waste Hub Lockdown Opening Times</h3>
+</a>
+
+<p class="mb-2">Food Sharing Opening Times</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 22/01/21 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/festive-opening-times-update/" title="Blog post: Festive Opening Times (Update) by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Festive Opening Times (Update)</h3>
+</a>
+
+<p class="mb-2">An update to our festive opening times</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 22/12/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/shrub-opening-in-lockdown/" title="Blog post: SHRUB Jan&#39;21 Opening in Lockdown by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">SHRUB Jan&#39;21 Opening in Lockdown</h3>
+</a>
+
+<p class="mb-2">An update on our January&#39;21 opening plans following the new lockdown on 26th Dec</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 22/12/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/a-huge-thank-you-to-our-incredible-community/" title="Blog post: A huge THANK YOU to our incredible community! by SHRUB - click this link to continue reading.">
+  <h3 class="mb-2">A huge THANK YOU to our incredible community!</h3>
+</a>
+
+<p class="mb-2">From all of us at SHRUB, we want to say a huge and heartfelt THANK YOU to all…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 17/12/20 &nbsp; &#128100; SHRUB
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/" title="Blog post: Sharing Skills for Everyday Cycling by Lisa Heywood - click this link to continue reading.">
+  <h3 class="mb-2">Sharing Skills for Everyday Cycling</h3>
+</a>
+
+<p class="mb-2">Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 10/11/20 &nbsp; &#128100; Lisa Heywood
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/become-a-trustee-of-shrub-coop-1/" title="Blog post: Become a trustee of SHRUB Coop! by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Become a trustee of SHRUB Coop!</h3>
+</a>
+
+<p class="mb-2">We&#39;re recruiting for next year&#39;s trustees. Application deadline 9am, 20th…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 05/11/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/the-wee-spoke-hub-is-starting-the-journey-to-reopening/" title="Blog post: The Wee Spoke Hub is starting the journey to reopening! by Wee Spoke Hub - click this link to continue reading.">
+  <h3 class="mb-2">The Wee Spoke Hub is starting the journey to reopening!</h3>
+</a>
+
+<p class="mb-2">After months of uncertainty about the future of the Wee Spoke Hub we are excited…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 15/10/20 &nbsp; &#128100; Wee Spoke Hub
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/i-can-make-that/" title="Blog post: &#34;I can make that!&#34; by Amy Webster - click this link to continue reading.">
+  <h3 class="mb-2">&#34;I can make that!&#34;</h3>
+</a>
+
+<p class="mb-2">An introduction to eco-friendly DIY by our Comms Volunteer Amy Webster</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 21/09/20 &nbsp; &#128100; Amy Webster
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/the-great-oat-milk-debate/" title="Blog post: The Great Oat Milk Debate! by Alun Evans - click this link to continue reading.">
+  <h3 class="mb-2">The Great Oat Milk Debate!</h3>
+</a>
+
+<p class="mb-2">Our Cafe Coordinator Alun takes a look at sustainability credentials of the…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 21/09/20 &nbsp; &#128100; Alun Evans
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/members-general-meeting-this-sunday/" title="Blog post: Members&#39; General Meeting this Sunday! by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Members&#39; General Meeting this Sunday!</h3>
+</a>
+
+<p class="mb-2">SHRUB Coop members: hear what we&#39;re up to / help shape our future!</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 27/08/20 &nbsp; &#128100; SHRUB Cooperative
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/our-cafe-is-back/" title="Blog post: Our Cafe is back! by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Our Cafe is back!</h3>
+</a>
+
+<p class="mb-2">The SHRUB Cafe has now reopened for take-away!</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 26/08/20 &nbsp; &#128100; SHRUB Cooperative
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/we-re-reopening-here-s-how/" title="Blog post: We&#39;re reopening! Here&#39;s how... by Shrub Coop - click this link to continue reading.">
+  <h3 class="mb-2">We&#39;re reopening! Here&#39;s how...</h3>
+</a>
+
+<p class="mb-2">Everything you need to know about our new ways of working!</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 06/07/20 &nbsp; &#128100; Shrub Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/we-reopen-8th-july/" title="Blog post: Zero Waste Hub reopen 8th July!! by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Zero Waste Hub reopen 8th July!!</h3>
+</a>
+
+<p class="mb-2">Shrub Coop is excited to confirm we will reopen our Zero Waste Hub on 8th July!</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 25/06/20 &nbsp; &#128100; SHRUB Cooperative
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/request-for-proposals-consultancy-task-project-fundraising-assistance/" title="Blog post: Request for Proposals: Consultancy Task “Project Fundraising Assistance” by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Request for Proposals: Consultancy Task “Project Fundraising Assistance”</h3>
+</a>
+
+<p class="mb-2">An exciting opportunity to join the SHRUB team as a Project Fundraising…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 01/06/20 &nbsp; &#128100; SHRUB Cooperative
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/taking-care-of-yourself-during-lockdown/" title="Blog post: Taking care of yourself during lockdown by Corran - click this link to continue reading.">
+  <h3 class="mb-2">Taking care of yourself during lockdown</h3>
+</a>
+
+<p class="mb-2">With social distancing set to continue for some time, the welfare team at SHRUB…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 13/05/20 &nbsp; &#128100; Corran
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/recipe-homemade-ricotta-cheese/" title="Blog post: Workshop Recipe: Make your own ricotta cheese!  by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Workshop Recipe: Make your own ricotta cheese! </h3>
+</a>
+
+<p class="mb-2">A beginners guide to making cheese from home. </p>
+
+<p class="dosis-semi-bold">
+  &#128336; 03/05/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/we-re-trialing-a-new-steering-group/" title="Blog post: We&#39;re trialing a new steering group by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">We&#39;re trialing a new steering group</h3>
+</a>
+
+<p class="mb-2">We have an important update to share about the future strategic direction of…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 01/05/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/what-is-a-wardrobe-audit/" title="Blog post: What is a Wardrobe Audit? by Swapshop - click this link to continue reading.">
+  <h3 class="mb-2">What is a Wardrobe Audit?</h3>
+</a>
+
+<p class="mb-2">Do you feel like you have too many clothes? Most people do and yet we still…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 30/04/20 &nbsp; &#128100; Swapshop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/shrub-coop-is-having-an-impact-on-waste-in-edinburgh-here-s-how/" title="Blog post: SHRUB Coop is having an impact on waste in Edinburgh, here&#39;s how... by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">SHRUB Coop is having an impact on waste in Edinburgh, here&#39;s how...</h3>
+</a>
+
+<p class="mb-2">We&#39;ve just finished crunching the numbers and filed the report for our Climate…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 22/04/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/6-eco-friendly-swaps-to-make-lockdown-life-easier/" title="Blog post: 6 eco-friendly swaps to make lockdown life easier  by Izi Robe  - click this link to continue reading.">
+  <h3 class="mb-2">6 eco-friendly swaps to make lockdown life easier </h3>
+</a>
+
+<p class="mb-2">Buy less, waste less and reduce your environmental footprint, during lockdown…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 16/04/20 &nbsp; &#128100; Izi Robe 
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/funding-and-covid19-update/" title="Blog post: Funding update by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Funding update</h3>
+</a>
+
+<p class="mb-2">We wanted to share with you some important news on where we are...</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 26/03/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/can-you-help-us/" title="Blog post: Can you help us continue to create a world without waste? by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Can you help us continue to create a world without waste?</h3>
+</a>
+
+<p class="mb-2">COVID-19 is having a big impact on our income.</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 21/03/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
         
 
           
@@ -527,24 +931,52 @@
 
 
 				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
-  <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
     <div class="row">
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/ccf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://ec.europa.eu/regional_policy/en/funding/" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/erdf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="http://www.greenerscotland.org" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/greener-scotland.jpg" class="funder-image">
-        </a>
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
       </div>
     </div>
   </div>
@@ -553,7 +985,7 @@
 
 <div class="row mt-4 mb-4">
   <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
-    <p class="text-muted">SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above.</p>
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
   </div>
 </div>
 
@@ -579,16 +1011,16 @@
                 <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
               </li>
               <li>
-                Tel. 0131 220 1884
+		Tel. 0131 281 0583
               </li>
               <li>
-                13 Guthrie Street
+		22 Bread Street
               </li>
               <li>
-                EH1 1JG
+		EH3 9AF
               </li>
               <li>
-                Edinburgh
+		Edinburgh
               </li>
             </ul>
 
@@ -631,7 +1063,7 @@
             <h5>Site Links</h5>
 
             <ul class="list-unstyled">
-              
+
               
 
               <li>
@@ -665,13 +1097,7 @@
               
 
               <li>
-                <a href="/contact/">Contact</a>
-              </li>
-
-              
-
-              <li>
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E5ZKXP5TEKE76&amp;source=url">Donate now!</a>
+                <a href="/donate">Donate</a>
               </li>
 
               

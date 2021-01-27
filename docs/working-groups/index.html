@@ -34,6 +34,15 @@
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -112,6 +121,20 @@
                     title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
                     href="/zero-waste-edinburgh/"
                     >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
                   >
                 
                 <div class="dropdown-divider"></div>
@@ -216,24 +239,9 @@
           >
             <a
               class="nav-link text-white"
-              title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
-              href="/contact/"
-              >Contact</a
-            >
-          </li>
-        
-
-      
-
-        
-          <li
-            class="nav-item mx-auto "
-          >
-            <a
-              class="nav-link text-white"
-              title="Donate now! - "
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E5ZKXP5TEKE76&amp;source=url"
-              >Donate now!</a
+              title="Donate - "
+              href="/donate"
+              >Donate</a
             >
           </li>
         
@@ -263,24 +271,52 @@
 
 
 				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
-  <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
     <div class="row">
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/ccf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://ec.europa.eu/regional_policy/en/funding/" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/erdf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="http://www.greenerscotland.org" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/greener-scotland.jpg" class="funder-image">
-        </a>
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
       </div>
     </div>
   </div>
@@ -289,7 +325,7 @@
 
 <div class="row mt-4 mb-4">
   <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
-    <p class="text-muted">SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above.</p>
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
   </div>
 </div>
 
@@ -315,16 +351,16 @@
                 <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
               </li>
               <li>
-                Tel. 0131 220 1884
+		Tel. 0131 281 0583
               </li>
               <li>
-                13 Guthrie Street
+		22 Bread Street
               </li>
               <li>
-                EH1 1JG
+		EH3 9AF
               </li>
               <li>
-                Edinburgh
+		Edinburgh
               </li>
             </ul>
 
@@ -367,7 +403,7 @@
             <h5>Site Links</h5>
 
             <ul class="list-unstyled">
-              
+
               
 
               <li>
@@ -401,13 +437,7 @@
               
 
               <li>
-                <a href="/contact/">Contact</a>
-              </li>
-
-              
-
-              <li>
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E5ZKXP5TEKE76&amp;source=url">Donate now!</a>
+                <a href="/donate">Donate</a>
               </li>
 
               

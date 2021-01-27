@@ -34,6 +34,15 @@
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -114,6 +123,20 @@
                     title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
                     href="/zero-waste-edinburgh/"
                     >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
                   >
                 
                 <div class="dropdown-divider"></div>
@@ -218,24 +241,9 @@
           >
             <a
               class="nav-link text-white"
-              title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
-              href="/contact/"
-              >Contact</a
-            >
-          </li>
-        
-
-      
-
-        
-          <li
-            class="nav-item mx-auto "
-          >
-            <a
-              class="nav-link text-white"
-              title="Donate now! - "
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E5ZKXP5TEKE76&amp;source=url"
-              >Donate now!</a
+              title="Donate - "
+              href="/donate"
+              >Donate</a
             >
           </li>
         
@@ -284,7 +292,7 @@
 
             
               <p class="text-white">
-                &#128336; 5pm to 8pm, Tuesdays and Thursdays
+                &#128336; By appointment only through the Cycle Repair Scheme
               </p>
             
 
@@ -325,15 +333,13 @@
     <div id="group-synopsis" class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       
 
-<p>The Wee Spoke Hub is a welcoming workshop space where our volunteers and mechanic will help you learn the skills to take care of your bike.</p>
+<p>The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.</p>
 
-<p><strong>Tools and expertise</strong> are provided and participants are welcome to donate what they can.</p>
+<p>We also have a range of refurbished bikes and second hand parts for sale. As a member of SHRUB Coop you get <strong>discounts</strong> on parts.</p>
 
-<p>Simply bring your bike along to one of our <strong>Fix Your Own Bike</strong> workshops on Tuesday and Thursday evenings, 5-8pm, and our team will check it over and guide you in any repairs it needs.</p>
+<p>We are starting to reopen our doors to the public following some new incoming funding and Covid-19 safety adjustments. In September 2020 we were awarded a grant of £2,000 from Cycling UK to offer a <strong>FREE Cycle Repair Scheme</strong> - aiming to help people “get on their bike” again. Check out <a href="https://res.cloudinary.com/shrub-co-op/image/upload/v1602775388/shrubcoop.org/media/Cycle_Repair_Scheme_at_Wee_Spoke_Hub_dnl4v3.pdf">this guide</a> to give you more information about the scheme.</p>
 
-<p>We also have a range of refurbished bikes and used parts for sale.</p>
-
-<p>As a member of SHRUB Coop you get <strong>discounts</strong> on parts.</p>
+<p>The Wee Spoke Hub is part funded by Smarter Choices Smarter Places, which is Paths for All’s programme to increase active and sustainable travel throughout Scotland. The programme is grant-funded by Transport Scotland. Furthermore, we have recently been awarded funding from the Gannochy Trust and a Reach Grant from the Bank of Scotland Foundation. This funding is enabling us to restart our much-loved <strong>Fix Your Own Bike</strong> workshops and offer some exciting new cycle-focused activities in the new year - keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!</p>
 
 <p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png" alt="" /></p>
 
@@ -345,9 +351,13 @@
 
 <h3 id="frequently-asked-questions">Frequently Asked Questions</h3>
 
-<h4 id="do-i-need-to-be-a-member-to-use-it">Do I need to be a member to use it?</h4>
+<h4 id="what-covid-19-safety-precautions-are-we-taking">What Covid-19 safety precautions are we taking?</h4>
 
-<p>No! Anyone can come along for the Fix Your Own Bike workshops, however, as a member you get discounts on bicycle parts.</p>
+<p>Before reopening, we are implementing comprehensive Covid-19 safety assessments and adjustments in the Wee Spoke Hub, including introducing hand sanitizer stations, social distancing measures, a one way system and limiting the number of people in the space at once. Everyone entering the Wee Spoke Hub will be asked to wear a face covering unless exempt, and our mechanic and volunteers will all be wearing face coverings.</p>
+
+<h4 id="do-i-need-to-be-a-shrub-member-to-access-the-wee-spoke-hub-and-cycle-repair-scheme">Do I need to be a SHRUB member to access the Wee Spoke Hub and Cycle Repair Scheme?</h4>
+
+<p>No, anyone will be able to access our workshops and activities once we start them up again. In order to book onto the Cycle Repair Scheme, please follow the steps in the guide above.</p>
 
 <h4 id="is-the-wee-spoke-hub-accessible">Is the Wee Spoke Hub accessible?</h4>
 
@@ -358,7 +368,7 @@ All our toilets are gender neutral.</p>
 
 <h4 id="is-there-nearby-bicycle-parking">Is there nearby bicycle parking?</h4>
 
-<p>There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street. We have indoor cycle rack for our workshop users.</p>
+<p>There is outdoor bicycle parking on Chambers street, near the National Museum and on Cowgate, at the bottom of Guthrie street. We have indoor cycle racks for our workshop users.</p>
 
 <h4 id="what-bus-routes-are-you-on">What bus routes are you on?</h4>
 
@@ -396,17 +406,25 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
 
         
           
+        
+          
+        
+          
+        
+          
+        
+          
 
             
 
-              <a href="https://www.shrubcoop.org/coronavirus-update-all-activities-temporarily-suspended/" title="Blog post: Coronavirus update: All activities temporarily suspended by SHRUB Coop - click this link to continue reading.">
-  <h3 class="mb-2">Coronavirus update: All activities temporarily suspended</h3>
+              <a href="https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/" title="Blog post: Sharing Skills for Everyday Cycling by Lisa Heywood - click this link to continue reading.">
+  <h3 class="mb-2">Sharing Skills for Everyday Cycling</h3>
 </a>
 
-<p class="mb-2">Zero Waste Hub &amp; Wee Spoke Hub are temporarily closed</p>
+<p class="mb-2">Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday…</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 17/03/20 &nbsp; &#128100; SHRUB Coop
+  &#128336; 10/11/20 &nbsp; &#128100; Lisa Heywood
 </p>
 
                 <hr />
@@ -417,48 +435,96 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
           
         
           
-        
-          
-        
-          
 
             
 
-              <a href="https://www.shrubcoop.org/treasurer_trustee_2020/" title="Blog post: Trustee opportunity: We&#39;re looking for a treasurer! by SHRUB Coop - click this link to continue reading.">
-  <h3 class="mb-2">Trustee opportunity: We&#39;re looking for a treasurer!</h3>
-</a>
-
-<p class="mb-2">Could you be our new treasurer? Apply here!</p>
-
-<p class="dosis-semi-bold">
-  &#128336; 06/02/20 &nbsp; &#128100; SHRUB Coop
-</p>
-
-
-            
-
-          
-        
-          
-        
-          
-        
-          
-
-            
-
-              <a href="https://www.shrubcoop.org/become-a-trustee-of-shrub-coop/" title="Blog post: Become a trustee of SHRUB Coop! by SHRUB Coop - click this link to continue reading.">
+              <a href="https://www.shrubcoop.org/become-a-trustee-of-shrub-coop-1/" title="Blog post: Become a trustee of SHRUB Coop! by SHRUB Coop - click this link to continue reading.">
   <h3 class="mb-2">Become a trustee of SHRUB Coop!</h3>
 </a>
 
-<p class="mb-2">We&#39;re recruiting for next year&#39;s trustees. Application deadline 24th November</p>
+<p class="mb-2">We&#39;re recruiting for next year&#39;s trustees. Application deadline 9am, 20th…</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 25/10/19 &nbsp; &#128100; SHRUB Coop
+  &#128336; 05/11/20 &nbsp; &#128100; SHRUB Coop
+</p>
+
+
+            
+
+          
+        
+          
+
+            
+
+              <a href="https://www.shrubcoop.org/the-wee-spoke-hub-is-starting-the-journey-to-reopening/" title="Blog post: The Wee Spoke Hub is starting the journey to reopening! by Wee Spoke Hub - click this link to continue reading.">
+  <h3 class="mb-2">The Wee Spoke Hub is starting the journey to reopening!</h3>
+</a>
+
+<p class="mb-2">After months of uncertainty about the future of the Wee Spoke Hub we are excited…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 15/10/20 &nbsp; &#128100; Wee Spoke Hub
 </p>
 
                 <hr />
               
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
 
             
 
@@ -508,36 +574,6 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
 
           
             
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
           
             
               
@@ -549,94 +585,6 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
               
                 
               
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
             
           
             
@@ -672,29 +620,7 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
             
           
             
-              
-                
-              
-            
           
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
             
           
             
@@ -712,14 +638,6 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
             
           
             
-          
-            
-          
-            
-          
-            
-          
-            
               
                 
               
@@ -734,9 +652,17 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
             
           
             
-              
-                
-              
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
             
           
             
@@ -758,6 +684,146 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
             
           
             
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
           
             
               
@@ -784,58 +850,164 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
             
               
                 
-                  
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
 
-                    <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-24/" title="Event: CANCELLED - Fix your own bike workshop - click this link to find out more about this event.">
-  <h3 class="mb-2">CANCELLED - Fix your own bike workshop</h3>
-</a>
-
-<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, March 19, 2020
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
-</p>
-
-                      <hr />
-                    
-
-                  
-                
-              
-            
           
-            
-          
-            
-              
-                
-                  
-
-                    <a href="https://www.shrubcoop.org/events/new-members-warm-welcome-1/" title="Event: CANCELLED - New Members Warm Welcome! - click this link to find out more about this event.">
-  <h3 class="mb-2">CANCELLED - New Members Warm Welcome!</h3>
-</a>
-
-<p class="mb-2">Are you interested in volunteering for SHRUB, become a paying member or simply…</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Wednesday, March 25, 2020
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Zero Waste Hub, 22 Bread Street, EH3 9AF
-</p>
-
-
-                  
-                
-              
-            
-          
-            
-          
-
+            <p class="text-muted text-center">No upcoming events right now - check back soon!</p>
           
 
         </div>
@@ -901,7 +1073,7 @@ $("#group-synopsis h3").each(function(){
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
-        id: 'mapbox.streets',
+        id: 'streets-v11',
         accessToken: 'pk.eyJ1Ijoicm9zc2h1ZHNvbiIsImEiOiJjanpnMGE0MGowaGZtM2VsaXNjdWh2dWZmIn0.cNr_4alsLclO3Exj20P9sA'
       }).addTo(map);
 
@@ -913,24 +1085,52 @@ $("#group-synopsis h3").each(function(){
 
 
 				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
-  <div class="col-10 col-sm-8 col-md-10 col-lg-8 col-xl-8 mx-auto">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
     <div class="row">
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/ccf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="https://ec.europa.eu/regional_policy/en/funding/" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/erdf.jpg" class="funder-image">
-        </a>
-      </div>
-
-      <div class="col-md-4 mx-auto my-3">
-        <a href="http://www.greenerscotland.org" target="_blank">
-          <img src="https://www.shrubcoop.org/images/funders/greener-scotland.jpg" class="funder-image">
-        </a>
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
       </div>
     </div>
   </div>
@@ -939,7 +1139,7 @@ $("#group-synopsis h3").each(function(){
 
 <div class="row mt-4 mb-4">
   <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
-    <p class="text-muted">SHRUB Coop is funded through the Scottish Government’s Climate Challenge Fund and the European Regional Development Fund. We’re grateful for all their support. Find out more about our funders by clicking on the logos above.</p>
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
   </div>
 </div>
 
@@ -965,16 +1165,16 @@ $("#group-synopsis h3").each(function(){
                 <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
               </li>
               <li>
-                Tel. 0131 220 1884
+		Tel. 0131 281 0583
               </li>
               <li>
-                13 Guthrie Street
+		22 Bread Street
               </li>
               <li>
-                EH1 1JG
+		EH3 9AF
               </li>
               <li>
-                Edinburgh
+		Edinburgh
               </li>
             </ul>
 
@@ -1017,7 +1217,7 @@ $("#group-synopsis h3").each(function(){
             <h5>Site Links</h5>
 
             <ul class="list-unstyled">
-              
+
               
 
               <li>
@@ -1051,13 +1251,7 @@ $("#group-synopsis h3").each(function(){
               
 
               <li>
-                <a href="/contact/">Contact</a>
-              </li>
-
-              
-
-              <li>
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=E5ZKXP5TEKE76&amp;source=url">Donate now!</a>
+                <a href="/donate">Donate</a>
               </li>
 
               
