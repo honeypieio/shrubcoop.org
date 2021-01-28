@@ -19,7 +19,7 @@ You don't need any special equipment. Just wear comfy loose fitting clothes and 
 
 **When:** Thursday and Sunday evenings at 17.00 - 17.30
 
-**Where:** Online, on Zoom using [this link](us02web.zoom.us)
+**Where:** Online, on Zoom using [this link](https://l.facebook.com/l.php?u=https%3A%2F%2Fus02web.zoom.us%2Fj%2F86700890086%3Ffbclid%3DIwAR0jCX2koXG7OWRwvJgjqLYtmTON088-K0UxH48xhM0IEoz64rGNLuVq7l8&h=AT33GZfoniNWQ43L2zkkGTbSJtKVNMddgzhRtzZhxYIOiQ8q10csNCj44VWgRBDOluSQ-Mbch2o9gpd8MmXILbw_faVo1WYBCC-NGHPo008hypiZ4Kp2imAARDOWQ3awl9AVWGuzeAzcGva8XoSuAg)
 
 **How much:** These sessions are free for anyone to attend. However, if you enjoy the session and feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation to help us continue our sustainability projects!
 
