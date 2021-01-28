@@ -2,7 +2,6 @@
 author = "Wee Spoke Hub"
 date = 2021-01-25T00:00:00Z
 description = "Get your bike repaired for free"
-draft = true
 tags = []
 title = "Cycle Repair Scheme"
 type = "news"
@@ -54,7 +53,7 @@ Please note that the £30 service is simply the labour costs and does not includ
 
 ## Brakes
 
-· Fitting brakes £15
+ Fitting brakes £15
 
 · Replacing cable £10
 
