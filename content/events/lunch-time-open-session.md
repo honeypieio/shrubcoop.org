@@ -3,7 +3,7 @@ author = "Events and Workshops"
 description = "Ask us anything, or just pop in for a chat!"
 location = "Online (read the description for the link)"
 tags = ["shrub-events"]
-time = 2021-02-02T13:00:00Z
+time = 2021-02-09T13:00:00Z
 title = "Lunch Time Open session"
 
 +++
