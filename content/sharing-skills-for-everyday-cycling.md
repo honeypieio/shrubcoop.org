@@ -17,13 +17,12 @@ I used to cycle to secondary school when I was younger but after moving to a hil
 
 Sometimes it can be hard to know where to find information and resources about cycling, and not everyone knows someone who they can ask...but what if there was a place you could go to meet other "everyday cyclists" to ask all those questions? Well, we've created a space to do just that! We are welcoming new and everyday cyclists to join us in a fortnightly skill-share where we can help you find the information you need to get where you want to go on two wheels!
 
-**Join us online for our new “Everyday Cycling Skill-share” at 5:30-6:30pm on Mondays on the following dates:**
+**Join us online for our “Everyday Cycling Skill-share” at 5:30-6:30pm on Mondays on the following dates:**
 
-* 30th November – Cycling in the winter: don’t let the weather get you down! [Here's the link](https://www.facebook.com/events/4916482358369432/) to the Facebook event with the Zoom link to join
-* 14th December – Bike maintenance: things to watch out for in the winter
-* 18th January 2021 - Edinburgh’s cycle secrets: how to find bike paths and routes near you
+* 1st February - Carrying stuff while cycling. Here's the [Facebook event](https://www.facebook.com/events/422656658944907).
+* 15th February - Staying safe while cycling. Here's the [Facebook event](https://www.facebook.com/events/717125172308414) with the Zoom link.
 
-Keep an eye on the [SHRUB Facebook events page](https://www.facebook.com/shrubcoop/events/?ref=page_internal) for details of the 14th December and 18th January sessions!
+Keep an eye on the [SHRUB Facebook events page](https://www.facebook.com/shrubcoop/events/?ref=page_internal) for details of future upcoming sessions!
 
 If you’re a regular cyclist and want to share your knowledge and enthusiasm, then why not get involved as a volunteer? Get in touch with us to find out how: volunteering@shrubcoop.org. You can also join the dedicated [Everyday Cycling Facebook group](https://www.facebook.com/groups/3381216181973515) to be part of our community!
 
