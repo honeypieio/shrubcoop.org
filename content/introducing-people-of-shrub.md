@@ -10,7 +10,7 @@ type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1612785405/shrubcoop.org/media/pos_qqhwhr.png)
 
-When we share our stories, what it does is, it opens up our hearts for other people to share their stories. And it gives us the sense that we are not alone on this journey” - Janine Shepherd.
+_When we share our stories, what it does is, it opens up our hearts for other people to share their stories. And it gives us the sense that we are not alone on this journey_ - Janine Shepherd.
 
 Join us, as we chat to the people who make up the Shrub community. Staff, volunteers, members and everyone that steps into the hub, is a valued part of our community and our mission - a world without waste. While we share attitudes and interests pertaining to waste, sustainability and the environment - we all have different stories, backgrounds and motivations. People of Shrub hopes to share the wonderful thoughts, feelings and stories from our wonderful community, in the hope to inspire you and remind you that you are not alone on this journey.
 
@@ -22,9 +22,9 @@ The inspiration for People of Shrub stems from _Humans of New York_. A photoblog
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1612785493/shrubcoop.org/media/paolo_vjvpxb.png)
 
-‘It’s kind of spiritual actually. We need to change our ways, we need to change the way we think, the way we do things. Volunteering is very rewarding, I feel useful, I work for the community. I play music as well as volunteer here and I think it makes a big change. I used to say if everybody, everybody, would volunteer for three hours a month, just three hours a month, this world would change immensely. I do this because if you are to be the change - be the example for that change. It’s more like in the spiritual path and the change that I think we need - sustainability, no profit. Everybody gains instead of just one, if you work in a team everybody wins.’
+_‘It’s kind of spiritual actually. We need to change our ways, we need to change the way we think, the way we do things. Volunteering is very rewarding, I feel useful, I work for the community. I play music as well as volunteer here and I think it makes a big change. I used to say if everybody, everybody, would volunteer for three hours a month, just three hours a month, this world would change immensely. I do this because if you are to be the change - be the example for that change. It’s more like in the spiritual path and the change that I think we need - sustainability, no profit. Everybody gains instead of just one, if you work in a team everybody wins.’_
 
-Meet Paulo! Paulo volunteers in our cafe and is our resident DJ. In our cafe you can get tasty hot or cold drinks, but most wonderfully, you’ll find a welcoming space for the whole community. Join our [Shrubby Moments of Music](https://www.facebook.com/groups/882984532502154/) Facebook page for music recommendations and to catch Paolo livestreaming DJ sets throughout lockdown.
+Meet Paulo! Paulo volunteers in our cafe and is our resident DJ. In our cafe you can get tasty hot or cold drinks, but most wonderfully, you’ll find a welcoming space for the whole community. Join our Shrubby Moments of Music Facebook page for music recommendations and to catch Paulo livestreaming DJ sets throughout lockdown.
 
 With camera in tow, I ask a few general questions followed by some more thoughtful ones about motivations, inspirations, challenges and journey. If awareness of climate change/environmental problems/waste/etc was a room - each person walked into that room from a different door, down very different hallways called life. The differences and similarities in the answers hit me most. My similarities, the nuggets that I related too - made me feel connected, rational and welcome. The differences, the different doors we had walked through, opened my eyes to a new perspective and a new inspiration. And that was exciting.
 
