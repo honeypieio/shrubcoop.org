@@ -2,7 +2,6 @@
 author = "Amy Webster"
 date = 2021-02-08T12:00:00Z
 description = "Wondering how People of Shrub got started? Amy Webster explains it all."
-draft = true
 tags = []
 title = "Introducing, People of Shrub!"
 type = "news"
