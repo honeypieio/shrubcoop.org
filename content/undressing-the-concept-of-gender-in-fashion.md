@@ -2,12 +2,13 @@
 author = "Aislinn Redbond"
 date = 2021-02-09T00:00:00Z
 description = "Corsets, high heels and makeup - men wore them first. "
+draft = true
 tags = []
 title = "Undressing the Concept of Gender in Fashion"
 type = "news"
 
 +++
-![image1.jpg](https://lh4.googleusercontent.com/lLwhYXw7Xb-uLlDIaI0rWHAFXVnzAxW8TiGnTV4WEHN2wAWS-QLE6Kro27c--2MiYKWfQbDgFLcWDfUwwynbuOgljPGrJO-0EmL8AEEl2IOXM3LlynaERtZ5byCO1xK2-LK_xqo =584x457)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1612876756/shrubcoop.org/media/mens_corsets_we2ryb.jpg)
 
 Advertisement for male corsets, proving no fashion item is naturally gendered.
 
@@ -15,7 +16,7 @@ Image: Pinterest [https://www.pinterest.com/pin/195836283783426399/](https://www
 
 ***
 
-Corsets, high heels and [makeup](https://www.byrdie.com/history-makeup-gender) - men wore them first. 
+Corsets, high heels and [makeup](https://www.byrdie.com/history-makeup-gender) - men wore them first.
 
 Fashion is often identified as a tool of self-expression, yet for centuries, this freedom of expression has been limited by the gendering of clothing. This manifests itself not only in the colours we wear (pink is for girls, blue is for boys), but in many cases, the items and styles designed for men and women can impact our behaviour in society through the [reinforcement of gender stereotypes](https://www.huffpost.com/entry/gendering-childrens-clothing-is-hurting-our-future_b_5a25e1b2e4b0f0c7768d4385). For example, women’s shoes are widely acknowledged as being [less durable for sports](https://www.theguardian.com/commentisfree/2017/sep/11/school-shoes-girls-boys-hobbling-life-chances-flimsy-sturdy-sexism-gender), supposedly reflecting the fact that women do not participate in sport as much as men. Yet even in a time where these stereotypes are starting to fall away, the concept of gender-neutral clothing is still finding its feet in the mainstream fashion world.
 
