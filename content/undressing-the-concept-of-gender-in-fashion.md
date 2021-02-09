@@ -2,6 +2,7 @@
 author = "Aislinn Redbond"
 date = 2021-02-09T00:00:00Z
 description = "Corsets, high heels and makeup - men wore them first. "
+draft = true
 tags = []
 title = "Undressing the Concept of Gender in Fashion"
 type = "news"
