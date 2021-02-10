@@ -29,6 +29,12 @@ Care instructions on garments are written by the production and fabric suppliers
 
 The general answer in care instructions is wash as little as possible at low temperatures (while still being sanitary obviously) and air out rather than wash (I wash my pure woollens only once a year except for socks and spot cleans if necessary). Basically dry cleaning should be avoided completely, tumble drying too especially with synthetic fibres (it breaks the fibres and contributes to microplastic fibres around the world). Fabric softener is unnecessary especially with synthetic fibres and actually reduces the absorbency of the fabric as they coat the fibre. They can be replaced with distilled white vinegar to remove especially bad smells.
 
+Sources:
+
+[https://amp.theguardian.com/environment/2021/jan/12/clothes-washing-linked-to-pervasive-plastic-pollution-in-the-arctic](https://amp.theguardian.com/environment/2021/jan/12/clothes-washing-linked-to-pervasive-plastic-pollution-in-the-arctic "https://amp.theguardian.com/environment/2021/jan/12/clothes-washing-linked-to-pervasive-plastic-pollution-in-the-arctic")
+
+[https://www.wired.com/story/whos-to-blame-for-plastic-microfiber-pollution/](https://www.wired.com/story/whos-to-blame-for-plastic-microfiber-pollution/ "https://www.wired.com/story/whos-to-blame-for-plastic-microfiber-pollution/")
+
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1612961328/shrubcoop.org/media/marta_dobyre.png)
 
 Follow @martalynch_projects on Instagram for more sustainable fashion knowledge.
