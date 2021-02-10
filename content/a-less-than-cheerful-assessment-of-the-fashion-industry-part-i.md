@@ -2,6 +2,7 @@
 author = "Marta Lynch"
 date = 2021-02-10T00:00:00Z
 description = "Know Your Clothes"
+draft = true
 tags = []
 title = "A Less-Than-Cheerful Assessment of the Fashion Industry (Part I)"
 type = "news"
@@ -13,13 +14,10 @@ The big problem with fashion is the amount of clothing already existing and stil
 
 Quick summary of golden rules:
 
-1. Try to buy garments consisting of one fibre for the garment to be recycled more easily.
-
-Oil/Plastic-based fibres are usually mixed in to make garments cheaper but result in the clothes wasting away on a tip at the end of their use as there are no processes to separate synthetic and natural materials from each other.
-
-1. Avoid all newly produced/virgin synthetic fibres. New research suggests that as much as 73% of microplastics in the arctic comes from clothing. New studies are finding out about how it affects marine environments, how it is finding its ways into our lungs and settling in our bodies and the research on this issue has only started.
-2. Avoid all fashion conglomerates, they wield their power to slow environmental campaigns down and the scale of their production cannot be aligned with any ‘green’ promises they make in their advertising. As in all other industries no companies should be able to hold that much power and affect governmental guidance. Look for small and local if you need to buy new.
-3. Set high standards for your purchasing habits: only buy pieces you can see yourself wearing over and over and over and over. This also applies to second-hand clothing: just because you are buying something at a reduced price don’t treat it like any less of an investment.
+1. Try to buy garments consisting of one fibre for the garment to be recycled more easily.Oil/Plastic-based fibres are usually mixed in to make garments cheaper but result in the clothes wasting away on a tip at the end of their use as there are no processes to separate synthetic and natural materials from each other.
+2. Avoid all newly produced/virgin synthetic fibres. New research suggests that as much as 73% of microplastics in the arctic comes from clothing. New studies are finding out about how it affects marine environments, how it is finding its ways into our lungs and settling in our bodies and the research on this issue has only started.
+3. Avoid all fashion conglomerates, they wield their power to slow environmental campaigns down and the scale of their production cannot be aligned with any ‘green’ promises they make in their advertising. As in all other industries no companies should be able to hold that much power and affect governmental guidance. Look for small and local if you need to buy new.
+4. Set high standards for your purchasing habits: only buy pieces you can see yourself wearing over and over and over and over. This also applies to second-hand clothing: just because you are buying something at a reduced price don’t treat it like any less of an investment.
 
 Many small companies are trying their best and coming up with innovative solutions and it is to be applauded as this moves us closer to diminishing our impact, but they are still using up resources (energy, water etc.) so even purchasing from them should be very well considered. This leads on to the next problem that a big part of the environmental footprints of garments are post-purchase so it is reliant upon how you take care of your clothes and how you dispose of them.
 
