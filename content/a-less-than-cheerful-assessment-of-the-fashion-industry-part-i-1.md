@@ -4,7 +4,7 @@ date = 2021-02-11T00:00:00Z
 description = "Know Your Clothes"
 draft = true
 tags = []
-title = "A Less-Than-Cheerful Assessment of the Fashion Industry (Part I)"
+title = "A Less-Than-Cheerful Assessment of the Fashion Industry (Part II)"
 type = "news"
 
 +++
