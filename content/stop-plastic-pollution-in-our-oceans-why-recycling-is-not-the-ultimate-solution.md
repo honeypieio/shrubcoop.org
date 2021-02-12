@@ -1,7 +1,7 @@
 +++
 author = "Lauriane Bourdiau"
 date = 2021-02-12T10:00:00Z
-description = "Lauriane Bourdiau gives us the lowdown on why we should look for solutions beyond simply recycling"
+description = "Looking for solutions beyond simply recycling"
 tags = ["zero-waste", "circular-economy", "plastic", "recycle", "reduce", "reuse"]
 title = "Stop Plastic Pollution in our Oceans: Why Recycling is not the Ultimate Solution"
 type = "news"
