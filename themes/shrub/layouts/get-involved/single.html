@@ -93,10 +93,17 @@
 
       {{ .Params.membership_sign_up_body | markdownify }}
 
-      <!--<button class="btn btn-shrub btn-block" data-toggle="modal" data-target="#membership-select">{{ .Params.membership_sign_up_button }}</button> -->
+      <!-- <a href="/join" role="button" class="btn btn-shrub btn-block mb-4">{{ .Params.membership_sign_up_button }}</a>
 
-      <p class="text-center mt-4">Want to support us without becoming a member? You can also <a href="/donate">donate</a>!</p>
+      <hr />
 
+      <p class="text-center mt-3 mb-3">Looking to renew your existing membership?</p>
+
+      <a href="/renew" role="button" class="btn btn-shrub btn-block mb-4">{{ .Params.membership_renewal_button }}</a> -->
+ 
+      <hr />
+      
+      <p class="text-center mt-4">Want to support us without becoming a member? You can also <a href="/donate" tilte="Click here to donate">donate</a>!</p>
 
     </div>
   </div>
@@ -124,7 +131,6 @@
     </div>
   </div>
 </div>
-
 
 <script src="{{ .Site.BaseURL }}js/volunteer-roles.js"></script>
 

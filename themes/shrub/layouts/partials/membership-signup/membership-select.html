@@ -1,0 +1,227 @@
+
+<p>What type of membership would you like?</p>
+
+<div class="row mb-3 justify-content-center">
+  <div class="col-6 col-xl-4">
+    <button
+      type="button"
+      class="btn btn-primary w-100 membership-period active"
+      id="full-year"
+    >
+      12 Months
+    </button>
+  </div>
+  <div class="col-6 col-xl-4">
+    <button
+      type="button"
+      class="btn btn-primary w-100 membership-period"
+      id="half-year"
+    >
+      6 Months
+    </button>
+  </div>
+</div>
+
+<p>To keep membership accessible for all, you pay what you can afford</p> 
+<p>Our suggested prices are based on earnings but you can pay however much you feel!</p>
+
+<p class="mb-4">How much would you like to pay for your membership?</p>
+
+<div class="justify-content-center">
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-1"
+        data-amount="12"
+      >
+        £12
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I'm a student, unemployed, or retired"</span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-2"
+        data-amount="18"
+      >
+        £18
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I earn between £16k and £27k per year"</span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-3"
+        data-amount="24"
+      >
+        £24
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I earn between £27k and £43k per year"</span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-4"
+        data-amount="30"
+      >
+        £30
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I earn above £43k per year"</span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-4">
+      <div class="input-group" id="membership-amount-custom-wrapper">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="currency">£</span>
+        </div>
+        <input
+          id="membership-amount-custom"
+          type="number"
+          class="form-control"
+          placeholder="0.00"
+          min="12"
+          step="0.01"
+          aria-label="Custom amount"
+          aria-describedby="currency"
+        />
+      </div>
+    </div>
+    <div class="col-8 text-left">
+      <p class="w-100 ml-3 mb-0">Other Amount*</p>
+      <p class="w-100 ml-3" style="line-height: 1;">
+        <small>*the miniumum membership price is <span id="minimum-membership-price">£12</span> per year</small>
+      </p>
+    </div>
+  </div>
+
+  <div class="row d-none amount-confirmation-wrapper">
+    <div class="col-8 mx-auto">
+      <p class="text-center">Selected amount: <b>£<span class="amount-confirmation"></span></b></p>
+    </div>
+  </div>
+
+  <div id="membership-select-errors"></div>
+</div>
+
+<script>
+  
+  var newMember = {};
+
+  $(document).ready(function() {
+    membershipPeriodSelect("full-year");
+  });
+
+  var prices = [];
+
+  function updatePrices(period) {
+    if(period == "half-year"){
+      prices = [8.00, 12.00, 16.00, 20.00];
+    } else {
+      prices = [1.00, 18.00, 24.00, 30.00];
+    }
+    for(i = 0; i < prices.length; i++){
+      var id = "#membership-amount-" + (i + 1)
+      $(id).attr("data-amount", prices[i]);
+      $(id).text("£" + prices[i]);
+    }
+  }
+
+  $(".membership-period").on("click", function() {
+    membershipPeriodSelect(this.id);
+  });
+
+  function membershipPeriodSelect(period) {
+    $(".membership-period").removeClass("active");
+    $(".amount-confirmation-wrapper").addClass("d-none");
+    $("#membership-amount-custom").val(null);
+
+    if (period == "half-year") {
+      $("#half-year").addClass("active");
+      newMember.period = "half-year";
+    } else {
+      $("#full-year").addClass("active");
+      newMember.period = "full-year";
+    }
+
+    updateMembershipPrices(newMember.period);
+  }
+
+  function updateMembershipPrices(period) {
+    deselectAllMembershipAmounts();
+    newMember.amount = null;
+    updatePrices(period);
+
+    $("#minimum-membership-price").text("£" + prices[0].toFixed(2));
+    $("#membership-amount-custom").attr("min", prices[0]);
+
+    if($("#membership-amount-custom").val() > 0 && $("#membership-amount-custom").val() < prices[0]){
+      $("#membership-amount-custom").val(prices[0]);
+    }
+  }
+
+  $(".membership-amount").on("click", function() {
+    $("#membership-amount-custom").val("");
+    membershipAmountSelect("#" + this.id, this.getAttribute("data-amount"));
+  });
+
+  $("#membership-amount-custom").on("input", function() {
+    membershipAmountSelect("#" + this.id, this.value);
+  });
+
+  function membershipAmountSelect(inputElementId, amount) {
+
+    try {
+      amount = Number(amount);
+      if(amount == "NaN"){
+        throw new Error();
+      }
+      if(amount < prices[0]) {
+        throw new Error();
+      }
+    } catch(error) {
+      amount = prices[0];
+    }
+
+    deselectAllMembershipAmounts();
+
+    $(".amount-confirmation-wrapper").removeClass("d-none");
+
+
+    if(prices.includes(amount)) {
+      $("#membership-amount-" + (prices.indexOf(amount) + 1)).addClass("active");
+    } else {
+      $("#membership-amount-custom-wrapper").addClass("active");
+    }
+
+    newMember.amount = amount.toFixed(2);
+    $(".amount-confirmation").text(newMember.amount);
+  }
+
+  function deselectAllMembershipAmounts() {
+    $(".membership-amount").removeClass("active");
+    $("#membership-amount-custom-wrapper").removeClass("active");
+  }
+
+
+
+</script>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Get your bike repaired for free">
+
+
+<title>Cycle Repair Scheme | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </p>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Hub"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto underline"
+          >
+            <a
+              class="nav-link text-white"
+              title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >News</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+
+      <div class="pt-5">
+        <h2 class="mb-0">Cycle Repair Scheme</h2>
+
+        <p class="dosis-semi-bold">
+          By Wee Spoke Hub, posted 25/01/21
+        </p>
+
+        <p>Get your bike repaired for free</p>
+      </div>
+
+      <hr />
+
+      
+
+<p><strong>WEE SPOKE HUB</strong></p>
+
+<p><strong>The Wee Spoke Hub is a project of</strong> <a href="https://www.shrubcoop.org/"><strong>SHRUB Cooperative</strong></a><strong>.</strong></p>
+
+<p>We have been funded since around 2014 to provide a space and time for people to learn how to maintain their bikes, a distinctly non-sexist, supportive community advocating for sustainable active travel modes in and around south central Edinburgh. Our last lot of funding ran till March 2020 when the global Coronavirus Pandemic closed lots of community-led initiatives down.</p>
+
+<p>In September 2020 we were awarded a grant of £2,000 to offer a <strong>FREE Cycle Repair Scheme</strong> - aiming to help people “get on their bike” again. So dig that trusty old clunker out from the cupboard or shed and get in touch with our Qualified Mechanic to book a Repair slot.</p>
+
+<p>Simply email <a href="mailto:weespokehub@shrubcoop.org.uk"><strong>weespokehub@shrubcoop.org</strong></a> saying what state it is in and giving your contact details.</p>
+
+<p>We then email you a date &amp; time to Drop Off at <strong>Wee Spoke Hub, 13 Guthrie St, Edinburgh EH1 1JG</strong> - between Chambers St and Cowgate. This will generally be <strong>Tuesdays between 6.00pm - 8.00pm</strong> and <strong>Sunday between 1.00pm - 5.00pm</strong>.</p>
+
+<p>When you drop off your bike, we’ll ask you what you want fixed and will carry it out up to the value of £50. If the repair will cost more than £50 we will then contact you to tell you what else is there to do, give you a quote and check if you want it done. When repairs are done we’ll email you to arrange a Pick Up time!</p>
+
+<h3 id="scotland-cycle-repair-scheme-https-www-cyclinguk-org-scotland-cycle-repair-scheme-faqs-faq-what-is-the-scotland-cycle-repair-scheme-some-key-terms-conditions"><a href="https://www.cyclinguk.org/scotland-cycle-repair-scheme-faqs#faq-What-is-the-Scotland-Cycle-Repair-Scheme?"><strong>Scotland Cycle Repair Scheme -</strong></a> <strong>Some key Terms &amp; Conditions</strong></h3>
+
+<ul>
+<li>There is a limit of <strong>£50 free servicing</strong> per bicycle until we’ve used up our allocation.</li>
+<li>There is a limit of one bicycle per person; but you can<a href="https://www.cyclinguk.org/scotland-cycle-repair-scheme-faqs#faq-Can-I-take-in-bikes-for-others?"> take in bikes for others, </a>For example, someone could bring in their own bike and bikes for their children and / or partner.</li>
+<li>The only thing Cycling Scotland - who are managing the Scheme - ask is that you complete two short email surveys after the repairs so they can demonstrate the benefits of the scheme.</li>
+<li>Basic service and essential mechanical repairs are covered by the scheme i.e. repairs that are necessary to make the cycle roadworthy and fit for purpose. The following repairs / transactions are NOT covered:
+
+<ul>
+<li>a sale of replacement parts without any repair work, including accessories</li>
+<li>replacement or upgrade of existing safe and roadworthy components</li>
+<li>replacement or repair of removable lighting accessories</li>
+<li>any repairs to e-bike electronic units.</li>
+</ul></li>
+<li>Please note that Wee Spoke Hub can only offer essential servicing and cannot help with electric bikes or hydraulic disc brakes or tubeless tyres;</li>
+<li><strong>The Scheme is designed to help people who cannot afford to repair their bikes</strong>. If you can afford to pay for your repair, please consider doing so to allow those with less means to benefit from this scheme as availability is limited. Either way you are helping a charity get back on its feet.</li>
+<li>You can find full Terms &amp; Conditions for the Scheme <a href="https://www.cyclinguk.org/scotland-cycle-repair-scheme-faqs">here</a></li>
+</ul>
+
+<p><strong>Price List</strong><img src="https://lh6.googleusercontent.com/iH6LApH9pZRK5J8AruAQcc4ZBDfZMrg-MQl3LLXacuEO0TNcMhM-6bdVVEVuMVeSpf45tYUC1wmUZUW9bLHLP1gribonrkI62ZMNwUfZkbZPZvgnjCGYAVqBwVtrIw7rg3KVhAUS =162x181" alt="" /></p>
+
+<h1 id="standard-wee-spoke-hub-cycle-service-30"><strong>Standard Wee Spoke Hub Cycle Service - £30</strong></h1>
+
+<p>If you just want a check-up and general maintenance, this is what you get:</p>
+
+<ul>
+<li>Checking and adjusting brakes and gears</li>
+<li>Checking chain for wear and lubricating as required</li>
+<li>Checking and replacing worn tyres and / or inner tubes</li>
+<li>Checking frame and forks for damage or other issues</li>
+<li>Test Ride to ensure all running safely</li>
+</ul>
+
+<p>Please note that the £30 service is simply the labour costs and does not include parts. If required we will use the other £20 for the parts needed - we will ask you what to prioritise when you bring the bike in.</p>
+
+<h1 id="service-labour-prices"><strong>Service - labour prices</strong></h1>
+
+<h2 id="brakes">Brakes</h2>
+
+<p>Fitting brakes £15</p>
+
+<p>· Replacing cable £10</p>
+
+<p>· Replacing pads £10</p>
+
+<p>· Servicing - both brakes £15</p>
+
+<p>· Gears</p>
+
+<p>· Replace cable &amp; adjust £15</p>
+
+<p>· Replace cable &amp; adjust (internal) £20</p>
+
+<p>· Replace derailleur &amp; adjust £1</p>
+
+<p>· Adjusting gears £9</p>
+
+<p>· Service - both derailleurs £15</p>
+
+<p>· Replace cassette / freewheel £10</p>
+
+<p>· Wheel</p>
+
+<p>· Wheel true £10</p>
+
+<p>· Replace spoke - front wheel £15</p>
+
+<p>· Replace spoke - rear wheel £17</p>
+
+<p>· Wheel replacement £12</p>
+
+<p>· Tyre</p>
+
+<p>· Fixing puncture £10</p>
+
+<p>· New tyre fitting £5</p>
+
+<p>· Hub</p>
+
+<p>· Cone adjustment £5</p>
+
+<p>· Full service + regrease £20</p>
+
+<p>· Replacing bearings + full service £25</p>
+
+<p>· Miscellaneous</p>
+
+<p>· Chain fitting £8</p>
+
+<p>· Cassette/freewheel fitting £10</p>
+
+<p>· Replacing a bottom bracket £22</p>
+
+<h2 id="gears"><strong><em>Gears</em></strong></h2>
+
+<p>| &mdash; | &mdash; | Replace cable &amp; adjust | £15 | | Replace cable &amp; adjust (internal) | £20 | | Replace derailleur &amp; adjustAdjusting gearsService - both derailleursReplace cassette / freewheel | £15£9£15£10 |</p>
+
+<h2 id="wheel"><strong><em>Wheel</em></strong></h2>
+
+<p>| &mdash; | &mdash; | | Wheel true | £10 | | Replace spoke - front wheelReplace spoke - rear wheelWheel replacement | £15£17£12 |</p>
+
+<h2 id="tyre"><strong><em>Tyre</em></strong></h2>
+
+<p>| &mdash; | &mdash; | | Fixing puncture | £10 | | New tyre fitting | £5 |</p>
+
+<h2 id="https-lh6-googleusercontent-com-ih6laph9pzrk5j8aruaqcc4zbdfzmrg-mql3llxacueo0tncmhm-6bdvvevumvespf45tyuc1wmuzuw9blhlp1gribonrki62zmnwufzkbzpzvgnjcgyavqbwvtriw7rg3kvhaus-162x181-hub"><strong><em><img src="https://lh6.googleusercontent.com/iH6LApH9pZRK5J8AruAQcc4ZBDfZMrg-MQl3LLXacuEO0TNcMhM-6bdVVEVuMVeSpf45tYUC1wmUZUW9bLHLP1gribonrkI62ZMNwUfZkbZPZvgnjCGYAVqBwVtrIw7rg3KVhAUS =162x181" alt="" />Hub</em></strong></h2>
+
+<p>| &mdash; | &mdash; | | Cone adjustment | £5 | | Full service + regrease | £20 | | Replacing bearings + full service | £25 |</p>
+
+<h2 id="miscellaneous"><strong><em>Miscellaneous</em></strong></h2>
+
+<p>| &mdash; | &mdash; | | Chain fitting | £8 | | Cassette/freewheel fittingReplacing a bottom bracket | £10£22 |</p>
+
+<h1 id="general-costs-of-parts"><strong>General Costs of Parts</strong></h1>
+
+<p>We use the parts that we have in stock and which we know work and will make your bike safe to use.<br />
+We are happy to show you what these are when you come to drop off your bike.</p>
+
+<ul>
+<li>Axle (solid / hollow) - £4</li>
+<li>Axle (incl Quick Release skewer) - £7</li>
+<li>Bearings - £1 per cone</li>
+<li>Bottom bracket - £10</li>
+<li>Brake Noodle - £1</li>
+<li>Brake pads (V-brake, cantilever and caliper) - £5/pair</li>
+<li>Cable (gear or brake inner) - £2</li>
+<li>Cable (gear or brake outer) - £2/metre</li>
+<li>Cassette / freewheel - £12</li>
+<li>Chain (1, 5, 6, 7, 8 speed sprockets) - £10</li>
+<li>Cranks - £5 for second-hand ones, new ones need to be ordered, appr. £15-£25</li>
+<li>Derailleur - front - £5 for second-hand ones, new ones need to be ordered, appr. £10</li>
+<li>Derailleur - rear - £8 for second-hand ones, new ones need to be ordered, appr. £12</li>
+<li>Headsets - £7</li>
+<li>Inner Tube - £6</li>
+<li>Pedals (per pair) - £5 for second-hand ones, new ones need to be ordered, appr. £6 - £12</li>
+<li>Spokes - £1</li>
+<li>Tyre - £12</li>
+</ul>
+
+<p><strong>We are gathering together the band of Wee Spoke Hub enthusiasts who have been the bedrock of volunteer support for the Wee Spoke Hub. Email</strong> <a href="mailto:weespokehub@shrubcoop.org"><strong>weespokehub@shrubcoop.org</strong></a> <strong>if interested.</strong></p>
+
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

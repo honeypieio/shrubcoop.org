@@ -1,0 +1,121 @@
+<h3 class="mb-3 text-center">Payment Details</h3>
+<div class="text-left alert alert-info px-4 py-3 mb-4">
+  <p class="mb-0">Please note that this payment will be processed by <a href="https://sumup.com" title="Link to SumUp" target="_blank">SumUp</a>. Your payment details will not be stored</p>
+</div>
+
+<div class="form-group">
+  <div class="input-group">
+    <select
+      class="memberSignUpFormElement form-control"
+      id="card_type"
+      required
+    >
+      <option selected disabled>Select card issuer...</option>
+      <option>Visa</option>
+      <option>MasterCard</option>
+      <option>Maestro</option>
+      <option>AmericanExpress</option>
+      <option>Discover</option>
+      <option>VisaElectron</option>
+    </select>
+    <span class="flex-shrink-1 text-danger mx-2">*</span>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">&#128179;</span>
+    </div>
+    <input
+      type="text"
+      class="memberSignUpFormElement form-control"
+      id="card_number"
+      placeholder="Card Number"
+      required
+    />
+    <span class="flex-shrink-1 text-danger mx-2">*</span>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">&#128100;</span>
+    </div>
+    <input
+      type="text"
+      class="memberSignUpFormElement form-control"
+      id="cardholder_name"
+      placeholder="Cardholder Name"
+      required
+    />
+    <span class="flex-shrink-1 text-danger mx-2">*</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+    <div class="form-group">
+      <div class="form-inline">
+        <select
+          class="memberSignUpFormElement form-control"
+          style="width: 40%;"
+          id="expiry_month"
+          required
+        >
+          <option selected disabled>Month</option>
+        </select>
+
+        <span style="width:5%; text-align: center"> / </span>
+
+        <select
+          class="memberSignUpFormElement form-control"
+          style="width: 40%;"
+          id="expiry_year"
+          required
+        >
+          <option selected disabled>Year</option>
+        </select>
+
+        <span class="text-danger text-center" style="width: 5%;">*</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="form-group">
+      <div class="input-group">
+        <input
+          class="memberSignUpFormElement form-control"
+          placeholder="CVV"
+          required=""
+          type="text"
+          maxlength="3"
+          id="cvv"
+          required
+        />
+        <span class="flex-shrink-1 text-danger mx-2">*</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    // Populate card expiration fields - must be in the future
+    var expiry_month_select = document.getElementById("expiry_month");
+    var expiry_year_select = document.getElementById("expiry_year");
+
+    // validMonths is defined in static/js/validation-methods.js
+    for (i = 0; i < validMonths.length; i++) {
+      var month = document.createElement("option");
+      month.innerHTML = validMonths[i];
+      expiry_month_select.appendChild(month);
+
+      var year = document.createElement("option");
+      year.innerHTML = validYears[i];
+      expiry_year_select.appendChild(year);
+    }
+  });
+</script>

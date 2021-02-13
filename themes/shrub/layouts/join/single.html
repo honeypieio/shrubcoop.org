@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+    <div class="container col-xl-6 mx-auto">
+
+      <div class="pt-4">
+
+        <h2 class="dosis-semi-bold text-center mb-4">{{ .Title }}</h2>
+        
+        <div id="loading" class="d-none">
+          <center> 
+            <div class="lds-ellipsis dark"><div></div><div></div><div></div><div></div></div>
+          </center>
+        </div>
+
+        <div id="errorBoxContainer" class="d-none">
+          <div class="alert alert-danger py-3 px-3">
+            <h5 class="alert-heading">Uh oh!</h5>
+            <p id="errorBoxMessage"></p>
+            <p>If you need assistance, please <a href="#" title="Click here to send an email to support">contact support</a></p>
+          </div>
+        </div>
+
+        <div id="successBoxContainer" class="d-none">
+          <h2 class="dosis-semi-bold text-center mb-4">{{ .Title }}</h2>
+          <div class="alert alert-success pb-2 px-4 pt-4">
+            <p id="successBoxMessage"></p>
+            <p>If you need assistance, please <a href="#" title="Click here to send an email to support">contact support</a></p>
+          </div>
+        </div>
+
+        <div id="membership-signup-form" class="container col-md-10 mx-auto">
+          {{ partial "membership-signup.html" . }}
+        </div>
+    </div>
+	</div>
+
+<script src="{{ .Site.BaseURL }}/js/membership-signup.js"></script>
+
+{{ end }}

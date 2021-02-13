@@ -53,10 +53,10 @@
 />
 <meta charset="UTF-8" />
 
-  <meta name="description" content="An update on our January&#39;21 opening plans following the new lockdown on 26th Dec">
+  
 
 
-<title>SHRUB Jan&#39;21 Opening in Lockdown | SHRUB Coop</title>
+<title>Renew Your Membership | SHRUB Coop</title>
 </head>
     <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
   <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
@@ -205,7 +205,7 @@
 
         
           <li
-            class="nav-item mx-auto underline"
+            class="nav-item mx-auto "
           >
             <a
               class="nav-link text-white"
@@ -252,30 +252,368 @@
 
   </div>
 </nav>
-<div class="content mb-0 mb-lg-5 mb-xl-5" style="margin-top: 75px;">
+<div class="content mb-0" style="margin-top: 75px;">
 
-  <div class="col-xl-6 mx-auto">
-    <div class="container">
 
-      <div class="pt-5">
-        <h2 class="mb-0">SHRUB Jan&#39;21 Opening in Lockdown</h2>
 
-        <p class="dosis-semi-bold">
-          By SHRUB Coop, posted 22/12/20
-        </p>
+    <div class="container col-xl-6 mx-auto">
 
-        <p>An update on our January&#39;21 opening plans following the new lockdown on 26th Dec</p>
-      </div>
+      <div class="pt-4">
+   
+        <div id="loading">
+  
+          <h2 class="dosis-semi-bold text-center mb-4">Renew Your Membership</h2>
 
-      <hr />
+          <center> 
+            <div class="lds-ellipsis dark"><div></div><div></div><div></div><div></div></div>
+          </center>
+        </div>
+        
+        <div class="container col-md-8 col-lg-6 col-xl-9 mx-auto">
+        
+          <div id="member-unknown" class="d-none">
 
-      <p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1608656883/shrubcoop.org/media/SHRUB_in_lockdown_rpqjd3.png" alt="" /></p>
+            <h2 class="dosis-semi-bold text-center mb-4">Renew Your Membership</h2>
 
+            <p>Please enter your email address below</p>
+
+            <div class="d-flex mb-2">
+              <input
+                type="email"
+                class="form-control w-100"
+                placeholder="Email"
+                id="email"
+                required
+              />
+              <span class="flex-shrink-1 ml-2 text-danger">*</span>
+            </div>
+
+            <p class="mb-4 mt-2">If there is a membership associated with your email address, we'll send you a link you can use to renew your membership</p>
+
+            <button class="btn btn-shrub btn-block" id="sendRenewalLinkButton">
+              Send Renewal Link
+            </button>
+
+          </div>
+
+          <div id="member-known" class="d-none"> 
+            <div id="membership-select-wrapper">
+
+              <h4>Hey, <span id="member-first-name"></span>!</h4>
+              <div id="membership-dates" class="mt-0 mb-4">
+                <p>Here are your membership details:</p>
+              </div>
+
+              <hr />
+
+
+              <h2 class="dosis-semi-bold text-center mb-4">Renew Your Membership</h2>
+
+              
+<p>What type of membership would you like?</p>
+
+<div class="row mb-3 justify-content-center">
+  <div class="col-6 col-xl-4">
+    <button
+      type="button"
+      class="btn btn-primary w-100 membership-period active"
+      id="full-year"
+    >
+      12 Months
+    </button>
+  </div>
+  <div class="col-6 col-xl-4">
+    <button
+      type="button"
+      class="btn btn-primary w-100 membership-period"
+      id="half-year"
+    >
+      6 Months
+    </button>
+  </div>
+</div>
+
+<p>To keep membership accessible for all, you pay what you can afford</p> 
+<p>Our suggested prices are based on earnings but you can pay however much you feel!</p>
+
+<p class="mb-4">How much would you like to pay for your membership?</p>
+
+<div class="justify-content-center">
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-1"
+        data-amount="12"
+      >
+        £12
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I'm a student, unemployed, or retired"</span>
     </div>
   </div>
 
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-2"
+        data-amount="18"
+      >
+        £18
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I earn between £16k and £27k per year"</span>
+    </div>
+  </div>
 
-				</div><div class="row text-center mt-0 mt-lg-5 mt-xl-5 mb-2">
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-3"
+        data-amount="24"
+      >
+        £24
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I earn between £27k and £43k per year"</span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-4">
+      <button
+        class="btn btn-primary w-100 membership-amount"
+        id="membership-amount-4"
+        data-amount="30"
+      >
+        £30
+      </button>
+    </div>
+    <div class="col-8">
+      <span class="w-100">"I earn above £43k per year"</span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-4">
+      <div class="input-group" id="membership-amount-custom-wrapper">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="currency">£</span>
+        </div>
+        <input
+          id="membership-amount-custom"
+          type="number"
+          class="form-control"
+          placeholder="0.00"
+          min="12"
+          step="0.01"
+          aria-label="Custom amount"
+          aria-describedby="currency"
+        />
+      </div>
+    </div>
+    <div class="col-8 text-left">
+      <p class="w-100 ml-3 mb-0">Other Amount*</p>
+      <p class="w-100 ml-3" style="line-height: 1;">
+        <small>*the miniumum membership price is <span id="minimum-membership-price">£12</span> per year</small>
+      </p>
+    </div>
+  </div>
+
+  <div class="row d-none amount-confirmation-wrapper">
+    <div class="col-8 mx-auto">
+      <p class="text-center">Selected amount: <b>£<span class="amount-confirmation"></span></b></p>
+    </div>
+  </div>
+
+  <div id="membership-select-errors"></div>
+</div>
+
+<script>
+  
+  var newMember = {};
+
+  $(document).ready(function() {
+    membershipPeriodSelect("full-year");
+  });
+
+  var prices = [];
+
+  function updatePrices(period) {
+    if(period == "half-year"){
+      prices = [8.00, 12.00, 16.00, 20.00];
+    } else {
+      prices = [1.00, 18.00, 24.00, 30.00];
+    }
+    for(i = 0; i < prices.length; i++){
+      var id = "#membership-amount-" + (i + 1)
+      $(id).attr("data-amount", prices[i]);
+      $(id).text("£" + prices[i]);
+    }
+  }
+
+  $(".membership-period").on("click", function() {
+    membershipPeriodSelect(this.id);
+  });
+
+  function membershipPeriodSelect(period) {
+    $(".membership-period").removeClass("active");
+    $(".amount-confirmation-wrapper").addClass("d-none");
+    $("#membership-amount-custom").val(null);
+
+    if (period == "half-year") {
+      $("#half-year").addClass("active");
+      newMember.period = "half-year";
+    } else {
+      $("#full-year").addClass("active");
+      newMember.period = "full-year";
+    }
+
+    updateMembershipPrices(newMember.period);
+  }
+
+  function updateMembershipPrices(period) {
+    deselectAllMembershipAmounts();
+    newMember.amount = null;
+    updatePrices(period);
+
+    $("#minimum-membership-price").text("£" + prices[0].toFixed(2));
+    $("#membership-amount-custom").attr("min", prices[0]);
+
+    if($("#membership-amount-custom").val() > 0 && $("#membership-amount-custom").val() < prices[0]){
+      $("#membership-amount-custom").val(prices[0]);
+    }
+  }
+
+  $(".membership-amount").on("click", function() {
+    $("#membership-amount-custom").val("");
+    membershipAmountSelect("#" + this.id, this.getAttribute("data-amount"));
+  });
+
+  $("#membership-amount-custom").on("input", function() {
+    membershipAmountSelect("#" + this.id, this.value);
+  });
+
+  function membershipAmountSelect(inputElementId, amount) {
+
+    try {
+      amount = Number(amount);
+      if(amount == "NaN"){
+        throw new Error();
+      }
+      if(amount < prices[0]) {
+        throw new Error();
+      }
+    } catch(error) {
+      amount = prices[0];
+    }
+
+    deselectAllMembershipAmounts();
+
+    $(".amount-confirmation-wrapper").removeClass("d-none");
+
+
+    if(prices.includes(amount)) {
+      $("#membership-amount-" + (prices.indexOf(amount) + 1)).addClass("active");
+    } else {
+      $("#membership-amount-custom-wrapper").addClass("active");
+    }
+
+    newMember.amount = amount.toFixed(2);
+    $(".amount-confirmation").text(newMember.amount);
+  }
+
+  function deselectAllMembershipAmounts() {
+    $(".membership-amount").removeClass("active");
+    $("#membership-amount-custom-wrapper").removeClass("active");
+  }
+
+
+
+</script>
+
+
+              <button class="btn btn-shrub btn-block" id="completeRenewalButton">
+                Proceed To Payment
+              </button>
+            </div>
+
+            <div id="payment-details-wrapper" class="d-none">
+              <h4 class="mb-3 text-center">Payment Details</h4>
+              
+              <div id="sumup-card"></div>
+
+              <div class="row d-none amount-confirmation-wrapper">
+                <div class="col-10 mx-auto">
+                  <p class="text-center mb-4 mt-3">
+                    By clicking "Pay", your membership will be renewed and <b>£<span class="amount-confirmation"></span></b> will be charged to your card
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="mt-3">
+          <div id="errorBoxContainer" class="d-none">
+            <div class="alert alert-danger pb-2 px-4 pt-4">
+              <h4>Uh-oh!</h4>
+              <p id="errorBoxMessage"></p>
+              <hr />
+              <p class="mb-3">If you need any help, please <a href="mailto:hello@shrubcoop.org" title="Click here to send us an email">get in touch</a></p>
+            </div>
+          </div>
+
+          <div id="successBoxContainer" class="d-none">
+            <div class="alert alert-success pb-2 px-4 pt-4">
+              <h4>Success!</h4>
+              <p id="successBoxMessage"></p>
+              <hr />
+              <p class="mb-3">If you need any help, please <a href="mailto:hello@shrubcoop.org" title="Click here to send us an email">get in touch</a></p>
+            </div>
+          </div>
+        </div>
+    </div>
+	</div>
+
+<script type="text/javascript" src="https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js"></script>
+<script src="https://www.shrubcoop.org/js/validation-methods.js"></script>
+<script src="https://www.shrubcoop.org//js/membership-renewal.js"></script>
+<script>
+
+  var BaseURL = "https:\/\/www.shrubcoop.org\/";
+  var murakamiMembershipKey = "wza96Xne2EUrmCucaM9qhaMMr"
+  
+  var urlParams = new URLSearchParams(window.location.search);
+  var memberId = urlParams.get('memberId');
+
+  $(document).ready(function() {
+      
+    $("#sendRenewalLinkButton").on("click", function() {
+      sendRenewalLink();
+    })
+
+
+    if(!memberId) {
+      $("#loading").addClass("d-none");
+      $("#member-unknown").removeClass("d-none");
+    } else {
+      getMember();
+
+      $("#completeRenewalButton").on("click", function() {
+        renewMembership();
+      })
+    }
+  })
+
+</script>
+
+
+				</div><div class="row text-center mt-0">
   <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
     <div class="row">
       <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">

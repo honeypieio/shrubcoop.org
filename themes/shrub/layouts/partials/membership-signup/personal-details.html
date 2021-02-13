@@ -1,0 +1,94 @@
+<h3 class="mb-3 text-center">Personal Details</h3>
+
+<div class="d-flex mb-2">
+  <input
+    type="text"
+    class="form-control w-100 memberSignUpFormElement"
+    placeholder="First Name"
+    id="first_name"
+    required
+  />
+  <span class="flex-shrink-1 ml-2 text-danger">*</span>
+</div>
+<div class="d-flex mb-2">
+  <input
+    type="text"
+    class="form-control w-100 memberSignUpFormElement"
+    placeholder="Last Name"
+    id="last_name"
+    required
+  />
+  <span class="flex-shrink-1 ml-2 text-danger">*</span>
+</div>
+
+
+
+  <div class="d-flex mb-2">
+    <input
+      type="email"
+      class="form-control w-100 memberSignUpFormElement"
+      placeholder="Email"
+      id="email"
+      required
+    />
+    <span class="flex-shrink-1 ml-2 text-danger">*</span>
+  </div>
+  <div class="d-flex mb-2">
+    <textarea
+      type="text"
+      class="form-control w-100 memberSignUpFormElement"
+      placeholder="Address"
+      id="address"
+      required
+    ></textarea>
+    <span class="flex-shrink-1 ml-2 text-danger">*</span>
+  </div>
+  <div class="d-flex mb-2">
+    <input
+      type="text"
+      class="form-control mb-2 w-100 memberSignUpFormElement"
+      placeholder="Phone Number"
+      id="phone_no"
+    />
+  </div>
+
+  <p class="mb-1"><b>Date of Birth</b> (must be 16 or over)</p>
+  <div class="d-flex" style="padding: 0;">
+    <input
+      type="date"
+      class="form-control w-50 memberSignUpFormElement"
+      placeholder="Date of Birth"
+      id="date_of_birth"
+      required
+    />
+    <span class="flex-shrink-1 text-danger mx-2">*</span>
+  </div>
+
+
+  <p class="pt-4">
+    We may need to contact you by email occasionally to inform you about
+    the status of your membership and to let you know important news
+    about the co-operative, including details of the annual general meeting
+  </p>
+  <div class="form-check form-check-inline mt-1">
+    <input
+      class="form-check-input memberSignUpFormElement"
+      type="checkbox"
+      id="contact_consent"
+      required
+    />
+    <label class="form-check-label align-top">
+      I consent <span class="text-danger">*</span>
+    </label>
+  </div>
+
+  <div id="personal-details-errors"></div>
+
+<script>
+  $(document).ready(function() {
+    // Set date of birth limit - must be older than 16
+    var date = new Date();
+    $("#date_of_birth").prop("max", date.getFullYear() - 16 + "-" + ("0" + (date.getMonth() + +1)).slice(-2) + "-" + ("0" + date.getDate()).slice(-2));
+  });
+</script>
+

@@ -8,6 +8,7 @@ membership_sign_up_body = "Online membership sign ups are coming soon! \n\n***\n
 membership_sign_up_button = "Sign Up Now!"
 membership_sign_up_list_tagline = "From £1 per month*"
 membership_sign_up_title = "Become a member!"
+membership_renewal_button = "Renew Your Membership!"
 title = "Get Involved"
 type = "get-involved"
 volunteer_sign_up_button = "View All Roles"

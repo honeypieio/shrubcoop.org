@@ -1,0 +1,134 @@
+{{ define "main" }}
+
+
+
+    <div class="container col-xl-6 mx-auto">
+
+      <div class="pt-4">
+   
+        <div id="loading">
+  
+          <h2 class="dosis-semi-bold text-center mb-4">{{ .Title }}</h2>
+
+          <center> 
+            <div class="lds-ellipsis dark"><div></div><div></div><div></div><div></div></div>
+          </center>
+        </div>
+        
+        <div class="container col-md-8 col-lg-6 col-xl-9 mx-auto">
+        
+          <div id="member-unknown" class="d-none">
+
+            <h2 class="dosis-semi-bold text-center mb-4">{{ .Title }}</h2>
+
+            <p>Please enter your email address below</p>
+
+            <div class="d-flex mb-2">
+              <input
+                type="email"
+                class="form-control w-100"
+                placeholder="Email"
+                id="email"
+                required
+              />
+              <span class="flex-shrink-1 ml-2 text-danger">*</span>
+            </div>
+
+            <p class="mb-4 mt-2">If there is a membership associated with your email address, we'll send you a link you can use to renew your membership</p>
+
+            <button class="btn btn-shrub btn-block" id="sendRenewalLinkButton">
+              Send Renewal Link
+            </button>
+
+          </div>
+
+          <div id="member-known" class="d-none"> 
+            <div id="membership-select-wrapper">
+
+              <h4>Hey, <span id="member-first-name"></span>!</h4>
+              <div id="membership-dates" class="mt-0 mb-4">
+                <p>Here are your membership details:</p>
+              </div>
+
+              <hr />
+
+
+              <h2 class="dosis-semi-bold text-center mb-4">{{ .Title }}</h2>
+
+              {{ partial "membership-signup/membership-select.html" . }}
+
+              <button class="btn btn-shrub btn-block" id="completeRenewalButton">
+                Proceed To Payment
+              </button>
+            </div>
+
+            <div id="payment-details-wrapper" class="d-none">
+              <h4 class="mb-3 text-center">Payment Details</h4>
+              
+              <div id="sumup-card"></div>
+
+              <div class="row d-none amount-confirmation-wrapper">
+                <div class="col-10 mx-auto">
+                  <p class="text-center mb-4 mt-3">
+                    By clicking "Pay", your membership will be renewed and <b>£<span class="amount-confirmation"></span></b> will be charged to your card
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="mt-3">
+          <div id="errorBoxContainer" class="d-none">
+            <div class="alert alert-danger pb-2 px-4 pt-4">
+              <h4>Uh-oh!</h4>
+              <p id="errorBoxMessage"></p>
+              <hr />
+              <p class="mb-3">If you need any help, please <a href="mailto:hello@shrubcoop.org" title="Click here to send us an email">get in touch</a></p>
+            </div>
+          </div>
+
+          <div id="successBoxContainer" class="d-none">
+            <div class="alert alert-success pb-2 px-4 pt-4">
+              <h4>Success!</h4>
+              <p id="successBoxMessage"></p>
+              <hr />
+              <p class="mb-3">If you need any help, please <a href="mailto:hello@shrubcoop.org" title="Click here to send us an email">get in touch</a></p>
+            </div>
+          </div>
+        </div>
+    </div>
+	</div>
+
+<script type="text/javascript" src="https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js"></script>
+<script src="{{ .Site.BaseURL }}js/validation-methods.js"></script>
+<script src="{{ .Site.BaseURL }}/js/membership-renewal.js"></script>
+<script>
+
+  var BaseURL = "{{ .Site.BaseURL }}";
+  var murakamiMembershipKey = "{{ .Site.Params.murakamiMembershipKey }}"
+  
+  var urlParams = new URLSearchParams(window.location.search);
+  var memberId = urlParams.get('memberId');
+
+  $(document).ready(function() {
+      
+    $("#sendRenewalLinkButton").on("click", function() {
+      sendRenewalLink();
+    })
+
+
+    if(!memberId) {
+      $("#loading").addClass("d-none");
+      $("#member-unknown").removeClass("d-none");
+    } else {
+      getMember();
+
+      $("#completeRenewalButton").on("click", function() {
+        renewMembership();
+      })
+    }
+  })
+
+</script>
+
+{{ end }}

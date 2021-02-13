@@ -168,11 +168,6 @@ function validateCardNumber(cardNumber, cardName) {
   }
 }
 
-function validateEmail(email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
-
 function validateExpirationDate(month, year) {
   try {
     if (validMonths.includes(month) && validYears.includes(year)) {
@@ -205,16 +200,91 @@ function validateCVVNumber(cvv) {
   }
 }
 
+// Other validation methods
+
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
 function validateMembershipSelect() {
-  var errors = {};
+  var errors = [];
 
   if (!["full-year", "half-year"].includes(newMember.period)) {
-    errors["period"] = { message: "Select a valid membership period" };
+    errors.push("Select a valid membership period");
   }
 
   if (newMember.amount < prices[0]) {
-    errors["amount"] = { message: "Enter a valid membership price" };
+    errors.push("Enter a valid membership price");
   }
 
   return errors;
 }
+
+function validateMembershipForm(parameters) {
+  $("#memberSignUpErrorAlert").addClass("d-none");
+  $("#memberSignUpSuccessAlert").addClass("d-none");
+  var errors = [];
+  Object.keys(parameters).forEach(function(key) {
+    var DOMKey = "#" + key;
+
+    if ($(DOMKey).prop("type") == "checkbox") {
+      if ($(DOMKey).prop("required") == true) {
+        if ($(DOMKey).prop("checked") == true) {
+          newMember[key] = true;
+        } else {
+          errors.push(key.toProperCase() + " is required.");
+        }
+      }
+    } else {
+      if ($("#" + key).prop("required") == true) {
+        if ($(DOMKey).val()) {
+          var value = $(DOMKey).val();
+          if (key == "email" && !validateEmail(value)) {
+            errors.push("Please enter a valid email address.");
+          } else if (
+            key == "card_number" &&
+            !validateCardNumber(value, $("#card_type").val())
+          ) {
+            errors.push("Please enter a valid card number.");
+          } else if (
+            (key == "expiry_month" || key == "expiry_year") &&
+            !validateExpirationDate(
+              $("#expiry_month").val(),
+              $("#expiry_year").val()
+            )
+          ) {
+            errors.push("Please enter a valid card expiration date.");
+          } else if (key == "cvv" && !validateCVVNumber(value)) {
+            errors.push("Please enter a valid CVV number.");
+          } else {
+            newMember[key] = value;
+          }
+        } else {
+          errors.push(key.toProperCase() + " is required.");
+        }
+      }
+    }
+  });
+
+  /*if (errors.length > 0) {
+    document.getElementById("memberSignUpErrorContent").innerHTML = "";
+    $("#memberSignUpErrorAlert").removeClass("d-none");
+    var errorUlPrefix = document.createElement("p");
+    errorUlPrefix.className = "mb-1";
+    errorUlPrefix.textContent = "Please fix the following errors to continue:";
+    var errorUl = document.createElement("ul");
+    for (i = 0; i < errors.length; i++) {
+      var error = document.createElement("li");
+      error.innerText = errors[i];
+      errorUl.appendChild(error);
+    }
+    document
+      .getElementById("memberSignUpErrorContent")
+      .appendChild(errorUlPrefix);
+    document.getElementById("memberSignUpErrorContent").appendChild(errorUl);
+  }*/
+
+  return errors;
+}
+
