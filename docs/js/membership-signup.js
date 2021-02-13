@@ -31,7 +31,7 @@ function createMemberAndCheckout(callback) {
   // 2. Log internal Murakami transaction
   // 3. Create SumUp checkout
   $.ajax({
-    url: "https://localhost:4000/api/post/members/remote-add?key=" + membershipSignUpKey,
+    url: "https://murakami.shrubcoop.org/api/post/members/remote-add?key=" + membershipSignUpKey,
     type: "POST",
     data: newMember,
     success: function(murakamiResponse) {
