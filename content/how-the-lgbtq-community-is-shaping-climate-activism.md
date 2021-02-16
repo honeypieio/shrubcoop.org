@@ -11,7 +11,7 @@ As part of LGBTQ+ History Month, we wanted to share with you some present-day cl
 
 ***
 
-![jamie-margolin.png](https://lh4.googleusercontent.com/YrZXilZ2a_emzMaI3uIiPR1cw4XeSow6ptYiBVCmYnp-PCi1srtci6YIjIW4DFhV4WJL-83HjHtR6FKUFX55FzFUIRrNO0sumsSu9wn6IfTpL41nev5fvAFy30BPUjqYJ8_0t48 =643x483)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1613491265/shrubcoop.org/media/jamie-margolin_rfta8q.png)
 
 Jamie Margolin advocating for sexual and gender rights, as well as paving the way for climate action amongst young people.
 
