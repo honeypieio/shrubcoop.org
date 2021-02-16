@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-02-16T00:00:00Z
 description = "Introducing...Jamie Margolin"
-draft = true
 tags = []
 title = "How the LGBTQ+ Community is Shaping Climate Activism"
 type = "news"
