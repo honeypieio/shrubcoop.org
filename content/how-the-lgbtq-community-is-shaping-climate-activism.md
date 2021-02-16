@@ -8,13 +8,17 @@ title = "How the LGBTQ+ Community is Shaping Climate Activism"
 type = "news"
 
 +++
-As part of LGBTQ+ History Month, we wanted to share with you some present-day climate activists that inspire us here at Shrub. The first of which is Jamie Margolin, who has co-founded a climate organisation, sued the state of Washington and spoken in the U.S. Congress - all before the age of twenty. 
+As part of LGBTQ+ History Month, we wanted to share with you some present-day climate activists that inspire us here at Shrub. The first of which is Jamie Margolin, who has co-founded a climate organisation, sued the state of Washington and spoken in the U.S. Congress - all before the age of twenty.
+
+***
 
 ![jamie-margolin.png](https://lh4.googleusercontent.com/YrZXilZ2a_emzMaI3uIiPR1cw4XeSow6ptYiBVCmYnp-PCi1srtci6YIjIW4DFhV4WJL-83HjHtR6FKUFX55FzFUIRrNO0sumsSu9wn6IfTpL41nev5fvAFy30BPUjqYJ8_0t48 =643x483)
 
 Jamie Margolin advocating for sexual and gender rights, as well as paving the way for climate action amongst young people.
 
-Photo: [https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/](https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/ "https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/")"[https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/](https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/ "https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/")
+Photo: [https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/](https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/ "https://insideclimatenews.org/news/02072020/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice/")
+
+***
 
 Jamie Margolin has become an internationally-recognised name amongst the climate justice movement through her outspoken leadership of [Zero Hour](http://thisiszerohour.org), an organisation focused on educating young people about the climate crisis and mobilising them to demand action from their leaders. At only fourteen years of age, Margolin began to campaign for the right to a clean and safe environment after spending many summers in Seattle afraid to go outside because of the smog and pollution. She was enraged that her generation were forced to accept these conditions as ‘normal’, despite having done nothing to create this problem. Margolin therefore began to connect with other young activists in the Pacific Northwest, testifying at climate bill debates to bring attention to these issues. When she grew tired of waiting for adults to take action, Margolin set about organising a youth climate march so that young people’s voices would not go ignored. From here, Zero Hour was born.
 
