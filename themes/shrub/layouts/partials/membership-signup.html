@@ -35,10 +35,11 @@
 
         {{ partial "membership-signup/membership-terms.html" . }}
 
+        <button class="btn btn-shrub btn-block mt-4" id="proceedToPaymentButton">Proceed To Payment</button>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" onclick="changePage('#membership-terms', '#personal-details')">&#x21e4; Personal Details</button>
-        <button type="button" class="btn btn-primary" onclick="changePage('#membership-terms', '#payment-details')">Payment Details &#x21e5;</button>  
       </div>
     </div>
 
@@ -48,27 +49,24 @@
     <div class="modal-content">
       <div class="card-body mx-4">
 
-        {{ partial "membership-signup/payment-details.html" . }}
+        <div id="payment-details-wrapper" class="d-none">
+          <h4 class="mb-3 text-center">Payment Details</h4>
+          
+          <div id="sumup-card"></div>
 
-        <div class="row d-none amount-confirmation-wrapper">
-          <div class="col-8 mx-auto">
-            <p class="text-center mb-4 mt-3">
-              By clicking "Complete Sign Up", you will be charged <b>£<span class="amount-confirmation"></span></b>
-            </p>
+          <div class="row d-none amount-confirmation-wrapper">
+            <div class="col-10 mx-auto">
+              <p class="text-center mb-4 mt-3">
+                By clicking "Pay", your membership sign up will be completed and <b>£<span class="amount-confirmation"></span></b> will be charged to your card
+              </p>
+            </div>
           </div>
         </div>
-
-        <button class="btn btn-shrub btn-block" id="completeRenewalButton">
-          Complete Sign Up
-        </button>
 
         <div id="payment-details-errors"></div>
 
       </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="changePage('#payment-details', '#membership-terms')">&#x21e4; Membership Terms</button>
-      </div>
     </div>
 
   </div>
@@ -76,30 +74,27 @@
 
 <div class="row mt-4 mb-3">
   <div class="col-md-12 mx-auto">
-    <div
-      id="memberSignUpErrorAlert"
-      class="alert alert-danger d-none"
-      role="alert"
-    >
-      <h4 class="alert-heading">Uh-oh!</h4>
-      <div id="memberSignUpErrorContent"></div>
+    <div id="errorBoxContainer" class="d-none">
+      <div class="alert alert-danger pb-2 px-4 pt-4">
+        <h4>Uh-oh!</h4>
+        <p id="errorBoxMessage"></p>
+        <hr />
+        <p class="mb-3">If you need any help, please <a href="mailto:hello@shrubcoop.org" title="Click here to send us an email">get in touch</a></p>
+      </div>
+    </div>
+
+    <div id="successBoxContainer" class="d-none">
+      <div class="alert alert-success pb-2 px-4 pt-4">
+        <h4>Success!</h4>
+        <p id="successBoxMessage"></p>
+        <hr />
+        <p class="mb-3">If you need any help, please <a href="mailto:hello@shrubcoop.org" title="Click here to send us an email">get in touch</a></p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-12 mx-auto">
-    <div
-      id="memberSignUpSuccessAlert"
-      class="alert alert-success d-none"
-      role="alert"
-    >
-      <h4 class="alert-heading">Success!</h4>
-      <div id="memberSignUpSuccessContent"></div>
-    </div>
-  </div>
-</div>
-
+<script type="text/javascript" src="https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js"></script>
 <script src="{{ .Site.BaseURL }}js/validation-methods.js"></script>
 <script src="{{ .Site.BaseURL }}js/membership-signup.js"></script>
 
@@ -107,11 +102,12 @@
 
   // Define some constants from hugo config - these will be used by static/js/membership-signup.html
   var BaseURL = "{{ .Site.BaseURL }}";
-  var membershipSignUpKey = "{{ .Site.Params.murakamiMembershipSignUpKey }}";
+  var murakamiMembershipKey = "{{ .Site.Params.murakamiMembershipKey }}"
+
 
   $(document).ready(function() {
-    $("#completeSignUpButton").on("click", function() {
-      completeSignUp();
+    $("#proceedToPaymentButton").on("click", function() {
+      proceedToPayment();
     });
 
     // getStaticContent is defined in
@@ -162,6 +158,8 @@
     } else {
       $(from + "-errors").html(createErrorMarkup(errors));
     }
+
+    return errors;
   }
 
   function createErrorMarkup(errors){
@@ -182,8 +180,6 @@
       errorMessage.textContent = error;
       errorsList.appendChild(errorMessage);
     }
-
-    console.log(errorsList.innerHTML);
 
     errorsParent.appendChild(errorsAlertTitle);
     errorsParent.appendChild(errorsPreamble);

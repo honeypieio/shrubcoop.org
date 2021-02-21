@@ -22,163 +22,106 @@ var newMember = {
 };
 
 // Globally store important IDs for error handling.
-var memberId;
-var murakamiTransactionId;
-var sumupTransactionId;
+//var memberId;
+//var murakamiTransactionId;
+//var sumupTransactionId;
 
-function createMemberAndCheckout(callback) {
+function createMemberAndCheckout() {
   // 1. Create member - mark as unpaid
   // 2. Log internal Murakami transaction
   // 3. Create SumUp checkout
-  $.ajax({
-    url: "https://murakami.shrubcoop.org/api/post/members/remote-add?key=" + membershipSignUpKey,
-    type: "POST",
-    data: newMember,
-    success: function(murakamiResponse) {
-      console.log("Murakami Response:", murakamiResponse);
-      // Store Murakami ID, SumUp ID etc.
-      if (murakamiResponse.status == "ok") {
-        callback(murakamiResponse)
+
+  var errors = changePage("#membership-terms", "#payment-details");
+  
+  if(errors.length === 0) { 
+    window.location.href = "#"; // Take user to top of the page.
+    $("#proceedToPaymentButton").prop("disabled", true);
+    $("#loading").removeClass("d-none");
+    $("#membership-signup-form").addClass("d-none");
+    
+    $.ajax({
+      url: "https://murakami.shrubcoop.org/api/post/members/remote-add?key=" + murakamiMembershipKey,
+      type: "POST",
+      data: newMember,
+      statusCode: {
+        200: function(res) { 
+          if(!res.SumUp || !res.murakami) {
+            throw "";
+          }
+
+          setupPaymentDialog(res.SumUp.id, res.murakami.transaction_id, res.murakami.member_id);
+        },
+        400: function(res) {
+          writeErrorMessage(res.responseJSON.error || "Something went wrong! Please try again.");
+        }
       }
-    },
-    error: function(murakamiResponse) {
-      console.log("Murakami Response:", murakamiResponse);
-      signUpSubmissionError("Something went wrong! You have not been charged");
-      // Flesh out error handling.
+    });
+  }
+}
+
+function setupPaymentDialog(checkoutId, murakamiTransactionId, member_id) {
+  SumUpCard.mount({
+      checkoutId: checkoutId,
+      onResponse: function(type, body) {
+        if(type === "success" && body.transaction_code) {
+          // Hide payment dialog, verify payment with Murakami - membership renewed.
+          verifyPayment(body.transaction_code, murakamiTransactionId, member_id);
+        } else if(type === "error") {
+          // Handle error.
+          $("#payment-details-wrapper").addClass("d-none");
+          writeErrorMessage("Something went wrong processing your payment! Please check that you have entered your details correctly");
+        } else {
+          console.log("Payment state:", type, body);
+        }
+      },
+    onLoad: function() {
+      // Show payment dialog
+      $("#loading").addClass("d-none");
+      $("#membership-signup-form").removeClass("d-none");
+      $("#payment-details-wrapper").removeClass("d-none");
     }
   });
 }
 
-function makePayment(cardDetails, callback) {
-  // Make payment to SumUp.
-  $.ajax({
-    url:
-      "https://api.sumup.com/v0.1/checkouts/" +
-      murakamiResponse.checkoutId,
-    type: "PUT",
-    headers: { "Content-Type": "application/json" },
-    data: {
-      payment_type: "card",
-      card: {
-        name: cardDetails.cardholder_name,
-        number: cardDetails.card_number,
-        expiry_month: cardDetails.expiry_month,
-        expiry_year: cardDetails.expiry_year,
-        cvv: cardDetails.cvv
-      }
-    },
-    success: function(checkoutRes) {
-      // Mark member as paid on Murakami.
-      console.log("Checkout Response:", checkoutRes);
-      if (checkoutRes.status == "PAID") {
-        callback(checkoutRes);
-      }
-    }, 
-    error: function(checkoutRes) {
-      console.log("Checkout Response:", checkoutRes);
-      signUpSubmissionError("Something went wrong! You may have been charged");
-      // Flesh out error handling.
-    }
-  });
-}
-
-function verifyPayment(callback) {
+function verifyPayment(SumUpTransactionId, murakamiTransactionId, member_id) {
   // 1. Verify that payment was successful
   // 2. Mark member as paid
   // 3. Update internal Murakami transaction as successful
   // 4. Send member welcome email
   $.ajax({
-    url: "https://murakami.shrubcoop.org/api/post/members/remote-add/verify-payment?key=" + membershipSignUpKey,
+    url: "https://murakami.shrubcoop.org/api/post/members/remote-add/verify-payment?key=" + murakamiMembershipKey,
     type: "POST",
-    data: {
-      murakamiTransactionId: murakamiTransactionId,
-      sumupTransactionId: sumUpTransactionId
-    },
-    success: function(verificationResponse) {
-      console.log("Verification Response:", verificationResponse);
-      if (verificationResponse.status == "ok") {
-        callback(verificationResponse);
+    data: { SumUpTransactionId: SumUpTransactionId, murakamiTransactionId: murakamiTransactionId, member_id: member_id },
+    statusCode: {
+      200: function(verificationResponse) {
+        writeSuccessMessage("Your membership application has been processed successfully! A confirmation email will be with you shortly");
+      }, 
+      400: function(verificationResponse) { 
+        writeErrorMessage(verificationResponse.responseJSON.error | "Something went wrong! You may have been charged");
+        // Flesh out error handling.
       }
-    }, 
-    error: function(verificationResponse) { 
-      console.log("Verification Response:", verificationResponse);
-      signUpSubmissionError("Something went wrong! You may have been charged");
-      // Flesh out error handling.
     }
   });
 }
 
-function completeSignUp() {
-  // Remove any error messages (payment detail)
-  $("#payment-details-errors").html("");
-
-  // Validate payment details - formParameters defines what IDs to look for in the DOM
-  var formParameters = {
-    card_type: "",
-    card_number: "",
-    cardholder_name: "",
-    expiry_month: "",
-    expiry_year: "",
-    cvv: ""
-  };
-
-  var errors = validateMembershipForm(formParameters);
-
-  // If there are no errors, proceed with membership sign up
-  if (errors.length == 0) {
-    // Show loading animation
-    document.getElementById("completeSignUpButton").innerHTML = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
-
-    // Put card details in their own object, then delete from member object - card details should only ever be sent to SumUp.
-    var cardDetails = {
-      card_type: newMember.card_type,
-      card_number: newMember.card_number,
-      cardholder_name: newMember.cardholder_name,
-      expiry_month: newMember.expiry_month,
-      expiry_year: newMember.expiry_year,
-      cvv: newMember.cvv
-    };
-
-    delete newMember.card_type;
-    delete newMember.card_number;
-    delete newMember.cardholder_name;
-    delete newMember.expiry_month;
-    delete newMember.expiry_year;
-    delete newMember.cvv;
-
-    createMemberAndCheckout(function(murakamiResponse) {
-      memberId = murakamiResponse.memberId;
-      murakamiTransactionId = murakamiResponse.transactionId;
-      sumupCheckoutId = murakamiResponse.checkoutId;
-      makePayment(cardDetails, function(checkoutResponse) {
-        sumupTransactionId = checkoutResponse.transactionId;
-        verifyPayment(function(verificationResponse) { 
-          // Show sucess message
-          var successMessage = document.createElement("p");
-          successMessage.textContent = "Membership signup complete - a welcome email is on its way!";
-
-          document.getElementById("memberSignUpSuccessContent").innerHTML = "";
-          document.getElementById("memberSignUpSuccessContent").appendChild(successMessage);
-          $("#memberSignUpSuccessAlert").removeClass("d-none");
-
-          document.getElementById("completeSignUpButton").innerHTML = "Sign Up Complete :-)";
-          document.getElementById("completeSignUpButton").disabled = true;
-        })
-      });
-    })
-  } else {
-    // Client side validation errors.
-    $("#payment-details-errors").html(createErrorMarkup(errors));
-  }
+function proceedToPayment() {
+  createMemberAndCheckout();
 }
 
-function signUpSubmissionError(message) {
-  var error = document.createElement("p");
-  error.textContent = message;
-  document.getElementById("memberSignUpErrorContent").innerHTML = "";
-  document.getElementById("memberSignUpErrorContent").appendChild(error);
-  $("#memberSignUpErrorAlert").removeClass("d-none");
-  document.getElementById("completeSignUpButton").innerHTML = "Complete Sign Up";
+function writeErrorMessage(errorMessage) {
+  $("#loading").addClass("d-none");
+  $("#membership-signup-form").addClass("d-none");
+ 
+  $("#errorBoxContainer").removeClass("d-none");
+  $("#errorBoxMessage").html(errorMessage);
+}
+
+function writeSuccessMessage(successMessage) {
+  $("#loading").addClass("d-none");
+  $("#membership-signup-form").addClass("d-none");
+ 
+  $("#successBoxContainer").removeClass("d-none");
+  $("#successBoxMessage").text(successMessage);
 }
 
 function validateMembershipForm(parameters) {
@@ -252,9 +195,7 @@ function validateMembershipForm(parameters) {
 // Fetches static content needed for signup - privacy policy, safer spaces policy etc.
 function getSignUpInfo(callback){
   $.ajax({
-    url:
-      "https://murakami.shrubcoop.org/api/get/members/sign-up-info?key=" +
-      membershipSignUpKey,
+    url: "https://murakami.shrubcoop.org/api/get/members/sign-up-info?key=" + murakamiMembershipKey,
     type: "GET",
     success: function(murakamiResponse) {
       callback(murakamiResponse.signUpInfo);
