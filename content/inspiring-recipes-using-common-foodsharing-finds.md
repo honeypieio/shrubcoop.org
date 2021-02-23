@@ -2,12 +2,13 @@
 author = "Fergus Whyte"
 date = 2021-02-23T00:00:00Z
 description = "Shaking up your weekly meal planning!"
-draft = true
 tags = ["food-sharing", "zero-waste", "sustainable-living", "recipes", "cooking", "zero-waste-cooking"]
 title = "Inspiring recipes using common Foodsharing finds"
 type = "news"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1614080484/shrubcoop.org/media/food_sharing_finds_mbyvwq.jpg)
+
 Long-time SHRUB volunteer Fergus shares some of the recipes he has come across to make use of common surplus items you can find on our Food Sharing shelves at the Zero Waste Hub or from a Food Sharing collection.
 
 **Spanish Tortilla** – Potatoes, onions and other veggies
