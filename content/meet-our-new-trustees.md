@@ -2,7 +2,6 @@
 author = "SHRUB Coop"
 date = 2021-02-23T00:00:00Z
 description = "Everything you need to know"
-draft = true
 tags = []
 title = "Meet Our New Trustees!"
 type = "news"
