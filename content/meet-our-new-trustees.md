@@ -24,11 +24,11 @@ Trustees’ key responsibilities fall into the following areas:
 
 **Who are the 2021 Trustees?**
 
-**Izi Robe (Convenor) -** [**izi.robe@shrubcoop.org**](mailto:izi.robe@shrubcoop.org) **- she/her**
+**Izi Robe (Convenor) -** [**izi.robe@shrubcoop.org**](mailto:izi.robe@shrubcoop.org) **- she/her![](https://res.cloudinary.com/shrub-co-op/image/upload/v1614109732/shrubcoop.org/media/Izi_y3nn8u.jpg)**
 
 I am a BA Human Geography graduate from the University of Exeter in Cornwall where I specialised in climate change communication. I have previous experience serving as a Trustee and Student Council Member for the University of Exeter while working at Falmouth and Exeter Students’ Union. Since moving to Edinburgh in 2019, I have worked in volunteer and student engagement at Heriot-Watt Student Union, alongside volunteering with SHRUB in Communications, the Zero Waste Hub and on the Steering Group. I’m looking forward to bringing my knowledge of working in member-led organisations to ensure we are using feedback from our volunteers and members to make SHRUB the best it can be!
 
-**Sylke van Duijnen (Secretary) -**  [**sylke.vandujinen@shrubcoop.org**](mailto:sylke.vandujinen@shrubcoop.org)  **- she / her**
+**Sylke van Duijnen (Secretary) -**   [**sylke.vandujinen@shrubcoop.org**](mailto:sylke.vandujinen@shrubcoop.org)   **- she / her**
 
 Hi everyone! I am Sylke and I am the new secretary for the board of trustees. I just graduated from my MSc Food Security at the University of Edinburgh in November and I stuck around town because Edinburgh is lovely even when it is in lockdown. I was very keen to get involved with the SHRUB Coop as I had volunteered with a foodsharing organisation back in Maastricht where I did my undergraduate and I had heard about the great work being done on food waste reduction in Edinburgh by the SHRUB Coop. However, studies and lockdown prevented me from getting involved earlier, but as soon as the SHRUB opened again this past July I started volunteering Then in November, I applied to be a Trustee because I wanted to contribute more to the SHRUB Coop behind the scenes, to help sustain this wonderful organisation for the Edinburgh community.If you see me in the Swapshop helping out on random days, feel free to say hi!
 
