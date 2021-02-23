@@ -2,6 +2,7 @@
 author = "Aislinn Redbond"
 date = 2021-02-23T00:00:00Z
 description = "Introducing...Aletta Brady."
+draft = true
 tags = []
 title = "How the LGBTQ+ Community is Shaping Climate Activism: Part II "
 type = "news"
