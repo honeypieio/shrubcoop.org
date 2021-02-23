@@ -86,9 +86,9 @@ phoneNumber = "0131 281 0583"
 postcode = "EH3 9AF"
 streetAddress = "22 Bread Street"
 [[params.funders]]
-image = ""
-link = "https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png"
-name = "National Lottery Awards for All"
+image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png"
+link = "https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland"
+name = "National Lottery Awards for All Scotland"
 [[params.funders]]
 image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg"
 link = "https://www.gannochytrust.org.uk/"
