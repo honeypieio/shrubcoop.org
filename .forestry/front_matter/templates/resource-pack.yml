@@ -29,4 +29,5 @@ fields:
   default: resource-packs
   hidden: true
 pages:
+- content/resource-packs/fabric-awareness-information-booklet.md
 - content/resource-packs/how-to-set-up-a-swap-shop.md
