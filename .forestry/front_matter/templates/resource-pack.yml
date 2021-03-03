@@ -28,3 +28,5 @@ fields:
   label: type
   default: resource-packs
   hidden: true
+pages:
+- content/resource-packs/how-to-set-up-a-swap-shop.md
