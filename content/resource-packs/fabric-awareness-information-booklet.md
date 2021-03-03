@@ -1,6 +1,6 @@
 +++
 date = 2021-03-08T00:00:00Z
-description = "A collaborative, educational endeavour "
+description = "A collaborative, educational endeavour thanks to SHRUB's Sustainable Fashion Working Group"
 pdf_document = ""
 tags = []
 title = "Fabric Awareness Information Booklet"
