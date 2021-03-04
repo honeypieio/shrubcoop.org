@@ -2,6 +2,7 @@
 author = "Aislinn Redbond"
 date = 2021-03-04T00:00:00Z
 description = "Celebrating the connection reading offers on World Book Day."
+draft = true
 tags = []
 title = "These Storied Pages"
 type = "news"
@@ -22,8 +23,7 @@ The way we consume books can also be a source of interaction with others in and 
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1614855419/shrubcoop.org/media/patti_ht6txk.png)A note from the previous owner in Aislinn’s copy of ‘Just Kids’ by Patti Smith.
 
-  
-\--
+***
 
 Further sources for secondhand books:
 
