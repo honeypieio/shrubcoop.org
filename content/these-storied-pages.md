@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-03-04T00:00:00Z
 description = "Celebrating the connection reading offers on World Book Day."
-draft = true
 tags = []
 title = "These Storied Pages"
 type = "news"
