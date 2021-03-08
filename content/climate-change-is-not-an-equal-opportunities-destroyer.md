@@ -10,7 +10,7 @@ type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615233266/shrubcoop.org/media/ais11_nkxzqy.jpg)
 
-Women are described as being more in touch with nature, made explicit in this depiction of ‘Mother Nature’. 
+Women are described as being more in touch with nature, made explicit in this depiction of ‘Mother Nature’.
 
 The intersection of feminism and climate justice is talked about a lot in media, but the promotion of ‘feminist solutions’ to the climate crisis undermines the obstacles that women are faced with every day.
 
@@ -30,7 +30,12 @@ The promotion of ‘feminist solutions’ to the climate crisis ignores the diff
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615232874/shrubcoop.org/media/ais3_born9k.jpg)
 
-This International Women’s Day, it is the responsibility of every individual to examine where their feminist convictions stem from (this includes everyone, not just women). There are millions of women doing incredible things for our planet which only deserves even more praise in light of the structural restraints and hurdles they face on a daily basis. Women have the ability to transform policies and create lasting change in their societies, and their potential should not be dismissed. However, we must create a society where women are free to pursue their own development, creating the conditions for self-realisation that encourages their contributions without burdening them with additional responsibilities. No doubt, we must all come together in this climate crisis, but to do so, we must dismantle the patriarchy in order to break the many cycles that have led us to this crisis in the first place.
+UN Sustainable Development Goals include Gender Equality as Goal Number Five.
+
+Source: HYPERLINK "[https://www.undp.org/content/undp/en/home/sustainable-development-goals.html](https://www.undp.org/content/undp/en/home/sustainable-development-goals.html "https://www.undp.org/content/undp/en/home/sustainable-development-goals.html")"[https://www.undp.org/content/undp/en/home/sustainable-development-goals.html](https://www.undp.org/content/undp/en/home/sustainable-development-goals.html "https://www.undp.org/content/undp/en/home/sustainable-development-goals.html")
+
+  
+This International Women’s Day, it is the responsibility of every individual to examine where their feminist convictions stem from (this includes everyone, not just women). There are millions of women doing incredible things for our planet which only deserves even more praise in light of the structural restraints and hurdles they face on a daily basis. Women have the ability to transform policies and create lasting change in their societies, and their potential should not be dismissed. However, we must create a society where women are free to pursue their own development, creating the conditions for self-realisation that encourages their contributions without burdening them with additional responsibilities. No doubt, we must all come together in this climate crisis, but to do so,we must dismantle the patriarchy in order to break the many cycles that have led us to this crisis in the first place.
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615233637/shrubcoop.org/media/ais4_d8rqj0.png)
 
