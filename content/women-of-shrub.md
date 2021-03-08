@@ -24,39 +24,15 @@ QUESTIONS ASKED :
 
 BILLIE (staff)
 
-• International women’s day is important to me because it is an opportunity to shed light face today. With the added bonus of an excuse to tell the women in my life how much I appreciate and am inspired by them.
+• International women’s day is important to me because it is an opportunity to shed light on the achievements of women while also highlighting the continued inequalities that we face today. With the added bonus of an excuse to tell the women in my life how much I appreciate and am inspired by them.
 
 • As cheesy and predictable as it is, my mum, Jo Dunlevie. She taught me how to value kindness while refusing to accept inequality and injustice. She showed me that I have a voice that has value and that I should use it to the best of my abilities. Thanks to her, my heart is open to love and my head is open to learn. I owe a lot of who I am to her.
 
-• There is a lot of brilliant work out there. I am hesitant to recommend specific things as I
+• There is a lot of brilliant work out there. I am hesitant to recommend specific things as I think it really depends on where a person is on their journey. It is really important to remember that feminism is intersectional and to apply critical thinking to where we get our information from, to ask ourselves who’s story isn’t being told and why not? I recommend that people always seek out the voices of women from marginalised communities. Including BIPOC women, women with disabilities and queer women.
 
-think it really depends on where a person is on their journey. It is really important to
+• I would really encourage people who are struggling to reach out. At Shrub we are trying really hard to keep people connected but if we are missing something or if there is something extra we could be doing, we would be really keen to hear from people. They can get us at: welfare@shrubcoop.org. Personally I’ve been dancing a lot. I crank up some good tunes and move my body as haphazardly as I can. The rush of joy can get me through an otherwise monotonous day.
 
-remember that feminism is intersectional and to apply critical thinking to where we get
-
-our information from, to ask ourselves who’s story isn’t being told and why not? I
-
-recommend that people always seek out the voices of women from marginalised
-
-communities. Including BIPOC women, women with disabilities and queer women.
-
-• I would really encourage people who are struggling to reach out. At Shrub we are trying
-
-really hard to keep people connected but if we are missing something or if there is
-
-something extra we could be doing, we would be really keen to hear from people. They
-
-can get us at: welfare@shrubcoop.org. Personally I’ve been dancing a lot. I crank up some
-
-good tunes and move my body as haphazardly as I can. The rush of joy can get me
-
-through an otherwise monotonous day.
-
-• I think I could write thousands of words and still not fully answer this question but I’ll try
-
-to capture some of my feelings on this succinctly. I think that trying to be aware of the
-
-wider context of inequality and how that affects people is a good start to ‘being a strong woman’. Some of this can include pushing through awkward conversations and advocating for others. It can be calling out the patriarchy for what it is and the inequality it is reinforcing. I think this is very complex and will look differently to everyone depending on their circumstances and their individual barriers. We can show strength by supporting other women and in doing so can be a part of dismantling systems of inequality. If our overarching aim is to look out for each other and work towards a fairer world: then maybe future generations can celebrate International women’s day and just look back on gender based inequality as a thing of the past.
+• I think I could write thousands of words and still not fully answer this question but I’ll try to capture some of my feelings on this succinctly. I think that trying to be aware of the wider context of inequality and how that affects people is a good start to ‘being a strong woman’. Some of this can include pushing through awkward conversations and advocating for others. It can be calling out the patriarchy for what it is and the inequality it is reinforcing. I think this is very complex and will look differently to everyone depending on their circumstances and their individual barriers. We can show strength by supporting other women and in doing so can be a part of dismantling systems of inequality. If our overarching aim is to look out for each other and work towards a fairer world: then maybe future generations can celebrate International women’s day and just look back on gender based inequality as a thing of the past.
 
 LILI (trustee)
 
