@@ -32,6 +32,8 @@ The promotion of ‘feminist solutions’ to the climate crisis ignores the diff
 
 This International Women’s Day, it is the responsibility of every individual to examine where their feminist convictions stem from (this includes everyone, not just women). There are millions of women doing incredible things for our planet which only deserves even more praise in light of the structural restraints and hurdles they face on a daily basis. Women have the ability to transform policies and create lasting change in their societies, and their potential should not be dismissed. However, we must create a society where women are free to pursue their own development, creating the conditions for self-realisation that encourages their contributions without burdening them with additional responsibilities. No doubt, we must all come together in this climate crisis, but to do so, we must dismantle the patriarchy in order to break the many cycles that have led us to this crisis in the first place.
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615233637/shrubcoop.org/media/ais4_d8rqj0.png)
+
 Some of the women paving the way for climate action.
 
 Further reading about these women available here. [https://yourstory.com/herstory/2019/09/women-activists-climate-change](https://yourstory.com/herstory/2019/09/women-activists-climate-change "https://yourstory.com/herstory/2019/09/women-activists-climate-change")
