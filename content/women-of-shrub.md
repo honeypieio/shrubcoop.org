@@ -22,6 +22,8 @@ QUESTIONS ASKED :
 
 ● According to you, what does it mean to "be a strong woman" in our modern times? We talk about courage, passion and empathy much more than we ever use to, but what do those words really mean ? Which actions can we implement in our daily lives that will not only help other women but help each and everyone of us on a general level?
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615221190/shrubcoop.org/media/155512976_279636850223527_5090619642529785146_n_e78e0c.jpg)
+
 BILLIE (staff)
 
 • International women’s day is important to me because it is an opportunity to shed light on the achievements of women while also highlighting the continued inequalities that we face today. With the added bonus of an excuse to tell the women in my life how much I appreciate and am inspired by them.
@@ -32,9 +34,13 @@ BILLIE (staff)
 
 • I would really encourage people who are struggling to reach out. At Shrub we are trying really hard to keep people connected but if we are missing something or if there is something extra we could be doing, we would be really keen to hear from people. They can get us at: welfare@shrubcoop.org. Personally I’ve been dancing a lot. I crank up some good tunes and move my body as haphazardly as I can. The rush of joy can get me through an otherwise monotonous day.
 
-• I think I could write thousands of words and still not fully answer this question but I’ll try to capture some of my feelings on this succinctly. I think that trying to be aware of the wider context of inequality and how that affects people is a good start to ‘being a strong woman’. Some of this can include pushing through awkward conversations and advocating for others. It can be calling out the patriarchy for what it is and the inequality it is reinforcing. I think this is very complex and will look differently to everyone depending on their circumstances and their individual barriers. We can show strength by supporting other women and in doing so can be a part of dismantling systems of inequality. If our overarching aim is to look out for each other and work towards a fairer world: then maybe future generations can celebrate International women’s day and just look back on gender based inequality as a thing of the past.
+• I think I could write thousands of words and still not fully answer this question but I’ll try to capture some of my feelings on this succinctly. I think that trying to be aware of the wider context of inequality and how that affects people is a good start to ‘being a strong woman’. Some of this can include pushing through awkward conversations and advocating for others. It can be calling out the patriarchy for what it is and the inequality it is reinforcing. I think this is very complex and will look differently to everyone depending on their circumstances and their individual barriers. We can show strength by supporting other women and in doing so can be a part of dismantling systems of inequality. If our overarching aim is to look out for each other and work towards a fairer world:then maybe future generations can celebrate International women’s day and just look back on gender based inequality as a thing of the past.
+
+***
 
 LILI (trustee)
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615221220/shrubcoop.org/media/192611db-eb3a-4d66-8992-781db99dedc3_qobqci.jpg)
 
 • International women's day represents for me the hope of a just and equal society in the future. It is very important to celebrate it, in order to remember that big changes can happen!
 
