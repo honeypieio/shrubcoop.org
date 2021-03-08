@@ -22,6 +22,9 @@ QUESTIONS ASKED :
 
 ● According to you, what does it mean to "be a strong woman" in our modern times? We talk about courage, passion and empathy much more than we ever use to, but what do those words really mean ? Which actions can we implement in our daily lives that will not only help other women but help each and everyone of us on a general level?
 
+***
+
+  
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615221190/shrubcoop.org/media/155512976_279636850223527_5090619642529785146_n_e78e0c.jpg)
 
 BILLIE (staff)
@@ -54,7 +57,11 @@ But it always works. Of course, this won ́t be permanent, bad feelings come bac
 
 • Nowadays I believe that to be a strong woman is to be our true self. Surely there has been a rise in awareness of certain themes, however I sincerely think that words without a real action are nothing but empty. I think that we should implement more initiative and cooperation in what we do. As an action I would say, be kind and sincere with the people around you.
 
+***
+
 MARY (volunteer)
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615221261/shrubcoop.org/media/158000222_445013530143646_5141152440425997409_n_d0zn0q.jpg)
 
 • It’s an opportunity to highlight global women’s issues and for women to support other women. It’s important because there’s a lot of gender inequality which we need to work together to tackle.
 
