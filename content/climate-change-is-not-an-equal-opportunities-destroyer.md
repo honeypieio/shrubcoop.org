@@ -14,7 +14,7 @@ Women are described as being more in touch with nature, made explicit in [this d
 
 ***
 
-The intersection of feminism and climate justice is talked about a lot in media, but the promotion of ‘feminist solutions’ to the climate crisis undermines the obstacles that women are faced with every day.
+The intersection of feminism and climate justice is talked about a lot in the media, but the promotion of ‘feminist solutions’ to the climate crisis undermines the obstacles that women are faced with every day.
 
 International Women’s Day rolls around once more as society takes stock of how much (or little) progress has been made in promoting gender equality and dismantling the patriarchy. In recent years, more attention has shifted to the role of women in fighting against climate change, highlighting the need to promote female empowerment as a means to combat the crisis. No doubt, it is a feminist issue given that [women are more likely to suffer the effects of climate change. ](https://www.bbc.co.uk/news/science-environment-43294221)However, addressing gender equality in this way can actually slow down progress because it pushes women into a role of climate activism instead of focusing on removing the barriers that prevent women from achieving freedom and independence in their lives.
 
@@ -22,7 +22,6 @@ Worldwide, women have been identified as among the most vulnerable to climate ch
 
 ***
 
-  
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615233245/shrubcoop.org/media/ais1_ueit4a.jpg)
 
 Graph showing the amount of time men and women spend on unpaid care work.
@@ -31,13 +30,12 @@ Source: [https://oecd-development-matters.org/2019/03/18/why-you-should-care-abo
 
 ***
 
-Interestingly, women and the environment have been intertwined for a long period of time. From early on, the feminisation of nature (‘Mother Earth’, the environment as the life support of humanity) established the environment as a site for exploitation, following the same pattern of oppression carried out against women. An elite minority have profited from the environment just as they did from the unpaid and undervalued work of women, connecting the experiences of women and nature together. As gender equality has become an important topic in environmental agreements, so too has the protection of nature and its resources. However, conservation schemes and [carbon offsetting](https://www.greenpeace.org.uk/news/the-biggest-problem-with-carbon-offsetting-is-that-it-doesnt-really-work/)forestry have mostly received attention because they allow the global elites who are most responsible for climate change to shift the responsibility of climate action elsewhere. Women’s rights are being treated in the same way to an extent. Across the media and in policy documents, the actions of women combatting climate change have been praised, which is of course a huge milestone for the feminist cause. However, this can be easily manipulated to assign women a larger responsibility to take climate action, valuing their equality only as a mechanism to reduce the effects of climate change, rather than genuinely encouraging their liberation.
+Interestingly, women and the environment have been intertwined for a long period of time. From early on, the feminisation of nature (‘Mother Earth’, the environment as the life support of humanity) established the environment as a site for exploitation, following the same pattern of oppression carried out against women. An elite minority have profited from the environment just as they did from the unpaid and undervalued work of women, connecting the experiences of women and nature together. As gender equality has become an important topic in environmental agreements, so too has the protection of nature and its resources. However, conservation schemes and [carbon offsetting](https://www.greenpeace.org.uk/news/the-biggest-problem-with-carbon-offsetting-is-that-it-doesnt-really-work/) forestry have mostly received attention because they allow the global elites who are most responsible for climate change to shift the responsibility of climate action elsewhere. Women’s rights are being treated in the same way to an extent. Across the media and in policy documents, the actions of women combatting climate change have been praised, which is of course a huge milestone for the feminist cause. However, this can be easily manipulated to assign women a larger responsibility to take climate action, valuing their equality only as a mechanism to reduce the effects of climate change, rather than genuinely encouraging their liberation.
 
-The promotion of ‘feminist solutions’ to the climate crisis ignores the different contextual challenges women face every day. It assumes that all women are in a position to respond to climate change and ignores the reality that many women do not have the time, energy, resources or skills to engage in the climate debate. Framing women as agents against climate change can, in many societies, only add another care duty to their already long list of responsibilities. If patriarchal societies have assigned women the role of caregivers, giving them another duty to caring for the environment is not liberating - it is a repeats of the patterns of the patriarchy. Feminism is an intersectional issue, linking not just with the climate but also with issues of class and race,and so the promotion of gender equality must focus on removing these barriers to allow women to pursue their potential. This is not to say that women should not engage and fight against climate change - of course they must be involved, just as any individual across every society and border deserves and needs to be included in the crisis. Climate agreements need to include every perspective, therefore women’s knowledge and experiences are integral to the development of fair climate strategies. However, the promotion of gender equality should be a goal in and of itself, valuing women’s rights because they arejust as any individual across every society and border deserves and needs to be included in the crisis. Climate agreements need to include every perspective, therefore women’s knowledge and experiences are integral to the development of fair climate strategies. However, the promotion of gender equality should be a goal in and of itself, valuing women’s rights because they arejust as any individual across every society and border deserves and needs to be included in the crisis. Climate agreements need to include every perspective, therefore women’s knowledge and experiences are integral to the development of fair climate strategies. However, the promotion of gender equality should be a goal in and of itself, valuing women’s rights because they are_human_ rights, not merely using women as a policy tool.
+The promotion of ‘feminist solutions’ to the climate crisis ignores the different contextual challenges women face every day. It assumes that all women are in a position to respond to climate change and ignores the reality that many women do not have the time, energy, resources or skills to engage in the climate debate. Framing women as agents against climate change can, in many societies, only add another care duty to their already long list of responsibilities. If patriarchal societies have assigned women the role of caregivers, giving them another duty to caring for the environment is not liberating - it is a repeats of the patterns of the patriarchy. Feminism is an intersectional issue, linking not just with the climate but also with issues of class and race, and so the promotion of gender equality must focus on removing these barriers to allow women to pursue their potential. This is not to say that women should not engage and fight against climate change - of course they must be involved, just as any individual across every society and border deserves and needs to be included in the crisis. Climate agreements need to include every perspective, therefore women’s knowledge and experiences are integral to the development of fair climate strategies. However, the promotion of gender equality should be a goal in and of itself, valuing women’s rights because they are just as any individual across every society and border deserves and needs to be included in the crisis. Climate agreements need to include every perspective, therefore women’s knowledge and experiences are integral to the development of fair climate strategies. However, the promotion of gender equality should be a goal in and of itself, valuing women’s rights because they are _human_ rights, not merely using women as a policy tool.
 
 ***
 
-  
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615232874/shrubcoop.org/media/ais3_born9k.jpg)
 
 UN Sustainable Development Goals include Gender Equality as Goal Number Five.
@@ -46,9 +44,23 @@ Source: [https://www.undp.org/content/undp/en/home/sustainable-development-goals
 
 ***
 
-This International Women’s Day, it is the responsibility of every individual to examine where their feminist convictions stem from (this includes everyone, not just women). There are millions of women doing incredible things for our planet which only deserves even more praise in light of the structural restraints and hurdles they face on a daily basis. Women have the ability to transform policies and create lasting change in their societies, and their potential should not be dismissed. However, we must create a society where women are free to pursue their own development, creating the conditions for self-realisation that encourages their contributions without burdening them with additional responsibilities. No doubt, we must all come together in this climate crisis, but to do so,we must dismantle the patriarchy in order to break the many cycles that have led us to this crisis in the first place.
+This International Women’s Day, it is the responsibility of every individual to examine where their feminist convictions stem from (this includes everyone, not just women). There are millions of women doing incredible things for our planet which only deserves even more praise in light of the structural restraints and hurdles they face on a daily basis. Women have the ability to transform policies and create lasting change in their societies, and their potential should not be dismissed. However, we must create a society where women are free to pursue their own development, creating the conditions for self-realisation that encourages their contributions without burdening them with additional responsibilities. No doubt, we must all come together in this climate crisis, but to do so,we must dismantle the patriarchy in order to break the many cycles that have led us to this crisis in the first place.  
+Keyboard shortcuts
 
-***
+**Quick accessCtrl/FORMATTING**
+
+* **Bold**
+
+  Ctrlb
+* **_Italic_**
+
+  Ctrl i
+* **Link**
+
+  Ctrlk
+* **_Code_**
+
+  Ctrl0
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615233637/shrubcoop.org/media/ais4_d8rqj0.png)
 
