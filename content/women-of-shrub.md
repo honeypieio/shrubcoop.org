@@ -2,6 +2,7 @@
 author = "SHRUB Coop"
 date = 2021-03-08T00:00:00Z
 description = "Our volunteer Lauriane interviews Billie, Lili, and Mary for International Women's Day!"
+draft = true
 tags = []
 title = "Celebrating the Women of Shrub"
 type = "news"
@@ -49,9 +50,7 @@ LILI (trustee)
 
 • I really recommend these books I recently read - Women at point zero, written by Nawal El Saadawi and The Joy Luck Club, by Amy Tan. While the first one portrays the condition of Egyptian women, the second is focused on the lives of four Chinese American immigrant families. They ́re small, but really intense books. Give it a try!
 
-• Dear Covid, looking forward to not seeing you again! I have been working so much more on myself this year. I learnt that in moments in which I could feel very twitchy, sad and angry, what I have to do is to take a moment of reflection, do some positive mental work-out, and calm myself down (oh, not easy, could take days sometimes!).
-
-But it always works. Of course, this won ́t be permanent, bad feelings come back in your mind, as dust starts to invade your bedroom after few days you cleaned it. It's mostly up to you to keep your mind bright. Definitely, I started to appreciate much more the small things. I would recommend to find some time to do work-out, yoga or meditation at home. It really changes your day. The last thing I would suggest is: occupy your mind with good stuff.
+• Dear Covid, looking forward to not seeing you again! I have been working so much more on myself this year. I learnt that in moments in which I could feel very twitchy, sad and angry, what I have to do is to take a moment of reflection, do some positive mental work-out, and calm myself down (oh, not easy, could take days sometimes!). But it always works. Of course, this won't be permanent, bad feelings come back in your mind, as dust starts to invade your bedroom after few days you cleaned it. It's mostly up to you to keep your mind bright. Definitely, I started to appreciate much more the small things. I would recommend to find some time to do work-out, yoga or meditation at home. It really changes your day. The last thing I would suggest is: occupy your mind with good stuff.
 
 • Nowadays I believe that to be a strong woman is to be our true self. Surely there has been a rise in awareness of certain themes, however I sincerely think that words without a real action are nothing but empty. I think that we should implement more initiative and cooperation in what we do. As an action I would say, be kind and sincere with the people around you.
 
