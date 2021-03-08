@@ -2,7 +2,6 @@
 author = "SHRUB Coop"
 date = 2021-03-08T00:00:00Z
 description = "Our volunteer Lauriane interviews Billie, Lili, and Mary for International Women's Day!"
-draft = true
 tags = []
 title = "Celebrating the Women of Shrub"
 type = "news"
