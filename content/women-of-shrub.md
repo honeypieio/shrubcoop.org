@@ -26,8 +26,6 @@ BILLIE (staff)
 
 • International women’s day is important to me because it is an opportunity to shed light
 
-face. To me it is a chance to reflect on how far we have come and the struggles we still
-
 face today. With the added bonus of an excuse to tell the women in my life how much I
 
 appreciate and am inspired by them.
