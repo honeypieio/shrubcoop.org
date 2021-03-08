@@ -24,10 +24,9 @@ QUESTIONS ASKED :
 
 ***
 
-  
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615221190/shrubcoop.org/media/155512976_279636850223527_5090619642529785146_n_e78e0c.jpg)
-
 BILLIE (staff)
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1615221190/shrubcoop.org/media/155512976_279636850223527_5090619642529785146_n_e78e0c.jpg)
 
 • International women’s day is important to me because it is an opportunity to shed light on the achievements of women while also highlighting the continued inequalities that we face today. With the added bonus of an excuse to tell the women in my life how much I appreciate and am inspired by them.
 
