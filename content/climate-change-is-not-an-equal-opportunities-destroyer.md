@@ -2,7 +2,6 @@
 author = " Aislinn Redbond"
 date = 2021-03-08T00:00:00Z
 description = "Looking at 'feminist solutions' to the climate crisis on International Women's Day "
-draft = true
 tags = []
 title = "Climate Change is not an Equal Opportunities Destroyer"
 type = "news"
