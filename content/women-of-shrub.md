@@ -24,19 +24,9 @@ QUESTIONS ASKED :
 
 BILLIE (staff)
 
-• International women’s day is important to me because it is an opportunity to shed light
+• International women’s day is important to me because it is an opportunity to shed light face today. With the added bonus of an excuse to tell the women in my life how much I appreciate and am inspired by them.
 
-face today. With the added bonus of an excuse to tell the women in my life how much I
-
-appreciate and am inspired by them.
-
-• As cheesy and predictable as it is, my mum, Jo Dunlevie. She taught me how to value
-
-kindness while refusing to accept inequality and injustice. She showed me that I have a
-
-voice that has value and that I should use it to the best of my abilities. Thanks to her, my
-
-heart is open to love and my head is open to learn. I owe a lot of who I am to her.
+• As cheesy and predictable as it is, my mum, Jo Dunlevie. She taught me how to value kindness while refusing to accept inequality and injustice. She showed me that I have a voice that has value and that I should use it to the best of my abilities. Thanks to her, my heart is open to love and my head is open to learn. I owe a lot of who I am to her.
 
 • There is a lot of brilliant work out there. I am hesitant to recommend specific things as I
 
