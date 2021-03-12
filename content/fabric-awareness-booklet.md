@@ -4,7 +4,7 @@ date = 2021-03-12T00:00:00Z
 description = "Insider knowledge and thoughts from our Swapshop Coordinator."
 draft = true
 tags = []
-title = "Fabric Awareness Booklet "
+title = "Our Fabric Awareness Booklet is Now Available!"
 type = "news"
 
 +++
@@ -20,6 +20,6 @@ I believe that we do not currently value clothes enough. The price tag on an ite
 
 As part of our aim to stop this, we have produced a Fabric Awareness Booklet. With this booklet, we are aiming to help people learn more about all the different kinds of textiles there are and how much energy, water, chemical input and human effort it takes to produce them. We hope that by learning this, anyone who reads this booklet will begin to value clothes and textiles more and therefore start to buy second hand, repair, mend, upcycle, and swap clothes to keep them in use for as long as possible. We have tried to make this booklet as accessible as possible, with no prior knowledge of textiles required. It takes you through the difference between natural and synthetic fibres, gives a bit of information about textile recycling, and provides some details of each different type of textile,some of the sustainability information around it’s production, and things you can look out for (e.g. fair trade/ organic certifications or new alternatives). This booklet is just a start, there is so much more information out there to be read/ watched about different kinds of textiles, but hopefully this will help you think about what you might want to look into or start asking questions of your favourite brands about their production methods.
 
-On our website, you will be able to both view and download this booklet. Please feel free to share it with anyone else who you think might be interested in reading it/ passing it on.
+On our website, you will be able to both [view and download this booklet](https://www.shrubcoop.org/resource-packs/fabric-awareness-information-booklet/). Please feel free to share it with anyone else who you think might be interested in reading it/ passing it on.
 
 If you have any questions about it or would like access to some physical copies to put in a community space, please email swapshop@shrubcoop.org.
