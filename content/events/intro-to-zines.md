@@ -1,7 +1,6 @@
 +++
 author = "Events and Workshops"
 description = "The art of Zines and how to make your own!"
-draft = true
 location = "Online (read the description for the link)"
 tags = ["shrub-events", "shrub"]
 time = 2021-03-24T19:00:00Z
@@ -18,3 +17,7 @@ We look forward to getting creative with you!
 If you have any questions or accessibility requirements you would like to talk over please email- billie.dunleviewood@shrubcoop.org
 
 Book your place [here](https://www.eventbrite.co.uk/e/143069465623).
+
+This event is free to attend. However, if you enjoy the session, learn something and feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation to help us continue our sustainability projects!
+
+[Click here to donate!](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SC4STHHVLD56U&source=url)
