@@ -2,7 +2,6 @@
 author = "Joanne Elston"
 date = 2021-03-12T00:00:00Z
 description = "Insider knowledge and thoughts from our Swapshop Coordinator."
-draft = true
 tags = []
 title = "Our Fabric Awareness Booklet is Now Available!"
 type = "news"
