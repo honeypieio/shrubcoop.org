@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-03-18T00:00:00Z
 description = "Time to put away the excuses. Here are some tips to get started cycling around Edinburgh."
-draft = true
 tags = []
 title = "Getting onto the Saddle"
 type = "news"
@@ -26,6 +25,6 @@ It can be hard to prepare for the weather in Edinburgh on a good day, but cyclin
 
 [Edinburgh aims to become a carbon-neutral city by 2030](https://www.edinburgh.gov.uk/futureedinburgh) which will be no easy feat. It will require individuals to adopt lifestyle changes, as well as the councils enhancing the infrastructure for more sustainable living. Adopting cycling as a primary means of transport will be pivotal to achieving this goal, and the more people hopping on the saddle, the more demand there will be for improved cycling infrastructure across Edinburgh.
 
-Wee Spoke Hub is also here to support you and your bike, offering a number of services from selling refurbished bikes and parts, to helping to repair your bicycle. Once lockdown has eased, the Wee Spoke Hub will be reintroducing their Buddy Cycle Scheme where an inexperienced cyclist can be paired up with a confident cyclist and they can take on the Edinburgh roads together - covering the routes that will be most useful for the new cyclist. We want to encourage as many people to get outside and embrace cycling for all its benefits, so even if you just want a chat to know more about how to look after your bike, you can reach out to us on our social media. The pandemic has brought a lot of challenges to our communities, but embracing the opportunity to discover Edinburgh by bike might be one way to find a positive from this experience - there’s only one way to find out!
+Wee Spoke Hub is also here to support you and your bike, offering a number of services from selling refurbished bikes and parts, to helping to repair your bicycle. Once lockdown has eased, the Wee Spoke Hub will be reintroducing their Buddy Cycle Scheme where an inexperienced cyclist can be paired up with a confident cyclist and they can take on the Edinburgh roads together - covering the routes that will be most useful for the new cyclist. We want to encourage as many people to get outside and embrace cycling for all its benefits, so even if you just want a chat to know more about how to look after your bike, you can [reach out to us on our social media](https://www.facebook.com/weespokehub). The pandemic has brought a lot of challenges to our communities, but embracing the opportunity to discover Edinburgh by bike might be one way to find a positive from this experience - there’s only one way to find out!
 
 For more information or advice on cycling in Edinburgh, visit [www.sustrans.org.uk](http://www.sustrans.org.uk).
