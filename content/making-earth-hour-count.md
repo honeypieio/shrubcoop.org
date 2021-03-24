@@ -12,6 +12,8 @@ type = "news"
 
 Edinburgh Castle during Earth Hour, where households and landmarks are encouraged to turn off their lights in order to show support for climate action across the world.
 
+***
+
 This Saturday March 27th 2021, millions of people will turn off their lights between 8.30pm and 9.30pm local time as part of WWF’s annual ‘Earth Hour’ campaign.
 
 Now in its fourteenth year, [Earth Hour ](https://www.earthhour.org/take-part)was introduced as a worldwide hour of action to draw attention to the need for definitive action on climate and biodiversity issues. Since 2007, Earth Hour has come to symbolise more than a political act, but rather it is a symbol of connection with the planet. An international phenomenon, Earth Hour has spread to over 188 countries across the globe, with more than 17,900 [landmarks turning their lights off](https://www.bbc.co.uk/newsround/47747383) in solidarity with the millions of households taking part in the initiative. Whilst Earth Hour is undoubtedly an important event in any activist’s calendar, how can we extend the impact of Earth Hour beyond 60 minutes.
