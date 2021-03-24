@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-03-24T00:00:00Z
 description = "Join us for WWF's annual Earth Hour Campaign"
-draft = true
 tags = []
 title = "Making Earth Hour Count"
 type = "news"
