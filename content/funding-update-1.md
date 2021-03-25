@@ -2,7 +2,6 @@
 author = "SHRUB Coop"
 date = 2021-01-27T00:00:00Z
 description = "Grant for Foodsharing "
-draft = true
 tags = []
 title = "Funding Update"
 type = "news"
