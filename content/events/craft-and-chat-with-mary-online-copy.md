@@ -4,8 +4,8 @@ description = "Come and work on a crafty project in the company of some lovely f
 draft = true
 location = "Online (read the description for the link)"
 tags = ["shrub-space", "sewing", "zero-waste", "sustainable-fashion", "shrub-events"]
-time = 2021-03-16T17:30:00Z
-title = "Craft and Chat with Mary (Online)-(copy)"
+time = 2021-03-30T16:30:00Z
+title = "Craft and Chat with Mary (Online)"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1611832539/shrubcoop.org/media/craft_and_chat_with_Mary_geobog.jpg)
