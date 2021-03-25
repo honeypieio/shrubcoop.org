@@ -17,15 +17,15 @@ The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to s
 
 It's open for everyone. Simply come along to the Food Sharing Hub. Fill a basket with food and **pay as you feel**.
 
-**We're open 11am to 2pm Monday to Saturday During Lockdown**
+**We're open 11am to 2pm Monday to Saturday During Lockdown![](https://res.cloudinary.com/shrub-co-op/image/upload/v1616684115/shrubcoop.org/media/FSE1_egfxry.jpg)**
 
 #### How it works
 
-The Food Sharing Hub is working with a host of local supermarkets via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - **fruits and vegetables**, as well as **bread and baked goods** that are still tasty and safe to eat past their 'best before'. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.  
+The Food Sharing Hub is working with a host of local supermarkets via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - **fruits and vegetables**, as well as **bread and baked goods** that are still tasty and safe to eat past their 'best before'. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.
 
 We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement]() and their fleet of bikes.  In the evenings [Refugee Community Kitchen Edinburgh]() help to sort and organise the incoming stock - some of which they take to turn into tasty chutneys, jams and preserves
 
-Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the city.![](https://res.cloudinary.com/shrub-co-op/image/upload/v1616663511/shrubcoop.org/media/IMG_20200919_111730_fevrho.jpg)
+Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the cit![](https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png)
 
 ### Our Impact
 
