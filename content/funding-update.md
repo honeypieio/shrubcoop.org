@@ -2,7 +2,7 @@
 author = "SHRUB Coop"
 date = 2021-01-27T15:00:00Z
 description = "We've been awarded a new grant!"
-tags = []
+tags = ["food-sharing-hub"]
 title = "Funding Update"
 type = "news"
 
