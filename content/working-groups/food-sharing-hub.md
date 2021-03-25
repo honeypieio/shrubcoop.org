@@ -17,7 +17,7 @@ The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to s
 
 It's open for everyone. Simply come along to the Food Sharing Hub. Fill a basket with food and **pay as you feel**.
 
-**We're open 11am to 2pm Monday to Saturday During Lockdown![](https://res.cloudinary.com/shrub-co-op/image/upload/v1616684115/shrubcoop.org/media/FSE1_egfxry.jpg)**
+**We're open 11am to 2pm Monday to Saturday During Lockdown![A collection of images of food in the hub and the words 'Open Monday to Saturday 11am to 2pm](https://res.cloudinary.com/shrub-co-op/image/upload/v1616684115/shrubcoop.org/media/FSE1_egfxry.jpg "FoodSharingHub")**
 
 #### How it works
 
@@ -25,7 +25,7 @@ The Food Sharing Hub is working with a host of local supermarkets via Fareshare 
 
 We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement]() and their fleet of bikes.  In the evenings [Refugee Community Kitchen Edinburgh]() help to sort and organise the incoming stock - some of which they take to turn into tasty chutneys, jams and preserves
 
-Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the cit![](https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png)
+Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the cit![a collection of images of people posing with cargo bikes full of rescued food and one dog](https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png "Cargo Bikers")
 
 ### Our Impact
 
