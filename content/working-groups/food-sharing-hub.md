@@ -17,17 +17,19 @@ The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to s
 
 It's open for everyone. Simply come along to the Food Sharing Hub. Fill a basket with food and **pay as you feel**.
 
+**We're open 11am to 2pm Monday to Saturday During Lockdown**
+
 #### How it works
 
-The Food Sharing Hub is working with Tesco, Co-op and Waitrose to collect food from 6 local supermarkets. Volunteers collect perishable foods such as fruit, vegetables, and baked goods that are still fresh and good to eat, but have passed their best before dates and would otherwise be thrown out that day.
+The Food Sharing Hub is working with a host of local supermarkets via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - **fruits and vegetables**, as well as **bread and baked goods** that are still tasty and safe to eat past their 'best before'. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.  
 
-Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the city.
+We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement]() and their fleet of bikes.  In the evenings [Refugee Community Kitchen Edinburgh]() help to sort and organise the incoming stock - some of which they take to turn into tasty chutneys, jams and preserves
 
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568760049/shrubcoop.org/media/food_sharing_hub_website_sackb0.png)
+Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the city.![](https://res.cloudinary.com/shrub-co-op/image/upload/v1616663511/shrubcoop.org/media/IMG_20200919_111730_fevrho.jpg)
 
 ### Our Impact
 
-Since opening in January 2019, the **Food Sharing Hub** has sold **1.8** **tonnes** of food to customers on a pay as you feel basis.
+We are currently saving an average of **1.28 tonnes** of food through the food sharing hub per month - that's a saving of **6.06 tonnes** of carbon equivalent.
 
 **Food Sharing Edinburgh** has saved **48.9 tonnes** of food in total between Dec 2017 and June 2019. Much of this is redistributed from small businesses directly to charity partners.
 
