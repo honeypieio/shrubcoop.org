@@ -3,7 +3,7 @@ author = "Events and Workshops"
 description = "Learn how to make a rag rug!"
 location = "Online (read the description for the link)"
 tags = ["shrub-events", "shrub"]
-time = 2021-03-17T18:00:00Z
+time = 2021-03-31T17:00:00Z
 title = "'Make it' through Covid with Bridgend Farmhouse and SHRUB"
 
 +++
