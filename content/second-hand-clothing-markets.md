@@ -8,6 +8,8 @@ title = "Second hand clothing markets"
 type = "news"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1617195415/shrubcoop.org/media/prudence-earl-8F0I12ypHPA-unsplash_kiitg1.jpg)
+
 **What happens when you donate to charity shops?**
 
 When we think of donating to charity shops, we often think we are doing our bit to help the planet. We are making sure that our old clothes are being reused, and we are often buying second hand as well.
@@ -24,7 +26,7 @@ Currently, charity shops receive, in most cases, far more clothes than they can 
 
 **What can we do to help?**
 
-There are some easy ways to change this. The main thing is to only buy something new if you really absolutely have to. With so many charity shops as well as sites like Depop, EBAY, Vinted and more, we have so many opportunities to try and find things second hand. among friends or community groups is a great way of doing these things locally too.
+There are some easy ways to change this. The main thing is to only buy something new if you really absolutely have to. With so many charity shops as well as sites like Depop, EBAY, Vinted and more, we have so many opportunities to try and find things second hand. Having clothes swaps among friends or community groups is a great way of doing these things locally too (see the guide on our website).
 
 If you do have to buy new things, try to support places that recycle and upcycle existing textiles rather than producing new, although we recognise that there are often financial barriers to this.
 
