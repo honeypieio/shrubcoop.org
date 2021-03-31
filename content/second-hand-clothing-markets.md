@@ -4,7 +4,7 @@ date = 2021-03-30T23:00:00Z
 description = "An insight into charity shop donating from our Swapshop Coordinator"
 draft = true
 tags = []
-title = "Second hand clothing markets"
+title = "Second Hand Clothing Markets"
 type = "news"
 
 +++
@@ -26,7 +26,7 @@ Currently, charity shops receive, in most cases, far more clothes than they can 
 
 **What can we do to help?**
 
-There are some easy ways to change this. The main thing is to only buy something new if you really absolutely have to. With so many charity shops as well as sites like Depop, EBAY, Vinted and more, we have so many opportunities to try and find things second hand. Having clothes swaps among friends or community groups is a great way of doing these things locally too (see the guide on our website).
+There are some easy ways to change this. The main thing is to only buy something new if you really absolutely have to. With so many charity shops as well as sites like Depop, EBAY, Vinted and more, we have so many opportunities to try and find things second hand. Having clothes swaps among friends or community groups is a great way of doing these things locally too (see the [guide ](https://www.shrubcoop.org/resource-packs/clothes-swap/)on our website).
 
 If you do have to buy new things, try to support places that recycle and upcycle existing textiles rather than producing new, although we recognise that there are often financial barriers to this.
 
