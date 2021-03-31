@@ -2,7 +2,6 @@
 author = "Joanne Elston"
 date = 2021-03-30T23:00:00Z
 description = "An insight into charity shop donating from our Swapshop Coordinator"
-draft = true
 tags = []
 title = "Second Hand Clothing Markets"
 type = "news"
