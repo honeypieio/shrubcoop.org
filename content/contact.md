@@ -13,7 +13,7 @@ type = "contact"
 
 #### Zero Waste Hub
 
-11am to 6pm, Tuesday to Saturday  
+11am to 2pm, Tuesday to Saturday  
 22 Bread Street, EH3 9AF  
 0131 281 0583
 
