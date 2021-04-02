@@ -3,7 +3,7 @@ author = "Sydney"
 description = "Find out more about volunteering to rescue food"
 location = "Online (read the description for the link)"
 tags = ["food-sharing-hub", "food-sharing", "volunteering", "volunteer-opportunities"]
-time = 2021-04-14T16:30:00Z
+time = 2021-04-16T13:00:00Z
 title = "Food Sharing Warm Welcome -2"
 
 +++
