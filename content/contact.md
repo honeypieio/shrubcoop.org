@@ -27,13 +27,6 @@ Not currently operating
 
 ***
 
-#### SHRUB Space workshop
-
-17 Guthrie Street, EH1 1JG  
-0131 261 8216
-
-***
-
 #### Research enquiries and visits
 
 We love to share what we do and how we work to inspire others to replicate our projects around the world. Answering research questions can require a lot of staff time. If you're a student with an essay deadline, please bear in mind that it could take us up to two weeks to get back to you.
