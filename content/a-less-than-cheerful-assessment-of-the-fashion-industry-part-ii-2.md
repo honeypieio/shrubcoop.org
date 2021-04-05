@@ -8,8 +8,6 @@ title = "A Less-Than-Cheerful Assessment of the Fashion Industry (Part II) "
 type = "news"
 
 +++
-A less than cheerful assessment of the fashion industry
-
 It is difficult to concisely express and divide up the main problems in fashion. Let me name five big ones that cannot be looked past. All these issues overlap and sometimes contribute to each other. The topics are listed in no particular order as all of these are important.
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1617623699/shrubcoop.org/media/hannah-morgan-ycVFts5Ma4s-unsplash_svcdu5.jpg)
