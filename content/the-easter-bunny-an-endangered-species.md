@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-04-03T23:00:00Z
 description = "Can we expect the Easter Bunny to survive the sea of waste created during the Easter weekend?"
-draft = true
 tags = []
 title = "The Easter Bunny: An Endangered Species"
 type = "news"
