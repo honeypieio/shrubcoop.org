@@ -10,6 +10,8 @@ type = "news"
 +++
 It is difficult to concisely express and divide up the main problems in fashion. Let me name five big ones that cannot be looked past. All these issues overlap and sometimes contribute to each other. The topics are listed in no particular order as all of these are important.
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1617623885/shrubcoop.org/media/hannah-morgan-ycVFts5Ma4s-unsplash_a5id0z.jpg)
+
 **Global systemic racism and the connection to slavery**
 
 Like all industries and institutions, the fashion system operates within the boundaries of the global trade system often based on colonialist trade routes and hierarchies upholding to this day neo-colonial rule. Disproportionately women of colour carry the burden of producing clothes for little or no pay. India, China, Bangladesh are often the origins of our clothes as we all know when we check the labels. This does not mean categorically all garments from those countries are produced in bad working conditions or under harassment, but it is undeniable how many of them are.
