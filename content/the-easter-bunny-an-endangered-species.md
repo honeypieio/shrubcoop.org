@@ -14,9 +14,7 @@ Can we expect the Easter Bunny to survive the sea of waste created during the Ea
 
 The Easter Bunny is a tradition enacted in homes across the UK every year.
 
-Image: HYPERLINK "https://www.sootoday.com/local-news/easter-bunny-allowed-to-mak
-
-e-home-visits-this-year-declares-ontario-premier-2236472"https://www.sootoday.com/local-news/easter-bunny-allowed-to-make-home-visits-this-year-declares-ontario-premier-2236472
+Image: [https://www.sootoday.com/local-news/easter-bunny-allowed-to-make-home-visits-this-year-declares-ontario-premier-2236472](https://www.sootoday.com/local-news/easter-bunny-allowed-to-mak "https://www.sootoday.com/local-news/easter-bunny-allowed-to-mak")
 
 The celebration of Easter, whether religious or otherwise, solidifies the arrival of Spring, signalling longer and warmer days ahead, and bringing a welcome four day Bank Holiday. However, this celebration also carries huge amounts of food waste, improper recycling and another weekend of indulging the habits of overconsumption that are driving climate destruction.
 
