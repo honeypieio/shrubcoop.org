@@ -54,4 +54,4 @@ Fashion is one of the industries in which the products are not seen as an invest
 
 The answer is here: Choosing to swap clothes, share with friends, buying second hand and changing the way we use and value clothes will force the market to change. If we can show that there is no longer a demand for fast fashion, companies will have to change in order to be profitable.
 
-It is difficult to condense these issues into a short list but do find me on Instagram and ask more questions or links to resources.
+It is difficult to condense these issues into a short list but do find me on Instagram and ask more questions or links to resources. 
