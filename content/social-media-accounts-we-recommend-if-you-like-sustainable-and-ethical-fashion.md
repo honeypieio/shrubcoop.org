@@ -10,52 +10,44 @@ type = "news"
 +++
 Social Media accounts to follow (not just fashion related but also looking at environmental racism, regenerative agriculture, de-colonization in systems etc.):
 
-Aja Barber @ajabarber
+Aja Barber [@ajabarber](https://www.instagram.com/ajabarber/)
 
-Whitney Bauck @unwrinkling
+Whitney Bauck [@unwrinkling](https://www.instagram.com/unwrinkling/)
 
-The slow factory @theslowfactory
+The slow factory [@theslowfactory](https://www.instagram.com/theslowfactory/)
 
-Celine Semaan @celinecelines
+Celine Semaan [@celinecelines](https://www.instagram.com/celinecelines/)
 
-Elizabeth L. Cline @elizabethlcline
+Elizabeth L. Cline [@elizabethlcline](https://www.instagram.com/elizabethlcline/)
 
-Lucy Siegel @theseagull
+Lucy Siegel [@theseagull](https://www.instagram.com/theseagull/)
 
-The OR foundation @theorispresent
+The OR foundation [@theorispresent](https://www.instagram.com/theorispresent/)
 
-Mikaela Loach (Edinburgh-based) @mikaelaloach
+Mikaela Loach (Edinburgh-based) [@mikaelaloach](https://www.instagram.com/mikaelaloach/)
 
-Fibershed @fibershed_
+Fibershed [@fibershed_](https://www.instagram.com/fibershed_/)
 
-Nextwearer @nextwearer
+Nextwearer [@nextwearer](https://www.instagram.com/nextwearer/)
 
-Oh So Ethical @ohsoethical
+Oh So Ethical [@ohsoethical](https://www.instagram.com/ohsoethical/)
 
-Tickover @tickover
+Tickover [@tickover](https://www.instagram.com/tickover/)
 
-Celia Pym @celiapym
+Celia Pym [@celiapym](https://www.instagram.com/celiapym/)
 
 Male or non-binary people in sustainable fashion:
 
-Timo Rissanen @timorissanen
+Timo Rissanen [@timorissanen](https://www.instagram.com/timorissanen/)
 
-Arthur @makingarthur
+Arthur [@makingarthur](https://www.instagram.com/makingarthur/)
 
-Tony @tonyshirtmakers
+Tony [@tonyshirtmakers](https://www.instagram.com/tonyshirtmakers/)
 
-Bas Timmer @ bas.timmer
+Bas Timmer [@ bas.timmer](https://www.instagram.com/bas.timmer/)
 
-Mitsugu Sasaki @vintagecustoman
+Mitsugu Sasaki [@vintagecustoman](https://www.instagram.com/vintagecustoman/)
 
-Matthew Downham @matthewdownham.art
+Matthew Downham [@matthewdownham.art](https://www.instagram.com/matthewdownham.art/)
 
-Wilson Oryema @wilson_oryema
-
-What books to read:
-
-The golden thread
-
-Womens work
-
-Colours of the world
+Wilson Oryema [@wilson_oryema](https://www.instagram.com/wilson_oryema/)
