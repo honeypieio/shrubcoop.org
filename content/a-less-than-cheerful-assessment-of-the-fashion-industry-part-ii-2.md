@@ -2,6 +2,7 @@
 author = "Marta Lynch"
 date = 2021-04-04T23:00:00Z
 description = "Know Your Clothes"
+draft = true
 tags = []
 title = "A Less-Than-Cheerful Assessment of the Fashion Industry (Part II) "
 type = "news"
