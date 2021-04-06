@@ -52,3 +52,7 @@ Mitsugu Sasaki [@vintagecustoman](https://www.instagram.com/vintagecustoman/)
 Matthew Downham [@matthewdownham.art](https://www.instagram.com/matthewdownham.art/)
 
 Wilson Oryema [@wilson_oryema](https://www.instagram.com/wilson_oryema/)
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1617709886/shrubcoop.org/media/marta_dobyre_zphip3.png)
+
+This article was written by [@Martalynch_projects](https://www.instagram.com/martalynch_projects/). 
