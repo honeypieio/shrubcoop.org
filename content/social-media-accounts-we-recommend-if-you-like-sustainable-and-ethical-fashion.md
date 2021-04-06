@@ -2,7 +2,6 @@
 author = "Marta Lynch"
 date = 2021-04-05T23:00:00Z
 description = "Know Your Clothes"
-draft = true
 tags = []
 title = "Social Media Accounts We Recommend if You Like Sustainable and Ethical Fashion"
 type = "news"
