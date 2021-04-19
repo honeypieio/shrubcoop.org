@@ -1,0 +1,25 @@
++++
+author = "Aislinn Redbond"
+date = 2021-04-19T23:00:00Z
+description = "The COVID-19 pandemic showed us how quickly nature can bounce back from human interruption and find its own balance. This Earth Day, we want to keep it that way."
+draft = true
+tags = []
+title = "Relax and Restore: Finding a Balance for the Earth"
+type = "news"
+
++++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1618846968/shrubcoop.org/media/pic_blwa4h.jpg)
+
+Photo: The theme for Earth Day this year is ‘Restore our Earth’.
+
+***
+
+COVID-19 has been a hard time for all of us, and there’s no doubt we are excited to see vaccination numbers rise and restrictions begin to ease. The promise of a ‘return to normalcy’ is alluring. There is a comfort in the familiar. But a return to normalcy is not what the world needs now. Instead, the world needs transformation, and this Earth Day, we are focusing on how to Restore our Earth.
+
+As lockdowns brought the world to a halt, nature made a comeback away from the interference of human activity. We saw images of the [clearest waters Venice had seen](https://www.bbc.co.uk/news/av/world-europe-51943104) in centuries, heard the good news about endangered species such as the [Rhino building back their populations](https://www.bbc.co.uk/news/world-africa-55889766), and we even saw videos of [penguins wandering the streets of Cape Town](https://youtu.be/TUkJE_MC3eA) during the lockdown. So entrancing were these visions of resilience in the natural world, that a new documentary depicting the effects of lockdown on the environment, narrated by Sir David Attenborough, is due to be released on Apple+, entitled ‘[The Year Earth Changed](https://www.youtube.com/watch?v=XswV_yqPq28)’. And while it is problematic to suggest that the separation of humans from nature is the key to restoring the earth (this has been the founding logic for [dispossessing indigenous communities of their land](https://www.theguardian.com/global-development/2016/aug/28/exiles-human-cost-of-conservation-indigenous-peoples-eco-tourism), as just one argument against it), the lockdowns highlighted just how overactive the human domination of nature has become.
+
+A return to normalcy means a return to ‘business-as-usual’ models which entails high levels of pollution, resource extraction and deforestation in the pursuit of profit. The very systems that [climate activists are fighting to deconstruct](https://www.businessinsider.com/gen-z-climate-activists-biden-climate-change-school-strike-2021-4) - capitalism, (neo-) colonialism and the patriarchy - are the ones inherent in the ‘business-as-usual’ model. However, this Earth Day, activists are challenging this normalcy and calling for a new plan to keep nature in harmony with humans. Over the course of three days, Earth Day activists will be running events including a virtual youth summit, a climate literacy workshop, and a number of panels and performances to encourage people around the world to demand more effective climate action across all sectors and scales. To see what events may interest you, check out the website [here](https://www.earthday.org/earth-day-2021/).
+
+Earth Day 2021 is particularly important, as the [Biden administration is hosting a climate summit ](https://www.theguardian.com/us-news/2021/mar/26/joe-biden-climate-change-virtual-summit)with leaders from across the world, marking his commitment to climate action after restoring the US as a party to the Paris Agreement. During this summit, he is expected to announce more ambitious carbon emission reduction targets in the US, and discussions around strategies for a ‘just transition’ are anticipated. The coordination of climate action from the grassroots level, up to the international arena, shows the momentum behind climate activism, and this Earth Day, we encourage you to celebrate this achievement!
+
+Earth Day is a great opportunity to connect with the climate justice community and learn more about how others are committing to this cause. Aside from the events hosted on [earthday.org](http://earthday.org), our very own [SHRUB Coop ceilidh](https://www.tickettailor.com/events/lisaheywood/495160) will be taking place on Saturday 24th April, promising a night of dancing, music and poetry. What better way to feel connected in a pandemic celebration of climate activism?! For those of us less-inclined to get up and dance, there are plenty of other ways to engage with Earth Day. In fact, far from insisting on the separation of humans from nature, this Earth Day, why don’t you find a way to get out and immerse yourself in the natural environment? Whether it’s watching the sunset from Carlton Hill, going for a dip in Portobello, taking a stroll along the Water of Leith Walkway, or simply cycling through The Meadows, Edinburgh has no shortage of nature for you to enjoy. Connecting with our surroundings is a powerful act of restoration for ourselves, and reminds us of why we are working towards a world without waste in the first place.
