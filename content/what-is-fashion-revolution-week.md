@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-04-18T23:00:00Z
 description = "When news of the Rana Plaza collapse broke, the abuses of the fast fashion industry could not be ignored any longer. "
-draft = true
 tags = []
 title = "What is Fashion Revolution Week?"
 type = "news"
