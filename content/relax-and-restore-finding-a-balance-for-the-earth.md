@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-04-19T23:00:00Z
 description = "The COVID-19 pandemic showed us how quickly nature can bounce back from human interruption and find its own balance. This Earth Day, we want to keep it that way."
-draft = true
 tags = []
 title = "Relax and Restore: Finding a Balance for the Earth"
 type = "news"
