@@ -8,7 +8,7 @@ title = "Relax and Restore: Finding a Balance for the Earth"
 type = "news"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1618846968/shrubcoop.org/media/pic_blwa4h.jpg)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1618846968/shrubcoop.org/media/pic_blwa4h.jpg "https://www.earthday.org/wp-content/uploads/2020/12/pexels-akil-mazumder-1072824-2-1024x683.jpg")
 
 Photo: The theme for Earth Day this year is ‘Restore our Earth’.
 
