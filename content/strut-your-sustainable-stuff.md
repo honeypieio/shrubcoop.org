@@ -9,6 +9,14 @@ type = "news"
 
 +++
 
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1618848215/shrubcoop.org/media/fas_eosduw.jpg)
+
+‘Revolution, but make it fashion’ - 2021 slogan.
+
+Infographic: Fashion Revolution.
+
+***
+
 It can be overwhelming learning about all the atrocities that the fashion industry involves. One need only read our recent article series ‘A Less-Than-Cheerful Assessment of the Fashion Industry’ ([Part I ](https://www.shrubcoop.org/a-less-than-cheerful-assessment-of-the-fashion-industry-part-i/)and [Part II](https://www.shrubcoop.org/a-less-than-cheerful-assessment-of-the-fashion-industry-part-ii-2/)) to understand just how many issues the fashion industry is hiding behind its glamorous catwalks. However, Fashion Revolution is not in the business of shaming individuals in the pursuit of systemic change. Instead, the focus is on educating people on how to change their attitudes towards fashion and encouraging everyone to demand higher standards from fashion conglomerates. So how do we stay optimistic and stylish at the same time?
 
 The Fashion Revolution website offers a number of different ways to engage in fashion activism. Given that the industry carries a number of concerns, from human rights, and [women’s rights in particular](https://thegreenhubonline.com/2018/10/21/why-the-fast-fashion-industry-is-a-feminist-issue/), to environmental violations and unsustainable resource use, the two hashtags #WhoMadeMyClothes and #WhatsInMyClothes challenge fashion brands to be transparent about how their products are designed and manufactured. This in turn encourages them to address the exploitative practices in their supply chain and contributes to the fight for change in the industry where brands respond to consumer demands.
