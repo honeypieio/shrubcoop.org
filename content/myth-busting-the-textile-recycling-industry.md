@@ -1,6 +1,6 @@
 +++
 author = "Sustainable Fashion Working Group"
-date = 2021-04-22T23:00:00Z
+date = 2021-04-19T23:00:00Z
 description = "Our sustainable fashion team have exploring the truth behing textile recycling"
 tags = []
 title = "Myth-busting the Textile Recycling Industry"
