@@ -1,7 +1,6 @@
 +++
 author = "SHRUB Coop"
 description = "Get involved in local collections"
-draft = true
 location = "Online (read the description for the link)"
 tags = []
 time = 2021-04-22T13:00:00Z
