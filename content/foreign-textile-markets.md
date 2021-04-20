@@ -8,7 +8,7 @@ title = "Foreign Textile Markets"
 type = "news"
 
 +++
-Based on UK Government statistics, it is likely that over 400 000 tonnes of used/second-hand textiles are exported each year. They are sent abroad, labelled as aid and sold on in textile markets for very low prices.
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1618912045/shrubcoop.org/media/jr-harris-afVzV0gvnpY-unsplash_ygp7rp.jpg)Based on UK Government statistics, it is likely that over 400 000 tonnes of used/second-hand textiles are exported each year. They are sent abroad, labelled as aid and sold on in textile markets for very low prices.
 
 **Are foreign textile markets not a good thing?**
 
