@@ -1,6 +1,7 @@
 +++
-author = "Events and Workshops"
+author = "Wee Spoke Hub"
 description = "Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday cycling in Edinburgh"
+draft = true
 location = "Online (read the description for the link)"
 tags = []
 time = 2021-04-26T16:30:00Z
