@@ -1,16 +1,17 @@
 +++
 author = "Syd"
-date = 2021-04-16T23:00:00Z
-description = "reopening after lockdown 2"
-draft = true
+date = 2021-04-19T23:00:00Z
+description = "Reopening after Lockdown 2"
 tags = ["swapshop", "food-sharing-hub", "zero-waste-hub", "lockdown"]
 title = "Swapshop Reopening Tuesday 27th"
 type = "news"
 
 +++
-GREAT NEWS!
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1618923068/shrubcoop.org/media/open_mcmmma.jpg)
 
-The Swapshop will re-open on Tuesday 27th April.
+GREAT NEWS! The Swapshop will re-open on Tuesday 27th April.
+
+***
 
 Alongside the Food Sharing Hub we will be open 11 to 6, Tuesday to Saturday.
 
