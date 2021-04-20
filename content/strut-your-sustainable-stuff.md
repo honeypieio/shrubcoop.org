@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-04-22T23:00:00Z
 description = "Fashion Revolution Week is a chance for action, education and empowerment."
-draft = true
 tags = []
 title = "Strut Your (Sustainable) Stuff "
 type = "news"
