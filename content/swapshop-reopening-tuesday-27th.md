@@ -15,7 +15,7 @@ GREAT NEWS! The Swapshop will re-open on Tuesday 27th April.
 
 Alongside the Food Sharing Hub we will be open 11 to 6, Tuesday to Saturday.
 
-We are cannot wait to see you all again!
+We cannot wait to see you all again!
 
 Our **Swapshop Donations** drop off box will be ready and waiting for your donations. **For the first month we will only be able to accept donations from Shrub members** - but don't worry! You can sign up with us in person on arrival and we can hopefully do this outside.
 
