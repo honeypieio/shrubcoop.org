@@ -1,6 +1,6 @@
 +++
 author = "Syd"
-date = 2021-04-19T23:00:00Z
+date = 2021-04-25T23:00:00Z
 description = "Reopening after Lockdown 2"
 tags = ["swapshop", "food-sharing-hub", "zero-waste-hub", "lockdown"]
 title = "Swapshop Reopening Tuesday 27th"
