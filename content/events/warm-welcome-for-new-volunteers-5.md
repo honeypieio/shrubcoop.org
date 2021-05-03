@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "Are you interested in volunteering for SHRUB, become a paying member or simply want to find out more about what SHRUB is all about?"
 location = "Online (read the description for the link)"
 tags = ["shrub-coop", "zero-waste", "shrub-events"]
-time = 2021-04-28T16:00:00Z
+time = 2021-05-19T16:00:00Z
 title = "Warm Welcome for new volunteers"
 
 +++
@@ -11,7 +11,7 @@ title = "Warm Welcome for new volunteers"
 
 Welcome to SHRUB! We are so chuffed you are interested in joining our community with a mission for a world without waste. This session will give you the information you need to get started on your journey with us, with lots of time for questions and chat.
 
-**When**: 5-6pm on Wednesday 28th April 2021
+**When**: 5-6pm on Wednesday 19th May 2021
 
 Join us online! [Here](Description:https://us02web.zoom.us/j/81192884806 "zoom link") is the Zoom link
 
