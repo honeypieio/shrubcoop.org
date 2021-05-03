@@ -1,7 +1,6 @@
 +++
 author = "Sydney"
 description = "Discuss all things food sharing - volunteer recruitment, drop box ideas, workshops and more!"
-draft = true
 location = "Online (read the description for the link)"
 tags = ["foodsharing", "food-sharing-hub", "food-sharing", "working-group", "volunteer", "volunteer-recruitment", "zero-waste-hub"]
 time = 2021-05-05T13:00:00Z
