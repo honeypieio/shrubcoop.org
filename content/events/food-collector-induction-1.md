@@ -7,6 +7,8 @@ time = 2021-05-06T15:00:00Z
 title = "Food Collector Induction"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1611759890/shrubcoop.org/media/2_n8wu8j.jpg)
+
 Sign up as a volunteer and learn more about how to do the role!
 
 Check out the Facebook event [here](https://fb.me/e/5qtBGTvMn).
