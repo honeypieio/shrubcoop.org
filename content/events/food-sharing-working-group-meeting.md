@@ -1,5 +1,5 @@
 +++
-author = "Sydney"
+author = "SHRUB Coop"
 description = "Discuss all things food sharing - volunteer recruitment, drop box ideas, workshops and more!"
 location = "Online (read the description for the link)"
 tags = ["foodsharing", "food-sharing-hub", "food-sharing", "working-group", "volunteer", "volunteer-recruitment", "zero-waste-hub"]
