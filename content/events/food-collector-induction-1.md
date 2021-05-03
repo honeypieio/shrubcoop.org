@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "Get involved in local collections"
 location = "Online (read the description for the link)"
 tags = ["foodsharing", "food-sharing-hub", "volunteer", "welcome", "induction"]
-time = 2021-04-06T15:00:00Z
+time = 2021-05-06T15:00:00Z
 title = "Food Collector Induction"
 
 +++
