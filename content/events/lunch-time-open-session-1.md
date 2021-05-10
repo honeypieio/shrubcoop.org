@@ -3,11 +3,11 @@ author = "Events and Workshops"
 description = "Ask us anything, or just pop in for a chat!"
 location = "Online (read the description for the link)"
 tags = ["shrub-events"]
-time = 2021-02-23T13:00:00Z
-title = "Lunch Time Open session"
+time = 2021-05-11T12:00:00Z
+title = "Chatty Tuesday"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1611832040/shrubcoop.org/media/lunch_time_open_session_qan02t.jpg)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1620636529/shrubcoop.org/media/1_mp5hlp.png)
 
 Ask us anything, or just pop in for a chat. This session is an informal opportunity to field an idea, ask for clarification, or just to catch up.
 
