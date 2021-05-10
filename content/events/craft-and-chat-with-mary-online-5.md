@@ -3,7 +3,7 @@ author = "Events and Workshops"
 description = "Come and work on a crafty project in the company of some lovely folks!"
 location = "Online (read the description for the link)"
 tags = ["shrub-space", "sewing", "zero-waste", "sustainable-fashion", "shrub-events"]
-time = 2021-04-06T16:30:00Z
+time = 2021-05-11T16:30:00Z
 title = "Craft and Chat with Mary (Online)"
 
 +++
