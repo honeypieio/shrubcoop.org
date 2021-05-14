@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Everything you need to know">
+
+
+<title>Meet Our New Trustees! | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </p>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Hub"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto underline"
+          >
+            <a
+              class="nav-link text-white"
+              title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >News</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+
+      <div class="pt-5">
+        <h2 class="mb-0">Meet Our New Trustees!</h2>
+
+        <p class="dosis-semi-bold">
+          By SHRUB Coop, posted 23/02/21
+        </p>
+
+        <p>Everything you need to know</p>
+      </div>
+
+      <hr />
+
+      <p><strong>What is a Trustee?</strong></p>
+
+<p>Our Trustees are an elected group of up to 10 volunteers who formally oversee the activities of SHRUB Coop and ensure we act in accordance with our purposes and the wishes of members of the Coop.</p>
+
+<p>Trustees’ key responsibilities fall into the following areas:</p>
+
+<ul>
+<li>Vision, mission and aims</li>
+<li>Strategy and objectives</li>
+<li>Culture and values</li>
+<li>Accountable leadership</li>
+<li>Control environment</li>
+<li>Governance processes</li>
+<li>Succession planning</li>
+</ul>
+
+<p><strong>Who are the 2021 Trustees?</strong></p>
+
+<p><strong>Izi Robe (Convenor) -</strong> <a href="mailto:izi.robe@shrubcoop.org"><strong>izi.robe@shrubcoop.org</strong></a> <strong>- she/her<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614109732/shrubcoop.org/media/Izi_y3nn8u.jpg" alt="" /></strong></p>
+
+<p>I am a BA Human Geography graduate from the University of Exeter in Cornwall where I specialised in climate change communication. I have previous experience serving as a Trustee and Student Council Member for the University of Exeter while working at Falmouth and Exeter Students’ Union. Since moving to Edinburgh in 2019, I have worked in volunteer and student engagement at Heriot-Watt Student Union, alongside volunteering with SHRUB in Communications, the Zero Waste Hub and on the Steering Group. I’m looking forward to bringing my knowledge of working in member-led organisations to ensure we are using feedback from our volunteers and members to make SHRUB the best it can be!</p>
+
+<p><strong>Sylke van Duijnen (Secretary) -</strong>        <a href="mailto:sylke.vandujinen@shrubcoop.org"><strong>sylke.vandujinen@shrubcoop.org</strong></a>        <strong>- she / her<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614110075/shrubcoop.org/media/Blogpost_photo_Sylke_pnhhtq.jpg" alt="" /></strong></p>
+
+<p>Hi everyone! I am Sylke and I am the new secretary for the board of trustees. I just graduated from my MSc Food Security at the University of Edinburgh in November and I stuck around town because Edinburgh is lovely even when it is in lockdown. I was very keen to get involved with the SHRUB Coop as I had volunteered with a foodsharing organisation back in Maastricht where I did my undergraduate and I had heard about the great work being done on food waste reduction in Edinburgh by the SHRUB Coop. However, studies and lockdown prevented me from getting involved earlier, but as soon as the SHRUB opened again this past July I started volunteering Then in November, I applied to be a Trustee because I wanted to contribute more to the SHRUB Coop behind the scenes, to help sustain this wonderful organisation for the Edinburgh community.If you see me in the Swapshop helping out on random days, feel free to say hi!</p>
+
+<p><strong>Deepak Kumar (Treasurer) -</strong> <a href="mailto:deepack.kumar@shrubcoop.org"><strong>deepack.kumar@shrubcoop.org</strong></a> <strong>- he/him</strong></p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614110095/shrubcoop.org/media/Deepak_Kumar_o7r8bu.jpg" alt="" /></p>
+
+<p>I am a Credit Risk Analyst with Royal Bank Scotland and Volunteer Member with the Swapshop. I have 10 years of experience in financial management which I am seeking to pass on to the SHRUB Coop.</p>
+
+<p><strong>Silvia Franco (Zero Waste Hub Lead)-</strong> <a href="mailto:silvia.franco@shrubcoop.org"><strong>silvia.franco@shrubcoop.org</strong></a> <strong>- she/her</strong></p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614110125/shrubcoop.org/media/Silvia-Trustee-photo_impzgn.jpg" alt="" /></p>
+
+<p>I am a graduate in Cooperation and International Development with a Masters degree in Local Development, focusing on Social and Environmental Responsibility. I became a member of the Coop in December 2020. As a Trustee I would like to contribute my knowledge in local development and my experience of managing a family business of agritourism and the shop where I work in Edinburgh. I am really interested in everything connected with the environment, sustainability, circular economy and new types of governance that work to preserve the environment.</p>
+
+<p><strong>David Somervell (Wee Spoke Hub Lead)-</strong> <a href="mailto:david.somervell@shrubcoop.org.uk"><strong>david.somervell@shrubcoop.org.uk</strong></a> <strong>- he/him</strong></p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614110178/shrubcoop.org/media/David_viy9up.jpg" alt="" /></p>
+
+<p>I am the former University of Edinburgh Sustainability Adviser and was the staff member in the Department for Social Responsibility &amp; Sustainability for SHRUB Coop from the start. I’ve so valued the way that cooperative values and working practices have stayed central to how we work and feel I’ve personally learnt so much from the interactions with everyone. David has been involved in the Governance and Policy and Funding Working Groups.</p>
+
+<p><strong>Slavka Damaskova (Risk &amp; Compliance Lead) -</strong> <a href="mailto:slavka.damaskova@shrubcoop.org"><strong>slavka.damaskova@shrubcoop.org</strong></a> <strong>- she/her</strong></p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614110212/shrubcoop.org/media/Slavka_vyyco8.jpg" alt="" /></p>
+
+<p>I discovered that volunteering can be a great way of travelling and getting to know local culture. As a Workaway-er I helped out at the Tree of Life rescue centre and botanical gardens in Costa Rica for 3 months. I was the first one to volunteer there and prepared the grounds for the other volunteers. Here in Scotland I was a member of the Green and Blue, which is a university organization similar to SHRUB in Stirling. Recently, I became a Food Waste Hero as a member of Olio which connects the local communities in order to combat waste, sharing surplus food and non-food items from neighbours and local shops. It has similar visions and aims to SHRUB and can be used worldwide.</p>
+
+<p><strong>Emma Dore (HR &amp; Welfare Lead) -</strong> <a href="mailto:emma.dore@shrubcoop.org"><strong>emma.dore@shrubcoop.org</strong></a> <strong>- she/ her</strong></p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614110233/shrubcoop.org/media/Emma_Dore_headshot_ykazcc.jpg" alt="" /></p>
+
+<p>For the majority of my career I’ve worked in not-for-profit organisations, both face-to-face with people in need, and in managerial/ strategic positions. My focus has been on improving the lives of people without a home, or in vulnerable housing. However, issues of social justice are often intertwined in deep and complex ways. For example, I’m passionate about reducing waste and food sharing because of the positive impact that they can have for people living in poverty, as well as the obvious benefits for our planet. I’m excited to find out how the experience and skills I have gained over the years can contribute to SHRUB achieving its vision.</p>
+
+<p><strong>Livia Milani-</strong> <a href="mailto:livia.milani@shrubcoop.org"><strong>livia.milani@shrubcoop.org</strong></a><strong>- she/her</strong></p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614110255/shrubcoop.org/media/Livia_ay3j1o.png" alt="" /></p>
+
+<p>I recently graduated with the MSc Food Security and Development at the University of Reading, and started volunteering with SHRUB first in the Governance &amp; Policy and Fundraising working group before applying to be a Trustee. From the first moment I got in contact with the cooperative, I very much appreciated its mission and its value, and during my volunteering, its non-hierarchical structure. I am very proud to contribute to the cause of SHRUB and its future growth and prosperity, by putting in practice my knowledge and my passion related to sustainability and community development.</p>
+
+<p><strong>Would you like to join us?</strong><br />
+We are still looking to recruit some Trustees to join the team! If you are interested in knowing more about the role and what it involves, please get in touch with <a href="mailto:izi.robe@shrubcoop.org">izi.robe@shrubcoop.org</a>.</p>
+
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/community-climate-asset-fund/" title="Community Climate Asset Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614100001/shrubcoop.org/media/a5-ccaf-footer-logo_puc4cx.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

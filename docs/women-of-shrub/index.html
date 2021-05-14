@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Our volunteer Lauriane interviews Billie, Lili, and Mary for International Women&#39;s Day!">
+
+
+<title>Celebrating the Women of Shrub | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </p>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Hub"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto underline"
+          >
+            <a
+              class="nav-link text-white"
+              title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >News</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+
+      <div class="pt-5">
+        <h2 class="mb-0">Celebrating the Women of Shrub</h2>
+
+        <p class="dosis-semi-bold">
+          By SHRUB Coop, posted 08/03/21
+        </p>
+
+        <p>Our volunteer Lauriane interviews Billie, Lili, and Mary for International Women&#39;s Day!</p>
+      </div>
+
+      <hr />
+
+      <p>INTERNATIONAL WOMEN’S DAY</p>
+
+<p>QUESTIONS ASKED :</p>
+
+<p>● What does &ldquo;international women&rsquo;s day&rdquo; mean to you? And why is it so important that the world celebrates it?</p>
+
+<p>● If you could name one woman that has had a significant impact on your life, who would that be and why her specifically?</p>
+
+<p>● Do you have any books, TV shows, podcasts, documentaries to recommend about Feminism and the fight for Women&rsquo;s rights?</p>
+
+<p>● Covid has showed us a total different way of living - so how do you cope with all the changes yourself? Any specific tips you would like to share that have helped you and would help our readers with anxiety and distress during those difficult times?</p>
+
+<p>● According to you, what does it mean to &ldquo;be a strong woman&rdquo; in our modern times? We talk about courage, passion and empathy much more than we ever use to, but what do those words really mean ? Which actions can we implement in our daily lives that will not only help other women but help each and everyone of us on a general level?</p>
+
+<hr />
+
+<p>BILLIE (staff)</p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1615221190/shrubcoop.org/media/155512976_279636850223527_5090619642529785146_n_e78e0c.jpg" alt="" /></p>
+
+<p>• International women’s day is important to me because it is an opportunity to shed light on the achievements of women while also highlighting the continued inequalities that we face today. With the added bonus of an excuse to tell the women in my life how much I appreciate and am inspired by them.</p>
+
+<p>• As cheesy and predictable as it is, my mum, Jo Dunlevie. She taught me how to value kindness while refusing to accept inequality and injustice. She showed me that I have a voice that has value and that I should use it to the best of my abilities. Thanks to her, my heart is open to love and my head is open to learn. I owe a lot of who I am to her.</p>
+
+<p>• There is a lot of brilliant work out there. I am hesitant to recommend specific things as I think it really depends on where a person is on their journey. It is really important to remember that feminism is intersectional and to apply critical thinking to where we get our information from, to ask ourselves who’s story isn’t being told and why not? I recommend that people always seek out the voices of women from marginalised communities. Including BIPOC women, women with disabilities and queer women.</p>
+
+<p>• I would really encourage people who are struggling to reach out. At Shrub we are trying really hard to keep people connected but if we are missing something or if there is something extra we could be doing, we would be really keen to hear from people. They can get us at: welfare@shrubcoop.org. Personally I’ve been dancing a lot. I crank up some good tunes and move my body as haphazardly as I can. The rush of joy can get me through an otherwise monotonous day.</p>
+
+<p>• I think I could write thousands of words and still not fully answer this question but I’ll try to capture some of my feelings on this succinctly. I think that trying to be aware of the wider context of inequality and how that affects people is a good start to ‘being a strong woman’. Some of this can include pushing through awkward conversations and advocating for others. It can be calling out the patriarchy for what it is and the inequality it is reinforcing. I think this is very complex and will look differently to everyone depending on their circumstances and their individual barriers. We can show strength by supporting other women and in doing so can be a part of dismantling systems of inequality. If our overarching aim is to look out for each other and work towards a fairer world:then maybe future generations can celebrate International women’s day and just look back on gender based inequality as a thing of the past.</p>
+
+<hr />
+
+<p>LILI (trustee)</p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1615221220/shrubcoop.org/media/192611db-eb3a-4d66-8992-781db99dedc3_qobqci.jpg" alt="" /></p>
+
+<p>• International women&rsquo;s day represents for me the hope of a just and equal society in the future. It is very important to celebrate it, in order to remember that big changes can happen!</p>
+
+<p>• So hard to choose! I would say my English highschool teacher, she was very passionate and engaging, and definitely made a big difference on my way of thinking and learning. She inspired me to choose my degree. I discovered few years later we did the same university and faculty.</p>
+
+<p>• I really recommend these books I recently read - Women at point zero, written by Nawal El Saadawi and The Joy Luck Club, by Amy Tan. While the first one portrays the condition of Egyptian women, the second is focused on the lives of four Chinese American immigrant families. They ́re small, but really intense books. Give it a try!</p>
+
+<p>• Dear Covid, looking forward to not seeing you again! I have been working so much more on myself this year. I learnt that in moments in which I could feel very twitchy, sad and angry, what I have to do is to take a moment of reflection, do some positive mental work-out, and calm myself down (oh, not easy, could take days sometimes!). But it always works. Of course, this won&rsquo;t be permanent, bad feelings come back in your mind, as dust starts to invade your bedroom after few days you cleaned it. It&rsquo;s mostly up to you to keep your mind bright. Definitely, I started to appreciate much more the small things. I would recommend to find some time to do work-out, yoga or meditation at home. It really changes your day. The last thing I would suggest is: occupy your mind with good stuff.</p>
+
+<p>• Nowadays I believe that to be a strong woman is to be our true self. Surely there has been a rise in awareness of certain themes, however I sincerely think that words without a real action are nothing but empty. I think that we should implement more initiative and cooperation in what we do. As an action I would say, be kind and sincere with the people around you.</p>
+
+<hr />
+
+<p>MARY (volunteer)</p>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1615221261/shrubcoop.org/media/158000222_445013530143646_5141152440425997409_n_d0zn0q.jpg" alt="" /></p>
+
+<p>• It’s an opportunity to highlight global women’s issues and for women to support other women. It’s important because there’s a lot of gender inequality which we need to work together to tackle.</p>
+
+<p>• My mum. She brought me up to value education and to believe that I could be whatever I wanted.</p>
+
+<p>• I read the Female Eunuch by Germaine Greer and Fat is a Feminist Issue by Susie Orbach in the 70s. I’ve enjoyed Fay Weldon’s and Margaret Atwood’s books some of which have feminist themes.</p>
+
+<p>• One of the things that I’ve found helpful during the pandemic has been deciding the night before which two self care things I’m going to do the following day and visualising myself doing them. I’ve found I’m much more likely to follow through and do them.</p>
+
+<p>• A strong woman is self reliant but maintains a support network, as we all need a bit of help from our friends. Cut out the negative self talk and call it out when you hear others doing it.</p>
+
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/community-climate-asset-fund/" title="Community Climate Asset Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614100001/shrubcoop.org/media/a5-ccaf-footer-logo_puc4cx.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

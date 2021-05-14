@@ -42,7 +42,7 @@ function writeVolunteerRolesList(roles) {
 
     var roleCreated = document.createElement("p");
     roleCreated.className += "text-muted mb-0";
-    roleCreated.innerText = moment(roles[i].dateCreated).format("Do MMMM YYYY");
+    roleCreated.innerText = moment(roles[i].dateUpdated || roles[i].dateCreated).format("Do MMMM YYYY");
 
     var roleTagline = document.createElement("p");
     roleTagline.className += "mb-1";
@@ -87,6 +87,7 @@ function getVolunteerRole(roleId) {
     type: "GET",
     success: function(res) {
       if (res.status == "ok" && res.role) {
+        console.log(res);
         workingGroups = res.workingGroups;
         writeFullVolunteerRole(res.role);
       } else {
@@ -134,7 +135,7 @@ function writeFullVolunteerRole(role) {
       } else {
         detail.innerHTML = role.details[key].join(", ");
       }
-
+      detail.style.whiteSpace = "pre-wrap";
       detailColumn.appendChild(detail);
 
       row.appendChild(nameColumn);

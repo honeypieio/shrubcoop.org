@@ -118,13 +118,15 @@ function setupPaymentDialog(checkoutId, murakamiTransactionId) {
   SumUpCard.mount({
       checkoutId: checkoutId,
       onResponse: function(type, body) {
-        if(type === "success" && body.transaction_code) {
+        if(type === "success" && body.transaction_code && body.status != "FAILED") {
           // Hide payment dialog, verify payment with Murakami - membership renewed.
           verifyPayment(body.transaction_code, murakamiTransactionId);
         } else if(type === "error") {
           // Handle error.
-          console.log("Error processing payment:", type, body);
-          $("#payment-details-wrapper").addClass("d-none");
+          //$("#payment-details-wrapper").addClass("d-none");
+          writeErrorMessage("Something went wrong processing your payment! Please check that you have entered your details correctly");
+        } else if(type === "success" && body.status == "FAILED") {
+          // Payment failed
           writeErrorMessage("Something went wrong processing your payment! Please check that you have entered your details correctly");
         } else {
           console.log("Payment state:", type, body);
