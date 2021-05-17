@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "This session will bring together a team of people who will work together to run the Community Collections project."
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2021-05-25T23:00:00Z
+time = 2021-05-26T16:00:00Z
 title = "Community Collection Team Meet Up"
 
 +++
