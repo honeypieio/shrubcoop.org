@@ -13,7 +13,7 @@ Welcome to SHRUB! We are so chuffed you are interested in joining our community 
 
 **When**: 5-6pm on Wednesday 19th May 2021
 
-Join us online! [Here](Description:https://us02web.zoom.us/j/81192884806 "zoom link") is the Zoom link
+Join us online! [Here](https://us02web.zoom.us/j/81192884806 "zoom link") is the Zoom link
 
 There are a lot of things happening at SHRUB, so whether you are brand new or have been around a while come along and get informed.
 
