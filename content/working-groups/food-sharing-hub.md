@@ -13,29 +13,41 @@ weight = 3
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568666918/shrubcoop.org/media/Food_Sharing_Hub_WEB_ONLY_ywqahq.png"
 
 +++
+Each year, **one-third** of all food produced for human consumption worldwide goes to waste. This is approximately 1.3 billion tonnes. _(FAO, 2019)._ In central Edinburgh, **27.1 tonnes** of food goes to waste every week - that's the equivalent of roughly **54,000 meals** unnecessarily thrown in the bin. _(Zero Waste Edinburgh, 2017)._
+
 The Food Sharing Hub is **Scotland’s first rescued food shop** and exists to save surplus food from supermarkets from an unnecessary fate in the bin.
 
 It's open for everyone. Simply come along to the Food Sharing Hub. Fill a basket with food and **pay as you feel**.
 
-**We're open 11am to 2pm Monday to Saturday During Lockdown![A collection of images of food in the hub and the words 'Open Monday to Saturday 11am to 2pm](https://res.cloudinary.com/shrub-co-op/image/upload/v1616684115/shrubcoop.org/media/FSE1_egfxry.jpg "FoodSharingHub")**
+**We're open 11am to 6pm Tuesday to Saturday**
 
-#### How it works
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565363322/shrubcoop.org/media/189334483.jpg.gallery_coxd2w.jpg)
+
+How it works
 
 The Food Sharing Hub is working with a host of local supermarkets via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - **fruits and vegetables**, as well as **bread and baked goods** that are still tasty and safe to eat past their 'best before'. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.
 
-We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement]() and their fleet of bikes.  In the evenings [Refugee Community Kitchen Edinburgh]() help to sort and organise the incoming stock - some of which they take to turn into tasty chutneys, jams and preserves
+We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement]() and their fleet of bikes.  In the evenings [Refugee Community Kitchen Edinburgh]() help to sort and organise the incoming stock - some of which they take to turn into tasty chutneys, jams and preserves.
 
-Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the cit![a collection of images of people posing with cargo bikes full of rescued food and one dog](https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png "Cargo Bikers")
+The Food Sharing Edinburgh project also coordinates a network of surplus food collections from small businesses and redistributes it to charities across the city who ensure that it reaches people facing food insecurity and offers them a dignified way of accessing nutritious food, while tackling unnecessary food waste.
+
+The Food Sharing Edinburgh project is generously funded by donations from our community and grant funding from:
+
+* Keep Scotland Beautiful's Community Climate Asset Fund
+* Corra Foundation's Community Recovery Fund
+* Foundation Scotland's Response, Recovery & Resilience Fund
+* Scotmid's Community Grant scheme
+* Turtleton Charitable Trust
+* Inchrye Trust
+
+    
+  ![a collection of images of people posing with cargo bikes full of rescued food and one dog](https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png "Cargo Bikers")
 
 ### Our Impact
 
 We are currently saving an average of **1.28 tonnes** of food through the food sharing hub per month - that's a saving of **6.06 tonnes** of carbon equivalent.
 
-**Food Sharing Edinburgh** has saved **48.9 tonnes** of food in total between Dec 2017 and June 2019. Much of this is redistributed from small businesses directly to charity partners.
-
-Each year, **one-third** of all food produced for human consumption worldwide goes to waste. This is approximately 1.3 billion tonnes. _(FAO, 2019)_
-
-In central Edinburgh, **27.1 tonnes** of food goes to waste every week - that's the equivalent of roughly **54,000 meals** unnecessarily thrown in the bin. _(Zero Waste Edinburgh, 2017)_
+**Food Sharing Edinburgh** saved **48.9 tonnes** of food in total between Dec 2017 and June 2020. Much of this is redistributed from small businesses directly to charity partners.
 
 ### Frequently Asked Questions
 
@@ -43,9 +55,9 @@ In central Edinburgh, **27.1 tonnes** of food goes to waste every week - that's 
 
 No
 
-#### Is Zero Waste Hub accessible?
+#### Is the Zero Waste Hub accessible?
 
-The Zero Waste Hub is on ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.
+The Zero Waste Hub is on the ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.
 
 There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street.
 
@@ -67,7 +79,7 @@ Grassmarket route: 2
 
 #### Is there parking nearby?
 
-There is limited on street parking on Bread Street, but two large car parks a 4 minute walk away;
+Please travel to the Zero Waste Hub by sustainable transport methods (walking, cycling or bus) if you can. There is limited on-street paid parking on Bread Street, but two large car parks a 4 minute walk away:
 
 **Thistle Parking**
 
