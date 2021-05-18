@@ -6,11 +6,11 @@ date = "2019-02-12T17:40:58+00:00"
 lat = -3.204477
 lon = 55.945693
 showOnFrontPage = false
-tagline = "scotland's first rescued food shop!"
-times = "11am to 2pm Monday to Saturday during Lockdown"
-title = "Food Sharing Hub"
+tagline = "Scotland's first rescued food shop!"
+times = "11am to 6pm Tuesday to Saturday"
+title = "Food Sharing Edinburgh"
 weight = 3
-working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568666918/shrubcoop.org/media/Food_Sharing_Hub_WEB_ONLY_ywqahq.png"
+working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1621335519/shrubcoop.org/media/Food_Sharing_Edinburgh_easkx6.png"
 
 +++
 Each year, **one-third** of all food produced for human consumption worldwide goes to waste. This is approximately 1.3 billion tonnes. _(FAO, 2019)._ In central Edinburgh, **27.1 tonnes** of food goes to waste every week - that's the equivalent of roughly **54,000 meals** unnecessarily thrown in the bin. _(Zero Waste Edinburgh, 2017)._
@@ -23,7 +23,7 @@ It's open for everyone. Simply come along to the Food Sharing Hub. Fill a basket
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565363322/shrubcoop.org/media/189334483.jpg.gallery_coxd2w.jpg)
 
-How it works
+### How it works
 
 The Food Sharing Hub is working with a host of local supermarkets via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - **fruits and vegetables**, as well as **bread and baked goods** that are still tasty and safe to eat past their 'best before'. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.
 
@@ -40,7 +40,6 @@ The Food Sharing Edinburgh project is generously funded by donations from our co
 * Turtleton Charitable Trust
 * Inchrye Trust
 
-    
   ![a collection of images of people posing with cargo bikes full of rescued food and one dog](https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png "Cargo Bikers")
 
 ### Our Impact
