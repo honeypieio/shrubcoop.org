@@ -2,13 +2,12 @@
 author = "Lindsey"
 date = 2021-05-17T23:00:00Z
 description = "The best kept secret in sustainable fashion?"
+draft = true
 tags = []
 title = "Kids’ Hand-Me-Downs"
 type = "news"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1621335278/shrubcoop.org/media/C_dungarees_2_kcfbfw.jpg)
-
 As a child we’ve all either handed something on (or down!) or been the recipient of a hand-me-down item ourselves – continuing the useful life of the garment and saving families some money in the process.
 
 One thing that can’t be denied about children is that they keep growing, and a lot of the time their clothes are far from worn out by the time they are outgrown. It makes good sense to pass them on to someone who is the right size to make use of them. Many of these hand-me-downs happen between siblings, or extended family, but just as often they happen between friends, neighbours or even school communities.
