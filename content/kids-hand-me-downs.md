@@ -1,8 +1,7 @@
 +++
 author = "Lindsey"
-date = 2021-05-17T23:00:00Z
+date = 2021-05-20T23:00:00Z
 description = "The best kept secret in sustainable fashion?"
-draft = true
 tags = []
 title = "Kids’ Hand-Me-Downs"
 type = "news"
@@ -23,3 +22,5 @@ Here are some tips to get the most from every hand-me-down:
 * For school uniform, ask your child’s school if there is a ‘Nearly New’ sale that you can donate clothes to. If not, why not start one yourself or suggest it to the PTA? The clothing donations can then be sold on at low prices to other families, with the proceeds topping up school funds.
 
 Of course, hand-me-downs needn’t stop once you’re an adult! We can apply a lot of the same advice above to adult clothes. Nearly New school sales can be replaced with clothes swapping parties (sometimes known as schwopping), which are a fun way to give a piece of clothing a new lease of life and to refresh your wardrobe.
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1621599331/shrubcoop.org/media/C_dungarees_2_zsvqhz.jpg)
