@@ -2,7 +2,6 @@
 address = "13 Guthrie Street, EH1 1JG"
 alt = "Wee Spoke Hub Button – This is the link to the Wee Spoke Hub area of the site. Click here to read more about the Wee Spoke Hub."
 colour = "#EF7D00"
-draft = true
 lat = -3.188578
 lon = 55.948208
 showOnFrontPage = true
