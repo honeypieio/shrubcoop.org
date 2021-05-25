@@ -16,8 +16,6 @@ The Wee Spoke Hub is a welcoming workshop space where tools and expertise are pr
 
 We have a range of refurbished bikes and second hand [parts for sale](https://www.shrubcoop.org/wee-spoke-hub-price-list/) and we are currently available for bike repair bookings so drop our wonderful Mechanic, Anna, an email to arrange a slot at weespokehub@shrubcoop.org.
 
-***
-
 At the Wee Spoke Hub, we aim to help make cycling affordable, attractive and accessible mode of transport for everyday use. Because of this, we have introduced an Accessible Tiered Pricing System, to allow us to operate in line with our core values.
 
 **Tiered System**
