@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "Discuss all things food sharing - volunteer recruitment, drop box ideas, workshops and more!"
 location = "Online (read the description for the link)"
 tags = ["foodsharing", "food-sharing-hub", "food-sharing", "working-group", "volunteer", "volunteer-recruitment", "zero-waste-hub"]
-time = 2021-05-05T13:00:00Z
+time = 2021-06-02T14:00:00Z
 title = "Food Sharing Working Group Meeting"
 
 +++
@@ -11,7 +11,7 @@ title = "Food Sharing Working Group Meeting"
 
 Food Sharing Working Group Meeting
 
-Wednesday, 5 May · 2:00 – 3:00pm
+Wednesday, 2 June · 3:00 – 4:30pm
 
 Google Meet joining info
 
