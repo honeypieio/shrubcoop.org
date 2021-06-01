@@ -30,11 +30,10 @@ We value inclusivity and work with others to provide a welcoming community for a
 
 #### Our activities and spaces
 
-SHRUB Coop currently has 3 spaces across Edinburgh, with several key areas of activity.
+SHRUB Coop currently has two spaces across Edinburgh, with several key areas of activity.
 
 * At the **Zero Waste Hub** on 22 Bread Street, we have a **Swapshop**, where you can shop for second-hand items, including swapping your old items for tokens to be used in the shop; a **Food Sharing Hub**, where you can buy rescued food on a pay-as-you-feel basis; and a **Cafe** where you can relax and get inspired by the community.
-* At the **Wee Spoke Hub** on 13 Guthrie Street, we have our bike workshop, where you can join us for **fix-your-own-bike sessions** on Tuesday and Thursday nights, 5-8pm, or on our volunteer nights on Wednesday evenings, same time. You can also buy bike parts and bikes that our volunteers have fixed up. At the same location you’ll also find one of our offices where our finance and project coordination teams work.
-* At **SHRUB Space** on 17 Guthrie Street, you can join us for **Sewing Drop-in sessions** on Thursday evenings 5-7pm, as well as other events and meetings. You’ll also find our second office, where our Zero Waste Edinburgh team works.
+* At the **Wee Spoke Hub** on 13 Guthrie Street, we have our bike workshop, where you can join us for **fix-your-own-bike sessions** on Tuesday and Thursday nights, 5-8pm, or on our volunteer nights on Wednesday evenings, same time. You can also buy bike parts and bikes that our volunteers have fixed up. At the same location you’ll also find our offices where our finance and project coordination teams work (currently all office-based work is done remotely due to ongoing COVID-19 restrictions).
 * In May and June, you can find us in the university halls and across the city, collecting items that students have left behind as a part of our annual **end-of-term collections**. We give them away at our annual **Freeshop** in September and at other Freeshops throughout the year. Beyond the collections, we also run a variety of other **events and workshops**, including the Zero Waste Festival, upcycling and repair workshops, sustainable fashion meet-ups and much more.
 * Finally, our **Food Sharing network** collects food year-round from small and medium businesses such as bakeries and distributes it to anyone who might want to eat it, including charities, the volunteers themselves, and bread boxes in businesses throughout the city.
 
@@ -78,6 +77,8 @@ We follow the cooperative principles below, and organise our work through workin
 
 **Finance & Admin:** We oversee general administration, maintaining financial records and forecasting. The group includes Monitoring and Evaluation, Bookkeeping, Management Accounts, Social Enterprise and Funding subgroups.
 
+**Funding:** We research and bid for grant funding to support SHRUB's projects and core operations.
+
 **Welfare:** We ensure the wellbeing of members, if you are experiencing any problems within the community, you can get in touch with us at welfare@shrubcoop.org
 
 **Governance & Policy:** We take care of the Coop’s decision making processes and other working practices and policies.
@@ -85,6 +86,8 @@ We follow the cooperative principles below, and organise our work through workin
 **Human Resources:** We ensure the wellbeing of our staff and offer them feedback and support.
 
 **Trustees:** We are the legal guardians of the Coop, responsible for oversight of risk & compliance, human resources, monitoring & evaluation, funding, and member engagement.
+
+**Steering Group:** We deal with the day-to-day decision making in the Coop and help to shape project development.
 
 ***
 
