@@ -13,4 +13,4 @@ This session will bring together a team of people who will work together to run 
 This project is run by Shrub and supported by City of Edinburgh Council, it will run for four days from the 24th to the 27th of June.  
 This session will look at what it will involve to be in the Collections team and how we can work together to make an amazing event happen that will help people to give their items a new life and engage with circular economy.
 
-Link here.
+Link [here](https://www.facebook.com/events/866082770991878?acontext=%7B%22event_action_history%22%3A\[%7B%22surface%22%3A%22page%22%7D\]%7D).
