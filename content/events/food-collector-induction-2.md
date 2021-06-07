@@ -11,7 +11,7 @@ title = "Food Collector Induction"
 
 Sign up as a volunteer and learn more about how to do the role!
 
-Check out the Facebook event here.
+Check out the Facebook event here: [https://fb.me/e/2bVbugeBJ](https://fb.me/e/2bVbugeBJ "https://fb.me/e/2bVbugeBJ")
 
 Join us online:
 
