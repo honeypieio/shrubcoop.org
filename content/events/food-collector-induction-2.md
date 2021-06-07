@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "Get involved in local collections"
 location = "Online (read the description for the link)"
 tags = ["foodsharing", "food-sharing-hub", "volunteer", "welcome", "induction"]
-time = 2021-05-20T15:00:00Z
+time = 2021-06-17T15:00:00Z
 title = "Food Collector Induction"
 
 +++
@@ -11,13 +11,13 @@ title = "Food Collector Induction"
 
 Sign up as a volunteer and learn more about how to do the role!
 
-Check out the Facebook event [here](https://fb.me/e/5qtBGTvMn).
+Check out the Facebook event here.
 
 Join us online:
 
 Food Sharing Induction
 
-Thursday, 6 May · 4:00 – 5:00pm
+Thursday, 17 June · 4:00 – 5:00pm
 
 Google Meet joining info
 
