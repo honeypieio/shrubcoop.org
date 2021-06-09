@@ -1,7 +1,7 @@
 +++
 author = "Joanne Elston"
 date = 2021-06-08T23:00:00Z
-description = "Our Swapshop Coordinator gives us a taster to the inside of her mind and the stress of buying ethical pants"
+description = "Our Swapshop Coordinator needs to get something off her chest"
 draft = true
 tags = ["sustainable fashion", "pants", "fast fashion", "zero waste", "sustainability ", "textile recycling ", "self care "]
 title = "How To Look After Yourself"
