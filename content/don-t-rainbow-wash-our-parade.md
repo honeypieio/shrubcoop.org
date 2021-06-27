@@ -1,6 +1,6 @@
 +++
 author = "Aislinn Redbond"
-date = 2021-06-16T23:00:00Z
+date = 2021-06-25T23:00:00Z
 description = "How do we discern what true ally-ship looks like amidst this bombardment of rainbows from every shop corner?"
 draft = true
 tags = []
