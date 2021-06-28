@@ -2,7 +2,6 @@
 author = "SHRUB Coop"
 date = 2021-06-25T23:00:00Z
 description = "We have this information on our website to ensure our community members feel safe."
-draft = true
 tags = []
 title = "SHRUB Safer Spaces Policy"
 type = "news"
