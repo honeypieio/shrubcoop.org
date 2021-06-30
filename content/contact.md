@@ -27,7 +27,7 @@ type = "contact"
 
 [0131 358 3637](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TC_OzanKrig0YLRSNagwsbAwTzY3trQ0N082ME0xtTKoME9ONDQ2MTROSTKzNDRPNfDiLU9NVSguyM9OVcgoTQIAtBcUJQ&q=wee+spoke+hub&oq=wee+sp&aqs=chrome.1.69i57j46i175i199j0j46i175i199l2j0j69i60l2.4430j1j7&sourceid=chrome&ie=UTF-8#)
 
-weespokehub@shrubcoop.org
+Contact our mechanic and coordinator at: weespokehub@shrubcoop.org
 
 ***
 
