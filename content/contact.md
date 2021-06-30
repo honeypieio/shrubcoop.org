@@ -21,9 +21,13 @@ type = "contact"
 
 #### Wee Spoke Hub
 
-Not currently operating  
-13 Guthrie Street, EH1 1JG  
-0131 220 1884
+5pm- 8pm, Tuesday and Thursday 
+
+13 Guthrie Street, EH1 1JG
+
+[0131 358 3637](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TC_OzanKrig0YLRSNagwsbAwTzY3trQ0N082ME0xtTKoME9ONDQ2MTROSTKzNDRPNfDiLU9NVSguyM9OVcgoTQIAtBcUJQ&q=wee+spoke+hub&oq=wee+sp&aqs=chrome.1.69i57j46i175i199j0j46i175i199l2j0j69i60l2.4430j1j7&sourceid=chrome&ie=UTF-8#)
+
+weespokehub@shrubcoop.org
 
 ***
 
