@@ -1,7 +1,6 @@
 +++
 author = "SHRUB Coop"
 description = "Come along to Edinburgh Cimate Festival on Leith Links"
-draft = true
 location = "Other (read the description for details)"
 tags = []
 time = 2021-08-13T23:00:00Z
