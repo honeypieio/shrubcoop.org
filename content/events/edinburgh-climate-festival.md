@@ -3,7 +3,7 @@ author = "SHRUB Coop"
 description = "Come along to Edinburgh Cimate Festival on Leith Links"
 location = "Other (read the description for details)"
 tags = []
-time = 2021-08-13T23:00:00Z
+time = 2021-08-14T11:00:00Z
 title = "Edinburgh Climate Festival"
 
 +++
