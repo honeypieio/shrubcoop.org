@@ -1,7 +1,8 @@
 +++
 author = "Aislinn Redbond"
-date = 2021-07-08T23:00:00Z
+date = 2021-07-08T09:00:00Z
 description = "We look into the bicycle as a symbol of women's liberation"
+draft = true
 tags = []
 title = "Reclaiming the Emancipatory Power of the Bicycle "
 type = "news"
