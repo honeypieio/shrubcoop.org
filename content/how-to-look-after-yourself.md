@@ -2,7 +2,7 @@
 author = "Joanne Elston"
 date = 2021-06-08T23:00:00Z
 description = "Our Swapshop Coordinator needs to get something off her chest"
-tags = ["sustainable fashion", "pants", "fast fashion", "zero waste", "sustainability ", "textile recycling ", "self care ", "zero-waste-hub"]
+tags = ["sustainable fashion", "pants", "fast fashion", "zero waste", "sustainability ", "textile recycling ", "self care ", "zero-waste-hub", "swapshop"]
 title = "How To Look After Yourself"
 type = "news"
 
