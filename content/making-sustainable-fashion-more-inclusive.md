@@ -2,7 +2,7 @@
 author = "Aislinn Redbond"
 date = 2021-05-21T23:00:00Z
 description = "Shrub’s Swap Shop has a plus-size range of clothing available, making sustainable fashion a more viable option for many people."
-tags = []
+tags = ["swapshop"]
 title = "Making Sustainable Fashion More Inclusive"
 type = "news"
 
