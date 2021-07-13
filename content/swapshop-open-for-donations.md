@@ -2,7 +2,7 @@
 author = "Swapshop"
 date = 2021-07-12T23:00:00Z
 description = "We are looking for donations in the Swapshop again, read below to see what we are looking for..."
-tags = []
+tags = ["swapshop", "zero-waste-hub", "donations"]
 title = "Swapshop Open for Donations"
 type = "news"
 
