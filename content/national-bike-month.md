@@ -2,7 +2,7 @@
 author = "Aislinn Redbond"
 date = 2021-05-16T23:00:00Z
 description = "Here at Shrub Coop, we love the planet, we love cycling and so we love National Bike Month."
-tags = ["wee-spoke-hub", "bike-month", "cycling", "wsh", "bikes"]
+tags = ["wee-spoke-hub", "bike-month", "cycling", "bikes"]
 title = "National Bike Month"
 type = "news"
 
