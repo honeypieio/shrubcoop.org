@@ -2,7 +2,7 @@
 author = "Wee Spoke Hub"
 date = 2021-05-21T23:00:00Z
 description = "Buy a Bike and Parts Price List"
-tags = []
+tags = ["bikes"]
 title = "Wee Spoke Hub Price List"
 type = "news"
 
