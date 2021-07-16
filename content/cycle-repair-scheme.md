@@ -2,7 +2,7 @@
 author = "Wee Spoke Hub"
 date = 2021-01-25T00:00:00Z
 description = "Get your bike repaired for free"
-tags = []
+tags = ["wee-spoke-hub", "bikes"]
 title = "Cycle Repair Scheme"
 type = "news"
 
