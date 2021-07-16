@@ -2,7 +2,7 @@
 author = "Wee Spoke Hub"
 date = 2020-10-15T16:00:00Z
 description = "After months of uncertainty about the future of the Wee Spoke Hub we are excited to share the good news with you: the Wee Spoke Hub is going to reopen its doors!"
-tags = ["wee-spoke-hub"]
+tags = ["wee-spoke-hub", "bikes"]
 title = "The Wee Spoke Hub is starting the journey to reopening!"
 type = "news"
 
