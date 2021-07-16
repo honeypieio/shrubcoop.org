@@ -2,7 +2,7 @@
 author = "Aislinn Redbond"
 date = 2021-03-18T00:00:00Z
 description = "Time to put away the excuses. Here are some tips to get started cycling around Edinburgh."
-tags = []
+tags = ["bikes", "wee-spoke-hub"]
 title = "Getting onto the Saddle"
 type = "news"
 
