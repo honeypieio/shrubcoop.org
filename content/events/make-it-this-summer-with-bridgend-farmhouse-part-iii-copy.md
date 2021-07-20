@@ -1,11 +1,10 @@
 +++
 author = "SHRUB Coop"
 description = "Use unwanted textiles to create cool festival gear!"
-draft = true
 location = "Other (read the description for details)"
 tags = ["Swapshop", "events", "zero-waste-hub"]
-time = 2021-08-24T17:30:00Z
-title = "Make It This Summer with Bridgend Farmhouse - Part III-(copy)"
+time = 2021-09-07T17:30:00Z
+title = "Make It This Summer with Bridgend Farmhouse - Part IV"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1626769224/shrubcoop.org/media/Make_It_this_summer_cover_1_ag4kbo.png)‘Make It’ This Summer with Bridgend Farmhouse and SHRUB Coop
