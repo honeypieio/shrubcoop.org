@@ -1,7 +1,6 @@
 +++
 author = "SHRUB Coop"
 description = "We are having a book sale all day this Saturday!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
 time = 2021-07-23T23:00:00Z
