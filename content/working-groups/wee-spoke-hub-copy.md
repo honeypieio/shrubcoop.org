@@ -13,6 +13,46 @@ weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
 
 +++
+| --- | --- | --- |
+| Part | New (From) | Second Hand |
+| Axle - solid/hollow | £4 | £2.50 |
+| Axle (inc. QR skewer) | £7 | £4 |
+| Bearings | £1 per cone |  |
+| Bell | £2 | £1.50 |
+| Bottom Bracket | £10 - £20 |  |
+| Brake Arms |  | £4 |
+| Brake Lever |  | £3 |
+| Brake Noodle | £1 |  |
+| Brake/Gear Cables - inner | £2 per cable |  |
+| Brake/Gear Cables - outer | £2 per metre |  |
+| Brake Pads | £5 per pair |  |
+| Cassette | £15 - £25 |  |
+| Chain | £10 - £17 |  |
+| Cranks | Approx £15-£25 (has to be ordered in) | £5 |
+| Derailleur - rear | Approx £12 (has to be ordered in) | £8 |
+| Derailleur - front | Approx £10 (has to be ordered in) | £5 |
+| Fork |  | £10 |
+| Freewheel | £10 - £20 | £8 |
+| Reflectors | £1 | 50p |
+| Handlebar |  | £5 |
+| Headsets | £10 - £15 | £5 |
+| Helmet (Kids/Adults) | £15 / £20 | NEVER BUY A SECOND HAND HELMET |
+| Innertube | £6 | £2 |
+| Lights | £5 - £15 | £3 |
+| Mudguards |  | As priced |
+| Pannier rack |  | As priced |
+| Pedals - flat | Approx £5.50 (plastic) / £12 (metal) - has to be ordered in | £3 / £5 (plastic / metal). Toe clips are £3 extra. |
+| Pedals - SPD | Approx £25 - £35 (has to be ordered in) | £10 |
+| Saddle |  | £4 (£7 incl. seat post) |
+| Seat clamp |  | £1 |
+| Seat post |  | £4 |
+| Spoke reflector | £1 |  |
+| Spokes | £1 |  |
+| Tyre | As priced | £3 - £6, depending on quality |
+| Wheel (adult) | Approx £25 - £35 (has to be ordered in) | £6 |
+| Wheel (kids) |  | £4 |
+
+  
 DIY bike repair workshops // Build-a-bike sessions // Bike repairs // Bike parts for sale // Second-hand bikes for sale // Upcycled bikes for sale // Led bike rides // Inclusive bike repair space.
 
 The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.
