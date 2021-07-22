@@ -12,7 +12,7 @@ weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
 
 +++
-DIY bike repair workshops // Build-a-bike sessions // Bike repairs // Second-hand bikes for sale // Upcycled bikes for sale // Led bike rides // Inclusive bike repair space.
+DIY bike repair workshops // Build-a-bike sessions // Bike repairs // Bike parts for sale // Second-hand bikes for sale // Upcycled bikes for sale // Led bike rides // Inclusive bike repair space.
 
 The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.
 
