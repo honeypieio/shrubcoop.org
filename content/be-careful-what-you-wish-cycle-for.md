@@ -1,0 +1,23 @@
++++
+author = "Aislinn Redbond"
+date = 2021-07-22T23:00:00Z
+description = "The best intentions can sometimes lead us to make more damaging decisions for the planet when it comes to waste disposal and recycling."
+draft = true
+tags = ["swapshop", "foodsharing"]
+title = "Be Careful What You Wish(cycle) For"
+type = "news"
+
++++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1627033110/shrubcoop.org/media/wish_jsvo52.jpg)
+
+Photo source here.
+
+***
+
+So you’re standing at your bins with an empty pizza box in hand wondering where to put it. The box is made of cardboard, and cardboard is recyclable, so surely that means the box should go in the recycling bin? Okay, there’s a bit of grease on the bottom of the box, but what harm can that do? Worse comes to worst, someone will remove the box from the cardboard recycling pile, but at least you did your part. Better than sending it straight to landfill, right? Wrong.
+
+The above example depicts the process and logic behind wishcycling, the act of rather blindly hoping that something is recyclable because it feels better than throwing it in the bin. As is apparent, the rationale behind this process is not intentionally damaging, but rather a testament to the optimism of those who care about the planet and want to do what they can to reduce their non-recyclable waste. However, [the damaging impact of wishcycling ](https://www.greenmatters.com/p/wishcycling)is so much greater than we often anticipate that it can throw into question the true intention of wishcyclers altogether.
+
+When an item that does not belong in the recycling bin gets placed there, [it can disrupt and halt the entire recycling process](https://www.vogeldisposal.com/vogel-disposal-news/what-happens-when-the-wrong-things-go-into-recycling-4022). Given that it is mostly machines that carry out the sorting at recycling plants, the [introduction of non-recyclable items can jam these systems which results in huge losses of time and money while these machines are repaired](https://theecofairy.com/blogs/news/we-all-need-to-stop-wishcycling). This has the knock-on effect of decreasing the recycling output, thus defeating the purpose of the wishcycler’s intention. In an even more devastating series of events, the non-recyclable materials can get through the machines’ sorting processes and end up [contaminating the entire batch](https://www.wlrn.org/news/2018-12-19/a-tale-of-too-much-wishcycling-a-look-at-miami-dades-low-recycle-rate)of recyclable material that is to be sold for repurposing. When this occurs, that batch ends up in landfill as there are not the resources to remove the non-recyclable elements, and so the environment suffers an even greater loss than if the greasy pizza box had just been placed in the general waste bin in the first place.
+
+Recycling has been a relatively controversial process since its adoption into civil society. Many eco-behavioural analysts have argued that recycling impedes environmental progress because people view it as a one-stop action to prove their environmental commitment, without addressing some of the more major factors damaging the planet such as overconsumption or lifestyle factors. Of course, this viewpoint must be balanced with the knowledge that it is the world’s top corporations that are responsible for the majority of the environmental destruction that has led to the climate crisis. However, it is part of their marketing to portray recycling as a primary solution, shifting the environmental burden to consumers, and it is this societal pressure to recycle that has led people to believe that almost anything is recyclable. In order to[tackle wishcycling](https://dirtylabs.com/blogs/the-dirt/what-is-wishcycling), and ensure that our waste truly is minimised, it is necessary to educate ourselves about what can and cannot be recycled in our local areas. This can vary from place to place, and it is often updated as technology progresses, therefore it is worth checking the guidelines regularly to maximise our environmental impact. When in doubt as to whether or not something can be recycled, Google it! There is a wealth of information available online that can help us to ensure our environmental intentions ring true. Finally, for more difficult to recycle items, look at alternative recycling schemes such as [TerraCycle](https://www.terracycle.com/en-GB), which specialise in the collection and recycling of items such as Pringles cans, beauty items and McVities wrappers. Recycling efficiently requires commitment, but if we’re recycling to help save the planet, we might as well do it wholeheartedly.
