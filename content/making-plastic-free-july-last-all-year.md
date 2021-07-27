@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-07-26T23:00:00Z
 description = "We can’t keep the July weather, but we can keep living plastic free!"
-draft = true
 tags = ["foodsharing"]
 title = "Making Plastic Free July Last All Year"
 type = "news"
@@ -14,4 +13,4 @@ Plastic Free July is an important movement that aims to highlight the unnecessar
 
 There are a wealth of resources available online and on social media to help people to quit plastic, and the reach of this campaign grows every year. Of course, committing to being plastic free for a month is an impressive feat in and of itself, but for those who manage to maintain some of these new patterns throughout the rest of the year, it is truly phenomenal. And not only that, but it is proof that everyone can cut down on their plastic waste, July or not. That’s part of what drives our mission at Shrub Coop - we envision a world without waste and we know that it is possible. So to help those of you who are just finishing up your Plastic Free July challenge, or for anyone interested in testing the waters of a plastic-less life, we recently posted some of our [top tips to remove plastic from your life.](https://www.instagram.com/p/CRqc5WMq1fu/)There are lots of small changes we can make that will have a big collective impact, so instead of waiting until next July to start, why not start removing plastic from your life today? You might be surprised at how creative you can be!
 
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1627387864/shrubcoop.org/media/14_swtzcz.png)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1627387864/shrubcoop.org/media/14_swtzcz.png)![](https://res.cloudinary.com/shrub-co-op/image/upload/v1627387884/shrubcoop.org/media/15_jp5yuo.png)
