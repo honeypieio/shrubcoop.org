@@ -35,15 +35,15 @@ What makes us different?
 
 **Repairs and Drop Ins**
 
-Monday 1 – 5
+Monday 11.00 – 17.30
 
-Tuesday 1 – 5
+Tuesday 11.00 – 17.30
 
-Thursday 5 – 8
+Thursday 15.00 – 20.00
 
 **DIY Sessions**
 
-Tuesday 5 – 8
+Tuesday 17.00 – 20.00
 
 ***
 
