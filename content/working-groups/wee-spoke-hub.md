@@ -17,7 +17,7 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 What do we do?
 
 * We sell second-hand and brand new bike parts.
-* We have trained mechanics and volunteers who can fix your bike.
+* We have trained mechanics who can fix your bike.
 * We repair bikes that have been donated and sell them on at a reasonable price.
 * We run DIY bike repair sessions where you can learn to fix your bike yourself.
 
