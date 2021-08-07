@@ -12,7 +12,7 @@ weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
 
 +++
-We are an Edinburgh-based bike shop with a difference!
+**We are an Edinburgh-based bike shop with a difference!**
 
 What do we do?
 
@@ -33,7 +33,7 @@ What makes us different?
 
 **Opening hours:**
 
-**Repairs and Drop Ins**
+**Repairs and Drop-Ins**
 
 Monday 11.00 – 17.30
 
@@ -51,7 +51,7 @@ The Wee Spoke Hub is a welcoming workshop space where tools and expertise are pr
 
 We have a range of refurbished bikes and second hand [parts for sale](https://www.shrubcoop.org/wee-spoke-hub-price-list/) and we are currently available for bike repair bookings so drop our wonderful Mechanic, Anna, an email **to arrange a slot at weespokehub@shrubcoop.org or call on 0131 358 3637**. We are also open between 10.30am and 5.30pm on Mondays so please swing by!
 
-At the Wee Spoke Hub, we aim to help make cycling affordable, attractive and accessible mode of transport for everyday use. Because of this, we have introduced an Accessible Tiered Pricing System, to allow us to operate in line with our core values.
+At the Wee Spoke Hub, we aim to help make cycling an affordable, attractive and accessible mode of transport for everyday use. Because of this, we have introduced an Accessible Tiered Pricing System, to allow us to operate in line with our core values.
 
 **Tiered System**
 
@@ -65,7 +65,7 @@ Tier 4 - If you are in the top 1%, then we’ll charge you a flat £1k for your 
 
 ***
 
-The Wee Spoke Hub is part funded by Smarter Choices Smarter Places, Gannochy Trust and the Bank of Scotland Foundation. The Smarter Choices Smarter Places is a Paths for All’s programme funded by Transport Scotland.
+The Wee Spoke Hub is part-funded by Smarter Choices Smarter Places, Gannochy Trust and the Bank of Scotland Foundation. The Smarter Choices Smarter Places is a Paths for All’s programme funded by Transport Scotland.
 
 This funding is enabling us to restart our much-loved **Fix Your Own Bike** workshops; volunteer programme and offer some exciting new cycle-focused activities to help folk develop a love of bikes and biking! Keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!
 
@@ -81,12 +81,12 @@ We helped over **450** people to fix their own bikes in 2018 and the Wee Spoke H
 
 #### What Covid-19 safety precautions are we taking?
 
-We have implemented comprehensive Covid-19 safety assessments and adjustments in the Wee Spoke Hub, including introducing hand sanitizer stations, social distancing measures, a one way system and limiting the number of people in the space at once. Everyone entering the Wee Spoke Hub will be asked to wear a face covering unless exempt, and our mechanic and volunteers will all be wearing face coverings.
+We have implemented comprehensive Covid-19 safety assessments and adjustments in the Wee Spoke Hub, including introducing hand sanitiser stations, social distancing measures, a one-way system and limiting the number of people in the space at once. Everyone entering the Wee Spoke Hub will be asked to wear a face covering unless exempt, and our mechanic and volunteers will all be wearing face coverings.
 
 #### Is the Wee Spoke Hub accessible?
 
 The Wee Spoke Hub workshop space is on the ground floor. There is a step to the toilets and are therefore not wheelchair accessible.  
-All our toilets are gender neutral.
+All our toilets are gender-neutral.
 
 If you have further questions regarding accessibility before a visit, please contact the Wee Spoke Hub on **0131 358 3637**.
 
@@ -96,7 +96,7 @@ There is outdoor bicycle parking on Chambers street, near the National Museum an
 
 #### What bus routes are you on?
 
-The Wee Spoke Hub is located between the National Museum of Scotland and Cowgate and following bus routes will take you nearby;
+The Wee Spoke Hub is located between the National Museum of Scotland and Cowgate and the following bus routes will take you nearby;
 
 George IV Bridge routes: 67, 42, 41, 23, 27  
 Chamber Street routes: 35, 45  
