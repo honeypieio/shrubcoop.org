@@ -35,13 +35,13 @@ What makes us different?
 
 **Repairs and Drop-Ins**
 
-Monday 11.00 – 17.30  
+Monday 11.00 – 17.30
 
-Tuesday 11.00 – 20.00  
+Tuesday 11.00 – 20.00
 
-Wednesday 11.00 – 20.00  
+Wednesday 11.00 – 17.30
 
-Thursday 11.00 – 20.00  
+Thursday 11.00 – 20.00
 
 Friday 11.00 – 17.30
 
@@ -49,15 +49,11 @@ Friday 11.00 – 17.30
 
 Tuesday 17.00 – 20.00
 
-Wednesday 17.00 – 20.00
-
-Thursday 17.00 – 20.00
-
 ***
 
 The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.
 
-We have a range of refurbished bikes and second hand [parts for sale](https://www.shrubcoop.org/wee-spoke-hub-price-list/) and we are currently available for bike repair bookings so drop our wonderful Mechanic, Anna, an email **to arrange a slot at weespokehub@shrubcoop.org or call on 0131 358 3637**. 
+We have a range of refurbished bikes and second hand [parts for sale](https://www.shrubcoop.org/wee-spoke-hub-price-list/) and we are currently available for bike repair bookings so drop our wonderful Mechanic, Anna, an email **to arrange a slot at weespokehub@shrubcoop.org or call on 0131 358 3637**.
 
 At the Wee Spoke Hub, we aim to help make cycling an affordable, attractive and accessible mode of transport for everyday use. Because of this, we have introduced an Accessible Tiered Pricing System, to allow us to operate in line with our core values.
 
