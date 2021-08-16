@@ -44,6 +44,34 @@
   };
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -54,7 +82,7 @@
 <meta charset="UTF-8" />
 
   
-    <meta name="description" content="learn to take care of your bike!">
+    <meta name="description" content="Learn to take care of your bike!">
   
 
 
@@ -161,9 +189,9 @@
                 
                   <a
                     class="nav-link dropdown-item  text-center px-4 text-dark"
-                    title="Food Sharing Hub"
+                    title="Food Sharing Edinburgh"
                     href="/working-groups/food-sharing-hub/"
-                    >Food Sharing Hub</a>
+                    >Food Sharing Edinburgh</a>
                   
               
                 
@@ -279,7 +307,7 @@
 		    	<div class="container">
 
 		    		<h3 class="dosis-semi-bold" style="color: #EF7D00;">
-		    			learn to take care of your bike!
+		    			Learn to take care of your bike!
 		    		</h3>
 
             
@@ -292,7 +320,7 @@
 
             
               <p class="text-white">
-                &#128336; By appointment only through the Cycle Repair Scheme
+                &#128336; By appointment
               </p>
             
 
@@ -335,11 +363,25 @@
 
 <p>The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.</p>
 
-<p>We also have a range of refurbished bikes and second hand parts for sale. As a member of SHRUB Coop you get <strong>discounts</strong> on parts.</p>
+<p>We have a range of refurbished bikes and second hand <a href="https://www.shrubcoop.org/wee-spoke-hub-price-list/">parts for sale</a> and we are currently available for bike repair bookings so drop our wonderful Mechanic, Anna, an email <strong>to arrange a slot at weespokehub@shrubcoop.org or call on 0131 358 3637</strong>. We are also open between 10.30am and 5.30pm on Mondays so please swing by!</p>
 
-<p>We are starting to reopen our doors to the public following some new incoming funding and Covid-19 safety adjustments. In September 2020 we were awarded a grant of £2,000 from Cycling UK to offer a <strong>FREE Cycle Repair Scheme</strong> - aiming to help people “get on their bike” again. Check out <a href="https://res.cloudinary.com/shrub-co-op/image/upload/v1602775388/shrubcoop.org/media/Cycle_Repair_Scheme_at_Wee_Spoke_Hub_dnl4v3.pdf">this guide</a> to give you more information about the scheme.</p>
+<p>At the Wee Spoke Hub, we aim to help make cycling affordable, attractive and accessible mode of transport for everyday use. Because of this, we have introduced an Accessible Tiered Pricing System, to allow us to operate in line with our core values.</p>
 
-<p>The Wee Spoke Hub is part funded by Smarter Choices Smarter Places, which is Paths for All’s programme to increase active and sustainable travel throughout Scotland. The programme is grant-funded by Transport Scotland. Furthermore, we have recently been awarded funding from the Gannochy Trust and a Reach Grant from the Bank of Scotland Foundation. This funding is enabling us to restart our much-loved <strong>Fix Your Own Bike</strong> workshops and offer some exciting new cycle-focused activities in the new year - keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!</p>
+<p><strong>Tiered System</strong></p>
+
+<p>Tier 1 - @cost (75% of our published prices) for those unemployed or on less than Scottish Living Wage of £9.50 an hour.</p>
+
+<p>Tier 2 - @ 90% of our published prices for those under Scottish Median Wage of £24897 per annum.</p>
+
+<p>Tier 3 - @ 100% of industry standard with the option to donate more in support of our community and outreach programmes for those earning Scottish Median Wage of £24897 per annum or above.</p>
+
+<p>Tier 4 - If you are in the top 1%, then we’ll charge you a flat £1k for your bike repair or refurbished bike! All profits will go to supporting our outreach work and helping those in need get up and running on 2 wheels!</p>
+
+<hr />
+
+<p>The Wee Spoke Hub is part funded by Smarter Choices Smarter Places, Gannochy Trust and the Bank of Scotland Foundation. The Smarter Choices Smarter Places is a Paths for All’s programme funded by Transport Scotland.</p>
+
+<p>This funding is enabling us to restart our much-loved <strong>Fix Your Own Bike</strong> workshops; volunteer programme and offer some exciting new cycle-focused activities to help folk develop a love of bikes and biking! Keep your eye on this page, our social media and newsletter for information about dates for these activities and workshops coming soon!</p>
 
 <p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png" alt="" /></p>
 
@@ -353,18 +395,14 @@
 
 <h4 id="what-covid-19-safety-precautions-are-we-taking">What Covid-19 safety precautions are we taking?</h4>
 
-<p>Before reopening, we are implementing comprehensive Covid-19 safety assessments and adjustments in the Wee Spoke Hub, including introducing hand sanitizer stations, social distancing measures, a one way system and limiting the number of people in the space at once. Everyone entering the Wee Spoke Hub will be asked to wear a face covering unless exempt, and our mechanic and volunteers will all be wearing face coverings.</p>
-
-<h4 id="do-i-need-to-be-a-shrub-member-to-access-the-wee-spoke-hub-and-cycle-repair-scheme">Do I need to be a SHRUB member to access the Wee Spoke Hub and Cycle Repair Scheme?</h4>
-
-<p>No, anyone will be able to access our workshops and activities once we start them up again. In order to book onto the Cycle Repair Scheme, please follow the steps in the guide above.</p>
+<p>We have implemented comprehensive Covid-19 safety assessments and adjustments in the Wee Spoke Hub, including introducing hand sanitizer stations, social distancing measures, a one way system and limiting the number of people in the space at once. Everyone entering the Wee Spoke Hub will be asked to wear a face covering unless exempt, and our mechanic and volunteers will all be wearing face coverings.</p>
 
 <h4 id="is-the-wee-spoke-hub-accessible">Is the Wee Spoke Hub accessible?</h4>
 
 <p>The Wee Spoke Hub workshop space is on the ground floor. There is a step to the toilets and are therefore not wheelchair accessible.<br />
 All our toilets are gender neutral.</p>
 
-<p>If you have further questions regarding accessibility before a visit, please contact the Wee Spoke Hub on <strong>0131 220 1884</strong>.</p>
+<p>If you have further questions regarding accessibility before a visit, please contact the Wee Spoke Hub on <strong>0131 358 3637</strong>.</p>
 
 <h4 id="is-there-nearby-bicycle-parking">Is there nearby bicycle parking?</h4>
 
@@ -385,6 +423,16 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
 <p><strong>NCP Car Park</strong></p>
 
 <p>2 Viewcraig Gardens, Edinburgh, EH8 9UN</p>
+
+<p>Our Details:</p>
+
+<p>5pm- 8pm, Tuesday and Thursday</p>
+
+<p>13 Guthrie Street, EH1 1JG</p>
+
+<p><a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TC_OzanKrig0YLRSNagwsbAwTzY3trQ0N082ME0xtTKoME9ONDQ2MTROSTKzNDRPNfDiLU9NVSguyM9OVcgoTQIAtBcUJQ&amp;q=wee+spoke+hub&amp;oq=wee+sp&amp;aqs=chrome.1.69i57j46i175i199j0j46i175i199l2j0j69i60l2.4430j1j7&amp;sourceid=chrome&amp;ie=UTF-8#">0131 358 3637</a></p>
+
+<p>Contact our mechanic and coordinator at: weespokehub@shrubcoop.org</p>
 
     </div>
 
@@ -410,71 +458,17 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
           
         
           
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
 
             
 
-              <a href="https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/" title="Blog post: Sharing Skills for Everyday Cycling by Lisa Heywood - click this link to continue reading.">
-  <h3 class="mb-2">Sharing Skills for Everyday Cycling</h3>
+              <a href="https://www.shrubcoop.org/reclaiming-the-emancipatory-power-of-the-bicycle/" title="Blog post: Reclaiming the Emancipatory Power of the Bicycle  by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Reclaiming the Emancipatory Power of the Bicycle </h3>
 </a>
 
-<p class="mb-2">Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday…</p>
+<p class="mb-2">We look into the bicycle as a symbol of women&#39;s liberation</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 10/11/20 &nbsp; &#128100; Lisa Heywood
+  &#128336; 08/07/21 &nbsp; &#128100; Aislinn Redbond
 </p>
 
                 <hr />
@@ -485,19 +479,126 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
           
         
           
+        
+          
 
             
 
-              <a href="https://www.shrubcoop.org/become-a-trustee-of-shrub-coop-1/" title="Blog post: Become a trustee of SHRUB Coop! by SHRUB Coop - click this link to continue reading.">
-  <h3 class="mb-2">Become a trustee of SHRUB Coop!</h3>
+              <a href="https://www.shrubcoop.org/shrub-safer-spaces-policy/" title="Blog post: SHRUB Safer Spaces Policy by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">SHRUB Safer Spaces Policy</h3>
 </a>
 
-<p class="mb-2">We&#39;re recruiting for next year&#39;s trustees. Application deadline 9am, 20th…</p>
+<p class="mb-2">We have this information on our website to ensure our community members feel…</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 05/11/20 &nbsp; &#128100; SHRUB Coop
+  &#128336; 25/06/21 &nbsp; &#128100; SHRUB Coop
 </p>
 
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+              <a href="https://www.shrubcoop.org/wee-spoke-hub-price-list/" title="Blog post: Wee Spoke Hub Price List by Wee Spoke Hub - click this link to continue reading.">
+  <h3 class="mb-2">Wee Spoke Hub Price List</h3>
+</a>
+
+<p class="mb-2">Buy a Bike and Parts Price List</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 21/05/21 &nbsp; &#128100; Wee Spoke Hub
+</p>
+
+                <hr />
+              
+
+            
+
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
 
             
 
@@ -507,18 +608,9 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
 
             
 
-              <a href="https://www.shrubcoop.org/the-wee-spoke-hub-is-starting-the-journey-to-reopening/" title="Blog post: The Wee Spoke Hub is starting the journey to reopening! by Wee Spoke Hub - click this link to continue reading.">
-  <h3 class="mb-2">The Wee Spoke Hub is starting the journey to reopening!</h3>
-</a>
-
-<p class="mb-2">After months of uncertainty about the future of the Wee Spoke Hub we are excited…</p>
-
-<p class="dosis-semi-bold">
-  &#128336; 15/10/20 &nbsp; &#128100; Wee Spoke Hub
-</p>
-
-                <hr />
-              
+          
+        
+          
 
             
 
@@ -638,167 +730,7 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
             
           
             
-              
-                
-              
-            
           
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
             
           
             
@@ -837,56 +769,6 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
               
                 
               
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
             
           
             
@@ -938,6 +820,216 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
             
           
             
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
           
             
           
@@ -1097,6 +1189,26 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
               
                 
               
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
             
           
             
@@ -1194,9 +1306,8 @@ $("#group-synopsis h3").each(function(){
           scrollWheelZoom: false,
           dragging: false,
           touchZoom: false
-        }).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
-
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        }).setView([parseFloat(coords[0]) + 0.0001, coords[1]], 17);
+      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
         id: 'streets-v11',
@@ -1421,5 +1532,29 @@ $("#group-synopsis h3").each(function(){
   </div>
 
 </footer>
-</body>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
 </html>

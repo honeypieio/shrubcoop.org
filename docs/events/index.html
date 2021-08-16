@@ -44,6 +44,34 @@
   };
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -53,7 +81,7 @@
 />
 <meta charset="UTF-8" />
 
-  
+  <meta name="description" content="Come along to one of our upcoming events">
 
 
 <title>Events | SHRUB Coop</title>
@@ -159,9 +187,9 @@
                 
                   <a
                     class="nav-link dropdown-item  text-center px-4 text-dark"
-                    title="Food Sharing Hub"
+                    title="Food Sharing Edinburgh"
                     href="/working-groups/food-sharing-hub/"
-                    >Food Sharing Hub</a>
+                    >Food Sharing Edinburgh</a>
                   
               
                 
@@ -266,7 +294,23 @@
         
       
         
+          
+        
       
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
         
       
         
@@ -940,14 +984,36 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/warm-welcome-for-new-volunteers-5/" title="Event: Warm Welcome for new volunteers - click this link to find out more about this event.">
-  <h3 class="mb-2">Warm Welcome for new volunteers</h3>
+              <a href="https://www.shrubcoop.org/events/make-it-this-summer-with-bridgend-farmhouse/" title="Event: Make It This Summer with Bridgend Farmhouse - click this link to find out more about this event.">
+  <h3 class="mb-2">Make It This Summer with Bridgend Farmhouse</h3>
 </a>
 
-<p class="mb-2">Are you interested in volunteering for SHRUB, become a paying member or simply…</p>
+<p class="mb-2">Use unwanted textiles to create cool festival gear!</p>
 
 <p class="dosis-semi-bold mb-1">
-  &#128336; Wednesday, May 19, 2021
+  &#128336; Tuesday, July 27, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Other (read the description for details)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/zero-waste-hub-working-group-meeting/" title="Event: Zero Waste Hub Working Group Meeting  - click this link to find out more about this event.">
+  <h3 class="mb-2">Zero Waste Hub Working Group Meeting </h3>
+</a>
+
+<p class="mb-2">Come along to our Zero Waste Hub Working Group meeting</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, August 5, 2021
 </p>
 <p class="dosis-semi-bold">
   &#127970; Online (read the description for the link)
@@ -962,14 +1028,124 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/food-collector-induction-2/" title="Event: Food Collector Induction - click this link to find out more about this event.">
-  <h3 class="mb-2">Food Collector Induction</h3>
+              <a href="https://www.shrubcoop.org/events/make-it-this-summer-with-bridgend-farmhouse-part-ii/" title="Event: Make It This Summer with Bridgend Farmhouse - Part II - click this link to find out more about this event.">
+  <h3 class="mb-2">Make It This Summer with Bridgend Farmhouse - Part II</h3>
 </a>
 
-<p class="mb-2">Get involved in local collections</p>
+<p class="mb-2">Use unwanted textiles to create cool festival gear!</p>
 
 <p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, May 20, 2021
+  &#128336; Tuesday, August 10, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Other (read the description for details)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/edinburgh-climate-festival/" title="Event: Edinburgh Climate Festival - click this link to find out more about this event.">
+  <h3 class="mb-2">Edinburgh Climate Festival</h3>
+</a>
+
+<p class="mb-2">Come along to Edinburgh Cimate Festival on Leith Links</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Saturday, August 14, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Other (read the description for details)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/make-it-this-summer-with-bridgend-farmhouse-part-iii/" title="Event: Make It This Summer with Bridgend Farmhouse - Part III - click this link to find out more about this event.">
+  <h3 class="mb-2">Make It This Summer with Bridgend Farmhouse - Part III</h3>
+</a>
+
+<p class="mb-2">Use unwanted textiles to create cool festival gear!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Tuesday, August 24, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Other (read the description for details)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/zero-waste-hub-working-group-meeting-september/" title="Event: Zero Waste Hub Working Group Meeting September - click this link to find out more about this event.">
+  <h3 class="mb-2">Zero Waste Hub Working Group Meeting September</h3>
+</a>
+
+<p class="mb-2">Come along to our Zero Waste Hub Working Group meeting</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, September 2, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Online (read the description for the link)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/make-it-this-summer-with-bridgend-farmhouse-part-iii-copy/" title="Event: Make It This Summer with Bridgend Farmhouse - Part IV - click this link to find out more about this event.">
+  <h3 class="mb-2">Make It This Summer with Bridgend Farmhouse - Part IV</h3>
+</a>
+
+<p class="mb-2">Use unwanted textiles to create cool festival gear!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Tuesday, September 7, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Other (read the description for details)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/zero-waste-hub-working-group-meeting-october/" title="Event: Zero Waste Hub Working Group Meeting October - click this link to find out more about this event.">
+  <h3 class="mb-2">Zero Waste Hub Working Group Meeting October</h3>
+</a>
+
+<p class="mb-2">Come along to our Zero Waste Hub Working Group meeting</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, October 7, 2021
 </p>
 <p class="dosis-semi-bold">
   &#127970; Online (read the description for the link)
@@ -998,6 +1174,184 @@
       
         
           
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/book-sale-1/" title="Event: Book Sale - click this link to find out more about this event.">
+  <h3 class="mb-2">Book Sale</h3>
+</a>
+
+<p class="mb-2">We are having a book sale all day this Saturday!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Saturday, July 24, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Zero Waste Hub, 22 Bread Street, EH3 9AF
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/everyday-cycling-with-shrub-shopping-by-bike/" title="Event: Everyday Cycling with SHRUB: Commuting by bike - click this link to find out more about this event.">
+  <h3 class="mb-2">Everyday Cycling with SHRUB: Commuting by bike</h3>
+</a>
+
+<p class="mb-2">Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday…</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Monday, June 21, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Online (read the description for the link)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/food-collector-induction-2/" title="Event: Food Collector Induction - click this link to find out more about this event.">
+  <h3 class="mb-2">Food Collector Induction</h3>
+</a>
+
+<p class="mb-2">Get involved in local collections</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, June 17, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Online (read the description for the link)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/community-collection-team-meet-up/" title="Event: Community Collection Team Meet Up - click this link to find out more about this event.">
+  <h3 class="mb-2">Community Collection Team Meet Up</h3>
+</a>
+
+<p class="mb-2">This session will bring together a team of people who will work together to run…</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, June 10, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Zero Waste Hub, 22 Bread Street, EH3 9AF
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/craft-and-chat-with-mary-online-5/" title="Event: Craft and Chat with Mary (Online) - click this link to find out more about this event.">
+  <h3 class="mb-2">Craft and Chat with Mary (Online)</h3>
+</a>
+
+<p class="mb-2">Come and work on a crafty project in the company of some lovely folks!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Tuesday, June 8, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Online (read the description for the link)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/food-sharing-working-group-meeting/" title="Event: Food Sharing Working Group Meeting - click this link to find out more about this event.">
+  <h3 class="mb-2">Food Sharing Working Group Meeting</h3>
+</a>
+
+<p class="mb-2">Discuss all things food sharing - volunteer recruitment, drop box ideas,…</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Wednesday, June 2, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Online (read the description for the link)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/warm-welcome-for-new-volunteers-5/" title="Event: Warm Welcome for new volunteers - click this link to find out more about this event.">
+  <h3 class="mb-2">Warm Welcome for new volunteers</h3>
+</a>
+
+<p class="mb-2">Are you interested in volunteering for SHRUB, become a paying member or simply…</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Wednesday, May 19, 2021
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Online (read the description for the link)
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
             <div class="py-3">
               <a href="https://www.shrubcoop.org/events/food-collector-induction-1/" title="Event: Food Collector Induction - click this link to find out more about this event.">
   <h3 class="mb-2">Food Collector Induction</h3>
@@ -1021,28 +1375,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/craft-and-chat-with-mary-online-5/" title="Event: Craft and Chat with Mary (Online) - click this link to find out more about this event.">
-  <h3 class="mb-2">Craft and Chat with Mary (Online)</h3>
-</a>
-
-<p class="mb-2">Come and work on a crafty project in the company of some lovely folks!</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Tuesday, May 11, 2021
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Online (read the description for the link)
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/lunch-time-open-session-1/" title="Event: Chatty Tuesday - click this link to find out more about this event.">
   <h3 class="mb-2">Chatty Tuesday</h3>
 </a>
@@ -1051,50 +1383,6 @@
 
 <p class="dosis-semi-bold mb-1">
   &#128336; Tuesday, May 11, 2021
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Online (read the description for the link)
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/everyday-cycling-with-shrub-shopping-by-bike/" title="Event: Everyday Cycling with SHRUB: Shopping by bike - click this link to find out more about this event.">
-  <h3 class="mb-2">Everyday Cycling with SHRUB: Shopping by bike</h3>
-</a>
-
-<p class="mb-2">Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday…</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Monday, May 10, 2021
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Online (read the description for the link)
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/food-sharing-working-group-meeting/" title="Event: Food Sharing Working Group Meeting - click this link to find out more about this event.">
-  <h3 class="mb-2">Food Sharing Working Group Meeting</h3>
-</a>
-
-<p class="mb-2">Discuss all things food sharing - volunteer recruitment, drop box ideas,…</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Wednesday, May 5, 2021
 </p>
 <p class="dosis-semi-bold">
   &#127970; Online (read the description for the link)
@@ -3287,28 +3575,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-20/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
-  <h3 class="mb-2">Fix your own bike workshop</h3>
-</a>
-
-<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, February 6, 2020
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-16/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
   <h3 class="mb-2">Thursday night sewing sessions</h3>
 </a>
@@ -3320,6 +3586,28 @@
 </p>
 <p class="dosis-semi-bold">
   &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-20/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
+  <h3 class="mb-2">Fix your own bike workshop</h3>
+</a>
+
+<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, February 6, 2020
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
 </p>
 
             </div>
@@ -3485,28 +3773,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-14/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
-  <h3 class="mb-2">Thursday night sewing sessions</h3>
-</a>
-
-<p class="mb-2">An open workshop where you can learn to make and mend or get advice on sewing…</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, January 23, 2020
-</p>
-<p class="dosis-semi-bold">
-  &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-16/" title="Event: CANCELLED - Fix your own bike workshop - click this link to find out more about this event.">
   <h3 class="mb-2">CANCELLED - Fix your own bike workshop</h3>
 </a>
@@ -3518,6 +3784,28 @@
 </p>
 <p class="dosis-semi-bold">
   &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-14/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
+  <h3 class="mb-2">Thursday night sewing sessions</h3>
+</a>
+
+<p class="mb-2">An open workshop where you can learn to make and mend or get advice on sewing…</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, January 23, 2020
+</p>
+<p class="dosis-semi-bold">
+  &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
 </p>
 
             </div>
@@ -3595,28 +3883,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-13/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
-  <h3 class="mb-2">Thursday night sewing sessions</h3>
-</a>
-
-<p class="mb-2">An open workshop where you can learn to make and mend or get advice on sewing…</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, January 16, 2020
-</p>
-<p class="dosis-semi-bold">
-  &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-14/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
   <h3 class="mb-2">Fix your own bike workshop</h3>
 </a>
@@ -3628,6 +3894,28 @@
 </p>
 <p class="dosis-semi-bold">
   &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-13/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
+  <h3 class="mb-2">Thursday night sewing sessions</h3>
+</a>
+
+<p class="mb-2">An open workshop where you can learn to make and mend or get advice on sewing…</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, January 16, 2020
+</p>
+<p class="dosis-semi-bold">
+  &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
 </p>
 
             </div>
@@ -3991,8 +4279,6 @@
         
       
         
-      
-        
           
             <div class="py-3">
               <a href="https://www.shrubcoop.org/events/sustainable-cooking-workshop-1/" title="Event: Sustainable Cooking Workshop - click this link to find out more about this event.">
@@ -4034,6 +4320,8 @@
             <hr />
 
           
+        
+      
         
       
         
@@ -4281,28 +4569,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-7/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
-  <h3 class="mb-2">Fix your own bike workshop</h3>
-</a>
-
-<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, October 24, 2019
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-5/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
   <h3 class="mb-2">Thursday night sewing sessions</h3>
 </a>
@@ -4314,6 +4580,28 @@
 </p>
 <p class="dosis-semi-bold">
   &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-7/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
+  <h3 class="mb-2">Fix your own bike workshop</h3>
+</a>
+
+<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, October 24, 2019
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
 </p>
 
             </div>
@@ -4347,28 +4635,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-5/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
-  <h3 class="mb-2">Fix your own bike workshop</h3>
-</a>
-
-<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, October 17, 2019
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-4/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
   <h3 class="mb-2">Thursday night sewing sessions</h3>
 </a>
@@ -4380,6 +4646,28 @@
 </p>
 <p class="dosis-semi-bold">
   &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-5/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
+  <h3 class="mb-2">Fix your own bike workshop</h3>
+</a>
+
+<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, October 17, 2019
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
 </p>
 
             </div>
@@ -4457,28 +4745,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-3/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
-  <h3 class="mb-2">Fix your own bike workshop</h3>
-</a>
-
-<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, October 3, 2019
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-2/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
   <h3 class="mb-2">Thursday night sewing sessions</h3>
 </a>
@@ -4490,6 +4756,28 @@
 </p>
 <p class="dosis-semi-bold">
   &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-3/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
+  <h3 class="mb-2">Fix your own bike workshop</h3>
+</a>
+
+<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, October 3, 2019
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
 </p>
 
             </div>
@@ -4545,28 +4833,6 @@
         
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-1/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
-  <h3 class="mb-2">Fix your own bike workshop</h3>
-</a>
-
-<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, September 26, 2019
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
-</p>
-
-            </div>
-            <hr />
-
-          
-        
-      
-        
-          
-            <div class="py-3">
               <a href="https://www.shrubcoop.org/events/thursday-night-sewing-sessions-1/" title="Event: Thursday night sewing sessions - click this link to find out more about this event.">
   <h3 class="mb-2">Thursday night sewing sessions</h3>
 </a>
@@ -4578,6 +4844,28 @@
 </p>
 <p class="dosis-semi-bold">
   &#127970; SHRUB Space, 17 Guthrie Street, EH1 1JG
+</p>
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/fix-your-own-bike-workshop-1/" title="Event: Fix your own bike workshop - click this link to find out more about this event.">
+  <h3 class="mb-2">Fix your own bike workshop</h3>
+</a>
+
+<p class="mb-2">Our friendly mechanics will help you get back in the saddle!</p>
+
+<p class="dosis-semi-bold mb-1">
+  &#128336; Thursday, September 26, 2019
+</p>
+<p class="dosis-semi-bold">
+  &#127970; Wee Spoke Hub, 13 Guthrie Street, EH1 1JG
 </p>
 
             </div>
@@ -4913,5 +5201,29 @@
   </div>
 
 </footer>
-</body>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
 </html>

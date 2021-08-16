@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="How do we discern what true ally-ship looks like amidst this bombardment of rainbows from every shop corner?">
+
+
+<title>Don’t Rainbow-Wash Our Parade | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <p class="align-middle mb-0">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </p>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto underline"
+          >
+            <a
+              class="nav-link text-white"
+              title="News - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >News</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+
+      <div class="pt-5">
+        <h2 class="mb-0">Don’t Rainbow-Wash Our Parade</h2>
+
+        <p class="dosis-semi-bold">
+          By Aislinn Redbond, posted 25/06/21
+        </p>
+
+        <p>How do we discern what true ally-ship looks like amidst this bombardment of rainbows from every shop corner?</p>
+      </div>
+
+      <hr />
+
+      <p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1624804213/shrubcoop.org/media/karl-bewick-GCEtuR_jQC8-unsplash_rxwabx.jpg" alt="" /></p>
+
+<p>In many nations across the world, June is marked as Pride Month; a month celebrating LGBTQ+ culture and history. Pride Month commemorates the <a href="https://www.history.com/news/stonewall-riots-timeline">Stonewall uprising in 1969</a> when a number of LGBTQ+ activists protested the police raids on a gay bar in New York. This uprising proved the necessary catalyst for societies to recognise the injustices enacted against this community, and in the years since then, countries such as the UK have made significant progress in promoting equal and more inclusive societies. Of course, <a href="https://www.gaytimes.co.uk/life/lgbtq-rights-may-have-progressed-but-young-people-are-still-struggling/">there is still a long way to go in many aspects</a>, but Pride Month focuses on celebrating the diverse identities of the LGBTQ+ community. Having the freedom to express their authentic selves, it is only in celebrating diversity that we can create a truly inclusive society.</p>
+
+<p>Unfortunately, amidst the celebration of authenticity and liberation, these central messages of Pride have been co-opted by some questionable interests. ‘<a href="https://www.wired.com/story/lgbtq-pride-consumerism/">Rainbow-washing</a>’ is a term used to describe the display of rainbow merchandise and motifs in marketing, a common tactic used throughout June. Similar to greenwashing, rainbow-washing can often be misleading as corporations seek to endear themselves to consumers by aligning themselves with important social justice issues such as LGBTQ+ equality. However, <a href="https://www.mic.com/p/rainbow-washing-is-all-the-rage-among-the-big-corporations-this-month-81192984">the exploitation of social movements can be detrimental to the causes themselves</a>, trivialising the issues and damaging the authenticity of the cause. With that said, it is hard to recognise the line between ally-ship and marketing. For some people, it can be encouraging to see more and more businesses displaying their support for the LGBTQ+ community, and can even help people to recognise safe spaces for social gatherings. Furthermore, the displays of rainbow flags can provide <a href="https://emindful.com/2021/06/07/finding-and-loving-your-authentic-self-during-pride-month/">a meaningful visual testimony</a> to the progress that has been made in creating an inclusive society in the UK. So how do we discern what true ally-ship looks like amidst this bombardment of rainbows from every shop corner?</p>
+
+<p>Where possible, conducting some research about the businesses and corporations we are engaging with can be the best way to ascertain whether a brand really promotes equality in their daily operations, not just in June. While Pride Month may be a discrete period of time in the calendar, its central themes of authenticity, liberation and inclusivity should reverberate year-round. At Shrub Coop, we pride ourselves (pun intended) on our ethos of inclusivity and equality that drives the work we do every day. We have committed ourselves to promoting LGBTQ+ rights, and this can be seen in our shop and through our social media. With gender-neutral clothing displays, changing rooms and bathrooms, we aim to provide a safe space for everyone to be their authentic selves. Shrub Coop is a queer space where members of the LGBTQ+ community can feel safe and respected. We have a <a href="https://www.shrubcoop.org/shrub-safer-spaces-policy/">Safer Spaces Policy</a> in place to help keep any marginalised groups or individuals feeling safe and welcomed in our community. We are a member-led organisation, made up in large part by the LGBTQ+ community and we have been able to grow and thrive as a result of the valuable contribution so many LGBTQ+ members have made to our community.</p>
+
+<p>We also wish to ensure that members of the LGBTQ+ community are given the recognition they deserve as leaders in the charge for change, such as their<a href="https://www.shrubcoop.org/how-the-lgbtq-community-is-shaping-climate-activism/"> involvement in the climate justice movement</a>. We practise inclusion and are always looking for ways to improve and reinforce this commitment. As a result, we hope that when you see our Pride Flag flying year-round, you can know that this is a space in which the LGBTQ+ community can feel at home.</p>
+
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/community-climate-asset-fund/" title="Community Climate Asset Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614100001/shrubcoop.org/media/a5-ccaf-footer-logo_puc4cx.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.cyclinguk.org/ScotCycleRepair" title="Cycling UK" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/sustainability-climate-change/climate-challenge-fund" title="Climate Change Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543906/shrubcoop.org/media/ccf_vnk3zn.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://ec.europa.eu/regional_policy/en/funding/" title="European Regional Development Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.greenerscotland.org" title="Greener Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544126/shrubcoop.org/media/greener-scotland_zada0e.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h5>Follow Us</h5>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h5>Site Links</h5>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">News</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

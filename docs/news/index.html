@@ -44,6 +44,34 @@
   };
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -159,9 +187,9 @@
                 
                   <a
                     class="nav-link dropdown-item  text-center px-4 text-dark"
-                    title="Food Sharing Hub"
+                    title="Food Sharing Edinburgh"
                     href="/working-groups/food-sharing-hub/"
-                    >Food Sharing Hub</a>
+                    >Food Sharing Edinburgh</a>
                   
               
                 
@@ -258,6 +286,186 @@
     <div class="container">
       <div class="pt-5 news-list">
         <h2 class="text-center mb-4">News</h2>
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/there-is-more-than-one-way-to-strut-down-a-catwalk/" title="Blog post: There Is More Than One Way To Strut Down A Catwalk by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">There Is More Than One Way To Strut Down A Catwalk</h3>
+</a>
+
+<p class="mb-2">We look into ableism in the fashion industry and people who are tackling this…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 16/07/21 &nbsp; &#128100; Aislinn Redbond
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/swapshop-open-for-donations/" title="Blog post: Swapshop Open for Donations by Swapshop - click this link to continue reading.">
+  <h3 class="mb-2">Swapshop Open for Donations</h3>
+</a>
+
+<p class="mb-2">We are looking for donations in the Swapshop again, read below to see what we…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 12/07/21 &nbsp; &#128100; Swapshop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/reclaiming-the-emancipatory-power-of-the-bicycle/" title="Blog post: Reclaiming the Emancipatory Power of the Bicycle  by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Reclaiming the Emancipatory Power of the Bicycle </h3>
+</a>
+
+<p class="mb-2">We look into the bicycle as a symbol of women&#39;s liberation</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 08/07/21 &nbsp; &#128100; Aislinn Redbond
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/don-t-rainbow-wash-our-parade/" title="Blog post: Don’t Rainbow-Wash Our Parade by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Don’t Rainbow-Wash Our Parade</h3>
+</a>
+
+<p class="mb-2">How do we discern what true ally-ship looks like amidst this bombardment of…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 25/06/21 &nbsp; &#128100; Aislinn Redbond
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/shrub-safer-spaces-policy/" title="Blog post: SHRUB Safer Spaces Policy by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">SHRUB Safer Spaces Policy</h3>
+</a>
+
+<p class="mb-2">We have this information on our website to ensure our community members feel…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 25/06/21 &nbsp; &#128100; SHRUB Coop
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/how-to-look-after-yourself/" title="Blog post: How To Look After Yourself by Joanne Elston - click this link to continue reading.">
+  <h3 class="mb-2">How To Look After Yourself</h3>
+</a>
+
+<p class="mb-2">Our Swapshop Coordinator needs to get something off her chest</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 08/06/21 &nbsp; &#128100; Joanne Elston
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/making-sustainable-fashion-more-inclusive/" title="Blog post: Making Sustainable Fashion More Inclusive by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Making Sustainable Fashion More Inclusive</h3>
+</a>
+
+<p class="mb-2">Shrub’s Swap Shop has a plus-size range of clothing available, making…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 21/05/21 &nbsp; &#128100; Aislinn Redbond
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/wee-spoke-hub-price-list/" title="Blog post: Wee Spoke Hub Price List by Wee Spoke Hub - click this link to continue reading.">
+  <h3 class="mb-2">Wee Spoke Hub Price List</h3>
+</a>
+
+<p class="mb-2">Buy a Bike and Parts Price List</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 21/05/21 &nbsp; &#128100; Wee Spoke Hub
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/kids-hand-me-downs/" title="Blog post: Kids’ Hand-Me-Downs by Lindsey - click this link to continue reading.">
+  <h3 class="mb-2">Kids’ Hand-Me-Downs</h3>
+</a>
+
+<p class="mb-2">The best kept secret in sustainable fashion?</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 20/05/21 &nbsp; &#128100; Lindsey
+</p>
+
+            </div>
+            <hr />
+          
+
+        
+
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/national-bike-month/" title="Blog post: National Bike Month by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">National Bike Month</h3>
+</a>
+
+<p class="mb-2">Here at Shrub Coop, we love the planet, we love cycling and so we love National…</p>
+
+<p class="dosis-semi-bold">
+  &#128336; 16/05/21 &nbsp; &#128100; Aislinn Redbond
+</p>
+
+            </div>
+            <hr />
+          
+
         
 
           
@@ -568,14 +776,14 @@
 
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/how-the-lgbtq-community-is-shaping-climate-activism-part-ii/" title="Blog post: How the LGBTQ&#43; Community is Shaping Climate Activism: Part II  by Aislinn Redbond - click this link to continue reading.">
-  <h3 class="mb-2">How the LGBTQ&#43; Community is Shaping Climate Activism: Part II </h3>
+              <a href="https://www.shrubcoop.org/meet-our-new-trustees/" title="Blog post: Meet Our New Trustees! by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Meet Our New Trustees!</h3>
 </a>
 
-<p class="mb-2">Introducing...Aletta Brady.</p>
+<p class="mb-2">Everything you need to know</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 23/02/21 &nbsp; &#128100; Aislinn Redbond
+  &#128336; 23/02/21 &nbsp; &#128100; SHRUB Coop
 </p>
 
             </div>
@@ -586,14 +794,14 @@
 
           
             <div class="py-3">
-              <a href="https://www.shrubcoop.org/meet-our-new-trustees/" title="Blog post: Meet Our New Trustees! by SHRUB Coop - click this link to continue reading.">
-  <h3 class="mb-2">Meet Our New Trustees!</h3>
+              <a href="https://www.shrubcoop.org/how-the-lgbtq-community-is-shaping-climate-activism-part-ii/" title="Blog post: How the LGBTQ&#43; Community is Shaping Climate Activism: Part II  by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">How the LGBTQ&#43; Community is Shaping Climate Activism: Part II </h3>
 </a>
 
-<p class="mb-2">Everything you need to know</p>
+<p class="mb-2">Introducing...Aletta Brady.</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 23/02/21 &nbsp; &#128100; SHRUB Coop
+  &#128336; 23/02/21 &nbsp; &#128100; Aislinn Redbond
 </p>
 
             </div>
@@ -1591,5 +1799,29 @@
   </div>
 
 </footer>
-</body>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
 </html>

@@ -44,6 +44,34 @@
   };
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -161,9 +189,9 @@
                 
                   <a
                     class="nav-link dropdown-item  text-center px-4 text-dark"
-                    title="Food Sharing Hub"
+                    title="Food Sharing Edinburgh"
                     href="/working-groups/food-sharing-hub/"
-                    >Food Sharing Hub</a>
+                    >Food Sharing Edinburgh</a>
                   
               
                 
@@ -428,14 +456,14 @@
 
             
 
-              <a href="https://www.shrubcoop.org/swapshop-reopening-tuesday-27th/" title="Blog post: Swapshop Reopening Tuesday 27th by Syd - click this link to continue reading.">
-  <h3 class="mb-2">Swapshop Reopening Tuesday 27th</h3>
+              <a href="https://www.shrubcoop.org/there-is-more-than-one-way-to-strut-down-a-catwalk/" title="Blog post: There Is More Than One Way To Strut Down A Catwalk by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">There Is More Than One Way To Strut Down A Catwalk</h3>
 </a>
 
-<p class="mb-2">Reopening after Lockdown 2</p>
+<p class="mb-2">We look into ableism in the fashion industry and people who are tackling this…</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 25/04/21 &nbsp; &#128100; Syd
+  &#128336; 16/07/21 &nbsp; &#128100; Aislinn Redbond
 </p>
 
                 <hr />
@@ -446,39 +474,17 @@
           
         
           
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
 
             
 
-              <a href="https://www.shrubcoop.org/fabric-awareness-booklet/" title="Blog post: Our Fabric Awareness Booklet is Now Available! by Joanne Elston - click this link to continue reading.">
-  <h3 class="mb-2">Our Fabric Awareness Booklet is Now Available!</h3>
+              <a href="https://www.shrubcoop.org/swapshop-open-for-donations/" title="Blog post: Swapshop Open for Donations by Swapshop - click this link to continue reading.">
+  <h3 class="mb-2">Swapshop Open for Donations</h3>
 </a>
 
-<p class="mb-2">Insider knowledge and thoughts from our Swapshop Coordinator.</p>
+<p class="mb-2">We are looking for donations in the Swapshop again, read below to see what we…</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 12/03/21 &nbsp; &#128100; Joanne Elston
+  &#128336; 12/07/21 &nbsp; &#128100; Swapshop
 </p>
 
 
@@ -494,18 +500,80 @@
 
             
 
-              <a href="https://www.shrubcoop.org/these-storied-pages/" title="Blog post: These Storied Pages by Aislinn Redbond - click this link to continue reading.">
-  <h3 class="mb-2">These Storied Pages</h3>
+              <a href="https://www.shrubcoop.org/shrub-safer-spaces-policy/" title="Blog post: SHRUB Safer Spaces Policy by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">SHRUB Safer Spaces Policy</h3>
 </a>
 
-<p class="mb-2">Celebrating the connection reading offers on World Book Day.</p>
+<p class="mb-2">We have this information on our website to ensure our community members feel…</p>
 
 <p class="dosis-semi-bold">
-  &#128336; 04/03/21 &nbsp; &#128100; Aislinn Redbond
+  &#128336; 25/06/21 &nbsp; &#128100; SHRUB Coop
 </p>
 
                 <hr />
               
+
+            
+
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+
+            
+
+          
+        
+          
+        
+          
+        
+          
 
             
 
@@ -663,18 +731,6 @@
 
           
             
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
               
                 
               
@@ -709,191 +765,9 @@
             
           
             
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
           
             
           
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                
-              
             
           
             
@@ -931,20 +805,6 @@
             
           
             
-              
-                
-              
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
           
             
           
@@ -959,21 +819,17 @@
             
           
             
+          
+            
+          
+            
+          
+            
+          
+            
               
                 
               
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
             
           
             
@@ -995,9 +851,17 @@
             
           
             
-              
-                
-              
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
             
           
             
@@ -1008,12 +872,6 @@
               
             
           
-            
-          
-            
-              
-                
-              
             
           
             
@@ -1055,6 +913,156 @@
             
           
             
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
               
                 
               
@@ -1074,6 +1082,86 @@
               
                 
               
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+              
+                
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
             
           
             
@@ -1213,9 +1301,8 @@ $("#group-synopsis h3").each(function(){
           scrollWheelZoom: false,
           dragging: false,
           touchZoom: false
-        }).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
-
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        }).setView([parseFloat(coords[0]) + 0.0001, coords[1]], 17);
+      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
         id: 'streets-v11',
@@ -1440,5 +1527,29 @@ $("#group-synopsis h3").each(function(){
   </div>
 
 </footer>
-</body>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
 </html>

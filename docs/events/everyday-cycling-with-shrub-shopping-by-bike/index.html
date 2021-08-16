@@ -44,6 +44,34 @@
   };
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -56,7 +84,7 @@
   <meta name="description" content="Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday cycling in Edinburgh">
 
 
-<title>Everyday Cycling with SHRUB: Shopping by bike | SHRUB Coop</title>
+<title>Everyday Cycling with SHRUB: Commuting by bike | SHRUB Coop</title>
 </head>
     <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
   <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
@@ -159,9 +187,9 @@
                 
                   <a
                     class="nav-link dropdown-item  text-center px-4 text-dark"
-                    title="Food Sharing Hub"
+                    title="Food Sharing Edinburgh"
                     href="/working-groups/food-sharing-hub/"
-                    >Food Sharing Hub</a>
+                    >Food Sharing Edinburgh</a>
                   
               
                 
@@ -258,10 +286,10 @@
     <div class="container">
 
       <div class="pt-5">
-        <h2 class="mb-2">Everyday Cycling with SHRUB: Shopping by bike</h2>
+        <h2 class="mb-2">Everyday Cycling with SHRUB: Commuting by bike</h2>
 
         <p class="dosis-semi-bold mb-0">
-          &#128336; Monday, May 10, 2021
+          &#128336; Monday, June 21, 2021
         </p>
         <p class="dosis-semi-bold">
           &#127970; Online (read the description for the link)
@@ -271,15 +299,15 @@
 
       <hr />
 
-      <p>Join us on Zoom to meet some friendly folks and chat about how to shop by bike! You&rsquo;re welcome to ask questions, share your own tips, or to just come along and listen. The session is open to folks who already cycle as well as those who are interested in giving it a go.</p>
+      <p>Join us on Zoom to meet some friendly folks and chat about how to commute by bike! You&rsquo;re welcome to ask questions, share your own tips, or to just come along and listen. The session is open to folks who already cycle as well as those who are interested in giving it a go.</p>
 
 <p>Got a question you&rsquo;d like to ask in advance? Post it in the event discussion and we&rsquo;ll try to make sure it gets answered!</p>
 
 <p>What&rsquo;s everyday cycling? It&rsquo;s our way to describe cycling as a way of getting around, rather than for sport or leisure. Read Lisa&rsquo;s blog to find out more! <a href="https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/" title="https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/">https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/</a></p>
 
-<p>zoom: <a href="https://us02web.zoom.us/j/85189705884?fbclid=IwAR0pvXmTddMSSLM0YP5AeW9XMD1JsXhQK6OoD5K_FUnLuoLOED6ufe9fVXc#success" title="https://us02web.zoom.us/j/85189705884?fbclid=IwAR0pvXmTddMSSLM0YP5AeW9XMD1JsXhQK6OoD5K_FUnLuoLOED6ufe9fVXc#success">https://us02web.zoom.us/j/85189705884?fbclid=IwAR0pvXmTddMSSLM0YP5AeW9XMD1JsXhQK6OoD5K_FUnLuoLOED6ufe9fVXc#success</a></p>
+<p>zoom: <a href="https://us02web.zoom.us/j/85189705884?fbclid=IwAR0q2L1TUIbbnaAp2MkJy8SIFRBO_I8J-6iOtXVGtZOr13wgUWl2-YZeWHs#success" title="https://us02web.zoom.us/j/85189705884?fbclid=IwAR0q2L1TUIbbnaAp2MkJy8SIFRBO_I8J-6iOtXVGtZOr13wgUWl2-YZeWHs#success">https://us02web.zoom.us/j/85189705884?fbclid=IwAR0q2L1TUIbbnaAp2MkJy8SIFRBO_I8J-6iOtXVGtZOr13wgUWl2-YZeWHs#success</a></p>
 
-<p>FB: <a href="https://fb.me/e/kKg03mvb2" title="https://fb.me/e/kKg03mvb2">https://fb.me/e/kKg03mvb2</a></p>
+<p>FB: <a href="https://fb.me/e/4cvHzFBaK" title="https://fb.me/e/4cvHzFBaK">https://fb.me/e/4cvHzFBaK</a></p>
 
     </div>
   </div>
@@ -496,5 +524,29 @@
   </div>
 
 </footer>
-</body>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
 </html>

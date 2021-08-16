@@ -44,6 +44,34 @@
   };
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -54,11 +82,11 @@
 <meta charset="UTF-8" />
 
   
-    <meta name="description" content="scotland&#39;s first rescued food shop!">
+    <meta name="description" content="Scotland&#39;s first rescued food shop!">
   
 
 
-<title>Food Sharing Hub | SHRUB Coop</title>
+<title>Food Sharing Edinburgh | SHRUB Coop</title>
 </head>
     <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
   <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
@@ -161,9 +189,9 @@
                 
                   <a
                     class="nav-link dropdown-item  text-center px-4 text-dark"
-                    title="Food Sharing Hub"
+                    title="Food Sharing Edinburgh"
                     href="/working-groups/food-sharing-hub/"
-                    >Food Sharing Hub</a>
+                    >Food Sharing Edinburgh</a>
                   
               
                 
@@ -269,7 +297,7 @@
         <div class="col-3 mx-auto">
           <div class="container my-auto">
             <img
-              src="https://res.cloudinary.com/shrub-co-op/image/upload/v1568666918/shrubcoop.org/media/Food_Sharing_Hub_WEB_ONLY_ywqahq.png"
+              src="https://res.cloudinary.com/shrub-co-op/image/upload/v1621335519/shrubcoop.org/media/Food_Sharing_Edinburgh_easkx6.png"
               class="working-group-icon d-block mx-auto"
             />
           </div>
@@ -279,7 +307,7 @@
 		    	<div class="container">
 
 		    		<h3 class="dosis-semi-bold" style="color: #137A0A;">
-		    			scotland&#39;s first rescued food shop!
+		    			Scotland&#39;s first rescued food shop!
 		    		</h3>
 
             
@@ -292,7 +320,7 @@
 
             
               <p class="text-white">
-                &#128336; 11am to 2pm Monday to Saturday during Lockdown
+                &#128336; 11am to 6pm Tuesday to Saturday
               </p>
             
 
@@ -333,29 +361,42 @@
     <div id="group-synopsis" class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       
 
-<p>The Food Sharing Hub is <strong>Scotland’s first rescued food shop</strong> and exists to save surplus food from supermarkets from an unnecessary fate in the bin.</p>
+<p>Each year, <strong>one-third</strong> of all food produced for human consumption worldwide goes to waste. This is approximately 1.3 billion tonnes. <em>(FAO, 2019).</em> In central Edinburgh, <strong>27.1 tonnes</strong> of food goes to waste every week - that&rsquo;s the equivalent of roughly <strong>54,000 meals</strong> unnecessarily thrown in the bin <em>(Zero Waste Edinburgh, 2017).</em></p>
+
+<p>The Food Sharing Hub, located in our Zero Waste Hub at 22 Bread Street, is <strong>Scotland’s first rescued food shop</strong> and exists to save surplus food from supermarkets and small businesses around Edinburgh from an unnecessary fate in the bin.</p>
 
 <p>It&rsquo;s open for everyone. Simply come along to the Food Sharing Hub. Fill a basket with food and <strong>pay as you feel</strong>.</p>
 
-<p><strong>We&rsquo;re open 11am to 2pm Monday to Saturday During Lockdown<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1616684115/shrubcoop.org/media/FSE1_egfxry.jpg" alt="A collection of images of food in the hub and the words 'Open Monday to Saturday 11am to 2pm" title="FoodSharingHub" /></strong></p>
+<p><strong>We&rsquo;re open 11am to 6pm Tuesday to Saturday</strong></p>
 
-<h4 id="how-it-works">How it works</h4>
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1565363322/shrubcoop.org/media/189334483.jpg.gallery_coxd2w.jpg" alt="" /></p>
 
-<p>The Food Sharing Hub is working with a host of local supermarkets via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - <strong>fruits and vegetables</strong>, as well as <strong>bread and baked goods</strong> that are still tasty and safe to eat past their &lsquo;best before&rsquo;. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.</p>
+<h3 id="how-it-works">How it works</h3>
 
-<p>We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement]() and their fleet of bikes.  In the evenings [Refugee Community Kitchen Edinburgh]() help to sort and organise the incoming stock - some of which they take to turn into tasty chutneys, jams and preserves</p>
+<p>The Food Sharing Hub is working with a host of local supermarkets and small businesses via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - <strong>fruits and vegetables</strong>, as well as <strong>bread and baked goods</strong> that are still tasty and safe to eat past their &lsquo;best before&rsquo;. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.</p>
 
-<p>Food Sharing Edinburgh also coordinates a network of food collections from small businesses and redistribute it to charities across the cit<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png" alt="a collection of images of people posing with cargo bikes full of rescued food and one dog" title="Cargo Bikers" /></p>
+<p>We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with <a href="https://www.cargobikemovement.com/">Cargo Bike Movement</a> and their fleet of bikes.  In the evenings <a href="https://refugeecommunitykitchen.org/">Refugee Community Kitchen Edinburgh</a> help to sort and organise the incoming stock - some of which they take to turn into tasty chutneys, jams and preserves.</p>
+
+<p>The Food Sharing Edinburgh project also coordinates a network of surplus food collections from small businesses and redistributes it to charities across the city who ensure that it reaches people facing food insecurity and offers them a dignified way of accessing nutritious food, while tackling unnecessary food waste.</p>
+
+<p>The Food Sharing Edinburgh project is generously funded by donations from our community and grant funding from:</p>
+
+<ul>
+<li>Keep Scotland Beautiful&rsquo;s Community Climate Asset Fund</li>
+<li>Corra Foundation&rsquo;s Community Recovery Fund</li>
+<li>Foundation Scotland&rsquo;s Response, Recovery &amp; Resilience Fund</li>
+<li>Scotmid&rsquo;s Community Grant scheme</li>
+<li>Turtleton Charitable Trust</li>
+<li>Inchrye Trust</li>
+</ul>
+
+<p><img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1616683390/shrubcoop.org/media/cargocollage_apqepq.png" alt="a collection of images of people posing with cargo bikes full of rescued food and one dog" title="Cargo Bikers" /></p>
 
 <h3 id="our-impact">Our Impact</h3>
 
-<p>We are currently saving an average of <strong>1.28 tonnes</strong> of food through the food sharing hub per month - that&rsquo;s a saving of <strong>6.06 tonnes</strong> of carbon equivalent.</p>
+<p>We are currently saving an average of <strong>1.63 tonnes</strong> of food through the Food Sharing Hub per month - that&rsquo;s a saving of <strong>7.69 tonnes</strong> of carbon equivalent.</p>
 
-<p><strong>Food Sharing Edinburgh</strong> has saved <strong>48.9 tonnes</strong> of food in total between Dec 2017 and June 2019. Much of this is redistributed from small businesses directly to charity partners.</p>
-
-<p>Each year, <strong>one-third</strong> of all food produced for human consumption worldwide goes to waste. This is approximately 1.3 billion tonnes. <em>(FAO, 2019)</em></p>
-
-<p>In central Edinburgh, <strong>27.1 tonnes</strong> of food goes to waste every week - that&rsquo;s the equivalent of roughly <strong>54,000 meals</strong> unnecessarily thrown in the bin. <em>(Zero Waste Edinburgh, 2017)</em></p>
+<p><strong>Food Sharing Edinburgh</strong> saved <strong>48.9 tonnes</strong> of food in total between Dec 2017 and June 2020. Much of this is redistributed from small businesses directly to charity partners.</p>
 
 <h3 id="frequently-asked-questions">Frequently Asked Questions</h3>
 
@@ -363,9 +404,9 @@
 
 <p>No</p>
 
-<h4 id="is-zero-waste-hub-accessible">Is Zero Waste Hub accessible?</h4>
+<h4 id="is-the-zero-waste-hub-accessible">Is the Zero Waste Hub accessible?</h4>
 
-<p>The Zero Waste Hub is on ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.</p>
+<p>The Zero Waste Hub is on the ground floor with a small step at the entrance. A ramp is available, just ring the bell and one of our volunteers will happily assist you. All the public spaces throughout the building are step free and there is an accessible toilet with hand rails.</p>
 
 <p>There are disabled parking bays on both parallel streets, East Fountainbridge and Grindlay Street.</p>
 
@@ -387,7 +428,7 @@
 
 <h4 id="is-there-parking-nearby">Is there parking nearby?</h4>
 
-<p>There is limited on street parking on Bread Street, but two large car parks a 4 minute walk away;</p>
+<p>Please travel to the Zero Waste Hub by sustainable transport methods (walking, cycling or bus) if you can. There is limited on-street paid parking on Bread Street, but two large car parks a 4 minute walk away:</p>
 
 <p><strong>Thistle Parking</strong></p>
 
@@ -417,25 +458,6 @@
 
         
           
-
-            
-
-              <a href="https://www.shrubcoop.org/swapshop-reopening-tuesday-27th/" title="Blog post: Swapshop Reopening Tuesday 27th by Syd - click this link to continue reading.">
-  <h3 class="mb-2">Swapshop Reopening Tuesday 27th</h3>
-</a>
-
-<p class="mb-2">Reopening after Lockdown 2</p>
-
-<p class="dosis-semi-bold">
-  &#128336; 25/04/21 &nbsp; &#128100; Syd
-</p>
-
-                <hr />
-              
-
-            
-
-          
         
           
         
@@ -468,81 +490,7 @@
           
         
           
-
-            
-
-              <a href="https://www.shrubcoop.org/inspiring-recipes-using-common-foodsharing-finds/" title="Blog post: Inspiring recipes using common Foodsharing finds by Fergus Whyte - click this link to continue reading.">
-  <h3 class="mb-2">Inspiring recipes using common Foodsharing finds</h3>
-</a>
-
-<p class="mb-2">Shaking up your weekly meal planning!</p>
-
-<p class="dosis-semi-bold">
-  &#128336; 23/02/21 &nbsp; &#128100; Fergus Whyte
-</p>
-
-
-            
-
-          
         
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-
-            
-
-              <a href="https://www.shrubcoop.org/funding-update/" title="Blog post: Funding Update by SHRUB Coop - click this link to continue reading.">
-  <h3 class="mb-2">Funding Update</h3>
-</a>
-
-<p class="mb-2">We&#39;ve been awarded a new grant!</p>
-
-<p class="dosis-semi-bold">
-  &#128336; 27/01/21 &nbsp; &#128100; SHRUB Coop
-</p>
-
-                <hr />
-              
-
-            
-
-          
-        
-          
-        
-          
-
-            
-
-          
-        
-          
-
-            
-
-          
-        
-          
-        
-          
-        
-          
-
-            
-
           
         
           
@@ -578,19 +526,9 @@
           
         
           
-
-            
-
-          
         
           
         
-          
-        
-          
-
-            
-
           
         
           
@@ -598,9 +536,7 @@
           
         
           
-
-            
-
+        
           
         
           
@@ -614,9 +550,51 @@
           
         
           
-
-            
-
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -624,6 +602,8 @@
           
         
 
+        
+          <p class="text-muted text-center">No news to show yet - check back soon!</p>
         
 
 
@@ -701,23 +681,11 @@
             
           
             
-              
-                
-              
-            
           
             
           
             
-              
-                
-              
-            
           
-            
-              
-                
-              
             
           
             
@@ -725,10 +693,6 @@
             
           
             
-              
-                
-              
-            
           
             
           
@@ -745,26 +709,14 @@
             
           
             
-              
-                
-              
-            
           
             
           
-            
-              
-                
-              
             
           
             
           
             
-              
-                
-              
-            
           
             
           
@@ -779,17 +731,9 @@
             
           
             
-              
-                
-              
-            
           
             
           
-            
-              
-                
-              
             
           
             
@@ -799,10 +743,6 @@
             
           
             
-              
-                
-              
-            
           
             
           
@@ -821,36 +761,20 @@
             
           
             
-              
-                
-              
-            
           
             
           
             
           
-            
-              
-                
-              
             
           
             
           
             
-              
-                
-              
-            
           
             
           
             
-              
-                
-              
-            
           
             
           
@@ -868,10 +792,6 @@
           
             
           
-            
-              
-                
-              
             
           
             
@@ -921,9 +841,7 @@
             
           
             
-              
-                
-              
+          
             
           
             
@@ -945,9 +863,7 @@
             
           
             
-              
-                
-              
+          
             
           
             
@@ -959,9 +875,7 @@
             
           
             
-              
-                
-              
+          
             
           
             
@@ -979,17 +893,13 @@
             
           
             
-              
-                
-              
+          
             
           
             
           
             
-              
-                
-              
+          
             
           
             
@@ -1045,15 +955,11 @@
             
           
             
-              
-                
-              
+          
             
           
             
-              
-                
-              
+          
             
           
             
@@ -1065,9 +971,7 @@
             
           
             
-              
-                
-              
+          
             
           
             
@@ -1077,40 +981,18 @@
             
           
             
-              
-                
-              
+          
             
           
             
           
             
-              
-                
-                  
-
-                    <a href="https://www.shrubcoop.org/events/food-collector-induction-2/" title="Event: Food Collector Induction - click this link to find out more about this event.">
-  <h3 class="mb-2">Food Collector Induction</h3>
-</a>
-
-<p class="mb-2">Get involved in local collections</p>
-
-<p class="dosis-semi-bold mb-1">
-  &#128336; Thursday, May 20, 2021
-</p>
-<p class="dosis-semi-bold">
-  &#127970; Online (read the description for the link)
-</p>
-
-                      <hr />
-                    
-
-                  
-                
-              
+          
             
           
 
+          
+            <p class="text-muted text-center">No upcoming events right now - check back soon!</p>
           
 
         </div>
@@ -1171,9 +1053,8 @@ $("#group-synopsis h3").each(function(){
           scrollWheelZoom: false,
           dragging: false,
           touchZoom: false
-        }).setView([parseFloat(coords[0]) + 0.0005, coords[1]], 16);
-
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        }).setView([parseFloat(coords[0]) + 0.0001, coords[1]], 17);
+      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
         id: 'streets-v11',
@@ -1398,5 +1279,29 @@ $("#group-synopsis h3").each(function(){
   </div>
 
 </footer>
-</body>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
 </html>

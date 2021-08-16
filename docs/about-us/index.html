@@ -44,6 +44,34 @@
   };
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+    }
+  }
+
+  var askForConsent = function() {
+    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+  }
+</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -159,9 +187,9 @@
                 
                   <a
                     class="nav-link dropdown-item  text-center px-4 text-dark"
-                    title="Food Sharing Hub"
+                    title="Food Sharing Edinburgh"
                     href="/working-groups/food-sharing-hub/"
-                    >Food Sharing Hub</a>
+                    >Food Sharing Edinburgh</a>
                   
               
                 
@@ -293,12 +321,11 @@
 
 <h4 id="our-activities-and-spaces">Our activities and spaces</h4>
 
-<p>SHRUB Coop currently has 3 spaces across Edinburgh, with several key areas of activity.</p>
+<p>SHRUB Coop currently has two spaces across Edinburgh, with several key areas of activity.</p>
 
 <ul>
 <li>At the <strong>Zero Waste Hub</strong> on 22 Bread Street, we have a <strong>Swapshop</strong>, where you can shop for second-hand items, including swapping your old items for tokens to be used in the shop; a <strong>Food Sharing Hub</strong>, where you can buy rescued food on a pay-as-you-feel basis; and a <strong>Cafe</strong> where you can relax and get inspired by the community.</li>
-<li>At the <strong>Wee Spoke Hub</strong> on 13 Guthrie Street, we have our bike workshop, where you can join us for <strong>fix-your-own-bike sessions</strong> on Tuesday and Thursday nights, 5-8pm, or on our volunteer nights on Wednesday evenings, same time. You can also buy bike parts and bikes that our volunteers have fixed up. At the same location you’ll also find one of our offices where our finance and project coordination teams work.</li>
-<li>At <strong>SHRUB Space</strong> on 17 Guthrie Street, you can join us for <strong>Sewing Drop-in sessions</strong> on Thursday evenings 5-7pm, as well as other events and meetings. You’ll also find our second office, where our Zero Waste Edinburgh team works.</li>
+<li>At the <strong>Wee Spoke Hub</strong> on 13 Guthrie Street, we have our bike workshop, where you can join us for <strong>fix-your-own-bike sessions</strong> on Tuesday and Thursday nights, 5-8pm, or on our volunteer nights on Wednesday evenings, same time. You can also buy bike parts and bikes that our volunteers have fixed up. At the same location you’ll also find our offices where our finance and project coordination teams work (currently all office-based work is done remotely due to ongoing COVID-19 restrictions).</li>
 <li>In May and June, you can find us in the university halls and across the city, collecting items that students have left behind as a part of our annual <strong>end-of-term collections</strong>. We give them away at our annual <strong>Freeshop</strong> in September and at other Freeshops throughout the year. Beyond the collections, we also run a variety of other <strong>events and workshops</strong>, including the Zero Waste Festival, upcycling and repair workshops, sustainable fashion meet-ups and much more.</li>
 <li>Finally, our <strong>Food Sharing network</strong> collects food year-round from small and medium businesses such as bakeries and distributes it to anyone who might want to eat it, including charities, the volunteers themselves, and bread boxes in businesses throughout the city.</li>
 </ul>
@@ -343,6 +370,8 @@
 
 <p><strong>Finance &amp; Admin:</strong> We oversee general administration, maintaining financial records and forecasting. The group includes Monitoring and Evaluation, Bookkeeping, Management Accounts, Social Enterprise and Funding subgroups.</p>
 
+<p><strong>Funding:</strong> We research and bid for grant funding to support SHRUB&rsquo;s projects and core operations.</p>
+
 <p><strong>Welfare:</strong> We ensure the wellbeing of members, if you are experiencing any problems within the community, you can get in touch with us at welfare@shrubcoop.org</p>
 
 <p><strong>Governance &amp; Policy:</strong> We take care of the Coop’s decision making processes and other working practices and policies.</p>
@@ -350,6 +379,8 @@
 <p><strong>Human Resources:</strong> We ensure the wellbeing of our staff and offer them feedback and support.</p>
 
 <p><strong>Trustees:</strong> We are the legal guardians of the Coop, responsible for oversight of risk &amp; compliance, human resources, monitoring &amp; evaluation, funding, and member engagement.</p>
+
+<p><strong>Steering Group:</strong> We deal with the day-to-day decision making in the Coop and help to shape project development.</p>
 
 <hr />
 
@@ -581,5 +612,29 @@
   </div>
 
 </footer>
-</body>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-0 px-sm-4">
+                <p>Info about Google Analytics and what data will be collected...</p>
+                <ul>
+                  <li>Something #1</li>
+                  <li>Something #2</li>
+                  <li>Something #3</li>
+                </ul>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
 </html>

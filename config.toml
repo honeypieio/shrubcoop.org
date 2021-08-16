@@ -79,6 +79,7 @@ murakamiMembershipKey = "wza96Xne2EUrmCucaM9qhaMMr"
 murakamiRolesKey = "NAe5nwnJQFzKkGn8nFKYYANxS"
 shrubLegalName = "SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)"
 webmasterEmail = "webmaster@shrubcoop.org"
+googleAnalyticsId = "G-FJ9PL78BGB"
 [params.footer.contact]
 city = "Edinburgh"
 email = "hello@shrubcoop.org"

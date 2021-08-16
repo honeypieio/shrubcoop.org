@@ -8,7 +8,7 @@
 
         <h1 class="dosis-bold text-center mb-4">{{ .Title }}</h1>
 
-        <div id="privacyNotice">aaaaaaaaaaa</div>
+        <div id="privacyNotice"></div>
 
       </div>
 
@@ -17,10 +17,9 @@
 
 <script src="{{ .Site.BaseURL }}js/membership-signup.js"></script>
 <script>
-  var membershipSignUpKey = "{{ .Site.Params.murakamiMembershipSignUpKey }}"
+  var murakamiMembershipKey = "{{ .Site.Params.murakamiMembershipKey }}"
 
   getSignUpInfo(function(signUpInfo){
-    console.log(signUpInfo);
     $("#privacyNotice").html(signUpInfo.privacyNotice.markup);
   })
 </script>
