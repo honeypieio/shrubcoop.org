@@ -56,4 +56,4 @@ The closest car park is a 7 minute walk away;
 
 #### Can I host my own event at SHRUB's venues?
 
-Yes! Our spaces are open for booking - contact [venuhire@shrubcoop.org](mailto:venuhire@shrubcoop.org) for details.
+Not currently. SHRUB spaces are generally compact and we haven't run any in-person events since the COVID-19 restrictions were eased. We are working how we can safely do so. So watch this space! 
