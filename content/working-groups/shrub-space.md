@@ -1,9 +1,9 @@
 +++
-address = "17 Guthrie Street, EH1 1JG"
+address = ""
 alt = "Workshops and Events Button – This is the link to our Workshops and Events area of the site. Click here to read about our Workshop and Event activities."
 colour = "#941A87"
-lat = -3.1884412
-lon = 55.9482262
+lat = ""
+lon = ""
 showOnFrontPage = false
 tagline = "get inspired at our upcycling and repair workshops!"
 times = ""
