@@ -8,6 +8,12 @@ title = "How long did it take you to buy your last pair of pants?"
 type = "news"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1629464577/shrubcoop.org/media/becca-mchaffie-Fzde_6ITjkw-unsplash_bdukxd.jpg)
+
+Photo by [Becca McHaffie](https://unsplash.com/@beccamchaffie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/sustainable-clothes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+***
+
 Like it or not, however much we’re aware of our impact as consumers, it’s almost impossible to live life without occasionally buying something. While we should all now be aware of the [fashion industry’s contribution to climate change](https://www.bbc.co.uk/newsround/58156019), we do still need to wear (and therefore sometimes buy) clothes.
 
 But knowing about the causes of climate change and being aware of our consumer power comes with great responsibility – when you need new pants/socks/trousers/shoes, how do you make the most ethical choice?
