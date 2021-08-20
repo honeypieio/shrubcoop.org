@@ -1,6 +1,6 @@
 +++
 author = "Lindsey, Sustainable Fashion Volunteer"
-date = 2021-09-14T23:00:00Z
+date = 2021-08-18T23:00:00Z
 description = "The curse (or not) of conscious consumerism"
 tags = ["swapshop"]
 title = "How long did it take you to buy your last pair of pants?"
