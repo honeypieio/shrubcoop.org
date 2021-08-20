@@ -69,7 +69,9 @@
   }
 
   var askForConsent = function() {
-    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    if("\/events\/festive-workshop\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
   }
 </script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">

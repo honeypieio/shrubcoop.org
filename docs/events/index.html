@@ -69,7 +69,9 @@
   }
 
   var askForConsent = function() {
-    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    if("\/events\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
   }
 </script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -81,7 +83,7 @@
 />
 <meta charset="UTF-8" />
 
-  
+  <meta name="description" content="Come along to one of our upcoming events">
 
 
 <title>Events | SHRUB Coop</title>

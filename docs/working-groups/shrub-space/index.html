@@ -69,7 +69,9 @@
   }
 
   var askForConsent = function() {
-    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    if("\/working-groups\/shrub-space\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
   }
 </script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -386,7 +388,7 @@ South Bridge routes: 37, 7, 31, 29, 3, 8, 33, 49, 5, 30, 14</p>
 
 <h4 id="can-i-host-my-own-event-at-shrub-s-venues">Can I host my own event at SHRUB&rsquo;s venues?</h4>
 
-<p>Not currently. SHRUB spaces are generally compact and we haven&rsquo;t run any in-person events since the COVID-19 restrictions were eased. We are working how we can safely do so. So watch this space!</p>
+<p>Not currently. SHRUB spaces are generally compact and we haven&rsquo;t run any in-person events since the COVID-19 restrictions were eased. We are working on how we can safely do so. So watch this space!</p>
 
     </div>
 

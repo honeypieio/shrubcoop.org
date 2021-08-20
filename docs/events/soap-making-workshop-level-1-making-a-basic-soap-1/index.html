@@ -69,7 +69,9 @@
   }
 
   var askForConsent = function() {
-    $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    if("\/events\/soap-making-workshop-level-1-making-a-basic-soap-1\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
   }
 </script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
