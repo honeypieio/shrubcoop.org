@@ -5,6 +5,7 @@ colour = "#EF7D00"
 lat = -3.188578
 lon = 55.948208
 showOnFrontPage = true
+showOnAboutPage = true
 tagline = "Fix your bike with us!"
 times = "Repairs and Drop-Ins  Monday 11.00 – 17.30  Tuesday 11.00 – 20.00  Wednesday 11.00 – 17.30  Thursday 11.00 – 20.00  Friday 11.00 – 17.30  DIY Sessions  Tuesday 17.00 – 20.00"
 title = "Wee Spoke Hub"

@@ -5,6 +5,7 @@ colour = "#AB0C17"
 lat = -3.204477
 lon = 55.945693
 showOnFrontPage = true
+showOnAboutPage = true
 tagline = "a one stop shop for sustainable living!"
 times = "11am to 6pm, Tuesdays to Saturdays"
 title = "Zero Waste Hub"

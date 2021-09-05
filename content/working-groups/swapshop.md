@@ -6,6 +6,7 @@ date = "2019-02-12T14:51:46+00:00"
 lat = -3.204477
 lon = 55.945693
 showOnFrontPage = false
+showOnAboutPage = true
 tagline = "swap, buy, donate!"
 times = "11am to 6pm, Tuesdays to Saturdays"
 title = "Swapshop"

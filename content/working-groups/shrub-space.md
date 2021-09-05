@@ -5,6 +5,7 @@ colour = "#941A87"
 lat = ""
 lon = ""
 showOnFrontPage = false
+showOnAboutPage = true
 tagline = "get inspired at our upcycling and repair workshops!"
 times = ""
 title = "SHRUB Space"

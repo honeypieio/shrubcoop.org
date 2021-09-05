@@ -6,6 +6,7 @@ date = "2019-02-12T17:40:58+00:00"
 lat = -3.204477
 lon = 55.945693
 showOnFrontPage = false
+showOnAboutPage = true
 tagline = "Scotland's first rescued food shop!"
 times = "11am to 6pm Tuesday to Saturday"
 title = "Food Sharing Edinburgh"
