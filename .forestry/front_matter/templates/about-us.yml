@@ -23,7 +23,7 @@ fields:
   description: Content that appears in the first (left-hand) column
 - type: textarea
   name: column_two_text_pre_infographic
-  label: Column Two Content (Pre-infographic)
+  label: Column 2 Content (Pre-infographic)
   description: Content that appears in the second (central) column before the infographic
   config:
     wysiwyg: true
