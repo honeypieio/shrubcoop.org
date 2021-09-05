@@ -90,7 +90,7 @@ fields:
   type: boolean
   label: Show On Front Page
   description: Show the working group's icon on the front page (or not)
-- name: show_on_about_page
+- name: showOnAboutPage
   type: boolean
   label: Show On About Page
   hidden: false
