@@ -1,0 +1,40 @@
+---
+label: About Us
+hide_body: true
+fields:
+- type: text
+  name: description
+  label: description
+- type: text
+  name: title
+  label: title
+- type: file
+  name: header_image
+  label: header_image
+- type: textarea
+  name: column_one_text
+  label: column_one_text
+- type: textarea
+  name: column_two_text_pre_infographic
+  label: column_two_text_pre_infographic
+- type: textarea
+  name: column_two_text_post_infographic
+  label: column_two_text_post_infographic
+- type: textarea
+  name: column_three_text
+  label: column_three_text
+- type: textarea
+  name: members_infographic_text
+  label: members_infographic_text
+- type: text
+  name: staff_infographic_text
+  label: staff_infographic_text
+- type: textarea
+  name: steering_group_infographic_text
+  label: steering_group_infographic_text
+- type: textarea
+  name: trustees_infographic_text
+  label: trustees_infographic_text
+- type: text
+  name: type
+  label: type
