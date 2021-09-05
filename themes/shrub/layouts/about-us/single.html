@@ -23,25 +23,24 @@
 
       {{ .Params.column_two_text_post_infographic | markdownify }}
 
-
-      {{ range (where .Site.Pages "Type" "working-groups") }}
-        {{ if eq .Params.showOnAboutPage true}}
-          <a
-            class="working_group_link p-1"
-            href="{{.Site.BaseURL}}{{.URL}}"
-            title="{{ .Params.alt }}"
-          >
-            <div class="d-inline p-2 mb-4">
+      <div class="d-flex justify-content-between flex-wrap">
+        {{ range (where .Site.Pages "Type" "working-groups") }}
+          {{ if eq .Params.showOnAboutPage true}}
+            <a
+              class="w-50 p-2 d-flex justify-content-center"
+              href="{{.Site.BaseURL}}{{.URL}}"
+              title="{{ .Params.alt }}"
+            >
               <img alt="{{ .Name }} logo"
                 src="{{ .Params.working_group_logo_dark}}"
                 id="{{urlize .Title }}"
-                style="width: 8rem;"
-                class="working-group-icon mx-auto"
+                class="mx-auto"
+                style="width: 65%;"
               />
-            </div>
-          </a>
+            </a>
+          {{ end }}
         {{ end }}
-      {{ end }}
+      </div>
 
     </div>
   </div>
