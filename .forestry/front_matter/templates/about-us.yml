@@ -4,37 +4,85 @@ hide_body: true
 fields:
 - type: text
   name: description
-  label: description
+  label: Page Description
+  description: A short description of the page that will appear in Google search results
 - type: text
   name: title
-  label: title
+  label: Title
 - type: file
   name: header_image
-  label: header_image
+  label: Main Header Image
+  description: The main image that appears at the top of the central column
 - type: textarea
   name: column_one_text
-  label: column_one_text
+  label: Column 1 Content
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  description: Content that appears in the first (left-hand) column
 - type: textarea
   name: column_two_text_pre_infographic
-  label: column_two_text_pre_infographic
+  label: Column Two Content (Pre-infographic)
+  description: Content that appears in the second (central) column before the infographic
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: textarea
   name: column_two_text_post_infographic
-  label: column_two_text_post_infographic
+  label: Column 2 Content (Post-infographic)
+  description: Content that appears in the second (central) column after the infographic
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: textarea
   name: column_three_text
-  label: column_three_text
+  label: Column 3 Content
+  description: Content that appears in the third (right-hand) column
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: textarea
   name: members_infographic_text
-  label: members_infographic_text
-- type: text
-  name: staff_infographic_text
-  label: staff_infographic_text
+  label: 'Infographic Text: Members'
+  description: Text that appears in the "Members" pop-up in the infographic
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- name: staff_infographic_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  description: Text that appears in the "Staff" pop-up in the infographic
+  label: 'Infographic Text: Staff'
 - type: textarea
   name: steering_group_infographic_text
-  label: steering_group_infographic_text
+  label: 'Info Graphic Text: The Steering Group'
+  description: Text that appears in the "The Steering Group" pop-up in the infographic
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: textarea
   name: trustees_infographic_text
-  label: trustees_infographic_text
+  label: 'Infographic Text: Trustees'
+  description: Text that appears in the "Trustees" pop-up in the infographic
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: text
   name: type
   label: type
+  hidden: true
+  default: about-us
+  config:
+    required: true
