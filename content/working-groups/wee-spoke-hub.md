@@ -4,13 +4,15 @@ alt = "Wee Spoke Hub Button – This is the link to the Wee Spoke Hub area of th
 colour = "#EF7D00"
 lat = -3.188578
 lon = 55.948208
-showOnFrontPage = true
 showOnAboutPage = true
+showOnFrontPage = true
+show_on_about_page = false
 tagline = "Fix your bike with us!"
 times = "Repairs and Drop-Ins  Monday 11.00 – 17.30  Tuesday 11.00 – 20.00  Wednesday 11.00 – 17.30  Thursday 11.00 – 20.00  Friday 11.00 – 17.30  DIY Sessions  Tuesday 17.00 – 20.00"
 title = "Wee Spoke Hub"
 weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
+working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1630871641/shrubcoop.org/media/SHRUB_WSH_emirmt.png"
 
 +++
 **We are an Edinburgh-based bike shop with a difference!**
