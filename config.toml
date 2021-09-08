@@ -111,10 +111,6 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubco
 link = "https://www.cyclinguk.org/ScotCycleRepair"
 name = "Cycling UK"
 [[params.funders]]
-image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607544028/shrubcoop.org/media/eusf_je16np.jpg"
-link = "https://ec.europa.eu/regional_policy/en/funding/"
-name = "European Regional Development Fund"
-[[params.funders]]
 image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg"
 link = ""
 name = "Climate Challenge Fund"
