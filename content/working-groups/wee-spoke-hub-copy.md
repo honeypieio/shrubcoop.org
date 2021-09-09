@@ -5,15 +5,17 @@ colour = "#EF7D00"
 draft = true
 lat = -3.188578
 lon = 55.948208
+showOnAboutPage = false
 showOnFrontPage = true
 tagline = "Bike Repairs and Bike Sales"
 times = "By appointment"
 title = "Wee Spoke Hub II"
 weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
+working_group_logo_dark = ""
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1628352275/shrubcoop.org/media/1_rokkmz.png)DIY bike repair workshops // Build-a-bike sessions // Bike repairs // Bike parts for sale // Second-hand bikes for sale // Upcycled bikes for sale // Led bike rides // Inclusive bike repair space.
+##### ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1628352275/shrubcoop.org/media/1_rokkmz.png)![](https://res.cloudinary.com/shrub-co-op/image/upload/v1628352309/shrubcoop.org/media/2_yydvs0.png)DIY bike repair workshops // Build-a-bike sessions // Bike repairs // Bike parts for sale // Second-hand bikes for sale // Upcycled bikes for sale // Led bike rides // Inclusive bike repair space.
 
 The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.
 
