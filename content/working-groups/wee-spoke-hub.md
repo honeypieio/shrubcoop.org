@@ -117,9 +117,9 @@ The closest car park is a 7 minute walk away;
 
 2 Viewcraig Gardens, Edinburgh, EH8 9UN
 
-Our Details:
+**Our Details:**
 
-5pm- 8pm, Tuesday and Thursday
+11am-5.30pm Monday - Friday
 
 13 Guthrie Street, EH1 1JG
 
