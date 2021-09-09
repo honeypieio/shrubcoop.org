@@ -56,7 +56,7 @@ Tuesday 17.00 – 20.00
 
 The Wee Spoke Hub is a welcoming workshop space where tools and expertise are provided by our volunteers and mechanic to help you learn the skills to take care of your bike.
 
-We have a range of refurbished bikes and second hand [parts for sale](https://www.shrubcoop.org/wee-spoke-hub-price-list/) and we are currently available for bike repair bookings so drop our wonderful Mechanic, Anna, an email **to arrange a slot at weespokehub@shrubcoop.org or call on 0131 358 3637**.
+We have a range of refurbished bikes and second hand [parts for sale](https://www.shrubcoop.org/wee-spoke-hub-price-list/) and we are currently available for bike repair bookings so drop our wonderful Mechanic, Anna, an email **to arrange a slot at weespokehub@shrubcoop.org or call on** [0131 220 1884](https://www.google.com/search?q=wee+spoke+hub&authuser=1&source=hp&ei=C8E5YdCzGaLDlwSnvJPIBw&iflsig=ALs-wAMAAAAAYTnPGx1vDjOAsXtD5bgy9r407GBRj0dJ&oq=wee+spoke+hub&gs_lcp=Cgdnd3Mtd2l6EAMyDgguEIAEEMcBEK8BEJMCOgsIABCABBCxAxCDAToFCAAQgAQ6CAgAELEDEIMBOgUILhCABDoLCC4QgAQQxwEQ0QM6CwguEIAEEMcBEKMCOg4ILhCABBCxAxDHARCjAjoOCC4QgAQQsQMQxwEQ0QM6CwguEIAEEMcBEK8BOggIABCABBCxAzoLCC4QsQMQxwEQrwE6CAguEIAEELEDOg0ILhCABBDHARCvARAKOgcIABCABBAKOggIABCABBDJAzoICAAQFhAKEB46BggAEBYQHlDuDFjjF2DzGWgAcAB4AIABeYgB-giSAQQxMS4ymAEAoAEB&sclient=gws-wiz&ved=0ahUKEwiQ5YGPuPHyAhWi4YUKHSfeBHkQ4dUDCAk&uact=5#).
 
 At the Wee Spoke Hub, we aim to help make cycling an affordable, attractive and accessible mode of transport for everyday use. Because of this, we have introduced an Accessible Tiered Pricing System, to allow us to operate in line with our core values.
 
@@ -95,7 +95,7 @@ We have implemented comprehensive Covid-19 safety assessments and adjustments in
 The Wee Spoke Hub workshop space is on the ground floor. There is a step to the toilets and are therefore not wheelchair accessible.  
 All our toilets are gender-neutral.
 
-If you have further questions regarding accessibility before a visit, please contact the Wee Spoke Hub on **0131 358 3637**.
+If you have further questions regarding accessibility before a visit, please contact the Wee Spoke Hub on [0131 220 1884](https://www.google.com/search?q=wee+spoke+hub&authuser=1&source=hp&ei=C8E5YdCzGaLDlwSnvJPIBw&iflsig=ALs-wAMAAAAAYTnPGx1vDjOAsXtD5bgy9r407GBRj0dJ&oq=wee+spoke+hub&gs_lcp=Cgdnd3Mtd2l6EAMyDgguEIAEEMcBEK8BEJMCOgsIABCABBCxAxCDAToFCAAQgAQ6CAgAELEDEIMBOgUILhCABDoLCC4QgAQQxwEQ0QM6CwguEIAEEMcBEKMCOg4ILhCABBCxAxDHARCjAjoOCC4QgAQQsQMQxwEQ0QM6CwguEIAEEMcBEK8BOggIABCABBCxAzoLCC4QsQMQxwEQrwE6CAguEIAEELEDOg0ILhCABBDHARCvARAKOgcIABCABBAKOggIABCABBDJAzoICAAQFhAKEB46BggAEBYQHlDuDFjjF2DzGWgAcAB4AIABeYgB-giSAQQxMS4ymAEAoAEB&sclient=gws-wiz&ved=0ahUKEwiQ5YGPuPHyAhWi4YUKHSfeBHkQ4dUDCAk&uact=5#).
 
 #### Is there nearby bicycle parking?
 
@@ -123,6 +123,6 @@ Our Details:
 
 13 Guthrie Street, EH1 1JG
 
-[0131 358 3637](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TC_OzanKrig0YLRSNagwsbAwTzY3trQ0N082ME0xtTKoME9ONDQ2MTROSTKzNDRPNfDiLU9NVSguyM9OVcgoTQIAtBcUJQ&q=wee+spoke+hub&oq=wee+sp&aqs=chrome.1.69i57j46i175i199j0j46i175i199l2j0j69i60l2.4430j1j7&sourceid=chrome&ie=UTF-8#)
+[0131 220 1884](https://www.google.com/search?q=wee+spoke+hub&authuser=1&source=hp&ei=C8E5YdCzGaLDlwSnvJPIBw&iflsig=ALs-wAMAAAAAYTnPGx1vDjOAsXtD5bgy9r407GBRj0dJ&oq=wee+spoke+hub&gs_lcp=Cgdnd3Mtd2l6EAMyDgguEIAEEMcBEK8BEJMCOgsIABCABBCxAxCDAToFCAAQgAQ6CAgAELEDEIMBOgUILhCABDoLCC4QgAQQxwEQ0QM6CwguEIAEEMcBEKMCOg4ILhCABBCxAxDHARCjAjoOCC4QgAQQsQMQxwEQ0QM6CwguEIAEEMcBEK8BOggIABCABBCxAzoLCC4QsQMQxwEQrwE6CAguEIAEELEDOg0ILhCABBDHARCvARAKOgcIABCABBAKOggIABCABBDJAzoICAAQFhAKEB46BggAEBYQHlDuDFjjF2DzGWgAcAB4AIABeYgB-giSAQQxMS4ymAEAoAEB&sclient=gws-wiz&ved=0ahUKEwiQ5YGPuPHyAhWi4YUKHSfeBHkQ4dUDCAk&uact=5#)
 
 Contact our mechanic and coordinator at: weespokehub@shrubcoop.org
