@@ -119,7 +119,9 @@ The closest car park is a 7 minute walk away;
 
 **Our Details:**
 
-11am-5.30pm Monday - Friday
+11am-5.30pm Monday, Wednesday, Friday
+
+11am - 8pm Tuesday and Thursday
 
 13 Guthrie Street, EH1 1JG
 
