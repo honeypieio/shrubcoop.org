@@ -5,7 +5,7 @@ publishDir = "docs"
 theme = "shrub"
 title = "SHRUB Coop"
 [[menu.main]]
-name = "Zero Waste Edinburgh"
+name = "Zero Waste Edinburgh Map"
 parent = "about-us"
 pre = "Click this link to find out about zero waste projects in and around Edinburgh."
 url = "/zero-waste-edinburgh/"
