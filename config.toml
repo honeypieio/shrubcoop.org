@@ -91,10 +91,6 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubco
 link = "https://www.postcodetrust.org.uk/"
 name = "People's Postcode Trust"
 [[params.funders]]
-image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1614100001/shrubcoop.org/media/a5-ccaf-footer-logo_puc4cx.jpg"
-link = "https://www.keepscotlandbeautiful.org/climate-change/community-climate-asset-fund/"
-name = "Community Climate Asset Fund"
-[[params.funders]]
 image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png"
 link = "https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland"
 name = "National Lottery Awards for All Scotland"
@@ -111,12 +107,8 @@ image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubco
 link = "https://www.pathsforall.org.uk/smarter-choices-smarter-places-1"
 name = "Smarter Choices Smarter Places"
 [[params.funders]]
-image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1607543729/shrubcoop.org/media/we-are-cycling_jvv3wm.jpg"
-link = "https://www.cyclinguk.org/ScotCycleRepair"
-name = "Cycling UK"
-[[params.funders]]
 image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg"
-link = ""
+link = "https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/"
 name = "Climate Challenge Fund"
 [taxonomies]
 category = ["swapshop", "zero-waste-hub", "food-sharing", "wee-spoke-hub", "workshops-and-events"]
