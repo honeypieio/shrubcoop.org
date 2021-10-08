@@ -2,7 +2,6 @@
 author = "Sydney"
 date = 2021-10-07T23:00:00Z
 description = "Food Sharing Logistics Role"
-draft = true
 tags = ["food-sharing", "swapshop"]
 title = "Vacancy - Food Sharing"
 type = "news"
