@@ -1,14 +1,14 @@
 <div class="row text-center mt-0">
   <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
     <div class="row">
-      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
-	{{ range .Site.Params.funders }}
-	      <div class="my-3">
-		  <a href="{{ .link }}" title="{{ .name }}" target="_blank">
-		  	<img src="{{.image}}" class="funder-image">
-		  </a>
-	      </div>
-	{{ end }}
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap align-items-center justify-content-center">
+        {{ range .Site.Params.funders }}
+          <div class="my-3">
+            <a href="{{ .link }}" title="{{ .name }}" target="_blank">
+              <img src="{{.image}}" class="funder-image my-auto">
+            </a>
+          </div>
+        {{ end }}
       </div>
     </div>
   </div>
