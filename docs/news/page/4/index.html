@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ9PL78BGB"></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJ9PL78BGB');
+    }
+  }
+
+  var askForConsent = function() {
+    if("\/news\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Stay up to date with our latest news">
+
+
+<title>News | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <h1 class="align-middle mb-0 mt-1">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </h1>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh Map - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh Map</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Our Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >Our Blog</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+      <div class="pt-5 news-list">
+        <h2 class="text-center mb-4">News</h2>
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/climate-change-is-not-an-equal-opportunities-destroyer/" tabindex="0" title="Blog post: Climate Change is not an Equal Opportunities Destroyer by  Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Climate Change is not an Equal Opportunities Destroyer</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Looking at &#39;feminist solutions&#39; to the climate crisis on International Women&#39;s…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 08/03/21">&#128336; 08/03/21</span> &nbsp; <span title="Written by  Aislinn Redbond">&#128100;  Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/climate-change-is-not-an-equal-opportunities-destroyer/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615233266\/shrubcoop.org\/media\/ais11_nkxzqy.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eWomen are described as being more in touch with nature, made explicit in \x3ca href=\x22https:\/\/images.fineartamerica.com\/images\/artworkimages\/mediumlarge\/2\/mother-nature-bill-bell.jpg\x22\x3ethis depiction\x3c\/a\x3e of ‘Mother Nature’.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eThe intersection of feminism and climate justice is talked about a lot in the media, but the promotion of ‘feminist solutions’ to the climate crisis undermines the obstacles that women are faced with every day.\x3c\/p\x3e\n\n\x3cp\x3eInternational Women’s Day rolls around once more as society takes stock of how much (or little) progress has been made in promoting gender equality and dismantling the patriarchy. In recent years, more attention has shifted to the role of women in fighting against climate change, highlighting the need to promote female empowerment as a means to combat the crisis. No doubt, it is a feminist issue given that \x3ca href=\x22https:\/\/www.bbc.co.uk\/news\/science-environment-43294221\x22\x3ewomen are more likely to suffer the effects of climate change. \x3c\/a\x3eHowever, addressing gender equality in this way can actually slow down progress because it pushes women into a role of climate activism instead of focusing on removing the barriers that prevent women from achieving freedom and independence in their lives.\x3c\/p\x3e\n\n\x3cp\x3eWorldwide, women have been identified as among the most vulnerable to climate change. They are \x3ca href=\x22https:\/\/www.oxfam.org\/en\/why-majority-worlds-poor-are-women\x22\x3emore likely to live in poverty than men\x3c\/a\x3e which makes it harder for them to adapt to the impacts of climate change, and they have little to no political power to voice their issues. In many societies, women’s work is reliant upon stable environmental conditions : gathering firewood, collecting water and \x3ca href=\x22http:\/\/www.fao.org\/gender\/background\/en\/\x22\x3eproducing food\x3c\/a\x3e often falls to women. As weather patterns become more unreliable and erratic, women are forced to walk further distances to reach water, and they may be unable to grow food for their families. In climate-affected areas, men often migrate to urban areas in order to gain employment which means that women must carry out care duties \x3cem\x3eas well as\x3c\/em\x3e providing for the immediate needs of the family. Unpaid care work has already been identified as \x3ca href=\x22https:\/\/www.theguardian.com\/global-development\/2013\/oct\/07\/woman-job-unpaid-carers\x22\x3eone of the obstacles to gender equality,\x3c\/a\x3e as it has profound impacts on girls from a young age - household chores can take precedence over attending school, and women with excessive caregiving duties cannot work in the formal labour market. Women are often unable to flee these climate-affected areas due to their lack of independent financial resources, and even when they do escape droughts or floods, they are often at risk of violence along the journey and in their new environment. Many women are trapped in a vicious cycle whereby they have few options to escape from poverty, and it is this poverty that makes them more susceptible to the effects of the climate crisis.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615233245\/shrubcoop.org\/media\/ais1_ueit4a.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eGraph showing the amount of time men and women spend on unpaid care work.\x3c\/p\x3e\n\n\x3cp\x3eSource: \x3ca href=\x22https:\/\/oecd-development-matters.org\/2019\/03\/18\/why-you-should-care-about-unpaid-care-work\/\x22 title=\x22https:\/\/oecd-development-matters.org\/2019\/03\/18\/why-you-should-care-about-unpaid-care-work\/\x22\x3ehttps:\/\/oecd-development-matters.org\/2019\/03\/18\/why-you-should-care-about-unpaid-care-work\/\x3c\/a\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eInterestingly, women and the environment have been intertwined for a long period of time. From early on, the feminisation of nature (‘Mother Earth’, the environment as the life support of humanity) established the environment as a site for exploitation, following the same pattern of oppression carried out against women. An elite minority have profited from the environment just as they did from the unpaid and undervalued work of women, connecting the experiences of women and nature together. As gender equality has become an important topic in environmental agreements, so too has the protection of nature and its resources. However, conservation schemes and \x3ca href=\x22https:\/\/www.greenpeace.org.uk\/news\/the-biggest-problem-with-carbon-offsetting-is-that-it-doesnt-really-work\/\x22\x3ecarbon offsetting\x3c\/a\x3e forestry have mostly received attention because they allow the global elites who are most responsible for climate change to shift the responsibility of climate action elsewhere. Women’s rights are being treated in the same way to an extent. Across the media and in policy documents, the actions of women combatting climate change have been praised, which is of course a huge milestone for the feminist cause. However, this can be easily manipulated to assign women a larger responsibility to take climate action, valuing their equality only as a mechanism to reduce the effects of climate change, rather than genuinely encouraging their liberation.\x3c\/p\x3e\n\n\x3cp\x3eThe promotion of ‘feminist solutions’ to the climate crisis ignores the different contextual challenges women face every day. It assumes that all women are in a position to respond to climate change and ignores the reality that many women do not have the time, energy, resources or skills to engage in the climate debate. Framing women as agents against climate change can, in many societies, only add another care duty to their already long list of responsibilities. If patriarchal societies have assigned women the role of caregivers, giving them another duty to caring for the environment is not liberating - it is a repeats of the patterns of the patriarchy. Feminism is an intersectional issue, linking not just with the climate but also with issues of class and race, and so the promotion of gender equality must focus on removing these barriers to allow women to pursue their potential. This is not to say that women should not engage and fight against climate change - of course they must be involved, just as any individual across every society and border deserves and needs to be included in the crisis. Climate agreements need to include every perspective, therefore women’s knowledge and experiences are integral to the development of fair climate strategies. However, the promotion of gender equality should be a goal in and of itself, valuing women’s rights because they are just as any individual across every society and border deserves and needs to be included in the crisis. Climate agreements need to include every perspective, therefore women’s knowledge and experiences are integral to the development of fair climate strategies. However, the promotion of gender equality should be a goal in and of itself, valuing women’s rights because they are \x3cem\x3ehuman\x3c\/em\x3e rights, not merely using women as a policy tool.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615232874\/shrubcoop.org\/media\/ais3_born9k.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eUN Sustainable Development Goals include Gender Equality as Goal Number Five.\x3c\/p\x3e\n\n\x3cp\x3eSource: \x3ca href=\x22https:\/\/www.undp.org\/content\/undp\/en\/home\/sustainable-development-goals.html\x22 title=\x22https:\/\/www.undp.org\/content\/undp\/en\/home\/sustainable-development-goals.html\x22\x3ehttps:\/\/www.undp.org\/content\/undp\/en\/home\/sustainable-development-goals.html\x3c\/a\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eThis International Women’s Day, it is the responsibility of every individual to examine where their feminist convictions stem from (this includes everyone, not just women). There are millions of women doing incredible things for our planet which only deserves even more praise in light of the structural restraints and hurdles they face on a daily basis. Women have the ability to transform policies and create lasting change in their societies, and their potential should not be dismissed. However, we must create a society where women are free to pursue their own development, creating the conditions for self-realisation that encourages their contributions without burdening them with additional responsibilities. No doubt, we must all come together in this climate crisis, but to do so,we must dismantle the patriarchy in order to break the many cycles that have led us to this crisis in the first place.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615233637\/shrubcoop.org\/media\/ais4_d8rqj0.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eSome of the women paving the way for climate action.\x3c\/p\x3e\n\n\x3cp\x3eFurther reading about these women available here. \x3ca href=\x22https:\/\/yourstory.com\/herstory\/2019\/09\/women-activists-climate-change\x22 title=\x22https:\/\/yourstory.com\/herstory\/2019\/09\/women-activists-climate-change\x22\x3ehttps:\/\/yourstory.com\/herstory\/2019\/09\/women-activists-climate-change\x3c\/a\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/climate-change-is-not-an-equal-opportunities-destroyer\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Climate Change is not an Equal Opportunities Destroyer cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/these-storied-pages/" tabindex="0" title="Blog post: These Storied Pages by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">These Storied Pages</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Celebrating the connection reading offers on World Book Day.</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 04/03/21">&#128336; 04/03/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/these-storied-pages/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614854545\/shrubcoop.org\/media\/IMG_0749_1_tdffxm.jpg\x22 alt=\x22\x22 \/\x3e\x3cbr \/\x3e\nPre-loved books on display at Shrub Coop.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eReading is one of those experiences that is both highly personal and yet also a source of community. Reading can challenge our perspectives and drive our imaginations. It can provide us with an escape or ground us in reality. Entire worlds are opened through the words of a page, and with these worlds, new conversations. So many of us connect with others through reading, explicitly or subconsciously. For those involved in book clubs, we meet to relay our thoughts and opinions on the material we have read. In a more informal manner, we may encounter a new favourite book that compels us to share it with everyone we love, binding us to both the author and those we pass the book on to. However, our experiences of reading can feed into our lives in other ways too. We might not even notice it happening, but when we spend time with an author and their characters or opinions, we can adopt their expressions or find ourselves challenged to re-evaluate our own positions on topics. In fact, reading can be an important way to pursue personal growth, maybe encouraging us to confront uncomfortable truths or deepening our understanding of the world around us.  Books have the potential to open up so many new possibilities to us, yet we rarely pause to consider their impact on our lives.\x3c\/p\x3e\n\n\x3cp\x3eFor many people, the joy of discussing a book we have loved is a wonderful source of connection with others. We can build trust in others through this act, as the process of revealing our insights into a book can often teach us about our own worldview. When we engage with others like this, we create a system of reciprocity, sharing book recommendations and maybe stepping outside of our comfort zone to understand the passions of others. Looking at Facebook or \x3ca href=\x22https:\/\/www.goodreads.com\x22\x3eGoodreads\x3c\/a\x3e, there are countless pages dedicated to connecting fans of certain genres or authors, showing how important this sense of community around books is.\x3c\/p\x3e\n\n\x3cp\x3eIn these times of disconnection and isolation, reading has become even more important in our lives than before, reflected in the \x3ca href=\x22https:\/\/www.theguardian.com\/books\/2021\/jan\/25\/bookshops-defy-pandemic-to-record-highest-sales-for-eight-years\x22\x3eincrease of book sales\x3c\/a\x3e during the pandemic. People have gotten creative in their reading habits in order to reinforce that sense of community that reading provides. Free libraries began to pop up across cities, such as the one established by Greening Our Street in The Meadows, where people can take a book or leave one for others to enjoy. There are many tales of friends creating their own long-distance book clubs, posting books to each other to bring a bit of relief in these challenging times. At Shrub Coop, we are hoping to adopt some of these practices into our mission, and our Zero Waste Hub volunteers have been busy categorising our books by genre and putting them into little bundles of five for you. If you are interested in this, email Alun at \x3ca href=\x22mailto:alun.evans@shrubcoop.org\x22\x3ealun.evans@shrubcoop.org\x3c\/a\x3ewith a sentence about the kind of books you enjoy, and together you can arrange a pick up time between 3pm and 6pm Tuesdays-Saturdays. These books are free and will be great for your own lockdown entertainment or as a gift to drop off to someone who is shielding!\x3c\/p\x3e\n\n\x3cp\x3eThe way we consume books can also be a source of interaction with others in and of itself. For example, when we borrow or lend a book to someone else, we receive insight into their world. Do they write notes in the margins? Do they use bookmarks or fold down the pages? Are there any inscriptions from a loved one on the cover? Even the knowledge that someone has loved this book before you can create a bond. For those who are looking for more environmentally friendly ways to consume books, this experience is a regular and wonderful occurrence. The rise of secondhand bookshops allows us to pick up books that have been enjoyed by someone else, perhaps with little notes or hints that tell us a bit about the previous owners. Websites such as \x3ca href=\x22http:\/\/abebooks.com\x22\x3eabebooks.com\x3c\/a\x3e and \x3ca href=\x22http:\/\/awesomebooks.com\x22\x3eawesomebooks.com\x3c\/a\x3e provide more eco-conscious and ethical ways to purchase books during this pandemic, as they are sourced from secondhand sellers, avoiding the likes of Amazon and Book Depository. Good news for both your wallet and your conscience! Even apps such as \x3ca href=\x22https:\/\/www.depop.com\/shrubcoop\/\x22\x3eDepop\x3c\/a\x3e have a large number of books available if you know what you are searching for, and entire charity shops dedicated to books have emerged over the years. At Shrub Coop, we have an extensive collection of pre-adored books that, when restrictions are eased, you can browse through. If you have been to Shrub Coop before, you’ll know that community is at the heart of what we do, and so your book shopping experience is likely to spark interesting conversations before you even leave the Zero Waste Hub! Honouring the connection of reading in a manner that is both social, sustainable and ethical, you may just find your new favourite book at Shrub Coop (that you can then share with others after!).\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614855419\/shrubcoop.org\/media\/patti_ht6txk.png\x22 alt=\x22\x22 \/\x3eA note from the previous owner in Aislinn’s copy of ‘Just Kids’ by Patti Smith.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eFurther sources for secondhand books:\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.worldofbooks.com\/en-gb\x22 title=\x22https:\/\/www.worldofbooks.com\/en-gb\x22\x3ehttps:\/\/www.worldofbooks.com\/en-gb\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.worldofbooks.com\/en-gb\x22 title=\x22https:\/\/www.worldofbooks.com\/en-gb\x22\x3ehttps:\/\/www.bookfinder.com\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.worldofbooks.com\/en-gb\x22 title=\x22https:\/\/www.worldofbooks.com\/en-gb\x22\x3ehttps:\/\/www.usedbooksearch.co.uk\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.worldofbooks.com\/en-gb\x22 title=\x22https:\/\/www.worldofbooks.com\/en-gb\x22\x3ehttps:\/\/www.justbooks.co.uk\x3c\/a\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/these-storied-pages\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "These Storied Pages cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/inspiring-recipes-using-common-foodsharing-finds/" tabindex="0" title="Blog post: Inspiring recipes using common Foodsharing finds by Fergus Whyte - click this link to continue reading.">
+  <h3 class="mb-2">Inspiring recipes using common Foodsharing finds</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Shaking up your weekly meal planning!</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 23/02/21">&#128336; 23/02/21</span> &nbsp; <span title="Written by Fergus Whyte">&#128100; Fergus Whyte</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/inspiring-recipes-using-common-foodsharing-finds/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614080484\/shrubcoop.org\/media\/food_sharing_finds_mbyvwq.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eLong-time SHRUB volunteer Fergus shares some of the recipes he has come across to make use of common surplus items you can find on our Food Sharing shelves at the Zero Waste Hub or from a Food Sharing collection.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eSpanish Tortilla\x3c\/strong\x3e – Potatoes, onions and other veggies\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.bbc.co.uk\/food\/recipes\/spanish_tortilla_78863\x22 title=\x22https:\/\/www.bbc.co.uk\/food\/recipes\/spanish_tortilla_78863\x22\x3ehttps:\/\/www.bbc.co.uk\/food\/recipes\/spanish_tortilla_78863\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3ePesto\x3c\/strong\x3e – herbs (basil, coriander, rocket etc)\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.jamieoliver.com\/recipes\/vegetables-recipes\/pesto\/\x22 title=\x22https:\/\/www.jamieoliver.com\/recipes\/vegetables-recipes\/pesto\/\x22\x3ehttps:\/\/www.jamieoliver.com\/recipes\/vegetables-recipes\/pesto\/\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eChutney\/relish\x3c\/strong\x3e – vegetables, onions, peppers, tomatoes, cherry tomatoes etc\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.daringgourmet.com\/indian-mango-chutney\/\x22 title=\x22https:\/\/www.daringgourmet.com\/indian-mango-chutney\/\x22\x3ehttps:\/\/www.daringgourmet.com\/indian-mango-chutney\/\x3c\/a\x3e (works for most veggies as well as mango)\x3c\/li\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/realfood.tesco.com\/recipes\/rhubarb-and-red-onion-relish.html\x22 title=\x22https:\/\/realfood.tesco.com\/recipes\/rhubarb-and-red-onion-relish.html\x22\x3ehttps:\/\/realfood.tesco.com\/recipes\/rhubarb-and-red-onion-relish.html\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3ePickled veggies\x3c\/strong\x3e – beetroot, carrots, peppers etc\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.bbcgoodfood.com\/recipes\/pickled-beetroot\x22 title=\x22https:\/\/www.bbcgoodfood.com\/recipes\/pickled-beetroot\x22\x3ehttps:\/\/www.bbcgoodfood.com\/recipes\/pickled-beetroot\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eCurd\x3c\/strong\x3e – lemons, limes and other citrus fruits\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.bbc.co.uk\/food\/recipes\/lemon_curd_68499\x22 title=\x22https:\/\/www.bbc.co.uk\/food\/recipes\/lemon_curd_68499\x22\x3ehttps:\/\/www.bbc.co.uk\/food\/recipes\/lemon_curd_68499\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eSofrito (Italian sauce base)\x3c\/strong\x3e – carrots, onions and celery\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.greatbritishchefs.com\/how-to-cook\/how-to-make-soffritto\x22 title=\x22https:\/\/www.greatbritishchefs.com\/how-to-cook\/how-to-make-soffritto\x22\x3ehttps:\/\/www.greatbritishchefs.com\/how-to-cook\/how-to-make-soffritto\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eMole\x3c\/strong\x3e – vegetable such as parsnips and carrots cut julienne\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eMole pastes like Kankun are available from Lupe Pintxos\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3ePotato Scones\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/foodanddrink.scotsman.com\/recipes\/traditional-scottish-recipe-potato-scones\/\x22 title=\x22https:\/\/foodanddrink.scotsman.com\/recipes\/traditional-scottish-recipe-potato-scones\/\x22\x3ehttps:\/\/foodanddrink.scotsman.com\/recipes\/traditional-scottish-recipe-potato-scones\/\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3ePotato Latkes\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.delish.com\/cooking\/recipe-ideas\/recipes\/a50756\/best-latkes-recipe\/\x22 title=\x22https:\/\/www.delish.com\/cooking\/recipe-ideas\/recipes\/a50756\/best-latkes-recipe\/\x22\x3ehttps:\/\/www.delish.com\/cooking\/recipe-ideas\/recipes\/a50756\/best-latkes-recipe\/\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3ePea and Mint Soup\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/www.bbcgoodfood.com\/recipes\/pea-mint-soup\x22 title=\x22https:\/\/www.bbcgoodfood.com\/recipes\/pea-mint-soup\x22\x3ehttps:\/\/www.bbcgoodfood.com\/recipes\/pea-mint-soup\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eRisotto\x3c\/strong\x3e – mushrooms, peas etc\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/freshandfoodie.com\/2012\/04\/10\/double-daisy-cutter-double-ipa-risotto\/\x22 title=\x22https:\/\/freshandfoodie.com\/2012\/04\/10\/double-daisy-cutter-double-ipa-risotto\/\x22\x3ehttps:\/\/freshandfoodie.com\/2012\/04\/10\/double-daisy-cutter-double-ipa-risotto\/\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/inspiring-recipes-using-common-foodsharing-finds\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Inspiring recipes using common Foodsharing finds cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/how-the-lgbtq-community-is-shaping-climate-activism-part-ii/" tabindex="0" title="Blog post: How the LGBTQ&#43; Community is Shaping Climate Activism: Part II  by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">How the LGBTQ&#43; Community is Shaping Climate Activism: Part II </h3>
+</a>
+
+<p class="mb-2" tabindex="0">Introducing...Aletta Brady.</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 23/02/21">&#128336; 23/02/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/how-the-lgbtq-community-is-shaping-climate-activism-part-ii/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eNearing the end of LGBTQ\x2b History Month, we wanted to highlight another LGBTQ\x2b activist who is committed to fighting against the climate crisis. This week, we are looking at the impact of Aletta Brady.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614077954\/shrubcoop.org\/media\/aletta_ee3snu.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eAletta Brady from an interview for her alma mater, Wesleyan University, USA.\x3cbr \/\x3e\nPhoto: \x3ca href=\x22http:\/\/newsletter.blogs.wesleyan.edu\/2015\/05\/18\/bradythesis\/\x22 title=\x22http:\/\/newsletter.blogs.wesleyan.edu\/2015\/05\/18\/bradythesis\/\x22\x3ehttp:\/\/newsletter.blogs.wesleyan.edu\/2015\/05\/18\/bradythesis\/\x3c\/a\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eToo often, the climate crisis is portrayed in a way that seems detached from our lived realities; represented by numbers and statistics or discussed in scientific, technical language that can make us feel alienated from what’s going on. Aletta Brady (they\/them), a young queer activist from Minnesota, recognised the detrimental impact this was having on the public’s drive to engage with the crisis and from this concern, \x3ca href=\x22https:\/\/www.ourclimatevoices.org\/our-team\x22\x3eOur Climate Voices\x3c\/a\x3e was born.\x3c\/p\x3e\n\n\x3cp\x3eOur Climate Voices is an organisation that uses storytelling as a tool to communicate the impacts of the climate crisis. It is a platform for individuals to describe their first-hand experiences with changes in the climate and how it is affecting their lives, with the goal being that the human stories will allow people to access information about environmental issues more easily and therefore push for changes in policies. Interestingly, Brady has a lot of experience working in more technical environments. They are a member of the US National Commission for UNESCO, have worked as a program analyst for a number of environmental agencies, and they were a former Fulbright scholar carrying out research on water scarcity in Jordan. However, Brady felt passionately that this should not be the only way to tackle the climate crisis, and they wanted to ensure that people of all backgrounds could find meaningful ways to engage in the fight for climate justice.\x3c\/p\x3e\n\n\x3cp\x3eOur Climate Voices focuses specifically on sharing the experiences of minority communities and those who are often left out of the climate conversation, striving to foster an inclusive community that removes barriers to climate activism. Brady considers this to be a hugely important goal in their work and has stated that this comes partly from their experiences as a member of the LGBTQ\x2b community. Recognising how much this community is affected by the climate crisis, they are aware of just how important it is to ensure that queer liberation is part of the conversation in climate strategies. Brady has written about the \x3ca href=\x22https:\/\/grist.org\/article\/what-the-queer-community-brings-to-the-fight-for-climate-justice\/\x22\x3econtribution of the LGBTQ\x2b community in the fight against climate change,\x3c\/a\x3e stating that their history of exclusion has made them some of the most resilient activists who understand the importance of granting a voice to everyone. They believe that values such as interconnectedness and collective action are pivotal features of the LGBTQ\x2b community in their battle for equality and justice, and the same values are fundamental to the climate justice movement.\x3c\/p\x3e\n\n\x3cp\x3eBrady’s commitment to an inclusive and accessible climate justice movement goes even further. They have actively criticised the elitists of the environmental movement who describe actions such as investing in electric cars and buying high-end ‘sustainable fashion’ as some of the most important actions against climate change. Instead, \x3ca href=\x22https:\/\/www.huffpost.com\/entry\/redefining-environmentali_b_9636552\x22\x3eBrady has written about the need to redefine environmentalism as lived experiences that are inclusive of all people and cultures.\x3c\/a\x3e They identify actions such as cycling, buying secondhand and growing food as being equally important in the climate movement and this resonates with us here at SHRUB Coop, where we want to make environmental actions as accessible as possible. Through our Food Sharing hub, our Swap Shop and the Wee Spoke Hub, we have worked to create a community where everyone can learn from each other and contribute to a world without waste.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/how-the-lgbtq-community-is-shaping-climate-activism-part-ii\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "How the LGBTQ\x2b Community is Shaping Climate Activism: Part II  cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/meet-our-new-trustees/" tabindex="0" title="Blog post: Meet Our New Trustees! by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Meet Our New Trustees!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Everything you need to know</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 23/02/21">&#128336; 23/02/21</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/meet-our-new-trustees/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cstrong\x3eWhat is a Trustee?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eOur Trustees are an elected group of up to 10 volunteers who formally oversee the activities of SHRUB Coop and ensure we act in accordance with our purposes and the wishes of members of the Coop.\x3c\/p\x3e\n\n\x3cp\x3eTrustees’ key responsibilities fall into the following areas:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eVision, mission and aims\x3c\/li\x3e\n\x3cli\x3eStrategy and objectives\x3c\/li\x3e\n\x3cli\x3eCulture and values\x3c\/li\x3e\n\x3cli\x3eAccountable leadership\x3c\/li\x3e\n\x3cli\x3eControl environment\x3c\/li\x3e\n\x3cli\x3eGovernance processes\x3c\/li\x3e\n\x3cli\x3eSuccession planning\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eWho are the 2021 Trustees?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eIzi Robe (Convenor) -\x3c\/strong\x3e \x3ca href=\x22mailto:izi.robe@shrubcoop.org\x22\x3e\x3cstrong\x3eizi.robe@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3e- she\/her\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614109732\/shrubcoop.org\/media\/Izi_y3nn8u.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eI am a BA Human Geography graduate from the University of Exeter in Cornwall where I specialised in climate change communication. I have previous experience serving as a Trustee and Student Council Member for the University of Exeter while working at Falmouth and Exeter Students’ Union. Since moving to Edinburgh in 2019, I have worked in volunteer and student engagement at Heriot-Watt Student Union, alongside volunteering with SHRUB in Communications, the Zero Waste Hub and on the Steering Group. I’m looking forward to bringing my knowledge of working in member-led organisations to ensure we are using feedback from our volunteers and members to make SHRUB the best it can be!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eSylke van Duijnen (Secretary) -\x3c\/strong\x3e        \x3ca href=\x22mailto:sylke.vandujinen@shrubcoop.org\x22\x3e\x3cstrong\x3esylke.vandujinen@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e        \x3cstrong\x3e- she \/ her\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614110075\/shrubcoop.org\/media\/Blogpost_photo_Sylke_pnhhtq.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eHi everyone! I am Sylke and I am the new secretary for the board of trustees. I just graduated from my MSc Food Security at the University of Edinburgh in November and I stuck around town because Edinburgh is lovely even when it is in lockdown. I was very keen to get involved with the SHRUB Coop as I had volunteered with a foodsharing organisation back in Maastricht where I did my undergraduate and I had heard about the great work being done on food waste reduction in Edinburgh by the SHRUB Coop. However, studies and lockdown prevented me from getting involved earlier, but as soon as the SHRUB opened again this past July I started volunteering Then in November, I applied to be a Trustee because I wanted to contribute more to the SHRUB Coop behind the scenes, to help sustain this wonderful organisation for the Edinburgh community.If you see me in the Swapshop helping out on random days, feel free to say hi!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eDeepak Kumar (Treasurer) -\x3c\/strong\x3e \x3ca href=\x22mailto:deepack.kumar@shrubcoop.org\x22\x3e\x3cstrong\x3edeepack.kumar@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3e- he\/him\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614110095\/shrubcoop.org\/media\/Deepak_Kumar_o7r8bu.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eI am a Credit Risk Analyst with Royal Bank Scotland and Volunteer Member with the Swapshop. I have 10 years of experience in financial management which I am seeking to pass on to the SHRUB Coop.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eSilvia Franco (Zero Waste Hub Lead)-\x3c\/strong\x3e \x3ca href=\x22mailto:silvia.franco@shrubcoop.org\x22\x3e\x3cstrong\x3esilvia.franco@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3e- she\/her\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614110125\/shrubcoop.org\/media\/Silvia-Trustee-photo_impzgn.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eI am a graduate in Cooperation and International Development with a Masters degree in Local Development, focusing on Social and Environmental Responsibility. I became a member of the Coop in December 2020. As a Trustee I would like to contribute my knowledge in local development and my experience of managing a family business of agritourism and the shop where I work in Edinburgh. I am really interested in everything connected with the environment, sustainability, circular economy and new types of governance that work to preserve the environment.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eDavid Somervell (Wee Spoke Hub Lead)-\x3c\/strong\x3e \x3ca href=\x22mailto:david.somervell@shrubcoop.org.uk\x22\x3e\x3cstrong\x3edavid.somervell@shrubcoop.org.uk\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3e- he\/him\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614110178\/shrubcoop.org\/media\/David_viy9up.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eI am the former University of Edinburgh Sustainability Adviser and was the staff member in the Department for Social Responsibility \x26 Sustainability for SHRUB Coop from the start. I’ve so valued the way that cooperative values and working practices have stayed central to how we work and feel I’ve personally learnt so much from the interactions with everyone. David has been involved in the Governance and Policy and Funding Working Groups.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eSlavka Damaskova (Risk \x26 Compliance Lead) -\x3c\/strong\x3e \x3ca href=\x22mailto:slavka.damaskova@shrubcoop.org\x22\x3e\x3cstrong\x3eslavka.damaskova@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3e- she\/her\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614110212\/shrubcoop.org\/media\/Slavka_vyyco8.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eI discovered that volunteering can be a great way of travelling and getting to know local culture. As a Workaway-er I helped out at the Tree of Life rescue centre and botanical gardens in Costa Rica for 3 months. I was the first one to volunteer there and prepared the grounds for the other volunteers. Here in Scotland I was a member of the Green and Blue, which is a university organization similar to SHRUB in Stirling. Recently, I became a Food Waste Hero as a member of Olio which connects the local communities in order to combat waste, sharing surplus food and non-food items from neighbours and local shops. It has similar visions and aims to SHRUB and can be used worldwide.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eEmma Dore (HR \x26 Welfare Lead) -\x3c\/strong\x3e \x3ca href=\x22mailto:emma.dore@shrubcoop.org\x22\x3e\x3cstrong\x3eemma.dore@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3e- she\/ her\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614110233\/shrubcoop.org\/media\/Emma_Dore_headshot_ykazcc.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eFor the majority of my career I’ve worked in not-for-profit organisations, both face-to-face with people in need, and in managerial\/ strategic positions. My focus has been on improving the lives of people without a home, or in vulnerable housing. However, issues of social justice are often intertwined in deep and complex ways. For example, I’m passionate about reducing waste and food sharing because of the positive impact that they can have for people living in poverty, as well as the obvious benefits for our planet. I’m excited to find out how the experience and skills I have gained over the years can contribute to SHRUB achieving its vision.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eLivia Milani-\x3c\/strong\x3e \x3ca href=\x22mailto:livia.milani@shrubcoop.org\x22\x3e\x3cstrong\x3elivia.milani@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e\x3cstrong\x3e- she\/her\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1614110255\/shrubcoop.org\/media\/Livia_ay3j1o.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eI recently graduated with the MSc Food Security and Development at the University of Reading, and started volunteering with SHRUB first in the Governance \x26 Policy and Fundraising working group before applying to be a Trustee. From the first moment I got in contact with the cooperative, I very much appreciated its mission and its value, and during my volunteering, its non-hierarchical structure. I am very proud to contribute to the cause of SHRUB and its future growth and prosperity, by putting in practice my knowledge and my passion related to sustainability and community development.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWould you like to join us?\x3c\/strong\x3e\x3cbr \/\x3e\nWe are still looking to recruit some Trustees to join the team! If you are interested in knowing more about the role and what it involves, please get in touch with \x3ca href=\x22mailto:izi.robe@shrubcoop.org\x22\x3eizi.robe@shrubcoop.org\x3c\/a\x3e.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/meet-our-new-trustees\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Meet Our New Trustees! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/how-the-lgbtq-community-is-shaping-climate-activism/" tabindex="0" title="Blog post: How the LGBTQ&#43; Community is Shaping Climate Activism by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">How the LGBTQ&#43; Community is Shaping Climate Activism</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Introducing... Jamie Margolin.</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 16/02/21">&#128336; 16/02/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/how-the-lgbtq-community-is-shaping-climate-activism/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eAs part of LGBTQ\x2b History Month, we wanted to share with you some present-day climate activists that inspire us here at Shrub. The first of which is Jamie Margolin, who has co-founded a climate organisation, sued the state of Washington and spoken in the U.S. Congress - all before the age of twenty.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1613491265\/shrubcoop.org\/media\/jamie-margolin_rfta8q.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eJamie Margolin advocating for sexual and gender rights, as well as paving the way for climate action amongst young people.\x3c\/p\x3e\n\n\x3cp\x3ePhoto: \x3ca href=\x22https:\/\/insideclimatenews.org\/news\/02072020\/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice\/\x22 title=\x22https:\/\/insideclimatenews.org\/news\/02072020\/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice\/\x22\x3ehttps:\/\/insideclimatenews.org\/news\/02072020\/across-america-activists-work-confluence-lgbtq-rights-and-climate-justice\/\x3c\/a\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eJamie Margolin has become an internationally-recognised name amongst the climate justice movement through her outspoken leadership of \x3ca href=\x22http:\/\/thisiszerohour.org\x22\x3eZero Hour\x3c\/a\x3e, an organisation focused on educating young people about the climate crisis and mobilising them to demand action from their leaders. At only fourteen years of age, Margolin began to campaign for the right to a clean and safe environment after spending many summers in Seattle afraid to go outside because of the smog and pollution. She was enraged that her generation were forced to accept these conditions as ‘normal’, despite having done nothing to create this problem. Margolin therefore began to connect with other young activists in the Pacific Northwest, testifying at climate bill debates to bring attention to these issues. When she grew tired of waiting for adults to take action, Margolin set about organising a youth climate march so that young people’s voices would not go ignored. From here, Zero Hour was born.\x3c\/p\x3e\n\n\x3cp\x3eDuring this same period in her teenage years, Margolin attempted to \x3ca href=\x22https:\/\/www.theguardian.com\/commentisfree\/2018\/oct\/06\/i-sued-the-state-of-washington-because-i-cant-breathe-there-they-ignored-me\x22\x3esue the state of Washington\x3c\/a\x3e for failing to provide the youth with a safe and healthy environment to grow up in. The case argued that this deprived them of their constitutional right to life, liberty and the pursuit of happiness. Though they were ultimately unsuccessful, Margolin has harnessed this experience to further demonstrate the need for youth leadership and affirmative action on climate justice issues. As a result, Zero Hour has gone from strength to strength, being featured on news outlets such as CNN and gaining the support of celebrities such as Chris Evans and Samuel L. Jackson. Alexandria Oscascio-Cortez has also been an ally to the movement, and she even invited Margolin to speak at the U.S. Congress to voice her support for a \x3ca href=\x22https:\/\/www.theguardian.com\/us-news\/2019\/feb\/11\/green-new-deal-alexandria-ocasio-cortez-ed-markey\x22\x3eGreen New Deal\x3c\/a\x3e. A rather impressive list of achievements at such a young age.\x3c\/p\x3e\n\n\x3cp\x3eAs a Jewish, Latinx lesbian, Jamie Margolin has stated that it is her complex identity that has shaped her commitment to the climate justice movement. She has spoken about how her experience ‘coming out’ was one of the greatest challenges she had overcome in her life, but that she used her talent for writing to articulate to her friends and family this element of her identity. She has since gone on to write widely about the various dimensions to climate justice, recognising the power of communication from her experiences as a member of the LGBTQ\x2b community. She has highlighted the \x3ca href=\x22https:\/\/www.theguardian.com\/commentisfree\/2019\/jul\/12\/jamie-margolin-zero-hour-climate-change\x22\x3elegacies of colonialism and capitalism \x3c\/a\x3ein creating the climate crisis, as well as the heightened vulnerability of women and people of colour to climate disasters, drawing attention to the ways in which \x3ca href=\x22https:\/\/www.glaad.org\/amp\/jamie-margolin-election-climate-justice-lgbtq-advocacy\x22\x3ethe climate crisis makes the vulnerable in society even more vulnerable. \x3c\/a\x3eHer book \x3cem\x3eYouth to Power\x3c\/em\x3e, published in 2020, provides a detailed guide on how to engage in intersectional activism, encompassing her core values and mission.\x3c\/p\x3e\n\n\x3cp\x3eThrough Margolin’s experiences and work, she has emphasised the importance of placing social justice at the forefront of climate change solutions and during LGBTQ\x2b History month, it is important to recognise how everyone’s unique experience can contribute to the fight against climate change. Margolin has worked to create an inclusive climate activist network and here at SHRUB Coop, we strive to do the same.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/how-the-lgbtq-community-is-shaping-climate-activism\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "How the LGBTQ\x2b Community is Shaping Climate Activism cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/stop-plastic-pollution-in-our-oceans-why-recycling-is-not-the-ultimate-solution/" tabindex="0" title="Blog post: Stop Plastic Pollution in our Oceans: Why Recycling is not the Ultimate Solution by Lauriane Bourdiau - click this link to continue reading.">
+  <h3 class="mb-2">Stop Plastic Pollution in our Oceans: Why Recycling is not the Ultimate Solution</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Looking for solutions beyond simply recycling</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 12/02/21">&#128336; 12/02/21</span> &nbsp; <span title="Written by Lauriane Bourdiau">&#128100; Lauriane Bourdiau</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/stop-plastic-pollution-in-our-oceans-why-recycling-is-not-the-ultimate-solution/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cstrong\x3eSTOP PLASTIC POLLUTION IN OUR OCEANS : WHY RECYCLING IS NOT THE ULTIMATE SOLUTION\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eMore and more plastic debris ends up in our oceans every single day. I was recently shocked to learn that over 300 million tonnes of plastic items are being produced on average per year and by 2050, with the global population expanding, this production is likely to be tripled! This will lead us to approximately 900 million tonnes of plastic produced per year. Is it only me who finds this number outrageous? And the worst is that most of it will eventually end up in the environment, spoiling our lands and polluting our oceans…Sad times indeed…\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eA LOT OF PLASTIC WILL NOT BE RECYCLED\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAccording to a worldwide study led in 2017, approximately 91% of the plastic produced in the world is NOT recycled. Yes, you have read correctly…NOT RECYCLED! I always thought I was doing the right thing by throwing my plastic items into the recycling bin, but the reality is quite dramatically different… Did you know that out of all the plastic that you throw away thinking it will get recycled, one little piece of contaminant will divert a whole lot of recyclables into landfill, including plastic bottles? From landfill, millions of tonnes of plastics will then make their way to our oceans, carried up by the wind and water streams.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eAND IF RECYCLED, PLASTIC WILL NOT BE RECYCLED INDEFINITELY\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAre you aware that the same plastic item, depending on its size and composition, can generally only be recycled up to 3 times before its quality starts to decrease and cannot be recycled anymore? Once it is produced, it stays forever; plastic cannot degrade so the more we produce, the more ends up in our environment and our oceans. It is believed that every single piece of plastic ever made is still on this planet in some form or another. Do you want to read about an interesting fact? 8 million tonnes (yes, 8 million tonnes!) plastics enter our oceans every year, adding up to the alarming 150 million tonnes already circulating in our marine environments.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eTHE SOLUTION IS SIMPLE, TRY ADOPTING THE 3 R’S MINDSET\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eReduce, Reuse and Recycle. As you can notice, recycle only comes third on the list but in our societies we tend to forget the importance of the first 2 R’s: Reduce and Reuse. Recycling should indeed be our last resort, ultimately the only viable solution is to reduce your daily usage of single-use plastic, and reuse as much as you can.\x3c\/p\x3e\n\n\x3cp\x3eSo remember, no matter where you live, your plastic consumption will definitely have an impact globally. Our Planet, our oceans, everything is connected and our plastic consumption has a great impact on us. If we protect our nature, if we care about protecting our oceans against marine pollution, we ultimately protect ourselves too.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/stop-plastic-pollution-in-our-oceans-why-recycling-is-not-the-ultimate-solution\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Stop Plastic Pollution in our Oceans: Why Recycling is not the Ultimate Solution cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/a-less-than-cheerful-assessment-of-the-fashion-industry-part-i/" tabindex="0" title="Blog post: A Less-Than-Cheerful Assessment of the Fashion Industry (Part I) by Marta Lynch - click this link to continue reading.">
+  <h3 class="mb-2">A Less-Than-Cheerful Assessment of the Fashion Industry (Part I)</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Know Your Clothes</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 10/02/21">&#128336; 10/02/21</span> &nbsp; <span title="Written by Marta Lynch">&#128100; Marta Lynch</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/a-less-than-cheerful-assessment-of-the-fashion-industry-part-i/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eFirst, before saying anything else: There are no ‘sustainable’ clothes that will improve the state of the world, every purchase is connected to an extraction of resources from this planet. So what can we do to reduce the damage we cause effectively when looking for clothes that we either want or need?\x3c\/p\x3e\n\n\x3cp\x3eThe big problem with fashion is the amount of clothing already existing and still being made. Every additional piece produced is unnecessary in terms of fighting climate change and reducing resource depletion. And all this production is happening within a deeply flawed system. Environmental, animal and human right abuses are more often the rule than the exception, so it is difficult to make decisions impacting the world for the better as a customer.\x3c\/p\x3e\n\n\x3cp\x3eQuick summary of golden rules:\x3c\/p\x3e\n\n\x3col\x3e\n\x3cli\x3eTry to buy garments consisting of one fibre for the garment to be recycled more easily. Oil\/Plastic-based fibres are usually mixed in to make garments cheaper but result in the clothes wasting away on a tip at the end of their use as there are no processes to separate synthetic and natural materials from each other.\x3c\/li\x3e\n\x3cli\x3eAvoid all newly produced\/virgin synthetic fibres. New research suggests that as much as 73% of microplastics in the arctic comes from clothing.(1) New studies are finding out about how it affects marine environments, how it is finding its ways into our lungs and settling in our bodies and the research on this issue has only started.\x3c\/li\x3e\n\x3cli\x3eAvoid all fashion conglomerates, they wield their power to slow environmental campaigns down and the scale of their production cannot be aligned with any ‘green’ promises they make in their advertising. As in all other industries no companies should be able to hold that much power and affect governmental guidance. Look for small and local if you need to buy new.\x3c\/li\x3e\n\x3cli\x3eSet high standards for your purchasing habits: only buy pieces you can see yourself wearing over and over and over and over. This also applies to second-hand clothing: just because you are buying something at a reduced price don’t treat it like any less of an investment.\x3c\/li\x3e\n\x3c\/ol\x3e\n\n\x3cp\x3eMany small companies are trying their best and coming up with innovative solutions and it is to be applauded as this moves us closer to diminishing our impact, but they are still using up resources (energy, water etc.) so even purchasing from them should be very well considered. This leads on to the next problem that a big part of the environmental footprints of garments are post-purchase so it is reliant upon how you take care of your clothes and how you dispose of them.\x3c\/p\x3e\n\n\x3cp\x3eThe general goal of caring for your garments is looking at how to make them last longer (washing and mending) and if you no longer wear them, how to dispose of them (finding them a new home or recycling them correctly).\x3c\/p\x3e\n\n\x3cp\x3eBuying second hand or swapping clothes is quite clearly the easiest way to keep garments in circulation and keep them off waste tips and obviously Shrub has dedicated a lot of resources and space to this solution.\x3c\/p\x3e\n\n\x3cp\x3eCare instructions on garments are written by the production and fabric suppliers and are often there to cover their backs or are standardised symbols for similar fabrics they have used. They do not have to be followed exactly.\x3c\/p\x3e\n\n\x3cp\x3eThe general answer in care instructions is wash as little as possible at low temperatures (while still being sanitary obviously) and air out rather than wash (I wash my pure woollens only once a year except for socks and spot cleans if necessary). Basically dry cleaning should be avoided completely, tumble drying too especially with synthetic fibres (it breaks the fibres and contributes to microplastic fibres around the world). Fabric softener is unnecessary especially with synthetic fibres and actually reduces the absorbency of the fabric as they coat the fibre.(2) They can be replaced with distilled white vinegar to remove especially bad smells.\x3c\/p\x3e\n\n\x3cp\x3eSources:\x3c\/p\x3e\n\n\x3cp\x3e(1) \x3ca href=\x22https:\/\/amp.theguardian.com\/environment\/2021\/jan\/12\/clothes-washing-linked-to-pervasive-plastic-pollution-in-the-arctic\x22 title=\x22https:\/\/amp.theguardian.com\/environment\/2021\/jan\/12\/clothes-washing-linked-to-pervasive-plastic-pollution-in-the-arctic\x22\x3ehttps:\/\/amp.theguardian.com\/environment\/2021\/jan\/12\/clothes-washing-linked-to-pervasive-plastic-pollution-in-the-arctic\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e(2) \x3ca href=\x22https:\/\/www.wired.com\/story\/whos-to-blame-for-plastic-microfiber-pollution\/\x22 title=\x22https:\/\/www.wired.com\/story\/whos-to-blame-for-plastic-microfiber-pollution\/\x22\x3ehttps:\/\/www.wired.com\/story\/whos-to-blame-for-plastic-microfiber-pollution\/\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1612961328\/shrubcoop.org\/media\/marta_dobyre.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eFollow @martalynch_projects on Instagram for more sustainable fashion knowledge.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/a-less-than-cheerful-assessment-of-the-fashion-industry-part-i\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "A Less-Than-Cheerful Assessment of the Fashion Industry (Part I) cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/undressing-the-concept-of-gender-in-fashion/" tabindex="0" title="Blog post: Undressing the Concept of Gender in Fashion by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Undressing the Concept of Gender in Fashion</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Corsets, high heels and makeup - men wore them first. </p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 09/02/21">&#128336; 09/02/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/undressing-the-concept-of-gender-in-fashion/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1612876756\/shrubcoop.org\/media\/mens_corsets_we2ryb.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eAdvertisement for male corsets, proving no fashion item is naturally gendered.\x3c\/p\x3e\n\n\x3cp\x3eImage: Pinterest \x3ca href=\x22https:\/\/www.pinterest.com\/pin\/195836283783426399\/\x22 title=\x22https:\/\/www.pinterest.com\/pin\/195836283783426399\/\x22\x3ehttps:\/\/www.pinterest.com\/pin\/195836283783426399\/\x3c\/a\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eCorsets, high heels and \x3ca href=\x22https:\/\/www.byrdie.com\/history-makeup-gender\x22\x3emakeup\x3c\/a\x3e - men wore them first.\x3c\/p\x3e\n\n\x3cp\x3eFashion is often identified as a tool of self-expression, yet for centuries, this freedom of expression has been limited by the gendering of clothing. This manifests itself not only in the colours we wear (pink is for girls, blue is for boys), but in many cases, the items and styles designed for men and women can impact our behaviour in society through the \x3ca href=\x22https:\/\/www.huffpost.com\/entry\/gendering-childrens-clothing-is-hurting-our-future_b_5a25e1b2e4b0f0c7768d4385\x22\x3ereinforcement of gender stereotypes\x3c\/a\x3e. For example, women’s shoes are widely acknowledged as being \x3ca href=\x22https:\/\/www.theguardian.com\/commentisfree\/2017\/sep\/11\/school-shoes-girls-boys-hobbling-life-chances-flimsy-sturdy-sexism-gender\x22\x3eless durable for sports\x3c\/a\x3e, supposedly reflecting the fact that women do not participate in sport as much as men. Yet even in a time where these stereotypes are starting to fall away, the concept of gender-neutral clothing is still finding its feet in the mainstream fashion world.\x3c\/p\x3e\n\n\x3cp\x3eA brief study of fashion through the ages reveals the oppressive systems that led to the engendering of fashion. Dating back as far as the first civilisations, both men and women dressed in elaborate and decorative clothing, with fashion being used to reflect status rather than gender. It was not until the 18th century that a more distinct separation in fashion for men and women began to take hold. As fashion became more gendered and thus, constrained, so too did the roles of men and women in society. Men embraced sombre coloured suits, a reflection of their \x3ca href=\x22https:\/\/qz.com\/381790\/sex-and-gender-arent-perfectly-binary-why-should-clothes-be\/\x22\x3e‘serious and practical’ nature \x3c\/a\x3ewhereas women, on the other hand, were required to wear elaborate costumes, acting as ornaments to society. Fashion was being used not just to visually enforce a male\/female binary, but also to physically prohibit men and women from engaging in the activities of the ‘opposite’ gender. It would have been very difficult for a woman dressed in tight corsets and hoop skirts to engage in sport, for example, limiting the realm of possibilities for her. As women demanded equality throughout the twentieth century, they began to cross these ‘fashion-gender’ lines, ushering in the power suit and reclaiming the oversized shirt. Fashion has therefore always been a reflection of the society in which it is operating, adopting its patriarchal oppression and slowly dismantling its hold over time. So, in recognising that gender is not and never has been binary,neither must fashion be!\x3c\/p\x3e\n\n\x3cp\x3eNo doubt, the fashion industry is beginning to wake up to this fact, with more and more brands \x3ca href=\x22https:\/\/fashionjournal.com.au\/fashion\/nagnata-athleisure-gender-neutral\/\x22\x3eremoving gender labels from their lines\x3c\/a\x3e. Here at SHRUB Coop, we celebrate the freedom of self throughout our shop. Our swapshop is categorised by item (tops, dresses, coats) so that every individual can find the clothing that they will love. Our changing rooms are gender-neutral, as are our bathrooms. This LGBT\x2b History month, we want to highlight once again that, in our mission to create a world without waste, we welcome one and all. It’s time to tear off those gender labels and reclaim fashion for our own self-expression once more.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/undressing-the-concept-of-gender-in-fashion\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Undressing the Concept of Gender in Fashion cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/introducing-people-of-shrub/" tabindex="0" title="Blog post: Introducing, People of Shrub! by Amy Webster - click this link to continue reading.">
+  <h3 class="mb-2">Introducing, People of Shrub!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Wondering how People of Shrub got started? Amy Webster explains it all.</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 08/02/21">&#128336; 08/02/21</span> &nbsp; <span title="Written by Amy Webster">&#128100; Amy Webster</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/introducing-people-of-shrub/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1612785405\/shrubcoop.org\/media\/pos_qqhwhr.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3eWhen we share our stories, what it does is, it opens up our hearts for other people to share their stories. And it gives us the sense that we are not alone on this journey\x3c\/em\x3e - Janine Shepherd.\x3c\/p\x3e\n\n\x3cp\x3eJoin us, as we chat to the people who make up the Shrub community. Staff, volunteers, members and everyone that steps into the hub, is a valued part of our community and our mission - a world without waste. While we share attitudes and interests pertaining to waste, sustainability and the environment - we all have different stories, backgrounds and motivations. People of Shrub hopes to share the wonderful thoughts, feelings and stories from our wonderful community, in the hope to inspire you and remind you that you are not alone on this journey.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eThe first day I volunteered for Shrub, an afternoon shift in the SwapShop, I was incredibly nervous. As a flaming introvert, new to Edinburgh, struggling to understand a thick Scottish accent; the shift was daunting. Putting myself out there and meeting new people is intimidating. I’ve done it thousands of times before, always coming away feeling happy and slightly accomplished, but this time was different. This time I was overseas, struggling with a pandemic, emotionally drained and keen to meet like-minded, kind people. When I walked into Shrub I was met with warm welcomes, friendly hub tours and patient instructions. When I left Shrub, I was left with a warm feeling, a feeling of familiarity and like-mindedness that I had missed.\x3c\/p\x3e\n\n\x3cp\x3eGoogle led me to Shrub, an email to Syd led me to volunteer, and a zoom meeting led me to the Comms Working Group. When the topic came up for a project focused on the incredible people who are a part of Shrub, I knew I wanted to help. With a background in photography and a want to get to know the community, the project seemed perfect. My only hesitation was my introverted qualities that make conversing with new people (beyond small talk) a bit intimidating.\x3c\/p\x3e\n\n\x3cp\x3eThe inspiration for People of Shrub stems from \x3cem\x3eHumans of New York\x3c\/em\x3e. A photoblog and book of street portraits and interviews collected on the streets of New York City by the wonderful Brandon Stanton. We aimed to share with a wider audience just how special the Shrub community is, how varied every person’s stories are, and hopefully resonate similarities that make us feel more connected.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1612785493\/shrubcoop.org\/media\/paolo_vjvpxb.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3e‘It’s kind of spiritual actually. We need to change our ways, we need to change the way we think, the way we do things. Volunteering is very rewarding, I feel useful, I work for the community. I play music as well as volunteer here and I think it makes a big change. I used to say if everybody, everybody, would volunteer for three hours a month, just three hours a month, this world would change immensely. I do this because if you are to be the change - be the example for that change. It’s more like in the spiritual path and the change that I think we need - sustainability, no profit. Everybody gains instead of just one, if you work in a team everybody wins.’\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3eMeet Paulo! Paulo volunteers in our cafe and is our resident DJ. In our cafe you can get tasty hot or cold drinks, but most wonderfully, you’ll find a welcoming space for the whole community. Join our Shrubby Moments of Music Facebook page for music recommendations and to catch Paulo livestreaming DJ sets throughout lockdown.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eWith camera in tow, I ask a few general questions followed by some more thoughtful ones about motivations, inspirations, challenges and journey. If awareness of climate change\/environmental problems\/waste\/etc was a room - each person walked into that room from a different door, down very different hallways called life. The differences and similarities in the answers hit me most. My similarities, the nuggets that I related too - made me feel connected, rational and welcome. The differences, the different doors we had walked through, opened my eyes to a new perspective and a new inspiration. And that was exciting.\x3c\/p\x3e\n\n\x3cp\x3eMy first interview was with the incredible Deirdre and we had a 15 minute chat that I’d told her would only be a few minutes. We have very different stories, different lives up until the point that put us in the same room at the same time. Yet we were there for the same reasons, a passion for waste and the environment, and a love for the community. The nerves and reservations I felt before the interview were gone by the end and that’s a testament to Deirdre’s warmth and the wonderful people that make up the Shrub community. To say it has personally inspired me would be an understatement. Hers and every interview since has been an amazing opportunity for me to learn and I am very excited to share them.\x3c\/p\x3e\n\n\x3cp\x3eI hope that there is something, no matter how tiny, that readers can relate to, feel connected to, and feel inspired by.\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3eShould you wish to be apart of our People of Shrub project, in person or virtually, please contact Amy on\x3c\/em\x3e \x3ca href=\x22mailto:ameswebster@outlook.com\x22\x3eameswebster@outlook.com\x3c\/a\x3e \x3cem\x3eor virtually via the\x3c\/em\x3e \x3ca href=\x22https:\/\/forms.gle\/Cc5BdMPdQMV8C8Ef7\x22\x3elink \x3c\/a\x3e\x3cem\x3e. The project is open not only to staff, volunteers and members but to anyone who has been into the hub - everyone is part of the Shrub community!\x3c\/em\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/introducing-people-of-shrub\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Introducing, People of Shrub! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+      </div>
+      <div class="d-flex justify-content-center">
+        
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/news/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/news/page/3/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/news/page/4/">4</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/5/">5</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/8/">8</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/news/page/5/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/news/page/8/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.postcodetrust.org.uk/" title="People&#39;s Postcode Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/" title="Climate Challenge Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4" tabindex="0">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Contact</h3>
+
+            <ul class="list-unstyled" tabindex="0">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h3 class="h5" tabindex="0">Follow Us</h3>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Site Links</h3>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">Our Blog</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3" tabindex="0">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-3 px-sm-4">
+                <p class="text-sm-center mb-2">We use Google Analytics to help us better understand the kind of people who visit our website and what content they are reading. This enables us to make better decisions about web design and writing</p>
+                <p class="text-sm-center mb-3">By allowing analytics you are agreeing to the terms of our <a href="/privacy">Privacy Notice</a> and giving consent for cookies to be placed on your browser</p>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

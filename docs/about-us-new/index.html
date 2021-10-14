@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ9PL78BGB"></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJ9PL78BGB');
+    }
+  }
+
+  var askForConsent = function() {
+    if("\/about-us-new\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Find out about purpose and values">
+
+
+<title>About Us | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <h1 class="align-middle mb-0 mt-1">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </h1>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto underline" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh Map - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh Map</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Our Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >Our Blog</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+<div class="row">
+  <div class="col-md-4 mx-auto my-2">
+    <img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1568674723/shrubcoop.org/media/vision_web_fyoad1.png">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 order-md-1">
+
+    <div class="container">
+      <p><h4>Who We Are</h4> <p>We’re a cooperative in Edinburgh working for a world without waste!</p> <p>We empower our community to live a low carbon life. Become a member and learn to fix a bike, swap your preloved things, enjoy some rescued food and be inspired by new ideas.</p> <h4>Our Purpose</h4> <ol> <li>To provide a welcoming space for rethinking our relationship to waste, reducing consumption and developing effective use of resources</li> <li>To support community empowerment in Edinburgh, learning and sharing skills to make a practical difference to the world we share</li> <li>To deliver innovative waste prevention, creative reuse and repair practices in a living laboratory of Circular Economy</li> </ol> <h4>Our Values</h4> <p>We value inclusivity and work with others to provide a welcoming community for all</p> <p>We act with integrity and strive to be sustainable in everything we do</p> <p>We live by co-operative values of self-help,  self-responsibility, democracy, equality, equity, and solidarity</p> <h4>Story of SHRUB</h4> <p>SHRUB Cooperative (formerly the Swap and Reuse Hub Cooperative (Edinburgh) Ltd) was registered as the UK’s first student-­led community co­operative. It was established as a not for profit company limited by guarantee in March 2013. As of November 2018, we are registered as a Scottish Charitable Incorporated Organisation (SCIO), meaning we have charitable status.</p> <p>A large proportion of our members are students, mostly from the University of Edinburgh (UoE) but our membership is becoming increasingly diverse, incorporating individuals from a range of ages and backgrounds in the local community. We no longer describe ourselves as “student-led”, but instead we are “community-led”.</p> <p>As a co­operative, the SHRUB operates an open membership policy (anybody above the age of 16 can apply for membership). You can join either by being a paying member or by volunteering.</p> <p>SHRUB is organised non-hierarchically and governed through consensus decision making. Members are free to join in decision making and to stand for a position as a Trustee. Trustees are elected at the AGM and are legally liable for the Co­op.</p></p>
+
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-2">
+    <div class="container">
+      <p><h4>How we operate - non-hierarchy</h4><p>SHRUB is a community cooperative. We are a non-hierarchical organisation, which means that everyone has the right to have equal say in how we do things and what we decide to do.</p><p>We operate through consensus-based decision-making, which means that we discuss ideas until we get to a solution that everyone can agree with, and every member has the right to veto any new plans if they think they will be harmful.</p><p>We follow the cooperative principles below, and organise our work through working groups, which have autonomy in their own areas of work.</p></p>
+
+      
+      <div class="my-4">
+        <object data="/images/SHRUB_Structure.svg" type="image/svg+xml" id="SHRUB_Structure" style="width: 100%;"></object>
+      </div>
+
+      <p><h4>Our activities and spaces</h4><p>SHRUB Coop currently has two spaces across Edinburgh, with several key areas of activity.</p></p>
+
+
+      <div class="d-flex justify-content-between flex-wrap">
+        
+          
+            <a
+              class="w-50 p-2 d-flex justify-content-center"
+              href="https://www.shrubcoop.org//working-groups/zero-waste-hub/"
+              title="Zero Waste Hub Button – This is the link to our Zero Waste Hub area of the site. Click here to read about our Zero Waste Hub activities."
+            >
+              <img alt="Zero Waste Hub logo"
+                src="https://res.cloudinary.com/shrub-co-op/image/upload/v1630871617/shrubcoop.org/media/SHRUB_zero_waste_dcxplp.png"
+                id="zero-waste-hub"
+                class="mx-auto"
+                style="width: 65%;"
+              />
+            </a>
+          
+        
+          
+            <a
+              class="w-50 p-2 d-flex justify-content-center"
+              href="https://www.shrubcoop.org//working-groups/wee-spoke-hub/"
+              title="Wee Spoke Hub Button – This is the link to the Wee Spoke Hub area of the site. Click here to read more about the Wee Spoke Hub."
+            >
+              <img alt="Wee Spoke Hub logo"
+                src="https://res.cloudinary.com/shrub-co-op/image/upload/v1630871641/shrubcoop.org/media/SHRUB_WSH_emirmt.png"
+                id="wee-spoke-hub"
+                class="mx-auto"
+                style="width: 65%;"
+              />
+            </a>
+          
+        
+          
+            <a
+              class="w-50 p-2 d-flex justify-content-center"
+              href="https://www.shrubcoop.org//working-groups/food-sharing-hub/"
+              title="Food Sharing Button – This is the link to our Food Sharing area of the site. Click here to read about our food sharing activities."
+            >
+              <img alt="Food Sharing Edinburgh logo"
+                src="https://res.cloudinary.com/shrub-co-op/image/upload/v1621335519/shrubcoop.org/media/Food_Sharing_Edinburgh_easkx6.png"
+                id="food-sharing-edinburgh"
+                class="mx-auto"
+                style="width: 65%;"
+              />
+            </a>
+          
+        
+          
+            <a
+              class="w-50 p-2 d-flex justify-content-center"
+              href="https://www.shrubcoop.org//working-groups/swapshop/"
+              title="Swapshop Button – This is the link to the swap shop area of the site. Click here to read about the Shrub Swap Shop."
+            >
+              <img alt="Swapshop logo"
+                src="https://res.cloudinary.com/shrub-co-op/image/upload/v1630871657/shrubcoop.org/media/SHRUB_swapshop_cdfzuo.png"
+                id="swapshop"
+                class="mx-auto"
+                style="width: 65%;"
+              />
+            </a>
+          
+        
+          
+        
+          
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-md-4 order-md-3">
+    <div class="container">
+      <p><h4>Members&rsquo; Working Groups</h4> <p>Working Groups are smaller groups made up of Members with Staff and Trustees, which cover areas including governance, fundraising and shop floor activities. These groups are voluntary commitments and there is no expected term length.</p> <p>Meetings are held regularly and while decisions that will affect the wider SHRUB community may not be made by these groups, they may produce policy proposals for either the Trustees or Steering Group to consider.</p> <h4>Our Working Groups</h4> <p><b>Swapshop</b>: We look after the Swapshop which includes: organising donations, pricing items and greeting customers! Also includes our Sustainable Fashion activities and events.</p> <p><b>Workshops &amp; Events</b>: We organise events and upcycling workshops to educate the community about sustainable living.</p> <p><b>Food Sharing</b>: We re-distribute excess food from businesses to the community through our Food Sharing Hub.</p> <p><b>Wee Spoke Hub</b>: We organise DIY workshops for you to learn how to fix your own bike with help from trained mechanics.</p> <p><b>Cafe</b>: We look after the Zero Waste Hub Cafe, helping provide a welcoming space for all the community.</p> <p><b>Communications</b>: We promote the coop’s activities and keep members informed about what’s happening.</p> <p><b>Finance &amp; Admin</b>: We oversee general administration, maintaining financial records and forecasting. The group includes Monitoring and Evaluation, Bookkeeping, Management Accounts, Social Enterprise and Funding subgroups.</p> <p><b>Funding</b>: We research and bid for grant funding to support SHRUB’s projects and core operations.</p> <p><b>Welfare</b>: We ensure the wellbeing of members, if you are experiencing any problems within the community, you can get in touch with us at <a href='mailto:welfare@shrubcoop.org'>welfare@shrubcoop.org</a></p> <p><b>Governance &amp; Policy</b>: We take care of the Coop’s decision making processes and other working practices and policies.</p> <p><b>Human Resources</b>: We ensure the wellbeing of our staff and offer them feedback and support.</p> <p><b>Trustees</b>: We are the legal guardians of the Coop, responsible for oversight of risk &amp; compliance, human resources, monitoring &amp; evaluation, funding, and member engagement.</p> <p><b>Steering Group</b>: We deal with the day-to-day decision making in the Coop and help to shape project development.</p></p>
+
+    </div>
+  </div>
+</div>
+
+<div id="infoModals"></div>
+
+<script>
+
+var infographic = document.getElementById("SHRUB_Structure");
+var interactiveElements = [
+  { id: "membersInfo", title: "Members", body: "\x3cp\x3eMemberships can be purchased or earned through volunteering. Members can:\x3c\/p\x3e \x3cul\x3e\x3cli\x3eSwap preloved items in the Swapshop \x26 get free stuff from the members section\x3c\/li\x3e \x3cli\x3eDiscounts at our events and workshops\x3c\/li\x3e \x3cli\x3eDiscounts on bicycle parts at the Wee Spoke Hub\x3c\/li\x3e \x3cli\x3eInvitations to our members parties and Annual General Meeting\x3c\/li\x3e \x3cli\x3eTake part in the cooperative’s decisions\x3c\/li\x3e \x3cul\x3e" }, 
+  { id: "steeringGroupInfo", title: "The Steering Group", body: "\x3cp\x3eThe Steering Group of between 10 and 15 people comprises 3 trustees, 3 staff, and 4 or more Members and operates under the guidance of the Trustees.\x3c\/p\x3e\x3c\/p\x3eMembers of the Steering Group serve for a minimum of six months with the maximum of three years followed by at least a year off.  Trustees and staff elect representatives among themselves and recruitment  for volunteer members is run at least twice a year.\x3c\/p\x3e\x3cp\x3eThe group has quorate meetings (at least half of the members and every constituency present) every two weeks and mainly operates by discussing proposals drafted by SHRUB staff and Working Groups (see Proposal form here).\x3c\/p\x3e\x3cp\x3eWe aim to get representation somehow from each Working Group on the Steering Group - could be staff, trustee or member.\x3c\/p\x3e"},
+  { id: "trusteeInfo", title: "Trustees", body: "\x3cp\x3eTrustees typically have more experience in finance, HR and fundraising among other areas and are elected annually at the Annual General Meeting or co-opted during the year by the serving Trustees.\x3c\/p\x3e \x3cp\x3eMeetings are held every four weeks and are focused on the long-term vision for SHRUB - including funding, future strategies and oversight of legal compliance issues.\x3c\/p\x3e \x3cp\x3eTrustees have oversight of the whole charity, drawing on ideas and suggestions from Staff and Members, and look at the strategic development for the next few years.\x3c\/p\x3e \x3cp\x3eIt is recommended that Trustees also participate in working groups that focus on more specific areas of SHRUB.\x3c\/p\x3e"}, 
+  { id: "staffInfo", title: "Staff", body: "\x3cp\x3eStaff are paid by the charity.\x3c\/p\x3e"}
+];
+
+infographic.addEventListener("load", function() {
+  var svgDoc = infographic.contentDocument;
+  interactiveElements.forEach(function(element) {
+    
+    var modal = document.createElement("div");
+    modal.className = "modal fade";
+    modal.id = element.id + "Modal";
+    modal.tabIndex = "-1";
+    modal.role = "dialog";
+    modal.setAttribute("aria-labelled-by", element.id + "ModalLabel");
+    modal.setAttribute("aria-hidden", true);
+
+    var modalDialog = document.createElement("div");
+    modalDialog.className = "modal-dialog modal-dialog-centered";
+    modalDialog.role = "document";
+
+    var modalContent = document.createElement("div");
+    modalContent.className = "modal-content";
+
+    var modalHeader = document.createElement("div");
+    modalHeader.className = "modal-header py-2";
+    modalHeader.style.backgroundColor = "#ab0c17";
+    modalHeader.style.color = "white";
+
+    var modalHeaderText = document.createElement("h4");
+    modalHeaderText.textContent = element.title;
+    modalHeaderText.className = "modal-title";
+    modalHeaderText.id = element.title + "ModalLabel";
+    
+    var modalCloseButton = document.createElement("button");
+    modalCloseButton.type = "button";
+    modalCloseButton.style.color = "white";
+    modalCloseButton.style.fontSize = "32px";
+    modalCloseButton.className = "close";
+    modalCloseButton.setAttribute("data-dismiss", "modal");
+    modalCloseButton.setAttribute("aria-label", "Close");
+    modalCloseButton.innerHTML = "<span aria-hidden='true'>&times;</span>";
+
+    var modalBody = document.createElement("div");
+    modalBody.className = "modal-body pt-4 pb-2 px-3 px-sm-4";
+    modalBody.innerHTML = element.body;
+
+    modalHeader.appendChild(modalHeaderText);
+    modalHeader.appendChild(modalCloseButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalDialog.appendChild(modalContent);
+    modal.appendChild(modalDialog);
+
+    document.getElementById("infoModals").append(modal);
+
+    
+    summonElement = svgDoc.getElementById(element.id + "Summon");
+    summonElement.addEventListener("click", function() { $("#" + element.id + "Modal").modal("show") });
+    summonElement.style.cursor = "pointer";
+  })
+});
+
+</script>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.postcodetrust.org.uk/" title="People&#39;s Postcode Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/" title="Climate Challenge Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4" tabindex="0">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Contact</h3>
+
+            <ul class="list-unstyled" tabindex="0">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h3 class="h5" tabindex="0">Follow Us</h3>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Site Links</h3>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">Our Blog</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3" tabindex="0">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-3 px-sm-4">
+                <p class="text-sm-center mb-2">We use Google Analytics to help us better understand the kind of people who visit our website and what content they are reading. This enables us to make better decisions about web design and writing</p>
+                <p class="text-sm-center mb-3">By allowing analytics you are agreeing to the terms of our <a href="/privacy">Privacy Notice</a> and giving consent for cookies to be placed on your browser</p>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

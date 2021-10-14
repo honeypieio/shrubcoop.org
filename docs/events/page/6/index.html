@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ9PL78BGB"></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJ9PL78BGB');
+    }
+  }
+
+  var askForConsent = function() {
+    if("\/events\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  
+
+
+<title>Events | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <h1 class="align-middle mb-0 mt-1">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </h1>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh Map - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh Map</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Our Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >Our Blog</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto underline"
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+
+<div class="col-xl-6 mx-auto">
+  <div class="container">
+    <div class="pt-5 events-list">
+      <h2 class="text-center mb-4">Events</h2>
+
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/sunday-clothes-swaps-1/" title="Event: Sunday Clothes Swaps! - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Sunday Clothes Swaps!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">We&#39;re running a direct clothes swap on the first Sunday of each month!</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Sunday, November 7, 2021
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Zero Waste Hub, 22 Bread Street, EH3 9AF
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/sunday-clothes-swaps-1/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1632823087\/shrubcoop.org\/media\/Copy_of_IMG_7833_ptmzza.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eWe’re running a direct clothes swap on the first Sunday of each month, so you can come and exchange clothes and accessories, and update your wardrobe at no cost to you of the environment!\x3c\/p\x3e\n\n\x3cp\x3eThe cafe will be open for hot drinks (and maybe some delicious vegan baked goods!), so come along for a chill afternoon.\x3c\/p\x3e\n\n\x3cp\x3eFree entry to members, entry by donation for non-members.\x3c\/p\x3e\n\n\x3cp\x3ePlease arrive within the first 15 minutes so that we can put out all of the clothes and get swapping!\x3c\/p\x3e\n\n\x3cp\x3eFacebook event: \x3ca href=\x22https:\/\/fb.me\/e\/5ODUFGjLl\x22 title=\x22https:\/\/fb.me\/e\/5ODUFGjLl\x22\x3ehttps:\/\/fb.me\/e\/5ODUFGjLl\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eBook your ticket here: Book your tickets here: \x3ca href=\x22https:\/\/www.eventbrite.co.uk\/e\/shrub-coop-clothes-swap-tickets-177353528177\x22 title=\x22https:\/\/www.eventbrite.co.uk\/e\/shrub-coop-clothes-swap-tickets-177353528177\x22\x3ehttps:\/\/www.eventbrite.co.uk\/e\/shrub-coop-clothes-swap-tickets-177353528177\x3c\/a\x3e\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/sunday-clothes-swaps-1\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Sunday Clothes Swaps! cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/sunday-clothes-swaps-2/" title="Event: Sunday Clothes Swaps! - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Sunday Clothes Swaps!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">We&#39;re running a direct clothes swap on the first Sunday of each month!</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Sunday, December 5, 2021
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Zero Waste Hub, 22 Bread Street, EH3 9AF
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/sunday-clothes-swaps-2/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1632823087\/shrubcoop.org\/media\/Copy_of_IMG_7833_ptmzza.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eWe’re running a direct clothes swap on the first Sunday of each month, so you can come and exchange clothes and accessories, and update your wardrobe at no cost to you of the environment!\x3c\/p\x3e\n\n\x3cp\x3eThe cafe will be open for hot drinks (and maybe some delicious vegan baked goods!), so come along for a chill afternoon.\x3c\/p\x3e\n\n\x3cp\x3eFree entry to members, entry by donation for non-members.\x3c\/p\x3e\n\n\x3cp\x3ePlease arrive within the first 15 minutes so that we can put out all of the clothes and get swapping!\x3c\/p\x3e\n\n\x3cp\x3eFacebook event: \x3ca href=\x22https:\/\/fb.me\/e\/5ODUFGjLl\x22 title=\x22https:\/\/fb.me\/e\/5ODUFGjLl\x22\x3ehttps:\/\/fb.me\/e\/5ODUFGjLl\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eBook your ticket here: Book your tickets here: \x3ca href=\x22https:\/\/www.eventbrite.co.uk\/e\/shrub-coop-clothes-swap-tickets-177353528177\x22 title=\x22https:\/\/www.eventbrite.co.uk\/e\/shrub-coop-clothes-swap-tickets-177353528177\x22\x3ehttps:\/\/www.eventbrite.co.uk\/e\/shrub-coop-clothes-swap-tickets-177353528177\x3c\/a\x3e\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/sunday-clothes-swaps-2\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Sunday Clothes Swaps! cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+
+
+      <div class="circle mx-auto mt-5 mb-2" style="background-color: #941a87;"></div>
+
+      <h3 class="mt-3 mb-4 text-center">Previous Events</h3>
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/everyday-cycling-with-shrub-cycling-in-the-winter/" title="Event: Everyday Cycling with SHRUB: Winter bike maintenance - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Everyday Cycling with SHRUB: Winter bike maintenance</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Come along to this friendly event to chat about how to overcome the winter…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Monday, December 14, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/everyday-cycling-with-shrub-cycling-in-the-winter/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1605722318\/shrubcoop.org\/media\/winter_cycling_pic_wmgwtf.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3ch4 id=\x22cycling-in-the-winter-winter-bike-maintenance\x22\x3e\x3cstrong\x3eCycling in the winter: Winter bike maintenance\x3c\/strong\x3e\x3c\/h4\x3e\n\n\x3cp\x3eSometimes it can be hard to know where to find information and resources about cycling, and not everyone knows someone they can ask…but what if there was a place you could go to meet other “everyday cyclists” to ask all those questions? Well, we’ve created a space to do just that! We are welcoming new and everyday cyclists to join us in a fortnightly skill-share where we can help you find the information you need to get where you want to go on two wheels!\x3c\/p\x3e\n\n\x3cp\x3eIn this week’s session, we will be looking at how to help your bike make it through these dark months. Lots of helpful maintenance tips.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhen?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eMonday 14th December at 5.30-6.30pm, online via Zoom (\x3ca href=\x22https:\/\/us02web.zoom.us\/j\/85189705884\x22\x3ehere’s the link\x3c\/a\x3e).\x3c\/p\x3e\n\n\x3cp\x3eWe’ll be running these sessions on Mondays at 5.30pm on the 30th November, 14th December and 18th January, each covering a different everyday cycling topic.\x3c\/p\x3e\n\n\x3cp\x3eJoin the dedicated \x3ca href=\x22https:\/\/www.facebook.com\/groups\/3381216181973515\x22\x3eEveryday Cycling Facebook group\x3c\/a\x3e to be part of our community!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eHow much?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eThese sessions are free to attend. However, if you enjoy the session, learn something and feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation to help us continue our sustainability projects!\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.paypal.com\/cgi-bin\/webscr?cmd=_s-xclick\x26hosted_button_id=SC4STHHVLD56U\x26source=url\x22\x3eClick here to donate!\x3c\/a\x3e\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/everyday-cycling-with-shrub-cycling-in-the-winter\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Everyday Cycling with SHRUB: Winter bike maintenance cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/festive-workshop/" title="Event: SHRUB&#39;s Zero Waste Festive Workshops - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">SHRUB&#39;s Zero Waste Festive Workshops</h3>
+</a>
+
+<p class="mb-2" tabindex="0">SHRUB would like to invite you to join us in celebrating a waste free festive…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Monday, December 14, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/festive-workshop/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1606327980\/shrubcoop.org\/media\/festive_workshops_xcldsp.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eSHRUB’s Zero Waste Festive Workshops\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eSHRUB would like to invite you to join us in celebrating a waste free festive period. We will be running a few workshops throughout December.\x3c\/p\x3e\n\n\x3cp\x3eThese will be running for a small number of people in our workshop at 17 Guthrie Street AND for those unable to join us in the space, we will be streaming the event online.\x3cbr \/\x3e\nWe will be posting about each session in our dedicated \x3ca href=\x22https:\/\/www.facebook.com\/events\/969051650287349\x22\x3eFacebook event\x3c\/a\x3e beforehand so that if you’re joining in at home, you can gather the materials in advance. Or you can nip into the workshop and we’ll give you a wee kit.\x3c\/p\x3e\n\n\x3cp\x3eWe will be taking all of the COVID safety precautions and ask that everyone who comes into the space wears a mask.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhen?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eTickets can be booked using the links below:\x3cbr \/\x3e\n\x3ca href=\x22https:\/\/www.eventbrite.co.uk\/e\/festive-workshop-tickets-130235563075?fbclid=IwAR33dnR2aEn2qrwP1XaV3V_vqj0MN-fUHRINNp6pHLV2iy4jwmWPRiJkT-Q\x22\x3eWeek 1\x3c\/a\x3e - Monday 7th Dec 12pm-3pm\x3cbr \/\x3e\n\x3ca href=\x22https:\/\/www.eventbrite.co.uk\/e\/festive-workshop-tickets-130244909029?fbclid=IwAR08t5se3fzg9DDSmpsSqpACDK-e-01bs8Ax4Ynd5321cbnKj7pMjCHIK8M\x22\x3eWeek 2\x3c\/a\x3e - Monday 14th December 12pm-3pm\x3cbr \/\x3e\n\x3ca href=\x22https:\/\/www.eventbrite.co.uk\/e\/festive-workshop-tickets-130245372415?fbclid=IwAR0taDlApDQCjdjxBPGiyPmeelk3GcGcAiPTWC2PbtOWKraNszInaMyW780\x22\x3eWeek 3\x3c\/a\x3e - Monday 21st December 12pm-3pm\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eHow much?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eThese workshops are free to attend. However, if you enjoy the workshop, learn something and feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation to help us continue our sustainability projects!\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.paypal.com\/cgi-bin\/webscr?cmd=_s-xclick\x26hosted_button_id=SC4STHHVLD56U\x26source=url\x22\x3eClick here to donate!\x3c\/a\x3e\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/festive-workshop\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "SHRUB\x27s Zero Waste Festive Workshops cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/sustainable-fashion-re-think/" title="Event: Sustainable Fashion Re-think - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Sustainable Fashion Re-think</h3>
+</a>
+
+<p class="mb-2" tabindex="0">We have been running our Sustainable Fashion Working Group for quite a while now…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Thursday, December 10, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/sustainable-fashion-re-think/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1607429024\/shrubcoop.org\/media\/sust_fash_rethink_uizavj.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eHello everyone!\x3c\/p\x3e\n\n\x3cp\x3eWe have been running our Sustainable Fashion Working Group for quite a while now and thought now would be a good time to re-think how we want this group to run and what we want its aims and purpose to be in the new year.\x3c\/p\x3e\n\n\x3cp\x3eThis has always been a group for exploring topics around the environmental and social impact of the fashion and textiles industry but now that there is a lot more information about this in the news, maybe it is time for the focus of the group to shift.\x3c\/p\x3e\n\n\x3cp\x3eWhether you have come along before or not, anyone who is interested in this group is welcome to come along and help us shape what this group will be looking like in the new year.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhen?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eThursday 10th December at 6.30-7.30pm\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhere?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eOnline, on Google Meet using \x3ca href=\x22http:\/\/meet.google.com\/vac-ofkg-eay\x22\x3ethis link\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eFor any questions, please contact joanne.elston@shrubcoop.org\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/sustainable-fashion-re-think\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Sustainable Fashion Re-think cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/warm-welcome-for-new-volunteers-1/" title="Event: Warm Welcome for new volunteers - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Warm Welcome for new volunteers</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Are you interested in volunteering for SHRUB, become a paying member or simply…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Wednesday, December 9, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/warm-welcome-for-new-volunteers-1/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1599684301\/shrubcoop.org\/media\/warm_welcome_1_tsvqee.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eAre you interested in volunteering for SHRUB Coop, become a paying member or simply want to find out more about what SHRUB is all about?\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhen\x3c\/strong\x3e: 5-6pm on Wednesday, 9 December\x3c\/p\x3e\n\n\x3cp\x3eJoin us online! \x3ca href=\x22https:\/\/us02web.zoom.us\/j\/81192884806\x22 title=\x22zoom link\x22\x3eHere\x3c\/a\x3e is the Zoom link\x3c\/p\x3e\n\n\x3cp\x3eThere are a lot of things happening at SHRUB, so whether you are brand new or have been around a while come along and get informed.\x3c\/p\x3e\n\n\x3cp\x3eCome join other like-minded people, learn a bit about what we do and how we work and discover what volunteer experiences might be available.\x3c\/p\x3e\n\n\x3cp\x3eIf you are a new volunteer and you haven’t yet had an induction, please come along and catch the surf!\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/warm-welcome-for-new-volunteers-1\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Warm Welcome for new volunteers cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/shrub-annual-general-meeting-2020/" title="Event: SHRUB Annual General Meeting 2020 - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">SHRUB Annual General Meeting 2020</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Join us on 23rd November for our AGM!</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Monday, November 23, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/shrub-annual-general-meeting-2020/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1605218214\/shrubcoop.org\/media\/P1400088a_oyo8sl.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eThis year’s AGM is here!\x3c\/p\x3e\n\n\x3cp\x3eDon’t be scared, this is just a chance for us all to hear about what we have been up to and think about what we want to be doing in the future. It’s also time to say goodbye to our current trustees and elect new trustees for the next year ahead\x3c\/p\x3e\n\n\x3cp\x3eWe will have space for everyone to share their opinions, thoughts and ideas. Put your thinking caps on before the day and bring any ideas or questions you might have.\x3c\/p\x3e\n\n\x3cp\x3eWe’ll follow this up with a social activity, the details of which will be confirmed soon!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhen\x3c\/strong\x3e: 23rd November, 6-8pm.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhere\x3c\/strong\x3e: Online. Join us on Zoom \x3ca href=\x22https:\/\/us02web.zoom.us\/j\/84289235949?pwd=Tm45MGd4WVJiYkRFRHp6MkNSSFZLdz09\x22\x3ehere\x3c\/a\x3e (Meeting ID: 842 8923 5949 Passcode: 720180)\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eRegistration\x3c\/strong\x3e: It’s free to attend, but please sign up via Eventbrite \x3ca href=\x22https:\/\/shrub23nov.eventbrite.co.uk\x22\x3ehere\x3c\/a\x3e so we can keep track of numbers\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eDraft Agenda:\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e6.00pm \x3cstrong\x3e\x3cem\x3eWelcome\x3c\/em\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e6.15pm \x3cstrong\x3e\x3cem\x3eOur Impact:\x3c\/em\x3e\x3c\/strong\x3e SHRUB’s biggest achievements 2019-20 (breakout rooms)\x3c\/p\x3e\n\n\x3cp\x3e6.40pm Break\x3c\/p\x3e\n\n\x3cp\x3e6.45pm \x3cstrong\x3e\x3cem\x3eElecting our Trustees\x3c\/em\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e7.05pm \x3cstrong\x3e\x3cem\x3eFinancial Report:\x3c\/em\x3e\x3c\/strong\x3e How we spent our money\x3c\/p\x3e\n\n\x3cp\x3e7.15pm Break\x3c\/p\x3e\n\n\x3cp\x3e7.20pm \x3cstrong\x3e\x3cem\x3eIdeas Generation\x3c\/em\x3e\x3c\/strong\x3e - What ideas do you have for the next year at SHRUB? (breakout rooms)\x3c\/p\x3e\n\n\x3cp\x3e7.45pm Join together to share ideas and finish\x3c\/p\x3e\n\n\x3cp\x3e8.00pm \x3cstrong\x3e\x3cem\x3eAfter-Party \/ Social\x3c\/em\x3e\x3c\/strong\x3e (Please let us know if you have any suggestions)\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eBecoming a Trustee\x3c\/strong\x3e:\x3cbr \/\x3e\nIf you would like to stand for election as a Trustee, please see the application process \x3ca href=\x22https:\/\/www.shrubcoop.org\/become-a-trustee-of-shrub-coop-1\/\x22\x3ehere\x3c\/a\x3e. We are looking for people of all skill sets and backgrounds so don’t be shy to apply!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eAnnual Report:\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eIf you would like to read our annual report in advance (we have achieved so much!), you can see it \x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1601983174\/shrubcoop.org\/media\/SHRUB_Coop_Annual_Report_and_Accounts_18.11.20_-_31.03.20_cpbntw.pdf\x22\x3ehere\x3c\/a\x3e.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eAccessibility\x3c\/strong\x3e:\x3cbr \/\x3e\nThis will be an online event using Zoom meetings.\x3c\/p\x3e\n\n\x3cp\x3eIf you have any questions about the accessibility of the meeting, please get in touch via hello@shrubcoop.org\x3c\/p\x3e\n\n\x3cp\x3eWe will have the Zero Waste Hub open for people who have limited internet access so get in touch if you would like to come in.\x3c\/p\x3e\n\n\x3cp\x3eHope to see you there!\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/shrub-annual-general-meeting-2020\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "SHRUB Annual General Meeting 2020 cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/make-and-mend-with-tamsyn-online-4/" title="Event: Make and Mend with Tamsyn (Online) - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Make and Mend with Tamsyn (Online)</h3>
+</a>
+
+<p class="mb-2" tabindex="0">An online workshop where you can learn to make and mend or get advice on sewing…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Thursday, November 19, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/make-and-mend-with-tamsyn-online-4/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1602773928\/shrubcoop.org\/media\/Thu_sewing_sessions_vv1xug.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eRegular Thursday ‘Make and Mend with SHRUB’ Session run by Tamsyn Ball.\x3cbr \/\x3e\nEvery week we have a special topic, but drop ins and all sorts of sewing projects and questions are welcome.\x3c\/p\x3e\n\n\x3ch4 id=\x22who-can-join\x22\x3eWho can join?\x3c\/h4\x3e\n\n\x3cp\x3eAnyone!\x3c\/p\x3e\n\n\x3cp\x3eNo experience necessary. Everyone is welcome, this is for people of all sewing abilities to meet and get advice.\x3c\/p\x3e\n\n\x3cp\x3eSo whether you’ve got an upcycling project in mind, need to repair or alter something, or want to just join us for a cup of tea, sign in and say hello!\x3c\/p\x3e\n\n\x3ch4 id=\x22how-to-join\x22\x3eHow to join\x3c\/h4\x3e\n\n\x3cp\x3eUntil further notice these sessions run online, on \x3ca href=\x22https:\/\/us02web.zoom.us\/j\/9731735824\x22\x3eZoom\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eID 9731735824.\x3c\/p\x3e\n\n\x3cp\x3eThis event is \x3cstrong\x3eFREE\x3c\/strong\x3e (donations are always welcome)\x3c\/p\x3e\n\n\x3ch4 id=\x22after-the-sewing-sessions\x22\x3eAfter the sewing sessions\x3c\/h4\x3e\n\n\x3cp\x3eDon’t forget to join our \x3ca href=\x22https:\/\/www.facebook.com\/groups\/236741857323915\x22\x3e‘Make and Mend with SHRUB’\x3c\/a\x3e Facebook group to share your creations.\x3c\/p\x3e\n\n\x3ch4 id=\x22how-covid-19-is-affecting-shrub-coop\x22\x3eHow COVID-19 is affecting SHRUB Coop\x3c\/h4\x3e\n\n\x3cp\x3eWe understand that right now, a lot of people are concerned about their own financial situation. It’s important that you take care of yourself and your family first.\x3c\/p\x3e\n\n\x3cp\x3eIf you enjoy the session, learn something or feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation.\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.paypal.com\/cgi-bin\/webscr?cmd=_s-xclick\x26hosted_button_id=SC4STHHVLD56U\x26source=url\x22\x3eClick here to donate!\x3c\/a\x3e\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/make-and-mend-with-tamsyn-online-4\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Make and Mend with Tamsyn (Online) cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/warm-welcome-for-new-volunteers/" title="Event: Warm Welcome for new volunteers - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Warm Welcome for new volunteers</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Are you interested in volunteering for SHRUB, become a paying member or simply…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Wednesday, November 18, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/warm-welcome-for-new-volunteers/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1599684301\/shrubcoop.org\/media\/warm_welcome_1_tsvqee.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eAre you interested in volunteering for SHRUB Coop, become a paying member or simply want to find out more about what SHRUB is all about?\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhen\x3c\/strong\x3e: 5-6pm on Wednesday, 18 November\x3c\/p\x3e\n\n\x3cp\x3eJoin us online! \x3ca href=\x22https:\/\/us02web.zoom.us\/j\/81192884806\x22 title=\x22zoom link\x22\x3eHere\x3c\/a\x3e is the Zoom link\x3c\/p\x3e\n\n\x3cp\x3eThere are a lot of things happening at SHRUB, so whether you are brand new or have been around a while come along and get informed.\x3c\/p\x3e\n\n\x3cp\x3eCome join other like-minded people, learn a bit about what we do and how we work and discover what volunteer experiences might be available.\x3c\/p\x3e\n\n\x3cp\x3eIf you are a new volunteer and you haven’t yet had an induction, please come along and catch the surf!\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/warm-welcome-for-new-volunteers\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Warm Welcome for new volunteers cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/make-and-mend-with-mary-online-3/" title="Event: Make and Mend with Mary (Online) - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Make and Mend with Mary (Online)</h3>
+</a>
+
+<p class="mb-2" tabindex="0">An online workshop where you can learn to make and mend or get advice on sewing…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Tuesday, November 17, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/make-and-mend-with-mary-online-3/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1602773928\/shrubcoop.org\/media\/Tue_sewing_sessions_zc8isq.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eRegular Tuesday ‘Make and Mend with SHRUB’ Session run by Mary Morton.\x3cbr \/\x3e\nEvery week we have a special topic, but drop ins and all sorts of sewing projects and questions are welcome.\x3c\/p\x3e\n\n\x3ch4 id=\x22who-can-join\x22\x3eWho can join?\x3c\/h4\x3e\n\n\x3cp\x3eAnyone!\x3c\/p\x3e\n\n\x3cp\x3eNo experience necessary. Everyone is welcome, this is for people of all sewing abilities to meet and get advice.\x3c\/p\x3e\n\n\x3cp\x3eSo whether you’ve got an upcycling project in mind, need to repair or alter something, or want to just join us for a cup of tea, sign in and say hello!\x3c\/p\x3e\n\n\x3ch4 id=\x22how-to-join\x22\x3eHow to join\x3c\/h4\x3e\n\n\x3cp\x3eUntil further notice these sessions run online, on \x3ca href=\x22https:\/\/us02web.zoom.us\/j\/9731735824\x22\x3eZoom\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eID 9731735824.\x3c\/p\x3e\n\n\x3cp\x3eThis event is \x3cstrong\x3eFREE\x3c\/strong\x3e (donations are always welcome)\x3c\/p\x3e\n\n\x3ch4 id=\x22after-the-sewing-sessions\x22\x3eAfter the sewing sessions\x3c\/h4\x3e\n\n\x3cp\x3eDon’t forget to join our \x3ca href=\x22https:\/\/www.facebook.com\/groups\/236741857323915\x22\x3e‘Make and Mend with SHRUB’\x3c\/a\x3e Facebook group to share your creations.\x3c\/p\x3e\n\n\x3ch4 id=\x22how-covid-19-is-affecting-shrub-coop\x22\x3eHow COVID-19 is affecting SHRUB Coop\x3c\/h4\x3e\n\n\x3cp\x3eWe understand that right now, a lot of people are concerned about their own financial situation. It’s important that you take care of yourself and your family first.\x3c\/p\x3e\n\n\x3cp\x3eIf you enjoy the session, learn something or feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation.\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.paypal.com\/cgi-bin\/webscr?cmd=_s-xclick\x26hosted_button_id=SC4STHHVLD56U\x26source=url\x22\x3eClick here to donate!\x3c\/a\x3e\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/make-and-mend-with-mary-online-3\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Make and Mend with Mary (Online) cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/make-and-mend-with-tamsyn-online-3/" title="Event: Make and Mend with Tamsyn (Online) - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">Make and Mend with Tamsyn (Online)</h3>
+</a>
+
+<p class="mb-2" tabindex="0">An online workshop where you can learn to make and mend or get advice on sewing…</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Thursday, November 12, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/make-and-mend-with-tamsyn-online-3/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1602773928\/shrubcoop.org\/media\/Thu_sewing_sessions_vv1xug.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eRegular Thursday ‘Make and Mend with SHRUB’ Session run by Tamsyn Ball.\x3cbr \/\x3e\nEvery week we have a special topic, but drop ins and all sorts of sewing projects and questions are welcome.\x3c\/p\x3e\n\n\x3ch4 id=\x22who-can-join\x22\x3eWho can join?\x3c\/h4\x3e\n\n\x3cp\x3eAnyone!\x3c\/p\x3e\n\n\x3cp\x3eNo experience necessary. Everyone is welcome, this is for people of all sewing abilities to meet and get advice.\x3c\/p\x3e\n\n\x3cp\x3eSo whether you’ve got an upcycling project in mind, need to repair or alter something, or want to just join us for a cup of tea, sign in and say hello!\x3c\/p\x3e\n\n\x3ch4 id=\x22how-to-join\x22\x3eHow to join\x3c\/h4\x3e\n\n\x3cp\x3eUntil further notice these sessions run online, on \x3ca href=\x22https:\/\/us02web.zoom.us\/j\/9731735824\x22\x3eZoom\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eID 9731735824.\x3c\/p\x3e\n\n\x3cp\x3eThis event is \x3cstrong\x3eFREE\x3c\/strong\x3e (donations are always welcome)\x3c\/p\x3e\n\n\x3ch4 id=\x22after-the-sewing-sessions\x22\x3eAfter the sewing sessions\x3c\/h4\x3e\n\n\x3cp\x3eDon’t forget to join our \x3ca href=\x22https:\/\/www.facebook.com\/groups\/236741857323915\x22\x3e‘Make and Mend with SHRUB’\x3c\/a\x3e Facebook group to share your creations.\x3c\/p\x3e\n\n\x3ch4 id=\x22how-covid-19-is-affecting-shrub-coop\x22\x3eHow COVID-19 is affecting SHRUB Coop\x3c\/h4\x3e\n\n\x3cp\x3eWe understand that right now, a lot of people are concerned about their own financial situation. It’s important that you take care of yourself and your family first.\x3c\/p\x3e\n\n\x3cp\x3eIf you enjoy the session, learn something or feel you are able to support us through these difficult times, we would be delighted if you would consider making a donation.\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.paypal.com\/cgi-bin\/webscr?cmd=_s-xclick\x26hosted_button_id=SC4STHHVLD56U\x26source=url\x22\x3eClick here to donate!\x3c\/a\x3e\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/make-and-mend-with-tamsyn-online-3\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "Make and Mend with Tamsyn (Online) cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/events/david-attenborough-a-life-on-our-planet.watch-along-and-chat/" title="Event: David Attenborough - A Life On Our Planet. Watch along and chat - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">David Attenborough - A Life On Our Planet. Watch along and chat</h3>
+</a>
+
+<p class="mb-2" tabindex="0">A film screening and discussion of David Attenborough&#39;s newest film</p>
+
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; Wednesday, November 11, 2020
+</p>
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; Online (read the description for the link)
+</p>
+
+
+
+<img id="https://www.shrubcoop.org/events/david-attenborough-a-life-on-our-planet.watch-along-and-chat/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1604080173\/shrubcoop.org\/media\/122940530_5228767757148802_7046818568813879146_o_bmv5no.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eWe’re excited to be hosting a screening and discussion of the David Attenborough: A Life On Our Planet film.\x3cbr \/\x3e\nHonest, revealing and urgent, this film is Sir David Attenborough’s witness statement for the natural world - offering a powerful first hand account of humanity’s impact on nature and a message of hope for future generations.\x3cbr \/\x3e\nWe’ll watch the film together and then have a chat about what we think and what actions we feel motivated to take going forward.\x3c\/p\x3e\n\n\x3cp\x3eWhen: Wednesday 11th November at 17.30\x3c\/p\x3e\n\n\x3cp\x3eWhere: Zoom using \x3ca href=\x22https:\/\/us02web.zoom.us\/j\/84087102515\x22\x3ethis link\x3c\/a\x3e.\x3c\/p\x3e\n"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/events\/david-attenborough-a-life-on-our-planet.watch-along-and-chat\/_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "David Attenborough - A Life On Our Planet. Watch along and chat cover image"
+}
+
+</script>
+
+
+
+            </div>
+            <hr />
+
+          
+        
+      
+
+    </div>
+    <div class="d-flex justify-content-center">
+      
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/events/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/events/page/5/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/events/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/events/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/events/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/events/page/5/">5</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/events/page/6/">6</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/events/page/7/">7</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/events/page/19/">19</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/events/page/7/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/events/page/19/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.postcodetrust.org.uk/" title="People&#39;s Postcode Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/" title="Climate Challenge Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4" tabindex="0">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Contact</h3>
+
+            <ul class="list-unstyled" tabindex="0">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h3 class="h5" tabindex="0">Follow Us</h3>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Site Links</h3>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">Our Blog</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3" tabindex="0">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-3 px-sm-4">
+                <p class="text-sm-center mb-2">We use Google Analytics to help us better understand the kind of people who visit our website and what content they are reading. This enables us to make better decisions about web design and writing</p>
+                <p class="text-sm-center mb-3">By allowing analytics you are agreeing to the terms of our <a href="/privacy">Privacy Notice</a> and giving consent for cookies to be placed on your browser</p>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

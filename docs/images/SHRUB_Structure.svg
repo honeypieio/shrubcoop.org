@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="135.53259mm"
+   height="125.36181mm"
+   viewBox="0 0 135.53259 125.36181"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="SHRUB_Structure.svg">
+  <metadata
+     id="metadata236">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4246265"
+     inkscape:cx="256.12457"
+     inkscape:cy="236.90421"
+     inkscape:window-width="1534"
+     inkscape:window-height="853"
+     inkscape:window-x="30"
+     inkscape:window-y="31"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="steeringGroupInfoSummon"
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <style
+       id="style1181">.cls-1{fill:none;stroke:#c2e8f5;stroke-width:3px;}.cls-1,.cls-2,.cls-3,.cls-38,.cls-39,.cls-40,.cls-44,.cls-45,.cls-46,.cls-47,.cls-48{stroke-miterlimit:10;}.cls-2,.cls-45{fill:#c2e8f5;}.cls-2,.cls-3,.cls-38,.cls-39,.cls-40,.cls-44,.cls-45,.cls-46,.cls-47,.cls-48{stroke:#fff;}.cls-2,.cls-38,.cls-39,.cls-40{stroke-width:2px;}.cls-3{fill:#fff;}.cls-4,.cls-41{font-size:20px;}.cls-11,.cls-4,.cls-41,.cls-49{fill:#231f20;}.cls-4,.cls-41,.cls-49{font-family:Dosis-Bold, Dosis;font-weight:700;}.cls-5{letter-spacing:0em;}.cls-6{letter-spacing:0em;}.cls-7{letter-spacing:-0.01em;}.cls-8{letter-spacing:-0.05em;}.cls-9{letter-spacing:0em;}.cls-10{letter-spacing:0em;}.cls-11{font-size:18px;font-family:Dosis-Book, Dosis;}.cls-12{letter-spacing:-0.03em;}.cls-13{letter-spacing:-0.02em;}.cls-14{letter-spacing:0em;}.cls-15{letter-spacing:-0.04em;}.cls-16{letter-spacing:-0.01em;}.cls-17{letter-spacing:0em;}.cls-18{letter-spacing:-0.01em;}.cls-19{letter-spacing:-0.05em;}.cls-20{letter-spacing:-0.01em;}.cls-21{letter-spacing:-0.11em;}.cls-22{letter-spacing:0em;}.cls-23{letter-spacing:-0.1em;}.cls-24{letter-spacing:-0.02em;}.cls-25{letter-spacing:-0.02em;}.cls-26{letter-spacing:-0.13em;}.cls-27{letter-spacing:-0.05em;}.cls-28{letter-spacing:0em;}.cls-29{letter-spacing:-0.01em;}.cls-30{letter-spacing:0em;}.cls-31{letter-spacing:-0.02em;}.cls-32{letter-spacing:-0.02em;}.cls-33{letter-spacing:-0.11em;}.cls-34{letter-spacing:-0.04em;}.cls-35{letter-spacing:-0.09em;}.cls-36{letter-spacing:-0.05em;}.cls-37{letter-spacing:-0.01em;}.cls-38,.cls-47{fill:#f7941d;}.cls-38,.cls-39,.cls-40,.cls-46,.cls-47,.cls-48{stroke-linecap:round;}.cls-39,.cls-48{fill:#ec008c;}.cls-40,.cls-46{fill:#262262;}.cls-41{letter-spacing:-0.01em;}.cls-42{letter-spacing:-0.01em;}.cls-43{letter-spacing:-0.01em;}.cls-44{fill:#e6e7e8;}.cls-49{font-size:21px;}.cls-50{letter-spacing:-0.09em;}.cls-51{letter-spacing:0em;}.cls-52{letter-spacing:0em;}</style>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.894747,-62.170264)">
+    <g
+       id="Layer_8"
+       data-name="Layer 8"
+       transform="matrix(0.26458333,0,0,0.26458333,-12.906408,39.210765)">
+      <g
+         id="g2263"
+         transform="translate(-140.12862,32.79606)">
+        <g
+           id="g18022">
+          <line
+             class="cls-1"
+             x1="560.29999"
+             y1="378.56"
+             x2="537.21002"
+             y2="354.97"
+             id="line1187" />
+          <line
+             class="cls-1"
+             x1="493.25"
+             y1="227.3"
+             x2="493.25"
+             y2="254.88"
+             id="line1189" />
+          <circle
+             class="cls-2"
+             cx="493.25"
+             cy="314.57999"
+             r="59.700001"
+             id="circle1191" />
+          <g
+             id="steeringGroupInfoSummon">
+            <path
+               class="cls-3"
+               d="m 493.25,368.61 a 54,54 0 1 1 54,-54 54.09,54.09 0 0 1 -54,54 z"
+               id="path1193" />
+            <text
+               class="cls-4"
+               id="text1205"
+               x="493.14993"
+               y="311.25995"
+               style="text-align:center;text-anchor:middle"><tspan
+                 sodipodi:role="line"
+                 id="tspan9043"
+                 x="493.14993"
+                 y="311.25995">Steering</tspan><tspan
+                 sodipodi:role="line"
+                 id="tspan9045"
+                 x="493.14993"
+                 y="336.25995">Group</tspan></text>
+          </g>
+          <circle
+             class="cls-38"
+             cx="678.84003"
+             cy="87.699997"
+             r="8.5"
+             id="circle1415" />
+          <circle
+             class="cls-39"
+             cx="678.84003"
+             cy="113.15"
+             r="8.5"
+             id="circle1417" />
+          <circle
+             class="cls-40"
+             cx="678.84003"
+             cy="138.60001"
+             r="8.5"
+             id="circle1419" />
+          <text
+             class="cls-41"
+             transform="translate(697.72,69.02)"
+             id="text1423">Roles</text>
+          <text
+             class="cls-11"
+             transform="translate(697.72,93.65)"
+             id="text1443">Co<tspan
+   class="cls-42"
+   x="17.84"
+   y="0"
+   id="tspan1425">n</tspan><tspan
+   x="26.620001"
+   y="0"
+   id="tspan1427">vener</tspan><tspan
+   class="cls-43"
+   x="0"
+   y="26"
+   id="tspan1429">R</tspan><tspan
+   x="9.3100004"
+   y="26"
+   id="tspan1431">ep</tspan><tspan
+   class="cls-13"
+   x="26.26"
+   y="26"
+   id="tspan1433">r</tspan><tspan
+   x="31.9"
+   y="26"
+   id="tspan1435">esentative</tspan><tspan
+   class="cls-22"
+   id="tspan1441"><tspan
+     x="0"
+     y="52"
+     id="tspan1437">M</tspan><tspan
+     class="cls-17"
+     x="11.93"
+     y="52"
+     id="tspan1439">ember</tspan></tspan></text>
+          <g
+             id="membersInfoSummon">
+            <path
+               class="cls-44"
+               d="M 577.26,141.17 A 83.92,83.92 0 0 1 576,155.71 l -82.75,-14.54 -82.75,14.54 a 84,84 0 1 1 166.76,-14.54 z"
+               id="path1447" />
+            <path
+               class="cls-45"
+               d="m 576,155.71 a 84,84 0 0 1 -165.5,0 l 82.75,-14.54 z"
+               id="path1449" />
+            <path
+               class="cls-3"
+               d="m 493.25,199.67 a 58.5,58.5 0 1 0 -58.5,-58.5 58.56,58.56 0 0 0 58.5,58.5 z"
+               id="path1451" />
+            <text
+               class="cls-4"
+               id="text1457"
+               x="455.12616"
+               y="148.59993">Members</text>
+            <circle
+               class="cls-46"
+               cx="493.25"
+               cy="69.919998"
+               r="8.5"
+               id="circle1459" />
+            <circle
+               class="cls-46"
+               cx="447.37"
+               cy="86.699997"
+               r="8.5"
+               id="circle1461" />
+            <circle
+               class="cls-46"
+               cx="423.14001"
+               cy="128.38"
+               r="8.5"
+               id="circle1463" />
+            <circle
+               class="cls-47"
+               cx="431.73999"
+               cy="177.11"
+               r="8.5"
+               id="circle1465" />
+            <circle
+               class="cls-48"
+               cx="468.41"
+               cy="207.96001"
+               r="8.5"
+               id="circle1467" />
+            <circle
+               class="cls-48"
+               cx="518.09003"
+               cy="207.96001"
+               r="8.5"
+               id="circle1469" />
+            <circle
+               class="cls-48"
+               cx="554.76001"
+               cy="177.11"
+               r="8.5"
+               id="circle1471" />
+            <circle
+               class="cls-48"
+               cx="563.34998"
+               cy="128.38"
+               r="8.5"
+               id="circle1473" />
+          </g>
+          <circle
+             class="cls-46"
+             cx="539.13"
+             cy="86.699997"
+             r="8.5"
+             id="circle1475" />
+          <g
+             id="trusteeInfoSummon">
+            <line
+               class="cls-1"
+               x1="426.34"
+               y1="378.67999"
+               x2="449.48999"
+               y2="355.19"
+               id="line1185" />
+            <path
+               class="cls-45"
+               d="M 453.94,458.14 A 83.93,83.93 0 0 1 447,479.62 l -75.73,-36.34 -52.4,-65.68 a 84.38,84.38 0 0 1 10.49,-7.13 85.48,85.48 0 0 1 13.45,-6.25 84,84 0 0 1 111.14,93.92 z"
+               id="path1477" />
+            <path
+               class="cls-44"
+               d="m 447,479.62 a 84,84 0 1 1 -128.13,-102 l 52.4,65.68 z"
+               id="path1479" />
+            <path
+               class="cls-3"
+               d="m 371.26,501.78 a 58.5,58.5 0 1 1 58.5,-58.5 58.57,58.57 0 0 1 -58.5,58.5 z"
+               id="path1481" />
+            <text
+               class="cls-49"
+               id="text1491"
+               x="335.02911"
+               y="450.86093">Trustees</text>
+            <circle
+               class="cls-46"
+               cx="442.51001"
+               cy="443.28"
+               r="8.5"
+               id="circle1493" />
+            <circle
+               class="cls-48"
+               cx="415.79999"
+               cy="387.70001"
+               r="8.5"
+               id="circle1495" />
+            <circle
+               class="cls-48"
+               cx="354.94"
+               cy="373.91"
+               r="8.5"
+               id="circle1497" />
+            <circle
+               class="cls-47"
+               cx="307.26001"
+               cy="411.97"
+               r="8.5"
+               id="circle1499" />
+            <circle
+               class="cls-46"
+               cx="307.26001"
+               cy="474.59"
+               r="8.5"
+               id="circle1501" />
+            <circle
+               class="cls-46"
+               cx="354.94"
+               cy="512.65002"
+               r="8.5"
+               id="circle1503" />
+            <circle
+               class="cls-46"
+               cx="415.79999"
+               cy="498.85999"
+               r="8.5"
+               id="circle1505" />
+            <circle
+               class="cls-48"
+               cx="442.51001"
+               cy="443.28"
+               r="8.5"
+               id="circle1507" />
+          </g>
+          <g
+             id="staffInfoSummon">
+            <g
+               id="g262">
+              <path
+                 class="cls-45"
+                 d="m 655.48,369.53 -40.23,73.75 -80.39,24.34 a 84,84 0 0 1 108.85,-103.4 85.07,85.07 0 0 1 11.77,5.31 z"
+                 id="path1509" />
+              <path
+                 class="cls-44"
+                 d="m 688.06,485.19 a 84,84 0 0 1 -153.2,-17.57 l 80.39,-24.34 40.23,-73.75 c 0.56,0.3 1.12,0.62 1.68,0.94 a 84,84 0 0 1 30.9,114.72 z"
+                 id="path1511" />
+              <path
+                 class="cls-3"
+                 d="m 615.25,501.78 a 58.5,58.5 0 1 0 -58.5,-58.5 58.57,58.57 0 0 0 58.5,58.5 z"
+                 id="path1513" />
+              <circle
+                 class="cls-46"
+                 cx="608.22998"
+                 cy="514.19"
+                 r="8.5"
+                 id="circle1517" />
+              <circle
+                 class="cls-46"
+                 cx="660.40002"
+                 cy="498.35001"
+                 r="8.5"
+                 id="circle1519" />
+              <circle
+                 class="cls-46"
+                 cx="686.15002"
+                 cy="450.29001"
+                 r="8.5"
+                 id="circle1521" />
+              <circle
+                 class="cls-46"
+                 cx="670.32001"
+                 cy="398.12"
+                 r="8.5"
+                 id="circle1523" />
+              <circle
+                 class="cls-48"
+                 cx="622.26001"
+                 cy="372.37"
+                 r="8.5"
+                 id="circle1525" />
+              <circle
+                 class="cls-48"
+                 cx="570.09003"
+                 cy="388.20001"
+                 r="8.5"
+                 id="circle1527" />
+              <circle
+                 class="cls-48"
+                 cx="544.34003"
+                 cy="436.26001"
+                 r="8.5"
+                 id="circle1529" />
+              <circle
+                 class="cls-46"
+                 cx="560.16998"
+                 cy="488.44"
+                 r="8.5"
+                 id="circle1531" />
+            </g>
+            <text
+               class="cls-4"
+               id="text1515"
+               x="594.90063"
+               y="450.69882">Staff</text>
+          </g>
+        </g>
+      </g>
+      <text
+         id="text1445" />
+    </g>
+  </g>
+</svg>

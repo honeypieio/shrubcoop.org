@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ9PL78BGB"></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJ9PL78BGB');
+    }
+  }
+
+  var askForConsent = function() {
+    if("\/news\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Stay up to date with our latest news">
+
+
+<title>News | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <h1 class="align-middle mb-0 mt-1">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </h1>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh Map - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh Map</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Our Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >Our Blog</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+      <div class="pt-5 news-list">
+        <h2 class="text-center mb-4">News</h2>
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/strut-your-sustainable-stuff/" tabindex="0" title="Blog post: Strut Your (Sustainable) Stuff  by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Strut Your (Sustainable) Stuff </h3>
+</a>
+
+<p class="mb-2" tabindex="0">Fashion Revolution Week is a chance for action, education and empowerment.</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 19/04/21">&#128336; 19/04/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/strut-your-sustainable-stuff/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1618848215\/shrubcoop.org\/media\/fas_eosduw.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e‘Revolution, but make it fashion’ - 2021 slogan.\x3c\/p\x3e\n\n\x3cp\x3eInfographic: Fashion Revolution.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eIt can be overwhelming learning about all the atrocities that the fashion industry involves. One need only read our recent article series ‘A Less-Than-Cheerful Assessment of the Fashion Industry’ (\x3ca href=\x22https:\/\/www.shrubcoop.org\/a-less-than-cheerful-assessment-of-the-fashion-industry-part-i\/\x22\x3ePart I \x3c\/a\x3eand \x3ca href=\x22https:\/\/www.shrubcoop.org\/a-less-than-cheerful-assessment-of-the-fashion-industry-part-ii-2\/\x22\x3ePart II\x3c\/a\x3e) to understand just how many issues the fashion industry is hiding behind its glamorous catwalks. However, Fashion Revolution is not in the business of shaming individuals in the pursuit of systemic change. Instead, the focus is on educating people on how to change their attitudes towards fashion and encouraging everyone to demand higher standards from fashion conglomerates. So how do we stay optimistic and stylish at the same time?\x3c\/p\x3e\n\n\x3cp\x3eThe Fashion Revolution website offers a number of different ways to engage in fashion activism. Given that the industry carries a number of concerns, from human rights, and \x3ca href=\x22https:\/\/thegreenhubonline.com\/2018\/10\/21\/why-the-fast-fashion-industry-is-a-feminist-issue\/\x22\x3ewomen’s rights in particular\x3c\/a\x3e, to environmental violations and unsustainable resource use, the two hashtags #WhoMadeMyClothes and #WhatsInMyClothes challenge fashion brands to be transparent about how their products are designed and manufactured. This in turn encourages them to address the exploitative practices in their supply chain and contributes to the fight for change in the industry where brands respond to consumer demands.\x3c\/p\x3e\n\n\x3cp\x3eThe hashtag #WhoMadeMyFabric is also presented as a means to promote justice across all areas of the supply chain, not just in the manufacturing stage. Before work begins in the garment factories, a \x3ca href=\x22https:\/\/www.the-sustainable-fashion-collective.com\/2017\/02\/27\/environmental-ethical-issues-production-natural-fabrics-fibres\/\x22\x3elitany of environmental abuses have occurred \x3c\/a\x3ein the production of fabrics, and in many cases, the farmers growing these resources are \x3ca href=\x22https:\/\/www.fairtrade.org.uk\/Farmers-and-Workers\/Cotton\/About-Cotton\/\x22\x3enot paid a fair price\x3c\/a\x3e for their labour. During Fashion Revolution Week, social media is an important tool to spotlight these issues and mobilise people across the globe to consider the implications of how their clothes were made.\x3c\/p\x3e\n\n\x3cp\x3eFashion Revolution also encourages consumers to get in touch with brands directly, either through social media message channels, or writing an email, in order to ask questions about the policies in place to protect workers and the environment. As the \x3ca href=\x22https:\/\/bylinetimes.com\/2020\/07\/14\/modern-slavery-is-never-out-of-fashion-child-labour-in-the-clothing-industry\/\x22\x3esecond most at-risk industry for modern slavery\x3c\/a\x3e, it is again the pressure from consumers that can hold companies accountable for their complicity in unsafe and unjust business practices and usher in reform.\x3c\/p\x3e\n\n\x3cp\x3eThere will be a number of educational events hosted during Fashion Revolution Week too, with the schedule available \x3ca href=\x22https:\/\/www.fashionrevolution.org\/ecwd_calendar\/all-events\/\x22\x3ehere\x3c\/a\x3e. These events will take place all over the world, spotlighting different issues and workshopping potential solutions to the crises of the fashion industry. The \x3ca href=\x22https:\/\/www.fashionopenstudio.com\x22\x3eFashion Open Studio \x3c\/a\x3eis also a great chance to see the innovation occurring from within the industry itself, connecting consumers with designers and providing unique insight into the potential for transformation in fashion.\x3c\/p\x3e\n\n\x3cp\x3eOf course, fashion activism is not an isolated movement that ends at the end of Fashion Revolution Week. These questions and actions are meaningful forms to engage in collective action, but we have the chance to carry these lessons through to our everyday lives too. By quitting fast fashion, or at least dramatically reducing our reliance on it, we can help to fight human rights injustices and reduce our environmental impact, and there are numerous tools out there to help with this transition. Focusing on keeping our clothes for longer helps to eliminate textile waste going to landfill, and shopping secondhand, renting clothing or just swapping with friends and family means that less resources are required to shake up our wardrobes, further protecting the environment. Here at Shrub Coop, we’re here to help you on this journey. You can find a great selection of clothing available in our Swapshop (re-opening on 27th April!) or through our \x3ca href=\x22https:\/\/www.depop.com\/shrubcoop\/\x22\x3eDepop\x3c\/a\x3e and \x3ca href=\x22http:\/\/www.ebay.co.uk\/usr\/shrub_coop\x22\x3eeBay,\x3c\/a\x3e from jackets and jumpers to shoes and handbags. And if you find yourself growing tired of one of your old favourite items, instead of throwing it into landfill or donating it to a clothes bank (where it will likely be \x3ca href=\x22https:\/\/www.merriam-webster.com\/dictionary\/downcycle\x22\x3edowncycled\x3c\/a\x3e), you can bring it into us and we’ll help find your clothing a new loving home. For Fashion Revolution Week and beyond, we can prove that a more ethical fashion industry will never go out of style.\x3c\/p\x3e\n\n\x3cp\x3eResources to learn more about quitting fast fashion:\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.theguardian.com\/fashion\/2020\/jul\/14\/fast-fashion-20-ways-stop-buying-new-clothes-fair-wage-wardrobes\x22 title=\x22https:\/\/www.theguardian.com\/fashion\/2020\/jul\/14\/fast-fashion-20-ways-stop-buying-new-clothes-fair-wage-wardrobes\x22\x3ehttps:\/\/www.theguardian.com\/fashion\/2020\/jul\/14\/fast-fashion-20-ways-stop-buying-new-clothes-fair-wage-wardrobes\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/blog.naturehub.com\/how-to-quit-fast-fashion\/\x22 title=\x22https:\/\/blog.naturehub.com\/how-to-quit-fast-fashion\/\x22\x3ehttps:\/\/blog.naturehub.com\/how-to-quit-fast-fashion\/\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.reluv.co.uk\/how-to-quit-fast-fashion\/\x22 title=\x22https:\/\/www.reluv.co.uk\/how-to-quit-fast-fashion\/\x22\x3ehttps:\/\/www.reluv.co.uk\/how-to-quit-fast-fashion\/\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/ethicalunicorn.com\/2020\/04\/24\/how-to-quit-fast-fashion\/\x22 title=\x22https:\/\/ethicalunicorn.com\/2020\/04\/24\/how-to-quit-fast-fashion\/\x22\x3ehttps:\/\/ethicalunicorn.com\/2020\/04\/24\/how-to-quit-fast-fashion\/\x3c\/a\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/strut-your-sustainable-stuff\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Strut Your (Sustainable) Stuff  cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/what-is-fashion-revolution-week/" tabindex="0" title="Blog post: What is Fashion Revolution Week? by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">What is Fashion Revolution Week?</h3>
+</a>
+
+<p class="mb-2" tabindex="0">When news of the Rana Plaza collapse broke, the abuses of the fast fashion…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 18/04/21">&#128336; 18/04/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/what-is-fashion-revolution-week/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1618840931\/shrubcoop.org\/media\/fash_rev_rhid0p.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eActivists marking the anniversary of the Rana Plaza disaster. Photo: Munir Uz Zaman\/AFP\/Getty Images.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eOn April 24th 2013, the hidden realities of the fast fashion industry came to light when 1,138 garment workers were killed in the \x3ca href=\x22https:\/\/www.theguardian.com\/world\/2013\/jun\/06\/bangladesh-factory-building-collapse-community\x22\x3eworst industrial disaster\x3c\/a\x3e ever witnessed in Bangladesh. Rana Plaza, located outside the capital city of Dhaka, was home to five clothing factories making clothes for fast fashion brands including Primark, Benetton and Walmart. When workers arrived that morning, many refused to go in when they saw the cracks in the building, yet \x3ca href=\x22https:\/\/www.theguardian.com\/global-development\/2018\/apr\/24\/bangladeshi-police-target-garment-workers-union-rana-plaza-five-years-on\x22\x3emanagers insisted they enter the building.\x3c\/a\x3e In the space of ninety seconds, the entire plaza crumbled to the ground.\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.fashionrevolution.org\/about\/\x22\x3eFashion Revolution\x3c\/a\x3e was founded after this deadly disaster to bring together activists across the globe who are demanding greater human rights protection, environmental awareness and improved accountability and transparency within the fashion industry. Every year, Fashion Revolution week occurs to mark the anniversary of the Rana Plaza collapse and renew efforts to improve the standards of the fashion industry. The movement focuses on raising awareness of the injustices occurring in global fashion, with the hashtag #WhoMadeMyClothes used to encourage consumers to consider the human cost of their clothing. When production takes place so far removed from the shores where the clothes are purchased, it is easy to feel disconnected from those involved in the garment industry, but Fashion Revolution week aims to bridge that divide and unite both consumers and workers in demanding justice within the fashion industry.\x3c\/p\x3e\n\n\x3cp\x3eWith its focus on mobilising members of society to demand higher standards of fast fashion companies, Fashion Revolution has been instrumental in bringing about positive changes such as greater transparency practices amongst fashion brands. Every year, more and more companies are agreeing to share their suppliers and factories so that consumers know how and where their clothing was made. Dividing their work into three main sections, Fashion Revolution is engaged in advocating for industry change, policy change and cultural change. These three distinct areas target concerns around the environmental cost of fashion, the improvement of workers’ rights in the garment industry, and a change in consumer habits towards fashion. By consuming less fast fashion and preserving the clothing we own for longer, we can actively challenge the fashion industry and reduce our environmental impact. At Shrub, we are marking Fashion Revolution Week by having \x3ca href=\x22https:\/\/www.instagram.com\/p\/CNp8kAbKb8z\/\x22\x3ea social media challenge\x3c\/a\x3e where people share interesting stories about their second-hand clothing, celebrating the history of the garment. As well as this we will be sharing \x3ca href=\x22https:\/\/www.facebook.com\/shrubcoop\x22\x3esocial media\x3c\/a\x3e and \x3ca href=\x22https:\/\/www.shrubcoop.org\/news\/\x22\x3eblog posts\x3c\/a\x3e giving you more information about the fast fashion industry and how you can avoid it. Fast fashion thrives on the constant renewal of our wardrobes, chasing the latest designs and disposing of our clothing in less-than-sustainable manners. This is driving the crises in the fashion industry, but Fashion Revolution Week provides a way for us to reconsider our relationship with our clothes and demand meaningful change in the fashion industry.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/what-is-fashion-revolution-week\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "What is Fashion Revolution Week? cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/social-media-accounts-we-recommend-if-you-like-sustainable-and-ethical-fashion/" tabindex="0" title="Blog post: Social Media Accounts We Recommend if You Like Sustainable and Ethical Fashion by Marta Lynch - click this link to continue reading.">
+  <h3 class="mb-2">Social Media Accounts We Recommend if You Like Sustainable and Ethical Fashion</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Know Your Clothes</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 05/04/21">&#128336; 05/04/21</span> &nbsp; <span title="Written by Marta Lynch">&#128100; Marta Lynch</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/social-media-accounts-we-recommend-if-you-like-sustainable-and-ethical-fashion/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eSocial Media accounts to follow (not just fashion related but also looking at environmental racism, regenerative agriculture, de-colonization in systems etc.):\x3c\/p\x3e\n\n\x3cp\x3eAja Barber \x3ca href=\x22https:\/\/www.instagram.com\/ajabarber\/\x22\x3e@ajabarber\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eWhitney Bauck \x3ca href=\x22https:\/\/www.instagram.com\/unwrinkling\/\x22\x3e@unwrinkling\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eThe slow factory \x3ca href=\x22https:\/\/www.instagram.com\/theslowfactory\/\x22\x3e@theslowfactory\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eCeline Semaan \x3ca href=\x22https:\/\/www.instagram.com\/celinecelines\/\x22\x3e@celinecelines\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eElizabeth L. Cline \x3ca href=\x22https:\/\/www.instagram.com\/elizabethlcline\/\x22\x3e@elizabethlcline\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eLucy Siegel \x3ca href=\x22https:\/\/www.instagram.com\/theseagull\/\x22\x3e@theseagull\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eThe OR foundation \x3ca href=\x22https:\/\/www.instagram.com\/theorispresent\/\x22\x3e@theorispresent\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eMikaela Loach (Edinburgh-based) \x3ca href=\x22https:\/\/www.instagram.com\/mikaelaloach\/\x22\x3e@mikaelaloach\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eFibershed \x3ca href=\x22https:\/\/www.instagram.com\/fibershed_\/\x22\x3e@fibershed_\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eNextwearer \x3ca href=\x22https:\/\/www.instagram.com\/nextwearer\/\x22\x3e@nextwearer\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eOh So Ethical \x3ca href=\x22https:\/\/www.instagram.com\/ohsoethical\/\x22\x3e@ohsoethical\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eTickover \x3ca href=\x22https:\/\/www.instagram.com\/tickover\/\x22\x3e@tickover\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eCelia Pym \x3ca href=\x22https:\/\/www.instagram.com\/celiapym\/\x22\x3e@celiapym\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eMale or non-binary people in sustainable fashion:\x3c\/p\x3e\n\n\x3cp\x3eTimo Rissanen \x3ca href=\x22https:\/\/www.instagram.com\/timorissanen\/\x22\x3e@timorissanen\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eArthur \x3ca href=\x22https:\/\/www.instagram.com\/makingarthur\/\x22\x3e@makingarthur\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eTony \x3ca href=\x22https:\/\/www.instagram.com\/tonyshirtmakers\/\x22\x3e@tonyshirtmakers\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eBas Timmer \x3ca href=\x22https:\/\/www.instagram.com\/bas.timmer\/\x22\x3e@ bas.timmer\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eMitsugu Sasaki \x3ca href=\x22https:\/\/www.instagram.com\/vintagecustoman\/\x22\x3e@vintagecustoman\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eMatthew Downham \x3ca href=\x22https:\/\/www.instagram.com\/matthewdownham.art\/\x22\x3e@matthewdownham.art\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eWilson Oryema \x3ca href=\x22https:\/\/www.instagram.com\/wilson_oryema\/\x22\x3e@wilson_oryema\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1617709886\/shrubcoop.org\/media\/marta_dobyre_zphip3.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eThis article was written by \x3ca href=\x22https:\/\/www.instagram.com\/martalynch_projects\/\x22\x3e@Martalynch_projects\x3c\/a\x3e.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/social-media-accounts-we-recommend-if-you-like-sustainable-and-ethical-fashion\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Social Media Accounts We Recommend if You Like Sustainable and Ethical Fashion cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/a-less-than-cheerful-assessment-of-the-fashion-industry-part-ii-2/" tabindex="0" title="Blog post: A Less-Than-Cheerful Assessment of the Fashion Industry (Part II)  by Marta Lynch - click this link to continue reading.">
+  <h3 class="mb-2">A Less-Than-Cheerful Assessment of the Fashion Industry (Part II) </h3>
+</a>
+
+<p class="mb-2" tabindex="0">Know Your Clothes</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 04/04/21">&#128336; 04/04/21</span> &nbsp; <span title="Written by Marta Lynch">&#128100; Marta Lynch</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/a-less-than-cheerful-assessment-of-the-fashion-industry-part-ii-2/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eIt is difficult to concisely express and divide up the main problems in fashion. Let me name five big ones that cannot be looked past. All these issues overlap and sometimes contribute to each other. The topics are listed in no particular order as all of these are important.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1617623699\/shrubcoop.org\/media\/hannah-morgan-ycVFts5Ma4s-unsplash_svcdu5.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eGlobal systemic racism and the connection to slavery\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eLike all industries and institutions, the fashion system operates within the boundaries of the global trade system often based on colonialist trade routes and hierarchies upholding to this day neo-colonial rule. Disproportionately women of colour carry the burden of producing clothes for little or no pay. India, China, Bangladesh are often the origins of our clothes as we all know when we check the labels. This does not mean categorically all garments from those countries are produced in bad working conditions or under harassment, but it is undeniable how many of them are.\x3c\/p\x3e\n\n\x3cp\x3eAn example: Cotton is known to be the fibre with the biggest connection to the era of slavery in America. The cotton produced in America during the Industrial Revolution accounted up to 2\/3rd of the world’s cotton production and has contributed massively to the economic power of the US. But unfortunately, it cannot be said that production now happens under any more ethical conditions. It is estimated that about 1\/5th of all cotton products come from the Xinjiang region where Uighurs are held in internment camps. And the fashion industry openly admits to not being able to make sure that the cotton they use do not come from there as the supply chains are often too complex to track. But this is unfortunately just the worst of the worst as examples of child labour and workers’ rights abuses are widespread in different production locations and fibre types.\x3c\/p\x3e\n\n\x3cp\x3eThe answer here is: Think local and look out for short supply chains. Irish linen and British wool are the examples of materials grown in closer proximity. Small companies focusing on only a few products\/ materials are better able to track their supply chains.\x3c\/p\x3e\n\n\x3cp\x3eIf this is not possible due to price or accessibility, buying second hand is always a good option as these garments have already been produced.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eMicroplastics\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eOnly little research has been done on this issue compared to the scale of the problem facing us. Microplastics have been found everywhere on earth now from the Mariana Trench, the peaks of the Himalayas to the top of the polar regions. Broken fibres of synthetic clothing seem to be the biggest culprit when it comes to this pollutant. They travel both through marine environments as well as by wind and are settling in all manner of organisms, with analysis still wondering if they are carcinogenic or what other damages they may cause. As this is a fairly newly discovered problem and as most contributors to this problem are private companies, there has been very little action taken to reduce the output of synthetic fibres or and no talk of responsibility on how to clean the ecosystems up. (In 2015 plastic fibres accounted for about 61% of the global fibre output).\x3c\/p\x3e\n\n\x3cp\x3eThe answer is here: There are now many products that you can use when washing your clothes, from bags to put all of your clothes inside to ‘eggs’ that catch the tiny particles. The aim of these is to trap and contain microfibres before they enter the wastewater system so that they can be disposed of in a safe way. Trying to buy natural fibre clothing wherever possible will also help, both by reducing the number of micro plastics you release in washes but also by showing fashion brands that natural materials are sought after.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWaste management\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eIn general clothes are designed in the Global North and then are made by people in the Global South are then sent to the West to be “consumed”. Once used and disposed of they are then sent back into the producing nations, either impacting the local fashion industry if resold or polluting water and grounds if put on waste tips. These mostly poorer nations get no support\/ funding or technologies to process the waste properly (if processes even exist for the clothing produced).\x3c\/p\x3e\n\n\x3cp\x3eRoughly 15 million second-hand garments are exported into Ghana’s Katamanto market in a country of 30 million people weekly. They are sold on as well but 40% end up on enormous waste tips or along the Gulf of Guinea.\x3c\/p\x3e\n\n\x3cp\x3eWithin production and disposal there are many processes requiring toxic chemicals for dyeing or dissolving of fibres as well as using local water sources and creating emissions. The companies contracting the factories have very little control over how much of the pollutants used escape into the environment or how diligent they are about keeping their workers safe from these pollutants as it is often such complex supply chains with so many different parts that it would be impossible to check. With the number of styles these companies produce, and all the small parts needed (Yarns, zips, buttons etc) in different colourways to track and check regularly that all their producers are complying while being strewn across the planet is not achievable.\x3c\/p\x3e\n\n\x3cp\x3eThe answer is here: By only buying the clothes we really need and borrowing, swapping and buying from charity shops wherever possible, we will reduce the number of items of clothing in circulation so that there is no longer a need for such massive second hand markets. This will allow local textile markets to grow which will also help to improve transparency in supply chains.\x3c\/p\x3e\n\n\x3cp\x3eTrying to buy clothes from companies that use more natural dyeing processes or supporting campaigns and encouraging brands to reduce water pollution can also help. There are probably already some campaigns out there that you can join in with.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eDepletion of soil due to overuse and pesticides\/ insecticides and monocultures\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eThis is a problem in which fashion is not necessarily one of the main culprits but is certainly having an impact. Most of the trees grown for viscose, Tencel or bamboo fibres (this includes is the fsbc-labelled garments) are grown in monocultures resulting in a greater need to use insecticides\/ pesticides as there is a higher risk of infestations from funghi or insects damaging the crop. On the other hand this results in less cutting down of trees surrounding the trees that they want to have felled, as it would be like in a conventional forest so there is no ideal way to solve this problem.\x3c\/p\x3e\n\n\x3cp\x3eCompanies such as Monstanto and Bayer have made a huge amount of money on seeds and have, for example, exported American cotton plants to large parts of India as well as other cotton producing countries. Not ideally suited for the local soil these also require more pesticides\/ insecticides and cotton is a greedy plant soaking up the soil’s nutrients and water. The film True Cost also shows the impact pesticides have on the health and bodily developments of children in rural areas.\x3c\/p\x3e\n\n\x3cp\x3eThe answer is here: The fashion industry could, in fact, help with enriching the ground the fibres grow on. Plants such as Flax (Linen) and Hemp replenish the nitrogen storage of the soil and bind carbon. Less water and pesticides are required (both of them are considered weeds as they spread and grow faster and so higher annual yields are possible on the same surface area). When buying new, keep an eye out for linen, hemp, or recycled cotton. Some of the more ethical fashion brands may be able to ensure that any plants in their supply chain are grown in better conditions that are less damaging to the natural environment.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eProduction outstripping demand by far\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eFashion is one of the industries in which the products are not seen as an investment but rather as entertainment and its purchase to pass the time on a weekend or online. Huge marketing machines make customers want different entire wardrobes to aspire to a different lifestyle or keep up with trends of friend groups. I think this is all nothing new to any person seeing a shopping street on any day of the week (even during a pandemic). But the numbers are heart-breaking; more than 150 billion garments are produced each year (that makes 20 new garments for every person on the planet ANNUALLY). If you consider how many people around the world and within the UK cannot afford to buy these it means that large amounts of clothes will either sit in people’s wardrobes unworn, or are never sold and get incinerated\/or sit in landfill.This makes fashion the second largest polluter in the world (with oil being the biggest one, but looking at fashion we also contribute to the extraction of oil which is often not calculated)\x3c\/p\x3e\n\n\x3cp\x3eThe answer is here: Choosing to swap clothes, share with friends, buying second hand and changing the way we use and value clothes will force the market to change. If we can show that there is no longer a demand for fast fashion, companies will have to change in order to be profitable.\x3c\/p\x3e\n\n\x3cp\x3eIt is difficult to condense these issues into a short list but do find me on \x3ca href=\x22https:\/\/www.instagram.com\/martalynch_projects\/\x22\x3eInstagram \x3c\/a\x3eand ask more questions or links to resources.\x3c\/p\x3e\n\n\x3cp\x3eFor some more Instagram inspiration on these topics, have a look at \x3ca href=\x22https:\/\/www.shrubcoop.org\/social-media-accounts-we-recommend-if-you-like-sustainable-and-ethical-fashion\/\x22\x3ethis blog post\x3c\/a\x3e!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/a-less-than-cheerful-assessment-of-the-fashion-industry-part-ii-2\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "A Less-Than-Cheerful Assessment of the Fashion Industry (Part II)  cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/the-easter-bunny-an-endangered-species/" tabindex="0" title="Blog post: The Easter Bunny: An Endangered Species by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">The Easter Bunny: An Endangered Species</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Can we expect the Easter Bunny to survive the sea of waste created during the…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 03/04/21">&#128336; 03/04/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/the-easter-bunny-an-endangered-species/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1617609303\/shrubcoop.org\/media\/eastr_td09xv.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eThe Easter Bunny is a tradition enacted in homes across the UK every year.\x3c\/p\x3e\n\n\x3cp\x3eImage: \x3ca href=\x22https:\/\/www.sootoday.com\/local-news\/easter-bunny-allowed-to-mak\x22 title=\x22https:\/\/www.sootoday.com\/local-news\/easter-bunny-allowed-to-mak\x22\x3ehttps:\/\/www.sootoday.com\/local-news\/easter-bunny-allowed-to-make-home-visits-this-year-declares-ontario-premier-2236472\x3c\/a\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eThe celebration of Easter, whether religious or otherwise, solidifies the arrival of Spring, signalling longer and warmer days ahead, and bringing a welcome four day Bank Holiday. However, this celebration also carries huge amounts of food waste, improper recycling and another weekend of indulging the habits of overconsumption that are driving climate destruction.\x3c\/p\x3e\n\n\x3cp\x3eFood waste is a large contributor to greenhouse emissions (\x3ca href=\x22https:\/\/www.un.org\/press\/en\/2020\/dsgsm1465.doc.htm\x22\x3erepresenting approximately 8% of global emissions\x3c\/a\x3e), and this year, it is predicted that there will be 8,490 tonnes of food thrown away in the UK over the Easter weekend alone. Food waste is not just an environmentally-unfriendly habit, but also an economically wasteful one. According to a recent study, \x3ca href=\x22https:\/\/resource.co\/article\/tesco-launches-guide-counter-8490-tonnes-easter-food-waste\x22\x3eonly 41% of people will use their leftovers \x3c\/a\x3ein another meal, yet the majority of foods will be safe to eat for a number of days after Easter, if stored properly. This also highlights the importance of planning meals in advance so that only the necessary amount of food is purchased, contributing to the reduction in food going to landfill, where it then decomposes and releases the dangerous gas, methane.\x3c\/p\x3e\n\n\x3cp\x3eEaster eggs are also another contributor the the problem of overconsumption and pollution during the holidays. Every year, over 3,000 tonnes of chocolate egg packaging is produced in the UK (Waste and Resources Action Programme, 2021), and most of this is not disposed of correctly. For example, the tinfoil that covers most eggs cannot be recycled unless it is a large enough quantity that it can be processed by the recycling machine. To recycle this material therefore, it is best to combine all the tinfoil leftover from Easter and mould it into a ball at least the size of a tennis ball, otherwise it will not be recycled. The plastic casing used for Easter eggs can sometimes be difficult to recycle, with the rule of thumb being that if you can scrunch it in your hand, you can’t recycle it. Cardboard is widely recycled at least,and with more and more brands feeling the pressure to improve the sustainability of their packaging, it is becoming easier to find \x3ca href=\x22https:\/\/www.standard.co.uk\/futurelondon\/theplasticfreeproject\/plastic-free-easter-eggs-buy-ethical-eco-friendly-chocolate-fairtrade-biodegradable-packaging-a4100281.html\x22\x3eenvironmentally-friendly egg options\x3c\/a\x3e.\x3c\/p\x3e\n\n\x3cp\x3eThough the tradition of Easter dinners and egg-giving may be fundamental for many, there are ways to reduce your individual impact on the environment over the holiday. With over \x3ca href=\x22https:\/\/www.mirror.co.uk\/news\/world-news\/10-fascinating-easter-facts-you-14384346\x22\x3e80 million eggs sold in the UK\x3c\/a\x3e every Easter, determine who in your life truly enjoys a chocolate gift and how much they really need one. \x3ca href=\x22https:\/\/www.cheaperwaste.co.uk\/blog\/easter-waste-and-how-to-avoid-it\/\x22\x3eThe average child will receive 8.8 eggs \x3c\/a\x3eover Easter, and while nobody is suggesting that the Easter Bunny stops coming altogether, perhaps it is worth adopting a ‘secret santa’ model for Easter, where each family\/household member is responsible for buying only one egg, instead of getting an egg for everyone. This would help to reduce both food waste and recycling waste! When it comes to Easter meals, determine how much food is necessary and aim to prepare only that much. If there are any leftovers, get creative and use them in another meal the next day! Traditions do not have to be stopped, but if we want to contribute to the fight against climate change, we have to look at some of these patterns of overconsumption and slowly dismantle them. Otherwise, how do we expect the Easter Bunny to hop through a wasteland of pollution?\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/the-easter-bunny-an-endangered-species\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "The Easter Bunny: An Endangered Species cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/second-hand-clothing-markets/" tabindex="0" title="Blog post: Second Hand Clothing Markets by Joanne Elston - click this link to continue reading.">
+  <h3 class="mb-2">Second Hand Clothing Markets</h3>
+</a>
+
+<p class="mb-2" tabindex="0">An insight into charity shop donating from our Swapshop Coordinator</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 30/03/21">&#128336; 30/03/21</span> &nbsp; <span title="Written by Joanne Elston">&#128100; Joanne Elston</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/second-hand-clothing-markets/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1617195415\/shrubcoop.org\/media\/prudence-earl-8F0I12ypHPA-unsplash_kiitg1.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhat happens when you donate to charity shops?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eWhen we think of donating to charity shops, we often think we are doing our bit to help the planet. We are making sure that our old clothes are being reused, and we are often buying second hand as well.\x3c\/p\x3e\n\n\x3cp\x3eThe network of charity shops that we have across the country in most towns and villages is amazing, however it isn’t perfect.\x3c\/p\x3e\n\n\x3cp\x3eIn recent years, the second hand clothing market has been growing. This is really great in many ways, as it shows that attitudes are changing and the stigma around buying second hand is no longer as strong as it used to be.\x3c\/p\x3e\n\n\x3cp\x3ePart of the reason this market is growing, however, is down to the sheer amount of clothing that is now available in the world. Fast fashion brands are constantly producing so much clothing, almost all of which will end up in the second hand clothing markets not too long after it was first made and bought.\x3c\/p\x3e\n\n\x3cp\x3eWhile all of these charity shops and the industry around second hand clothing is great, it is a plaster rather than a solution. What we really need to do to create a more sustainable textiles industry is slow down the production of new things.\x3c\/p\x3e\n\n\x3cp\x3eCurrently, charity shops receive, in most cases, far more clothes than they can cope with or sell. This means that they are forced to find alternative ways of getting rid of a lot of what is donated to them. Most shops use companies that claim to be textile recyclers but in fact export tonnes and tonnes of textiles to other countries around the world (largely in Africa), making the clothes their problem not ours. There is already a massive global imbalance where workers in poorer countries are exploited in order to make cheap clothing for the west. By sending all of the clothes back to them when we don’t want them anymore, we are also exploiting those countries at the end of the garments lifecycle.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhat can we do to help?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eThere are some easy ways to change this. The main thing is to only buy something new if you really absolutely have to. With so many charity shops as well as sites like Depop, EBAY, Vinted and more, we have so many opportunities to try and find things second hand. Having clothes swaps among friends or community groups is a great way of doing these things locally too (see the \x3ca href=\x22https:\/\/www.shrubcoop.org\/resource-packs\/clothes-swap\/\x22\x3eguide \x3c\/a\x3eon our website).\x3c\/p\x3e\n\n\x3cp\x3eIf you do have to buy new things, try to support places that recycle and upcycle existing textiles rather than producing new, although we recognise that there are often financial barriers to this.\x3c\/p\x3e\n\n\x3cp\x3eEducating yourself about how the industry works is also really important so that we all understand what the decisions we make mean for others. There is now so much information out there that it can be a bit overwhelming. Have a look on our website, or the website for Fashion Revolution for some easy to understand information about the Textiles industry. Getting involved in campaigns or sharing what you have learned with friends will help us to build a global movement that can change our relationship to textiles and clothes.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhat do we do at SHRUB Coop?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eLike all charity shops, we get more in donations than we can sell in our shop. We try to pass any excess stock on as ethically as possible, working with local clothing banks and community groups that give clothes to those who need them. If you ever know of anyone looking for clothes, please send them our way!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/second-hand-clothing-markets\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Second Hand Clothing Markets cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/making-earth-hour-count/" tabindex="0" title="Blog post: Making Earth Hour Count by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Making Earth Hour Count</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Join us for WWF&#39;s annual Earth Hour Campaign</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 24/03/21">&#128336; 24/03/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/making-earth-hour-count/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1616609177\/shrubcoop.org\/media\/earth_hour_yzy3jy.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eEdinburgh Castle during Earth Hour, where households and landmarks are encouraged to turn off their lights in order to show support for climate action across the world.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eThis Saturday March 27th 2021, millions of people will turn off their lights between 8.30pm and 9.30pm local time as part of WWF’s annual ‘Earth Hour’ campaign.\x3c\/p\x3e\n\n\x3cp\x3eNow in its fourteenth year, \x3ca href=\x22https:\/\/www.earthhour.org\/take-part\x22\x3eEarth Hour \x3c\/a\x3ewas introduced as a worldwide hour of action to draw attention to the need for definitive action on climate and biodiversity issues. Since 2007, Earth Hour has come to symbolise more than a political act, but rather it is a symbol of connection with the planet. An international phenomenon, Earth Hour has spread to over 188 countries across the globe, with more than 17,900 \x3ca href=\x22https:\/\/www.bbc.co.uk\/newsround\/47747383\x22\x3elandmarks turning their lights off\x3c\/a\x3e in solidarity with the millions of households taking part in the initiative. Whilst Earth Hour is undoubtedly an important event in any activist’s calendar, how can we extend the impact of Earth Hour beyond 60 minutes.\x3c\/p\x3e\n\n\x3cp\x3eEarth Hour has been a uniquely successful worldwide campaign for a number of reasons. The collective nature of the action means that there is a great sense of community around the event, so more people are willing to engage with it. The ease of turning off your lights is also successful because it is a relatively accessible action for many households to carry out, whilst feeling worthwhile for the environment. It has become an opportunity for friends and families to gather and \x3ca href=\x22https:\/\/latest.earthhour.org\/earthhour-at-home?hsCtaTracking=19ae5736-45b6-4b93-88cd-88cc8ca1d699%7Cc980ae46-8b36-4ad4-8a22-8dbb5ca421d7\x22\x3eget creative with activities and games in the dark\x3c\/a\x3e, although this year we are reminded to follow local COVID-19 guidance and participate virtually instead. Even still, Earth Hour remains a prominent reminder of the need for climate action, engaging huge numbers of people every year.\x3c\/p\x3e\n\n\x3cp\x3eDrawing on the lessons from Earth Hour, we see how important it is to feel supported in our climate activism, which is something we are passionate about at Shrub Coop. Building a community is pivotal to ensuring any movement survives and thrives, as new people not only feel welcomed, but seasoned activists can also feel sustained. Earth Hour also highlights the impact of small, incremental change. For many of us, getting involved in climate activism or embracing zero waste lifestyles can feel slightly overwhelming as we feel we have to change everything in our lives in order to be a “worthy” member. However, for many people who try to dive headfirst into any new lifestyle or form of activism, they end up feeling demoralised and one mistake can lead them to giving up altogether. Instead, it is helpful to focus on small actions which we can be built upon over time. Every step has an impact, and at Shrub we believe in making little changes as a community can help to build a world without waste over time.\x3c\/p\x3e\n\n\x3cp\x3ePerhaps this Saturday 27th March when you turn off your lights for Earth Hour, you can focus on a new habit or action that you want to engage with to contribute to the fight against the climate crisis. It does not have to be something drastic, in fact it is better to pick something small to start with. Maybe you can try cycling more (with Wee Spoke Hub here for all your bicycle needs), or you might look into purchasing more secondhand clothing instead of fast fashion going forwards (check out our swap shop, available on \x3ca href=\x22https:\/\/www.depop.com\/shrubcoop\/\x22\x3eDepop \x3c\/a\x3eduring lockdown for some amazing sustainable fashion finds!). Whatever action you choose to pursue, you can always speak to us at Shrub for advice and support on your journey. We may not have all the answers, but we want to encourage as many people as we can to make changes for themselves and for the planet.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/making-earth-hour-count\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Making Earth Hour Count cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/getting-onto-the-saddle/" tabindex="0" title="Blog post: Getting onto the Saddle by Aislinn Redbond - click this link to continue reading.">
+  <h3 class="mb-2">Getting onto the Saddle</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Time to put away the excuses. Here are some tips to get started cycling around…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 18/03/21">&#128336; 18/03/21</span> &nbsp; <span title="Written by Aislinn Redbond">&#128100; Aislinn Redbond</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/getting-onto-the-saddle/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1616077171\/shrubcoop.org\/media\/just_eat_mwlzhx.jpg\x22 alt=\x22\x22 \/\x3eJustEat offers a bicycle rental scheme which can be a good starting point for people who are not sure they want to invest in a bike yet.\x3c\/p\x3e\n\n\x3cp\x3ePhoto: Workspace at Wee Spoke Hub.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eFor people who use cycling as their primary form of transport, they can talk of its liberating power (no reliance on bus timetables!), its cost-effectiveness (second hand bikes are widely available), its health benefits (a bit of cardio on the way to work, anyone?) and its positive effects on the environment (goodbye petrol!). For people who do not cycle, this sort of enthusiasm may peak their interest, but it rarely converts them. Cycling can be a daunting activity to take up in a city like Edinburgh, with its hills, busy roads and questionable weather, but there is no time like the present to give it a try. In fact, there really has never been a better time to try cycling through Edinburgh, as the City Council has invested in a number of temporary measures to \x3ca href=\x22https:\/\/www.edinburgh.gov.uk\/news\/article\/12851\/plans-for-safer-walking-and-cycling-in-edinburgh\x22\x3emake cycling safer during the pandemic\x3c\/a\x3e, and the return of spring means it is the perfect opportunity to get accustomed to traveling by bike in Edinburgh.\x3c\/p\x3e\n\n\x3cp\x3eConcerns around safety on the road are the most common barriers to cycling in the city which, frankly, are not without merit. The City of Edinburgh Council has begun addressing these issues, limiting vehicular access to certain roads such as Bank Street and East Princes Street so that there is less competition between cars and bicycles. They have also developed temporary cycle lanes which help to give cyclists more space on the road. Given that there are less vehicles on the road during the pandemic, new cyclists can capitalise on these conditions to familiarise themselves with cycle routes through the city.\x3c\/p\x3e\n\n\x3cp\x3eOn the topic of safety, it is important to emphasise the responsibility cyclists must accept in protecting themselves on the road. According to UK legal requirements, every bike must have a front white light, a rear red light, and clean reflectors to ensure that they can be seen in traffic. High visibility jackets and armbands can also be helpful in making cyclists visible to other road vehicles, and \x3ca href=\x22https:\/\/www.sustrans.org.uk\/our-blog\/policy-positions\/all\/all\/our-position-on-the-use-of-cycle-helmets\/\x22\x3ewearing a helmet is often recommended\x3c\/a\x3e to reduce the severity of a head injury if involved in a collision. Though high-visibility clothing and helmets are not legally required to cycle, it is up to each individual to carry out research to determine whether they think it will be beneficial to wear these items.\x3c\/p\x3e\n\n\x3cp\x3eThe hilly landscape of Edinburgh may seem unappealing for new cyclists, but there are a number of ways to get around this. Firstly, the availability of electric bikes, for purchase and for renting, means that you do not need to worry about having the requisite fitness to push your bike up the hill! Secondly, there are a number of routes that are quite flat for cycling so with a bit of research, you can find one that suits you. You can also set yourself a challenge to tackle some of the hills over time, giving you a fitness goal to work towards with both physical and mental health benefits.\x3c\/p\x3e\n\n\x3cp\x3eIt can be hard to prepare for the weather in Edinburgh on a good day, but cycling does not need to be weather-dependent. Owning a waterproof jacket (and maybe some waterproof trousers) makes cycling much more comfortable in the rain, and layers are the key to staying on your bike during the winter and summer months so that you can adjust depending on the temperature as you set off. Keeping an eye on the weather forecast can allow you to prepare for your cycle, but it is often just good practice to have a raincoat in Edinburgh anyway!\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.edinburgh.gov.uk\/futureedinburgh\x22\x3eEdinburgh aims to become a carbon-neutral city by 2030\x3c\/a\x3e which will be no easy feat. It will require individuals to adopt lifestyle changes, as well as the councils enhancing the infrastructure for more sustainable living. Adopting cycling as a primary means of transport will be pivotal to achieving this goal, and the more people hopping on the saddle, the more demand there will be for improved cycling infrastructure across Edinburgh.\x3c\/p\x3e\n\n\x3cp\x3eWee Spoke Hub is also here to support you and your bike, offering a number of services from selling refurbished bikes and parts, to helping to repair your bicycle. Once lockdown has eased, the Wee Spoke Hub will be reintroducing their Buddy Cycle Scheme where an inexperienced cyclist can be paired up with a confident cyclist and they can take on the Edinburgh roads together - covering the routes that will be most useful for the new cyclist. We want to encourage as many people to get outside and embrace cycling for all its benefits, so even if you just want a chat to know more about how to look after your bike, you can \x3ca href=\x22https:\/\/www.facebook.com\/weespokehub\x22\x3ereach out to us on our social media\x3c\/a\x3e. The pandemic has brought a lot of challenges to our communities, but embracing the opportunity to discover Edinburgh by bike might be one way to find a positive from this experience - there’s only one way to find out!\x3c\/p\x3e\n\n\x3cp\x3eFor more information or advice on cycling in Edinburgh, visit \x3ca href=\x22http:\/\/www.sustrans.org.uk\x22\x3ewww.sustrans.org.uk\x3c\/a\x3e.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/getting-onto-the-saddle\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Getting onto the Saddle cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/fabric-awareness-booklet/" tabindex="0" title="Blog post: Our Fabric Awareness Booklet is Now Available! by Joanne Elston - click this link to continue reading.">
+  <h3 class="mb-2">Our Fabric Awareness Booklet is Now Available!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Insider knowledge and thoughts from our Swapshop Coordinator.</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 12/03/21">&#128336; 12/03/21</span> &nbsp; <span title="Written by Joanne Elston">&#128100; Joanne Elston</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/fabric-awareness-booklet/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eWhen I first started at SHRUB Coop as a volunteer, one of the first things I remember (apart from the great atmosphere and the friendly people) was the amount of stuff. As soon as you went into the back of the shop, there were boxes and bags of things everywhere. Bags of donations to be sorted, boxes of priced clothes to take to the store room, huge bags of clothes waiting to be taken to reuse partners. It completely changed the idea I had of charity shops as being a place where everything that was brought in was rehomed, it is simply not possible for these shops to sell the amount that is being donated to them.\x3c\/p\x3e\n\n\x3cp\x3eAt SHRUB Coop, we have always tried our best to make sure that things are being used as environmentally and ethically as possible, whether by passing things on to local direct action charities or by trying to ensure that anything that can be recycled isn’t put in the bin.\x3c\/p\x3e\n\n\x3cp\x3eI started to wonder, however, why we had so much stuff. So much of it was great quality and yet we couldn’t sell it. Why, when there was this much clothing in charity shops, did people keep buying more new clothing every day. To put this into context, in the UK, we buy more new clothing each year than any other country in Europe.\x3c\/p\x3e\n\n\x3cp\x3eI believe that we do not currently value clothes enough. The price tag on an item of clothing is often unconnected to the amount of environmental resources and human labour it takes to produce that item.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615550420\/shrubcoop.org\/media\/Fabric_Awareness_-_FINAL_mf31cv.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eAs part of our aim to stop this, we have produced a Fabric Awareness Booklet. With this booklet, we are aiming to help people learn more about all the different kinds of textiles there are and how much energy, water, chemical input and human effort it takes to produce them. We hope that by learning this, anyone who reads this booklet will begin to value clothes and textiles more and therefore start to buy second hand, repair, mend, upcycle, and swap clothes to keep them in use for as long as possible. We have tried to make this booklet as accessible as possible, with no prior knowledge of textiles required. It takes you through the difference between natural and synthetic fibres, gives a bit of information about textile recycling, and provides some details of each different type of textile,some of the sustainability information around it’s production, and things you can look out for (e.g. fair trade\/ organic certifications or new alternatives). This booklet is just a start, there is so much more information out there to be read\/ watched about different kinds of textiles, but hopefully this will help you think about what you might want to look into or start asking questions of your favourite brands about their production methods.\x3c\/p\x3e\n\n\x3cp\x3eOn our website, you will be able to both \x3ca href=\x22https:\/\/www.shrubcoop.org\/resource-packs\/fabric-awareness-information-booklet\/\x22\x3eview and download this booklet\x3c\/a\x3e. Please feel free to share it with anyone else who you think might be interested in reading it\/ passing it on.\x3c\/p\x3e\n\n\x3cp\x3eIf you have any questions about it or would like access to some physical copies to put in a community space, please email swapshop@shrubcoop.org.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/fabric-awareness-booklet\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Our Fabric Awareness Booklet is Now Available! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/women-of-shrub/" tabindex="0" title="Blog post: Celebrating the Women of Shrub by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Celebrating the Women of Shrub</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Our volunteer Lauriane interviews Billie, Lili, and Mary for International…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 08/03/21">&#128336; 08/03/21</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/women-of-shrub/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eINTERNATIONAL WOMEN’S DAY\x3c\/p\x3e\n\n\x3cp\x3eQUESTIONS ASKED :\x3c\/p\x3e\n\n\x3cp\x3e● What does “international women’s day” mean to you? And why is it so important that the world celebrates it?\x3c\/p\x3e\n\n\x3cp\x3e● If you could name one woman that has had a significant impact on your life, who would that be and why her specifically?\x3c\/p\x3e\n\n\x3cp\x3e● Do you have any books, TV shows, podcasts, documentaries to recommend about Feminism and the fight for Women’s rights?\x3c\/p\x3e\n\n\x3cp\x3e● Covid has showed us a total different way of living - so how do you cope with all the changes yourself? Any specific tips you would like to share that have helped you and would help our readers with anxiety and distress during those difficult times?\x3c\/p\x3e\n\n\x3cp\x3e● According to you, what does it mean to “be a strong woman” in our modern times? We talk about courage, passion and empathy much more than we ever use to, but what do those words really mean ? Which actions can we implement in our daily lives that will not only help other women but help each and everyone of us on a general level?\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eBILLIE (staff)\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615221190\/shrubcoop.org\/media\/155512976_279636850223527_5090619642529785146_n_e78e0c.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e• International women’s day is important to me because it is an opportunity to shed light on the achievements of women while also highlighting the continued inequalities that we face today. With the added bonus of an excuse to tell the women in my life how much I appreciate and am inspired by them.\x3c\/p\x3e\n\n\x3cp\x3e• As cheesy and predictable as it is, my mum, Jo Dunlevie. She taught me how to value kindness while refusing to accept inequality and injustice. She showed me that I have a voice that has value and that I should use it to the best of my abilities. Thanks to her, my heart is open to love and my head is open to learn. I owe a lot of who I am to her.\x3c\/p\x3e\n\n\x3cp\x3e• There is a lot of brilliant work out there. I am hesitant to recommend specific things as I think it really depends on where a person is on their journey. It is really important to remember that feminism is intersectional and to apply critical thinking to where we get our information from, to ask ourselves who’s story isn’t being told and why not? I recommend that people always seek out the voices of women from marginalised communities. Including BIPOC women, women with disabilities and queer women.\x3c\/p\x3e\n\n\x3cp\x3e• I would really encourage people who are struggling to reach out. At Shrub we are trying really hard to keep people connected but if we are missing something or if there is something extra we could be doing, we would be really keen to hear from people. They can get us at: welfare@shrubcoop.org. Personally I’ve been dancing a lot. I crank up some good tunes and move my body as haphazardly as I can. The rush of joy can get me through an otherwise monotonous day.\x3c\/p\x3e\n\n\x3cp\x3e• I think I could write thousands of words and still not fully answer this question but I’ll try to capture some of my feelings on this succinctly. I think that trying to be aware of the wider context of inequality and how that affects people is a good start to ‘being a strong woman’. Some of this can include pushing through awkward conversations and advocating for others. It can be calling out the patriarchy for what it is and the inequality it is reinforcing. I think this is very complex and will look differently to everyone depending on their circumstances and their individual barriers. We can show strength by supporting other women and in doing so can be a part of dismantling systems of inequality. If our overarching aim is to look out for each other and work towards a fairer world:then maybe future generations can celebrate International women’s day and just look back on gender based inequality as a thing of the past.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eLILI (trustee)\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615221220\/shrubcoop.org\/media\/192611db-eb3a-4d66-8992-781db99dedc3_qobqci.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e• International women’s day represents for me the hope of a just and equal society in the future. It is very important to celebrate it, in order to remember that big changes can happen!\x3c\/p\x3e\n\n\x3cp\x3e• So hard to choose! I would say my English highschool teacher, she was very passionate and engaging, and definitely made a big difference on my way of thinking and learning. She inspired me to choose my degree. I discovered few years later we did the same university and faculty.\x3c\/p\x3e\n\n\x3cp\x3e• I really recommend these books I recently read - Women at point zero, written by Nawal El Saadawi and The Joy Luck Club, by Amy Tan. While the first one portrays the condition of Egyptian women, the second is focused on the lives of four Chinese American immigrant families. They ́re small, but really intense books. Give it a try!\x3c\/p\x3e\n\n\x3cp\x3e• Dear Covid, looking forward to not seeing you again! I have been working so much more on myself this year. I learnt that in moments in which I could feel very twitchy, sad and angry, what I have to do is to take a moment of reflection, do some positive mental work-out, and calm myself down (oh, not easy, could take days sometimes!). But it always works. Of course, this won’t be permanent, bad feelings come back in your mind, as dust starts to invade your bedroom after few days you cleaned it. It’s mostly up to you to keep your mind bright. Definitely, I started to appreciate much more the small things. I would recommend to find some time to do work-out, yoga or meditation at home. It really changes your day. The last thing I would suggest is: occupy your mind with good stuff.\x3c\/p\x3e\n\n\x3cp\x3e• Nowadays I believe that to be a strong woman is to be our true self. Surely there has been a rise in awareness of certain themes, however I sincerely think that words without a real action are nothing but empty. I think that we should implement more initiative and cooperation in what we do. As an action I would say, be kind and sincere with the people around you.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3cp\x3eMARY (volunteer)\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1615221261\/shrubcoop.org\/media\/158000222_445013530143646_5141152440425997409_n_d0zn0q.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e• It’s an opportunity to highlight global women’s issues and for women to support other women. It’s important because there’s a lot of gender inequality which we need to work together to tackle.\x3c\/p\x3e\n\n\x3cp\x3e• My mum. She brought me up to value education and to believe that I could be whatever I wanted.\x3c\/p\x3e\n\n\x3cp\x3e• I read the Female Eunuch by Germaine Greer and Fat is a Feminist Issue by Susie Orbach in the 70s. I’ve enjoyed Fay Weldon’s and Margaret Atwood’s books some of which have feminist themes.\x3c\/p\x3e\n\n\x3cp\x3e• One of the things that I’ve found helpful during the pandemic has been deciding the night before which two self care things I’m going to do the following day and visualising myself doing them. I’ve found I’m much more likely to follow through and do them.\x3c\/p\x3e\n\n\x3cp\x3e• A strong woman is self reliant but maintains a support network, as we all need a bit of help from our friends. Cut out the negative self talk and call it out when you hear others doing it.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/women-of-shrub\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Celebrating the Women of Shrub cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+      </div>
+      <div class="d-flex justify-content-center">
+        
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/news/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/news/page/2/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/news/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/4/">4</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/8/">8</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/news/page/4/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/news/page/8/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.postcodetrust.org.uk/" title="People&#39;s Postcode Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/" title="Climate Challenge Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4" tabindex="0">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Contact</h3>
+
+            <ul class="list-unstyled" tabindex="0">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h3 class="h5" tabindex="0">Follow Us</h3>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Site Links</h3>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">Our Blog</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3" tabindex="0">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-3 px-sm-4">
+                <p class="text-sm-center mb-2">We use Google Analytics to help us better understand the kind of people who visit our website and what content they are reading. This enables us to make better decisions about web design and writing</p>
+                <p class="text-sm-center mb-3">By allowing analytics you are agreeing to the terms of our <a href="/privacy">Privacy Notice</a> and giving consent for cookies to be placed on your browser</p>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

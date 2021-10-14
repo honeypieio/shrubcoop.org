@@ -22,20 +22,20 @@
     		<div class="col-8 mx-auto">
 		    	<div class="container">
 
-		    		<h3 class="dosis-semi-bold" style="color: {{ .Params.colour }};">
+		    		<h2 class="h3 dosis-semi-bold" style="color: {{ .Params.colour }};" tabindex="0">
 		    			{{ .Params.tagline }}
-		    		</h3>
+		    		</h2>
 
             {{ if .Params.address }}
 
-              <p class="text-white mb-1">
+            <p class="text-white mb-1" tabindex="0" title="Address">
                 &#127970; {{ .Params.address }}
-              </p>
+            </p>
 
             {{ end }}
 
             {{ if .Params.times }}
-              <p class="text-white">
+              <p class="text-white" tabindex="0" title="Opening Times">
                 &#128336; {{ .Params.times }}
               </p>
             {{ end }}
@@ -51,7 +51,7 @@
     {{ if .Params.address }}
       {{ if .Params.lon }}
         {{ if .Params.lat }}
-          <a href="https://www.openstreetmap.org/#map=19/{{ .Params.lon }}/{{ .Params.lat }}" target="_blank" title="Click to view {{ .Params.address }} on Open Street Maps.">
+          <a href="https://www.openstreetmap.org/#map=19/{{ .Params.lon }}/{{ .Params.lat }}" tabindex="0" target="_blank" title="Click to view {{ .Params.address }} on Open Street Maps.">
             <div id="project-map"></div>
           </a>
 
@@ -72,9 +72,9 @@
   <div class="col-xl-4 order-lg-2">
     <div class="circle mx-auto mb-3" style="margin-top: -20px; background-color: {{.Params.colour}};"></div>
 
-    <h2 class="text-center mb-3">What We Do</h2>
+    <h2 class="text-center mb-3" tabindex="0">What We Do</h2>
 
-    <div id="group-synopsis" class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
+    <div id="group-synopsis" tabindex="0" class="mt-4 mt-xs-4 mt-sm-4 mt-md-4 mt-lg-0 mt-xl-0 container">
       {{ .Content }}
     </div>
 
@@ -87,7 +87,7 @@
       <div class="circle mx-auto mb-3" style="margin-top: -20px; background-color: {{.Params.colour}};"></div>
     </a>
     <div class="container">
-      <h2 class="text-center mb-3">Latest News</h2>
+      <h2 class="text-center mb-3" tabindex="0">Latest News</h2>
 
       <div id="latestNews" class="news-list">
 
@@ -101,7 +101,7 @@
 
               {{ $scratch.Set "newsCount" (add ($scratch.Get "newsCount") 1)}}
 
-              {{- partial "news/preview.html" . -}}
+              {{- partial "news/preview.html" (dict "context" . "homepage" "1" )}}
 
               {{ if (not (eq ($scratch.Get "newsCount") ($scratch.Get "newsLimit"))) }}
                 <hr />
@@ -129,7 +129,7 @@
 
       </div>
       <div class="row d-block">
-        <h2 class="text-center mb-3">Upcoming Events</h2>
+        <h2 class="text-center mb-3" tabindex="0">Upcoming Events</h2>
         <div class="container events-list">
 
           {{ $scratch.Set "eventsCount" 1 }}
@@ -143,7 +143,7 @@
 
                     {{ $scratch.Set "eventsCount" (add ($scratch.Get "eventsCount") 1)}}
 
-                    {{- partial "events/preview.html" . -}}
+                    {{- partial "events/preview.html" (dict "context" . "homepage" "1") -}}
 
                     {{ if (not (eq ($scratch.Get "eventsCount") ($scratch.Get "eventsLimit"))) }}
                       <hr />
@@ -156,7 +156,7 @@
           {{ end }}
 
           {{ if (eq ($scratch.Get "eventsCount") 1) }}
-            <p class="text-muted text-center">No upcoming events right now - check back soon!</p>
+            <p class="text-muted text-center" tabindex="0">No upcoming events right now - check back soon!</p>
           {{ end }}
 
         </div>
@@ -214,6 +214,7 @@ $("#group-synopsis h3").each(function(){
       var map = L.map('project-map',
         {
           zoomControl:false,
+          keyboard: false,
           scrollWheelZoom: false,
           dragging: false,
           touchZoom: false
@@ -226,6 +227,11 @@ $("#group-synopsis h3").each(function(){
       }).addTo(map);
 
       var marker = L.marker(coords).addTo(map);
+      
+      var mapLinks = document.querySelectorAll("#project-map a, #project-map .leaflet-marker-icon");
+      for (var i = 0; i < mapLinks.length; ++i) {
+        mapLinks[i].setAttribute("tabindex", "-1");
+      }
     {{ end }}
   {{ end }}
 {{ end }}

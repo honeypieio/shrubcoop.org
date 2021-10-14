@@ -15,7 +15,7 @@
 
 </div>
 
-<div class="row mt-4 mb-4">
+<div class="row mt-4 mb-4" tabindex="0">
   <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
     <p class="text-muted">{{ .Site.Params.fundersFooterText }}</p>
   </div>
@@ -23,7 +23,7 @@
 
 
 
-<footer id="footer" class="page-footer font-small bg-dark blue pt-5 text-white">
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
 
 
   <div class="container-fluid text-center text-md-left">
@@ -36,9 +36,9 @@
 
           <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
 
-            <h5>Contact</h5>
+            <h3 class="h5" tabindex="0">Contact</h3>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled" tabindex="0">
               <li>
                 <a href="mailto:{{ .Site.Params.footer.contact.email}}">{{ .Site.Params.footer.contact.email}}</a>
               </li>
@@ -67,7 +67,7 @@
               <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
 
 
-                <h5>Follow Us</h5>
+                <h3 class="h5" tabindex="0">Follow Us</h3>
 
                 <ul class="list-unstyled">
                   {{ range .Site.Menus.socials }}
@@ -84,7 +84,7 @@
 
           <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
 
-            <h5>Site Links</h5>
+            <h3 class="h5" tabindex="0">Site Links</h3>
 
             <ul class="list-unstyled">
 
@@ -114,7 +114,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="text-center text-white py-3">
+        <p class="text-center text-white py-3" tabindex="0">
           {{ .Site.Params.shrubLegalName }}
         </p>
       </div>

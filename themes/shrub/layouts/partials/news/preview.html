@@ -1,9 +1,34 @@
-<a href="{{ .Permalink }}" title="Blog post: {{ .Title }} by {{.Params.author }} - click this link to continue reading.">
-  <h3 class="mb-2">{{ .Title }}</h3>
+<a href="{{ .context.Permalink }}" tabindex="0" title="Blog post: {{ .context.Title }} by {{.context.Params.author }} - click this link to continue reading.">
+  <h3 class="mb-2">{{ .context.Title }}</h3>
 </a>
 
-<p class="mb-2">{{ htmlUnescape (replace (.Description | truncate 80) " …" "…") }}</p>
+<p class="mb-2" tabindex="0">{{ htmlUnescape (replace (.context.Description | truncate 80) " …" "…") }}</p>
 
-<p class="dosis-semi-bold">
-  &#128336; {{ dateFormat "02/01/06" .Date }} &nbsp; &#128100; {{ .Params.author }}
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on {{ dateFormat "02/01/06" .context.Date }}">&#128336; {{ dateFormat "02/01/06" .context.Date }}</span> &nbsp; <span title="Written by {{ .context.Params.author }}">&#128100; {{ .context.Params.author }}</span>
 </p>
+
+{{ if (eq .homepage "0")}}
+
+  <img id="{{ .context.Permalink }}_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "{{ htmlUnescape .context.Content }}"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("{{ .context.Permalink }}_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "{{ .context.Title }} cover image"
+  }
+
+  </script>
+
+{{ end }}

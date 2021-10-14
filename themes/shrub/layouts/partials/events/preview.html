@@ -1,12 +1,37 @@
-<a href="{{ .Permalink }}" title="Event: {{ .Title }} - click this link to find out more about this event.">
-  <h3 class="mb-2">{{ .Title }}</h3>
+<a href="{{ .context.Permalink }}" title="Event: {{ .context.Title }} - click this link to find out more about this event." tabindex="0">
+  <h3 class="mb-2">{{ .context.Title }}</h3>
 </a>
 
-<p class="mb-2">{{ htmlUnescape (replace (.Description | truncate 80) " …" "…") }}</p>
+<p class="mb-2" tabindex="0">{{ htmlUnescape (replace (.context.Description | truncate 80) " …" "…") }}</p>
 
-<p class="dosis-semi-bold mb-1">
-  &#128336; {{ dateFormat "Monday, January 2, 2006" .Params.time }}
+<p class="dosis-semi-bold mb-1" tabindex="0">
+  &#128336; {{ dateFormat "Monday, January 2, 2006" .context.Params.time }}
 </p>
-<p class="dosis-semi-bold">
-  &#127970; {{ .Params.location }}
+<p class="dosis-semi-bold" tabindex="0">
+  &#127970; {{ .context.Params.location }}
 </p>
+
+{{ if (eq .homepage "0") }}
+
+<img id="{{ .context.Permalink }}_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+<script>
+
+var str = "{{ htmlUnescape .context.Content }}"
+var elem = document.createElement('div');
+elem.style.display = 'none';
+document.body.appendChild(elem);
+elem.innerHTML = str;
+var image = elem.querySelector('img');
+var imageSrc = image.src;
+
+if(imageSrc) {
+  var imageElem = document.getElementById("{{ .context.Permalink }}_preview_image");
+  imageElem.src = imageSrc;
+  imageElem.style.display = "block";
+  imageElem.alt = image.alt || "{{ .context.Title }} cover image"
+}
+
+</script>
+
+{{ end }}

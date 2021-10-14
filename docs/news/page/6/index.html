@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ9PL78BGB"></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJ9PL78BGB');
+    }
+  }
+
+  var askForConsent = function() {
+    if("\/news\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Stay up to date with our latest news">
+
+
+<title>News | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <h1 class="align-middle mb-0 mt-1">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </h1>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh Map - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh Map</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Our Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >Our Blog</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+      <div class="pt-5 news-list">
+        <h2 class="text-center mb-4">News</h2>
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/members-general-meeting-this-sunday/" tabindex="0" title="Blog post: Members&#39; General Meeting this Sunday! by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Members&#39; General Meeting this Sunday!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">SHRUB Coop members: hear what we&#39;re up to / help shape our future!</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 27/08/20">&#128336; 27/08/20</span> &nbsp; <span title="Written by SHRUB Cooperative">&#128100; SHRUB Cooperative</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/members-general-meeting-this-sunday/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1572008860\/shrubcoop.org\/media\/web_image_template_tm3vs6.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3ch3 id=\x22we-invite-shrub-members-and-supporters-to-a-general-meeting-at-2pm-5pm-on-sunday-30-august\x22\x3eWe invite SHRUB members and supporters to a General Meeting at 2pm - 5pm on Sunday 30 August.\x3c\/h3\x3e\n\n\x3cp\x3eWe hope to take stock of where we are as we renew ourselves and start planning ahead into the autumn.\x3c\/p\x3e\n\n\x3cp\x3eCan you help us develop and\/or contribute in some way?\x3c\/p\x3e\n\n\x3cp\x3eHave you a view on how we could work more effectively?\x3c\/p\x3e\n\n\x3cp\x3eOnline link will be sent to all who register. Please register \x3ca href=\x22https:\/\/www.eventbrite.co.uk\/e\/shrub-cooperative-members-general-meeting-where-next-2-5pm-sun-30-aug-tickets-117466819419\x22 title=\x22eventbrite\x22\x3ehere\x3c\/a\x3e and \x3ca href=\x22https:\/\/www.facebook.com\/events\/312212776788529\x22 title=\x22Facebook event page\x22\x3eshare\x3c\/a\x3e.\x3c\/p\x3e\n\n\x3ch4 id=\x22timetable\x22\x3eTimetable:\x3c\/h4\x3e\n\n\x3cp\x3e2.00pm “Doors Open” - our meeting etiquette \/ harvest log\x3c\/p\x3e\n\n\x3cp\x3e2.10pm Welcome and introductions\x3c\/p\x3e\n\n\x3cp\x3e2.20pm Updates on what’s opened up again:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eZero Waste Hub at 22 Bread Street - Swapshop, Cafe, Food Sharing\x3c\/li\x3e\n\x3cli\x3eEvents and working groups\x3c\/li\x3e\n\x3cli\x3eA bit on our finances\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e2.40pm Questions about what we are doing now\x3c\/p\x3e\n\n\x3cp\x3e2.50pm The Interim Steering Group\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eEvaluation Report: What’s working \/ not working\x3c\/li\x3e\n\x3cli\x3eMembership \/ vacancies \/ opportunities\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e3.00pm Comfort Break\x3c\/p\x3e\n\n\x3cp\x3e3.20pm Breakout Groups sharing ideas [take break as you wish]:\x3c\/p\x3e\n\n\x3col\x3e\n\x3cli\x3eZero Waste Hub Working Group\x3c\/li\x3e\n\x3cli\x3eWee Spoke Hub - restarting we hope!\x3c\/li\x3e\n\x3cli\x3eFood Sharing Edinburgh - restarting?\x3c\/li\x3e\n\x3cli\x3eFundraising Working Group\x3c\/li\x3e\n\x3cli\x3eCommunications Working Group\x3c\/li\x3e\n\x3cli\x3eGovernance and Policy Working Group\x3c\/li\x3e\n\x3c\/ol\x3e\n\n\x3cp\x3e4.10pm Come back together to share ideas\x3c\/p\x3e\n\n\x3cp\x3e4.45pm Emerging Priorities \/ sense check\x3c\/p\x3e\n\n\x3cp\x3eClose at 5.00pm\x3c\/p\x3e\n\n\x3cp\x3eHope you see as many of you there!\x3c\/p\x3e\n\n\x3cp\x3eSHRUB Team x\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/members-general-meeting-this-sunday\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Members\x27 General Meeting this Sunday! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/our-cafe-is-back/" tabindex="0" title="Blog post: Our Cafe is back! by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Our Cafe is back!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">The SHRUB Cafe has now reopened for take-away!</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 26/08/20">&#128336; 26/08/20</span> &nbsp; <span title="Written by SHRUB Cooperative">&#128100; SHRUB Cooperative</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/our-cafe-is-back/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cstrong\x3eWe’re thrilled to announce that the SHRUB Cafe has now reopened for take-away! Tue - Sat, 11am - 6pm\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1578413767\/shrubcoop.org\/media\/81488896_502644277024468_3799730216419459072_n_ewash9.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eYou can get tasty hot or cold drinks and take-away sandwiches. We’re using donated or repurposed take-away containers and packaging to minimise our carbon footprint. We also have a range of second-hand keep cups for sale (you can bring your own and have it filled with a steaming hot oat latte!).\x3c\/p\x3e\n\n\x3cp\x3eLooking to the future, we are hoping to start being able to offer a sit-in service once again. We’re taking our time so as to ensure that we’re being as safe as possible for our staff, volunteers, members and the general public. We’d rather take a bit longer and get it right first time round.\x3c\/p\x3e\n\n\x3cp\x3eWe’re looking to shake things up a bit with some new suppliers and products that are more sustainably sourced and locally produced so watch this space!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/our-cafe-is-back\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Our Cafe is back! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/we-re-reopening-here-s-how/" tabindex="0" title="Blog post: We&#39;re reopening! Here&#39;s how... by Shrub Coop - click this link to continue reading.">
+  <h3 class="mb-2">We&#39;re reopening! Here&#39;s how...</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Everything you need to know about our new ways of working!</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 06/07/20">&#128336; 06/07/20</span> &nbsp; <span title="Written by Shrub Coop">&#128100; Shrub Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/we-re-reopening-here-s-how/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1565367381\/shrubcoop.org\/media\/unnamed_1_qog3mq.png\x22 alt=\x22\x22 \/\x3eWe’re very excited to be reopening the Zero Waste Hub at 22 Bread Street on Wednesday 8th July. We are also extending our opening hours, so you can now visit us from 11am to 6pm on Wednesday to Saturday. We can’t wait to see you all and play our part in Building Back Better, but first here are a few things that we have changed in light of Covid-19…\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3eThings to know before you visit the Zero Waste Hub…\x3c\/em\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3ePlease do not come to Shrub if you are feeling unwell or know someone who has been unwell in the last 14 days. We miss you, but Shrub will be here when the time is right.\x3c\/li\x3e\n\x3cli\x3eYou will need to wear a face covering in the Hub, so don’t forget to pack your reusable masks!\x3c\/li\x3e\n\x3cli\x3eWe are limiting the number of people that can be in the Hub at any one time. There will be a volunteer or staff member at the door to let you know if it’s good for you to come in. We are aiming for physical distancing but not social distancing at Shrub, so please chat to each other and our volunteers whenever you visit us!\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3eWhat will it be like while I’m in the Zero Waste Hub?\x3c\/em\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eThere will be handsantiser provided when you enter and leave the Hub.\x3c\/li\x3e\n\x3cli\x3eWe have a floor plan to help you move around the Hub, and make sure everyone keeps a safe 2 metre distance around the space.\x3c\/li\x3e\n\x3cli\x3eIf you would like to buy anything, you will be asked to place your items on the counter and step back while our volunteers weigh your items and calculate your carbon saving!\x3c\/li\x3e\n\x3cli\x3eOur changing rooms will be closed for the time being, however we are happy to provide refunds up to 14 days after purchase. Just ask for a receipt at the till.\x3c\/li\x3e\n\x3cli\x3eWe are handling things with care and isolating donations, but we recommend that you wash your items after purchase.\x3c\/li\x3e\n\x3cli\x3eFor now it is only the Swapshop and Food Sharing Hub that are open, we are hoping to have the café open as soon as possible!\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3eAre we accepting donations?\x3c\/em\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eIf you’ve used lockdown to do a \x3ca href=\x22https:\/\/www.shrubcoop.org\/what-is-a-wardrobe-audit\/\x22\x3ewardrobe audit\x3c\/a\x3e, you might now be looking for somewhere to donate them.\x3c\/p\x3e\n\n\x3cp\x3eFor the time being, we will only be accepting donations from Shrub Coop members. The good news is, you can sign up to be a member really easily with the help of one of our volunteers at the Zero Waste Hub. Find out the benefits of being a member \x3ca href=\x22https:\/\/www.shrubcoop.org\/working-groups\/swapshop\/\x22\x3ehere.\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eIf you are donating to us…\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e\x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1600856425\/shrubcoop.org\/media\/Donations_we_can_t_accept_Aug_2020_fcjyvz.pdf\x22\x3eCheck if we can receive all of your items\x3c\/a\x3e (e.g. no electronics, pillows etc.)\x3c\/li\x3e\n\x3cli\x3ePlease self sort your bags into good and less good quality clothing, and tie them shut to avoid them being mixed up with someone else’s.\x3c\/li\x3e\n\x3cli\x3eUse the hand sanitiser, then write your name on paper with date and secure paper to bag.\x3c\/li\x3e\n\x3cli\x3ePut your donation into the donation bin and let a volunteer know.\x3c\/li\x3e\n\x3cli\x3eWe will be quarantining donations before sorting them, so things are going to take a little longer than usual. We hope to have your tokens on your account within 2 weeks.\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3eIf you have any more questions, please comment below or message us on social media.\x3c\/p\x3e\n\n\x3cp\x3eWe look forward to creating a world without waste together.\x3c\/p\x3e\n\n\x3cp\x3eLove,\x3c\/p\x3e\n\n\x3cp\x3eShrub Coop\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/we-re-reopening-here-s-how\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "We\x27re reopening! Here\x27s how... cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/we-reopen-8th-july/" tabindex="0" title="Blog post: Zero Waste Hub reopen 8th July!! by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Zero Waste Hub reopen 8th July!!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Shrub Coop is excited to confirm we will reopen our Zero Waste Hub on 8th July!</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 25/06/20">&#128336; 25/06/20</span> &nbsp; <span title="Written by SHRUB Cooperative">&#128100; SHRUB Cooperative</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/we-reopen-8th-july/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/scontent-lhr8-1.xx.fbcdn.net\/v\/t1.0-9\/104994804_4582234568468794_1239087446049112613_n.png?_nc_cat=111\x26_nc_sid=8024bb\x26_nc_ohc=NRo5Fr4nYSYAX-9EKW3\x26_nc_ht=scontent-lhr8-1.xx\x26oh=da6494e4d7e5e435b29a78a824537501\x26oe=5F1BC350\x22 alt=\x22Image may contain: text that says \x22ZERO WASTE HUB by SHRUB COOP We reopen July 8th!!\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eAs the Government announced Phase 2 can go ahead Shrub Coop is excited to confirm we will reopen our Zero Waste Hub on July 8th!\x3c\/p\x3e\n\n\x3cp\x3eWe are SO looking forward to welcoming back our community and making sure all our volunteers, members and customers are safe in our Hub.\x3c\/p\x3e\n\n\x3cp\x3eOur community’s safety is at the heart of Shrub as we adjust to this new world. To keep you in the loop here are some updates for now:\x3c\/p\x3e\n\n\x3cp\x3eAs sit-down cafes are not allowed to reopen in Phase 2, \x3cstrong\x3ewe will not have our cafe running straight away\x3c\/strong\x3e. We will be expanding our Swapshop and Food Sharing Hub into the cafe area for the next month or so. We hope our Cafe will be back up and running as soon as it is possible!\x3c\/p\x3e\n\n\x3cp\x3eWe are currently \x3cstrong\x3emaking 50 masks\x3c\/strong\x3e for all of our volunteers and staff in the next two weeks! If you would like to help us, please drop us a message at Sydney.chandler@shrubcoop.org\x3c\/p\x3e\n\n\x3cp\x3eThere will be a \x3cstrong\x3eSwapshop Donations\x3c\/strong\x3e drop off box at the front of the Hub either outside or just inside the door from July 8th. \x3cstrong\x3eFor the first month we will only be able to accept donations from Shrub members\x3c\/strong\x3e - but don’t worry! You can sign up with us in person on arrival and we can hopefully do this outside.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWe ask all members to pre-sort their bags as much as they can\x3c\/strong\x3e and \x3cstrong\x3emake sure any rags are clearly marked\x3c\/strong\x3e as a rag bag to save volunteers time in this busy period.\x3c\/p\x3e\n\n\x3cp\x3eIn our Shrub community we want to focus on physical distancing NOT social distancing. \x3cstrong\x3eWe ask all customers to follow our 2m floor markings\x3c\/strong\x3e and we will \x3cstrong\x3eallow 10 people into Shrub at a time\x3c\/strong\x3e to keep everyone lurgy free. \x3cstrong\x3eChanging rooms will also be closed.\x3c\/strong\x3e This still means we are up for a chat though! Never feel you have to buy something to swing by Shrub.\x3c\/p\x3e\n\n\x3cp\x3eWe hope to get our tokens to you as soon as possible! However as we will need to quarantine donations for at least 3 days before sorting, we ask you to bare with us as we process these. \x3cstrong\x3eWe will aim to get your tokens with you within 2 weeks maximum\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAll volunteers will be given a mask and updated on our safety processes upon arrival. If you would like to help Shrub and volunteer with us at this time, feel free to drop us a message: hello@shrubcoop.org\x3c\/p\x3e\n\n\x3cp\x3eOur Reopening Countdown has begun!\x3c\/p\x3e\n\n\x3cp\x3eWe look forward to creating a world without waste together.\x3c\/p\x3e\n\n\x3cp\x3eLove,\x3c\/p\x3e\n\n\x3cp\x3eShrub Coop crew🥰\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/we-reopen-8th-july\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Zero Waste Hub reopen 8th July!! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/request-for-proposals-consultancy-task-project-fundraising-assistance/" tabindex="0" title="Blog post: Request for Proposals: Consultancy Task “Project Fundraising Assistance” by SHRUB Cooperative - click this link to continue reading.">
+  <h3 class="mb-2">Request for Proposals: Consultancy Task “Project Fundraising Assistance”</h3>
+</a>
+
+<p class="mb-2" tabindex="0">An exciting opportunity to join the SHRUB team as a Project Fundraising…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 01/06/20">&#128336; 01/06/20</span> &nbsp; <span title="Written by SHRUB Cooperative">&#128100; SHRUB Cooperative</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/request-for-proposals-consultancy-task-project-fundraising-assistance/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1591808930\/shrubcoop.org\/media\/Were-hiring_1_y2mkam.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3eRequest for Proposals: Consultancy Task: “Project Fundraising Assistance” £2,800\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eApplication closing date: 12noon on Monday 22 June 2020\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAre you a Freelance Fundraiser? Then SHRUB needs you!\x3c\/p\x3e\n\n\x3cp\x3eWe are currently looking for an experienced Freelance Fundraiser to join our SHRUB team for a limited time over the next two months. This will be to identify, develop and secure grant funding to support the future of SHRUB projects - in particular;\x3c\/p\x3e\n\n\x3cp\x3e1. the Food Sharing Edinburgh collection and distribution network,\x3c\/p\x3e\n\n\x3cp\x3e2. the Wee Spoke Hub - promoting DIY Cycle maintenance and active travel, and\x3c\/p\x3e\n\n\x3cp\x3e3. contributions towards other core costs.\x3c\/p\x3e\n\n\x3cp\x3eThis role entails scoping the opportunities and the needs of each of the three elements, identifying prospective funders and drafting the main elements of agreed funding bids.\x3c\/p\x3e\n\n\x3cp\x3eThe appointed fundraiser\/organisation will draw on the support of and engage with the Fundraising task group in a way that enables them to subsequently continue this activity as a mixed staff\/volunteer group.\x3c\/p\x3e\n\n\x3cp\x3eWe’re a Cooperative in Edinburgh working for a world without waste. We empower people to live a low waste and low carbon life. Become a member and swap your preloved things, enjoy some rescued food and be inspired by new ideas.\x3c\/p\x3e\n\n\x3cp\x3eSHRUB is a member-led Cooperative with a large and enthusiastic community of volunteers who are essential to the delivery of our aims. As a part of the SHRUB team, fundraising work contributes to the strategic planning, decision-making, problem-solving and volunteer management which enables SHRUB as a whole to thrive.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eForm of proposal\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3ePlease indicate how they would use your time to secure the financial support for the Coop. Please submit a two-page Proposal that outlines:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eyour previous experience \/ your technical capacity for undertaking this task,\x3c\/li\x3e\n\x3cli\x3ethe approach you plan to take and overall time scale \/ implementation plan, and\x3c\/li\x3e\n\x3cli\x3eindicate how you will maintain high standards during the task.\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3eThis document will include:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eall your contact details\x3c\/li\x3e\n\x3cli\x3ean indication if you would be open to collaborating with others to deliver the task\x3c\/li\x3e\n\x3cli\x3efull contact details for two References for whom you have done similar work \/ who can attest to your suitability in undertaking this work.\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eYou are invited to paste into the same document – after these two pages – a personal or organisational CV no longer than two pages. Please send – saved with last name\/company as title of the file – to jobs@shrubcoop.org by 12 noon Monday 22 June.\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eFor further details see the \x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1591808456\/shrubcoop.org\/media\/Copy_of_Freelance_Fundraiser_Task_sawvxv.pdf\x22 title=\x22Fundraising Consultancy Task\x22\x3eTask Description\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eAny interviews might be held in the week commencing Monday 29 June - please indicate in your covering email if any date\/time might be problematic for you.\x3c\/strong\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/request-for-proposals-consultancy-task-project-fundraising-assistance\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Request for Proposals: Consultancy Task “Project Fundraising Assistance” cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/taking-care-of-yourself-during-lockdown/" tabindex="0" title="Blog post: Taking care of yourself during lockdown by Corran - click this link to continue reading.">
+  <h3 class="mb-2">Taking care of yourself during lockdown</h3>
+</a>
+
+<p class="mb-2" tabindex="0">With social distancing set to continue for some time, the welfare team at SHRUB…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 13/05/20">&#128336; 13/05/20</span> &nbsp; <span title="Written by Corran">&#128100; Corran</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/taking-care-of-yourself-during-lockdown/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1589300362\/shrubcoop.org\/media\/blog_post_header_image_template_n9z1bl.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eFor many of us, lockdown is a completely alien experience, unlike anything we’ve ever experienced before. It’s a difficult time - not being able to see our loved ones, many of us not being able to go to work, or no longer having a job at all. I for one know how easy it can be in these circumstances to let your wellbeing slide. However, that makes it all the more important to look after our mental health, as well as physical. The \x3ca href=\x22https:\/\/www.shrubcoop.org\/introducing-the-welfare-working-group\/\x22\x3ewelfare team here at the SHRUB Coop\x3c\/a\x3e has put together a few tips to help you make lockdown a little kinder on our wellbeing.\x3c\/p\x3e\n\n\x3ch4 id=\x22give-yourself-a-break\x22\x3eGive Yourself A Break\x3c\/h4\x3e\n\n\x3cp\x3eThe single most meaningful thing you can do for yourself during lockdown is go easy on yourself. Don’t beat yourself up – about anything. However you’re feeling, whatever you can or can’t do at the moment, it’s a much more radical and compassionate thing to accept it than to fight it. For me, I went into lockdown with a list as long as my arm of things I wanted to achieve. Now, more than a month in, there are some days when I count simply getting dressed as an achievement, to be celebrated as much as all the other lofty goals I had set myself. And I feel that that is one of the kindest things I could have done for myself. If you do have the energy and mental space to be productive - whatever that means to you - then crack on! But if all you can do is survive, that’s just as significant.\x3c\/p\x3e\n\n\x3cp\x3eIf you’re looking for something to occupy the time, but without the pressure to feel productive or achieve something, how about getting out some coloured pencils and giving mindful colouring a try? There are loads of books available online, and our graphic design volunteer, Hannah, has made some sketches available for you to download and print at home.\x3cbr \/\x3e\n\x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1589299618\/shrubcoop.org\/media\/SHRUB_colouring_page_1_oidiyb.pdf\x22 title=\x22SHRUB_colouring_page_1_oidiyb.pdf\x22\x3eSHRUB_colouring_page_1.pdf\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1589299608\/shrubcoop.org\/media\/SHRUB_colouring_page_2_lqkiql.pdf\x22 title=\x22SHRUB_colouring_page_2_lqkiql.pdf\x22\x3eSHRUB_colouring_page_2.pdf\x3c\/a\x3e\x3c\/p\x3e\n\n\x3ch4 id=\x22have-a-routine\x22\x3eHave a Routine\x3c\/h4\x3e\n\n\x3cp\x3eThe current COVID-19 crisis has kicked up a lot of instability. It’s almost impossible to tell where we’ll be in just two weeks’ time, and that uncertainty can have \x3ca href=\x22https:\/\/afsp.org\/story\/taking-care-of-your-mental-health-in-the-face-of-uncertainty\x22\x3ea significant effect on anyone’s mental health\x3c\/a\x3e. However, there are some things you can do to make it easier, and one of the biggest ones is giving yourself a routine. It doesn’t have to be complicated; something as simple as waking up and going to bed at similar times, or trying to keep up regular meals, can have a massive effect. It just gives you that little bit of direction that will help you feel more like yourself. And if some days you throw your routine out the window, that’s also ok! I’m always a big fan of making things up as you go along, I just know it can be comforting to have something familiar to fall back on.\x3c\/p\x3e\n\n\x3ch4 id=\x22move-your-body\x22\x3eMove Your Body\x3c\/h4\x3e\n\n\x3cp\x3eIn a society where exercise is all too often only seen as a means to an end, it can be easy to forget that moving your body can be an important part of self-care. It can be both \x3ca href=\x22https:\/\/www.helpguide.org\/articles\/healthy-living\/the-mental-health-benefits-of-exercise.htm\x22\x3erelaxing and energising\x3c\/a\x3e, and I for one enjoy spending time out of my head and in my body – things which are more important than ever during such stressful times as these. However, it’s just as essential to make sure that you’re actually enjoying yourself. Now is not the time to be forcing yourself to do something because you feel you “have to”. If running and intense strength-building exercises aren’t your thing, there’s plenty of other things to try. From yoga and Pilates, to all types of dance, or even simply going for a walk, there’s something out there for every ability level, no matter how much space or time you have –find something that feels good to you!\x3c\/p\x3e\n\n\x3ch4 id=\x22be-mindful-about-the-news-you-consume\x22\x3eBe Mindful About The News You Consume\x3c\/h4\x3e\n\n\x3cp\x3eThis is something I haven’t seen talked about much online, but it’s something I’ve personally found incredibly helpful in calming my mind. How you go about this is very individual, as it all depends on what affects you. Obviously, staying informed is always important, especially in times like these, but if being plugged into a 24-hour news cycle comes at the expense of your mental health, then you may want to consider changing your habits. The extreme end would be to completely stop reading the news, perhaps asking a friend to keep you up to date with the essentials so you’re not completely out of the loop. If completely switching off from the news isn’t for you, why not try reducing how often you are exposed to it? If you get a lot of your news through social media, making it something you can’t escape from, try temporarily unfollowing news outlets or blocking some key words from your feed. You’ll then have to go search out the news, which you’ll be less likely to do when you don’t have the mental space for it. And if you’re finding the news is making everything seem dire, here are some amazing community initiatives to help you feel positive;\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.facebook.com\/groups\/229180471560632\/\x22\x3eEdinburgh Mask Makers\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.facebook.com\/groups\/1500699350098765\x22\x3eFor The Love of Scrubs\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.crowdfunder.co.uk\/edinburgh-emergency-medical-supplies\x22\x3eEdinburgh Shield Force\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.facebook.com\/NourishingChangeEdinburgh\/\x22\x3eNourishing Change\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/leith-community-crops-in-pots.org\x22\x3eLeith Crops In Pots\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eHowever, you could also find yourself on the other end of the spectrum. I was like this. I found that not keeping myself informed made me feel worse, catastrophising everything and feeling helpless. To combat this, I started consuming the news regularly – but paying attention to what sources I was getting it from. I try to avoid the updates-every-minute news, and opt for less sensationalised, more fact-based news. My own personal recommendation is \x3ca href=\x22https:\/\/www.youtube.com\/channel\/UCSMqateX8OA2s1wsOR2EgJA\x22\x3eTLDR News\x3c\/a\x3e, an independent outlet whose aim is to make complex topics more simple. Much like what I said earlier about exercise, however, the most important thing is to find something that works for you.\x3c\/p\x3e\n\n\x3cp\x3eFinding something that helps your mental health, rather than hurts it, is crucial in times like these. We hope that this has given you some ideas to help you look after yourself during lockdown. If you have any other wellbeing tips during self-isolation, please let us know!\x3c\/p\x3e\n\n\x3cp\x3eBe kind to yourself, take care, and stay safe!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/taking-care-of-yourself-during-lockdown\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Taking care of yourself during lockdown cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/recipe-homemade-ricotta-cheese/" tabindex="0" title="Blog post: Workshop Recipe: Make your own ricotta cheese!  by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Workshop Recipe: Make your own ricotta cheese! </h3>
+</a>
+
+<p class="mb-2" tabindex="0">A beginners guide to making cheese from home. </p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 03/05/20">&#128336; 03/05/20</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/recipe-homemade-ricotta-cheese/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1588526826\/shrubcoop.org\/media\/94274951_4351291771563076_1292443401253289984_o_f4v80r.jpg\x22 alt=\x22\x22 \/\x3e\x3cbr \/\x3e\nNote: This recipe was published for our cook along workshop on the 5th of May 2020 during the COVID19 lockdown.\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/youtu.be\/ANj5snFnIbE\x22\x3e\x3cstrong\x3eWatch the video!\x3c\/strong\x3e\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eThis recipe is a great starting point for those of you that have never made cheese at home before, and offers great results even after the first attempt!\x3c\/p\x3e\n\n\x3ch5 id=\x22ingredients\x22\x3e\x3cstrong\x3eIngredients:\x3c\/strong\x3e\x3c\/h5\x3e\n\n\x3cp\x3e1.25 litres of milk\x3cbr \/\x3e\n250 millilitres of heavy\/double cream (optional)\x3cbr \/\x3e\n10 millilitres of vinegar (white wine, rice or apple cider) or the juice of 1 lemon\x3cbr \/\x3e\nSalt\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3eTop Tip!\x3c\/em\x3e\x3c\/strong\x3e Adding double cream will make your cheese thicker, creamier and softer, but you can also just make it with milk. If only using milk, the fat percentage will be lower and will result in a different consistency.\x3c\/p\x3e\n\n\x3ch5 id=\x22method\x22\x3e\x3cstrong\x3eMethod:\x3c\/strong\x3e\x3c\/h5\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1588075501\/shrubcoop.org\/media\/Ingredients_wuspcf.png\x22 alt=\x22\x22 \/\x3e\x3cstrong\x3eStep 1\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAdd the cream and salt directly to the milk and put the pan on a medium heat for \x3csup\x3e6\x3c\/sup\x3e⁄\x3csub\x3e8\x3c\/sub\x3e minutes, until the mixture reaches 35°C. If you don’t have a thermometer, wait until you see some bubbles forming on the side of the pan.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eStep 2\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAt this point, pour in the vinegar or the lemon juice, stirring gently with a wooden spoon for about a minute. Then cover the pan and leave it to rest at room temperature for about 10 minutes.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1588075528\/shrubcoop.org\/media\/Ingredients_1_ketuyr.png\x22 alt=\x22\x22 \/\x3e\x3cstrong\x3eStep 3\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eIf you happen to have a ricotta mould hiding in your cupboard, great, this is the moment to use it! If not, a more common cloth and a sieve will do the trick!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eStep 4\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAfter \x3csup\x3e10\x3c\/sup\x3e⁄\x3csub\x3e15\x3c\/sub\x3e minutes, the milk should have curdled, which means our cheese is forming. It should look like picture 4.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1588075559\/shrubcoop.org\/media\/Ingredients_2_fxs2sd.png\x22 alt=\x22\x22 \/\x3e\x3cstrong\x3eStep 5\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eWith a spoon or a ladle, start straining the curd (current contents of your bowl) through a sieve and then put it in the mould or second container.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3eBeginners Tip!\x3c\/em\x3e\x3c\/strong\x3e If you don’t have a ricotta mould, you will need two sieves. Use the first sieve to strain the curd into the second sieve. Place the second sieve over a bowl to hold the cheese like the mould. This will give the final cheese it shape and texture, and the bowl beneath will catch any extra liquid.\x3c\/p\x3e\n\n\x3cp\x3eYou are collecting the cheese from the liquid; this can take some time and can require a little bit of technique while straining it through the sieve. It gets easier with time!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3eTop Tip!\x3c\/em\x3e\x3c\/strong\x3e Your working station should look like this: a sieve to collect the curd, and a mould or any container for the cheese.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1588075593\/shrubcoop.org\/media\/Ingredients_3_ldnx3q.png\x22 alt=\x22\x22 \/\x3e\x3cstrong\x3eStep 6\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eWhen you have collected all the cheese, let the full mould or sieve rest in the fridge for about \x3csup\x3e6\x3c\/sup\x3e⁄\x3csub\x3e7\x3c\/sub\x3e hours or overnight.\x3c\/p\x3e\n\n\x3cp\x3eAt this stage your fresh cheese is still not firm, but tastes really good, so you can have an early taste. Don’t get put off by any vinegar after taste: it will disappear after it has fully rested.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eStep 7\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAfter enough time has passed, your cheese is ready to be eaten! Put the sieve or mould gently upside down on a plate and remove it to reveal your cheese!\x3c\/p\x3e\n\n\x3cp\x3eYou can serve your ricotta as it is, or garnish with black pepper, basil, tomatoes, some olive oil, thyme… anything you like!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3eTop Tip!\x3c\/em\x3e\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eRicotta cheese can be used in lots of different recipes, like cakes, and paired with spinach in homemade ravioli!\x3c\/p\x3e\n\n\x3ch5 id=\x22how-to-join-the-workshop\x22\x3e\x3cstrong\x3eHow to join the workshop:\x3c\/strong\x3e\x3c\/h5\x3e\n\n\x3cp\x3eIf you would like to follow this recipe along with our skilled facilitator, Francesca, then you will need to register to the Zoom session \x3ca href=\x22https:\/\/us02web.zoom.us\/meeting\/register\/tZAudOyqrzIsGtXiKZmunmKKfKvtP9WU3-4-\x22\x3ehere\x3c\/a\x3e. It’s free to take part!\x3c\/p\x3e\n\n\x3cp\x3eHowever you choose to make your cheese, let us know how you get on by commenting below or tagging us on Instagram at @shrubcoop\x3c\/p\x3e\n\n\x3cp\x3eHappy cheese making!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/recipe-homemade-ricotta-cheese\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Workshop Recipe: Make your own ricotta cheese!  cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/we-re-trialing-a-new-steering-group/" tabindex="0" title="Blog post: We&#39;re trialing a new steering group by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">We&#39;re trialing a new steering group</h3>
+</a>
+
+<p class="mb-2" tabindex="0">We have an important update to share about the future strategic direction of…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 01/05/20">&#128336; 01/05/20</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/we-re-trialing-a-new-steering-group/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1587646417\/shrubcoop.org\/media\/35302d9a-94d9-419a-88ea-4cbdfff756cc_s30l2a.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3ch4 id=\x22what-is-it\x22\x3eWhat is it?\x3c\/h4\x3e\n\n\x3cp\x3eAs a growing community-led social enterprise, SHRUB Coop needs a transparent, and effective decision-making process. As we’ve grown over the past two years, collective decision making has at times been difficult and slow.\x3c\/p\x3e\n\n\x3cp\x3eTo address this, we are trialing a steering group of members, volunteers, staff, and trustees to replace the Member’s Decision Making Meetings for 3 months. This group will oversee short to medium-term strategy for the organisation and contribute to day to day decision making.\x3c\/p\x3e\n\n\x3cp\x3eYou can read the full steering group proposal \x3ca href=\x22https:\/\/shrubcoop.us4.list-manage.com\/track\/click?u=a28a538c55f3604b70c8e2cf3\x26id=1904351d8f\x26e=5dc338c9c3\x22\x3ehere.\x3c\/a\x3e\x3c\/p\x3e\n\n\x3ch4 id=\x22who-will-be-part-of-the-steering-group\x22\x3eWho will be part of the steering group?\x3c\/h4\x3e\n\n\x3cp\x3eThe steering group will comprise of:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e4 Volunteers or paid members (usually chosen at the Annual General Meeting)\x3c\/li\x3e\n\x3cli\x3e3 Members of staff\x3c\/li\x3e\n\x3cli\x3e3 Trustees\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3ch4 id=\x22why-are-we-trying-this\x22\x3eWhy are we trying this?\x3c\/h4\x3e\n\n\x3cp\x3eOver the last 2 years, SHRUB has grown significantly. But it’s decision-making structure hasn’t changed much.\x3c\/p\x3e\n\n\x3cp\x3eWith the size and scope of what we do, it’s become increasingly difficult to get effective decisions made quickly enough.\x3c\/p\x3e\n\n\x3cp\x3eIn particular, the following problems have been identified:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eLack of engagement within our current decision-making system (low attendance at Decision Making Meetings, few comments on proposals).\x3c\/li\x3e\n\x3cli\x3eLack of legitimate strategic development both long-term and short-term; currently, there is no long-term planning (except in funding applications) and short-term decisions largely made by staff or Trustees.\x3c\/li\x3e\n\x3cli\x3eLack of clarity in the roles and responsibilities of Trustees and staff, and a degree of overstretching in both.\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3ch4 id=\x22how-did-we-come-to-this-decision\x22\x3eHow did we come to this decision?\x3c\/h4\x3e\n\n\x3cp\x3eFor the past few months, the Governance and Policy working group have been closely analysing the patterns of our decision making and researching various different options. They have recommended a trial of a steering group of Members, Staff, and Trustees to address these issues and strengthen our decision making.\x3c\/p\x3e\n\n\x3cp\x3eThis governance model was first showcased at our AGM in November 2019, discussed at a members’ decision-making meeting on the 5th of March 2020, and was endorsed by the Trustees on the 20th of April 2020.\x3c\/p\x3e\n\n\x3cp\x3eThis is a \x3cstrong\x3e3-month trial\x3c\/strong\x3e and the results will be discussed at a General Meeting of Members in July before we commit to this model in the long term.\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3ch2 id=\x22are-you-interested-in-joining-the-steering-group\x22\x3eAre you interested in joining the steering group?\x3c\/h2\x3e\n\n\x3ch4 id=\x22what-does-it-involve\x22\x3eWhat does it involve?\x3c\/h4\x3e\n\n\x3cp\x3eThis is an exciting opportunity to contribute in a meaningful way to the short and medium-term strategy of SHRUB Coop. You will be involved in decisions that will directly affect the activities and projects we offer and help us to improve them over time. At the moment, many of these short term decisions have been taken by the staff and trustees; by joining the steering group you will bring a \x3cstrong\x3every valued perspective\x3c\/strong\x3e from the membership.\x3c\/p\x3e\n\n\x3cp\x3eThe steering group will \x3cstrong\x3emeet every 2 weeks\x3c\/strong\x3e, if you are unable to attend a session, you will be required to notify the group in advance. The time and location of these meetings will be agreed by members of the steering group to best accommodate everyone. Joining meetings remotely through Zoom is also possible.\x3c\/p\x3e\n\n\x3cp\x3eYou will need to attend an induction to be brought up to speed with the necessary information to help contribute to good and effective decision making. This will include SHRUB’s activities, the charity’s resources, and the current financial situation. You do not need to already have an in-depth understanding of these, and you will be aided by experienced staff and trustees in the group.\x3c\/p\x3e\n\n\x3ch4 id=\x22how-do-i-join\x22\x3eHow do I join?\x3c\/h4\x3e\n\n\x3cp\x3eFirstly, you need to be an active member\x3cstrong\x3e*\x3c\/strong\x3e, either paid or as a volunteer.\x3c\/p\x3e\n\n\x3cp\x3eEmail us at \x3ca href=\x22mailto:hello@shrubcoop.org\x22\x3e**hello@shrubcoop.org **\x3c\/a\x3eto register your interest and let us know if you are a paid member or a volunteer member. If you’re a volunteer member, please let us know which working groups you’re part of (this is so that we can ensure there is representation across the coop).\x3c\/p\x3e\n\n\x3cp\x3eWe’ll invite everyone interested to an introductory session via Zoom on \x3cstrong\x3eWednesday 6th May at 12:00pm to 1:30pm.**\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAttending the introductory session will not be considered a firm commitment. If you’re unsure whether you want to join the steering group but would just like to find out more, there is no harm in joining this session and changing your mind afterward.\x3c\/p\x3e\n\n\x3cp\x3eIf there are too many members interested in joining the steering group, we’ll decide on a fair selection process. There will also be other opportunities to join at a later date if you are unsuccessful this time.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e*\x3c\/strong\x3e\x3cem\x3eIf you’re interested in joining the steering group, but your membership has expired recently and you’ve been unable to renew it due to our temporary closure, don’t worry. Get in touch and we will try to find a solution for you.\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e\x3cem\x3e**\x3c\/em\x3e\x3c\/strong\x3e \x3cem\x3eIf you are interested but unavailable to attend the introductory session, please let us know. Future meetings will be scheduled at a time that best suits everyone in the group, so don’t let this put you off.\x3c\/em\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/we-re-trialing-a-new-steering-group\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "We\x27re trialing a new steering group cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/what-is-a-wardrobe-audit/" tabindex="0" title="Blog post: What is a Wardrobe Audit? by Swapshop - click this link to continue reading.">
+  <h3 class="mb-2">What is a Wardrobe Audit?</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Do you feel like you have too many clothes? Most people do and yet we still…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 30/04/20">&#128336; 30/04/20</span> &nbsp; <span title="Written by Swapshop">&#128100; Swapshop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/what-is-a-wardrobe-audit/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3ch1 id=\x22pile-of-paterned-clothes-neatly-folded-on-a-white-stool-https-res-cloudinary-com-shrub-co-op-image-upload-v1587176094-shrubcoop-org-media-photo-by-victoria-strukovskaya-unsplash-com-wdp339-jpg-discarded-pile-of-clothes\x22\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1587176094\/shrubcoop.org\/media\/photo-by_-victoria-strukovskaya-unsplash_com_wdp339.jpg\x22 alt=\x22Pile of paterned clothes neatly folded on a white stool\x22 title=\x22Discarded pile of clothes\x22 \/\x3e\x3c\/h1\x3e\n\n\x3cp\x3eWe often hear about how the \x3ca href=\x22https:\/\/news.un.org\/en\/story\/2019\/03\/1035161\x22\x3efashion industry is the second most polluting industry in the world\x3c\/a\x3e, but how can you go about making your own fashion choices more sustainable?\x3c\/p\x3e\n\n\x3cp\x3eA wardrobe audit will help you to recycle clothes you don’t want anymore, free up space for those that you actually need, and rediscover those you’d forgotten about at the back of a draw. Thankfully, Jo from the \x3ca href=\x22https:\/\/www.shrubcoop.org\/working-groups\/swapshop\/\x22\x3eSwapshop\x3c\/a\x3e is here to guide you through how to do your own, step by step.\x3c\/p\x3e\n\n\x3ch4 id=\x22so-where-to-start\x22\x3eSo, where to start?\x3c\/h4\x3e\n\n\x3cp\x3eThe first step sounds easy but might take a while. Go through EVERYTHING in your wardrobe. Everything you wear everyday, everything you wear only for special occasions, and everything in between.\x3c\/p\x3e\n\n\x3cp\x3eSort them into piles of:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eYour favorite things that you wear all the time\x3c\/li\x3e\n\x3cli\x3eThings you wear sometimes and want to keep\x3c\/li\x3e\n\x3cli\x3eThings you want to pass on\x3c\/li\x3e\n\x3cli\x3eThings you need to repair\/ alter\x3c\/li\x3e\n\x3cli\x3eThings you aren’t sure what to do with\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3eThe idea of getting everything out at once lets you see if you have more or less of something that you need or don’t need. If you have two similar things but only ever wear one of them maybe pass the other on? Equally if there are things you wear all the time maybe it is worth having more than one.\x3c\/p\x3e\n\n\x3ch4 id=\x22cut-off-date\x22\x3eCut off date\x3c\/h4\x3e\n\n\x3cp\x3eFor anything you look at and think “I should wear that more” or things you say you wear but actually haven’t, a cut off date can be helpful. (It might be a good idea to decide what it will be before you start so that you don’t change your mind based on things you want to keep)\x3c\/p\x3e\n\n\x3cp\x3eThe idea is, you pick a length of time, i.e. 1 year, and everything that you haven’t worn in over a year gets passed on. (A year goes through all the seasons so you can’t use the excuse of, “it’s a summer thing” if it’s been over a year since you last wore it.)\x3c\/p\x3e\n\n\x3ch4 id=\x22ask-questions\x22\x3eAsk questions!\x3c\/h4\x3e\n\n\x3cp\x3eThe main part of doing a wardrobe audit is questioning yourself:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eWhat things do you own that you don’t wear much?\x3c\/li\x3e\n\x3cli\x3eDo you not wear them much because you don’t like them\/ don’t feel comfortable wearing them or just because you need a couple of things for fancier occasions?\x3c\/li\x3e\n\x3cli\x3eDo you own 5 suits\/ fancy dresses even though you only go to one event where you need to wear that kind of clothing a year?\x3c\/li\x3e\n\x3cli\x3eWhat things do you wear the most? Do you need more of these or do you have enough?\x3c\/li\x3e\n\x3cli\x3eWhat is it that you love about the things you wear all the time? Are they a particular style, a particular color?\x3c\/li\x3e\n\x3cli\x3eAre there some things that have been your favorite for so long that they now have holes? Can you patch these up or is it time to use the fabric for other things?\x3c\/li\x3e\n\x3cli\x3eDoes it fit? If not do you want to keep it enough to alter it?\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3ch4 id=\x22your-style\x22\x3eYour Style\x3c\/h4\x3e\n\n\x3cp\x3eYou might also want to have some questions about what your style is, and, what you want your style to be. This again can help you in deciding what things to keep and what other things you might want to get. This might be a good time to think about a one in one out rule. If you want to get something that fits a new style you want to have, maybe pass on something that you wore when you wanted a different style.\x3c\/p\x3e\n\n\x3cp\x3eIt might also be that you need more things to wear for work if you got a new job in which case maybe this rule isn’t so relevant.\x3c\/p\x3e\n\n\x3ch4 id=\x22sustainability\x22\x3eSustainability\x3c\/h4\x3e\n\n\x3cp\x3eOften we see a lot of things about capsule wardrobes and having the fewest possible items. While this is certainly a good thing for some people, it is also worth thinking about the fact that a lot of the environmental footprint of clothes comes from washing and cleaning clothes. If having more clothes means that you can wash less frequently and have fuller washes when you do, it is not necessarily a bad thing to have a few more things than extreme minimalists.\x3c\/p\x3e\n\n\x3ch4 id=\x22the-box\x22\x3eThe Box\x3c\/h4\x3e\n\n\x3cp\x3eIf there are some things you are really promising yourself you will wear, a good test can be putting them in a box somewhere for a few months. If you don’t think about them at all while they are in the box, you will probably survive without them. (This can also have the added bonus of feeling like new clothes when you do find them again and start wearing them).\x3c\/p\x3e\n\n\x3ch4 id=\x22do-you-really-need-all-those-socks\x22\x3eDo you really need all those socks?\x3c\/h4\x3e\n\n\x3cp\x3eIf you are anything like me you have a lot of threadbare socks at the back of your wardrobe because you can’t bring yourself to throw them out for environmental reasons. There are hundreds of videos and articles online, all showing you what you can turn your old worn out socks into, so that, instead of just sitting there, they actually have a function again.\x3c\/p\x3e\n\n\x3cp\x3eWhat I am trying to say here is that there is always a better use for something than being at the back of your wardrobe. If it can be worn and loved by someone else, pass it on. If it can be used as fabric for another purpose, use it! The internet is an amazing place for coming up with uses for everything and anything.\x3c\/p\x3e\n\n\x3ch4 id=\x22can-shrub-help\x22\x3eCan SHRUB Help?\x3c\/h4\x3e\n\n\x3cp\x3eThe \x3ca href=\x22https:\/\/www.shrubcoop.org\/working-groups\/swapshop\/\x22\x3eSwapshop\x3c\/a\x3e is always happy to take donations of good quality clothing and bric-a-brac. There are sewing sessions every Tuesday and Thursday evening 5pm - 7pm with people to help in any way you need.\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3eUnfortunately, all of SHRUB’s activities are temporarily suspended at the moment but we will let you know as soon as they are back up and running.\x3c\/em\x3e\x3c\/p\x3e\n\n\x3chr \/\x3e\n\n\x3ch5 id=\x22can-you-support-shrub-coop-with-a-donation\x22\x3eCan you support SHRUB Coop with a donation?\x3c\/h5\x3e\n\n\x3cp\x3eTo do our part to help flatten the curve of the COVID-19 pandemic, we’ve temporarily closed all public activities until further notice. This is having a big impact on our income.\x3c\/p\x3e\n\n\x3cp\x3eIf you are in a position to help us, could you \x3ca href=\x22https:\/\/www.shrubcoop.org\/donate\/\x22\x3emake a donation to SHRUB Coop\x3c\/a\x3e?\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/what-is-a-wardrobe-audit\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "What is a Wardrobe Audit? cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/shrub-coop-is-having-an-impact-on-waste-in-edinburgh-here-s-how/" tabindex="0" title="Blog post: SHRUB Coop is having an impact on waste in Edinburgh, here&#39;s how... by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">SHRUB Coop is having an impact on waste in Edinburgh, here&#39;s how...</h3>
+</a>
+
+<p class="mb-2" tabindex="0">We&#39;ve just finished crunching the numbers and filed the report for our Climate…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 22/04/20">&#128336; 22/04/20</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/shrub-coop-is-having-an-impact-on-waste-in-edinburgh-here-s-how/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1587648599\/shrubcoop.org\/media\/funding_newsletter_2b_1_qmwuz4.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eOver the past 2 years, we’ve been tackling climate change on a community level by reducing waste and consumption practices in Edinburgh. SHRUB has come a long way in this time and we hope to go much further with \x3ca href=\x22https:\/\/www.shrubcoop.org\/funding-update\/\x22\x3erenewed funding for a further 2 years\x3c\/a\x3e to run our Swapshop, events and workshops, and the annual End of Term Collections from student halls.\x3c\/p\x3e\n\n\x3cp\x3eMany people across the city now know SHRUB as the vibrant and immersive community to talk about and find new innovative ideas to tackle the ecological crisis together. Thank you to everyone who has been involved in the 2018 to 2020 CCF project, and we look forward to another 2 years of working towards a world without waste!\x3c\/p\x3e\n\n\x3cp\x3eYou can read the full report here: \x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1587648684\/shrubcoop.org\/media\/SHRUB_Cooperative_CCF_Final_Report_2018-2020_fcnrkf.pdf\x22 title=\x22SHRUB_Cooperative_CCF_Final_Report_2018-2020_fcnrkf.pdf\x22\x3eSHRUB_Cooperative_CCF_Final_Report_2018-2020\x3c\/a\x3e\x3c\/p\x3e\n\n\x3ch4 id=\x22we-are-proud-to-say-in-the-past-two-years-shrub-has\x22\x3eWe are proud to say in the past two years SHRUB has:\x3c\/h4\x3e\n\n\x3cp\x3eDoubled the staff and projects in our organisation.\x3c\/p\x3e\n\n\x3cp\x3eFound a new home and community at our thriving Zero Waste Hub which has become an engaging and important space for this community.\x3c\/p\x3e\n\n\x3cp\x3eStarted the first Rescued Food Supermarket in Scotland (known as the Food Sharing Hub).\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eSaved over \x3cstrong\x3e600t of Co2e savings\x3c\/strong\x3e across our projects:\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3e117t\x3c\/strong\x3e of Co2e from Swapshop\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e941kg\x3c\/strong\x3e Co2e from Wee Spoke Hub\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e60t\x3c\/strong\x3e of Co2e at the End of Term Collections\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3e3424kg\x3c\/strong\x3e of Co2e from the Food Sharing Hub\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eAn additional 427t of Co2e from Food Sharing Network (housed in the Zero Waste Hub but funded by Zero Waste Edinburgh)\x3c\/li\x3e\n\x3cli\x3eEngaged over \x3cstrong\x3e341 volunteers\x3c\/strong\x3e on a regular basis in our continuous projects.\x3c\/li\x3e\n\x3cli\x3eEngaged another \x3cstrong\x3e214 volunteers\x3c\/strong\x3e in our annual End of Term collections.\x3c\/li\x3e\n\x3cli\x3eEngaged \x3cstrong\x3e2,800 students\x3c\/strong\x3e at the University of Edinburgh in circular economy with our annual Freeshop event where we redistributed over 18 tonnes of preloved goods to students.\x3c\/li\x3e\n\x3cli\x3eHad a total of \x3cstrong\x3e706 active members\x3c\/strong\x3e, including volunteers, paid members and SHRUB staff in our community.\x3c\/li\x3e\n\x3cli\x3eRan an extensive list of carbon literacy and educational programmes including 27 sustainable fashion events, 264 bike repair workshops and monthly working group meetings.\x3c\/li\x3e\n\x3cli\x3eHad over 647 attendees at our Sustainable Fashion series since its launch in June 2019. We have collaborated with multiple other organisations to create a range of events including Fashion Revolution Scotland, Crofts and Pots in Leith and the Remakery project.\x3c\/li\x3e\n\x3cli\x3eNearly quadrupled our revenue with our new premises for a sustainable social enterprise model. With an average revenue of £13,486pa in March 2018 and an average of £51,141 pa by March 2020.\x3c\/li\x3e\n\x3cli\x3eProvided extensive volunteer and staff training and have regular daily conversations with individuals who are changing the behaviours and habits due to the SHRUB’s projects in the Zero Waste Hub.\x3c\/li\x3e\n\x3cli\x3eDeveloped our Carbon accounting software Murakami to allow for complete and succinct carbon accounting figures for our customers, volunteers and reports.\x3c\/li\x3e\n\x3cli\x3eAchieved charity status and social enterprise status.\x3c\/li\x3e\n\x3cli\x3eAchieved Revolve ‘Second-Hand quality standards body’ accreditation and featured in newsletter as a model store.\x3c\/li\x3e\n\x3cli\x3eHired a Cafe Coordinator for the Zero Waste Hub, our first staff member hired by revenue!\x3c\/li\x3e\n\x3cli\x3eDeveloped our financial, HR and HS practices as a larger organisation and developed organisational oversight.\x3c\/li\x3e\n\x3cli\x3eAchieved accurate regular monthly financial reporting for all areas of SHRUB by creating a new till system and transferring our accounting to Xero.\x3c\/li\x3e\n\x3cli\x3eDeveloped our internal and external communication platforms.\x3c\/li\x3e\n\x3c\/ul\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/shrub-coop-is-having-an-impact-on-waste-in-edinburgh-here-s-how\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "SHRUB Coop is having an impact on waste in Edinburgh, here\x27s how... cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+      </div>
+      <div class="d-flex justify-content-center">
+        
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/news/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/news/page/5/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/5/">5</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/news/page/6/">6</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/7/">7</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/8/">8</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/news/page/7/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/news/page/8/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.postcodetrust.org.uk/" title="People&#39;s Postcode Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/" title="Climate Challenge Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4" tabindex="0">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Contact</h3>
+
+            <ul class="list-unstyled" tabindex="0">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h3 class="h5" tabindex="0">Follow Us</h3>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Site Links</h3>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">Our Blog</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3" tabindex="0">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-3 px-sm-4">
+                <p class="text-sm-center mb-2">We use Google Analytics to help us better understand the kind of people who visit our website and what content they are reading. This enables us to make better decisions about web design and writing</p>
+                <p class="text-sm-center mb-3">By allowing analytics you are agreeing to the terms of our <a href="/privacy">Privacy Notice</a> and giving consent for cookies to be placed on your browser</p>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

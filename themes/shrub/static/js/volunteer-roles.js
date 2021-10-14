@@ -36,9 +36,9 @@ function writeVolunteerRolesList(roles) {
     roleDiv.className = "mb-3 pb-3";
     roleDiv.style.borderBottom = "1px #EFEFEF solid";
 
-    var roleTitle = document.createElement("h4");
+    var roleTitle = document.createElement("h3");
     roleTitle.innerText = roles[i].details.title;
-    roleTitle.className += "text-shrub mb-0";
+    roleTitle.className += "h4 text-shrub mb-0";
 
     var roleCreated = document.createElement("p");
     roleCreated.className += "text-muted mb-0";

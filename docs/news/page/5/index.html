@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ9PL78BGB"></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJ9PL78BGB');
+    }
+  }
+
+  var askForConsent = function() {
+    if("\/news\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Stay up to date with our latest news">
+
+
+<title>News | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <h1 class="align-middle mb-0 mt-1">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </h1>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh Map - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh Map</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Our Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >Our Blog</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto "
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+      <div class="pt-5 news-list">
+        <h2 class="text-center mb-4">News</h2>
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/funding-update/" tabindex="0" title="Blog post: Funding Update by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Funding Update</h3>
+</a>
+
+<p class="mb-2" tabindex="0">We&#39;ve been awarded a new grant!</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 27/01/21">&#128336; 27/01/21</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/funding-update/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3eWe are excited to announce that we have been awarded a grant of £7,703.00 from the Scottish Government’s Community Climate Asset Fund.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhat does this cover?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAn electric cargo bike, fridge and freezer to help the Food Sharing Edinburgh Network to reduce local carbon emissions by reducing emissions for collections and deliveries and diverting more surplus food from landfill.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1611759890\/shrubcoop.org\/media\/2_n8wu8j.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhat is the CCAF?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eThe Community Climate Asset Fund is a Scottish Government fund, administered by Keep Scotland Beautiful, and 279 community-based organisations from across Scotland have been awarded more than £3.2 million of funding to tackle climate change.\x3c\/p\x3e\n\n\x3cp\x3eFurther details from www.keepscotlandbeautiful.org\/ccaf\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eHow do we feel about it at the Zero Waste Hub?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eSydney, our Food Sharing Coordinator says, “the money from CCAF is going towards extra fridge and freezer space and a new cargo bike for the food sharing edinburgh project. This means we will be able to increase the amount of food we can rescue and pass on to those that need it - and do it in a low carbon way!”\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1565363322\/shrubcoop.org\/media\/189334483.jpg.gallery_coxd2w.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eThe COVID-19 pandemic also continues to have a significant impact on our income.\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eThe revenue of the Zero Waste Hub is vital for us to pay for our core costs, including rent and our back-office staff who provide essential support for our projects.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eYour support is still very much in need.\x3c\/strong\x3e By donating, you can help us to cover some of our core costs and keep our activities going while we wait for the outcome of more funding applications.\x3c\/p\x3e\n\n\x3cp\x3eWe understand that right now, a lot of people are concerned about their own financial situation.\x3c\/p\x3e\n\n\x3cp\x3eIt’s important that you take care of yourself and your family first.\x3c\/p\x3e\n\n\x3ch4 id=\x22if-you-are-in-a-position-to-help-us-could-you-make-a-donation-to-shrub-coop\x22\x3eIf you are in a position to help us, could you make a donation to SHRUB Coop?\x3c\/h4\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.shrubcoop.org\/donate\/\x22\x3eYes, I can make a donation\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1611404570\/shrubcoop.org\/media\/a4-ccaf-footer-logo_ccqvnp.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/funding-update\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Funding Update cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/cycle-repair-scheme/" tabindex="0" title="Blog post: Cycle Repair Scheme by Wee Spoke Hub - click this link to continue reading.">
+  <h3 class="mb-2">Cycle Repair Scheme</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Get your bike repaired for free</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 25/01/21">&#128336; 25/01/21</span> &nbsp; <span title="Written by Wee Spoke Hub">&#128100; Wee Spoke Hub</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/cycle-repair-scheme/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cstrong\x3eWEE SPOKE HUB\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eThe Wee Spoke Hub is a project of\x3c\/strong\x3e \x3ca href=\x22https:\/\/www.shrubcoop.org\/\x22\x3e\x3cstrong\x3eSHRUB Cooperative\x3c\/strong\x3e\x3c\/a\x3e\x3cstrong\x3e.\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eWe have been funded since around 2014 to provide a space and time for people to learn how to maintain their bikes, a distinctly non-sexist, supportive community advocating for sustainable active travel modes in and around south central Edinburgh. Our last lot of funding ran till March 2020 when the global Coronavirus Pandemic closed lots of community-led initiatives down.\x3c\/p\x3e\n\n\x3cp\x3eIn September 2020 we were awarded a grant of £2,000 to offer a \x3cstrong\x3eFREE Cycle Repair Scheme\x3c\/strong\x3e - aiming to help people “get on their bike” again. So dig that trusty old clunker out from the cupboard or shed and get in touch with our Qualified Mechanic to book a Repair slot.\x3c\/p\x3e\n\n\x3cp\x3eSimply email \x3ca href=\x22mailto:weespokehub@shrubcoop.org.uk\x22\x3e\x3cstrong\x3eweespokehub@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e saying what state it is in and giving your contact details.\x3c\/p\x3e\n\n\x3cp\x3eWe then email you a date \x26 time to Drop Off at \x3cstrong\x3eWee Spoke Hub, 13 Guthrie St, Edinburgh EH1 1JG\x3c\/strong\x3e - between Chambers St and Cowgate. This will generally be \x3cstrong\x3eTuesdays between 6.00pm - 8.00pm\x3c\/strong\x3e and \x3cstrong\x3eSunday between 1.00pm - 5.00pm\x3c\/strong\x3e.\x3c\/p\x3e\n\n\x3cp\x3eWhen you drop off your bike, we’ll ask you what you want fixed and will carry it out up to the value of £50. If the repair will cost more than £50 we will then contact you to tell you what else is there to do, give you a quote and check if you want it done. When repairs are done we’ll email you to arrange a Pick Up time!\x3c\/p\x3e\n\n\x3ch3 id=\x22scotland-cycle-repair-scheme-https-www-cyclinguk-org-scotland-cycle-repair-scheme-faqs-faq-what-is-the-scotland-cycle-repair-scheme-some-key-terms-conditions\x22\x3e\x3ca href=\x22https:\/\/www.cyclinguk.org\/scotland-cycle-repair-scheme-faqs#faq-What-is-the-Scotland-Cycle-Repair-Scheme?\x22\x3e\x3cstrong\x3eScotland Cycle Repair Scheme -\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3eSome key Terms \x26 Conditions\x3c\/strong\x3e\x3c\/h3\x3e\n\n\x3cul\x3e\n\x3cli\x3eThere is a limit of \x3cstrong\x3e£50 free servicing\x3c\/strong\x3e per bicycle until we’ve used up our allocation.\x3c\/li\x3e\n\x3cli\x3eThere is a limit of one bicycle per person; but you can\x3ca href=\x22https:\/\/www.cyclinguk.org\/scotland-cycle-repair-scheme-faqs#faq-Can-I-take-in-bikes-for-others?\x22\x3e take in bikes for others, \x3c\/a\x3eFor example, someone could bring in their own bike and bikes for their children and \/ or partner.\x3c\/li\x3e\n\x3cli\x3eThe only thing Cycling Scotland - who are managing the Scheme - ask is that you complete two short email surveys after the repairs so they can demonstrate the benefits of the scheme.\x3c\/li\x3e\n\x3cli\x3eBasic service and essential mechanical repairs are covered by the scheme i.e. repairs that are necessary to make the cycle roadworthy and fit for purpose. The following repairs \/ transactions are NOT covered:\n\n\x3cul\x3e\n\x3cli\x3ea sale of replacement parts without any repair work, including accessories\x3c\/li\x3e\n\x3cli\x3ereplacement or upgrade of existing safe and roadworthy components\x3c\/li\x3e\n\x3cli\x3ereplacement or repair of removable lighting accessories\x3c\/li\x3e\n\x3cli\x3eany repairs to e-bike electronic units.\x3c\/li\x3e\n\x3c\/ul\x3e\x3c\/li\x3e\n\x3cli\x3ePlease note that Wee Spoke Hub can only offer essential servicing and cannot help with electric bikes or hydraulic disc brakes or tubeless tyres;\x3c\/li\x3e\n\x3cli\x3e\x3cstrong\x3eThe Scheme is designed to help people who cannot afford to repair their bikes\x3c\/strong\x3e. If you can afford to pay for your repair, please consider doing so to allow those with less means to benefit from this scheme as availability is limited. Either way you are helping a charity get back on its feet.\x3c\/li\x3e\n\x3cli\x3eYou can find full Terms \x26 Conditions for the Scheme \x3ca href=\x22https:\/\/www.cyclinguk.org\/scotland-cycle-repair-scheme-faqs\x22\x3ehere\x3c\/a\x3e\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3ePrice List\x3c\/strong\x3e\x3cimg src=\x22https:\/\/lh6.googleusercontent.com\/iH6LApH9pZRK5J8AruAQcc4ZBDfZMrg-MQl3LLXacuEO0TNcMhM-6bdVVEVuMVeSpf45tYUC1wmUZUW9bLHLP1gribonrkI62ZMNwUfZkbZPZvgnjCGYAVqBwVtrIw7rg3KVhAUS =162x181\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3ch1 id=\x22standard-wee-spoke-hub-cycle-service-30\x22\x3e\x3cstrong\x3eStandard Wee Spoke Hub Cycle Service - £30\x3c\/strong\x3e\x3c\/h1\x3e\n\n\x3cp\x3eIf you just want a check-up and general maintenance, this is what you get:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eChecking and adjusting brakes and gears\x3c\/li\x3e\n\x3cli\x3eChecking chain for wear and lubricating as required\x3c\/li\x3e\n\x3cli\x3eChecking and replacing worn tyres and \/ or inner tubes\x3c\/li\x3e\n\x3cli\x3eChecking frame and forks for damage or other issues\x3c\/li\x3e\n\x3cli\x3eTest Ride to ensure all running safely\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3ePlease note that the £30 service is simply the labour costs and does not include parts. If required we will use the other £20 for the parts needed - we will ask you what to prioritise when you bring the bike in.\x3c\/p\x3e\n\n\x3ch1 id=\x22service-labour-prices\x22\x3e\x3cstrong\x3eService - labour prices\x3c\/strong\x3e\x3c\/h1\x3e\n\n\x3ch2 id=\x22brakes\x22\x3eBrakes\x3c\/h2\x3e\n\n\x3cp\x3eFitting brakes £15\x3c\/p\x3e\n\n\x3cp\x3e· Replacing cable £10\x3c\/p\x3e\n\n\x3cp\x3e· Replacing pads £10\x3c\/p\x3e\n\n\x3cp\x3e· Servicing - both brakes £15\x3c\/p\x3e\n\n\x3cp\x3e· Gears\x3c\/p\x3e\n\n\x3cp\x3e· Replace cable \x26 adjust £15\x3c\/p\x3e\n\n\x3cp\x3e· Replace cable \x26 adjust (internal) £20\x3c\/p\x3e\n\n\x3cp\x3e· Replace derailleur \x26 adjust £1\x3c\/p\x3e\n\n\x3cp\x3e· Adjusting gears £9\x3c\/p\x3e\n\n\x3cp\x3e· Service - both derailleurs £15\x3c\/p\x3e\n\n\x3cp\x3e· Replace cassette \/ freewheel £10\x3c\/p\x3e\n\n\x3cp\x3e· Wheel\x3c\/p\x3e\n\n\x3cp\x3e· Wheel true £10\x3c\/p\x3e\n\n\x3cp\x3e· Replace spoke - front wheel £15\x3c\/p\x3e\n\n\x3cp\x3e· Replace spoke - rear wheel £17\x3c\/p\x3e\n\n\x3cp\x3e· Wheel replacement £12\x3c\/p\x3e\n\n\x3cp\x3e· Tyre\x3c\/p\x3e\n\n\x3cp\x3e· Fixing puncture £10\x3c\/p\x3e\n\n\x3cp\x3e· New tyre fitting £5\x3c\/p\x3e\n\n\x3cp\x3e· Hub\x3c\/p\x3e\n\n\x3cp\x3e· Cone adjustment £5\x3c\/p\x3e\n\n\x3cp\x3e· Full service \x2b regrease £20\x3c\/p\x3e\n\n\x3cp\x3e· Replacing bearings \x2b full service £25\x3c\/p\x3e\n\n\x3cp\x3e· Miscellaneous\x3c\/p\x3e\n\n\x3cp\x3e· Chain fitting £8\x3c\/p\x3e\n\n\x3cp\x3e· Cassette\/freewheel fitting £10\x3c\/p\x3e\n\n\x3cp\x3e· Replacing a bottom bracket £22\x3c\/p\x3e\n\n\x3ch2 id=\x22gears\x22\x3e\x3cstrong\x3e\x3cem\x3eGears\x3c\/em\x3e\x3c\/strong\x3e\x3c\/h2\x3e\n\n\x3cp\x3e| — | — | Replace cable \x26 adjust | £15 | | Replace cable \x26 adjust (internal) | £20 | | Replace derailleur \x26 adjustAdjusting gearsService - both derailleursReplace cassette \/ freewheel | £15£9£15£10 |\x3c\/p\x3e\n\n\x3ch2 id=\x22wheel\x22\x3e\x3cstrong\x3e\x3cem\x3eWheel\x3c\/em\x3e\x3c\/strong\x3e\x3c\/h2\x3e\n\n\x3cp\x3e| — | — | | Wheel true | £10 | | Replace spoke - front wheelReplace spoke - rear wheelWheel replacement | £15£17£12 |\x3c\/p\x3e\n\n\x3ch2 id=\x22tyre\x22\x3e\x3cstrong\x3e\x3cem\x3eTyre\x3c\/em\x3e\x3c\/strong\x3e\x3c\/h2\x3e\n\n\x3cp\x3e| — | — | | Fixing puncture | £10 | | New tyre fitting | £5 |\x3c\/p\x3e\n\n\x3ch2 id=\x22https-lh6-googleusercontent-com-ih6laph9pzrk5j8aruaqcc4zbdfzmrg-mql3llxacueo0tncmhm-6bdvvevumvespf45tyuc1wmuzuw9blhlp1gribonrki62zmnwufzkbzpzvgnjcgyavqbwvtriw7rg3kvhaus-162x181-hub\x22\x3e\x3cstrong\x3e\x3cem\x3e\x3cimg src=\x22https:\/\/lh6.googleusercontent.com\/iH6LApH9pZRK5J8AruAQcc4ZBDfZMrg-MQl3LLXacuEO0TNcMhM-6bdVVEVuMVeSpf45tYUC1wmUZUW9bLHLP1gribonrkI62ZMNwUfZkbZPZvgnjCGYAVqBwVtrIw7rg3KVhAUS =162x181\x22 alt=\x22\x22 \/\x3eHub\x3c\/em\x3e\x3c\/strong\x3e\x3c\/h2\x3e\n\n\x3cp\x3e| — | — | | Cone adjustment | £5 | | Full service \x2b regrease | £20 | | Replacing bearings \x2b full service | £25 |\x3c\/p\x3e\n\n\x3ch2 id=\x22miscellaneous\x22\x3e\x3cstrong\x3e\x3cem\x3eMiscellaneous\x3c\/em\x3e\x3c\/strong\x3e\x3c\/h2\x3e\n\n\x3cp\x3e| — | — | | Chain fitting | £8 | | Cassette\/freewheel fittingReplacing a bottom bracket | £10£22 |\x3c\/p\x3e\n\n\x3ch1 id=\x22general-costs-of-parts\x22\x3e\x3cstrong\x3eGeneral Costs of Parts\x3c\/strong\x3e\x3c\/h1\x3e\n\n\x3cp\x3eWe use the parts that we have in stock and which we know work and will make your bike safe to use.\x3cbr \/\x3e\nWe are happy to show you what these are when you come to drop off your bike.\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eAxle (solid \/ hollow) - £4\x3c\/li\x3e\n\x3cli\x3eAxle (incl Quick Release skewer) - £7\x3c\/li\x3e\n\x3cli\x3eBearings - £1 per cone\x3c\/li\x3e\n\x3cli\x3eBottom bracket - £10\x3c\/li\x3e\n\x3cli\x3eBrake Noodle - £1\x3c\/li\x3e\n\x3cli\x3eBrake pads (V-brake, cantilever and caliper) - £5\/pair\x3c\/li\x3e\n\x3cli\x3eCable (gear or brake inner) - £2\x3c\/li\x3e\n\x3cli\x3eCable (gear or brake outer) - £2\/metre\x3c\/li\x3e\n\x3cli\x3eCassette \/ freewheel - £12\x3c\/li\x3e\n\x3cli\x3eChain (1, 5, 6, 7, 8 speed sprockets) - £10\x3c\/li\x3e\n\x3cli\x3eCranks - £5 for second-hand ones, new ones need to be ordered, appr. £15-£25\x3c\/li\x3e\n\x3cli\x3eDerailleur - front - £5 for second-hand ones, new ones need to be ordered, appr. £10\x3c\/li\x3e\n\x3cli\x3eDerailleur - rear - £8 for second-hand ones, new ones need to be ordered, appr. £12\x3c\/li\x3e\n\x3cli\x3eHeadsets - £7\x3c\/li\x3e\n\x3cli\x3eInner Tube - £6\x3c\/li\x3e\n\x3cli\x3ePedals (per pair) - £5 for second-hand ones, new ones need to be ordered, appr. £6 - £12\x3c\/li\x3e\n\x3cli\x3eSpokes - £1\x3c\/li\x3e\n\x3cli\x3eTyre - £12\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3e\x3cstrong\x3eWe are gathering together the band of Wee Spoke Hub enthusiasts who have been the bedrock of volunteer support for the Wee Spoke Hub. Email\x3c\/strong\x3e \x3ca href=\x22mailto:weespokehub@shrubcoop.org\x22\x3e\x3cstrong\x3eweespokehub@shrubcoop.org\x3c\/strong\x3e\x3c\/a\x3e \x3cstrong\x3eif interested.\x3c\/strong\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/cycle-repair-scheme\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Cycle Repair Scheme cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/zero-waste-hub-lockdown-opening-times/" tabindex="0" title="Blog post: Zero Waste Hub Lockdown Opening Times by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Zero Waste Hub Lockdown Opening Times</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Food Sharing Opening Times</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 22/01/21">&#128336; 22/01/21</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/zero-waste-hub-lockdown-opening-times/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1611337351\/shrubcoop.org\/media\/ZWH_lockdown_info_p3walv.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/zero-waste-hub-lockdown-opening-times\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Zero Waste Hub Lockdown Opening Times cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/food-sharing-hub-open/" tabindex="0" title="Blog post: Food Sharing Hub Open! by Sydney - click this link to continue reading.">
+  <h3 class="mb-2">Food Sharing Hub Open!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">operating hours during lockdown</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 05/01/21">&#128336; 05/01/21</span> &nbsp; <span title="Written by Sydney">&#128100; Sydney</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/food-sharing-hub-open/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eWe will continue to operate the food sharing hub as an essential shop throughout the Lockdown starting January 2021.\x3c\/p\x3e\n\n\x3cp\x3eWe hope to offer the same variety of fresh fruits and vegetables as well as baked goods and bread with the occasional cut flowers, but with slightly reduced opening hours.\x3c\/p\x3e\n\n\x3cp\x3eWe will be open Monday to Saturday 11am to 2pm\x3c\/p\x3e\n\n\x3cp\x3eWhile we prefer card payment we can take cash as well.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1616668875\/shrubcoop.org\/media\/IMG_20200718_111849_1_uulhxb.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eThe Cafe and Swapshop will be closed during lockdown\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/food-sharing-hub-open\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Food Sharing Hub Open! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/a-huge-thank-you-to-our-incredible-community/" tabindex="0" title="Blog post: A huge THANK YOU to our incredible community! by SHRUB - click this link to continue reading.">
+  <h3 class="mb-2">A huge THANK YOU to our incredible community!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">From all of us at SHRUB, we want to say a huge and heartfelt THANK YOU to all…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 17/12/20">&#128336; 17/12/20</span> &nbsp; <span title="Written by SHRUB">&#128100; SHRUB</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/a-huge-thank-you-to-our-incredible-community/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1608231438\/shrubcoop.org\/media\/thank_you_ugneyy.png\x22 alt=\x22\x22 \/\x3eIt’s been a rollercoaster of a year and we really couldn’t have got through it without your support.\x3c\/p\x3e\n\n\x3cp\x3eWe wish you a joyful festive period and look forward to welcoming you back in 2021!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/a-huge-thank-you-to-our-incredible-community\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "A huge THANK YOU to our incredible community! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/" tabindex="0" title="Blog post: Sharing Skills for Everyday Cycling by Lisa Heywood - click this link to continue reading.">
+  <h3 class="mb-2">Sharing Skills for Everyday Cycling</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 10/11/20">&#128336; 10/11/20</span> &nbsp; <span title="Written by Lisa Heywood">&#128100; Lisa Heywood</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/sharing-skills-for-everyday-cycling/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1605029458\/shrubcoop.org\/media\/everyday_cycling_skillshare_zaluv2.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eIt’s great to see so many people embracing cycling as a way of getting around recently. Cycling has a bit of a reputation in the UK for being the reserve of sports enthusiasts, wearing the distinctive lycra outfits that we see on TV in sports events. However, in other parts of the world cycling is much more part of the day-to-day fabric of life - just another transport option that can be much cheaper and more convenient than public transport or a private car.\x3c\/p\x3e\n\n\x3cp\x3eThis second view of cycling is how I have always related to it – something I think of as “everyday cycling”. I’m not really a competitive person, so the idea of getting a new best time doesn’t make my heart race. For me cycling is a great way to get around the city as well as weaving some outdoor time and physical activity into my day without it seeming like a chore.\x3c\/p\x3e\n\n\x3cp\x3eI used to cycle to secondary school when I was younger but after moving to a hilly city I had a break of several years. Later I moved to Bristol, which has great cycling infrastructure, and picked it back up again as a cheap and quick way to get to work. I found it took me a little while to find the best route, and where to find out information about how to store and maintain my bike. Later I moved to Edinburgh and the same questions came up once again. I didn’t know who to ask so I ended up working it out from scratch!\x3c\/p\x3e\n\n\x3cp\x3eSometimes it can be hard to know where to find information and resources about cycling, and not everyone knows someone who they can ask…but what if there was a place you could go to meet other “everyday cyclists” to ask all those questions? Well, we’ve created a space to do just that! We are welcoming new and everyday cyclists to join us in a fortnightly skill-share where we can help you find the information you need to get where you want to go on two wheels!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eJoin us online for our “Everyday Cycling Skill-share” at 5:30-6:30pm on Mondays on the following dates:\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3e1st February - Carrying stuff while cycling. Here’s the \x3ca href=\x22https:\/\/www.facebook.com\/events\/422656658944907\x22\x3eFacebook event\x3c\/a\x3e.\x3c\/li\x3e\n\x3cli\x3e15th February - Staying safe while cycling. Here’s the \x3ca href=\x22https:\/\/www.facebook.com\/events\/717125172308414\x22\x3eFacebook event\x3c\/a\x3e with the Zoom link.\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3cp\x3eKeep an eye on the \x3ca href=\x22https:\/\/www.facebook.com\/shrubcoop\/events\/?ref=page_internal\x22\x3eSHRUB Facebook events page\x3c\/a\x3e for details of future upcoming sessions!\x3c\/p\x3e\n\n\x3cp\x3eIf you’re a regular cyclist and want to share your knowledge and enthusiasm, then why not get involved as a volunteer? Get in touch with us to find out how: volunteering@shrubcoop.org. You can also join the dedicated \x3ca href=\x22https:\/\/www.facebook.com\/groups\/3381216181973515\x22\x3eEveryday Cycling Facebook group\x3c\/a\x3e to be part of our community!\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eFree bike repairs\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eWe also have some exciting news to share about our cycle repair workshop. In September 2020 we were awarded a grant from Cycling UK to offer FREE cycle repairs up to the value of £50, aimed particularly at those who would otherwise not be able to afford repairs. So, if you’d like to get on your bike but are not sure if it’s roadworthy, you can get in touch with our qualified mechanic to book a repair slot.\x3c\/p\x3e\n\n\x3cp\x3eSimply email weespokehub@shrubcoop.org with a description of what state your bike is in and giving your contact details. Our mechanic will then email you a date \x26 time to drop your bike off at our workshop at The Wee Spoke Hub, 13 Guthrie St, Edinburgh EH1 1JG. When repairs are done we’ll email you to arrange a pick up time.\x3c\/p\x3e\n\n\x3cp\x3eWe hope to see you (virtually or in person!) very soon – happy cycling!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/sharing-skills-for-everyday-cycling\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Sharing Skills for Everyday Cycling cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/become-a-trustee-of-shrub-coop-1/" tabindex="0" title="Blog post: Become a trustee of SHRUB Coop! by SHRUB Coop - click this link to continue reading.">
+  <h3 class="mb-2">Become a trustee of SHRUB Coop!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">We&#39;re recruiting for next year&#39;s trustees. Application deadline 9am, 20th…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 05/11/20">&#128336; 05/11/20</span> &nbsp; <span title="Written by SHRUB Coop">&#128100; SHRUB Coop</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/become-a-trustee-of-shrub-coop-1/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1572008860\/shrubcoop.org\/media\/web_image_template_tm3vs6.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eOur Annual General Meeting is coming up and its time to select another group of trustees to guide the coop through 2021!\x3c\/p\x3e\n\n\x3cp\x3eWe invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees. We are particularly looking for people with experience in the fields of \x3cstrong\x3eCommunity Development, Finance, HR and Fundraising\x3c\/strong\x3e but Trustees have a wide-ranging remit and there are opportunities for involved across the work that SHRUB undertakes.\x3c\/p\x3e\n\n\x3ch4 id=\x22why-become-a-trustee\x22\x3eWhy become a Trustee?\x3c\/h4\x3e\n\n\x3cp\x3eSHRUB is a cooperative with premises in central Edinburgh. Our Members contribute to decision-making processes. Trustees have special legal responsibilities and, in some circumstances may have to make sensitive or critical decisions on behalf of the Coop.\x3c\/p\x3e\n\n\x3cp\x3eA Steering Group was established in May 2020 and now helps staff and working groups take the day-to-day decisions - meaning the Trustees’ role is genuinely oversight and strategy.\x3c\/p\x3e\n\n\x3cp\x3eTrustees learn about how our Social Enterprise runs and gain skills in leadership, problem - solving and innovation, strategic judgement and effective communication, to name a few.\x3c\/p\x3e\n\n\x3cp\x3eServing as a Trustee is an opportunity to learn about the governance of a not-for-profit organisation in a supportive environment, learning from more experienced Trustees and staff and the fresh perspective of newer Members alike.\x3c\/p\x3e\n\n\x3ch4 id=\x22key-responsibilities\x22\x3eKey Responsibilities\x3c\/h4\x3e\n\n\x3cp\x3eTrustees’ key responsibilities fall into the following areas:\x3c\/p\x3e\n\n\x3cul\x3e\n\x3cli\x3eVision mission and aims\x3c\/li\x3e\n\x3cli\x3eStrategy and objectives\x3c\/li\x3e\n\x3cli\x3eCulture and values\x3c\/li\x3e\n\x3cli\x3eAccountable leadership\x3c\/li\x3e\n\x3cli\x3eControl environment\x3c\/li\x3e\n\x3cli\x3eGovernance processes\x3c\/li\x3e\n\x3cli\x3eSuccession planning\x3c\/li\x3e\n\x3c\/ul\x3e\n\n\x3ch4 id=\x22what-skills-do-i-need\x22\x3eWhat skills do I need?\x3c\/h4\x3e\n\n\x3cp\x3eTrustees have a wide-ranging remit with some people leading on particular aspects, some playing a more general role. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people and women.\x3c\/p\x3e\n\n\x3cp\x3eTrustees are responsible for overseeing development of the strategic framework within which day- to-day tasks are carried out by staffers and volunteers, and they help guide our long-term planning.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWhat is the time commitment?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAs a voluntary Trustee, you will make some clear time commitments: to attend regular Trustee meetings (2 hours each month, currently on a Monday evening), and participate in staff support mechanisms.\x3c\/p\x3e\n\n\x3cp\x3eTrustees will preferably participate in the work of a Working Group - attending meetings where possible and contributing to the direction and content of work.\x3c\/p\x3e\n\n\x3cp\x3eAs a cooperative, SHRUB Coop makes transparent, and effective decisions mostly by a Steering Group. Trustees delegate the day-to-day decisions to the Steering Group, comprising Trustees, Members (both Volunteer and Supporter Members) and Staff. The Steering Group meets at least every fortnight (currently online only).\x3c\/p\x3e\n\n\x3cp\x3eTime off can be arranged among Trustees, ensuring that there is a balance between Trustees’ wellbeing and SHRUB Coop functioning. If you cannot make a meeting you let people know. There is a Welfare Working Group to support mental, physical and emotional wellbeing of volunteers and members if you need support in regulating your engagement.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eWho can apply?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eAnyone who supports the Vision and Mission of SHRUB Coop is invited to apply. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people, other members of the LGBT\x2b community, and women.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eBackground:\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eWe’re a cooperative in Edinburgh working for a world without waste!\x3c\/p\x3e\n\n\x3cp\x3eSHRUB Coop is an exciting community-led project that works to make big carbon savings by increasing awareness on sustainability issues and solutions.\x3c\/p\x3e\n\n\x3cp\x3eThe Coop is organised non-hierarchically and strives to provide an inclusive and empowering experience for all volunteers, staff and members in our community. You can read our \x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1573736447\/shrubcoop.org\/media\/SHRUB_Safer_Spaces_Policy_3.0_k1sjgv.pdf\x22\x3eSafer Spaces policy here\x3c\/a\x3e.\x3c\/p\x3e\n\n\x3cp\x3eSHRUB Coop is registered as a Scottish Charitable Incorporated Organisation (SCIO) - working for a world without waste. Our purpose is the advancement of:\x3c\/p\x3e\n\n\x3col\x3e\n\x3cli\x3eEnvironmental protection and improvement by contributing to a Zero Waste Edinburgh\x3c\/li\x3e\n\x3cli\x3eEducation by providing training and skill-sharing in all functions of the enterprise\x3c\/li\x3e\n\x3cli\x3eCitizenship and community development through active participation.\x3c\/li\x3e\n\x3c\/ol\x3e\n\n\x3cp\x3eOur Constitution provides for Trustees to formally oversee the activities of SHRUB Cooperative and ensure we act in accordance with our purposes and the wishes of members of the Cooperative.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eHow Do I Apply?\x3c\/strong\x3e\x3c\/p\x3e\n\n\x3cp\x3eTo apply, simply save a copy of this \x3ca href=\x22https:\/\/docs.google.com\/document\/d\/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds\/edit\x22 title=\x22SHRUB Trustee Application Form\x22\x3eform\x3c\/a\x3e, fill it out and send it, \x3cstrong\x3ewith a copy of your CV\x3c\/strong\x3e, to \x3ca href=\x22mailto:hello@shrubcoop.org\x22\x3ehello@shrubcoop.org\x3c\/a\x3e, with the subject: “Trustee application” by \x3cstrong\x3e9am, Friday 20th November\x3c\/strong\x3e.\x3c\/p\x3e\n\n\x3cp\x3eApplications will be considered at our AGM on Monday, 23rd November, which you are very welcome to attend!\x3c\/p\x3e\n\n\x3cp\x3eFor more information, please have a read of our \x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1604617579\/shrubcoop.org\/media\/Trustee_invitation_-_SHRUB_Coop_-_2020_brhcr4.pdf\x22 title=\x22Trustee Invitation -2020\x22\x3einformation pack.\x3c\/a\x3e\x3c\/p\x3e\n\n\x3cp\x3eAny questions please email us at \x3ca href=\x22mailto:hello@shrubcoop.org\x22\x3ehello@shrubcoop.org\x3c\/a\x3e.\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/become-a-trustee-of-shrub-coop-1\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "Become a trustee of SHRUB Coop! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/the-wee-spoke-hub-is-starting-the-journey-to-reopening/" tabindex="0" title="Blog post: The Wee Spoke Hub is starting the journey to reopening! by Wee Spoke Hub - click this link to continue reading.">
+  <h3 class="mb-2">The Wee Spoke Hub is starting the journey to reopening!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">After months of uncertainty about the future of the Wee Spoke Hub we are excited…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 15/10/20">&#128336; 15/10/20</span> &nbsp; <span title="Written by Wee Spoke Hub">&#128100; Wee Spoke Hub</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/the-wee-spoke-hub-is-starting-the-journey-to-reopening/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1568759594\/shrubcoop.org\/media\/Untitled_design_biphum.png\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eThanks to a grant of £2,000 from Cycling UK we’ll be offering a \x3cstrong\x3eFREE Cycle Repair Scheme\x3c\/strong\x3e - aiming to help people “get on their bike” again. How does it work?\x3c\/p\x3e\n\n\x3cp\x3e1. Dig that trusty old clunker out from the cupboard or shed\x3c\/p\x3e\n\n\x3cp\x3e2. Check the\x3ca href=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1602775388\/shrubcoop.org\/media\/Cycle_Repair_Scheme_at_Wee_Spoke_Hub_dnl4v3.pdf\x22\x3e full process, terms and conditions\x3c\/a\x3e of the Cycle Repair Scheme\x3c\/p\x3e\n\n\x3cp\x3e2. Book a Repair slot with us\x3c\/p\x3e\n\n\x3cp\x3e3. Get your bike fixed by our mechanic\x3c\/p\x3e\n\n\x3cp\x3e4. Pick up when it’s ready\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3ePlease note that this scheme is designed to help people who would not otherwise be able to afford to repair their bikes. As the availability of this scheme is limited, please consider allowing those with less means to benefit from this scheme if you can afford to pay for your repair.\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3eWe will soon be reopening our doors to the public with new Covid-19 safety measures in place for our famous \x3cstrong\x3eFix Your Own Bike\x3c\/strong\x3e workshops and \x3cstrong\x3eother exciting bike-focused activities\x3c\/strong\x3e, thanks to a grant from Paths for All. Follow us on social media and subscribe to our newsletter to stay in the loop about dates for these!\x3c\/p\x3e\n\n\x3cp\x3eWe would like to thank the SHRUB volunteer funding team, Truffle Pig consultants, our funders at Cycling UK and Paths for All and our community for their help in making Wee Spoke Hub’s reopening possible!\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/the-wee-spoke-hub-is-starting-the-journey-to-reopening\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "The Wee Spoke Hub is starting the journey to reopening! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/i-can-make-that/" tabindex="0" title="Blog post: &#34;I can make that!&#34; by Amy Webster - click this link to continue reading.">
+  <h3 class="mb-2">&#34;I can make that!&#34;</h3>
+</a>
+
+<p class="mb-2" tabindex="0">An introduction to eco-friendly DIY by our Comms Volunteer Amy Webster</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 21/09/20">&#128336; 21/09/20</span> &nbsp; <span title="Written by Amy Webster">&#128100; Amy Webster</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/i-can-make-that/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\n\n\x3cp\x3e\x3cem\x3eA quick introduction about myself. Born and bred in Brisbane, Australia I unknowingly moved to Edinburgh weeks before the pandemic hit. With a Bachelor of Design and a Graduate Certificate in Science (Environment and Sustainability) my aim was to continue into a job that tickled my passion for sustainability, community and creativity. Covid-19 thought I was overreaching with simply wanting a job but luckily I came by part time work and I found Shrub, an outlet for my passions, a community to be a part of, and a space to (hopefully) make a difference. As part of the Comms Working Group I hope to contribute my penchant for writing and scientific research, my love of illustration and photography and an unwavering belief that a little humour can tackle anything.\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3eHow many times have you gotten home from the shops only to remember that you forgot to buy something? If not the main ingredient for dinner that night, it’s usually something you ran out of days, if not weeks ago. What if I told you there were ingredients in your cupboard that could fill the void of many plastic-packaged products and more. What if I told you there was this mystical world of cheap and easy craftiness that was better for the environment, your health and your wallet. That world is called DIY (Do-It-Yourself) or \x3cem\x3emake it yourself\x3c\/em\x3e.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1600791558\/shrubcoop.org\/media\/image_1_ze05lw.jpg\x22 alt=\x22\x22 \/\x3e\x3cem\x3eDIY Citrus cleaner\x3c\/em\x3e\x3c\/p\x3e\n\n\x3ch4 id=\x22why-do-it-yourself-when-you-can-just-buy-it\x22\x3eWhy do-it-yourself when you can just buy it?\x3c\/h4\x3e\n\n\x3cp\x3eThere are many great advantages to DIY.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eThe price:\x3c\/strong\x3e It’s cheaper. For example, on the cheap end, a new cleaning spray costs around £1 per bottle. A 1L bottle of vinegar can be less than 60p and be used to make numerous bottles of cleaning spray.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eThe simplicity:\x3c\/strong\x3e You don’t need to be a wizard - it’s easy! Recipes can be as easy or complicated as you like. If you can measure and mix, you can already make 100s of DIY products.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eThe environment:\x3c\/strong\x3e Reuse! Save on new, unnecessary plastic by refilling containers you already have. DIY helps save the planet through recycling and upcycling materials, bottles and ingredients already in your home. Most cleaning products come in plastic all destined to become waste. Instead, refill and reuse and eventually, one far day away, you can then recycle.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eIt’s rewarding:\x3c\/strong\x3e It’s fun, you’re learning new skills and it’s rewarding knowing not only that you made it yourself, but that you saved another plastic bottle from the bin.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eLess toxins\x3c\/strong\x3e: The ingredients list found on many products in our homes might as well be in Latin. With toxic ingredients, palm oil and other nasties commonly found in everything from cleaners to face creams, making products yourself gives you more control to live a less toxic and less environmentally harmful life.\x3c\/p\x3e\n\n\x3cp\x3e\x3cstrong\x3eGifting\x3c\/strong\x3e: Handmade gifts, whether perfect or comically misshapen, are far more personal and heartfelt.\x3c\/p\x3e\n\n\x3ch4 id=\x22the-example-vinegar\x22\x3eThe example: Vinegar!\x3c\/h4\x3e\n\n\x3cp\x3eA staple of most kitchens, dirt cheap, readily accessible and purchasable in large quantities, vinegar is a magical ingredient found in numerous DIY recipes. Let me give you the example below, \x3cstrong\x3eall purpose cleaner\x3c\/strong\x3e, as it could not be easier and is a great introduction to the world of DIY. I should mention that you do not need to be precious about measuring and you can most definitely reuse an empty spray bottle, thus saving it from an eternity in landfill. Distilled white vinegar is most commonly used for its cheapness but apple cider vinegar works great too, has the same benefits and a better smell.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1600792232\/shrubcoop.org\/media\/image_2_mkljgf.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eThe simplicity and wonderment of DIY is knowing how to use the ingredients and just how multipurpose they all are, which all comes from \x3cem\x3eGoogling\x3c\/em\x3e and practise. With vinegar and a couple more simple ingredients, you can make numerous products; toilet bombs, bug repellent, dishwasher tablets, face masks, hair conditioning spray, laundry soaker and a cleaner for the kitchen, bathroom, windows, tables …the list goes on. Why is vinegar so magical? It’s cheap and has a long shelf life. It’s natural and biodegradable so it can be used indoors and outdoors. It creates an inhospitable environment for many microorganisms due to its pH of 2.0 and the acetic acid content making it great to use at home.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1600792254\/shrubcoop.org\/media\/image_3_bfw8rg.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3ch4 id=\x22baby-steps\x22\x3eBaby steps!\x3c\/h4\x3e\n\n\x3cp\x3eMy big tip for starting your DIY journey. BABY STEPS. There are a million and one recipes online which can be both daunting and confusing. Keep it simple. You will get to know how to use, mix and most importantly, how multipurpose each ingredient can be. As each product slowly runs out in your home, have a look at a DIY alternative that includes ingredients you already have or can easily and sustainably source. You will start to see similar ingredients overlapping and realise that you only need a few ingredients to make many different products.\x3c\/p\x3e\n\n\x3cp\x3eMy journey started in the kitchen, namely the dark and dreaded shelf under my sink that contained a cleaning product for every different surface or space in my apartment. A DIY citrus cleaner was project number one, chosen as a way to use up the lemon peels I quickly accumulated. Over months, that shelf went from full to near empty with vinegar, castile soap and bicarb proudly taking their place. As I learnt, most of my DIY cleaning recipes shared those same ingredients in varying quantities.\x3c\/p\x3e\n\n\x3cp\x3eTo finish is one of my favourite DIY recipes, the aforementioned \x3cstrong\x3ecitrus cleaner\x3c\/strong\x3e. Not only does it smell great and work well, but it’s beautiful sitting on my kitchen bench and gives my food waste another life. The next time you run out of something at home, have a quick pause and consider DIY-ing it. Trust me, you’re baby steps away from making your life easier and greener.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1600792300\/shrubcoop.org\/media\/image_4_l0r9i4.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/i-can-make-that\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "\x22I can make that!\x22 cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+          
+            <div class="py-3">
+              <a href="https://www.shrubcoop.org/the-great-oat-milk-debate/" tabindex="0" title="Blog post: The Great Oat Milk Debate! by Alun Evans - click this link to continue reading.">
+  <h3 class="mb-2">The Great Oat Milk Debate!</h3>
+</a>
+
+<p class="mb-2" tabindex="0">Our Cafe Coordinator Alun takes a look at sustainability credentials of the…</p>
+
+<p class="dosis-semi-bold" tabindex="0">
+  <span title="Published on 21/09/20">&#128336; 21/09/20</span> &nbsp; <span title="Written by Alun Evans">&#128100; Alun Evans</span>
+</p>
+
+
+
+  <img id="https://www.shrubcoop.org/the-great-oat-milk-debate/_preview_image" style="display: none; max-height: 500px; width: auto; max-width: 100%;" class="mx-auto" onerror="this.onerror=null; this.style.display = 'none';" />
+
+  <script>
+
+  var str = "\x3cp\x3eWith Oatly’s recent announcement of a 10% buyout by the Blackstone Group we thought it was time to have a bit of a deeper dive into some of our suppliers. This has led to several rabbit holes with some unpleasant surprises down them. It’s almost like there’s no ethical consumption under capitalism, funny that.\x3c\/p\x3e\n\n\x3cp\x3eAs a cafe we need an oat milk that tastes good, foams well and is easily available. So here’s a quick round up of some of the alternatives that are out there.\x3c\/p\x3e\n\n\x3cp\x3e\x3cimg src=\x22https:\/\/res.cloudinary.com\/shrub-co-op\/image\/upload\/v1600793467\/shrubcoop.org\/media\/oat_milk_bcbsy5.jpg\x22 alt=\x22\x22 \/\x3e\x3c\/p\x3e\n\n\x3cp\x3eAlpro does a barista style oat milk, but Alpro is 100% owned by Danone; one of the world’s largest investors and producers of dairy products with a less than stellar record on human rights in the supply-chain.\x3c\/p\x3e\n\n\x3cp\x3eRude Health is another one that has cropped up recently, but is unfortunately part-owned by Pepsico…nope…\x3c\/p\x3e\n\n\x3cp\x3eHow about Califa Farms? Well the oat milk is delicious but the investment by the Qatari Wealth Fund leaves a bitter after-taste.\x3c\/p\x3e\n\n\x3cp\x3eProvamel? Unfortunately it’s owned by Alpro.\x3c\/p\x3e\n\n\x3cp\x3eMinor Figures doesn’t seem to have any skeletons in their closet but they have recently received a £7.5 million investment from an undisclosed source to expand their operations in the USA. It would be nice to know who that is from.\x3c\/p\x3e\n\n\x3cp\x3eThe final one that we want to mention is a very new and very local company called Untitled Oats. They will be producing oat milk commercially within the next couple of months and delivering it in fully reusable containers. We’re very excited to see how things go with them and would love to have them as a supplier. We’re keeping our fingers crossed.\x3c\/p\x3e\n\n\x3cp\x3eAs it stands we are not entirely sure who we should be using as our oat milk supplier for the interim. Navigating the ethical implications of different suppliers is difficult at best. With a lack of transparency, shell companies and dodgy investments as the norm, we’re hoping to put our faith in small-scale local production as we move forward.\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3eAlun - Cafe Coordinator\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3eDisclaimer: I’m not an investigative reporter, there’s been a lot of googling and looking at company registrations online to try and figure this out. If anyone spots any errors then please please please let us know!\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3e\x3ca href=\x22https:\/\/www.corporatebenchmark.org\/sites\/default\/files\/2018-11\/Danone%20CHRB%202018%20Results%20on%2020181026%20at%20171611.pdf\x22\x3eLink to Danone’s ethical report\x3c\/a\x3e\x3c\/p\x3e\n"
+  var elem = document.createElement('div');
+  elem.style.display = 'none';
+  document.body.appendChild(elem);
+  elem.innerHTML = str;
+  var image = elem.querySelector('img');
+  var imageSrc = image.src;
+  
+  if(imageSrc) {
+    var imageElem = document.getElementById("https:\/\/www.shrubcoop.org\/the-great-oat-milk-debate\/_preview_image");
+    imageElem.src = imageSrc;
+    imageElem.style.display = "block";
+    imageElem.alt = image.alt || "The Great Oat Milk Debate! cover image"
+  }
+
+  </script>
+
+
+
+            </div>
+            <hr />
+          
+
+        
+      </div>
+      <div class="d-flex justify-content-center">
+        
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/news/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/news/page/4/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/4/">4</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/news/page/5/">5</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/6/">6</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/news/page/8/">8</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/news/page/6/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/news/page/8/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap justify-content-center">
+	
+	      <div class="my-3">
+		  <a href="https://www.postcodetrust.org.uk/" title="People&#39;s Postcode Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+	      <div class="my-3">
+		  <a href="https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/" title="Climate Challenge Fund" target="_blank">
+		  	<img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg" class="funder-image">
+		  </a>
+	      </div>
+	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4" tabindex="0">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Contact</h3>
+
+            <ul class="list-unstyled" tabindex="0">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h3 class="h5" tabindex="0">Follow Us</h3>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Site Links</h3>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">Our Blog</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3" tabindex="0">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-3 px-sm-4">
+                <p class="text-sm-center mb-2">We use Google Analytics to help us better understand the kind of people who visit our website and what content they are reading. This enables us to make better decisions about web design and writing</p>
+                <p class="text-sm-center mb-3">By allowing analytics you are agreeing to the terms of our <a href="/privacy">Privacy Notice</a> and giving consent for cookies to be placed on your browser</p>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
