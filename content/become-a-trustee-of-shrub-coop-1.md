@@ -9,7 +9,7 @@ type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1572008860/shrubcoop.org/media/web_image_template_tm3vs6.png)
 
-Our Annual General Meeting is coming up and its time to select another group of trustees to guide the coop through 2022!
+Our Annual General Meeting is coming up on Tuesday 23rd November and its time to select another group of trustees to guide the coop through 2022!
 
 We invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees. We are particularly looking for people with experience in the fields of **HR, Fundraising and Social Enterprise** but Trustees have a wide-ranging remit and there are opportunities for involvement across the work that SHRUB undertakes.
 
