@@ -2,7 +2,6 @@
 author = "Aislinn Redbond"
 date = 2021-11-01T00:00:00Z
 description = "Our communications volunteer Aislinn Redbond looks into the impacts of the COP26 event on the locals and the planet"
-draft = true
 tags = ["zero-waste-hub", "swapshop"]
 title = "COP26: The Stakes and Costs"
 type = "news"
