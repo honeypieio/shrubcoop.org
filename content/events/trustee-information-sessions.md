@@ -15,6 +15,6 @@ We will be hosting two Trustee information sessions on **Friday 12th November** 
 
 Lead by our current Convenor, Izi, there will be time for lots of questions. Please arrive promptly and email [izi.robe@shrubcoop.org](mailto:izi.robe@shrubcoop.org) to let us know which session you will be attending.
 
-The sessions will be held online via Zoom and the link for Tuesday's session is [here](https://us02web.zoom.us/j/85936922280?pwd=ZmxYd01YQjVNb0FHTmcwYlNkeHRsZz09).
+The sessions will be held online via Zoom and the link for Friday's session is [here](https://us02web.zoom.us/j/85936922280?pwd=ZmxYd01YQjVNb0FHTmcwYlNkeHRsZz09).
 
 We look forward to welcoming you to our community!
