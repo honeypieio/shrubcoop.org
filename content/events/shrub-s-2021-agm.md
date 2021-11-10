@@ -15,6 +15,6 @@ We're going to run a blended in-person and virtual AGM this year, and are offeri
 
 For in-person attendees, from 5.30-6pm we'll be offering hot and cold drinks plus tasty food from our cafe. This will be followed by the AGM hosted both in-person and virtually between 6-8pm. There'll be time for socialising afterwards until 8.30pm.
 
-Please sign up for tickets via Eventbrite, indicating whether you want to attend virtually or in-person. Hurry if you want to attend in-person as places are limited! [https://www.eventbrite.co.uk/.../shrub-coop-annual...](https://www.eventbrite.co.uk/.../shrub-coop-annual... "https://www.eventbrite.co.uk/.../shrub-coop-annual...")
+Please sign up for tickets via Eventbrite, indicating whether you want to attend virtually or in-person. Hurry if you want to attend in-person as places are limited! [https://www.eventbrite.co.uk/.../shrub-coop-annual...](https://www.eventbrite.co.uk/e/shrub-coop-annual-general-meeting-tickets-201723419177?fbclid=IwAR1ZgWlALLlV_tRLti3QVtgXuzrQ68_PRnxbCkWJ7M8RB6cZ6dsqxCD6RM8 "https://www.eventbrite.co.uk/.../shrub-coop-annual...")
 
 We look forward to welcoming you!
