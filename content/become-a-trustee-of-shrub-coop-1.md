@@ -29,7 +29,7 @@ Serving as a Trustee is an opportunity to learn about the governance of a not-fo
 * Secretary
 * Treasurer
 * Steering Group link
-* HR and Welfare support 
+* HR and Welfare support
 * Fundraising support
 * Risk and Compliance lead
 * Monitoring and Evaluation support
@@ -76,12 +76,12 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 **How Do I Apply?**
 
-To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit "SHRUB Trustee Application Form"), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **12am, Thursday 18th November**. Please highlight in the form which Trustee role(s) you are interested in and perhaps have skills and experience in. 
+To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit "SHRUB Trustee Application Form"), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **12am, Thursday 18th November**. Please highlight in the form which Trustee role(s) you are interested in and perhaps have skills and experience in.
 
 Applications will be considered at our AGM on Tuesday, 23rd November, which we would encourage you to attend!
 
 For more information, please have a read of our [information pack.](https://res.cloudinary.com/shrub-co-op/image/upload/v1604617579/shrubcoop.org/media/Trustee_invitation_-_SHRUB_Coop_-_2020_brhcr4.pdf "Trustee Invitation -2020")
 
-Izi, our current Convenor, will be running pre-AGM information sessions in November for you to ask questions about the role and find out more about being a Trustee. Dates of these will be confirmed here shortly.
+Izi, our current Convenor, will be running pre-AGM Trustee information sessions via Zoom on **Friday 12th** and **Tuesday 16th November** at **6-7.30pm** for you to ask questions about the role and find out more about being a Trustee. Here are the Zoom links for [Friday's session](https://us02web.zoom.us/j/85936922280?pwd=ZmxYd01YQjVNb0FHTmcwYlNkeHRsZz09) and [Tuesday's session](https://us02web.zoom.us/j/83095617781?pwd=Umo5Smcydk44WldTTC9RbjhyMTNvZz09). Please email Izi at izi.robe@shrubcoop.org to confirm which session you will be attending. 
 
 Any questions please email us at [hello@shrubcoop.org](mailto:hello@shrubcoop.org).
