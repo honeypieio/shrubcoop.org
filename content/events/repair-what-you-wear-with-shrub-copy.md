@@ -4,8 +4,8 @@ description = "Are you itching to start any sewing projects? Come along to our s
 draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
-time = 2021-11-23T14:00:00Z
-title = "Repair What You Wear With SHRUB -(copy)"
+time = 2021-11-30T14:00:00Z
+title = "Repair What You Wear With SHRUB"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1637237913/shrubcoop.org/media/IMG_7913_mmvgul.jpg)
