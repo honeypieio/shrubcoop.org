@@ -1,7 +1,7 @@
 +++
 author = "SHRUB Coop"
 date = 2021-10-29T17:45:00Z
-description = "We're recruiting for next year's trustees. Application deadline 12am, 18th November"
+description = "We're recruiting for next year's trustees."
 tags = ["zero-waste-hub", "food-sharing-hub", "wee-spoke-hub", "shrub-space", "swapshop", "trustees ", "zero-waste", "circular-economy"]
 title = "Become a trustee of SHRUB Coop!"
 type = "news"
@@ -9,7 +9,7 @@ type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1572008860/shrubcoop.org/media/web_image_template_tm3vs6.png)
 
-Our Annual General Meeting is coming up on Tuesday 23rd November and its time to select another group of trustees to guide the coop through 2022!
+We're looking for more trustees to guide SHRUB Coop through 2022!
 
 We invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees. We are particularly looking for people with experience in the fields of **HR, Fundraising and Social Enterprise** but Trustees have a wide-ranging remit and there are opportunities for involvement across the work that SHRUB undertakes.
 
@@ -76,12 +76,8 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 **How Do I Apply?**
 
-To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit "SHRUB Trustee Application Form"), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application” by **12am, Thursday 18th November**. Please highlight in the form which Trustee role(s) you are interested in and perhaps have skills and experience in.
-
-Applications will be considered at our AGM on Tuesday, 23rd November, which we would encourage you to attend!
+To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit "SHRUB Trustee Application Form"), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application”. Please highlight in the form which Trustee role(s) you are interested in and perhaps have skills and experience in.
 
 For more information, please have a read of our [information pack.](https://res.cloudinary.com/shrub-co-op/image/upload/v1604617579/shrubcoop.org/media/Trustee_invitation_-_SHRUB_Coop_-_2020_brhcr4.pdf "Trustee Invitation -2020")
-
-Izi, our current Convenor, will be running pre-AGM Trustee information sessions via Zoom on **Friday 12th** and **Tuesday 16th November** at **6-7.30pm** for you to ask questions about the role and find out more about being a Trustee. Here are the Zoom links for [Friday's session](https://us02web.zoom.us/j/85936922280?pwd=ZmxYd01YQjVNb0FHTmcwYlNkeHRsZz09) and [Tuesday's session](https://us02web.zoom.us/j/83095617781?pwd=Umo5Smcydk44WldTTC9RbjhyMTNvZz09). Please email Izi at izi.robe@shrubcoop.org to confirm which session you will be attending. 
 
 Any questions please email us at [hello@shrubcoop.org](mailto:hello@shrubcoop.org).
