@@ -1,6 +1,7 @@
 +++
 description = "Find out about purpose and values"
 title = "About Us"
+
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568674723/shrubcoop.org/media/vision_web_fyoad1.png)
 
@@ -35,6 +36,10 @@ SHRUB Coop currently has two spaces across Edinburgh, with several key areas of 
 * At the **Wee Spoke Hub** on 13 Guthrie Street, we have our bike workshop, where you can join us for **fix-your-own-bike sessions** on Tuesday and Thursday nights, 5-8pm, or on our volunteer nights on Wednesday evenings, same time. You can also buy bike parts and bikes that our volunteers have fixed up. At the same location you’ll also find our offices where our finance and project coordination teams work (currently all office-based work is done remotely due to ongoing COVID-19 restrictions).
 * In May and June, you can find us in the university halls and across the city, collecting items that students have left behind as a part of our annual **end-of-term collections**. We give them away at our annual **Freeshop** in September and at other Freeshops throughout the year. Beyond the collections, we also run a variety of other **events and workshops**, including the Zero Waste Festival, upcycling and repair workshops, sustainable fashion meet-ups and much more.
 * Finally, our **Food Sharing network** collects food year-round from small and medium businesses such as bakeries and distributes it to anyone who might want to eat it, including charities, the volunteers themselves, and bread boxes in businesses throughout the city.
+
+  ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1638522938/shrubcoop.org/media/IMG_7862_ga7x9e.jpg)
+
+  ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1638523021/shrubcoop.org/media/IMG_8159_k0sqk3.jpg)![](https://res.cloudinary.com/shrub-co-op/image/upload/v1638523082/shrubcoop.org/media/IMG_9768_iojwrb.jpg)
 
   ***
 
