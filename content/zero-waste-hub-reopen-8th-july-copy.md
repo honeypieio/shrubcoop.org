@@ -4,7 +4,7 @@ date = 2020-06-25T23:00:00Z
 description = "Shrub Coop is excited to confirm we will reopen our Zero Waste Hub on 8th July!"
 draft = true
 tags = []
-title = "Zero Waste Hub reopen 8th July!! (copy)"
+title = "Zero Waste Hub reopen 8th July!! (***COPY***)"
 type = "news"
 
 +++
