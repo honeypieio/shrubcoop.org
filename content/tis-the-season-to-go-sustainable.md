@@ -2,12 +2,17 @@
 author = "Aislinn Redbond"
 date = 2021-12-17T00:00:00Z
 description = "How to do the festive season sustainably..."
-draft = true
 tags = ["zero-waste-hub"]
 title = "’Tis the Season to Go Sustainable"
 type = "news"
 
 +++
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1639749818/shrubcoop.org/media/IMG_9733_lkky5g.jpg)
+
+_You could always get your loved ones a Shrub Coop Giftcard (pictured above) to celebrate the season and introduce new people to zero waste living!_
+
+***
+
 Welcome to the festive season, a time of decorating, gift-giving, and mild overindulgence in food, all in the company of our nearest and dearest. Whatever occasion is being celebrated during the winter period, one need only look towards the high street to see the thronging crowds purchasing anything and everything that adorns the festive windows. As the madness of the holiday season descends, the amount households spend within this period ascends, with a total of [£21bn expected to be spent during the season](https://www.pwc.co.uk/industries/retail-consumer/insights/festive-predictions.html). It’s no wonder then that the months October to December are dubbed the ‘Golden Quarter’ - it’s a gold mine for retailers. But what does this mean for our planet and its people?
 
 _Decorations_
