@@ -12,7 +12,7 @@ times = "Repairs and Drop-Ins  Monday 11.00 – 17.30  Tuesday 11.00 – 20.00  
 title = "Wee Spoke Hub"
 weight = 2
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667102/shrubcoop.org/media/Wee_Spoke_Hub_WEB_ONLY_mcfucf.png"
-working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1630871641/shrubcoop.org/media/SHRUB_WSH_emirmt.png"
+working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1639943095/shrubcoop.org/media/wsh-logo_af4qvi.png"
 
 +++
 **We are an Edinburgh-based bike shop with a difference!**
