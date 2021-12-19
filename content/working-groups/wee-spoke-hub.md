@@ -17,7 +17,19 @@ working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v
 +++
 **We are an Edinburgh-based bike shop with a difference!**
 
-What do we do?
+We are currently part of the Scotland Cycle Repair Scheme!
+
+This is providing free repairs and maintenance to people who need it most, to get thousands of people across the country on their bikes.
+
+It’s funded by Transport Scotland and administered by [Cycling UK](https://www.facebook.com/CyclingUK/?__cft__\[0\]=AZU1l2lmZ_CT2ud6LoUTllOlI9pyAROKJ9wPfuxJ9OXZj76sF3ZaIQgl71ZeaQECy2me2VyOSUtrPGRb44bEwnQqtMHsu7RhMTfFiKHeMkatEn2Vis4pWvNSoIQgjAJvN7JoCFFIsAm2SdAbTb3l7Vam6vTcNi0nQ7TWX67WTXEnTWc8xxo2QhQrc6-oum9-Ff0&__tn__=kK-R) to provide free repairs up to the value of £50.
+
+The coronavirus crisis has hit many people hard, so we know it can be difficult to pay for essential bike repairs.
+
+If you’d struggle to afford bike maintenance right now, just contact us and get your repair booked in.
+
+***
+
+What else do we do?
 
 * We sell second-hand and brand new bike parts.
 * We have trained mechanics who can fix your bike.
