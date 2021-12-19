@@ -12,7 +12,7 @@ times = "11am to 6pm, Tuesdays to Saturdays"
 title = "Zero Waste Hub"
 weight = 1
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667127/shrubcoop.org/media/Zero_Waste_Hub_WEB_ONLY_l1jech.png"
-working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1630871617/shrubcoop.org/media/SHRUB_zero_waste_dcxplp.png"
+working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1639943217/shrubcoop.org/media/zwh-logo_xroc77.png"
 
 +++
 The **Zero Waste Hub** is your one stop shop for sustainable living!
