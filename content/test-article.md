@@ -2,7 +2,6 @@
 author = "Ross"
 date = 2000-01-01T00:00:00Z
 description = "Test article to embed YouTube video"
-draft = true
 tags = []
 title = "Test Article"
 type = "news"
