@@ -26,6 +26,12 @@ img {
   color: #333;
 }
 
+iframe {
+  margin: 0 auto !important;
+  margin-bottom: 10px;
+  display: block !important;
+}
+
 #front-page-map {
   width: 100%;
   height: 350px;

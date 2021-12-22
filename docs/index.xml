@@ -1010,6 +1010,16 @@ For this series of Material Matters, we have in store for you:
     </item>
     
     <item>
+      <title>Test Article</title>
+      <link>https://www.shrubcoop.org/test-article/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.shrubcoop.org/test-article/</guid>
+      <description>This is a test post
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel nulla tincidunt, cursus mauris quis, molestie metus. In hac habitasse platea dictumst. Duis sed pulvinar turpis. Nam consectetur semper elit, vel porttitor metus convallis et. Aenean efficitur iaculis sapien vitae fermentum. Cras in nulla dolor. Morbi pretium sed tellus at lobortis. Mauris vestibulum, ante eget accumsan dapibus, leo mauris tempus erat, sed euismod ipsum mi consectetur orci.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://www.shrubcoop.org/case-studies/deepak/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

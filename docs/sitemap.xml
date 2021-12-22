@@ -455,6 +455,11 @@
   </url>
   
   <url>
+    <loc>https://www.shrubcoop.org/test-article/</loc>
+    <lastmod>2000-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.shrubcoop.org/</loc>
     <priority>0</priority>
     <xhtml:link
