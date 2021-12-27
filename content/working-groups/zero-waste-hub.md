@@ -2,6 +2,7 @@
 address = "22 Bread Street, EH3 9AF"
 alt = "Zero Waste Hub Button – This is the link to our Zero Waste Hub area of the site. Click here to read about our Zero Waste Hub activities."
 colour = "#AB0C17"
+draft = true
 lat = -3.204477
 lon = 55.945693
 showOnAboutPage = true
@@ -15,9 +16,6 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1639943217/shrubcoop.org/media/zwh-logo_xroc77.png"
 
 +++
-
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/638350700?h=2548060211" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
 The **Zero Waste Hub** is your one stop shop for sustainable living!
 
 You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan café**.
@@ -33,6 +31,9 @@ Why not slow down and enjoy your lunch in our community space? If you need to ta
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576369229/shrubcoop.org/media/revolve_website_gx3uvf.png)
 
 We're [Revolve ](https://www.zerowastescotland.org.uk/revolve)certified - Scotland’s re-use quality standard. That means we're committed to providing only the highest quality second-hand products and excellent customer service.
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/638350700?h=2548060211" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
 
 ### Café Menu
 
