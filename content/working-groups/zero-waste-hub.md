@@ -15,6 +15,9 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1639943217/shrubcoop.org/media/zwh-logo_xroc77.png"
 
 +++
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/638350700?h=2548060211" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
 The **Zero Waste Hub** is your one stop shop for sustainable living!
 
 You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan café**.
