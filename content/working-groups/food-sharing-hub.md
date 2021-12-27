@@ -29,11 +29,11 @@ It's open for everyone. Simply come along to the Food Sharing Hub. Fill a basket
 
 The Food Sharing Hub is working with a host of local supermarkets and small businesses via Fareshare and Neighbourly to rescue surplus food that might otherwise end up in landfill.  We get a lot of fresh produce - **fruits and vegetables**, as well as **bread and baked goods** that are still tasty and safe to eat past their 'best before'. We also get seasonal products that shops need to clear away, dented tins, cut flowers and all sorts of surprises.
 
-We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement](https://www.cargobikemovement.com/) and their fleet of bikes. 
+We use cargo bikes wherever possible to collect food and to distribute it to partner organisations.  While we have two cargo bikes ourselves we also work with [Cargo Bike Movement](https://www.cargobikemovement.com/) and their fleet of bikes.
 
-We want our community to know the process behind the food we get on our shelves. It takes a dedicated team of volunteers...  
-  
-In the evenings, we have collectors who travel round all our partner stores on cargo bikes or by car, collecting food that the stores haven't managed to sell. While we have two cargo bikes ourselves we also work with [Cargo Bike Movement](https://www.cargobikemovement.com/) and their fleet of bikes.   
+We want our community to know the process behind the food we get on our shelves. It takes a dedicated team of volunteers...
+
+In the evenings, we have collectors who travel round all our partner stores on cargo bikes or by car, collecting food that the stores haven't managed to sell. While we have two cargo bikes ourselves we also work with [Cargo Bike Movement](https://www.cargobikemovement.com/) and their fleet of bikes.  
 ⬇️  
 These collectors then bring the food to a team of volunteers waiting at the Zero Waste Hub who sort through it and weigh it. This team take some of the food to local hostels on their way home. This sorting happens between 8.30pm and 11pm!  
 ⬇️  
@@ -54,7 +54,7 @@ The Food Sharing Edinburgh project is generously funded by donations from our co
 * Turtleton Charitable Trust
 * Inchrye Trust
 
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1640619275/shrubcoop.org/media/IMG_9740_2_dtqpfv.jpg)![](https://res.cloudinary.com/shrub-co-op/image/upload/v1640619299/shrubcoop.org/media/IMG_9755_2_aued3q.jpg)
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1640619275/shrubcoop.org/media/IMG_9740_2_dtqpfv.jpg)
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1640619354/shrubcoop.org/media/IMG_9776_2_j260ev.jpg)
 
