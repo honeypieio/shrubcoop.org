@@ -2,7 +2,6 @@
 address = "22 Bread Street, EH3 9AF"
 alt = "Zero Waste Hub Button – This is the link to our Zero Waste Hub area of the site. Click here to read about our Zero Waste Hub activities."
 colour = "#AB0C17"
-draft = true
 lat = -3.204477
 lon = 55.945693
 showOnAboutPage = true
