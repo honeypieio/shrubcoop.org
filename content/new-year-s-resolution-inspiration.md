@@ -1,0 +1,32 @@
++++
+author = "SHRUB Coop"
+date = 2022-01-01T00:00:00Z
+description = "Looking for some ideas for changes you can make to help the planet this year?"
+draft = true
+tags = ["zero-waste-hub", "food-sharing", "swapshop"]
+title = "New Year's Resolution Inspiration"
+type = "news"
+
++++
+For many, New Year is an opportunity to start afresh, set yourself a new goal, and gives people the feeling of a clean slate. No one should feel pressure to change their lifestyle simply because of the date, however, if you are someone who benefits from setting yourself New Year’s resolutions we have some ideas for you here at SHRUB.
+
+1. **Become a SHRUB member!** This is a great way to support our work and you get a whole host of perks with it too! Our members get access to our ‘Free Rail’ at the back of our store, they get tokens to spend in store on their account when they donate things to us which allows us to work towards a genuine circular economy, members get discounts at paid Shrub events, and discounts on renting out our space.
+
+We have a sliding scale for our membership system meaning that you pay based on your income, we do this to ensure it is as accessible as possible.
+
+* £12 is our minimum yearly membership fee (just £1 a month!) This is suggested if you are a student, unemployed, or retired.
+* £18 is suggested if you earn more than £16k per year.
+* £24 is suggested if you earn more than £27k per year.
+* £30 is suggested if you earn more £43k per year.
+
+2. **Volunteer with us!** In the New Year, a lot of the time people focus on ‘giving up’ certain habits. But what if instead of giving something up, you take something up? A few hours a week of voluntary work can do wonders for your community, your self-esteem and [mental health](https://www.mentalhealth.org.uk/campaigns/kindness/kindness-matters-guide). We have a wide range of volunteering opportunities available at the moment and many of them are remote positions so whether you are itching to get some human interaction or itching to help but don’t want to take covid risks, there is likely something here for you! You can find out more [here](https://www.shrubcoop.org/get-involved/).
+
+3. **Walk or cycle rather than driving**. Obviously, not everyone is able to walk longer distances or tackle the hills of Edinburgh by bike! However, if you are able to or keen to try, using active travel methods rather than a car can be hugely beneficial to the environment and to your mental wellbeing! Have a read of our article [Getting onto the Saddle](https://www.shrubcoop.org/getting-onto-the-saddle/) for some tips on how to start cycling in Edinburgh. You can always pop down to our Wee Spoke Hub and get your bike repaired, learn to repair your bike, or buy a second hand bike there!
+
+4. **Familiarise yourself with our Zero Waste Edinburgh Map**. We created [this map](https://www.shrubcoop.org/zero-waste-edinburgh/) a few years ago to make living sustainably in Edinburgh a little bit easier! It is an ongoing project and we are finding ourselves continually adding to it as new Zero Waste spaces emerge in the city. If you are ever wondering where the nearest zero waste spots are, just have a look at this map and it should keep you right!
+
+5. **Try veggie or vegan food.** ‘Veganuary’ is becoming a word that more and more people are familiar with. If you’ve not yet heard of it, then welcome! Veganuary aims to encourage people to go vegan for the month of January and beyond, with recipe inspiration, nutritional tips, shopping guidance and a whole online community that you can use as a support network. On their website they state that ‘During the 2021 campaign, more than 500,000 people took our pledge to try a vegan diet, while more than 825 new vegan products and menu options were launched in our key campaign countries.’ This is a huge achievement and all these individuals and companies must have been getting on board for a reason. There is [countless research](https://www.greenpeace.org.uk/news/why-meat-is-bad-for-the-environment/) proving that a diet low in animal products significantly reduces our impact on the environment. A huge part of the responsibility lies with big corporations who are exploiting animals and burning down large quantities of forest-land to make way for industrial animal farming projects (including [growing animal feed](https://www.youtube.com/watch?v=ki9PoTWiMTk&t=36s)). However, as consumers we have a lot of power! As we can see from Veganuary’s statistics, if customers are buying less meat and more vegan produce, the supermarkets will alter what they are stocking. Therefore the more people who reduce their animal product consumption, the less demand there will be for industrial farming. Reducing your meat and dairy consumption is a huge thing you can do for our planet this January!
+6. **Make a donation.** Our staff and volunteers are upbeat and cheerful as often as they can be so, much of the time, it doesn’t look like we are facing any hardship at Shrub! However, we have lost two of our major funders this year which means our future is very uncertain and we no longer have financial security. We realise that many people within our community are not in a financial position to [donate money](https://www.shrubcoop.org/donate/), however, if you have the means any donations towards our project would massively help us to continue our work! If you cannot donate, feel free to share this information encouraging others to donate!
+
+7. **Get your food from our Food Sharing Hub.** We have amazing teams of volunteers working to rescue perfectly good food from supermarkets that might otherwise be sent to landfill. The food in our Food Sharing Hub is available on a pay-what-you-feel basis so people can make a donation if they are in a position to but people can also take the food for free if they are not in a position to donate. It is a non-judgmental space, we are just happy that the food is being saved!
+8. **Shop second hand.** What if we did second-hand September…but all year round? The textile industry is one of the [largest polluting industries in the world](https://www.theguardian.com/fashion/2019/jun/23/five-ways-fashion-damages-the-planet). One of the most powerful behaviour-change actions that an individual can take to tackle the climate crisis is buying less clothing and when you do need something, buy it second hand! This is also a better option for your wallet a lot of the time too!
