@@ -4,7 +4,7 @@ description = "We're running a direct clothes swap on the second Sunday of each 
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
 time = 2022-02-13T14:00:00Z
-title = "Sunday Clothes Swaps!"
+title = "Sunday Clothes Swap - February"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1632823087/shrubcoop.org/media/Copy_of_IMG_7833_ptmzza.jpg)
