@@ -1,7 +1,6 @@
 +++
 author = "SHRUB Coop"
 description = " Join us for an evening of live folk music by local musicians!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub", "cafe"]
 time = 2022-04-14T17:00:00Z
