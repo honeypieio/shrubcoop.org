@@ -31,6 +31,8 @@ When you drop off your items, our friendly volunteers will value them and add to
 
 While we like to try and enable people to swap and donate as many different things as possible, unfortunately, there are a few items that we can't take. Here's a [full list](https://drive.google.com/file/d/1peY_gb3JFCVn9jH8PlpBGELG1CwaoAEL/view?usp=sharing "updated Aug 2020") of what we can't accept and suggestions of alternative places to take them.
 
+Can't make it in? Find us on [Depop](https://www.depop.com/shrubcoop/ "Depop")!
+
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576369229/shrubcoop.org/media/revolve_website_gx3uvf.png)
 
 We're [Revolve ](https://www.zerowastescotland.org.uk/revolve)certified - Scotland’s re-use quality standard. That means we're committed to providing only the highest quality second-hand products and excellent customer service.
