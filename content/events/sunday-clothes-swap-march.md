@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Coop"
-description = "We're running a direct clothes swap on the second Sunday of each month!"
+description = "We're running a direct clothes swap on the first Sunday of each month!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
 time = 2022-03-13T14:00:00Z
@@ -11,7 +11,7 @@ title = "Sunday Clothes Swap - March"
 
 ***
 
-We're running a direct clothes swap on the second Sunday of each month, so you can come and exchange clothes and accessories, and update your wardrobe at no cost to you of the environment!
+We're running a direct clothes swap on the first Sunday of each month, so you can come and exchange clothes and accessories, and update your wardrobe at no cost to you of the environment!
 
 The cafe will be open for hot drinks (and maybe some delicious vegan baked goods!), so come along for a chill afternoon.
 
