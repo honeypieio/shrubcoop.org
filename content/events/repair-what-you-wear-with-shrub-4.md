@@ -4,7 +4,7 @@ description = "Are you itching to start any sewing projects? Come along to our s
 draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
-time = 2021-12-14T14:00:00Z
+time = 2022-04-12T13:30:00Z
 title = "Repair What You Wear With SHRUB"
 
 +++
