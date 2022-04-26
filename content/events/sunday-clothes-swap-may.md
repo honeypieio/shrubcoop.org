@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "We're running a direct clothes swap on the first Sunday of each month!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
-time = 2022-04-03T13:00:00Z
+time = 2022-05-01T13:00:00Z
 title = "Sunday Clothes Swap - May"
 
 +++
