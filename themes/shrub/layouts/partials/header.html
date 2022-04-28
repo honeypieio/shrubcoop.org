@@ -65,7 +65,7 @@
           </li>
         {{ else }}
           <li
-            class="nav-item mx-auto {{ if or (eq $currentPage.Title .Name) (eq (urlize $currentPage.Type) (urlize .Name)) }}underline{{ end }}"
+            class="nav-item mx-auto {{ if or (eq $currentPage.Title .Name) (eq (urlize $currentPage.Type) (urlize .Name)) }}underline{{ end }} {{ if (eq .Name "Donate")}}donate-menu-button{{ end }}"
           >
             <a
               class="nav-link text-white"

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><style>
+
+  @font-face {
+  	font-family: 'Shrub';
+  	src: url('https://www.shrubcoop.org/fonts/shrub.ttf') format('truetype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Semi-Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-SemiBold.otf') format('opentype');
+  }
+
+  @font-face {
+  	font-family: 'Dosis Bold';
+  	src: url('https://www.shrubcoop.org/fonts/Dosis-Bold.otf') format('opentype');
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/base-style.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/responsive.css" />
+<link rel="stylesheet" href="https://www.shrubcoop.org/css/load-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script>
+  String.prototype.toProperCase = function() {
+    return this.split("_")
+      .join(" ")
+      .replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+  };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ9PL78BGB"></script>
+<script>
+  var localStorage = window.localStorage;
+  var askedForConsent = localStorage.getItem('consentGA') ? true : false;
+ 
+  window.onload = function() {
+    if(askedForConsent === true) {
+      initialiseGA();
+    } else {
+      askForConsent();
+    }
+  }
+
+  var initialiseGA = function() {
+    if(localStorage.getItem('consentGA') === "yes") {
+      console.log("Google Analytics enabled");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJ9PL78BGB');
+    }
+  }
+
+  var askForConsent = function() {
+    if("\/news\/search\/" != "/privacy/") {
+      $('#analyticsConsentModal').modal({ backdrop: 'static', keyboard: false });
+    }
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+/>
+<meta charset="UTF-8" />
+
+  <meta name="description" content="Search our news posts">
+
+
+<title>News Search | SHRUB Coop</title>
+</head>
+    <body><nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand ml-lg-5 ml-xl-5 mr-0" href="https://www.shrubcoop.org/">
+    <h1 class="align-middle mb-0 mt-1">
+      <span class="shrub align-top mb-0" style="font-size: 2.2rem;">SHRUB</span>
+      <span class="dosis-semi-bold align-top mb-0" style="font-size: 1.95rem; margin-left: -4px;">COOP</span>
+    </h1>
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon-custom"
+      >MENU &#9660;
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mx-auto">
+
+      
+
+       
+
+        
+          <li
+            class="nav-item mx-auto  "
+          >
+            <a
+              class="nav-link text-white"
+              title="Home - "
+              href="/"
+              >Home</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-auto text-center text-white nav-item mx-auto " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="nav-link dropdown-item px-4 text-center text-dark"
+                title="About Us - Click this link to find out about us and why we exist."
+                href="/about-us/"
+                >About Us</a
+              >
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Zero Waste Edinburgh Map - Click this link to find out about zero waste projects in and around Edinburgh."
+                    href="/zero-waste-edinburgh/"
+                    >Zero Waste Edinburgh Map</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Contact - This is the Contact section of the site. Click here to find out how to send us an email."
+                    href="/contact/"
+                    >Contact</a
+                  >
+                
+                  <a
+                    class="nav-link dropdown-item  text-center  px-4 text-dark"
+                    title="Resource Packs - Click here to read our guides on zero waste activities."
+                    href="/resource-packs/"
+                    >Resource Packs</a
+                  >
+                
+                <div class="dropdown-divider"></div>
+              
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Zero Waste Hub"
+                    href="/working-groups/zero-waste-hub/"
+                    >Zero Waste Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Wee Spoke Hub"
+                    href="/working-groups/wee-spoke-hub/"
+                    >Wee Spoke Hub</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Food Sharing Edinburgh"
+                    href="/working-groups/food-sharing-hub/"
+                    >Food Sharing Edinburgh</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="Swapshop"
+                    href="/working-groups/swapshop/"
+                    >Swapshop</a>
+                  
+              
+                
+                  <a
+                    class="nav-link dropdown-item  text-center px-4 text-dark"
+                    title="SHRUB Space"
+                    href="/working-groups/shrub-space/"
+                    >SHRUB Space</a>
+                  
+              
+                
+              
+            </div>
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto  "
+          >
+            <a
+              class="nav-link text-white"
+              title="Get Involved - This is the link to the Get Involved section of the site. Click here to Volunteer with us, Sign up to our Newsletter or become a Member of Shrub."
+              href="/get-involved/"
+              >Get Involved</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto  "
+          >
+            <a
+              class="nav-link text-white"
+              title="Our Blog - This is the link to the Blog section of the site. Click here to read our latest blog posts"
+              href="/news/"
+              >Our Blog</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto  "
+          >
+            <a
+              class="nav-link text-white"
+              title="Events - This is the link to the Events section of the site. Click here to read about our latest events"
+              href="/events/"
+              >Events</a
+            >
+          </li>
+        
+
+      
+
+        
+          <li
+            class="nav-item mx-auto  donate-menu-button"
+          >
+            <a
+              class="nav-link text-white"
+              title="Donate - "
+              href="/donate"
+              >Donate</a
+            >
+          </li>
+        
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+<div class="content mb-0" style="margin-top: 75px;">
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+      <div class="pt-5 news-list">
+        <h2 class="text-center mb-2">News Search</h2>
+
+        <div class="col-md-6 my-4 mx-auto">
+          <form class="input-group" action="https://www.shrubcoop.org/news/search">
+            <input class="form-control py-2" type="search" name="q" placeholder="Search our news posts" id="searchTerm">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">🔍</button>
+            </span>
+          </form>
+        </div>
+
+        
+        <div class="my-4">
+          <p id="numberOfSearchResults" class="text-center dosis-semi-bold h4 text-secondary"></p>
+        </div>
+        
+        <div id="searchResults" class="my-4"></div>
+        
+        <p class="text-center my-4"><a href="https://www.shrubcoop.org/news"><span>&#8592;</span> Back to main news page</a></p>
+
+      </div>
+    </div>
+  </div>
+  
+  <script>
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var searchTerm = String(urlParams.get("q")).toLowerCase();
+
+    document.getElementById("searchTerm").value = searchTerm;
+
+    var searchResults = [];
+    
+      if("Strut Your (Sustainable) Stuff ".toLowerCase().includes(searchTerm) || "Fashion Revolution Week is a chance for action, education and empowerment.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Strut Your (Sustainable) Stuff ", description: "Fashion Revolution Week is a chance for action, education and empowerment.", url: "https:\/\/www.shrubcoop.org\/strut-your-sustainable-stuff\/", author: "Aislinn Redbond", date: "18\/04\/22" });
+      }
+    
+      if("What is Fashion Revolution Week?".toLowerCase().includes(searchTerm) || "When news of the Rana Plaza collapse broke, the abuses of the fast fashion industry could not be ignored any longer. ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "What is Fashion Revolution Week?", description: "When news of the Rana Plaza collapse broke, the abuses of the fast fashion…", url: "https:\/\/www.shrubcoop.org\/what-is-fashion-revolution-week\/", author: "Aislinn Redbond", date: "18\/04\/22" });
+      }
+    
+      if("The Easter Bunny: An Endangered Species".toLowerCase().includes(searchTerm) || "Can we expect the Easter Bunny to survive the sea of waste created during the Easter weekend?".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "The Easter Bunny: An Endangered Species", description: "Can we expect the Easter Bunny to survive the sea of waste created during the…", url: "https:\/\/www.shrubcoop.org\/the-easter-bunny-an-endangered-species\/", author: "Aislinn Redbond", date: "11\/04\/22" });
+      }
+    
+      if("New Year\x27s Resolution Inspiration".toLowerCase().includes(searchTerm) || "Looking for some ideas for changes you can make to help the planet this year?".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "New Year\x27s Resolution Inspiration", description: "Looking for some ideas for changes you can make to help the planet this year?", url: "https:\/\/www.shrubcoop.org\/new-year-s-resolution-inspiration\/", author: "SHRUB Coop", date: "01\/01\/22" });
+      }
+    
+      if("’Tis the Season to Go Sustainable".toLowerCase().includes(searchTerm) || "How to do the festive season sustainably...".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "’Tis the Season to Go Sustainable", description: "How to do the festive season sustainably...", url: "https:\/\/www.shrubcoop.org\/tis-the-season-to-go-sustainable\/", author: "Aislinn Redbond", date: "17\/12\/21" });
+      }
+    
+      if("Make Yourself a Merry Little Christmas!".toLowerCase().includes(searchTerm) || "Prevent textile waste this Christmas with Shrub".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Make Yourself a Merry Little Christmas!", description: "Prevent textile waste this Christmas with Shrub", url: "https:\/\/www.shrubcoop.org\/make-yourself-a-merry-little-christmas\/", author: "Lindsey, Sustainable Fashion Volunteer", date: "14\/12\/21" });
+      }
+    
+      if("Become a trustee of SHRUB Coop!".toLowerCase().includes(searchTerm) || "We\x27re recruiting for next year\x27s trustees.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Become a trustee of SHRUB Coop!", description: "We\x27re recruiting for next year\x27s trustees.", url: "https:\/\/www.shrubcoop.org\/become-a-trustee-of-shrub-coop-1\/", author: "SHRUB Coop", date: "26\/11\/21" });
+      }
+    
+      if("Product Certifications: Truth or Trap?".toLowerCase().includes(searchTerm) || "Sustainable. Vegan. Organic. Fairtrade. Ethical. You name the buzzword.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Product Certifications: Truth or Trap?", description: "Sustainable. Vegan. Organic. Fairtrade. Ethical. You name the buzzword.", url: "https:\/\/www.shrubcoop.org\/product-certifications-truth-or-trap\/", author: "Aislinn Redbond", date: "19\/11\/21" });
+      }
+    
+      if("COP26: The Stakes and Costs".toLowerCase().includes(searchTerm) || "Our communications volunteer Aislinn Redbond looks into the impacts of the COP26 event on the locals and the planet".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "COP26: The Stakes and Costs", description: "Our communications volunteer Aislinn Redbond looks into the impacts of the COP26…", url: "https:\/\/www.shrubcoop.org\/cop26-the-stakes-and-costs\/", author: "Aislinn Redbond", date: "01\/11\/21" });
+      }
+    
+      if("Microplastics: Where Are They Now?".toLowerCase().includes(searchTerm) || "The short answer is: everywhere.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Microplastics: Where Are They Now?", description: "The short answer is: everywhere.", url: "https:\/\/www.shrubcoop.org\/microplastics-where-are-they-now\/", author: "Aislinn Redbond", date: "14\/10\/21" });
+      }
+    
+      if("Vacancy - Food Sharing".toLowerCase().includes(searchTerm) || "Food Sharing Logistics Role".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Vacancy - Food Sharing", description: "Food Sharing Logistics Role", url: "https:\/\/www.shrubcoop.org\/vacancy-food-sharing\/", author: "Sydney", date: "07\/10\/21" });
+      }
+    
+      if("Secondhand September: Beyond Fashion".toLowerCase().includes(searchTerm) || "As Oxfam’s campaign, ‘Secondhand September’, draws to a close, we look at some other areas that can be shopped secondhand. ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Secondhand September: Beyond Fashion", description: "As Oxfam’s campaign, ‘Secondhand September’, draws to a close, we look at some…", url: "https:\/\/www.shrubcoop.org\/secondhand-september-beyond-fashion\/", author: "Aislinn Redbond", date: "27\/09\/21" });
+      }
+    
+      if("Activists Get Crafty".toLowerCase().includes(searchTerm) || "We love craftivism!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Activists Get Crafty", description: "We love craftivism!", url: "https:\/\/www.shrubcoop.org\/activists-get-crafty\/", author: "Aislinn Redbond", date: "15\/09\/21" });
+      }
+    
+      if("How long did it take you to buy your last pair of pants?".toLowerCase().includes(searchTerm) || "The curse (or not) of conscious consumerism".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "How long did it take you to buy your last pair of pants?", description: "The curse (or not) of conscious consumerism", url: "https:\/\/www.shrubcoop.org\/how-long-did-it-take-you-to-buy-your-last-pair-of-pants\/", author: "Lindsey, Sustainable Fashion Volunteer", date: "13\/09\/21" });
+      }
+    
+      if("Making Plastic Free July Last All Year".toLowerCase().includes(searchTerm) || "We can’t keep the July weather, but we can keep living plastic free!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Making Plastic Free July Last All Year", description: "We can’t keep the July weather, but we can keep living plastic free!", url: "https:\/\/www.shrubcoop.org\/making-plastic-free-july-last-all-year\/", author: "Aislinn Redbond", date: "26\/07\/21" });
+      }
+    
+      if("Be Careful What You Wish(cycle) For".toLowerCase().includes(searchTerm) || "The best intentions can sometimes lead us to make more damaging decisions for the planet when it comes to waste disposal and recycling.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Be Careful What You Wish(cycle) For", description: "The best intentions can sometimes lead us to make more damaging decisions for…", url: "https:\/\/www.shrubcoop.org\/be-careful-what-you-wish-cycle-for\/", author: "Aislinn Redbond", date: "22\/07\/21" });
+      }
+    
+      if("There Is More Than One Way To Strut Down A Catwalk".toLowerCase().includes(searchTerm) || "We look into ableism in the fashion industry and people who are tackling this issue".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "There Is More Than One Way To Strut Down A Catwalk", description: "We look into ableism in the fashion industry and people who are tackling this…", url: "https:\/\/www.shrubcoop.org\/there-is-more-than-one-way-to-strut-down-a-catwalk\/", author: "Aislinn Redbond", date: "16\/07\/21" });
+      }
+    
+      if("Swapshop Open for Donations".toLowerCase().includes(searchTerm) || "We are looking for donations in the Swapshop again, read below to see what we are looking for...".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Swapshop Open for Donations", description: "We are looking for donations in the Swapshop again, read below to see what we…", url: "https:\/\/www.shrubcoop.org\/swapshop-open-for-donations\/", author: "Swapshop", date: "12\/07\/21" });
+      }
+    
+      if("Reclaiming the Emancipatory Power of the Bicycle ".toLowerCase().includes(searchTerm) || "We look into the bicycle as a symbol of women\x27s liberation".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Reclaiming the Emancipatory Power of the Bicycle ", description: "We look into the bicycle as a symbol of women\x27s liberation", url: "https:\/\/www.shrubcoop.org\/reclaiming-the-emancipatory-power-of-the-bicycle\/", author: "Aislinn Redbond", date: "08\/07\/21" });
+      }
+    
+      if("Don’t Rainbow-Wash Our Parade".toLowerCase().includes(searchTerm) || "How do we discern what true ally-ship looks like amidst this bombardment of rainbows from every shop corner?".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Don’t Rainbow-Wash Our Parade", description: "How do we discern what true ally-ship looks like amidst this bombardment of…", url: "https:\/\/www.shrubcoop.org\/don-t-rainbow-wash-our-parade\/", author: "Aislinn Redbond", date: "25\/06\/21" });
+      }
+    
+      if("SHRUB Safer Spaces Policy".toLowerCase().includes(searchTerm) || "We have this information on our website to ensure our community members feel safe.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "SHRUB Safer Spaces Policy", description: "We have this information on our website to ensure our community members feel…", url: "https:\/\/www.shrubcoop.org\/shrub-safer-spaces-policy\/", author: "SHRUB Coop", date: "25\/06\/21" });
+      }
+    
+      if("How To Look After Yourself".toLowerCase().includes(searchTerm) || "Our Swapshop Coordinator needs to get something off her chest".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "How To Look After Yourself", description: "Our Swapshop Coordinator needs to get something off her chest", url: "https:\/\/www.shrubcoop.org\/how-to-look-after-yourself\/", author: "Joanne Elston", date: "08\/06\/21" });
+      }
+    
+      if("Making Sustainable Fashion More Inclusive".toLowerCase().includes(searchTerm) || "Shrub’s Swap Shop has a plus-size range of clothing available, making sustainable fashion a more viable option for many people.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Making Sustainable Fashion More Inclusive", description: "Shrub’s Swap Shop has a plus-size range of clothing available, making…", url: "https:\/\/www.shrubcoop.org\/making-sustainable-fashion-more-inclusive\/", author: "Aislinn Redbond", date: "21\/05\/21" });
+      }
+    
+      if("Wee Spoke Hub Price List".toLowerCase().includes(searchTerm) || "Buy a Bike and Parts Price List".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Wee Spoke Hub Price List", description: "Buy a Bike and Parts Price List", url: "https:\/\/www.shrubcoop.org\/wee-spoke-hub-price-list\/", author: "Wee Spoke Hub", date: "21\/05\/21" });
+      }
+    
+      if("Kids’ Hand-Me-Downs".toLowerCase().includes(searchTerm) || "The best kept secret in sustainable fashion?".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Kids’ Hand-Me-Downs", description: "The best kept secret in sustainable fashion?", url: "https:\/\/www.shrubcoop.org\/kids-hand-me-downs\/", author: "Lindsey", date: "20\/05\/21" });
+      }
+    
+      if("National Bike Month".toLowerCase().includes(searchTerm) || "Here at Shrub Coop, we love the planet, we love cycling and so we love National Bike Month.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "National Bike Month", description: "Here at Shrub Coop, we love the planet, we love cycling and so we love National…", url: "https:\/\/www.shrubcoop.org\/national-bike-month\/", author: "Aislinn Redbond", date: "16\/05\/21" });
+      }
+    
+      if("Swapshop Reopening Tuesday 27th".toLowerCase().includes(searchTerm) || "Reopening after Lockdown 2".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Swapshop Reopening Tuesday 27th", description: "Reopening after Lockdown 2", url: "https:\/\/www.shrubcoop.org\/swapshop-reopening-tuesday-27th\/", author: "Syd", date: "25\/04\/21" });
+      }
+    
+      if("Foreign Textile Markets".toLowerCase().includes(searchTerm) || "An insight into foreign textile markets from our Swapshop Coordinator".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Foreign Textile Markets", description: "An insight into foreign textile markets from our Swapshop Coordinator", url: "https:\/\/www.shrubcoop.org\/foreign-textile-markets\/", author: "Joanne Elston", date: "23\/04\/21" });
+      }
+    
+      if("Relax and Restore: Finding a Balance for the Earth".toLowerCase().includes(searchTerm) || "The COVID-19 pandemic showed us how quickly nature can bounce back from human interruption and find its own balance. This Earth Day, we want to keep it that way.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Relax and Restore: Finding a Balance for the Earth", description: "The COVID-19 pandemic showed us how quickly nature can bounce back from human…", url: "https:\/\/www.shrubcoop.org\/relax-and-restore-finding-a-balance-for-the-earth\/", author: "Aislinn Redbond", date: "19\/04\/21" });
+      }
+    
+      if("Textile Recycling, what are the facts?".toLowerCase().includes(searchTerm) || "Our sustainable fashion team have exploring the truth behing textile recycling".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Textile Recycling, what are the facts?", description: "Our sustainable fashion team have exploring the truth behing textile recycling", url: "https:\/\/www.shrubcoop.org\/myth-busting-the-textile-recycling-industry\/", author: "Sustainable Fashion Working Group", date: "19\/04\/21" });
+      }
+    
+      if("Social Media Accounts We Recommend if You Like Sustainable and Ethical Fashion".toLowerCase().includes(searchTerm) || "Know Your Clothes".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Social Media Accounts We Recommend if You Like Sustainable and Ethical Fashion", description: "Know Your Clothes", url: "https:\/\/www.shrubcoop.org\/social-media-accounts-we-recommend-if-you-like-sustainable-and-ethical-fashion\/", author: "Marta Lynch", date: "05\/04\/21" });
+      }
+    
+      if("A Less-Than-Cheerful Assessment of the Fashion Industry (Part II) ".toLowerCase().includes(searchTerm) || "Know Your Clothes".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "A Less-Than-Cheerful Assessment of the Fashion Industry (Part II) ", description: "Know Your Clothes", url: "https:\/\/www.shrubcoop.org\/a-less-than-cheerful-assessment-of-the-fashion-industry-part-ii-2\/", author: "Marta Lynch", date: "04\/04\/21" });
+      }
+    
+      if("Second Hand Clothing Markets".toLowerCase().includes(searchTerm) || "An insight into charity shop donating from our Swapshop Coordinator".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Second Hand Clothing Markets", description: "An insight into charity shop donating from our Swapshop Coordinator", url: "https:\/\/www.shrubcoop.org\/second-hand-clothing-markets\/", author: "Joanne Elston", date: "30\/03\/21" });
+      }
+    
+      if("Making Earth Hour Count".toLowerCase().includes(searchTerm) || "Join us for WWF\x27s annual Earth Hour Campaign".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Making Earth Hour Count", description: "Join us for WWF\x27s annual Earth Hour Campaign", url: "https:\/\/www.shrubcoop.org\/making-earth-hour-count\/", author: "Aislinn Redbond", date: "24\/03\/21" });
+      }
+    
+      if("Getting onto the Saddle".toLowerCase().includes(searchTerm) || "Time to put away the excuses. Here are some tips to get started cycling around Edinburgh.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Getting onto the Saddle", description: "Time to put away the excuses. Here are some tips to get started cycling around…", url: "https:\/\/www.shrubcoop.org\/getting-onto-the-saddle\/", author: "Aislinn Redbond", date: "18\/03\/21" });
+      }
+    
+      if("Our Fabric Awareness Booklet is Now Available!".toLowerCase().includes(searchTerm) || "Insider knowledge and thoughts from our Swapshop Coordinator.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Our Fabric Awareness Booklet is Now Available!", description: "Insider knowledge and thoughts from our Swapshop Coordinator.", url: "https:\/\/www.shrubcoop.org\/fabric-awareness-booklet\/", author: "Joanne Elston", date: "12\/03\/21" });
+      }
+    
+      if("Celebrating the Women of Shrub".toLowerCase().includes(searchTerm) || "Our volunteer Lauriane interviews Billie, Lili, and Mary for International Women\x27s Day!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Celebrating the Women of Shrub", description: "Our volunteer Lauriane interviews Billie, Lili, and Mary for International…", url: "https:\/\/www.shrubcoop.org\/women-of-shrub\/", author: "SHRUB Coop", date: "08\/03\/21" });
+      }
+    
+      if("Climate Change is not an Equal Opportunities Destroyer".toLowerCase().includes(searchTerm) || "Looking at \x27feminist solutions\x27 to the climate crisis on International Women\x27s Day ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Climate Change is not an Equal Opportunities Destroyer", description: "Looking at \x27feminist solutions\x27 to the climate crisis on International Women\x27s…", url: "https:\/\/www.shrubcoop.org\/climate-change-is-not-an-equal-opportunities-destroyer\/", author: " Aislinn Redbond", date: "08\/03\/21" });
+      }
+    
+      if("These Storied Pages".toLowerCase().includes(searchTerm) || "Celebrating the connection reading offers on World Book Day.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "These Storied Pages", description: "Celebrating the connection reading offers on World Book Day.", url: "https:\/\/www.shrubcoop.org\/these-storied-pages\/", author: "Aislinn Redbond", date: "04\/03\/21" });
+      }
+    
+      if("Inspiring recipes using common Foodsharing finds".toLowerCase().includes(searchTerm) || "Shaking up your weekly meal planning!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Inspiring recipes using common Foodsharing finds", description: "Shaking up your weekly meal planning!", url: "https:\/\/www.shrubcoop.org\/inspiring-recipes-using-common-foodsharing-finds\/", author: "Fergus Whyte", date: "23\/02\/21" });
+      }
+    
+      if("How the LGBTQ\x2b Community is Shaping Climate Activism: Part II ".toLowerCase().includes(searchTerm) || "Introducing...Aletta Brady.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "How the LGBTQ\x2b Community is Shaping Climate Activism: Part II ", description: "Introducing...Aletta Brady.", url: "https:\/\/www.shrubcoop.org\/how-the-lgbtq-community-is-shaping-climate-activism-part-ii\/", author: "Aislinn Redbond", date: "23\/02\/21" });
+      }
+    
+      if("Meet Our New Trustees!".toLowerCase().includes(searchTerm) || "Everything you need to know".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Meet Our New Trustees!", description: "Everything you need to know", url: "https:\/\/www.shrubcoop.org\/meet-our-new-trustees\/", author: "SHRUB Coop", date: "23\/02\/21" });
+      }
+    
+      if("How the LGBTQ\x2b Community is Shaping Climate Activism".toLowerCase().includes(searchTerm) || "Introducing... Jamie Margolin.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "How the LGBTQ\x2b Community is Shaping Climate Activism", description: "Introducing... Jamie Margolin.", url: "https:\/\/www.shrubcoop.org\/how-the-lgbtq-community-is-shaping-climate-activism\/", author: "Aislinn Redbond", date: "16\/02\/21" });
+      }
+    
+      if("Stop Plastic Pollution in our Oceans: Why Recycling is not the Ultimate Solution".toLowerCase().includes(searchTerm) || "Looking for solutions beyond simply recycling".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Stop Plastic Pollution in our Oceans: Why Recycling is not the Ultimate Solution", description: "Looking for solutions beyond simply recycling", url: "https:\/\/www.shrubcoop.org\/stop-plastic-pollution-in-our-oceans-why-recycling-is-not-the-ultimate-solution\/", author: "Lauriane Bourdiau", date: "12\/02\/21" });
+      }
+    
+      if("A Less-Than-Cheerful Assessment of the Fashion Industry (Part I)".toLowerCase().includes(searchTerm) || "Know Your Clothes".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "A Less-Than-Cheerful Assessment of the Fashion Industry (Part I)", description: "Know Your Clothes", url: "https:\/\/www.shrubcoop.org\/a-less-than-cheerful-assessment-of-the-fashion-industry-part-i\/", author: "Marta Lynch", date: "10\/02\/21" });
+      }
+    
+      if("Undressing the Concept of Gender in Fashion".toLowerCase().includes(searchTerm) || "Corsets, high heels and makeup - men wore them first. ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Undressing the Concept of Gender in Fashion", description: "Corsets, high heels and makeup - men wore them first. ", url: "https:\/\/www.shrubcoop.org\/undressing-the-concept-of-gender-in-fashion\/", author: "Aislinn Redbond", date: "09\/02\/21" });
+      }
+    
+      if("Introducing, People of Shrub!".toLowerCase().includes(searchTerm) || "Wondering how People of Shrub got started? Amy Webster explains it all.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Introducing, People of Shrub!", description: "Wondering how People of Shrub got started? Amy Webster explains it all.", url: "https:\/\/www.shrubcoop.org\/introducing-people-of-shrub\/", author: "Amy Webster", date: "08\/02\/21" });
+      }
+    
+      if("Funding Update".toLowerCase().includes(searchTerm) || "We\x27ve been awarded a new grant!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Funding Update", description: "We\x27ve been awarded a new grant!", url: "https:\/\/www.shrubcoop.org\/funding-update\/", author: "SHRUB Coop", date: "27\/01\/21" });
+      }
+    
+      if("Cycle Repair Scheme".toLowerCase().includes(searchTerm) || "Get your bike repaired for free".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Cycle Repair Scheme", description: "Get your bike repaired for free", url: "https:\/\/www.shrubcoop.org\/cycle-repair-scheme\/", author: "Wee Spoke Hub", date: "25\/01\/21" });
+      }
+    
+      if("Zero Waste Hub Lockdown Opening Times".toLowerCase().includes(searchTerm) || "Food Sharing Opening Times".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Zero Waste Hub Lockdown Opening Times", description: "Food Sharing Opening Times", url: "https:\/\/www.shrubcoop.org\/zero-waste-hub-lockdown-opening-times\/", author: "SHRUB Coop", date: "22\/01\/21" });
+      }
+    
+      if("Food Sharing Hub Open!".toLowerCase().includes(searchTerm) || "operating hours during lockdown".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Food Sharing Hub Open!", description: "operating hours during lockdown", url: "https:\/\/www.shrubcoop.org\/food-sharing-hub-open\/", author: "Sydney", date: "05\/01\/21" });
+      }
+    
+      if("A huge THANK YOU to our incredible community!".toLowerCase().includes(searchTerm) || "From all of us at SHRUB, we want to say a huge and heartfelt THANK YOU to all our volunteers, members, funders and partners who have supported us over the last year. ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "A huge THANK YOU to our incredible community!", description: "From all of us at SHRUB, we want to say a huge and heartfelt THANK YOU to all…", url: "https:\/\/www.shrubcoop.org\/a-huge-thank-you-to-our-incredible-community\/", author: "SHRUB", date: "17\/12\/20" });
+      }
+    
+      if("Sharing Skills for Everyday Cycling".toLowerCase().includes(searchTerm) || "Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday cycling in Edinburgh".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Sharing Skills for Everyday Cycling", description: "Keen cyclist and SHRUB volunteer Lisa shares her tips for embracing everyday…", url: "https:\/\/www.shrubcoop.org\/sharing-skills-for-everyday-cycling\/", author: "Lisa Heywood", date: "10\/11\/20" });
+      }
+    
+      if("The Wee Spoke Hub is starting the journey to reopening!".toLowerCase().includes(searchTerm) || "After months of uncertainty about the future of the Wee Spoke Hub we are excited to share the good news with you: the Wee Spoke Hub is going to reopen its doors!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "The Wee Spoke Hub is starting the journey to reopening!", description: "After months of uncertainty about the future of the Wee Spoke Hub we are excited…", url: "https:\/\/www.shrubcoop.org\/the-wee-spoke-hub-is-starting-the-journey-to-reopening\/", author: "Wee Spoke Hub", date: "15\/10\/20" });
+      }
+    
+      if("\x22I can make that!\x22".toLowerCase().includes(searchTerm) || "An introduction to eco-friendly DIY by our Comms Volunteer Amy Webster".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "\x22I can make that!\x22", description: "An introduction to eco-friendly DIY by our Comms Volunteer Amy Webster", url: "https:\/\/www.shrubcoop.org\/i-can-make-that\/", author: "Amy Webster", date: "21\/09\/20" });
+      }
+    
+      if("The Great Oat Milk Debate!".toLowerCase().includes(searchTerm) || "Our Cafe Coordinator Alun takes a look at sustainability credentials of the different oat milks on the market.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "The Great Oat Milk Debate!", description: "Our Cafe Coordinator Alun takes a look at sustainability credentials of the…", url: "https:\/\/www.shrubcoop.org\/the-great-oat-milk-debate\/", author: "Alun Evans", date: "21\/09\/20" });
+      }
+    
+      if("Members\x27 General Meeting this Sunday!".toLowerCase().includes(searchTerm) || "SHRUB Coop members: hear what we\x27re up to \/ help shape our future!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Members\x27 General Meeting this Sunday!", description: "SHRUB Coop members: hear what we\x27re up to \/ help shape our future!", url: "https:\/\/www.shrubcoop.org\/members-general-meeting-this-sunday\/", author: "SHRUB Cooperative", date: "27\/08\/20" });
+      }
+    
+      if("Our Cafe is back!".toLowerCase().includes(searchTerm) || "The SHRUB Cafe has now reopened for take-away!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Our Cafe is back!", description: "The SHRUB Cafe has now reopened for take-away!", url: "https:\/\/www.shrubcoop.org\/our-cafe-is-back\/", author: "SHRUB Cooperative", date: "26\/08\/20" });
+      }
+    
+      if("We\x27re reopening! Here\x27s how...".toLowerCase().includes(searchTerm) || "Everything you need to know about our new ways of working!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "We\x27re reopening! Here\x27s how...", description: "Everything you need to know about our new ways of working!", url: "https:\/\/www.shrubcoop.org\/we-re-reopening-here-s-how\/", author: "Shrub Coop", date: "06\/07\/20" });
+      }
+    
+      if("Zero Waste Hub reopen 8th July!!".toLowerCase().includes(searchTerm) || "Shrub Coop is excited to confirm we will reopen our Zero Waste Hub on 8th July!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Zero Waste Hub reopen 8th July!!", description: "Shrub Coop is excited to confirm we will reopen our Zero Waste Hub on 8th July!", url: "https:\/\/www.shrubcoop.org\/we-reopen-8th-july\/", author: "SHRUB Cooperative", date: "25\/06\/20" });
+      }
+    
+      if("Request for Proposals: Consultancy Task “Project Fundraising Assistance”".toLowerCase().includes(searchTerm) || "An exciting opportunity to join the SHRUB team as a Project Fundraising Assistance".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Request for Proposals: Consultancy Task “Project Fundraising Assistance”", description: "An exciting opportunity to join the SHRUB team as a Project Fundraising…", url: "https:\/\/www.shrubcoop.org\/request-for-proposals-consultancy-task-project-fundraising-assistance\/", author: "SHRUB Cooperative", date: "01\/06\/20" });
+      }
+    
+      if("Taking care of yourself during lockdown".toLowerCase().includes(searchTerm) || "With social distancing set to continue for some time, the welfare team at SHRUB Coop have some tips to share to help take care of yourself.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Taking care of yourself during lockdown", description: "With social distancing set to continue for some time, the welfare team at SHRUB…", url: "https:\/\/www.shrubcoop.org\/taking-care-of-yourself-during-lockdown\/", author: "Corran", date: "13\/05\/20" });
+      }
+    
+      if("Workshop Recipe: Make your own ricotta cheese! ".toLowerCase().includes(searchTerm) || "A beginners guide to making cheese from home. ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Workshop Recipe: Make your own ricotta cheese! ", description: "A beginners guide to making cheese from home. ", url: "https:\/\/www.shrubcoop.org\/recipe-homemade-ricotta-cheese\/", author: "SHRUB Coop", date: "03\/05\/20" });
+      }
+    
+      if("We\x27re trialing a new steering group".toLowerCase().includes(searchTerm) || "We have an important update to share about the future strategic direction of SHRUB Coop, and we\x27re looking for members to take part in shaping our future.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "We\x27re trialing a new steering group", description: "We have an important update to share about the future strategic direction of…", url: "https:\/\/www.shrubcoop.org\/we-re-trialing-a-new-steering-group\/", author: "SHRUB Coop", date: "01\/05\/20" });
+      }
+    
+      if("What is a Wardrobe Audit?".toLowerCase().includes(searchTerm) || "Do you feel like you have too many clothes? Most people do and yet we still often feel like we don’t have anything we want to wear. A wardrobe audit is designed to help you see what clothes you have and what you wear the most.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "What is a Wardrobe Audit?", description: "Do you feel like you have too many clothes? Most people do and yet we still…", url: "https:\/\/www.shrubcoop.org\/what-is-a-wardrobe-audit\/", author: "Swapshop", date: "30\/04\/20" });
+      }
+    
+      if("SHRUB Coop is having an impact on waste in Edinburgh, here\x27s how...".toLowerCase().includes(searchTerm) || "We\x27ve just finished crunching the numbers and filed the report for our Climate Challenge Fund project between April 2018 and March 2020.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "SHRUB Coop is having an impact on waste in Edinburgh, here\x27s how...", description: "We\x27ve just finished crunching the numbers and filed the report for our Climate…", url: "https:\/\/www.shrubcoop.org\/shrub-coop-is-having-an-impact-on-waste-in-edinburgh-here-s-how\/", author: "SHRUB Coop", date: "22\/04\/20" });
+      }
+    
+      if("6 eco-friendly swaps to make lockdown life easier ".toLowerCase().includes(searchTerm) || "Buy less, waste less and reduce your environmental footprint, during lockdown and beyond.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "6 eco-friendly swaps to make lockdown life easier ", description: "Buy less, waste less and reduce your environmental footprint, during lockdown…", url: "https:\/\/www.shrubcoop.org\/6-eco-friendly-swaps-to-make-lockdown-life-easier\/", author: "Izi Robe ", date: "16\/04\/20" });
+      }
+    
+      if("Funding update".toLowerCase().includes(searchTerm) || "We wanted to share with you some important news on where we are...".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Funding update", description: "We wanted to share with you some important news on where we are...", url: "https:\/\/www.shrubcoop.org\/funding-and-covid19-update\/", author: "SHRUB Coop", date: "26\/03\/20" });
+      }
+    
+      if("Can you help us continue to create a world without waste?".toLowerCase().includes(searchTerm) || "COVID-19 is having a big impact on our income.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Can you help us continue to create a world without waste?", description: "COVID-19 is having a big impact on our income.", url: "https:\/\/www.shrubcoop.org\/can-you-help-us\/", author: "SHRUB Coop", date: "21\/03\/20" });
+      }
+    
+      if("Coronavirus update: All activities temporarily suspended".toLowerCase().includes(searchTerm) || "Zero Waste Hub \x26 Wee Spoke Hub are temporarily closed".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Coronavirus update: All activities temporarily suspended", description: "Zero Waste Hub \x26 Wee Spoke Hub are temporarily closed", url: "https:\/\/www.shrubcoop.org\/coronavirus-update-all-activities-temporarily-suspended\/", author: "SHRUB Coop", date: "17\/03\/20" });
+      }
+    
+      if("Introducing the Welfare Working Group".toLowerCase().includes(searchTerm) || "Meet SHRUB\x27s Welfare Working Group - who we are, what we do and how to get in touch with us.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Introducing the Welfare Working Group", description: "Meet SHRUB\x27s Welfare Working Group - who we are, what we do and how to get in…", url: "https:\/\/www.shrubcoop.org\/introducing-the-welfare-working-group\/", author: "Welfare Working Group", date: "27\/02\/20" });
+      }
+    
+      if("Job Opportunity: Part-Time Swapshop Coordinator".toLowerCase().includes(searchTerm) || "An exciting opportunity to join the SHRUB team as a Part-time SwapshopCoordinator!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Job Opportunity: Part-Time Swapshop Coordinator", description: "An exciting opportunity to join the SHRUB team as a Part-time…", url: "https:\/\/www.shrubcoop.org\/job-opportunity-part-time-swapshop-coordinator\/", author: "SHRUB Cooperative", date: "19\/02\/20" });
+      }
+    
+      if("Trustee opportunity: We\x27re looking for a treasurer!".toLowerCase().includes(searchTerm) || "Could you be our new treasurer? Apply here!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Trustee opportunity: We\x27re looking for a treasurer!", description: "Could you be our new treasurer? Apply here!", url: "https:\/\/www.shrubcoop.org\/treasurer_trustee_2020\/", author: "SHRUB Coop", date: "06\/02\/20" });
+      }
+    
+      if("Job Opportunity: Events Coordinator".toLowerCase().includes(searchTerm) || "An exciting opportunity to join the SHRUB team as Events Coordinator!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Job Opportunity: Events Coordinator", description: "An exciting opportunity to join the SHRUB team as Events Coordinator!", url: "https:\/\/www.shrubcoop.org\/job-opportunity-events-coordinator\/", author: "SHRUB Coop", date: "30\/01\/20" });
+      }
+    
+      if("Our journey to a zero waste café begins!".toLowerCase().includes(searchTerm) || "Tueday 7th January. That\x27s the date for your diaries. ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Our journey to a zero waste café begins!", description: "Tueday 7th January. That\x27s the date for your diaries. ", url: "https:\/\/www.shrubcoop.org\/our-journey-to-a-zero-waste-caf%C3%A9-begins\/", author: "Izi Robe ", date: "01\/01\/20" });
+      }
+    
+      if("Become a trustee of SHRUB Coop!".toLowerCase().includes(searchTerm) || "We\x27re recruiting for next year\x27s trustees. Application deadline 24th November".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Become a trustee of SHRUB Coop!", description: "We\x27re recruiting for next year\x27s trustees. Application deadline 24th November", url: "https:\/\/www.shrubcoop.org\/become-a-trustee-of-shrub-coop\/", author: "SHRUB Coop", date: "25\/10\/19" });
+      }
+    
+      if("Job Opportunity: Swapshop retail coordinator".toLowerCase().includes(searchTerm) || "We\x27re hiring for a part time retail coordinator for our Swapshop!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Job Opportunity: Swapshop retail coordinator", description: "We\x27re hiring for a part time retail coordinator for our Swapshop!", url: "https:\/\/www.shrubcoop.org\/swapshop-retail-coordinator\/", author: "SHRUB Coop", date: "19\/09\/19" });
+      }
+    
+      if("Job Opportunity: Wee Spoke Hub Mechanic".toLowerCase().includes(searchTerm) || "An exciting opportunity has to join the team at the Wee Spoke Hub!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Job Opportunity: Wee Spoke Hub Mechanic", description: "An exciting opportunity has to join the team at the Wee Spoke Hub!", url: "https:\/\/www.shrubcoop.org\/wee-spoke-hub-mechanic\/", author: "SHRUB Coop", date: "17\/09\/19" });
+      }
+    
+      if("Job Opportunity: Café Coordinator".toLowerCase().includes(searchTerm) || "An exciting opportunity has arisen to join the staff team at SHRUB Coop! ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Job Opportunity: Café Coordinator", description: "An exciting opportunity has arisen to join the staff team at SHRUB Coop! ", url: "https:\/\/www.shrubcoop.org\/cafe-coordinator\/", author: "SHRUB Coop", date: "13\/09\/19" });
+      }
+    
+      if("3 things we learned from our quarterly membership survey!".toLowerCase().includes(searchTerm) || "We care about our SHRUB community, which is why every three months the Monitoring and Evaluation group asks to hear your concerns, ideas and suggestions through our Quarterly Member Survey. This time we only get 10 responses (we can do better than that next time!) but they were priceless.".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "3 things we learned from our quarterly membership survey!", description: "We care about our SHRUB community, which is why every three months the…", url: "https:\/\/www.shrubcoop.org\/membership-survey\/", author: "SHRUB Coop", date: "26\/07\/19" });
+      }
+    
+      if("Making sustainable fashion choices in Edinburgh".toLowerCase().includes(searchTerm) || "“Out with the old and in with the new” is the mantra that crops up at this time of year, but this optimistic phrase is deceptively damaging to our world. ".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Making sustainable fashion choices in Edinburgh", description: "“Out with the old and in with the new” is the mantra that crops up at this time…", url: "https:\/\/www.shrubcoop.org\/making-sustainable-fashion-choices-in-edinburgh\/", author: "Jess", date: "26\/03\/19" });
+      }
+    
+      if("How you can help to reduce food waste in Edinburgh".toLowerCase().includes(searchTerm) || "Did you know that almost a third of all food produced globally is thrown away?".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "How you can help to reduce food waste in Edinburgh", description: "Did you know that almost a third of all food produced globally is thrown away?", url: "https:\/\/www.shrubcoop.org\/how-you-can-help-to-reduce-food-waste-in-edinburgh\/", author: "Jess", date: "05\/03\/19" });
+      }
+    
+      if("Welcome to Bicycle Matters".toLowerCase().includes(searchTerm) || "The Bicycle Matters Events programme is here!".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Welcome to Bicycle Matters", description: "The Bicycle Matters Events programme is here!", url: "https:\/\/www.shrubcoop.org\/welcome-to-bicycle-matters\/", author: "Events and Workshops", date: "02\/02\/19" });
+      }
+    
+      if("Test Article".toLowerCase().includes(searchTerm) || "Test article to embed YouTube video".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "Test Article", description: "Test article to embed YouTube video", url: "https:\/\/www.shrubcoop.org\/test-article\/", author: "Ross", date: "01\/01\/00" });
+      }
+    
+      if("News".toLowerCase().includes(searchTerm) || "".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "News", description: "", url: "https:\/\/www.shrubcoop.org\/news\/", author: "", date: "01\/01\/01" });
+      }
+    
+      if("News".toLowerCase().includes(searchTerm) || "Stay up to date with our latest news".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "News", description: "Stay up to date with our latest news", url: "https:\/\/www.shrubcoop.org\/news\/", author: "", date: "01\/01\/01" });
+      }
+    
+
+    document.getElementById("numberOfSearchResults").textContent = searchResults.length + " result" + (searchResults.length != 1 ? "s" : "") + " for \"" + searchTerm + "\"";
+
+    searchResults.forEach(function(post) {
+      var newsPreview = document.createElement("div");
+      newsPreview.className = "py-2";
+
+      var headingLink = document.createElement("a");
+      headingLink.href = post.url;
+      headingLink.tabIndex = 0;
+      headingLink.title = "Blog post: " + post.title + " by " + post.author + " - click this link to continue reading";
+
+      var heading = document.createElement("h3");
+      heading.className = "mb-2";
+      heading.textContent = post.title;
+
+      headingLink.appendChild(heading);
+
+      var description = document.createElement("p");
+      description.className = "mb-2";
+      description.tabIndex = 0;
+      description.textContent = post.description;
+
+      var metaLine = document.createElement("p");
+      metaLine.className = "dosis-semi-bold";
+      metaLine.tabIndex = 0;
+
+      var publishDate = document.createElement("span");
+      publishDate.title = "Published on " + post.date;
+      publishDate.innerHTML = "&#128336; " + post.date;
+      
+      var writtenBy = document.createElement("span");
+      writtenBy.title = "Written by " + post.author;
+      writtenBy.innerHTML = "&#128100; " + post.author;
+
+      metaLine.appendChild(publishDate);
+      metaLine.innerHTML += "&nbsp;";
+      metaLine.appendChild(writtenBy);
+
+      newsPreview.appendChild(headingLink);
+      newsPreview.appendChild(description);
+      newsPreview.appendChild(metaLine);
+      newsPreview.innerHTML += "<hr />"
+
+      document.getElementById("searchResults").appendChild(newsPreview);
+
+    });
+  </script>
+
+
+				</div><div class="row text-center mt-0">
+  <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
+    <div class="row">
+      <div class="d-flex d-flex-row flex-wrap flex-md-nowrap align-items-center justify-content-center">
+        
+          <div class="my-3">
+            <a href="https://www.postcodetrust.org.uk/" title="People&#39;s Postcode Trust" target="_blank">
+              <img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png" class="funder-image my-auto">
+            </a>
+          </div>
+        
+          <div class="my-3">
+            <a href="https://www.tnlcommunityfund.org.uk/funding/programmes/national-lottery-awards-for-all-scotland" title="National Lottery Awards for All Scotland" target="_blank">
+              <img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1614095261/shrubcoop.org/media/awards-for-all-Scotland.png_q7ikha.png" class="funder-image my-auto">
+            </a>
+          </div>
+        
+          <div class="my-3">
+            <a href="https://www.gannochytrust.org.uk/" title="The Gannochy Trust" target="_blank">
+              <img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544753/shrubcoop.org/media/the-gannochy-trust_upawyt.jpg" class="funder-image my-auto">
+            </a>
+          </div>
+        
+          <div class="my-3">
+            <a href="https://www.bankofscotlandfoundation.org/funding-programmes/reach" title="Bank of Scotland Foundation" target="_blank">
+              <img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607544351/shrubcoop.org/media/bos_uqqzdc.jpg" class="funder-image my-auto">
+            </a>
+          </div>
+        
+          <div class="my-3">
+            <a href="https://www.pathsforall.org.uk/smarter-choices-smarter-places-1" title="Smarter Choices Smarter Places" target="_blank">
+              <img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1607543448/shrubcoop.org/media/scsp_logo_strapline_v8vvld.jpg" class="funder-image my-auto">
+            </a>
+          </div>
+        
+          <div class="my-3">
+            <a href="https://www.keepscotlandbeautiful.org/climate-change/climate-challenge-fund/" title="Climate Challenge Fund" target="_blank">
+              <img src="https://res.cloudinary.com/shrub-co-op/image/upload/v1631105598/shrubcoop.org/media/SG_master_logo_colour_CMYK_qwemmr.jpg" class="funder-image my-auto">
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-4 mb-4" tabindex="0">
+  <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-6 mx-auto text-center">
+    <p class="text-muted">SHRUB Coop is supported through a combination of grant funding and generous donations from our community. We’re grateful for all their support. Find out more about our grant funders by clicking on the logos above.</p>
+  </div>
+</div>
+
+
+
+<footer id="footer" tabindex="0" class="page-footer font-small bg-dark blue pt-5 text-white">
+
+
+  <div class="container-fluid text-center text-md-left">
+
+
+    <div class="row">
+
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Contact</h3>
+
+            <ul class="list-unstyled" tabindex="0">
+              <li>
+                <a href="mailto:hello@shrubcoop.org">hello@shrubcoop.org</a>
+              </li>
+              <li>
+		Tel. 0131 281 0583
+              </li>
+              <li>
+		22 Bread Street
+              </li>
+              <li>
+		EH3 9AF
+              </li>
+              <li>
+		Edinburgh
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+            
+
+            
+
+              <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+
+                <h3 class="h5" tabindex="0">Follow Us</h3>
+
+                <ul class="list-unstyled">
+                  
+                    <li>
+                      <a href="https://www.facebook.com/shrubcoop/" target="_blank">Facebook</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/shrubcoop/" target="_blank">Instagram</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://twitter.com/shrubcoop" target="_blank">Twitter</a>
+                    </li>
+                  
+                </ul>
+              </div>
+
+            
+
+          
+
+          <div class="col-md-4 col-lg-3 mb-md-0 mb-3 mx-auto">
+
+            <h3 class="h5" tabindex="0">Site Links</h3>
+
+            <ul class="list-unstyled">
+
+              
+
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/about-us/">About Us</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/get-involved/">Get Involved</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/news/">Our Blog</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/events/">Events</a>
+              </li>
+
+              
+
+              <li>
+                <a href="/donate">Donate</a>
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.shrubcoop.org/privacy">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="https://www.shrubcoop.org/sitemap.xml">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white py-3" tabindex="0">
+          SHRUB Cooperative, Scottish Charitable Incorporated Organisation (Scottish Charity Number SC048825)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+        <div class="modal fade" id="analyticsConsentModal" tabindex="-1" role="dialog" aria-labelledby="analyticsConsentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="analyticsConsentModalLabel">Google Analytics Consent</h4>
+              </div>
+              <div class="modal-body py-4 px-3 px-sm-4">
+                <p class="text-sm-center mb-2">We use Google Analytics to help us better understand the kind of people who visit our website and what content they are reading. This enables us to make better decisions about web design and writing</p>
+                <p class="text-sm-center mb-3">By allowing analytics you are agreeing to the terms of our <a href="/privacy">Privacy Notice</a> and giving consent for cookies to be placed on your browser</p>
+                <p class="font-weight-bold text-center mb-0">Allowing analytics is entirely optional, and the website will still be completely functional if you choose to reject them</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal" onclick="localStorage.setItem('consentGA', 'no');">Reject Analytics</button>
+                <button type="button" class="btn btn-success mx-auto" data-dismiss="modal"onclick="localStorage.setItem('consentGA', 'yes'); initialiseGA();">Allow Analytics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

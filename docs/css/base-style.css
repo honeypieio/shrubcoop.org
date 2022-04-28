@@ -184,6 +184,13 @@ body {
   font-size: 14px;
 }
 
+.donate-menu-button {
+  background-color: #AB0C17;
+  border-radius: 3px;
+  text-decoration: none;
+  padding-bottom: 0.15rem;
+}
+
 #front-page-header {
   color: white;
 }

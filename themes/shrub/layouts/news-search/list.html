@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+  <div class="col-xl-6 mx-auto">
+    <div class="container">
+      <div class="pt-5 news-list">
+        <h2 class="text-center mb-2">News Search</h2>
+
+        <div class="col-md-6 my-4 mx-auto">
+          <form class="input-group" action="{{ .Site.BaseURL }}news/search">
+            <input class="form-control py-2" type="search" name="q" placeholder="Search our news posts" id="searchTerm">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">🔍</button>
+            </span>
+          </form>
+        </div>
+
+        
+        <div class="my-4">
+          <p id="numberOfSearchResults" class="text-center dosis-semi-bold h4 text-secondary"></p>
+        </div>
+        
+        <div id="searchResults" class="my-4"></div>
+        
+        <p class="text-center my-4"><a href="{{ .Site.BaseURL }}news"><span>&#8592;</span> Back to main news page</a></p>
+
+      </div>
+    </div>
+  </div>
+  
+  <script>
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var searchTerm = String(urlParams.get("q")).toLowerCase();
+
+    document.getElementById("searchTerm").value = searchTerm;
+
+    var searchResults = [];
+    {{ range (where .Site.Pages "Type" "news")}}
+      if("{{ .Title }}".toLowerCase().includes(searchTerm) || "{{ .Description }}".toLowerCase().includes(searchTerm)) {
+        searchResults.push({ title: "{{ .Title }}", description: "{{ htmlUnescape (replace (.Description | truncate 80) " …" "…") }}", url: "{{ .Permalink }}", author: "{{ .Params.author }}", date: "{{ dateFormat "02/01/06" .Date }}" });
+      }
+    {{ end }}
+
+    document.getElementById("numberOfSearchResults").textContent = searchResults.length + " result" + (searchResults.length != 1 ? "s" : "") + " for \"" + searchTerm + "\"";
+
+    searchResults.forEach(function(post) {
+      var newsPreview = document.createElement("div");
+      newsPreview.className = "py-2";
+
+      var headingLink = document.createElement("a");
+      headingLink.href = post.url;
+      headingLink.tabIndex = 0;
+      headingLink.title = "Blog post: " + post.title + " by " + post.author + " - click this link to continue reading";
+
+      var heading = document.createElement("h3");
+      heading.className = "mb-2";
+      heading.textContent = post.title;
+
+      headingLink.appendChild(heading);
+
+      var description = document.createElement("p");
+      description.className = "mb-2";
+      description.tabIndex = 0;
+      description.textContent = post.description;
+
+      var metaLine = document.createElement("p");
+      metaLine.className = "dosis-semi-bold";
+      metaLine.tabIndex = 0;
+
+      var publishDate = document.createElement("span");
+      publishDate.title = "Published on " + post.date;
+      publishDate.innerHTML = "&#128336; " + post.date;
+      
+      var writtenBy = document.createElement("span");
+      writtenBy.title = "Written by " + post.author;
+      writtenBy.innerHTML = "&#128100; " + post.author;
+
+      metaLine.appendChild(publishDate);
+      metaLine.innerHTML += "&nbsp;";
+      metaLine.appendChild(writtenBy);
+
+      newsPreview.appendChild(headingLink);
+      newsPreview.appendChild(description);
+      newsPreview.appendChild(metaLine);
+      newsPreview.innerHTML += "<hr />"
+
+      document.getElementById("searchResults").appendChild(newsPreview);
+
+    });
+  </script>
+
+{{ end }}
