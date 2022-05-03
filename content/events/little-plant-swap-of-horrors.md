@@ -1,7 +1,6 @@
 +++
 author = "SHRUB Coop"
 description = "Join us for a plant swap and film screening of the cult classic, Little Shop of Horrors!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["zero-waste-hub"]
 time = 2022-05-28T18:00:00Z
