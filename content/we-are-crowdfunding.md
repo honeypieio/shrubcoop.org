@@ -43,6 +43,8 @@ There are 200 reward packs available so donate early to get yourself some zero w
 
 Link here: [https://www.crowdfunder.co.uk/p/keep-shrub-going-help-us-secure-funding](https://www.crowdfunder.co.uk/p/keep-shrub-going-help-us-secure-funding "https://www.crowdfunder.co.uk/p/keep-shrub-going-help-us-secure-funding")
 
-**Our Reward Packages:** 
+**Our Reward Packages:**
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1652867393/shrubcoop.org/media/1_bnhf7a.png)![](https://res.cloudinary.com/shrub-co-op/image/upload/v1652867409/shrubcoop.org/media/2_zj4akw.png)![](https://res.cloudinary.com/shrub-co-op/image/upload/v1652867443/shrubcoop.org/media/3_e5pcww.png)![](https://res.cloudinary.com/shrub-co-op/image/upload/v1652867458/shrubcoop.org/media/4_g11dhv.png)
+
+_The basic “Bronze Bike Repair Service”: As advertised, the Bronze service doesn’t include any new replacement parts, but for the purposes of this crowdfunder can include any second hand parts for free. If new parts are required or preferred by the customer, that is at extra cost that will be agreed with the customer before any repairs are undertaken._
