@@ -21,7 +21,7 @@ We are currently part of the Scotland Cycle Repair Scheme!
 
 This is providing free repairs and maintenance to people who need it most, to get thousands of people across the country on their bikes.
 
-It’s funded by Transport Scotland and administered by [Cycling UK](https://www.facebook.com/CyclingUK/?__cft__\[0\]=AZU1l2lmZ_CT2ud6LoUTllOlI9pyAROKJ9wPfuxJ9OXZj76sF3ZaIQgl71ZeaQECy2me2VyOSUtrPGRb44bEwnQqtMHsu7RhMTfFiKHeMkatEn2Vis4pWvNSoIQgjAJvN7JoCFFIsAm2SdAbTb3l7Vam6vTcNi0nQ7TWX67WTXEnTWc8xxo2QhQrc6-oum9-Ff0&__tn__=kK-R) to provide free repairs up to the value of £50.
+It’s funded by Transport Scotland and administered by [Cycling UK](https://www.facebook.com/CyclingUK/?__cft__%5B0%5D=AZU1l2lmZ_CT2ud6LoUTllOlI9pyAROKJ9wPfuxJ9OXZj76sF3ZaIQgl71ZeaQECy2me2VyOSUtrPGRb44bEwnQqtMHsu7RhMTfFiKHeMkatEn2Vis4pWvNSoIQgjAJvN7JoCFFIsAm2SdAbTb3l7Vam6vTcNi0nQ7TWX67WTXEnTWc8xxo2QhQrc6-oum9-Ff0&__tn__=kK-R) to provide free repairs up to the value of £50.
 
 The coronavirus crisis has hit many people hard, so we know it can be difficult to pay for essential bike repairs.
 
@@ -48,21 +48,11 @@ What makes us different?
 
 **Opening hours:**
 
-**Repairs and Drop-Ins**
+Tuesday 5 - 8
 
-Monday 11.00 – 17.30
+Thursday 6 - 9
 
-Tuesday 11.00 – 20.00
-
-Wednesday 11.00 – 17.30
-
-Thursday 11.00 – 20.00
-
-Friday 11.00 – 17.30
-
-**DIY Sessions**
-
-Tuesday 17.00 – 20.00
+Fridays 11 - 5  
 
 ***
 
@@ -130,10 +120,6 @@ The closest car park is a 7 minute walk away;
 2 Viewcraig Gardens, Edinburgh, EH8 9UN
 
 **Our Details:**
-
-11am-5.30pm Monday, Wednesday, Friday
-
-11am - 8pm Tuesday and Thursday
 
 13 Guthrie Street, EH1 1JG
 
