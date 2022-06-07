@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Are you itching to start any sewing projects? Come along to our sewing drop-in sessions!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["swapshop", "zero-waste-hub"]
-time = 2022-06-07T16:30:00Z
+time = 2022-06-14T16:30:00Z
 title = "Repair What You Wear With SHRUB"
 
 +++
