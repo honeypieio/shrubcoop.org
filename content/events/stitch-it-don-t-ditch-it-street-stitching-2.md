@@ -1,16 +1,15 @@
 +++
 author = "SHRUB Coop"
 description = "SHRUB Coop sustainable fashion working group will be holding a Stitch It Don’t Ditch It street event on Saturday 23rd April from 11.30am to 1pm on Castle Street in Edinburgh city centre, to mark Sustainable Fashion Week 2022."
-draft = true
 location = "Other (read the description for details)"
 tags = ["swapshop", "sustainable-fashion"]
-time = 2022-05-21T10:30:00Z
+time = 2022-06-18T10:30:00Z
 title = "Stitch It Don't Ditch It Street Stitching"
 
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1650973173/shrubcoop.org/media/20220423_114808_mus50d.jpg)
 
-The SHRUB Coop sustainable fashion working group will be holding a Stitch It Don’t Ditch It street event on Saturday 21st May from 11.30am to 1pm at Portobello Promenade. There will be a number of sewers, with their mending, sitting on a row of camping chairs displaying their Stitch It Don’t Ditch It banner.
+The SHRUB Coop sustainable fashion working group will be holding a Stitch It Don’t Ditch It street event on Saturday 18th June from 11.30am to 12.30pm at The Meadows, near to the Pavilion Cafe on Jawbone Walk. There will be a number of sewers, with their mending, sitting on a row of camping chairs displaying their Stitch It Don’t Ditch It banner.
 
 The event is to raise awareness that although the textile industry is responsible for 10% of global greenhouse gas emissions and 20% of global clean water pollution, it is possible to reduce the environmental impact of clothing by repairing garments so that they can be used for longer.
 
