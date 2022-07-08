@@ -2,7 +2,6 @@
 author = "Sydney"
 date = 2022-07-07T23:00:00Z
 description = "We are hiring roles as part of our community led national lottery funding"
-draft = true
 tags = ["#swapshop", " zerowastehub"]
 title = "We are hiring!"
 type = "news"
