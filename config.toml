@@ -87,6 +87,10 @@ phoneNumber = "0131 281 0583"
 postcode = "EH3 9AF"
 streetAddress = "22 Bread Street"
 [[params.funders]]
+image = "https://www.tnlcommunityfund.org.uk/assets/images/logos/tnlcf/monolingual/colour/digital-white-background.png"
+link = "https://www.tnlcommunityfund.org.uk/"
+name = "The National Lottery Community Fund"
+[[params.funders]]
 image = "https://res.cloudinary.com/shrub-co-op/image/upload/v1633603711/shrubcoop.org/media/peoplespostcodetrust_logo_iz9nzj.png"
 link = "https://www.postcodetrust.org.uk/"
 name = "People's Postcode Trust"
