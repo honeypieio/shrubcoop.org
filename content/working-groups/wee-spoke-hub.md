@@ -15,6 +15,9 @@ working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v15686
 working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v1639943095/shrubcoop.org/media/wsh-logo_af4qvi.png"
 
 +++
+
+**Please Note - Wee Spoke Hub is currently on hiatus!**
+
 **We are an Edinburgh-based bike shop with a difference!**
 
 We are currently part of the Scotland Cycle Repair Scheme!
@@ -48,11 +51,7 @@ What makes us different?
 
 **Opening hours:**
 
-Tuesday 5 - 8
-
-Thursday 6 - 9
-
-Fridays 11 - 5  
+Closed until further notice
 
 ***
 
