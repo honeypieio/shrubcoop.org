@@ -8,7 +8,7 @@ lon = 55.945693
 showOnAboutPage = true
 showOnFrontPage = false
 tagline = "Scotland's first rescued food shop!"
-times = "11am to 6pm Tuesday to Saturday"
+times = "11am to 6pm Tuesday to Saturday, 11am to 4pm Sunday"
 title = "Food Sharing Edinburgh"
 weight = 3
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1621335519/shrubcoop.org/media/Food_Sharing_Edinburgh_easkx6.png"
@@ -21,7 +21,7 @@ The Food Sharing Hub, located in our Zero Waste Hub at 22 Bread Street, is **Sco
 
 It's open for everyone. Simply come along to the Food Sharing Hub. Fill a basket with food and **pay as you feel**.
 
-**We're open 11am to 6pm Tuesday to Saturday**
+**We're open 11am to 6pm Tuesday to Saturday and 11am to 4pm Sunday**
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1565363322/shrubcoop.org/media/189334483.jpg.gallery_coxd2w.jpg)
 
