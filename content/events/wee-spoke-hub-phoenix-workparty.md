@@ -29,3 +29,5 @@ During Lockdown, it was the only safe DIY space. ![💪](https://static.xx.fbcdn
 We invite your experience, your skills,  
 your ideas, as well as your critical scrutiny of ours,  
 to help us put Wee Spoke Hub on a long-term sustainable footing.
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1667402815/shrubcoop.org/media/311283148_8955290987829775_5083162107443049276_n_tmidgf.jpg)
