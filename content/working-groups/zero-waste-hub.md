@@ -8,7 +8,7 @@ showOnAboutPage = true
 showOnFrontPage = true
 show_on_about_page = false
 tagline = "a one stop shop for sustainable living!"
-times = "11am to 6pm, Tuesdays to Saturdays"
+times = "11am to 6pm, Tuesdays to Saturdays 11am to 4pm Sundays"
 title = "Zero Waste Hub"
 weight = 1
 working_group_logo = "https://res.cloudinary.com/shrub-co-op/image/upload/v1568667127/shrubcoop.org/media/Zero_Waste_Hub_WEB_ONLY_l1jech.png"
@@ -17,13 +17,13 @@ working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v
 +++
 The **Zero Waste Hub** is your one stop shop for sustainable living!
 
-You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegetarian and vegan café**.
+You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegan café**.
 
-Our café serves a range of wholesome vegan sandwiches, soups, and cakes. Heartwarming coffee with no extra charge for non-dairy milks!
+Our café serves a range of cold drinks, teas and coffees with no extra charge for non-dairy milks! - Our food service is paused at the moment but we hope to restart is as soon as possible. 
 
 #### Say No To Disposable Cups!
 
-Why not slow down and enjoy your lunch in our community space? If you need to take away your food and hot drinks, please bring your own reusable cups and containers.
+Why not slow down and enjoy a drink in our community space? If you need to take away your food and hot drinks, please bring your own reusable cups and containers.
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1576366686/shrubcoop.org/media/zero_waste_hub_website_pctxow.png)
 
@@ -32,7 +32,6 @@ Why not slow down and enjoy your lunch in our community space? If you need to ta
 We're [Revolve ](https://www.zerowastescotland.org.uk/revolve)certified - Scotland’s re-use quality standard. That means we're committed to providing only the highest quality second-hand products and excellent customer service.
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/638350700?h=2548060211" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
 
 ### Café Menu
 
@@ -55,24 +54,6 @@ Hot Chocolate **£2.70**
 Tea **£2** (pot £3)
 
 Cold Drinks from **£2**
-
-##### Food
-
-Vegan Sandwiches **£3.50**  
-_see specials board for today’s selection_
-
-Soup with bread **£3** (large bowl £4)  
-_from Union of Genius, see specials board for today's selection_
-
-Overnight Oats **£2**
-
-Toast with butter **75p**
-
-Cake and traybakes from **£2.5**  
-_From The Sly Fox, check out today’s specials_
-
-Meal Deal **£5**  
-_Any drink and sandwich_
 
 ### Plastic Free Products
 
