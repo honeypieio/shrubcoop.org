@@ -13,7 +13,9 @@ type = "contact"
 
 #### Zero Waste Hub
 
-11am to 2pm, Tuesday to Saturday  
+11am to 6pm, Tuesday to Saturday  
+11 am to 4pm, Sunday 
+
 22 Bread Street, EH3 9AF  
 0131 281 0583
 
@@ -21,13 +23,7 @@ type = "contact"
 
 #### Wee Spoke Hub
 
-5pm- 8pm, Tuesday and Thursday
-
-13 Guthrie Street, EH1 1JG
-
-[0131 220 1884](https://www.google.com/search?q=wee+spoke+hub&authuser=1&source=hp&ei=C8E5YdCzGaLDlwSnvJPIBw&iflsig=ALs-wAMAAAAAYTnPGx1vDjOAsXtD5bgy9r407GBRj0dJ&oq=wee+spoke+hub&gs_lcp=Cgdnd3Mtd2l6EAMyDgguEIAEEMcBEK8BEJMCOgsIABCABBCxAxCDAToFCAAQgAQ6CAgAELEDEIMBOgUILhCABDoLCC4QgAQQxwEQ0QM6CwguEIAEEMcBEKMCOg4ILhCABBCxAxDHARCjAjoOCC4QgAQQsQMQxwEQ0QM6CwguEIAEEMcBEK8BOggIABCABBCxAzoLCC4QsQMQxwEQrwE6CAguEIAEELEDOg0ILhCABBDHARCvARAKOgcIABCABBAKOggIABCABBDJAzoICAAQFhAKEB46BggAEBYQHlDuDFjjF2DzGWgAcAB4AIABeYgB-giSAQQxMS4ymAEAoAEB&sclient=gws-wiz&ved=0ahUKEwiQ5YGPuPHyAhWi4YUKHSfeBHkQ4dUDCAk&uact=5#)
-
-Contact our mechanic and coordinator at: weespokehub@shrubcoop.org
+Closed until further notice - direct enquiries to hello@shrubcoop.org
 
 ***
 
