@@ -2,7 +2,6 @@
 address = ""
 alt = "Workshops and Events Button – This is the link to our Workshops and Events area of the site. Click here to read about our Workshop and Event activities."
 colour = "#941A87"
-draft = true
 lat = ""
 lon = ""
 showOnAboutPage = false
