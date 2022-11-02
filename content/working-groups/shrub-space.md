@@ -2,6 +2,7 @@
 address = ""
 alt = "Workshops and Events Button – This is the link to our Workshops and Events area of the site. Click here to read about our Workshop and Event activities."
 colour = "#941A87"
+draft = true
 lat = ""
 lon = ""
 showOnAboutPage = false
@@ -58,4 +59,4 @@ The closest car park is a 7 minute walk away;
 
 #### Can I host my own event at SHRUB's venues?
 
-Not currently. SHRUB spaces are generally compact and we haven't run any in-person events since the COVID-19 restrictions were eased. We are working on how we can safely do so. So watch this space!
+Yes! Email hello@shrubcoop.org for more information on prices and availability.
