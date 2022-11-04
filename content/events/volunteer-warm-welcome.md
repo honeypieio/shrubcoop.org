@@ -7,6 +7,8 @@ time = 2022-11-10T18:30:00Z
 title = "Volunteer warm welcome!"
 
 +++
+From 6:30 to 7:30pm
+
 Welcome to SHRUB! We are so chuffed you are interested in joining our community with a mission for a world without waste. This session will give you the information you need to get started on your journey with us, with lots of time for questions and chat.
 
 There are a lot of things happening at SHRUB, so whether you are brand new or have been around a while come along and get informed.
