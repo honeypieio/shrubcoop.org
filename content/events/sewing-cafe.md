@@ -7,6 +7,8 @@ time = 2022-11-13T13:30:00Z
 title = "Sewing Cafe"
 
 +++
+From 1:30 to 4pm
+
 Our FREE drop-in sewing sessions are open to everyone from beginners to experts to meet, share and get advice in the cozy cafe of our second hand shop.
 
 We have sewing machines, tools, and some supplies to use. But if you need specific materials, please bring those along or come in earlier to have a look at the haberdashery section of our second hand shop.
@@ -49,5 +51,4 @@ Our venue is located near bus stops served by the following routes: 2, 35, 34, 1
 
 If you have further questions regarding accessibility, please contact the Zero Waste Hub on 0131 281 0583 or at hello@shrubcoop.org.
 
-  
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1667404450/shrubcoop.org/media/310318880_8874832639208944_3440891656929461215_n_gha8e0.jpg)
