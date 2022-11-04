@@ -26,3 +26,5 @@ SHRUB is a sober space with quiet music and low lighting. Noisy sirens do go thr
 Our venue is located near bus stops served by the following routes: 2, 35, 34, 16, 11, 24, 12, 10, 36, 47. There is limited on-street parking and paid parking on Castle Terrace (roughly 300 metres away by foot on partially cobbled path or 400+ via flatter paved paths).
 
 If you have further questions regarding accessibility, please contact the Zero Waste Hub on 0131 281 0583 or at hello@shrubcoop.org.
+
+![](https://res.cloudinary.com/shrub-co-op/image/upload/v1667563893/shrubcoop.org/media/69089116_3549079121784349_1585714982383779840_n_tvvjxw_1_l6vaqh.jpg)
