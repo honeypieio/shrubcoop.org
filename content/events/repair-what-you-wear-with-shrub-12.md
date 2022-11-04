@@ -7,6 +7,8 @@ time = 2022-11-08T17:30:00Z
 title = "Repair What You Wear with SHRUB"
 
 +++
+From 5:30 to 7:30pm
+
 Join us in the Zero Waste Hub every Tuesday afternoon to get help mending your clothing or to learn to sew.
 
 Our FREE drop-in sewing sessions are open to everyone from beginners to experts to meet, share and get advice in the cozy cafe of our second hand shop.
@@ -51,6 +53,4 @@ Our venue is located near bus stops served by the following routes: 2, 35, 34, 1
 
 If you have further questions regarding accessibility, please contact the Zero Waste Hub on 0131 281 0583 or at hello@shrubcoop.org.
 
-  
-  
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1667403442/shrubcoop.org/media/310318880_8874832639208944_3440891656929461215_n_dmbfcc.jpg)
