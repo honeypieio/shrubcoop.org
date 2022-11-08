@@ -3,7 +3,7 @@ author = "Sydney"
 date = 2022-11-08T00:00:00Z
 description = "Information about new post"
 draft = true
-tags = ["main", "zerowastehub"]
+tags = ["main", "zero-waste-hub"]
 title = "Hiring Fundraising Coordinator"
 type = "news"
 
