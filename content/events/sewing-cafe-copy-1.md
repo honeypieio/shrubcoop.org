@@ -1,11 +1,10 @@
 +++
 author = "SHRUB Coop"
 description = "FREE drop-in sewing sessions for beginners to experts."
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2022-11-27T13:30:00Z
-title = "Sewing Cafe-(copy)"
+time = 2022-12-11T13:30:00Z
+title = "Sewing Cafe"
 
 +++
 From 1:30 to 4pm
