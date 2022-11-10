@@ -1,11 +1,10 @@
 +++
 author = "SHRUB Coop"
 description = "A free space supporting people through the cost of living crisis. "
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2022-11-16T12:00:00Z
-title = "Warm Wednesdays-(copy)"
+time = 2022-11-23T12:00:00Z
+title = "Warm Wednesdays"
 
 +++
 Wednesdays from 12 to 4pm.
