@@ -4,7 +4,7 @@ description = "Get help mending your clothing or learn how to sew."
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
 time = 2022-12-20T17:30:00Z
-title = "Repair What You Wear with SHRUB-(copy)"
+title = "Repair What You Wear with SHRUB"
 
 +++
 From 5:30 to 7:30pm
