@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Get creative this National Novel Writing Month!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2022-11-25T15:00:00Z
+time = 2022-11-18T15:00:00Z
 title = "NaNoWriMo Write-a-thon"
 
 +++
