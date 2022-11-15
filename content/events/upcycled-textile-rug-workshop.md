@@ -9,7 +9,7 @@ title = "Upcycled Textile Rug Workshop"
 +++
 From 6:30 to 9:30 pm.
 
-SHRUB Coop and Follow-the-threads present our Upcylced Textile Rug Workshop.
+SHRUB Coop and Follow-the-threads present our Upcycled Textile Rug Workshop.
 
 In this workshop you will learn the basics of how to create beautiful textile rugs from rescued fabrics in our cosy Zero Waste Hub. Everything you need to get started on your own project will be provided!
 
