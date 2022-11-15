@@ -3,11 +3,11 @@ author = "SHRUB Coop"
 description = "Interested in volunteering? Come and find out more."
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2022-11-10T18:30:00Z
+time = 2022-11-26T15:00:00Z
 title = "Volunteer warm welcome!"
 
 +++
-From 6:30 to 7:30pm
+From 3 to 4:30pm
 
 Welcome to SHRUB! We are so chuffed you are interested in joining our community with a mission for a world without waste. This session will give you the information you need to get started on your journey with us, with lots of time for questions and chat.
 
