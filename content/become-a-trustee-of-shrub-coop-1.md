@@ -2,7 +2,6 @@
 author = "SHRUB Coop"
 date = 2021-12-04T16:00:00Z
 description = "We're recruiting for next year's trustees."
-draft = true
 tags = ["zero-waste-hub", "food-sharing-hub", "shrub-space", "swapshop", "trustees ", "zero-waste", "circular-economy"]
 title = "Become a trustee of SHRUB Coop!"
 type = "news"
@@ -43,7 +42,7 @@ Serving as a Trustee is an opportunity to learn about the governance of a not-fo
 
 Trustees have a wide-ranging remit with some people leading on particular aspects, some playing a more general role. We are looking for people with experience and skills in the specific areas listed above, but we also welcome applications from people who want to develop their experience or who have a more general interest in SHRUB. We particularly encourage applications from under-represented groups, including but not limited to: people of colour, trans people, non-binary people and women.
 
-Trustees are responsible for overseeing development of the strategic framework within which day-to-day tasks are carried out by staffers and volunteers, and they help guide our long-term planning.
+Trustees are responsible for overseeing development of the strategic framework within which day-to-day tasks are carried out by staff and volunteers, and they help guide our long-term planning.
 
 **What is the time commitment?**
 
@@ -77,6 +76,8 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application”. Please highlight in the form which Trustee role(s) you are interested in and perhaps have skills and experience in.
 
-For more information, please read our [information pack.](https://docs.google.com/document/d/1DD0Eg-SHp1PiH3isic5dJfwyYFkd_ZTnWb27g5CvFX4/edit?usp=sharing) 
+Deadline to apply: **1st December at 5pm.**
+
+We strongly encourage all the people applying to attend our AGM and introduce themselves to folk on the day (4th of December from 4pm to 6pm at the Zero Waste Hub). New trustees will be elected by the members of the SHRUB at the AGM.  Relevant contents of your form and CV will be shared with the membership for election purposes. 
 
 Any questions please email us at [hello@shrubcoop.org](mailto:hello@shrubcoop.org).
