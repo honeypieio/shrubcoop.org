@@ -1,10 +1,10 @@
 +++
 author = "SHRUB Coop"
-description = "It’s time for our AGM again and we invite you all to join! "
+description = "It’s time for our AGM again and we invite you all to join"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
-tags = ["ZWH", "Home", "main"]
+tags = ["ZWH", "Home", "main", "zero-waste-hub", "swapshop", "wee-spoke-hub"]
 time = 2022-12-04T16:00:00Z
-title = "SHRUB’s 2022 AGM and party! "
+title = "SHRUB’s 2022 AGM and party"
 
 +++
 It’s time for our AGM again and we invite all of our community, members and volunteers to join!
