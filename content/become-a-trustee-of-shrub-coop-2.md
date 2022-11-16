@@ -1,6 +1,6 @@
 +++
 author = "SHRUB Coop"
-date = 2022-11-16T00:00:00Z
+date = 2022-11-15T00:00:00Z
 description = "We're recruiting for next year's trustees."
 tags = ["zero-waste-hub", "main"]
 title = "Become a trustee of SHRUB Coop!"
