@@ -41,7 +41,6 @@ fields:
   name: tags
   label: Tags
 pages:
-- content/events/agm-2020.md
 - content/events/annual-general-meeting-2019.md
 - content/events/another-event.md
 - content/events/big-swap-test.md
