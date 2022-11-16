@@ -1,14 +1,12 @@
 +++
 author = "SHRUB Coop"
 description = "It’s time for our AGM again and we invite you all to join! "
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["ZWH", "Home", "main"]
 time = 2022-12-04T16:00:00Z
 title = "SHRUB’s 2022 AGM and party! "
 
 +++
-
 It’s time for our AGM again and we invite all of our community, members and volunteers to join!
 
 * Date: Sunday 4th December
