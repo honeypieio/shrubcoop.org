@@ -7,7 +7,6 @@ time = 2022-11-23T18:30:00Z
 title = "Kuluna Yoga with SHRUB Coop"
 
 +++
-  
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1668678520/shrubcoop.org/media/314747042_9077079032317636_1706437886631321066_n_mrkszi.jpg)
 
 A message from Romaine:
@@ -20,7 +19,7 @@ This is a 'bring your own equipment event'. The class will take place between 6:
 
 To book your slot please follow this booking link: [https://www.momoyoga.com/kulunayoga/schedule](https://www.momoyoga.com/kulunayoga/schedule "https://www.momoyoga.com/kulunayoga/schedule")
 
-For more information on Kuluna Yoga and for any accessibility enquires regarding the session please[ click here.](https://kulunayoga.carrd.co/)
+For more information on Kuluna Yoga and for any accessibility enquires regarding the session please[ click here](https://kulunayoga.carrd.co/)
 
 \---  
 ACCESS NOTES
