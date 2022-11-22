@@ -2,6 +2,7 @@
 author = "SHRUB Coop"
 date = 2022-11-15T00:00:00Z
 description = "We're recruiting for next year's trustees."
+draft = true
 tags = ["main", "zero-waste-hub", "Home"]
 title = "Become a trustee of SHRUB Coop!"
 type = "news"
