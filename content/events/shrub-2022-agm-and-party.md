@@ -1,7 +1,6 @@
 +++
 author = "Heloisa"
 description = "It’s time for our AGM again and we invite you all to join!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["shrub", "agm", "home", "main"]
 time = 2022-12-04T16:00:00Z
