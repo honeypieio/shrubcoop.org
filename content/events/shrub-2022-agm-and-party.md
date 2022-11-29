@@ -1,5 +1,5 @@
 +++
-author = "SHRUB Coop"
+author = "Heloisa"
 description = "It’s time for our AGM again and we invite you all to join!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = ["shrub", "agm", "home", "main"]
