@@ -25,9 +25,11 @@ Anyone is welcome to buy or donate items. **Become a member** and you can swap y
 
 Our vision is for a world without waste. Choosing second hand helps to save carbon emissions and supports a sustainable lifestyle.
 
-Unlike your ordinary charity shop, when you donate your preloved items we give you back 20% of their value as tokens. You can spend these at any time in the Swapshop. 1 token is worth £1.
+Our Swapshop can now be treated like any other second hand or charity store. Goods are donated, and we put them out for sale in the shop. However - Unlike your ordinary charity shop, when you donate your preloved items we give you back 20% of their value as tokens. You can spend these at any time in the Swapshop. 1 token is worth £1.
 
 When you drop off your items, our friendly volunteers will value them and add tokens to your account within 7 days.
+
+Unlike other second hand shops we try not to let anything useful go to waste. As such we have a free section that includes odds and ends that might come in handy - from lightly used stationary to cables and mugs. These things are free to anyone.
 
 While we like to try and enable people to swap and donate as many different things as possible, unfortunately, there are a few items that we can't take. Here's a [full list](https://drive.google.com/file/d/1peY_gb3JFCVn9jH8PlpBGELG1CwaoAEL/view?usp=sharing "updated Aug 2020") of what we can't accept and suggestions of alternative places to take them.
 
