@@ -7,7 +7,7 @@ time = 2022-12-04T16:00:00Z
 title = "SHRUB’s 2022 AGM and party"
 
 +++
-![](https://res.cloudinary.com/shrub-co-op/image/upload/v1668613127/shrubcoop.org/media/Copy_of_Were-hiring_sona5d.png)
+![objects placed around logo with an invitation to join us at our AGM](https://res.cloudinary.com/shrub-co-op/image/upload/v1668613127/shrubcoop.org/media/Copy_of_Were-hiring_sona5d.png "AGM invite 2022")
 
 It’s time for our AGM again and we invite all of our community, members and volunteers to join!
 
