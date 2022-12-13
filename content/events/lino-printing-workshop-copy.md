@@ -4,7 +4,7 @@ description = "Learn how to make your own reusable lino print!"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
 time = 2023-01-12T18:30:00Z
-title = "Lino-printing Workshop-(copy)"
+title = "Lino-printing Workshop"
 
 +++
 Join our facilitator Jo as she teaches you how to make your very own lino-print that you can use again and again. In a world of throw-away and mass-produced cards why not learn how to create your own personalised art-works that can be given to friends and family.
