@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Get help mending your clothing or learn how to sew."
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-01-24T17:30:00Z
+time = 2023-01-31T17:30:00Z
 title = "Repair What You Wear with SHRUB"
 
 +++
