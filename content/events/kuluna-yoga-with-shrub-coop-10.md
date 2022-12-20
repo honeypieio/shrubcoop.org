@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Romaine from Kuluna Yoga is now running regular Wednesday classes at the Zero Waste Hub."
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-03-22T18:30:00Z
+time = 2023-03-29T17:30:00Z
 title = "Kuluna Yoga with SHRUB Coop"
 
 +++
