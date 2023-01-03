@@ -2,7 +2,6 @@
 author = "SHRUB Coop"
 date = 2023-01-03T00:00:00Z
 description = "Re-opening"
-draft = true
 tags = []
 title = "Happy New Year 2023"
 type = "news"
