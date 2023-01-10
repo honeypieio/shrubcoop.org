@@ -33,6 +33,7 @@ fields:
   hidden: true
   default: news
 pages:
+- content/3-unsustainable-practices-to-leave-behind-in-2022.md
 - content/6-eco-friendly-swaps-to-make-lockdown-life-easier.md
 - content/a-huge-thank-you-to-our-incredible-community.md
 - content/a-less-than-cheerful-assessment-of-the-fashion-industry-part-i.md
