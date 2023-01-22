@@ -35,8 +35,6 @@ Examples of things we can help you with:
 
 \- upcycling
 
-\- crochet and knitting
-
 Follow the Repair What You Wear with SHRUB page for more examples and tips related to sewing:
 
 [https://www.facebook.com/groups/236741857323915/](https://www.facebook.com/groups/236741857323915/ "https://www.facebook.com/groups/236741857323915/")
