@@ -7,19 +7,23 @@ time = 2023-01-26T18:30:00Z
 title = "Waste Stories"
 
 +++
+A creative writing workshop focused on found objects and waste.
+
 At this time of year, we're often confronted with reminders of the ways consumption and waste shape our collective lives: a fridge full of excess food that we can't possibly eat (or the shop can't possibly sell) before it rots or curdles; a mountain of presents, especially when children and grandparents are involved; and layers and layers of packaging.
 
-At the same time, the start of a new year can bring resolutions, commitments to change some aspect of our life, perhaps to live more sustainably or to find more space to be creative. 
+At the same time, the start of a new year can bring resolutions, commitments to change some aspect of our life, perhaps to live more sustainably or to find more space to be creative. The Waste Stories team and SHRUB Coop are offering you another chance to do both! Following on from our October workshop, which saw the creation and sharing of five fantastic stories, we're bringing together a new set of pictures and objects to help you turn found trash into imaginative treasure.
 
-The Waste Stories team and SHRUB Coop are offering you another chance to do both! Following on from our October workshop, which saw the creation and sharing of five fantastic stories, we're bringing together a new set of pictures and objects to help you turn found trash into imaginative treasure.
+W hat to expect: We'll start the evening with some games aimed at getting people feeling creative. After that, we'll use some found objects as creative prompts to each take some time writing a story inspired by those objects. Those who then wish to share can read their stories to each other!
 
 For more information about the Waste Stories project, visit [https://wastestories.org.uk](https://wastestories.org.uk "https://wastestories.org.uk")
 
 Tea and coffee will be available.
 
+[Tickets by donation here](https://www.eventbrite.co.uk/e/waste-stories-tickets-509315555537?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb)
+
 ***
 
-ACCESS NOTES 
+ACCESS NOTES
 
 Our venue is located near bus stops served by the following routes: 2, 35, 34, 16, 11, 24, 12, 10, 36, 47. There is limited on-street parking and paid parking on Castle Terrace (roughly 300 metres away by foot on partially cobbled path or 400+ via flatter paved paths).
 
