@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Learn how to make your own reusable lino print!"
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-01-12T18:30:00Z
+time = 2023-02-24T18:30:00Z
 title = "Lino-printing Workshop"
 
 +++
@@ -12,9 +11,9 @@ Join our facilitator Jo as she teaches you how to make your very own lino-print 
 
 All the tools and equipment you need to produce your own stamp will be included. This workshop does require the use of sharp crafting tools and as such is not suitable for anyone under the age of 18.
 
-Tea and coffee will be available. Event runs from 6:30 to 8:30pm 
+Tea and coffee will be available. Event runs from 6:30 to 8:30pm
 
-[Tickets HERE](https://www.eventbrite.co.uk/e/lino-printing-workshop-tickets-475135522137) 
+[Tickets HERE](www.eventbrite.co.uk/e/lino-printing-workshop-tickets-529252988937)
 
 \---
 
