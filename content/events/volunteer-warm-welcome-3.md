@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Volunteer with us! "
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-01-24T19:30:00Z
+time = 2023-02-09T18:30:00Z
 title = "Volunteer warm welcome"
 
 +++
@@ -20,7 +19,7 @@ Come join other like-minded people, learn a bit about what we do and how we work
 
 If you are an existing volunteer and you haven't yet had an induction, please come along and get up to speed!!
 
-This session will run from 7:30 to 8:30pm.
+This session will run from 6:30 to 7:30pm.
 
 \---
 
