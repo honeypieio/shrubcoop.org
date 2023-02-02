@@ -13,7 +13,7 @@ All the tools and equipment you need to produce your own stamp will be included.
 
 Tea and coffee will be available. Event runs from 6:30 to 8:30pm
 
-[Tickets HERE](www.eventbrite.co.uk/e/lino-printing-workshop-tickets-529252988937)
+[Tickets HERE](https://www.eventbrite.co.uk/e/lino-printing-workshop-tickets-529252988937)
 
 \---
 
