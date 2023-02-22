@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Learn the basics of how to make beautiful and sustainable recycled textile rugs."
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-02-10T18:30:00Z
+time = 2023-03-23T18:30:00Z
 title = "Upcycled Textile Rug Workshop"
 
 +++
@@ -16,7 +15,7 @@ In this workshop you will learn the basics of how to create beautiful textile ru
 
 Tea and coffee will be available.
 
-[TICKETS here](www.eventbrite.co.uk/e/upcycled-textile-rug-workshop-tickets-509393759447)
+[TICKETS here](https://www.eventbrite.co.uk/e/upcycled-textile-rug-workshop-tickets-558034565407?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb)
 
 \---
 
