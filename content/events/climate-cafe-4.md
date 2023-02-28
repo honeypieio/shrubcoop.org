@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Join us for our monthly climate cafe "
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-01-20T18:00:00Z
+time = 2023-03-17T18:00:00Z
 title = "Climate Cafe"
 
 +++
@@ -14,15 +13,16 @@ Feel overwhelmed by climate change?
 Feel like there is so much to learn, and no idea where to start?  
 Looking for a community to share and learn?
 
-Join us for our monthly Climate Cafe from 6pm to 8pm
+Join us for our monthly Climate Cafe
 
-We will be starting the year on a positive note chatting about climate solutions. We aim to provide a safe space to have an open conversation, create a community and to help with climate anxiety
+![🌍](https://static.xx.fbcdn.net/images/emoji.php/v9/t3f/1/16/1f30d.png =16x16) This session will be dedicated to transport, in particular Active Travel. We aim to provide a safe space to have an open conversation, create a community and to help with climate anxiety
 
-Books are available to borrow from the Zero Waste Hub at any time before the cafe
+![📚](https://static.xx.fbcdn.net/images/emoji.php/v9/t49/1/16/1f4da.png =16x16) Books are available to borrow from the Zero Waste Hub at any time before the cafe
 
 Our climate cafe is open to everyone, beginners and experts alike
 
-Hot drinks will be available to purchase from our cafe
+  
+Hot drinks will be available to purchase from our cafe. The session will run from 6pm to 8pm. 
 
 \---
 
