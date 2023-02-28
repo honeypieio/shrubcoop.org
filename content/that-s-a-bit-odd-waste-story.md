@@ -7,7 +7,7 @@ title = "That's a bit odd! Waste story"
 type = "news"
 
 +++
-_This fictional story was written as part of a Waste Stories writing workshop. The aim was to write a story in 30 minutes based on found objects and waste. Waste Stories_ is a project that uses the affective power of story-telling to try to change people’s relationships with waste and the resources that end up in the waste stream.
+_This fictional story was written as part of a_ [_Waste Stories_](https://wastestories.org.uk/) _writing workshop. The aim was to write a story in 30 minutes based on found objects and waste. Waste Stories is a project that uses the affective power of story-telling to try to change people’s relationships with waste and the resources that end up in the waste stream._ 
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1677587918/shrubcoop.org/media/20221027_201525_pqcfpw.jpg)
 
