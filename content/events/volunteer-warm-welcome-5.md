@@ -1,10 +1,9 @@
 +++
 author = "SHRUB Coop"
 description = "Volunteer with us! "
-draft = true
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-02-17T18:30:00Z
+time = 2023-03-09T18:30:00Z
 title = "Volunteer warm welcome"
 
 +++
