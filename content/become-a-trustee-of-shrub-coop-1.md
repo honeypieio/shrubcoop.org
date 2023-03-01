@@ -9,9 +9,9 @@ type = "news"
 +++
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1668609564/shrubcoop.org/media/web_image_template_tm3vs6_c3igiy.png)
 
-We're looking for more trustees to guide SHRUB Coop in 2023/2024!
+We're looking for more trustees to guide SHRUB Coop in 2023-2024!
 
-We invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees. 
+We invite applications from SHRUB members and others interested in contributing to the Coop’s development to join our group of Trustees.
 
 #### Why become a Trustee?
 
@@ -74,6 +74,6 @@ Our Constitution provides for Trustees to formally oversee the activities of SHR
 
 **How Do I Apply?**
 
-To apply, simply save a copy of this [form](https://docs.google.com/document/d/1DgtnlNLBi1GM9mImnM24gY3WLkFn2G4Qa86fTFiakds/edit?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application”. Please highlight in the form which Trustee role(s) you are interested in and perhaps have skills and experience in.
+To apply, simply save a copy of this [form](https://drive.google.com/file/d/1QbGXzuHdSbokhxKEJyvSLgo6UJOMSERa/view?usp=sharing), fill it out and send it, **with a copy of your CV**, to [hello@shrubcoop.org](mailto:hello@shrubcoop.org), with the subject: “Trustee application”. Please highlight in the form which Trustee role(s) you are interested in and perhaps have skills and experience in.
 
 Any questions please email us at [hello@shrubcoop.org](mailto:hello@shrubcoop.org).
