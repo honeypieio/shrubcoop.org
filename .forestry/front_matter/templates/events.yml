@@ -41,6 +41,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- content/events/1-clearance-sale.md
 - content/events/annual-general-meeting-2019.md
 - content/events/another-event.md
 - content/events/banner-making-workshop.md
