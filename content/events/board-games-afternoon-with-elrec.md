@@ -3,7 +3,7 @@ author = "SHRUB Coop x ELREC"
 description = "Joins us to play board games at SHRUB"
 location = "Zero Waste Hub, 22 Bread Street, EH3 9AF"
 tags = []
-time = 2023-04-26T15:00:00Z
+time = 2023-05-17T15:00:00Z
 title = "Board games afternoon with ELREC"
 
 +++
