@@ -2,10 +2,13 @@
   <h3 class="mb-2">{{ .context.Title }}</h3>
 </a>
 
-<p class="mb-2" tabindex="0">{{ htmlUnescape (replace (.context.Description | truncate 80) " …" "…") }}</p>
+<p class="mb-2" tabindex="0">{{ htmlUnescape (replace (.context.Description | truncate 100) " …" "…") }}</p>
 
 <p class="dosis-semi-bold mb-1" tabindex="0">
   &#128336; {{ dateFormat "Monday, January 2, 2006" .context.Params.time }}
+  {{ if .context.Params.until }}
+    until {{ dateFormat "Monday, January 2, 2006" .context.Params.until }}
+  {{ end }}
 </p>
 <p class="dosis-semi-bold" tabindex="0">
   &#127970; {{ .context.Params.location }}

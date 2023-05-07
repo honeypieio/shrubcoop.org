@@ -6,9 +6,9 @@
     <div class="pt-5 events-list">
       <h2 class="text-center mb-4">{{ .Title }}</h2>
 
-      {{ range sort (where .Site.Pages "Type" "events") ".Params.time" "asc" }}
+      {{ range sort (sort (where .Site.Pages "Type" "events") ".Params.time" "asc") ".Params.sticky" "desc" }}
         {{ if .Params.time }}
-          {{ if ge (time .Params.time).Unix now.Unix }}
+          {{ if ge (time (.Params.until | default .Params.time)).Unix now.Unix }}
             <div class="py-3">
               {{ partial "events/preview.html" (dict "context" . "homepage" "0") }}
             </div>

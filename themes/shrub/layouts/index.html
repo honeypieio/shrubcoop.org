@@ -87,16 +87,19 @@
         {{ $scratch.Set "eventsCount" 1 }}
         {{ $scratch.Set "eventsLimit" 3 }}
 
-        {{ range sort (where .Data.Pages "Type" "events") ".Params.time" "asc" }}
-          {{ if ge (time .Params.time).Unix now.Unix }}
-            {{ if le ($scratch.Get "eventsCount") ($scratch.Get "eventsLimit") }}
+        {{ range sort (sort (where .Site.Pages "Type" "events") ".Params.time" "asc") ".Params.sticky" "desc" }}
+          {{ if .Params.time }}
+            {{ if ge (time (.Params.until | default .Params.time)).Unix now.Unix }}
+        
+              {{ if le ($scratch.Get "eventsCount") ($scratch.Get "eventsLimit") }}
 
-              {{ $scratch.Set "eventsCount" (add ($scratch.Get "eventsCount") 1)}}
+                {{ $scratch.Set "eventsCount" (add ($scratch.Get "eventsCount") 1)}}
 
-              <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
-                {{- partial "events/preview.html" (dict "context" . "homepage" "1") -}}
-              </div>
-
+                <div class="pb-xl-1 pb-lg-1 pb-2 text-white link-white">
+                  {{- partial "events/preview.html" (dict "context" . "homepage" "1") -}}
+                </div>
+              {{ end }}
+              
             {{ end }}
           {{ end }}
         {{ end }}
