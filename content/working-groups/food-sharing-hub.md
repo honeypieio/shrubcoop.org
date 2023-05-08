@@ -66,7 +66,7 @@ The Food Sharing Edinburgh project is generously funded by donations from our co
 
 We are currently saving an average of **1.63 tonnes** of food through the Food Sharing Hub per month - that's a saving of **7.69 tonnes** of carbon equivalent.
 
-**Food Sharing Edinburgh** saved **48.9 tonnes** of food in total between Dec 2017 and June 2020. Much of this is redistributed from small businesses directly to charity partners.
+**Food Sharing Edinburgh** saved **69 tonnes** of food in total between August 2018 and May 2023. That's equivalent to **259 tonnes** of CO₂. Much of this food is redistributed from small businesses directly to charity partners.
 
 ### Frequently Asked Questions
 

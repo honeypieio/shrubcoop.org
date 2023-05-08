@@ -79,11 +79,11 @@ This funding is enabling us to restart our much-loved **Fix Your Own Bike** work
 
 ![](https://res.cloudinary.com/shrub-co-op/image/upload/v1568759594/shrubcoop.org/media/Untitled_design_biphum.png)
 
-### **Our impact**
+<!-- ### **Our impact**
 
 The Wee Spoke Hub has saved approximately **22.4 tonnes of CO2** emissions through its activities over our last full year.
 
-We helped over **450** people to fix their own bikes in 2018 and the Wee Spoke Hub is currently supporting the community to cycle over **5000** miles each week.
+We helped over **450** people to fix their own bikes in 2018 and the Wee Spoke Hub is currently supporting the community to cycle over **5000** miles each week. -->
 
 ### Frequently Asked Questions
 
