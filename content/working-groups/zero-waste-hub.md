@@ -17,7 +17,7 @@ working_group_logo_dark = "https://res.cloudinary.com/shrub-co-op/image/upload/v
 +++
 The **Zero Waste Hub** is your one stop shop for sustainable living!
 
-You can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), or just hang out and grab a tea or coffee from our **vegan café**.
+In the Zero Waste Hub you can swap your preloved things in our [**Swapshop**](https://www.shrubcoop.org//working-groups/swapshop/), enjoy some rescued food from our [**Food Sharing Hub**](https://www.shrubcoop.org//working-groups/food-sharing-hub/), participate in our [**Events**](https://www.shrubcoop.org/events/) or just hang out and grab a tea or coffee from our **vegan café**.
 
 Our café serves a range of cold drinks, teas and coffees with no extra charge for non-dairy milks! - Our food service is paused at the moment but we hope to restart is as soon as possible. 
 
@@ -37,23 +37,15 @@ We're [Revolve ](https://www.zerowastescotland.org.uk/revolve)certified - Scotla
 
 ##### Drinks
 
-Espresso **£2**
-
-Americano **£2.20**
-
-Cappucino **£2.50**
-
-Latte **£2.50**
-
-Flat White **£2.30**
-
-Mocha **£2.70**
-
-Hot Chocolate **£2.70**
-
-Tea **£2** (pot £3)
-
-Cold Drinks from **£2**
+Espresso **£2**  
+Americano **£2.20**  
+Cappucino **£2.50**  
+Latte **£2.50**  
+Flat White **£2.30**   
+Mocha **£2.70**  
+Hot Chocolate **£2.70**   
+Tea **£2** (pot £3)   
+Cold Drinks from **£2**  
 
 ### Plastic Free Products
 
@@ -61,22 +53,24 @@ Cold Drinks from **£2**
 
 ##### Home and Kitchen
 
-###### Bio D
-
-_Ethically sourced, vegan, hypoallergenic, and free from pollutants that destroy marine ecosystems. Fill up a reusable bottle and pay by weight_
-
-Washing up liquid **£4.62** per litre  
-Laundry liquid **£1.89** per litre
-
 ###### Loofco
 
 _No need to reinvent the wheel to be sustainable! Using traditional methods, loofah fibers and coconut coir are grown and crafted in Egypt and Sri Lanka to create these versatile scrubs and brushes for all of your cleaning needs_
 
-Washing up brush **£3.25**  
-Cleaning pad **£2.90**  
-Washing up pad **£2.75**
+Washing up brush **£2.55**  
+Cleaning pad **£3**  
+Washing up pad **£3**  
+Kitchen sponge **£3.45**  
+<br>
 
 ##### Health & Cosmetics
+
+Body loofah **£3**  
+Dental floss **£4.90**  
+Mouthwash tablets **£8.90**  
+Mouthwash powder **£6.90**    
+Deodorant **£7**  
+
 
 ###### Humblebrush
 
@@ -90,7 +84,8 @@ Child toothbrush **£4.20**
 _Handmade in Yorkshire, and the packaging is both recycled and recyclable_
 
 _Travel soap_ **£2.62**  
-Shampoo bar **£2.62**  
+Shampoo bar **£3**  
+Conditioner bar **£5.05**   
 Face soap **£2.62**
 
 ###### Greencity
@@ -99,23 +94,6 @@ _All natural glycerin soap made with Organic essential oils_
 
 Hand soap **£1.70**
 
-###### Bloom and Nora reusable sanitary pads
-
-_Reusable sanitary pads not only save our planet from tonnes of single-use plastic, they are also in the long-term cheaper, more absorbent and much comfier than disposables_
-
-Mini **£4.99**  
-Midi **£5.99**  
-Maxi **£7.99**  
-Mighty **£8.99**  
-Trial kit **£32.95**
-
-##### Pets
-
-###### Adios Plastic Corn Starch Dog Poo Bags
-
-_Dog lovers can now enjoy a plastic-free lifestyle with these completely plant-based, unscented dog poop bags! Made from cornstarch, these bags biodegrade in compost within 3-6 months. Do not use for compost intended for edible plants_
-
-60 bags **£5.99**
 
 ### Frequently Asked Questions
 
